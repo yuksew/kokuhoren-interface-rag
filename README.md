@@ -8,7 +8,7 @@
 sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
-src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -50,6 +50,8 @@ uv run python src/query_db.py --exchange J611                     # 交換情報
 
 # 算定ルール資料（告示・留意事項・記載要領・Q&A・サービスコード表）を同じ DB に入れる（API なし。build_db.py の後に毎回）
 #   新旧対照表は「改正後」の欄だけ。サービスコード表は Excel から（service_codes テーブル）。判断は sources/rules_survey.md
+# 画像だけのページ（介護 Q&A Vol.11・Vol.13）は、先に Claude で書き起こしておく（API、5ページ $0.08。結果は out/ocr_rules/）
+uv run python src/ocr_rules.py --only kaigo_qa_r6_v11 kaigo_qa_r6_v13
 uv run python src/build_rules.py
 
 # フェーズ2: 検索（埋め込みはローカル GPU。torch などは依存グループ rag）

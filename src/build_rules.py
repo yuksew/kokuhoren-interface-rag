@@ -105,6 +105,11 @@ def pdf_pages(path: Path, two_col: bool) -> list[tuple[int, str, list[str]]]:
                 if left > 0 and right > 0 and min(left, right) / max(left, right) > 0.15:
                     clip, side = pymupdf.Rect(r.x0, r.y0, mid, r.y1), "new"
             lines = [ln for ln in pg.get_text(clip=clip).splitlines() if ln.strip() and not PAGE_NO.match(nk(ln).strip())]
+            if not lines:
+                # 画像だけのページは、ocr_rules.py の書き起こしがあればそれを使う
+                ocr = ROOT / "out" / "ocr_rules" / f"{path.stem}_p{i + 1}.json"
+                if ocr.exists():
+                    lines = [ln for ln in json.loads(ocr.read_text(encoding="utf-8"))["text"].splitlines() if ln.strip()]
             out.append((i + 1, side, lines))
     return out
 
