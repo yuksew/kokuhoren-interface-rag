@@ -35,6 +35,11 @@ def load_prompts() -> tuple[str, dict]:
 
 def source_label(r: Retriever, hit: dict) -> str:
     """抜粋の出典（DB から作る）。"""
+    if hit["kind"] == "prose":
+        x = r.con.execute("SELECT c.page, c.printed_page, d.domain, d.volume, d.edition FROM chunks c JOIN documents d USING (doc_id) "
+                          "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
+        pp = f"（印刷 {x['printed_page']}）" if x["printed_page"] else ""
+        return f"{DOMAIN[x['domain']]} {x['volume']} {x['edition']} PDF p{x['page']}{pp}（本文）"
     if hit["item_id"] is not None:
         x = r.con.execute("SELECT * FROM v_items WHERE item_id = ?", (hit["item_id"],)).fetchone()
         pp = f"（印刷 {x['printed_page']}）" if x["printed_page"] else ""
@@ -71,7 +76,7 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
     if LIST_Q.search(question) and hits:
         tid = next((h["table_id"] for h in hits[:5] if h["kind"] == "table"), None)
         if tid is None:
-            tid = Counter(h["table_id"] for h in hits).most_common(1)[0][0]
+            tid = next(iter(Counter(h["table_id"] for h in hits if h["table_id"] is not None).most_common(1)), (None,))[0]
         tchunk = next((m for m in r.meta if m["kind"] == "table" and m["table_id"] == tid), None)
         if tchunk:
             hits = [{**tchunk, "score": 0.0, "via": ["table-expand"], "expand": True}] + \
@@ -80,7 +85,8 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
     def text(i, h):
         if h.get("expand"):
             return f"[{i}] (表全体)\n{table_listing(r, h['table_id'])}"
-        return f"[{i}] ({'表' if h['kind'] == 'table' else '行'})\n{r.describe(h['chunk_id'])}"
+        label = {"table": "表", "item": "行", "prose": "本文"}[h["kind"]]
+        return f"[{i}] ({label})\n{r.describe(h['chunk_id'])}"
     ctx = "\n\n".join(text(i, h) for i, h in enumerate(hits, 1))
     cond = "、".join(x for x in [f"対象: {DOMAIN[domain]}" if domain else "", f"交換情報識別番号: {exchange}" if exchange else ""] if x)
     user = f"# 抜粋\n{ctx}\n\n# 質問\n{question}" + (f"\n（{cond}）" if cond else "")

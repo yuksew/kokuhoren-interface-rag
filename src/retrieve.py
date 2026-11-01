@@ -23,6 +23,8 @@ RRF_K = 60
 # 助詞・疑問の言い回しで区切って、全文検索の語を取り出す（trigram なので3文字以上の語だけ使う）
 SPLIT = re.compile(r"[\s、。，,．.？?！!「」『』（）()\[\]【】・/:：]+|について|とは|には|では|での|への|から|まで|より|ですか|ますか|ください|教えて|何桁|何|どこ|どの|どう|いつ|[はがをにのでとやもかへ]")
 MATRIX_Q = re.compile(r"必須|様式ごと|様式別|対応表|入力必須")
+VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
+SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 
 
@@ -46,8 +48,9 @@ class Retriever:
         self._df: dict[str, int] = {}
         self._emb = embedder_obj
         rows = self.con.execute(
-            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, d.domain, t.table_kind FROM chunks c "
-            "JOIN spec_tables t USING (table_id) JOIN documents d USING (doc_id) ORDER BY c.chunk_id").fetchall()
+            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, c.doc_id, c.page, d.domain, t.table_kind FROM chunks c "
+            "LEFT JOIN spec_tables t ON t.table_id = c.table_id JOIN documents d ON d.doc_id = c.doc_id "
+            "ORDER BY c.chunk_id").fetchall()
         self.meta = [dict(r) for r in rows]
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
@@ -62,6 +65,16 @@ class Retriever:
             for code in CODE.findall(nk(r["value"]))[:1]:
                 if r["item_id"] in self.item_chunk:
                     self.code_items.setdefault(code, []).append(self.item_chunk[r["item_id"]])
+        # コード一覧の値: 「A4:訪問型サービス（独自／定額）」のような行頭のコード → その行。
+        # 「A4」のような2文字は全文検索（3文字以上）でもベクトル検索でも引けないので、ここで直接引く
+        self.value_items: dict[str, list[int]] = {}
+        for r in self.con.execute("SELECT item_id, content FROM items WHERE content LIKE '%:%' OR content LIKE '%：%'"):
+            for ln in nk(r["content"]).splitlines():
+                m = VALUE.match(ln.strip())
+                if m and r["item_id"] in self.item_chunk:
+                    lst = self.value_items.setdefault(m.group(1), [])
+                    if self.item_chunk[r["item_id"]] not in lst:
+                        lst.append(self.item_chunk[r["item_id"]])
 
     @property
     def emb(self):
@@ -82,29 +95,41 @@ class Retriever:
 
     def df(self, term: str) -> int:
         if term not in self._df:
-            self._df[term] = self.con.execute("SELECT count(*) FROM items_fts WHERE items_fts MATCH ?",
-                                              ('"' + term.replace('"', '""') + '"',)).fetchone()[0]
+            self._df[term] = sum(self.con.execute(f"SELECT count(*) FROM {t} WHERE {t} MATCH ?",
+                                                  ('"' + term.replace('"', '""') + '"',)).fetchone()[0]
+                                 for t in ("items_fts", "prose_fts"))
         return self._df[term]
 
     def fts(self, q: str, n: int = 50) -> list[int]:
         terms = fts_terms(q)
         # 「設定する」のようにほとんどの行にある語は手がかりにならないので外す（行の 3% 超）。全部外れたら一番まれな語だけ使う
-        limit = len(self.item_chunk) * 0.03
+        limit = len(self.meta) * 0.03
         kept = [t for t in terms if self.df(t) <= limit]
         terms = kept or sorted(terms, key=self.df)[:1]
         if not terms:
             return []
         expr = " OR ".join('"' + t.replace('"', '""') + '"' for t in terms)
         rows = self.con.execute("SELECT rowid FROM items_fts WHERE items_fts MATCH ? ORDER BY rank LIMIT ?", (expr, n * 4)).fetchall()
-        return [self.item_chunk[r["rowid"]] for r in rows if r["rowid"] in self.item_chunk]
+        items = [self.item_chunk[r["rowid"]] for r in rows if r["rowid"] in self.item_chunk]
+        prose = [r["rowid"] for r in self.con.execute("SELECT rowid FROM prose_fts WHERE prose_fts MATCH ? ORDER BY rank LIMIT ?",
+                                                      (expr, n)).fetchall()]
+        # 行と文章を交互に並べる（どちらかが他方を押し出さないように）
+        out = []
+        for i in range(max(len(items), len(prose))):
+            out += [x for x in (items[i] if i < len(items) else None, prose[i] if i < len(prose) else None) if x is not None]
+        return out
 
     def vector(self, q: str, n: int = 50) -> list[int]:
         s = self.vecs @ self.emb.embed_query(q)
         return np.argsort(-s)[: n * 4].tolist()
 
     def codes(self, q: str) -> list[int]:
-        """質問に既知の交換情報識別番号があれば、インタフェース一覧のその番号の行。"""
-        return [c for code in CODE.findall(nk(q)) for c in self.code_items.get(code, [])]
+        """質問に既知の交換情報識別番号があればインタフェース一覧のその番号の行、
+        英字を含む短いコード（A4 など）があればコード一覧でそのコードを定義している行。"""
+        q = nk(q)
+        out = [c for code in CODE.findall(q) for c in self.code_items.get(code, [])]
+        out += [c for code in SHORT.findall(q) for c in self.value_items.get(code, [])[:10]]
+        return list(dict.fromkeys(out))
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
                fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5) -> list[dict]:

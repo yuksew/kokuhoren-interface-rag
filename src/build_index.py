@@ -25,6 +25,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from llm.embedding import get_embedder  # noqa: E402
+from prose import doc_prose  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = {"kaigo": "介護保険", "shogai": "障害福祉"}
@@ -81,7 +82,8 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
             lines.append("列: " + " ".join(vals[it["item_id"]]))
         if notes[it["item_id"]]:
             lines.append("注記: " + " ".join(notes[it["item_id"]]))
-        chunks.append({"kind": "item", "item_id": it["item_id"], "table_id": it["table_id"], "text": "\n".join(lines)})
+        chunks.append({"kind": "item", "item_id": it["item_id"], "table_id": it["table_id"], "doc_id": t["doc_id"],
+                       "page": it["page"], "text": "\n".join(lines)})
     # 表ごとのチャンク（「J611 の基本情報レコードの項目は？」のような表単位の質問用）
     for tid, t in tables.items():
         cols = json.loads(t["columns"] or "[]")
@@ -89,7 +91,17 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
         if cols:
             lines.append("列: " + " | ".join(cols))
         lines.append("項目: " + "、".join(n for n in names[tid] if n)[:1500])
-        chunks.append({"kind": "table", "item_id": None, "table_id": tid, "text": "\n".join(lines)})
+        chunks.append({"kind": "table", "item_id": None, "table_id": tid, "doc_id": t["doc_id"], "page": t["page_from"],
+                       "text": "\n".join(lines)})
+    # 表以外の文章（説明・ファイル構成・留意事項など）。PDF のテキストレイヤから
+    for d in con.execute("SELECT * FROM documents ORDER BY doc_id").fetchall():
+        pdf = ROOT / "sources" / "raw" / d["domain"] / f"{d['doc_id']}.pdf"
+        for pc in doc_prose(pdf):
+            head = [f"{DOMAIN.get(d['domain'], d['domain'])} インタフェース仕様書 {d['volume']} {d['edition']}"]
+            if pc["section"]:
+                head.append(f"節: {pc['section']}")
+            chunks.append({"kind": "prose", "item_id": None, "table_id": None, "doc_id": d["doc_id"], "page": pc["page"],
+                           "printed_page": pc["printed_page"], "text": "\n".join(head + ["本文: " + pc["text"]])})
     for c in chunks:
         c["sha"] = hashlib.sha256(c["text"].encode("utf-8")).hexdigest()
     return chunks
@@ -107,12 +119,19 @@ def main() -> int:
     con.row_factory = None
     con.executescript("""
 DROP TABLE IF EXISTS chunks;
-CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL, item_id INTEGER, table_id INTEGER NOT NULL,
+CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL,   -- item | table | prose
+                     item_id INTEGER, table_id INTEGER, doc_id TEXT NOT NULL, page INTEGER, printed_page TEXT,
                      text TEXT NOT NULL, sha TEXT NOT NULL);
 CREATE INDEX ix_chunks_item ON chunks(item_id);
+DROP TABLE IF EXISTS prose_fts;
+CREATE VIRTUAL TABLE prose_fts USING fts5(text, tokenize='trigram');
 """)
-    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, text, sha) VALUES (?,?,?,?,?,?)",
-                    [(i, c["kind"], c["item_id"], c["table_id"], c["text"], c["sha"]) for i, c in enumerate(chunks)])
+    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, doc_id, page, printed_page, text, sha) "
+                    "VALUES (?,?,?,?,?,?,?,?,?)",
+                    [(i, c["kind"], c["item_id"], c["table_id"], c["doc_id"], c["page"], c.get("printed_page"), c["text"], c["sha"])
+                     for i, c in enumerate(chunks)])
+    con.executemany("INSERT INTO prose_fts (rowid, text) VALUES (?, ?)",
+                    [(i, c["text"]) for i, c in enumerate(chunks) if c["kind"] == "prose"])
     con.execute("INSERT OR REPLACE INTO build_info VALUES ('index_embedder', ?)", (args.embedder,))
     con.commit()
 
@@ -134,7 +153,7 @@ CREATE INDEX ix_chunks_item ON chunks(item_id);
     kinds = defaultdict(int)
     for c in chunks:
         kinds[c["kind"]] += 1
-    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
+    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}・文章 {kinds['prose']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
           f" / 次元 {mat.shape[1]}")
     print(f"→ db/vectors.{args.embedder}.npy, DB の chunks テーブル")
     return 0
