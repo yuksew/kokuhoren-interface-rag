@@ -37,6 +37,8 @@ def source_label(r: Retriever, hit: dict) -> str:
     """抜粋の出典（DB から作る）。"""
     if hit["kind"] == "overview":
         return "インタフェース一覧とレコード表の表題から作成した、交換情報ごとのレコード構成"
+    if hit["kind"] == "limits":
+        return "レコード表の数値項目の内容（整数部・小数部の桁）から計算した、設定できる最大値"
     if hit["kind"] in ("rule", "svc"):
         x = r.con.execute("SELECT c.page, c.sc_from, c.sc_to, d.title, d.edition FROM chunks c JOIN rule_docs d USING (doc_id) "
                           "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
@@ -64,6 +66,8 @@ def source_label(r: Retriever, hit: dict) -> str:
 LIST_Q = re.compile(r"項目|構成|一覧|レイアウト|どんな|並び|全部")
 # 交換情報・レコードの全体像を聞く質問（「請求の CSV の構造」「どの CSV に何を設定」）
 STRUCT_Q = re.compile(r"構造|どのCSV|どの CSV|どのレコード|何を送る|どんなファイル|どのような CSV|どのようなCSV")
+# 上限・最大値を聞く質問（「最大何時間」「1000時間を超えたら」）
+MAX_Q = re.compile(r"最大|上限|超え|超過|上回|何時間まで|いくつまで|どこまで")
 REWRITE_MODEL = "claude-haiku-5-5"
 
 
@@ -101,6 +105,11 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
     overview = None
     if STRUCT_Q.search(question):
         overview = r.exchange_overview([question] + queries, hits, domain)
+    if MAX_Q.search(question):
+        limits = r.numeric_limits([question] + queries, domain)
+        if limits:
+            hits = [{"kind": "limits", "chunk_id": None, "item_id": None, "table_id": None, "domain": domain,
+                     "via": ["limits"], "text": limits}] + hits[: k - 1]
     if overview:
         hits = [{"kind": "overview", "chunk_id": None, "item_id": None, "table_id": None, "domain": domain,
                  "via": ["overview"], "text": overview}] + hits[: k - 1]
@@ -120,6 +129,8 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
             return f"[{i}] (表全体)\n{table_listing(r, h['table_id'])}"
         if h["kind"] == "overview":
             return f"[{i}] (交換情報の構成)\n{h['text']}"
+        if h["kind"] == "limits":
+            return f"[{i}] (数値項目の最大値)\n{h['text']}"
         label = {"table": "表", "item": "行", "prose": "本文", "rule": "算定ルール", "svc": "サービスコード表"}[h["kind"]]
         return f"[{i}] ({label})\n{r.describe(h['chunk_id'])}"
     ctx = "\n\n".join(text(i, h) for i, h in enumerate(hits, 1))

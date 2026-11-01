@@ -30,6 +30,7 @@ VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 # サービスコード（種類2桁＋項目4桁。「11 4845」「114845」）
+LIMIT = re.compile(r"整数部\s*上?\s*(\d+)\s*桁\s*[、,+＋]?\s*小数部\s*下?\s*(\d+)\s*桁")
 SVC = re.compile(r"(?<![0-9A-Za-z])([0-9]{2})\s?([0-9A-Z]{4})(?![0-9A-Za-z])")
 
 
@@ -255,6 +256,48 @@ class Retriever:
             lines.append(f"- {'・'.join(exs)} {names}（{heads[key]}）: " + " → ".join(key[1]))
         return ("交換情報ごとのレコード構成（インタフェース一覧とレコード表の表題から機械的に作成。質問に近い順。"
                 "各交換情報は、共通のコントロールレコード・エンドレコードの間に、これらのデータレコードを入れる）:\n" + "\n".join(lines))
+
+    def numeric_limits(self, queries: list[str], domain: str | None, max_items: int = 8) -> str | None:
+        """「最大何時間？」「1000時間を超えたら？」のような質問用に、桁の決まった数値項目と、そこに設定できる最大値を並べる。
+        候補: 内容に「整数部N桁＋小数部M桁」と書かれた項目。質問と言い換えの検索文との意味の近さで並べ、
+        同じ項目名・同じ桁の行（版ちがい）は1つにまとめる。"""
+        if not hasattr(self, "_limits"):
+            self._limits = []
+            rows = self.con.execute("SELECT item_id, domain, volume, edition, page, table_title, name_full, type, length_raw, content "
+                                    "FROM v_items WHERE content LIKE '%整数部%'").fetchall()
+            for r in rows:
+                m = LIMIT.search(nk(r["content"]))
+                if m and r["item_id"] in self.item_chunk:
+                    self._limits.append((self.item_chunk[r["item_id"]], dict(r), int(m.group(1)), int(m.group(2))))
+        cand = [x for x in self._limits if domain is None or x[1]["domain"] == domain]
+        if not cand:
+            return None
+        qv = np.stack([self.emb.embed_query(q) for q in queries])
+        sims = (self.vecs[[x[0] for x in cand]] @ qv.T).max(axis=1)
+        # 質問に「1000時間」のような数値と単位があれば、その値を設定できない（最大値がその値の少し下の）項目を先に出す
+        asked = [(float(n.replace(",", "")), u) for n, u in re.findall(r"([0-9][0-9,]*(?:\.[0-9]+)?)\s*(時間|円|日|回|%)", nk(queries[0]))]
+        for n, u in asked:
+            below = {i: 10 ** a - 10 ** -b for i, (c, r, a, b) in enumerate(cand) if u in nk(r["content"]) and 10 ** a - 10 ** -b < n}
+            top = max(below.values(), default=None)
+            for i, mx in below.items():
+                if mx == top:
+                    sims[i] += 1.0
+        lines, seen = [], set()
+        for i in np.argsort(-sims):
+            c, r, a, b = cand[i]
+            key = (r["domain"], nk(r["name_full"] or ""), a, b)
+            if key in seen:
+                continue
+            seen.add(key)
+            mx = "9" * a + ("." + "9" * b if b else "")
+            first = nk(r["content"]).replace("\n", " ")[:120]
+            lines.append(f"- {nk(r['name_full'] or '（項目名なし）')}（{nk(r['table_title'] or '表題なし').splitlines()[0][:40]}、"
+                         f"{r['volume']} {r['edition']} PDF p{r['page']}）: 属性 {r['type'] or '-'} / 桁数 {r['length_raw'] or '-'} / "
+                         f"整数部{a}桁＋小数部{b}桁 → 設定できる最大値 {mx} / 内容「{first}」")
+            if len(lines) >= max_items:
+                break
+        return ("桁の決まった数値項目と、設定できる最大値（項目の内容の「整数部N桁＋小数部M桁」から機械的に計算。質問に近い順。"
+                "最大値を超える値はこの項目に設定できない）:\n" + "\n".join(lines))
 
     def describe_table(self, table_id: int) -> str:
         return self.con.execute("SELECT text FROM chunks WHERE kind = 'table' AND table_id = ?", (table_id,)).fetchone()["text"]
