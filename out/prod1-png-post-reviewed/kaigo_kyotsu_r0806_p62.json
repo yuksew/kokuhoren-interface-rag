@@ -1,0 +1,64 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotsu_r0806",
+ "page": 62,
+ "edition": "令和8年6月版",
+ "volume": "共通編",
+ "printed_page": "３７－１",
+ "tables": [
+  {
+   "table_kind": "code_list",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "コード名称",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "コード名称",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 81,
+     "no_raw": "８１",
+     "name_path": [
+      "市町村特別給付用事業所番号"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "市町村特別給付を行う事業所の事業所番号\n[図] ×1 ×2 0 0 0 ×6 ×7 ×8 ×9 ×10 都道府県コード ゼロ固定 通番 チェックデジット\n※都道府県コードは事業所がサービスを行える都道府県とする\n※チェックデジットはモジュラス１０方式とする",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表に見出し（表題）がなく、ページ先頭から始まっているため、前ページの表の続きかどうか判断できない。",
+  "内容欄の図（桁の図解）は [図] と位置を示し、図内に印字された文字のみを書き写した。図の配置や矢印の対応関係は再現していない。",
+  "内容欄の「※」で始まる2行は表の下の注記ではなく内容セル内の文章として扱い、footnotes は空にした。",
+  "record の exchange_id・name・parent は表見出しや本文から読み取れなかったため空文字とした。"
+ ]
+}

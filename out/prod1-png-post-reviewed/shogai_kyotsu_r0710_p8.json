@@ -1,0 +1,78 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_kyotsu_r0710",
+ "page": 8,
+ "edition": "令和7年10月施行分",
+ "volume": "共通編",
+ "printed_page": "6",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "・使用不可能文字",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "使用不可能文字",
+    "文字コード(16進表記)"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "使用不可能文字",
+    "type": "",
+    "length": "",
+    "content": "",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "‘(シングルコーテーション)"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "27",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "文字コード(16進表記)",
+       "value": "27"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": null,
+       "to": "27",
+       "by": "textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※外字コード",
+   "text": "シフト JIS コード上での外字コード領域には、16進コード…0xF040～0xF9FCの範囲で2バイト目が16進コード…0x40～0x7E及び0x80～0xFCの1880文字が割り当てられている。"
+  }
+ ],
+ "uncertain": [
+  "添付ページ（ページ8）ではなく、印字されているページ番号は6である。指示されたページ8の表は添付画像に含まれていないため、表は本ページ上の使用不可能文字の表のみを書き起こした。",
+  "使用不可能文字の表の項番1の文字欄は『‘(シングルコーテーション)』と読み取った。"
+ ]
+}

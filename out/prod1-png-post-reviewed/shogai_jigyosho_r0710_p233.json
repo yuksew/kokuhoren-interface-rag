@@ -1,0 +1,366 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 233,
+ "edition": "令和7年10月施行分",
+ "volume": "サービス事業所編",
+ "printed_page": "115",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "(2)障害児給付費等 明細書 基本情報レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "基本情報レコード",
+    "parent": "障害児給付費等 明細書"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "※必須 > K121 K122",
+    "※必須 > K221",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "01を設定する(基本情報レコード)",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "都道府県等番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "受給者証に記載された都道府県番号、または市町村番号(チェックデジット1桁含む)",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービスを提供した事業所番号",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "受給者証番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "受給者証に記載されている受給者証番号",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "助成自治体番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "助成自治体がある場合、助成自治体の番号を設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "○"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "○"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "給付決定保護者氏名カナ"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "25",
+     "content": "給付決定保護者カナ氏名",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "△"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "△"
+      }
+     ],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "給付決定に係る障害児氏名カナ"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "25",
+     "content": "給付決定に係る障害児カナ氏名",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "△"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "△"
+      }
+     ],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "地域区分コード"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "地域区分コードを設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": "◎"
+      },
+      {
+       "column": "※必須 > K221",
+       "value": "◎"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "就労継続支援Ａ型事業者負担減免措置実施"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "設定しない。",
+     "required": null,
+     "required_by": [
+      {
+       "column": "※必須 > K121 K122",
+       "value": null
+      },
+      {
+       "column": "※必須 > K221",
+       "value": null
+      }
+     ],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼は「次のページ」の表ですが、添付はこの1ページ（印字ページ115）のみのため、このページ内の表を書き起こした。",
+  "ページ内の表は項番1〜11で下端の罫線で閉じているように見えるが、次ページに項番12以降が続く可能性は画像だけでは判断できないため continues_to_next_page は false とした。",
+  "record.exchange_id は本ページに交換情報識別番号の記載が見当たらないため空文字とした。",
+  "record.parent は見出しから「障害児給付費等 明細書」と判断したが、上位情報名は確定できない。",
+  "※B・※Y・※C の注記内容は本ページに記載がないため footnotes は空とした。"
+ ]
+}

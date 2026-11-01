@@ -1,0 +1,66 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_kyotsu_r0710",
+ "page": 15,
+ "edition": "令和7年10月施行分",
+ "volume": "共通編",
+ "printed_page": "13",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "項目例"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "項目例",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "省略時にスペースを入力することになっている項目"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "・各種支払支援処理(出力情報) 振込データ情報ヘッダレコード 預金種目(依頼人)\n・各種支払支援処理(出力情報) 振込データ情報ヘッダレコード 口座番号(依頼人)\n・各種支払支援処理(出力情報) 振込データ情報データレコード 手形交換所番号\n・各種支払支援処理(出力情報) 振込データ情報データレコード 顧客コード1\n・各種支払支援処理(出力情報) 振込データ情報データレコード 顧客コード2\n・各種支払支援処理(出力情報) 振込データ情報データレコード 振込指定区分\n※固定長 CSV のため",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※",
+   "text": "固定長 CSV のため"
+  }
+ ],
+ "uncertain": [
+  "依頼者の指示は「PDF上のページ15」の表だったが、添付画像の下部ページ番号は「-13-」であり、添付は1ページのみ。添付された1ページ（-13-）の表を書き起こした。",
+  "表は項番3の1行のみで、項番1・2は本ページに無い。前ページからの続きと判断し continued_from_prev_page を true にしたが、見出し行が印字されているため判断に確信はない。",
+  "項目例の「(出力情報)」の括弧の字形は画像から判然としないため半角の括弧として書き写した。"
+ ]
+}

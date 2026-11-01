@@ -265,6 +265,12 @@ def apply_page(adopted: dict, sonnet: dict | None, items: list[dict], dec: dict,
                 for e in (it.get("cells") or []) + (it.get("required_by") or []):
                     e["column"] = ren.get(e.get("column"), e.get("column"))
             t["column_map"] = {k: ren.get(v, v) for k, v in (t.get("column_map") or {}).items()}
+        else:  # 列数が違うときは、様式番号などの列キーが一致する列名に書き換える
+            by_key = {col_key(c): c for c in new}
+            for it in t.get("items") or []:
+                for e in (it.get("cells") or []) + (it.get("required_by") or []):
+                    if e.get("column") not in new and col_key(e.get("column")) in by_key:
+                        e["column"] = by_key[col_key(e.get("column"))]
         t["columns"] = new
         t.setdefault("_fixes", []).append({"field": "columns", "from": old, "to": new, "by": "human", "qid": q["id"]})
 
