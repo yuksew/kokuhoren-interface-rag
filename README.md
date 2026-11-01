@@ -57,6 +57,10 @@ uv run --group rag python src/eval_retrieval.py                  # 検索の評�
 uv run --group rag python src/ask.py "要介護度はどのコードで何桁？" --domain kaigo
 uv run --group rag python src/eval_answers.py                    # 回答の評価（両モデル、約 $0.25）
 
+# 実際の質問での評価: eval/real_questions.txt に質問を書く → 回答 → reports/real_eval.csv の「判定」列に ○△× → 集計
+uv run --group rag python src/eval_real.py run
+uv run --group rag python src/eval_real.py summary
+
 # API を使わずにパイプラインだけ試す
 uv run python src/transcribe.py --provider mock && uv run python src/validate.py --run mock-png && uv run python src/report.py --run mock-png
 ```
