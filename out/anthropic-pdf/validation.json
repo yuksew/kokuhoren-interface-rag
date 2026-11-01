@@ -1,0 +1,2829 @@
+{
+  "run": "anthropic-pdf",
+  "models": [
+    "claude-haiku-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "pages": [
+    {
+      "key": "kaigo_kyotsu_r0806_p12",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 12,
+      "printed": "8",
+      "category": [
+        "simple"
+      ],
+      "note": "データレコード・エンドレコードのフォーマット（小さな表が2つ）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 12,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 11.91,
+            "usage": {
+              "input_tokens": 7455,
+              "output_tokens": 2557,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002024,
+            "cost_usd_batch": 0.001012,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:50:46+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 2,
+            "items": 7,
+            "text_checked": 14,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 12,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 9.39,
+            "usage": {
+              "input_tokens": 7455,
+              "output_tokens": 1631,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.03122,
+            "cost_usd_batch": 0.01561,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:50:55+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "name",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "name",
+              "row": 1,
+              "msg": "PDFのテキストレイヤに見つからない"
+            }
+          ],
+          "stats": {
+            "tables": 5,
+            "items": 11,
+            "text_checked": 22,
+            "text_missing": 2
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": null,
+          "no": null,
+          "field": "tables",
+          "a": 2,
+          "b": 5
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "table_kind",
+          "a": null,
+          "b": "other"
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "continued_from_prev_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "columns",
+          "a": "",
+          "b": "位置 | 設定値"
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "row",
+          "ia": null,
+          "ib": 0,
+          "a": null,
+          "b": "位置1-40"
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "row",
+          "ia": null,
+          "ib": 1,
+          "a": null,
+          "b": "位置41-43"
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "table_kind",
+          "a": null,
+          "b": "other"
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "continued_from_prev_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "columns",
+          "a": "",
+          "b": "位置 | 設定値"
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "row",
+          "ia": null,
+          "ib": 0,
+          "a": null,
+          "b": "設定値"
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "table_kind",
+          "a": null,
+          "b": "other"
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "continued_from_prev_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": null,
+          "b": false
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "columns",
+          "a": "",
+          "b": "位置 | 設定値"
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "row",
+          "ia": null,
+          "ib": 0,
+          "a": null,
+          "b": "設定値"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p35",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 35,
+      "printed": "31",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 36,
+      "note": "コード一覧の先頭。項番3「異動事由」、項番5「媒体区分コード」が縦結合。内容に図が入っている",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 35,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 18.88,
+            "usage": {
+              "input_tokens": 7572,
+              "output_tokens": 5077,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003296,
+            "cost_usd_batch": 0.001648,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:14+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "text",
+              "table": 0,
+              "no": 6,
+              "field": "content",
+              "row": 12,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "error",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p35 の最後の表が continues_to_next_page=false"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 20,
+            "text_checked": 40,
+            "text_missing": 1
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 35,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 11.0,
+            "usage": {
+              "input_tokens": 7572,
+              "output_tokens": 2228,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.037424,
+            "cost_usd_batch": 0.018712,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:25+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "error",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p36 の最初の表が continued_from_prev_page=false"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 20,
+            "text_checked": 40,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": 6,
+          "field": "content",
+          "ia": 12,
+          "ib": 12,
+          "a": "介護保険の保険者番号\n（図：×1 ×2 ×3 ×4 ×5 ×6 の6桁。チェックデジット・市区町村コード・都道府県コードの対応線を示す）\n※チェックデジットはモジュラス１０方式とする",
+          "b": "介護保険の保険者番号\n×１ ×２ ×３ ×４ ×５ ×６\nチェックデジット\n市区町村コード\n都道府県コード\n※チェックデジットはモジュラス１０方式とする"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p36",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 36,
+      "printed": "31-1",
+      "category": [
+        "split"
+      ],
+      "pair": 35,
+      "note": "コード一覧の続き（項番14から）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 36,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 5.8,
+            "usage": {
+              "input_tokens": 6712,
+              "output_tokens": 1177,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.00126,
+            "cost_usd_batch": 0.00063,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:31+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 1,
+            "text_checked": 2,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 36,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 2.91,
+            "usage": {
+              "input_tokens": 6712,
+              "output_tokens": 352,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.016944,
+            "cost_usd_batch": 0.008472,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:34+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "error",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "前ページからの続きではないのに項番が 14 から始まる"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 1,
+            "text_checked": 2,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continued_from_prev_page",
+          "a": true,
+          "b": false
+        }
+      ]
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p41",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 41,
+      "printed": "34",
+      "category": [
+        "split",
+        "merged"
+      ],
+      "note": "ページ全体が前ページの1セル（サービス種類コードの内容）の続き。内容セルの中に縦書きの小見出しがある",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 41,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split",
+              "merged"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 14.94,
+            "usage": {
+              "input_tokens": 7468,
+              "output_tokens": 3466,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.00248,
+            "cost_usd_batch": 0.00124,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:49+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "項番が整数でない行が 3 行"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 3,
+            "text_checked": 5,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 41,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split",
+              "merged"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 7.88,
+            "usage": {
+              "input_tokens": 7468,
+              "output_tokens": 1346,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.028396,
+            "cost_usd_batch": 0.014198,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:51:57+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "項番が整数でない行が 3 行"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 3,
+            "text_checked": 5,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p80",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 80,
+      "printed": "35",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 81,
+      "note": "介護給付費明細書の基本情報レコード（公費1〜3、被保険者情報などが縦結合）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 80,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 17.16,
+            "usage": {
+              "input_tokens": 7693,
+              "output_tokens": 4594,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003066,
+            "cost_usd_batch": 0.001533,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:52:14+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 1,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 2,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 5,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 7,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 8,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 9,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 10,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 11,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 12,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 13,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 14,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 15,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 16,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 17,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 18,
+              "field": "length",
+              "row": 17,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 19,
+              "field": "length",
+              "row": 18,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 21,
+              "field": "length",
+              "row": 20,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 22,
+              "field": "length",
+              "row": 21,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p80→p81 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 65,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 80,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 12.33,
+            "usage": {
+              "input_tokens": 7693,
+              "output_tokens": 2447,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.039856,
+            "cost_usd_batch": 0.019928,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:52:27+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 1,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 2,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 5,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 7,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 8,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 9,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 10,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 11,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 12,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 13,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 14,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 15,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 16,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 17,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 18,
+              "field": "length",
+              "row": 17,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 19,
+              "field": "length",
+              "row": 18,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 21,
+              "field": "length",
+              "row": 20,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 22,
+              "field": "length",
+              "row": 21,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p80→p81 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 65,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": 7,
+          "field": "name",
+          "ia": 6,
+          "ib": 6,
+          "a": "負担者番号",
+          "b": "公費１ > 負担者番号"
+        },
+        {
+          "table": 0,
+          "no": 8,
+          "field": "name",
+          "ia": 7,
+          "ib": 7,
+          "a": "受給者番号",
+          "b": "公費１ > 受給者番号"
+        },
+        {
+          "table": 0,
+          "no": 9,
+          "field": "name",
+          "ia": 8,
+          "ib": 8,
+          "a": "負担者番号",
+          "b": "公費２ > 負担者番号"
+        },
+        {
+          "table": 0,
+          "no": 10,
+          "field": "name",
+          "ia": 9,
+          "ib": 9,
+          "a": "受給者番号",
+          "b": "公費２ > 受給者番号"
+        },
+        {
+          "table": 0,
+          "no": 11,
+          "field": "name",
+          "ia": 10,
+          "ib": 10,
+          "a": "負担者番号",
+          "b": "公費３ > 負担者番号"
+        },
+        {
+          "table": 0,
+          "no": 12,
+          "field": "name",
+          "ia": 11,
+          "ib": 11,
+          "a": "受給者番号",
+          "b": "公費３ > 受給者番号"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p81",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 81,
+      "printed": "36",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 80,
+      "note": "基本情報レコードの続き。合計情報 > 保険/公費1 の2段結合",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 81,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 25.3,
+            "usage": {
+              "input_tokens": 7814,
+              "output_tokens": 6688,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.004125,
+            "cost_usd_batch": 0.002063,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:52:52+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 23,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 24,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 25,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 26,
+              "field": "length",
+              "row": 3,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 27,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 28,
+              "field": "length",
+              "row": 5,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 29,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 30,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 31,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 32,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 33,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 34,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 35,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 36,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 37,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 38,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 39,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 40,
+              "field": "length",
+              "row": 17,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 41,
+              "field": "length",
+              "row": 18,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 42,
+              "field": "length",
+              "row": 19,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 43,
+              "field": "length",
+              "row": 20,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 44,
+              "field": "length",
+              "row": 21,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 45,
+              "field": "length",
+              "row": 22,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 46,
+              "field": "length",
+              "row": 23,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 47,
+              "field": "length",
+              "row": 24,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 48,
+              "field": "length",
+              "row": 25,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 26,
+            "text_checked": 74,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 81,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 14.06,
+            "usage": {
+              "input_tokens": 7814,
+              "output_tokens": 2916,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.044788,
+            "cost_usd_batch": 0.022394,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:53:06+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 23,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 24,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 25,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 26,
+              "field": "length",
+              "row": 3,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 27,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 28,
+              "field": "length",
+              "row": 5,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 29,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 30,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 31,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 32,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 33,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 34,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 35,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 36,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 37,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 38,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 39,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 40,
+              "field": "length",
+              "row": 17,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 41,
+              "field": "length",
+              "row": 18,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 42,
+              "field": "length",
+              "row": 19,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 43,
+              "field": "length",
+              "row": 20,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 44,
+              "field": "length",
+              "row": 21,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 45,
+              "field": "length",
+              "row": 22,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 46,
+              "field": "length",
+              "row": 23,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 47,
+              "field": "length",
+              "row": 24,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 48,
+              "field": "length",
+              "row": 25,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 26,
+            "text_checked": 74,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": 33,
+          "field": "name",
+          "ia": 10,
+          "ib": 10,
+          "a": "サービス単位数",
+          "b": "合計情報 > 保険 > サービス単位数"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p84",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 84,
+      "printed": "38",
+      "category": [
+        "simple"
+      ],
+      "note": "明細情報レコード（結合なし、備考に複数の※）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 84,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 22.5,
+            "usage": {
+              "input_tokens": 7585,
+              "output_tokens": 5049,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003283,
+            "cost_usd_batch": 0.001641,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:50:27+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 1,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 2,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 5,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 7,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 8,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 9,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 10,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 11,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 12,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 13,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 14,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 15,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 16,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 17,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 52,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 84,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 11.38,
+            "usage": {
+              "input_tokens": 7585,
+              "output_tokens": 2156,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.03673,
+            "cost_usd_batch": 0.018365,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:53:17+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 1,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 2,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 5,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 7,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 8,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 9,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 10,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 11,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 12,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 13,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 14,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 15,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 16,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 17,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 52,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        }
+      ]
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p110",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 110,
+      "printed": "52",
+      "category": [
+        "matrix"
+      ],
+      "note": "入力必須項目と様式の対応表（明細情報レコード）。縦書きの様式名が列見出し",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 110,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 16.2,
+            "usage": {
+              "input_tokens": 6946,
+              "output_tokens": 3906,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002648,
+            "cost_usd_batch": 0.001324,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:53:34+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 1,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 2,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 4,
+              "field": "length",
+              "row": 3,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 5,
+              "field": "length",
+              "row": 4,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 6,
+              "field": "length",
+              "row": 5,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 7,
+              "field": "length",
+              "row": 6,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 8,
+              "field": "length",
+              "row": 7,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 9,
+              "field": "length",
+              "row": 8,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 10,
+              "field": "length",
+              "row": 9,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 11,
+              "field": "length",
+              "row": 10,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 12,
+              "field": "length",
+              "row": 11,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 13,
+              "field": "length",
+              "row": 12,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 14,
+              "field": "length",
+              "row": 13,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 15,
+              "field": "length",
+              "row": 14,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 16,
+              "field": "length",
+              "row": 15,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 17,
+              "field": "length",
+              "row": 16,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 18,
+              "field": "length",
+              "row": 17,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 18,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 110,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 8.83,
+            "usage": {
+              "input_tokens": 6946,
+              "output_tokens": 1611,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.030002,
+            "cost_usd_batch": 0.015001,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:53:42+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 18,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "table_kind",
+          "a": "record_layout",
+          "b": "required_matrix"
+        },
+        {
+          "table": 0,
+          "no": null,
+          "field": "columns",
+          "a": "項番 | 項目名 | （見出し空欄1） | （見出し空欄2） | （見出し空欄3） | （見出し空欄4） | （見出し空欄5） | （見出し空欄6） | （見出し空欄7） | （見出し空欄8） | （見出し空欄9） | （見出し空欄10） | （見出し空欄11） | （見出し空欄12） | 備考",
+          "b": "項番 | 項目名 | (縦書き見出し列・判読不能) | 備考"
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p31",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 31,
+      "printed": "26",
+      "category": [
+        "simple"
+      ],
+      "note": "明細書 明細情報レコード（必須列は1列）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 31,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 11.88,
+            "usage": {
+              "input_tokens": 7532,
+              "output_tokens": 3068,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002287,
+            "cost_usd_batch": 0.001144,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:53:54+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 11,
+            "text_checked": 31,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 31,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 8.33,
+            "usage": {
+              "input_tokens": 7532,
+              "output_tokens": 1636,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.031424,
+            "cost_usd_batch": 0.015712,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:54:03+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 11,
+            "text_checked": 31,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p17",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 17,
+      "printed": "12",
+      "category": [
+        "merged"
+      ],
+      "note": "請求書 基本情報レコード（必須が識別番号ごとの多段見出し）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 17,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 20.09,
+            "usage": {
+              "input_tokens": 7845,
+              "output_tokens": 5932,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.00375,
+            "cost_usd_batch": 0.001875,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:54:23+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 23,
+            "text_checked": 67,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 17,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 15.62,
+            "usage": {
+              "input_tokens": 7845,
+              "output_tokens": 3281,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.0485,
+            "cost_usd_batch": 0.02425,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:54:38+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 23,
+            "text_checked": 67,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p20",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 20,
+      "printed": "15",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 21,
+      "note": "明細書 基本情報レコード（多段見出し＋上限額管理事業所などの縦結合）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 20,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 25.81,
+            "usage": {
+              "input_tokens": 7823,
+              "output_tokens": 7900,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.004732,
+            "cost_usd_batch": 0.002366,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:55:04+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p20→p21 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 55,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 20,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 17.19,
+            "usage": {
+              "input_tokens": 7823,
+              "output_tokens": 3610,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.051746,
+            "cost_usd_batch": 0.025873,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:55:21+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p20→p21 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 55,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": 18,
+          "field": "name",
+          "ia": 17,
+          "ib": 17,
+          "a": "日中支援加算欄 > 指定事業所番号",
+          "b": "加算欄 > 日中支援 > 指定事業所番号"
+        },
+        {
+          "table": 0,
+          "no": 19,
+          "field": "name",
+          "ia": 18,
+          "ib": 18,
+          "a": "日中支援加算欄 > 当該事業所への通所日数",
+          "b": "加算欄 > 日中支援 > 当該事業所への通所日数"
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p21",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 21,
+      "printed": "16",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 20,
+      "note": "明細書 基本情報レコードの続き",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 21,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 21.69,
+            "usage": {
+              "input_tokens": 7901,
+              "output_tokens": 6176,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003878,
+            "cost_usd_batch": 0.001939,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:55:43+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 13,
+            "text_checked": 28,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 21,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 15.12,
+            "usage": {
+              "input_tokens": 7901,
+              "output_tokens": 3004,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.045842,
+            "cost_usd_batch": 0.022921,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:55:58+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 13,
+            "text_checked": 28,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": 31,
+          "field": "name",
+          "ia": 8,
+          "ib": 8,
+          "a": "請求額集計欄合計 > 自治体助成分請求額",
+          "b": "請求額集計欄合計 > 請求額 > 自治体助成分請求額"
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p90",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 90,
+      "printed": "62-7",
+      "category": [
+        "matrix"
+      ],
+      "note": "入力必須項目と様式の対応表（基本情報レコード、R6.4〜R7.9）。56行×20列、文字が小さい",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 90,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 93.62,
+            "usage": {
+              "input_tokens": 8327,
+              "output_tokens": 29491,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.015578,
+            "cost_usd_batch": 0.007789,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:57:32+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 56,
+            "text_checked": 56,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 90,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "pdf",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 89.34,
+            "usage": {
+              "input_tokens": 8327,
+              "output_tokens": 19823,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.214884,
+            "cost_usd_batch": 0.107442,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T00:59:01+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 56,
+            "text_checked": 56,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": 24,
+          "field": "required_by",
+          "ia": 23,
+          "ib": 23,
+          "a": "- - - - - - - - - - - - - - ○ - - - -",
+          "b": "○ - - - - - - - - - - - - - ○ - - - -"
+        },
+        {
+          "table": 0,
+          "no": 25,
+          "field": "required_by",
+          "ia": 24,
+          "ib": 24,
+          "a": "- - - - - - - - - - - - - - ○ - - - -",
+          "b": "○ - - - - - - - - - - - - - ○ - - - -"
+        },
+        {
+          "table": 0,
+          "no": 26,
+          "field": "required_by",
+          "ia": 25,
+          "ib": 25,
+          "a": "- - - - - - - - - - - - - - ○ - - - -",
+          "b": "○ - - - - - - - - - - - - - ○ - - - -"
+        },
+        {
+          "table": 0,
+          "no": 38,
+          "field": "required_by",
+          "ia": 37,
+          "ib": 37,
+          "a": "- - - - - - - - - ○ - - ○ - - - - - -",
+          "b": "- - - - - - - - - - ○ - ○ - - - - - -"
+        },
+        {
+          "table": 0,
+          "no": 39,
+          "field": "required_by",
+          "ia": 38,
+          "ib": 38,
+          "a": "- - - - - - - - - ○ - - ○ - - - - - -",
+          "b": "- - - - - - - - - - ○ - ○ - - - - - -"
+        },
+        {
+          "table": 0,
+          "no": 40,
+          "field": "required_by",
+          "ia": 39,
+          "ib": 39,
+          "a": "- - - - - - - - - ○ - - ○ - - - - - -",
+          "b": "- - - - - - - - - - ○ - ○ - - - - - -"
+        }
+      ]
+    }
+  ]
+}

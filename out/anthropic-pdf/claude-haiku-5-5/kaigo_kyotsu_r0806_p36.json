@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 36,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [
+      "split"
+    ],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "pdf",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 5.8,
+    "usage": {
+      "input_tokens": 6712,
+      "output_tokens": 1177,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00126,
+    "cost_usd_batch": 0.00063,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T00:51:31+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 36,
+    "printed_page": "３１－１",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:非該当\n06:事業対象者\n11:要支援（経過的要介護）\n12:要支援１ 13:要支援２\n21:要介護１ 22:要介護２ 23:要介護３\n24:要介護４ 25:要介護５",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの印字ページ番号は「３１－１」であり、依頼文の PDF 上のページ 36 と一致しない。添付された1ページを書き起こした。",
+      "この表は見出し行から始まるが項番14のみで、前ページからの続きと判断して continued_from_prev_page を true にした。前ページ側の内容は確認できない。"
+    ]
+  },
+  "raw_text": null
+}

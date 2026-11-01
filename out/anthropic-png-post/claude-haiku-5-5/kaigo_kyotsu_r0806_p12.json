@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 12,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [
+      "simple"
+    ],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 16.94,
+    "usage": {
+      "input_tokens": 7809,
+      "output_tokens": 4067,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002814,
+    "cost_usd_batch": 0.001407,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:01:13+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 12,
+    "printed_page": "8",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・データレコードフォーマット",
+        "record": {
+          "exchange_id": null,
+          "name": "データレコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "レコード種別"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "データレコードを示す2を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "レコード番号（連番）"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "ファイル内の先頭レコードからの連番（1から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "データ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "交換情報ごとに、CSV形式でデータを設定\n設定する内容は、各交換情報の「項目説明」を参照",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "ブランク"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "改行（16進コード…0x0D0A）を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "・エンドレコードフォーマット",
+        "record": {
+          "exchange_id": null,
+          "name": "エンドレコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "レコード種別"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "エンドレコードを示す3を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "レコード番号（連番）"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "ファイル内の先頭レコードからの連番（1から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "ブランク"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "改行（16進コード…0x0D0A）を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "・コントロールレコード設定例",
+        "record": {
+          "exchange_id": null,
+          "name": "コントロールレコード",
+          "parent": null
+        },
+        "columns": [
+          "位置",
+          "設定値"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "位置1-40",
+              "設定値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1,1,0,123,999,0,0,1111111111,0,4,200004,",
+            "required": null,
+            "required_by": [],
+            "note": "設定例（データ種別999、事業所番号1111111111、処理対象年月2000年4月、ファイル管理番号1）"
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "位置41-43",
+              "設定値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1 改行コード",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "・データレコード(2レコード目)設定例",
+        "record": {
+          "exchange_id": null,
+          "name": "データレコード",
+          "parent": null
+        },
+        "columns": [
+          "位置",
+          "設定値"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "設定値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "2,2,･･･データを設定･･･",
+            "required": null,
+            "required_by": [],
+            "note": "末尾に改行コード"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "・エンドレコード(125レコード目)設定例",
+        "record": {
+          "exchange_id": null,
+          "name": "エンドレコード",
+          "parent": null
+        },
+        "columns": [
+          "位置",
+          "設定値"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "設定値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3,125,改行コード",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの下部のページ番号は「8」であり、依頼のPDF上のページ12とは一致しないが、添付画像の表記のまま記載した。",
+      "コントロールレコード設定例の位置1-40の設定値は、事業所番号が10桁であることから「1111111111」と判断したが、画像上の桁数が判読しにくい。",
+      "改行コードの16進表記「0x0D0A」は画像上で「0x0D0A」と読めたが、Oとの区別が不確かな可能性がある。",
+      "データレコード(2レコード目)設定例の「･･･」部分は省略記号として書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,629 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 17,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [
+      "merged"
+    ],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 15.52,
+    "usage": {
+      "input_tokens": 7833,
+      "output_tokens": 3262,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.048286,
+    "cost_usd_batch": 0.024143,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:04:45+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 17,
+    "printed_page": "12",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(2)介護給付費等 請求書 基本情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "基本情報レコード",
+          "parent": "介護給付費等 請求書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須（識別番号毎） > J111",
+          "※必須（識別番号毎） > J211",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※B"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を設定する(基本情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月YYYYMMを設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※C\n※1"
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※C"
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "請求金額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "請求金額を設定する。\n請求金額=合計 給付費請求額+合計 特別対策費請求額+合計 自治体助成額。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "件数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "小計 件数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4"
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "小計 単位数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4"
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "費用合計"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 費用合計",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4"
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 給付費請求額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4"
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "特別対策費請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 特別対策費請求額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2\n※7\n※8"
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "利用者負担額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 利用者負担額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4\n※5"
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "小計 介護給付費等・特例介護給付費等",
+              "自治体助成額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 自治体助成額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2"
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "小計 特定障害者特別給付費・高額障害福祉サービス費",
+              "件数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "小計 件数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2"
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "小計 特定障害者特別給付費・高額障害福祉サービス費",
+              "費用合計"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 費用合計",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": null
+              }
+            ],
+            "note": "※2"
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "小計 特定障害者特別給付費・高額障害福祉サービス費",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "小計 給付費請求額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2"
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "合計",
+              "件数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "合計 件数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※3"
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "合計",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "合計 単位数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4"
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "合計",
+              "費用合計"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "合計 費用合計",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※3"
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "合計",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "合計 給付費請求額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※3"
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "合計",
+              "特別対策費請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "合計 特別対策費請求額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2\n※7\n※8"
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "合計",
+              "利用者負担額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "合計 利用者負担額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "◎"
+              },
+              {
+                "column": "J211",
+                "value": "◎"
+              }
+            ],
+            "note": "※4\n※5"
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "合計",
+              "自治体助成額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "合計 自治体助成額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J111",
+                "value": "○"
+              },
+              {
+                "column": "J211",
+                "value": "○"
+              }
+            ],
+            "note": "※2"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目　○ : 請求内容により必要　△ : 任意設定　空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      }
+    ],
+    "uncertain": [
+      "表のカラム見出し「属性（※Z）」の※Zの注記は本ページに記載なし",
+      "項番14〜16の縦結合見出し「小計 特定障害者特別給付費・高額障害福祉サービス費」は縦書きで判読が難しく、推測を含む"
+    ]
+  },
+  "raw_text": null
+}

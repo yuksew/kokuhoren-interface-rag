@@ -1,0 +1,1642 @@
+{
+  "run": "anthropic-png",
+  "models": [
+    "claude-haiku-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "pages": [
+    {
+      "key": "kaigo_kyotsu_r0806_p12",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 12,
+      "printed": "8",
+      "category": [
+        "simple"
+      ],
+      "note": "データレコード・エンドレコードのフォーマット（小さな表が2つ）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 12,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 16.94,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 4067,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002814,
+            "cost_usd_batch": 0.001407,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:01:13+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "name",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "note",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "name",
+              "row": 1,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 3,
+              "no": null,
+              "field": "note",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 4,
+              "no": null,
+              "field": "content",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            }
+          ],
+          "stats": {
+            "tables": 5,
+            "items": 11,
+            "text_checked": 24,
+            "text_missing": 5
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 12,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 8.66,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 1541,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.031028,
+            "cost_usd_batch": 0.015514,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:01:21+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 3,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "text",
+              "table": 2,
+              "no": null,
+              "field": "content",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "text",
+              "table": 4,
+              "no": null,
+              "field": "content",
+              "row": 0,
+              "msg": "PDFのテキストレイヤに見つからない"
+            }
+          ],
+          "stats": {
+            "tables": 5,
+            "items": 10,
+            "text_checked": 20,
+            "text_missing": 2
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 2,
+          "no": null,
+          "field": "name",
+          "ia": 0,
+          "ib": 0,
+          "a": "位置1-40 > 設定値",
+          "b": "設定値"
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "content",
+          "ia": 0,
+          "ib": 0,
+          "a": "1,1,0,123,999,0,0,1111111111,0,4,200004,",
+          "b": "1,1,0,123,999,0,0,1111111111,0,4,200004,1,改行コード（位置1〜43）"
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "note",
+          "ia": 0,
+          "ib": 0,
+          "a": "設定例（データ種別999、事業所番号1111111111、処理対象年月2000年4月、ファイル管理番号1）",
+          "b": null
+        },
+        {
+          "table": 2,
+          "no": null,
+          "field": "row",
+          "ia": 1,
+          "ib": null,
+          "a": "位置41-43 > 設定値",
+          "b": null
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "content",
+          "ia": 0,
+          "ib": 0,
+          "a": "2,2,･･･データを設定･･･",
+          "b": "2,2,・・・データを設定・・・改行コード"
+        },
+        {
+          "table": 3,
+          "no": null,
+          "field": "note",
+          "ia": 0,
+          "ib": 0,
+          "a": "末尾に改行コード",
+          "b": null
+        },
+        {
+          "table": 4,
+          "no": null,
+          "field": "content",
+          "ia": 0,
+          "ib": 0,
+          "a": "3,125,改行コード",
+          "b": "3,125改行コード（位置1〜7）"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p35",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 35,
+      "printed": "31",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 36,
+      "note": "コード一覧の先頭。項番3「異動事由」、項番5「媒体区分コード」が縦結合。内容に図が入っている",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 35,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 18.61,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 5077,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003319,
+            "cost_usd_batch": 0.00166,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:01:40+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "text",
+              "table": 0,
+              "no": 6,
+              "field": "content",
+              "row": 12,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "error",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p35 の最後の表が continues_to_next_page=false"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 20,
+            "text_checked": 40,
+            "text_missing": 1
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 35,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 11.78,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 2287,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.038488,
+            "cost_usd_batch": 0.019244,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:01:52+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "text",
+              "table": 0,
+              "no": 6,
+              "field": "content",
+              "row": 12,
+              "msg": "PDFのテキストレイヤに見つからない"
+            },
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p35→p36 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 20,
+            "text_checked": 40,
+            "text_missing": 1
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continued_from_prev_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": 6,
+          "field": "content",
+          "ia": 12,
+          "ib": 12,
+          "a": "介護保険の保険者番号\n（図：×1〜×6の6桁。×6はチェックデジット。都道府県コード・市区町村コードの範囲を示す括弧付きの図あり）\n※チェックデジットはモジュラス１０方式とする",
+          "b": "介護保険の保険者番号\n(×1×2×3×4×5×6 の図:×1×2が都道府県コード、×3×4×5が市区町村コード、×6がチェックデジット)\n※チェックデジットはモジュラス10方式とする"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p36",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 36,
+      "printed": "31-1",
+      "category": [
+        "split"
+      ],
+      "pair": 35,
+      "note": "コード一覧の続き（項番14から）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 36,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 5.67,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 1067,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.001314,
+            "cost_usd_batch": 0.000657,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:01:57+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 1,
+            "text_checked": 2,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 36,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 4.09,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 402,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.019638,
+            "cost_usd_batch": 0.009819,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:02:01+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 1,
+            "text_checked": 2,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "kaigo_kyotsu_r0806_p41",
+      "doc_id": "kaigo_kyotsu_r0806",
+      "page": 41,
+      "printed": "34",
+      "category": [
+        "split",
+        "merged"
+      ],
+      "note": "ページ全体が前ページの1セル（サービス種類コードの内容）の続き。内容セルの中に縦書きの小見出しがある",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 41,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split",
+              "merged"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 12.48,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 2876,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002219,
+            "cost_usd_batch": 0.001109,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:02:14+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "項番が整数でない行が 3 行"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 3,
+            "text_checked": 5,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_kyotsu_r0806",
+            "page": 41,
+            "domain": "kaigo",
+            "volume": "共通編",
+            "edition": "令和8年6月版",
+            "title": "インタフェース仕様書 共通編",
+            "category": [
+              "split",
+              "merged"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 8.17,
+            "usage": {
+              "input_tokens": 7809,
+              "output_tokens": 1353,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.029148,
+            "cost_usd_batch": 0.014574,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:02:22+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "項番が整数でない行が 3 行"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 0,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 1,
+              "msg": "桁数が空（原文: None）"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": "length",
+              "row": 2,
+              "msg": "桁数が空（原文: None）"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 3,
+            "text_checked": 5,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p80",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 80,
+      "printed": "35",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 81,
+      "note": "介護給付費明細書の基本情報レコード（公費1〜3、被保険者情報などが縦結合）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 80,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 19.34,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 5343,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003453,
+            "cost_usd_batch": 0.001726,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:00:02+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "error",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p80 の最後の表が continues_to_next_page=false"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 65,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 80,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 12.12,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 2450,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.040126,
+            "cost_usd_batch": 0.020063,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:00:14+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p80→p81 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 65,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        }
+      ]
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p81",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 81,
+      "printed": "36",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 80,
+      "note": "基本情報レコードの続き。合計情報 > 保険/公費1 の2段結合",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 81,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 18.2,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 5261,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003412,
+            "cost_usd_batch": 0.001706,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:02:40+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 26,
+            "text_checked": 74,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 81,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 13.45,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 2787,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.043496,
+            "cost_usd_batch": 0.021748,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:02:54+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 26,
+            "text_checked": 74,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p84",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 84,
+      "printed": "38",
+      "category": [
+        "simple"
+      ],
+      "note": "明細情報レコード（結合なし、備考に複数の※）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 84,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 15.12,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 3935,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002749,
+            "cost_usd_batch": 0.001374,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:00:29+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 52,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 84,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 10.08,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 2044,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.036066,
+            "cost_usd_batch": 0.018033,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:00:39+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 52,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        }
+      ]
+    },
+    {
+      "key": "kaigo_jigyosho_r0604_p110",
+      "doc_id": "kaigo_jigyosho_r0604",
+      "page": 110,
+      "printed": "52",
+      "category": [
+        "matrix"
+      ],
+      "note": "入力必須項目と様式の対応表（明細情報レコード）。縦書きの様式名が列見出し",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 110,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 25.08,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 7892,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.004727,
+            "cost_usd_batch": 0.002364,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:03:19+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 18,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "kaigo_jigyosho_r0604",
+            "page": 110,
+            "domain": "kaigo",
+            "volume": "サービス事業所編",
+            "edition": "令和6年4月版",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 26.17,
+            "usage": {
+              "input_tokens": 7813,
+              "output_tokens": 5777,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.073396,
+            "cost_usd_batch": 0.036698,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:03:45+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 18,
+            "text_checked": 18,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "columns",
+          "a": "項番 | 項目名 | 様式第二・二の一 | 様式第二の三 | 様式第三・三の二 | 様式第四・四の二 | 様式第四の三・四の四 | 様式第五・五の二 | 様式第六～六の七 | 様式第八 | 様式第九 | 様式第九の二 | 様式第十 | 様式（予） | 備考",
+          "b": "項番 | 項目名 | 様式第二・二の二 | 様式第二の三 | 様式第三・三の二 | 様式第四・四の二 | 様式第四の三・四の四 | 様式第五・五の二 | 様式第六〜六の七 | 様式第八 | 様式第九 | 様式第九の二 | 様式第十 | 様式(予) | 備考"
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p31",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 31,
+      "printed": "26",
+      "category": [
+        "simple"
+      ],
+      "note": "明細書 明細情報レコード（必須列は1列）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 31,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 10.25,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 2659,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.002113,
+            "cost_usd_batch": 0.001056,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:03:56+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 11,
+            "text_checked": 31,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 31,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "simple"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 9.09,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 1642,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.032086,
+            "cost_usd_batch": 0.016043,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:04:05+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 11,
+            "text_checked": 31,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p17",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 17,
+      "printed": "12",
+      "category": [
+        "merged"
+      ],
+      "note": "請求書 基本情報レコード（必須が識別番号ごとの多段見出し）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 17,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 25.17,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 7305,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.004436,
+            "cost_usd_batch": 0.002218,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:04:30+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 23,
+            "text_checked": 67,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 17,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 15.52,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 3262,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.048286,
+            "cost_usd_batch": 0.024143,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:04:45+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 23,
+            "text_checked": 67,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p20",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 20,
+      "printed": "15",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 21,
+      "note": "明細書 基本情報レコード（多段見出し＋上限額管理事業所などの縦結合）",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 20,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 27.41,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 8129,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.004848,
+            "cost_usd_batch": 0.002424,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:05:13+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p20→p21 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 55,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 20,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 16.81,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 3581,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.051476,
+            "cost_usd_batch": 0.025738,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:05:30+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "ok",
+              "table": "pair",
+              "no": null,
+              "field": null,
+              "msg": "[改ページ] p20→p21 の連続性 OK"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 22,
+            "text_checked": 55,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": []
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p21",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 21,
+      "printed": "16",
+      "category": [
+        "merged",
+        "split"
+      ],
+      "pair": 20,
+      "note": "明細書 基本情報レコードの続き",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 21,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 21.28,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 6050,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.003808,
+            "cost_usd_batch": 0.001904,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:05:51+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 13,
+            "text_checked": 28,
+            "text_missing": 0
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 21,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "merged",
+              "split"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 14.84,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 2984,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.045506,
+            "cost_usd_batch": 0.022753,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:06:06+00:00",
+            "stop_details": null
+          },
+          "issues": [],
+          "stats": {
+            "tables": 1,
+            "items": 13,
+            "text_checked": 28,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "table_kind",
+          "a": "required_matrix",
+          "b": "record_layout"
+        }
+      ]
+    },
+    {
+      "key": "shogai_jigyosho_r0710_p90",
+      "doc_id": "shogai_jigyosho_r0710",
+      "page": 90,
+      "printed": "62-7",
+      "category": [
+        "matrix"
+      ],
+      "note": "入力必須項目と様式の対応表（基本情報レコード、R6.4〜R7.9）。56行×20列、文字が小さい",
+      "by_model": {
+        "claude-haiku-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 90,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-haiku-5-5",
+            "model": "claude-haiku-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 98.5,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 33191,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.017379,
+            "cost_usd_batch": 0.008689,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:07:44+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 19,
+              "field": "name",
+              "row": 18,
+              "msg": "項目名がPDFのセルと完全一致しない（部分一致のみ）: '合計 算定時間数'"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 23,
+              "field": "name",
+              "row": 22,
+              "msg": "項目名がPDFのセルと完全一致しない（部分一致のみ）: '合計 算定時間数'"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 26,
+              "field": "name",
+              "row": 25,
+              "msg": "項目名がPDFのセルと完全一致しない（部分一致のみ）: '合計 算定時間数'"
+            },
+            {
+              "level": "warn",
+              "table": 0,
+              "no": 29,
+              "field": "name",
+              "row": 28,
+              "msg": "項目名がPDFのセルと完全一致しない（部分一致のみ）: '合計 算定時間数'"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 56,
+            "text_checked": 56,
+            "text_missing": 0,
+            "name_partial": 4
+          }
+        },
+        "claude-sonnet-5-5": {
+          "meta": {
+            "doc_id": "shogai_jigyosho_r0710",
+            "page": 90,
+            "domain": "shogai",
+            "volume": "サービス事業所編",
+            "edition": "令和7年10月施行分",
+            "title": "インタフェース仕様書 サービス事業所編",
+            "category": [
+              "matrix"
+            ],
+            "requested_model": "claude-sonnet-5-5",
+            "model": "claude-sonnet-5-5",
+            "provider": "anthropic",
+            "input": "png",
+            "effort": "medium",
+            "stop_reason": "end_turn",
+            "request_id": null,
+            "latency_s": 36.67,
+            "usage": {
+              "input_tokens": 7833,
+              "output_tokens": 8136,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.097026,
+            "cost_usd_batch": 0.048513,
+            "parsed_ok": true,
+            "created_at": "2026-11-01T01:08:21+00:00",
+            "stop_details": null
+          },
+          "issues": [
+            {
+              "level": "warn",
+              "table": 0,
+              "no": null,
+              "field": null,
+              "row": null,
+              "msg": "必須（列別）の列数が行によって違う（49 行が 19 列未満）。空欄の列を省略した可能性"
+            }
+          ],
+          "stats": {
+            "tables": 1,
+            "items": 56,
+            "text_checked": 56,
+            "text_missing": 0
+          }
+        }
+      },
+      "diffs": [
+        {
+          "table": 0,
+          "no": null,
+          "field": "continues_to_next_page",
+          "a": false,
+          "b": true
+        },
+        {
+          "table": 0,
+          "no": null,
+          "field": "columns",
+          "a": "0101 居宅介護 | 0201 行動援護 | 0301 重度訪問介護３－１ | 0401 重度包括 | 0601 短期入所 | 0701 生活介護 | 0901 施設入所支援 | 1301 自立訓練（機能訓練） | 1401 自立訓練（生活訓練） | 1501 宿泊型自立訓練 | 1601 就労移行支援 | 1701 就労継続支援 | 1801 共同生活援助18－1 | 1802 共同生活援助18－2 | 1901 同行援護 | 2001 地域移行支援 | 2101 地域定着支援 | 2201 就労定着支援 | 2301 自立生活援助",
+          "b": "項番 | 項目名 | 0101 居宅介護 | 0201 行動援護 | 0301 重度訪問介護3-1 | 0401 重度包括 | 0601 短期入所 | 0701 生活介護 | 0901 施設入所支援 | 1301 自立訓練（機能訓練） | 1401 自立訓練（生活訓練） | 1501 宿泊型自立訓練 | 1601 就労移行支援 | 1701 就労継続支援 | 1801 共同生活援助18-1 | 1802 共同生活援助18-2 | 1901 同行援護 | 2001 地域移行支援 | 2101 地域定着支援 | 2201 就労定着支援 | 2301 自立生活援助"
+        },
+        {
+          "table": 0,
+          "no": 19,
+          "field": "name",
+          "ia": 18,
+          "ib": 18,
+          "a": "合計１ > 合計 算定時間数",
+          "b": "合計1 > 合計 算定時間数計"
+        },
+        {
+          "table": 0,
+          "no": 23,
+          "field": "name",
+          "ia": 22,
+          "ib": 22,
+          "a": "合計２ > 合計 算定時間数",
+          "b": "合計2 > 合計 算定時間数計"
+        },
+        {
+          "table": 0,
+          "no": 26,
+          "field": "name",
+          "ia": 25,
+          "ib": 25,
+          "a": "合計３ > 合計 算定時間数",
+          "b": "合計3 > 合計 算定時間数計"
+        },
+        {
+          "table": 0,
+          "no": 29,
+          "field": "name",
+          "ia": 28,
+          "ib": 28,
+          "a": "合計４ > 合計 算定時間数",
+          "b": "合計4 > 合計 算定時間数計"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 80,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [
+      "merged",
+      "split"
+    ],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "pdf",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 17.16,
+    "usage": {
+      "input_tokens": 7693,
+      "output_tokens": 4594,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003066,
+    "cost_usd_batch": 0.001533,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T00:52:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 80,
+    "printed_page": "35",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "基本情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "基本情報レコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": null,
+            "length_raw": null,
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１"
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "０１を設定する（基本情報レコード）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２"
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "請求を行ったサービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証に記載された保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費１負担対象の場合公費１負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費１負担対象の場合公費１受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費２負担対象の場合公費２負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費２負担対象の場合公費２受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費３負担対象の場合公費３負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "公費３負担対象の場合公費３受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４"
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者の性別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "要介護状態区分を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "旧措置入所者特例コード"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "旧措置入所者特例の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "認定有効期間 開始年月日"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "認定有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４"
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "認定有効期間 終了年月日"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "認定有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４"
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス計画作成者の区分（作成者区分）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３"
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "事業所番号（居宅介護支援事業所）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "居宅介護支援事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "項番１９が「居宅介護支援事業所作成」又は「介護予防支援事業所・地域包括支援センター作成」のとき必須"
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "開始年月日"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "サービス開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４"
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "中止年月日"
+            ],
+            "type": "数字",
+            "length": null,
+            "length_raw": null,
+            "content": "サービス中止年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ下部のページ番号欄は空欄に見えたため、printed_page はページ上部の「３５」を採用した。",
+      "項番7〜12の負担者番号・受給者番号は縦結合の欄（公費1〜3）が画像上に見えるが文字が読めないため、公費区分を name_path に含めていない。",
+      "項番5の項目名『証記載保険者番号』は原文のまま。前に語が欠けている可能性がある。",
+      "※1〜※4の注記本文はこのページに含まれていないため footnotes は空。",
+      "表が最終行（項番22）でページ下端まで続いており、後続項番があると見て continues_to_next_page を true にした。"
+    ]
+  },
+  "raw_text": null
+}

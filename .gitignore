@@ -1,0 +1,9 @@
+.venv/
+.env
+__pycache__/
+out/mock-*/
+reports/*.mock-*.*
+# 原本PDF（約72MB）は sources/manifest.yaml + src/fetch.py で sha256 照合つきで再取得できるので入れない
+sources/raw/
+*.part
+*.new

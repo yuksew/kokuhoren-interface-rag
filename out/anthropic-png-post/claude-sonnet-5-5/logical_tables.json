@@ -1,0 +1,10928 @@
+[
+ {
+  "doc_id": "kaigo_jigyosho_r0604",
+  "pages": [
+   80,
+   81
+  ],
+  "table_kind": "record_layout",
+  "title": "・基本情報レコード",
+  "record": {
+   "exchange_id": null,
+   "name": "基本情報レコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "属性",
+   "ﾊﾞｲﾄ数",
+   "内容",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "交換情報識別番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※1",
+    "note_refs": [
+     {
+      "mark": "※1",
+      "text": null,
+      "source": null
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "０１を設定する（基本情報レコード）",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": null,
+      "source": null
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "１０",
+    "content": "請求を行ったサービス事業所等の事業所番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "証記載保険者番号"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "被保険者証に記載された保険者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "被保険者番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "１０",
+    "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "公費1",
+     "負担者番号"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費1負担対象の場合公費1負担者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "公費1",
+     "受給者番号"
+    ],
+    "type": "数字",
+    "length": 7,
+    "length_raw": "7",
+    "content": "公費1負担対象の場合公費1受給者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "公費2",
+     "負担者番号"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費2負担対象の場合公費2負担者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 10,
+    "no_raw": "１０",
+    "name_path": [
+     "公費2",
+     "受給者番号"
+    ],
+    "type": "数字",
+    "length": 7,
+    "length_raw": "7",
+    "content": "公費2負担対象の場合公費2受給者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "１１",
+    "name_path": [
+     "公費3",
+     "負担者番号"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費3負担対象の場合公費3負担者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 12,
+    "no_raw": "１２",
+    "name_path": [
+     "公費3",
+     "受給者番号"
+    ],
+    "type": "数字",
+    "length": 7,
+    "length_raw": "7",
+    "content": "公費3負担対象の場合公費3受給者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 13,
+    "no_raw": "１３",
+    "name_path": [
+     "被保険者情報",
+     "生年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 14,
+    "no_raw": "１４",
+    "name_path": [
+     "被保険者情報",
+     "性別コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "被保険者の性別を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 15,
+    "no_raw": "１５",
+    "name_path": [
+     "被保険者情報",
+     "要介護状態区分コード"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "要介護状態区分を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 16,
+    "no_raw": "１６",
+    "name_path": [
+     "被保険者情報",
+     "旧措置入所者特例コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "旧措置入所者特例の有無を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 17,
+    "no_raw": "１７",
+    "name_path": [
+     "被保険者情報",
+     "認定有効期間　開始年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "認定有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 18,
+    "no_raw": "１８",
+    "name_path": [
+     "被保険者情報",
+     "認定有効期間　終了年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "認定有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 19,
+    "no_raw": "１９",
+    "name_path": [
+     "居宅サービス計画",
+     "居宅サービス計画作成区分コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "居宅サービス計画作成者の区分(作成者区分)を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "数字数字数字数字合計情報保険サービス単位数数字",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 20,
+    "no_raw": "２０",
+    "name_path": [
+     "居宅サービス計画",
+     "事業所番号（居宅介護支援事業所）"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "１０",
+    "content": "居宅介護支援事業所番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "項番１９が「居宅介護支援事業所作成」又は「介護予防支援事業所・地域包括支援センター作成」のとき必須"
+   },
+   {
+    "no": 21,
+    "no_raw": "２１",
+    "name_path": [
+     "開始年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "サービス開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 22,
+    "no_raw": "２２",
+    "name_path": [
+     "中止年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "サービス中止年月日（西暦年月日(YYYYMMDD)）を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 23,
+    "no_raw": "２３",
+    "name_path": [
+     "中止理由・入所(院)前の状況コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "中止理由又は入所(院)前の状況を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 24,
+    "no_raw": "２４",
+    "name_path": [
+     "入所(院)年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "施設への入所(院)年月日(西暦年月日(YYYYMMDD))を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4\n※5",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成14年1月以降の短期入所サービスについて、前月から継続して入所している場合はその入所日を設定、それ以外の場合は当該月の最初の入所日を設定する。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 25,
+    "no_raw": "２５",
+    "name_path": [
+     "退所(院)年月日"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "施設の退所(院)年月日(西暦年月日(YYYYMMDD))を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※4\n※6",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※6",
+      "text": "サービス提供年月が平成14年1月以降の短期入所サービスについて、当該月における最初の退所日を設定する。月末日において入所継続中の場合は設定不要。ただし、連続入所が30日を超える場合は、30日目を退所日とみなして設定する。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 26,
+    "no_raw": "２６",
+    "name_path": [
+     "入所(院)実日数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "入所(院)期間中の実入所(院)日数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 27,
+    "no_raw": "２７",
+    "name_path": [
+     "外泊日数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "入所(院)期間中の外泊として精算可能な日数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 28,
+    "no_raw": "２８",
+    "name_path": [
+     "退所(院)後の状態コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "退所(院)後の状況を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 29,
+    "no_raw": "２９",
+    "name_path": [
+     "保険給付率"
+    ],
+    "type": "数字",
+    "length": 3,
+    "length_raw": "3",
+    "content": "保険分給付率を設定する",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 30,
+    "no_raw": "３０",
+    "name_path": [
+     "公費1給付率"
+    ],
+    "type": "数字",
+    "length": 3,
+    "length_raw": "3",
+    "content": "公費1分給付率を設定する",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 31,
+    "no_raw": "３１",
+    "name_path": [
+     "公費2給付率"
+    ],
+    "type": "数字",
+    "length": 3,
+    "length_raw": "3",
+    "content": "公費2分給付率を設定する",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 32,
+    "no_raw": "３２",
+    "name_path": [
+     "公費3給付率"
+    ],
+    "type": "数字",
+    "length": 3,
+    "length_raw": "3",
+    "content": "公費3分給付率を設定する",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 33,
+    "no_raw": "３３",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "サービス単位数"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "サービス単位数の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 34,
+    "no_raw": "３４",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "請求額"
+    ],
+    "type": "数字",
+    "length": 9,
+    "length_raw": "9",
+    "content": "保険請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 35,
+    "no_raw": "３５",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "利用者負担額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "利用者負担額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 36,
+    "no_raw": "３６",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "緊急時施設療養費請求額"
+    ],
+    "type": "数字",
+    "length": 9,
+    "length_raw": "9",
+    "content": "緊急時施設療養費又は緊急時施設診療費保険請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 37,
+    "no_raw": "３７",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "特定診療費請求額"
+    ],
+    "type": "数字",
+    "length": 9,
+    "length_raw": "9",
+    "content": "特定診療費、特別療養費又は特別診療費保険請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 38,
+    "no_raw": "３８",
+    "name_path": [
+     "合計情報",
+     "保険",
+     "特定入所者介護サービス費等請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "特定入所者介護サービス費等の保険請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※7\n※S",
+    "note_refs": [
+     {
+      "mark": "※7",
+      "text": "平成17年9月サービス以前は、食事提供費用にかかる値を設定する。平成17年10月サービス以降は、特定入所者介護サービス費等費用にかかる値を設定する。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 39,
+    "no_raw": "３９",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "サービス単位数"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費1対象のサービス単位数の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 40,
+    "no_raw": "４０",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費1請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 41,
+    "no_raw": "４１",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "本人負担額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費1本人負担額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 42,
+    "no_raw": "４２",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "緊急時施設療養費請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "緊急時施設療養費又は緊急時施設診療費公費1請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 43,
+    "no_raw": "４３",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "特定診療費請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "特定診療費、特別療養費又は特別診療費公費1請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 44,
+    "no_raw": "４４",
+    "name_path": [
+     "合計情報",
+     "公費1",
+     "特定入所者介護サービス費等請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "特定入所者介護サービス費等の公費1請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※7\n※S",
+    "note_refs": [
+     {
+      "mark": "※7",
+      "text": "平成17年9月サービス以前は、食事提供費用にかかる値を設定する。平成17年10月サービス以降は、特定入所者介護サービス費等費用にかかる値を設定する。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 45,
+    "no_raw": "４５",
+    "name_path": [
+     "合計情報",
+     "公費2",
+     "サービス単位数"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費2対象のサービス単位数の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 46,
+    "no_raw": "４６",
+    "name_path": [
+     "合計情報",
+     "公費2",
+     "請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費2請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 47,
+    "no_raw": "４７",
+    "name_path": [
+     "合計情報",
+     "公費2",
+     "本人負担額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "公費2本人負担額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 48,
+    "no_raw": "４８",
+    "name_path": [
+     "合計情報",
+     "公費2",
+     "緊急時施設療養費請求額"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "緊急時施設療養費又は緊急時施設診療費公費2請求額の合計を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   48
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_jigyosho_r0604",
+  "pages": [
+   84
+  ],
+  "table_kind": "record_layout",
+  "title": "・明細情報レコード（複数レコード）",
+  "record": {
+   "exchange_id": null,
+   "name": "明細情報レコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "属性",
+   "バイト数",
+   "内容",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "交換情報識別番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※1",
+    "note_refs": [
+     {
+      "mark": "※1",
+      "text": "設定する内容は様式による。様式と交換情報識別番号の対応は P15 を参照のこと。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "０２を設定する（明細情報レコード）",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月」欄」参照。(P.42)",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "請求を行ったサービス事業所等の事業所番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "証記載保険者番号"
+    ],
+    "type": "数字",
+    "length": 8,
+    "length_raw": "8",
+    "content": "被保険者証記載の保険者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "被保険者番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "サービス種類コード"
+    ],
+    "type": "英数",
+    "length": 2,
+    "length_raw": "2",
+    "content": "サービス種類コードを設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3\n※5",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "page"
+     },
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "サービス項目コード"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "サービス項目コードを設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※3\n※5",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+      "source": "page"
+     },
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "単位数"
+    ],
+    "type": "数字",
+    "length": 4,
+    "length_raw": "4",
+    "content": "単位数を設定する\n食事サービスの場合、単価を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※5\n※6\n※7\n※S",
+    "note_refs": [
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+      "source": "page"
+     },
+     {
+      "mark": "※6",
+      "text": "以下のサービスを記載する場合には、“0”またはNULL を設定する。・  福祉用具貸与(介護予防を含む)・  特定施設入居者生活介護における外部サービス利用型の福祉用具貸与及び地域密着型通所介護(療養通所介護)(ただし、日割り計算用のサービスコードを記載する場合を除く)・  介護予防特定施設入居者生活介護における外部サービス利用型の介護予防訪問介護、介護予防通所介護、介護予防通所リハ、介護予防福祉用具貸与(ただし、日割り計算用のサービスコードを記載する場合を除く)・  訪問看護(定期巡回・随時対応型訪問介護看護)、介護予防訪問介護、介護予防通所介護、介護予防通所リハビリテーション、夜間対応型訪問介護、小規模多機能型居宅介護(介護予防を含む)、定期巡回・随時対応型訪問介護看護、複合型サービス(看護小規模多機能型居宅介護)、地域密着型通所介護(療養通所介護)、訪問型サービス(みなし)、訪問型サービス(独自)、通所型サービス(みなし)及び通所型サービス(独自)(ただし、日割り計算用のサービスコード並びに算定単位が「1 回につき」及び「1 日につき」のサービスコードを記載する場合を除く)・  訪問介護(指定居宅介護事業所で障害者居宅介護従業者基礎研修課程修了者等により行われる場合、指定居宅介護事業所で重度訪問介護従業者養成研修修了者により行われる場合又は指定重度訪問介護事業所が行う場合)、通所介護、短期入所生活介護、介護予防短期入所生活介護、地域密着型通所介護における共生型サービス・  訪問介護、訪問入浴介護、訪問看護、訪問リハビリテーション、介護予防訪問入浴介護、介護予防訪問看護、介護予防訪問リハビリテーション、夜間対応型訪問介護における事業所と同一建物の利用者又はこれ以外の同一建物の利用者20 人以上にサービスを行う場合・  通所リハビリテーションにおける生活行為向上リハビリテーションの実施後にリハビリテーションを継続した場合の減算・  介護療養施設における移行計画が未提出である場合の減算",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※7",
+      "text": "介護予防・日常生活支援総合事業の保険者独自(定率)サービス、保険者独自(定額)サービスにおいて、算定単位が「1 月につき」のサービスコードを記載する場合、単位数の記載を省略できる。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 10,
+    "no_raw": "10",
+    "name_path": [
+     "日数・回数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "日数または回数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※5\n※S",
+    "note_refs": [
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+      "source": "page"
+     },
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "11",
+    "name_path": [
+     "公費1対象日数・回数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "公費1対象日数・回数",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 12,
+    "no_raw": "12",
+    "name_path": [
+     "公費2対象日数・回数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "公費2対象日数・回数",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 13,
+    "no_raw": "13",
+    "name_path": [
+     "公費3対象日数・回数"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "公費3対象日数・回数",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 14,
+    "no_raw": "14",
+    "name_path": [
+     "サービス単位数"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "対象分のサービス単位数を設定する\n食事サービスの場合、金額を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※5\n※S",
+    "note_refs": [
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+      "source": "page"
+     },
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 15,
+    "no_raw": "15",
+    "name_path": [
+     "公費1対象サービス単位数"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "公費1対象分のサービス単位数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 16,
+    "no_raw": "16",
+    "name_path": [
+     "公費2対象サービス単位数"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "公費2対象分のサービス単位数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 17,
+    "no_raw": "17",
+    "name_path": [
+     "公費3対象サービス単位数"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "公費3対象分のサービス単位数を設定する",
+    "required": null,
+    "required_by": [],
+    "note": "※S",
+    "note_refs": [
+     {
+      "mark": "※S",
+      "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 18,
+    "no_raw": "18",
+    "name_path": [
+     "摘要"
+    ],
+    "type": "英数",
+    "length": 20,
+    "length_raw": "20",
+    "content": null,
+    "required": null,
+    "required_by": [],
+    "note": "※8",
+    "note_refs": [
+     {
+      "mark": "※8",
+      "text": "以下のサービスを記載する場合には、XXXXX-YYYYYY(XXXXX:企業コード、YYYYYY:商品コード)の12 桁のコードを設定する。・  福祉用具貸与(介護予防を含む)・  特定施設入居者生活介護における外部サービス利用型の福祉用具貸与・  介護予防特定施設入居者生活介護における外部サービス利用型の介護予防福祉用具貸与",
+      "source": "next_page_textlayer"
+     }
+    ]
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   18
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_jigyosho_r0604",
+  "pages": [
+   110
+  ],
+  "table_kind": "required_matrix",
+  "title": "明細情報レコード（複数レコード）",
+  "record": {
+   "exchange_id": null,
+   "name": "明細情報レコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "様式第二・二の二",
+   "様式第二の三",
+   "様式第三・三の二",
+   "様式第四・四の二",
+   "様式第四の三・四の四",
+   "様式第五・五の二",
+   "様式第六〜六の七",
+   "様式第八",
+   "様式第九",
+   "様式第九の二",
+   "様式第十",
+   "様式(予)",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "証記載保険者番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "被保険者番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "サービス種類コード"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "サービス項目コード"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "単位数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 10,
+    "no_raw": "１０",
+    "name_path": [
+     "日数・回数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 11,
+    "no_raw": "１１",
+    "name_path": [
+     "公費1対象日数・回数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 12,
+    "no_raw": "１２",
+    "name_path": [
+     "公費2対象日数・回数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 13,
+    "no_raw": "１３",
+    "name_path": [
+     "公費3対象日数・回数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 14,
+    "no_raw": "１４",
+    "name_path": [
+     "サービス単位数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "◎"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "◎"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "◎"
+     },
+     {
+      "column": "様式第八",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九",
+      "value": "◎"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "◎"
+     },
+     {
+      "column": "様式第十",
+      "value": "◎"
+     },
+     {
+      "column": "様式(予)",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 15,
+    "no_raw": "１５",
+    "name_path": [
+     "公費1対象サービス単位数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 16,
+    "no_raw": "１６",
+    "name_path": [
+     "公費2対象サービス単位数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 17,
+    "no_raw": "１７",
+    "name_path": [
+     "公費3対象サービス単位数"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 18,
+    "no_raw": "１８",
+    "name_path": [
+     "摘要"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "様式第二・二の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第二の三",
+      "value": "○"
+     },
+     {
+      "column": "様式第三・三の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四・四の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第四の三・四の四",
+      "value": "○"
+     },
+     {
+      "column": "様式第五・五の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第六〜六の七",
+      "value": "○"
+     },
+     {
+      "column": "様式第八",
+      "value": "○"
+     },
+     {
+      "column": "様式第九",
+      "value": "○"
+     },
+     {
+      "column": "様式第九の二",
+      "value": "○"
+     },
+     {
+      "column": "様式第十",
+      "value": "○"
+     },
+     {
+      "column": "様式(予)",
+      "value": "○"
+     }
+    ],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   18
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   12
+  ],
+  "table_kind": "record_layout",
+  "title": "・データレコードフォーマット",
+  "record": {
+   "exchange_id": null,
+   "name": "データレコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目",
+   "属性",
+   "バイト数",
+   "内容"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "レコード種別"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "データレコードを示す2を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード番号（連番）"
+    ],
+    "type": "数字",
+    "length": 9,
+    "length_raw": "9",
+    "content": "ファイル内の先頭レコードからの連番（１から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "データ"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "交換情報ごとに、CSV形式でデータを設定\n設定する内容は、各交換情報の「項目説明」を参照",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "ブランク"
+    ],
+    "type": "英数",
+    "length": 2,
+    "length_raw": "2",
+    "content": "改行（16進ｺｰﾄﾞ…0x0D0A）を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   4
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   12
+  ],
+  "table_kind": "record_layout",
+  "title": "・エンドレコードフォーマット",
+  "record": {
+   "exchange_id": null,
+   "name": "エンドレコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目",
+   "属性",
+   "バイト数",
+   "内容"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "レコード種別"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "エンドレコードを示す3を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード番号（連番）"
+    ],
+    "type": "数字",
+    "length": 9,
+    "length_raw": "9",
+    "content": "ファイル内の先頭レコードからの連番（１から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "ブランク"
+    ],
+    "type": "英数",
+    "length": 2,
+    "length_raw": "2",
+    "content": "改行（16進ｺｰﾄﾞ…0x0D0A）を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   3
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   12
+  ],
+  "table_kind": "other",
+  "title": "・コントロールレコード設定例",
+  "record": {
+   "exchange_id": null,
+   "name": null,
+   "parent": null
+  },
+  "columns": [
+   "位置",
+   "設定値"
+  ],
+  "items": [
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [
+     "設定値"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "1,1,0,123,999,0,0,1111111111,0,4,200004,1,改行コード（位置1〜43）",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": null,
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   12
+  ],
+  "table_kind": "other",
+  "title": "・データレコード（2レコード目）設定例",
+  "record": {
+   "exchange_id": null,
+   "name": null,
+   "parent": null
+  },
+  "columns": [
+   "位置",
+   "設定値"
+  ],
+  "items": [
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [
+     "設定値"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "2,2,・・・データを設定・・・改行コード",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": null,
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   12
+  ],
+  "table_kind": "other",
+  "title": "・エンドレコード（125レコード目）設定例",
+  "record": {
+   "exchange_id": null,
+   "name": null,
+   "parent": null
+  },
+  "columns": [
+   "位置",
+   "設定値"
+  ],
+  "items": [
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [
+     "設定値"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "3,125改行コード（位置1〜7）",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": null,
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   35,
+   36
+  ],
+  "table_kind": "code_list",
+  "title": "1.4 コード一覧",
+  "record": {
+   "exchange_id": null,
+   "name": null,
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "コード名称",
+   "属性",
+   "バイト数",
+   "内容"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "交換情報を識別するための番号",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "異動区分コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:新規 2:変更 3:終了",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "受給者異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:受給資格取得 02:受給資格喪失\n03:広域連合における受給者の市町村間異動(政令市における受給者の区間異動)\n04:合併による新規\n99:その他異動",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "事業所異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:固定値(省略可能)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "保険者異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:固定値(省略可能)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "広域連合異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:固定値(省略可能)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "市町村固有情報異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:固定値(省略可能)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "市町村特別給付異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:固定値(省略可能)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "異動事由",
+     "個人番号異動事由"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01:受給者台帳の異動(新規、区間異動等)\n02:個人番号の変更による異動",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "訂正区分コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:(未使用) 2:修正 3:削除",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "媒体区分コード",
+     "保険者等"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:伝送 2:MO 4:FD (5:紙)\n※CD-Rの場合は「4:FD」を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "媒体区分コード",
+     "事業所"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "2:MO 4:FD (5:紙)\n1または7:伝送(インターネット)\n※CD-Rの場合は「4:FD」を設定",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "保険者番号"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "介護保険の保険者番号\n(×1×2×3×4×5×6 の図:×1×2が都道府県コード、×3×4×5が市区町村コード、×6がチェックデジット)\n※チェックデジットはモジュラス10方式とする",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "証記載保険者番号"
+    ],
+    "type": "数字",
+    "length": 6,
+    "length_raw": "6",
+    "content": "被保険者証記載の保険者番号\n広域連合(政令市)の場合は市町村コード(行政区番号)",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "市町村コード"
+    ],
+    "type": "数字",
+    "length": 3,
+    "length_raw": "3",
+    "content": "総務省にて定めるコード",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "年号コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:明治 2:大正 3:昭和 4:平成 5:令和",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 10,
+    "no_raw": "１０",
+    "name_path": [
+     "保険者区分コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:単独保険者 2:政令市 3:広域連合の保険者",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 11,
+    "no_raw": "１１",
+    "name_path": [
+     "被保険者番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "１０",
+    "content": "介護保険の被保険者番号\n被保険者証記載の被保険者番号が１０桁に満たない場合は右詰とし、左側を0で埋める\n福祉事務所から提供される生活保護受給者については先頭の１桁を“H”とすること",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 12,
+    "no_raw": "１２",
+    "name_path": [
+     "性別コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:男 2:女",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 13,
+    "no_raw": "１３",
+    "name_path": [
+     "みなし要介護区分コード"
+    ],
+    "type": "数字",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:通常の認定\n2:みなし認定(旧措置入所者)\n3:やむを得ない事由",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 14,
+    "no_raw": "１４",
+    "name_path": [
+     "要介護状態区分コード"
+    ],
+    "type": "数字",
+    "length": 2,
+    "length_raw": "２",
+    "content": "01:非該当\n06:事業対象者\n11:要支援（経過的要介護）\n12:要支援１ 13:要支援２\n21:要介護１ 22:要介護２ 23:要介護３\n24:要介護４ 25:要介護５",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   14
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "kaigo_kyotsu_r0806",
+  "pages": [
+   41
+  ],
+  "table_kind": "code_list",
+  "title": null,
+  "record": {
+   "exchange_id": null,
+   "name": null,
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "コード名称",
+   "属性",
+   "バイト数",
+   "内容"
+  ],
+  "items": [
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "75:介護予防小規模多機能型居宅介護\n76:定期巡回・随時対応型訪問介護看護\n77:複合型サービス（看護小規模多機能型居宅介護）\n78:地域密着型通所介護\n79:複合型サービス（看護小規模多機能型居宅介護・短期利用型）\n81:市町村特別給付",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [
+     "介護予防・日常生活支援総合事業サービス（経過措置）"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "40:ケアマネジメント\n47:生活支援サービス（配食）\n48:生活支援サービス（見守り）\n49:生活支援サービス（その他）\n82:訪問型予防サービス\n83:通所型予防サービス\n84:介護予防訪問入浴介護\n85:介護予防訪問看護\n86:介護予防訪問リハビリテーション\n87:介護予防通所リハビリテーション\n88:介護予防福祉用具貸与\n89:介護予防短期入所生活介護\n90:介護予防短期入所療養介護（介護老人保健施設）\n91:介護予防短期入所療養介護（介護療養型医療施設等）\n92:介護予防居宅療養管理指導\n93:介護予防特定施設入居者生活介護\n94:介護予防認知症対応型通所介護\n95:介護予防小規模多機能型居宅介護\n96:介護予防認知症対応型共同生活介護\n97:介護予防認知症対応型共同生活介護（短期利用型）",
+    "required": null,
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": null,
+    "no_raw": null,
+    "name_path": [
+     "介護予防・日常生活支援総合事業サービス"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": "A1:訪問型サービス（みなし）\nA2:訪問型サービス（独自）\nA3:訪問型サービス（独自／定率）\nA4:訪問型サービス（独自／定額）\nA5:通所型サービス（みなし）\nA6:通所型サービス（独自）\nA7:通所型サービス（独自／定率）\nA8:通所型サービス（独自／定額）\nA9:その他の生活支援サービス（配食／定率）\nAA:その他の生活支援サービス（配食／定額）\nAB:その他の生活支援サービス（見守り／定率）\nAC:その他の生活支援サービス（見守り／定額）\nAD:その他の生活支援サービス（その他／定率）\nAE:その他の生活支援サービス（その他／定額）\nAF:介護予防ケアマネジメント",
+    "required": null,
+    "required_by": [],
+    "note": null
+   }
+  ],
+  "starts_mid_table": true,
+  "no_range": null,
+  "no_gaps": []
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "pages": [
+   17
+  ],
+  "table_kind": "record_layout",
+  "title": "(2)介護給付費等 請求書 基本情報レコード",
+  "record": {
+   "exchange_id": null,
+   "name": "基本情報レコード",
+   "parent": "介護給付費等 請求書"
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "属性（※Z）",
+   "バイト数",
+   "内容",
+   "※必須（識別番号毎） > J111",
+   "※必須（識別番号毎） > J211",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "交換情報識別番号を設定する。",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※B",
+    "note_refs": [
+     {
+      "mark": "※B",
+      "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": "コード値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01を設定する(基本情報レコード)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "サービスを提供した年月(西暦年月YYYYMMを設定する)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※Y",
+    "note_refs": [
+     {
+      "mark": "※Y",
+      "text": "市町村番号コード値受給者証に記載された市町村番号(チェックデジット1 桁含む)◎◎◎◎◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "市町村番号"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※C\n※1",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     },
+     {
+      "mark": "※1",
+      "text": "◎◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "サービスを提供した事業所番号",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "請求金額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "請求金額を設定する。\n請求金額=合計 給付費請求額+合計 特別対策費請求額+合計 自治体助成額。",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "件数"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "小計 件数",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "単位数"
+    ],
+    "type": "数値",
+    "length": 9,
+    "length_raw": "9",
+    "content": "小計 単位数",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "費用合計"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 費用合計",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 10,
+    "no_raw": "10",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "給付費請求額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 給付費請求額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "11",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "特別対策費請求額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 特別対策費請求額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2\n※7\n※8",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※7",
+      "text": "サービス提供年月が平成25 年4 月以降は、設定しない。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※8",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 12,
+    "no_raw": "12",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "利用者負担額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 利用者負担額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4\n※5",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※5",
+      "text": "自治体助成額数値サービス種類毎の自治体助成額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 13,
+    "no_raw": "13",
+    "name_path": [
+     "小計 介護給付費等・特例介護給付費等",
+     "自治体助成額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 自治体助成額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 14,
+    "no_raw": "14",
+    "name_path": [
+     "小計 特定障害者特別給付費・高額障害福祉サービス費",
+     "件数"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "小計 件数",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 15,
+    "no_raw": "15",
+    "name_path": [
+     "小計 特定障害者特別給付費・高額障害福祉サービス費",
+     "費用合計"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 費用合計",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": null
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 16,
+    "no_raw": "16",
+    "name_path": [
+     "小計 特定障害者特別給付費・高額障害福祉サービス費",
+     "給付費請求額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "小計 給付費請求額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 17,
+    "no_raw": "17",
+    "name_path": [
+     "合計",
+     "件数"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "合計 件数",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "事業所番号英数サービスを提供した事業所番号◎◎◎◎◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 18,
+    "no_raw": "18",
+    "name_path": [
+     "合計",
+     "単位数"
+    ],
+    "type": "数値",
+    "length": 9,
+    "length_raw": "9",
+    "content": "合計 単位数",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 19,
+    "no_raw": "19",
+    "name_path": [
+     "合計",
+     "費用合計"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "合計 費用合計",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "事業所番号英数サービスを提供した事業所番号◎◎◎◎◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 20,
+    "no_raw": "20",
+    "name_path": [
+     "合計",
+     "給付費請求額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "合計 給付費請求額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※3",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "事業所番号英数サービスを提供した事業所番号◎◎◎◎◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 21,
+    "no_raw": "21",
+    "name_path": [
+     "合計",
+     "特別対策費請求額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "合計 特別対策費請求額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2\n※7\n※8",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※7",
+      "text": "サービス提供年月が平成25 年4 月以降は、設定しない。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※8",
+      "text": "",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 22,
+    "no_raw": "22",
+    "name_path": [
+     "合計",
+     "利用者負担額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "合計 利用者負担額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "◎"
+     },
+     {
+      "column": "J211",
+      "value": "◎"
+     }
+    ],
+    "note": "※4\n※5",
+    "note_refs": [
+     {
+      "mark": "※4",
+      "text": "特別対策費請求額数値サービス種類毎の特別対策費請求額○○",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※5",
+      "text": "自治体助成額数値サービス種類毎の自治体助成額○○",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 23,
+    "no_raw": "23",
+    "name_path": [
+     "合計",
+     "自治体助成額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "合計 自治体助成額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J111",
+      "value": "○"
+     },
+     {
+      "column": "J211",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "○◎",
+      "source": "next_page_textlayer"
+     }
+    ]
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   23
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "pages": [
+   20,
+   21
+  ],
+  "table_kind": "record_layout",
+  "title": "(2)介護給付費等 明細書 基本情報レコード",
+  "record": {
+   "exchange_id": null,
+   "name": "基本情報レコード",
+   "parent": "介護給付費等 明細書"
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "属性(※Z)",
+   "バイト数",
+   "内容",
+   "※必須(識別番号毎) > J121",
+   "※必須(識別番号毎) > J131",
+   "※必須(識別番号毎) > J141",
+   "※必須(識別番号毎) > J221",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "当情報の内容を識別するための番号",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※B",
+    "note_refs": [
+     {
+      "mark": "※B",
+      "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": "コード値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "01 を設定する(基本情報レコード)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "サービスを提供した年月(西暦年月 YYYYMMを設定する)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※Y",
+    "note_refs": [
+     {
+      "mark": "※Y",
+      "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "市町村番号"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "受給者証に記載された市町村番号(チェックデジット 1 桁含む)",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "サービスを提供した事業所番号",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "受給者証番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "受給者証に記載されている受給者証番号",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "助成自治体番号"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "助成自治体がある場合、市町村番号を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "支給決定者氏名カナ"
+    ],
+    "type": "英数",
+    "length": 25,
+    "length_raw": "25",
+    "content": "支給決定者カナ氏名",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "△"
+     },
+     {
+      "column": "J131",
+      "value": "△"
+     },
+     {
+      "column": "J141",
+      "value": "△"
+     },
+     {
+      "column": "J221",
+      "value": "△"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "支給決定児童氏名カナ"
+    ],
+    "type": "英数",
+    "length": 25,
+    "length_raw": "25",
+    "content": "支給決定児童カナ氏名",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "△"
+     },
+     {
+      "column": "J131",
+      "value": "△"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "△"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 10,
+    "no_raw": "10",
+    "name_path": [
+     "地域区分コード"
+    ],
+    "type": "コード値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "地域区分コードを設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "11",
+    "name_path": [
+     "就労継続支援A型事業者負担減免措置実施"
+    ],
+    "type": "コード値",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:無し 2:有り",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 12,
+    "no_raw": "12",
+    "name_path": [
+     "利用者負担上限月額①"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "所得区分に応じた利用者負担上限月額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 13,
+    "no_raw": "13",
+    "name_path": [
+     "就労継続支援A型減免対象者"
+    ],
+    "type": "コード値",
+    "length": 1,
+    "length_raw": "1",
+    "content": "1:無し 2:有り",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 14,
+    "no_raw": "14",
+    "name_path": [
+     "障害支援区分コード"
+    ],
+    "type": "英数",
+    "length": 2,
+    "length_raw": "2",
+    "content": "月の末日における障害支援区分コードを設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": null
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": "※C\n※5",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※5",
+      "text": "サービス提供年月が平成26 年3 月以前の場合、「障害支援区分コード」は「障害程度区分コード」と読み替えて使用する。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 15,
+    "no_raw": "15",
+    "name_path": [
+     "上限額管理事業所",
+     "指定事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "上限額管理事業所の事業所番号を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※C\n※2",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※2",
+      "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 16,
+    "no_raw": "16",
+    "name_path": [
+     "上限額管理事業所",
+     "管理結果"
+    ],
+    "type": "コード値",
+    "length": 1,
+    "length_raw": "1",
+    "content": "上限額管理結果票の管理結果を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※1\n※2",
+    "note_refs": [
+     {
+      "mark": "※1",
+      "text": "“1” : 管理事業所で利用者負担額を充当したため、他事業所の利用者負担は発生しない。“2” : 利用者負担額の合計額が、負担上限月額以下のため、調整事務は行わない。“3” : 利用者負担額の合計額が、負担上限月額を超過するため、下記のとおり調整した。",
+      "source": "next_page_textlayer"
+     },
+     {
+      "mark": "※2",
+      "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 17,
+    "no_raw": "17",
+    "name_path": [
+     "上限額管理事業所",
+     "管理結果額"
+    ],
+    "type": "数値",
+    "length": 5,
+    "length_raw": "5",
+    "content": "上限額管理結果票の管理結果額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+      "source": "next_page_textlayer"
+     }
+    ]
+   },
+   {
+    "no": 18,
+    "no_raw": "18",
+    "name_path": [
+     "日中支援加算欄",
+     "指定事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "連絡調整を行った日中介護事業所の事業所番号を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": null
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 19,
+    "no_raw": "19",
+    "name_path": [
+     "日中支援加算欄",
+     "当該事業所への通所日数"
+    ],
+    "type": "数値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "日中介護事業所への通所日数を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": null
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 20,
+    "no_raw": "20",
+    "name_path": [
+     "請求額集計欄 合計",
+     "給付単位数"
+    ],
+    "type": "数値",
+    "length": 9,
+    "length_raw": "9",
+    "content": "単位数の合計を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 21,
+    "no_raw": "21",
+    "name_path": [
+     "請求額集計欄 合計",
+     "総費用額"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "サービスの総費用額の合計を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 22,
+    "no_raw": "22",
+    "name_path": [
+     "請求額集計欄 合計",
+     "上限月額調整(①②の内少ない数)"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "上限月額調整(①②の内少ない数)の合計を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 23,
+    "no_raw": "23",
+    "name_path": [
+     "請求額集計欄 合計",
+     "A型減免",
+     "事業者減免額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "A 型事業者減免額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 24,
+    "no_raw": "24",
+    "name_path": [
+     "請求額集計欄 合計",
+     "A型減免",
+     "減免後利用者負担額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "A 型減免後の利用者負担額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 25,
+    "no_raw": "25",
+    "name_path": [
+     "請求額集計欄 合計",
+     "調整後利用者負担額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "調整後利用者負担額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 26,
+    "no_raw": "26",
+    "name_path": [
+     "請求額集計欄 合計",
+     "上限額管理後利用者負担額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "上限額管理後利用者負担額",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が 0 円の場合)は設定しない。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 27,
+    "no_raw": "27",
+    "name_path": [
+     "請求額集計欄 合計",
+     "決定利用者負担額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "算定した結果の利用者負担額を設定する(自治体助成分請求額を控除する前の利用者負担額である)。",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 28,
+    "no_raw": "28",
+    "name_path": [
+     "請求額集計欄 合計",
+     "請求額",
+     "給付費"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "給付費の請求額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "◎"
+     },
+     {
+      "column": "J131",
+      "value": "◎"
+     },
+     {
+      "column": "J141",
+      "value": "◎"
+     },
+     {
+      "column": "J221",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 29,
+    "no_raw": "29",
+    "name_path": [
+     "請求額集計欄 合計",
+     "請求額",
+     "高額障害福祉サービス費"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "高額障害福祉サービス費を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": null
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 30,
+    "no_raw": "30",
+    "name_path": [
+     "請求額集計欄 合計",
+     "請求額",
+     "特別対策費"
+    ],
+    "type": "数値",
+    "length": 10,
+    "length_raw": "10",
+    "content": "サービス提供年月が平成 24 年 4 月以降は、新体系定着支援に係る請求額を設定\nサービス提供年月が平成 21 年 10 月以降は、事業運営安定化および、移行時運営安定化に係る請求額を設定\nサービス提供年月が平成 21 年 9 月以前は、特別対策費である激変緩和加算に係る請求額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": "※3\n※4",
+    "note_refs": [
+     {
+      "mark": "※3",
+      "text": "サービス提供年月が平成 25 年 4 月以降は、設定しない。",
+      "source": "page"
+     },
+     {
+      "mark": "※4",
+      "text": "処理対象年月が平成 25 年 12 月以降は、設定しない。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 31,
+    "no_raw": "31",
+    "name_path": [
+     "請求額集計欄 合計",
+     "自治体助成分請求額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "利用者負担額のうち自治体が助成する額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": "○"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 32,
+    "no_raw": "32",
+    "name_path": [
+     "特定障害者特別給付費(合計)",
+     "算定日額"
+    ],
+    "type": "数値",
+    "length": 4,
+    "length_raw": "4",
+    "content": "算定する日額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 33,
+    "no_raw": "33",
+    "name_path": [
+     "特定障害者特別給付費(合計)",
+     "日数"
+    ],
+    "type": "数値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "算定する日数を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": null
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 34,
+    "no_raw": "34",
+    "name_path": [
+     "特定障害者特別給付費(合計)",
+     "給付費請求額"
+    ],
+    "type": "数値",
+    "length": 5,
+    "length_raw": "5",
+    "content": "給付費請求額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 35,
+    "no_raw": "35",
+    "name_path": [
+     "特定障害者特別給付費(合計)",
+     "実費算定額"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "実費算定額を設定",
+    "required": null,
+    "required_by": [
+     {
+      "column": "J121",
+      "value": "○"
+     },
+     {
+      "column": "J131",
+      "value": "○"
+     },
+     {
+      "column": "J141",
+      "value": null
+     },
+     {
+      "column": "J221",
+      "value": null
+     }
+    ],
+    "note": null
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   35
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "pages": [
+   31
+  ],
+  "table_kind": "record_layout",
+  "title": "（5）介護給付費等 明細書 明細情報レコード",
+  "record": {
+   "exchange_id": null,
+   "name": "明細情報レコード",
+   "parent": "介護給付費等 明細書"
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "属性（※Z）",
+   "ﾊﾞｲﾄ数",
+   "内容",
+   "※必須",
+   "備考"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": "英数",
+    "length": 4,
+    "length_raw": "4",
+    "content": "当情報の内容を識別するための番号",
+    "required": "◎",
+    "required_by": [],
+    "note": "※B",
+    "note_refs": [
+     {
+      "mark": "※B",
+      "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": "コード値",
+    "length": 2,
+    "length_raw": "2",
+    "content": "03 を設定する(明細情報レコード)",
+    "required": "◎",
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "サービスを提供した年月(西暦年月 YYYYMM を設定する)",
+    "required": "◎",
+    "required_by": [],
+    "note": "※Y",
+    "note_refs": [
+     {
+      "mark": "※Y",
+      "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "市町村番号"
+    ],
+    "type": "コード値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+    "required": "◎",
+    "required_by": [],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "サービスを提供した事業所番号",
+    "required": "◎",
+    "required_by": [],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "受給者証番号"
+    ],
+    "type": "英数",
+    "length": 10,
+    "length_raw": "10",
+    "content": "受給者証に記載されている受給者証番号",
+    "required": "◎",
+    "required_by": [],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "サービスコード"
+    ],
+    "type": "英数",
+    "length": 6,
+    "length_raw": "6",
+    "content": "サービスコード 6 桁",
+    "required": "◎",
+    "required_by": [],
+    "note": "※C",
+    "note_refs": [
+     {
+      "mark": "※C",
+      "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "単位数"
+    ],
+    "type": "数値",
+    "length": 6,
+    "length_raw": "6",
+    "content": "サービスコードごとの単位数",
+    "required": "◎",
+    "required_by": [],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "マイナスの単位数となるサービスコードを設定する場合は、単位数の左側に半角のマイナス(“-”)を付加する。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "回数"
+    ],
+    "type": "数値",
+    "length": 3,
+    "length_raw": "3",
+    "content": "サービスコードごとの回数",
+    "required": "◎",
+    "required_by": [],
+    "note": null
+   },
+   {
+    "no": 10,
+    "no_raw": "10",
+    "name_path": [
+     "サービス単位数"
+    ],
+    "type": "数値",
+    "length": 9,
+    "length_raw": "9",
+    "content": "サービスコードごとの算定額",
+    "required": "◎",
+    "required_by": [],
+    "note": "※2",
+    "note_refs": [
+     {
+      "mark": "※2",
+      "text": "マイナスの単位数となるサービスコードを設定する場合は、単位数の左側に半角のマイナス(“-”)を付加する。",
+      "source": "page"
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "11",
+    "name_path": [
+     "摘要"
+    ],
+    "type": "漢字",
+    "length": 100,
+    "length_raw": "100",
+    "content": "サービスコードごとの摘要",
+    "required": "○",
+    "required_by": [],
+    "note": "※1",
+    "note_refs": [
+     {
+      "mark": "※1",
+      "text": "訓練等給付費等明細書(様式第三)(サービス提供年月が平成26年3月以前は介護給付費・訓練等給付費等明細書(様式第三))において、障害支援区分(サービス提供年月が平成26年3月以前は障害程度区分)変更の場合に、変更前及び変更後の区分に係るサービスコードを記載した行の摘要欄に「令和〇〇年〇〇月〇〇日まで(から)」を記載する。",
+      "source": "page"
+     }
+    ]
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   11
+  ],
+  "no_gaps": []
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "pages": [
+   90
+  ],
+  "table_kind": "required_matrix",
+  "title": "（7） 入力必須項目と様式の対応表（基本情報レコード）【サービス提供年月：令和6年4月～令和7年9月】",
+  "record": {
+   "exchange_id": null,
+   "name": "基本情報レコード",
+   "parent": null
+  },
+  "columns": [
+   "項番",
+   "項目名",
+   "0101 居宅介護",
+   "0201 行動援護",
+   "0301 重度訪問介護3-1",
+   "0401 重度包括",
+   "0601 短期入所",
+   "0701 生活介護",
+   "0901 施設入所支援",
+   "1301 自立訓練（機能訓練）",
+   "1401 自立訓練（生活訓練）",
+   "1501 宿泊型自立訓練",
+   "1601 就労移行支援",
+   "1701 就労継続支援",
+   "1801 共同生活援助18-1",
+   "1802 共同生活援助18-2",
+   "1901 同行援護",
+   "2001 地域移行支援",
+   "2101 地域定着支援",
+   "2201 就労定着支援",
+   "2301 自立生活援助"
+  ],
+  "items": [
+   {
+    "no": 1,
+    "no_raw": "1",
+    "name_path": [
+     "交換情報識別番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 2,
+    "no_raw": "2",
+    "name_path": [
+     "レコード種別コード"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 3,
+    "no_raw": "3",
+    "name_path": [
+     "サービス提供年月"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 4,
+    "no_raw": "4",
+    "name_path": [
+     "市町村番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 5,
+    "no_raw": "5",
+    "name_path": [
+     "事業所番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 6,
+    "no_raw": "6",
+    "name_path": [
+     "受給者証番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 7,
+    "no_raw": "7",
+    "name_path": [
+     "様式種別番号"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "◎"
+     },
+     {
+      "column": "0201",
+      "value": "◎"
+     },
+     {
+      "column": "0301",
+      "value": "◎"
+     },
+     {
+      "column": "0401",
+      "value": "◎"
+     },
+     {
+      "column": "0601",
+      "value": "◎"
+     },
+     {
+      "column": "0701",
+      "value": "◎"
+     },
+     {
+      "column": "0901",
+      "value": "◎"
+     },
+     {
+      "column": "1301",
+      "value": "◎"
+     },
+     {
+      "column": "1401",
+      "value": "◎"
+     },
+     {
+      "column": "1501",
+      "value": "◎"
+     },
+     {
+      "column": "1601",
+      "value": "◎"
+     },
+     {
+      "column": "1701",
+      "value": "◎"
+     },
+     {
+      "column": "1801",
+      "value": "◎"
+     },
+     {
+      "column": "1802",
+      "value": "◎"
+     },
+     {
+      "column": "1901",
+      "value": "◎"
+     },
+     {
+      "column": "2001",
+      "value": "◎"
+     },
+     {
+      "column": "2101",
+      "value": "◎"
+     },
+     {
+      "column": "2201",
+      "value": "◎"
+     },
+     {
+      "column": "2301",
+      "value": "◎"
+     }
+    ],
+    "note": null
+   },
+   {
+    "no": 8,
+    "no_raw": "8",
+    "name_path": [
+     "補足給付関係情報",
+     "補足給付適用の有無"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 9,
+    "no_raw": "9",
+    "name_path": [
+     "補足給付関係情報",
+     "補足給付額(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 10,
+    "no_raw": "10",
+    "name_path": [
+     "補足給付関係情報",
+     "食費の単価 朝食(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 11,
+    "no_raw": "11",
+    "name_path": [
+     "補足給付関係情報",
+     "食費の単価 昼食(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 12,
+    "no_raw": "12",
+    "name_path": [
+     "補足給付関係情報",
+     "食費の単価 夕食(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 13,
+    "no_raw": "13",
+    "name_path": [
+     "補足給付関係情報",
+     "食費の単価 一日(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 14,
+    "no_raw": "14",
+    "name_path": [
+     "補足給付関係情報",
+     "光熱水費の単価 一日(円／日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 15,
+    "no_raw": "15",
+    "name_path": [
+     "補足給付関係情報",
+     "光熱水費の単価 一月(円／月)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 16,
+    "no_raw": "16",
+    "name_path": [
+     "合計1",
+     "内訳 100%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 17,
+    "no_raw": "17",
+    "name_path": [
+     "合計1",
+     "内訳 70%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 18,
+    "no_raw": "18",
+    "name_path": [
+     "合計1",
+     "内訳 重訪"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 19,
+    "no_raw": "19",
+    "name_path": [
+     "合計1",
+     "合計 算定時間数計"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": "○"
+     },
+     {
+      "column": "0301",
+      "value": "○"
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": "○"
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": "○"
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 20,
+    "no_raw": "20",
+    "name_path": [
+     "合計2",
+     "内訳 100%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 21,
+    "no_raw": "21",
+    "name_path": [
+     "合計2",
+     "内訳 70%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 22,
+    "no_raw": "22",
+    "name_path": [
+     "合計2",
+     "内訳 重訪"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 23,
+    "no_raw": "23",
+    "name_path": [
+     "合計2",
+     "合計 算定時間数計"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 24,
+    "no_raw": "24",
+    "name_path": [
+     "合計3",
+     "内訳 100%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": "○"
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 25,
+    "no_raw": "25",
+    "name_path": [
+     "合計3",
+     "内訳 90%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": "○"
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 26,
+    "no_raw": "26",
+    "name_path": [
+     "合計3",
+     "合計 算定時間数計"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": "○"
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 27,
+    "no_raw": "27",
+    "name_path": [
+     "合計4",
+     "内訳 100%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 28,
+    "no_raw": "28",
+    "name_path": [
+     "合計4",
+     "内訳 90%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 29,
+    "no_raw": "29",
+    "name_path": [
+     "合計4",
+     "合計 算定時間数計"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 30,
+    "no_raw": "30",
+    "name_path": [
+     "合計5",
+     "内訳 100%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 31,
+    "no_raw": "31",
+    "name_path": [
+     "合計5",
+     "内訳 90%"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 32,
+    "no_raw": "32",
+    "name_path": [
+     "合計5",
+     "合計 算定回数計"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": "○"
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 33,
+    "no_raw": "33",
+    "name_path": [
+     "提供実績の合計",
+     "算定 移動介護分"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": "○"
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 34,
+    "no_raw": "34",
+    "name_path": [
+     "提供実績の合計",
+     "実績 送迎加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": "○"
+     },
+     {
+      "column": "0601",
+      "value": "○"
+     },
+     {
+      "column": "0701",
+      "value": "○"
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": "○"
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 35,
+    "no_raw": "35",
+    "name_path": [
+     "提供実績の合計",
+     "実績 家庭連携加算(回)(サービス提供回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 36,
+    "no_raw": "36",
+    "name_path": [
+     "提供実績の合計",
+     "実績 家庭連携加算(回)(算定回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 37,
+    "no_raw": "37",
+    "name_path": [
+     "提供実績の合計",
+     "合計 算定日数(日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": "○"
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": "○"
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": "○"
+     },
+     {
+      "column": "2301",
+      "value": "○"
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 38,
+    "no_raw": "38",
+    "name_path": [
+     "提供実績の合計",
+     "夜間支援体制加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 39,
+    "no_raw": "39",
+    "name_path": [
+     "提供実績の合計",
+     "日中支援加算(回)(サービス提供回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 40,
+    "no_raw": "40",
+    "name_path": [
+     "提供実績の合計",
+     "日中支援加算(回)(算定回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 41,
+    "no_raw": "41",
+    "name_path": [
+     "提供実績の合計",
+     "通所型(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": "○"
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 42,
+    "no_raw": "42",
+    "name_path": [
+     "提供実績の合計",
+     "訪問型 1時間未満(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": "○"
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 43,
+    "no_raw": "43",
+    "name_path": [
+     "提供実績の合計",
+     "訪問型 1時間以上(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": "○"
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 44,
+    "no_raw": "44",
+    "name_path": [
+     "提供実績の合計",
+     "短期滞在加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 45,
+    "no_raw": "45",
+    "name_path": [
+     "提供実績の合計",
+     "食事提供加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": "○"
+     },
+     {
+      "column": "0701",
+      "value": "○"
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": "○"
+     },
+     {
+      "column": "1401",
+      "value": "○"
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 46,
+    "no_raw": "46",
+    "name_path": [
+     "提供実績の合計",
+     "入院・外泊時加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 47,
+    "no_raw": "47",
+    "name_path": [
+     "提供実績の合計",
+     "入院時支援特別加算(回)(サービス提供回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 48,
+    "no_raw": "48",
+    "name_path": [
+     "提供実績の合計",
+     "入院時支援特別加算(回)(算定回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": "○"
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 49,
+    "no_raw": "49",
+    "name_path": [
+     "提供実績の合計",
+     "自立生活支援加算(Ⅱ)(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 50,
+    "no_raw": "50",
+    "name_path": [
+     "提供実績の合計",
+     "自活訓練加算(回)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 51,
+    "no_raw": "51",
+    "name_path": [
+     "提供実績の合計",
+     "訪問支援特別加算(回)(サービス提供回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": "○"
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 52,
+    "no_raw": "52",
+    "name_path": [
+     "提供実績の合計",
+     "訪問支援特別加算(回)(算定回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": "○"
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 53,
+    "no_raw": "53",
+    "name_path": [
+     "提供実績の合計",
+     "施設外支援 当月(日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 54,
+    "no_raw": "54",
+    "name_path": [
+     "提供実績の合計",
+     "施設外支援 累計(日／180日)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": null
+     },
+     {
+      "column": "1601",
+      "value": "○"
+     },
+     {
+      "column": "1701",
+      "value": "○"
+     },
+     {
+      "column": "1801",
+      "value": null
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 55,
+    "no_raw": "55",
+    "name_path": [
+     "提供実績の合計",
+     "帰宅時支援加算(回)(サービス提供回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   },
+   {
+    "no": 56,
+    "no_raw": "56",
+    "name_path": [
+     "提供実績の合計",
+     "帰宅時支援加算(回)(算定回数)"
+    ],
+    "type": null,
+    "length": null,
+    "length_raw": null,
+    "content": null,
+    "required": null,
+    "required_by": [
+     {
+      "column": "0101",
+      "value": null
+     },
+     {
+      "column": "0201",
+      "value": null
+     },
+     {
+      "column": "0301",
+      "value": null
+     },
+     {
+      "column": "0401",
+      "value": null
+     },
+     {
+      "column": "0601",
+      "value": null
+     },
+     {
+      "column": "0701",
+      "value": null
+     },
+     {
+      "column": "0901",
+      "value": null
+     },
+     {
+      "column": "1301",
+      "value": null
+     },
+     {
+      "column": "1401",
+      "value": null
+     },
+     {
+      "column": "1501",
+      "value": "○"
+     },
+     {
+      "column": "1601",
+      "value": null
+     },
+     {
+      "column": "1701",
+      "value": null
+     },
+     {
+      "column": "1801",
+      "value": "○"
+     },
+     {
+      "column": "1802",
+      "value": null
+     },
+     {
+      "column": "1901",
+      "value": null
+     },
+     {
+      "column": "2001",
+      "value": null
+     },
+     {
+      "column": "2101",
+      "value": null
+     },
+     {
+      "column": "2201",
+      "value": null
+     },
+     {
+      "column": "2301",
+      "value": null
+     }
+    ],
+    "note": null,
+    "_post": [
+     "required_by を列見出しに合わせて補完"
+    ]
+   }
+  ],
+  "starts_mid_table": false,
+  "no_range": [
+   1,
+   56
+  ],
+  "no_gaps": []
+ }
+]

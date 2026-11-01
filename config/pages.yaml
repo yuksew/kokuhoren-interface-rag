@@ -1,0 +1,87 @@
+# フェーズ1 書き起こし検証の対象ページ。page は PDF 上の通し番号（1始まり）。
+# category: simple（単純な表） / merged（セル結合あり） / split（改ページで分断） / matrix（必須対応表）
+# pair: 改ページで分断された表の相手ページ（連続性チェックに使う）
+
+- doc_id: kaigo_kyotsu_r0806
+  page: 12
+  printed: "8"
+  category: [simple]
+  note: データレコード・エンドレコードのフォーマット（小さな表が2つ）
+
+- doc_id: kaigo_kyotsu_r0806
+  page: 35
+  printed: "31"
+  category: [merged, split]
+  pair: 36
+  note: コード一覧の先頭。項番3「異動事由」、項番5「媒体区分コード」が縦結合。内容に図が入っている
+
+- doc_id: kaigo_kyotsu_r0806
+  page: 36
+  printed: "31-1"
+  category: [split]
+  pair: 35
+  note: コード一覧の続き（項番14から）
+
+- doc_id: kaigo_kyotsu_r0806
+  page: 41
+  printed: "34"
+  category: [split, merged]
+  note: ページ全体が前ページの1セル（サービス種類コードの内容）の続き。内容セルの中に縦書きの小見出しがある
+
+- doc_id: kaigo_jigyosho_r0604
+  page: 80
+  printed: "35"
+  category: [merged, split]
+  pair: 81
+  note: 介護給付費明細書の基本情報レコード（公費1〜3、被保険者情報などが縦結合）
+
+- doc_id: kaigo_jigyosho_r0604
+  page: 81
+  printed: "36"
+  category: [merged, split]
+  pair: 80
+  note: 基本情報レコードの続き。合計情報 > 保険/公費1 の2段結合
+
+- doc_id: kaigo_jigyosho_r0604
+  page: 84
+  printed: "38"
+  category: [simple]
+  note: 明細情報レコード（結合なし、備考に複数の※）
+
+- doc_id: kaigo_jigyosho_r0604
+  page: 110
+  printed: "52"
+  category: [matrix]
+  note: 入力必須項目と様式の対応表（明細情報レコード）。縦書きの様式名が列見出し
+
+- doc_id: shogai_jigyosho_r0710
+  page: 31
+  printed: "26"
+  category: [simple]
+  note: 明細書 明細情報レコード（必須列は1列）
+
+- doc_id: shogai_jigyosho_r0710
+  page: 17
+  printed: "12"
+  category: [merged]
+  note: 請求書 基本情報レコード（必須が識別番号ごとの多段見出し）
+
+- doc_id: shogai_jigyosho_r0710
+  page: 20
+  printed: "15"
+  category: [merged, split]
+  pair: 21
+  note: 明細書 基本情報レコード（多段見出し＋上限額管理事業所などの縦結合）
+
+- doc_id: shogai_jigyosho_r0710
+  page: 21
+  printed: "16"
+  category: [merged, split]
+  pair: 20
+  note: 明細書 基本情報レコードの続き
+
+- doc_id: shogai_jigyosho_r0710
+  page: 90
+  printed: "62-7"
+  category: [matrix]
+  note: 入力必須項目と様式の対応表（基本情報レコード、R6.4〜R7.9）。56行×20列、文字が小さい

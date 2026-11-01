@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 110,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [
+      "matrix"
+    ],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "pdf",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 16.2,
+    "usage": {
+      "input_tokens": 6946,
+      "output_tokens": 3906,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002648,
+    "cost_usd_batch": 0.001324,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T00:53:34+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 110,
+    "printed_page": "５２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "明細情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": null,
+          "name": "明細情報レコード（複数レコード）",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "（見出し空欄1）",
+          "（見出し空欄2）",
+          "（見出し空欄3）",
+          "（見出し空欄4）",
+          "（見出し空欄5）",
+          "（見出し空欄6）",
+          "（見出し空欄7）",
+          "（見出し空欄8）",
+          "（見出し空欄9）",
+          "（見出し空欄10）",
+          "（見出し空欄11）",
+          "（見出し空欄12）",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "公費１対象日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "公費２対象日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "公費３対象日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "公費１対象サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "公費２対象サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "公費３対象サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "摘要"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○",
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "凡例",
+        "text": "◎…必須項目 ○…請求内容により設定する項目 空白…設定不要"
+      }
+    ],
+    "uncertain": [
+      "ページ上部に「- ５２ -」と読める表記があるが、下部のページ番号は判読できなかったため、printed_page は上部の表記を採用した。",
+      "表の列見出し（項目名以外の12列）は画像上で空欄のため、列名を特定できず仮の名称にした。各セルの値も空欄に見えた。",
+      "項番18の下の行の「…」は表の省略を示すと思われるが、表が次ページに続くかは判断できなかったため continues_to_next_page は false とした。",
+      "項番11〜13 の「公 費 １ 対 象 日 数・回数」は原文の字間を詰めて記載した。"
+    ]
+  },
+  "raw_text": null
+}

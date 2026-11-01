@@ -1,0 +1,20 @@
+[project]
+name = "kokuhoren-interface-rag"
+version = "0.1.0"
+description = "介護・障害福祉 国保連インタフェース仕様書 RAG（フェーズ0〜1: 仕様書の特定・取得と表の書き起こし検証）"
+readme = "README.md"
+authors = [
+    { name = "yuk", email = "yuksew@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.3.0",
+    "pdfplumber>=0.11.10",
+    "pymupdf>=2.0",
+    "pypdf>=6.21.4",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+]
+
+[tool.uv]
+package = false

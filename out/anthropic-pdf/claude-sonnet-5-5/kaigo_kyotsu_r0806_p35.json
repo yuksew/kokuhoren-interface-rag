@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 35,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [
+      "merged",
+      "split"
+    ],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "pdf",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 11.0,
+    "usage": {
+      "input_tokens": 7572,
+      "output_tokens": 2228,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037424,
+    "cost_usd_batch": 0.018712,
+    "parsed_ok": true,
+    "created_at": "2026-11-01T00:51:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 35,
+    "printed_page": "31",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "１．４ コード一覧",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:新規 2:変更 3:終了",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "受給者異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:受給資格取得 02:受給資格喪失\n03:広域連合における受給者の市町村間異動（政令市における受給者の区間異動）\n04:合併による新規\n99:その他異動",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "事業所異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "保険者異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "広域連合異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "市町村固有情報異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "市町村特別給付異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動事由",
+              "個人番号異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:受給者台帳の異動（新規、区間異動等）\n02:個人番号の変更による異動",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:（未使用） 2:修正 3:削除",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "媒体区分コード",
+              "保険者等"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:伝送 2:MO 4:FD （5:紙）\n※CD-R の場合は「4:FD」を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "媒体区分コード",
+              "事業所"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "2:MO 4:FD （5:紙）\n1 または 7:伝送（インターネット）\n※CD-R の場合は「4:FD」を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "介護保険の保険者番号\n×１ ×２ ×３ ×４ ×５ ×６\nチェックデジット\n市区町村コード\n都道府県コード\n※チェックデジットはモジュラス１０方式とする",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "被保険者証記載の保険者番号\n広域連合（政令市）の場合は市町村コード（行政区番号）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "市町村コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "総務省にて定めるコード",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "年号コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:明治 2:大正 3:昭和 4:平成 5:令和",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "保険者区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:単独保険者 2:政令市 3:広域連合の保険者",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "介護保険の被保険者番号\n被保険者証記載の被保険者番号が１０桁に満たない場合は右詰とし、左側を０で埋める\n福祉事務所から提供される生活保護受給者については先頭の１桁を“H”とすること",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:男 2:女",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "みなし要介護区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:通常の認定\n2:みなし認定（旧措置入所者）\n3:やむを得ない事由",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番6の内容は図（×１〜×６の枠と矢印）をテキスト化したもの",
+      "項番3の04の行末に空白あり"
+    ]
+  },
+  "raw_text": null
+}
