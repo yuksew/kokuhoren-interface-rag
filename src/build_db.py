@@ -1,6 +1,7 @@
 """確定版（人の確認を反映した書き起こし）を SQLite に入れる。RAG の検索の土台。
 
-usage: uv run python src/build_db.py [--run prod1-png-post] [--src reviewed|adopted] [--out db/interface_spec.sqlite]
+usage: uv run python src/build_db.py [--run prod1-png-post prod2-png-post] [--src reviewed|adopted] [--out db/interface_spec.sqlite]
+  複数の run（本番1 = 事業所向け4編、本番2 = 介護 居宅介護支援事業所編）をまとめて1つの DB にする。無い run は飛ばす。
   前提: apply_review.py を実行済み（out/{run}-reviewed/ がある）
   DB は毎回作り直す（入力から再生成できるので git には入れない）。
 
@@ -110,12 +111,16 @@ def blank(v) -> str | None:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", default="prod1-png-post")
+    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post"])
     ap.add_argument("--src", default="reviewed", choices=["reviewed", "adopted"])
     ap.add_argument("--out", default="db/interface_spec.sqlite")
     args = ap.parse_args()
-    src = ROOT / "out" / f"{args.run}-{args.src}"
-    logical = json.loads((src / "logical_tables.json").read_text(encoding="utf-8"))
+    srcs = [ROOT / "out" / f"{r}-{args.src}" for r in args.run]
+    for s_ in srcs:
+        if not s_.exists():
+            print(f"  ! {s_.relative_to(ROOT)} が無いので飛ばす", file=sys.stderr)
+    srcs = [s_ for s_ in srcs if s_.exists()]
+    logical = [lt for s_ in srcs for lt in json.loads((s_ / "logical_tables.json").read_text(encoding="utf-8"))]
     manifest = {e["id"]: e for e in yaml.safe_load((ROOT / "sources" / "manifest.yaml").read_text(encoding="utf-8"))}
 
     out = ROOT / args.out
@@ -131,7 +136,7 @@ def main() -> int:
         con.execute("INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     (d, e["domain"], e.get("title"), e.get("volume"), e.get("edition"), e.get("revision"),
                      str(e.get("published_at") or ""), e.get("url"), e.get("source_page"), e.get("sha256"), e.get("note")))
-    for f in sorted(src.glob("*_p*.json")):
+    for f in sorted(f for s_ in srcs for f in s_.glob("*_p*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))
         con.execute("INSERT INTO pages VALUES (?,?,?,?,?)", (p["doc_id"], p["page"], blank(p.get("printed_page")),
                                                             js(p.get("footnotes") or []), js(p.get("uncertain") or [])))
@@ -203,9 +208,10 @@ def main() -> int:
     con.row_factory = None
     con.execute("INSERT INTO items_fts(items_fts) VALUES('optimize')")
 
-    dec = ROOT / "reports" / f"review_decisions.{args.run}.json"
-    info = {"built_at": dt.datetime.now().isoformat(timespec="seconds"), "run": args.run, "source": str(src.relative_to(ROOT)),
-            "review_decisions_sha256": hashlib.sha256(dec.read_bytes()).hexdigest() if dec.exists() else "",
+    decs = [ROOT / "reports" / f"review_decisions.{r}.json" for r in args.run]
+    info = {"built_at": dt.datetime.now().isoformat(timespec="seconds"), "run": ",".join(args.run),
+            "source": ",".join(str(s_.relative_to(ROOT)) for s_ in srcs),
+            "review_decisions_sha256": ",".join(hashlib.sha256(d.read_bytes()).hexdigest() if d.exists() else "" for d in decs),
             "docs": ",".join(docs)}
     con.executemany("INSERT INTO build_info VALUES (?,?)", info.items())
     con.commit()
