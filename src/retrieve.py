@@ -182,6 +182,80 @@ class Retriever:
         top = sorted(score, key=lambda c: -score[c])[:k]
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
 
+    def search_multi(self, queries: list[str], k: int = 10, **kw) -> list[dict]:
+        """複数の検索文（元の質問＋言い換え）の結果を、順位で融合する（RRF）。1つ目（元の質問）を少し重くする。"""
+        if len(queries) <= 1:
+            return self.search(queries[0], k=k, **kw)
+        score: dict[int, float] = {}
+        via: dict[int, list[str]] = {}
+        for qi, q in enumerate(queries):
+            w = 1.2 if qi == 0 else 1.0
+            for rank, h in enumerate(self.search(q, k=50, **kw)):
+                c = h["chunk_id"]
+                score[c] = score.get(c, 0.0) + w / (RRF_K + rank + 1)
+                via.setdefault(c, []).append(f"q{qi}#{rank + 1}")
+        top = sorted(score, key=lambda c: -score[c])[:k]
+        return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
+
+    def info_names(self) -> dict[tuple[str, str], str]:
+        """(domain, 交換情報識別番号) → 情報名（インタフェース一覧から）"""
+        if not hasattr(self, "_info"):
+            self._info = {}
+            for r in self.con.execute("SELECT d.domain, i.name, iv.value FROM item_values iv JOIN items i USING (item_id) "
+                                      "JOIN spec_tables t USING (table_id) JOIN documents d ON d.doc_id = t.doc_id "
+                                      "WHERE t.table_kind = 'interface_list' AND iv.column_name LIKE '%識別%'"):
+                m = CODE.search(nk(r["value"]))
+                if m and r["name"]:
+                    self._info.setdefault((r["domain"], m.group(0)), re.sub(r"\s*※\s*\S+", "", nk(r["name"])).strip())
+        return self._info
+
+    def exchange_overview(self, queries: list[str], hits: list[dict], domain: str | None, max_ids: int = 6) -> str | None:
+        """「CSV の構造は？」のような質問用に、関係しそうな交換情報（識別番号・情報名）と、そのレコード表の一覧を作る。
+        候補: インタフェース一覧の行（1行 = 1つの交換情報）を、質問と言い換えの検索文との意味の近さで並べた上位。
+        同じレコード構成の交換情報（例: 7131 と 7143）は1行にまとめる。"""
+        info = self.info_names()
+        rev = {c: code for code, cs in self.code_items.items() for c in cs}
+        cand = [c for c in rev if domain is None or self.meta[c]["domain"] == domain]
+        if not cand:
+            return None
+        qv = np.stack([self.emb.embed_query(q) for q in queries])
+        sims = (self.vecs[cand] @ qv.T).max(axis=1)
+        ids: list[str] = []
+        for i in np.argsort(-sims):
+            ex = rev[cand[i]]
+            if ex not in ids:
+                ids.append(ex)
+            if len(ids) >= max_ids * 2:
+                break
+        groups: dict[tuple, list[str]] = {}
+        heads: dict[tuple, str] = {}
+        for ex in ids:
+            rows = self.con.execute(
+                "SELECT DISTINCT t.title, t.page_from, d.domain, d.volume, d.edition FROM table_exchange_ids x JOIN spec_tables t USING (table_id) "
+                "JOIN documents d USING (doc_id) WHERE x.exchange_id = ? AND t.table_kind = 'record_layout'"
+                + (" AND d.domain = ?" if domain else "") + " ORDER BY d.domain, t.page_from",
+                (ex, domain) if domain else (ex,)).fetchall()
+            if not rows:
+                continue
+            recs = []
+            for r in rows:
+                t = nk(r["title"] or "（表題なし）").strip(" ・")
+                m = re.match(r"(.*?レコード(?:\(複数レコード\))?)", t)
+                recs.append(m.group(1) if m else t.splitlines()[0][:40])
+            key = (rows[0]["domain"], tuple(dict.fromkeys(recs)))
+            groups.setdefault(key, []).append(ex)
+            heads.setdefault(key, f"{rows[0]['volume']} {rows[0]['edition']} PDF {rows[0]['page_from']}ページ〜")
+            if len(groups) >= max_ids:
+                break
+        if not groups:
+            return None
+        lines = []
+        for key, exs in groups.items():
+            names = "／".join(dict.fromkeys(info.get((key[0], ex), "（情報名不明）") for ex in exs))
+            lines.append(f"- {'・'.join(exs)} {names}（{heads[key]}）: " + " → ".join(key[1]))
+        return ("交換情報ごとのレコード構成（インタフェース一覧とレコード表の表題から機械的に作成。質問に近い順。"
+                "各交換情報は、共通のコントロールレコード・エンドレコードの間に、これらのデータレコードを入れる）:\n" + "\n".join(lines))
+
     def describe_table(self, table_id: int) -> str:
         return self.con.execute("SELECT text FROM chunks WHERE kind = 'table' AND table_id = ?", (table_id,)).fetchone()["text"]
 

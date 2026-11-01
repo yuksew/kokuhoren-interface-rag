@@ -59,7 +59,7 @@ uv run --group rag python src/retrieve.py "要介護度はどのコードで何�
 uv run --group rag python src/eval_retrieval.py                  # 検索の評価 reports/retrieval_eval.md
 
 # フェーズ2: 回答生成（Claude API。既定は Sonnet 5.5、1問 約 $0.01）
-uv run --group rag python src/ask.py "要介護度はどのコードで何桁？" --domain kaigo
+uv run --group rag python src/ask.py "要介護度はどのコードで何桁？" --domain kaigo   # 検索の前に Haiku で質問を言い換える（prompts/rewrite_system.md）
 uv run --group rag python src/eval_answers.py                    # 回答の評価（両モデル、約 $0.25）
 
 # 実際の質問での評価: eval/real_questions.txt に質問を書く → 回答 → reports/real_eval.csv の「判定」列に ○△× → 集計
