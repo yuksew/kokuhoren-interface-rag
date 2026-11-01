@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 44,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 4888,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003453,
+    "cost_usd_batch": 0.001727,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 44,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.2.2 介護給付費請求明細書（居宅サービス計画費）情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費請求明細書（居宅サービス計画費）の件数等一月ごとの事業所単位の請求情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "7111"
+              },
+              {
+                "column": "ルート",
+                "value": "居宅介護支援事業所・\n介護予防支援事業所\n（地域包括支援センター）\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域包括支援センターから介護予防・日常生活支援総合事業費（経過措置）請求を行う際に提出する地域包括支援センター単位の集計情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "7112\n※ 7"
+              },
+              {
+                "column": "ルート",
+                "value": "地域包括支援センター\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域包括支援センターから介護予防・日常生活支援総合事業費請求を行う際に提出する地域包括支援センター単位の集計情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "7113\n※ 8"
+              },
+              {
+                "column": "ルート",
+                "value": "地域包括支援センター\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護給付費請求書別紙情報\n※ 1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費請求書別紙の情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "7121"
+              },
+              {
+                "column": "ルート",
+                "value": "居宅介護支援事業所\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護給付費請求明細書（居宅サービス計画費）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス計画費請求明細の情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8124\n※ 4\n※ 6"
+              },
+              {
+                "column": "ルート",
+                "value": "居宅介護支援事業所\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "介護予防支援介護給付費明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防支援費請求明細の情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8125\n※ 5\n※ 6"
+              },
+              {
+                "column": "ルート",
+                "value": "介護予防支援事業所\n（地域包括支援センター）\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）請求明細書（ケアマネジメント費）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域包括支援センターから介護予防・日常生活支援総合事業費（経過措置）請求を行う際に提出する被保険者単位の明細情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8161\n※ 7"
+              },
+              {
+                "column": "ルート",
+                "value": "地域包括支援センター\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費請求明細書（介護予防ケアマネジメント費）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域包括支援センターから介護予防・日常生活支援総合事業費請求を行う際に提出する被保険者単位の明細情報",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8171\n※ 8"
+              },
+              {
+                "column": "ルート",
+                "value": "地域包括支援センター\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "平成14年2月以降について、提出を不要とする。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が平成18年3月以前の交換情報識別番号は\"8121\"を、平成18年4月以降、平成21年3月以前の交換情報識別番号は\"8122\"を設定する。"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が平成18年4月以降、平成21年3月以前の交換情報識別番号は\"8123\"を設定する。"
+      },
+      {
+        "mark": "※6",
+        "text": "サービス提供年月が平成21年4月以降の場合に設定する。"
+      },
+      {
+        "mark": "※7",
+        "text": "サービス提供年月が平成24年4月以降の場合に設定する。"
+      },
+      {
+        "mark": "※8",
+        "text": "サービス提供年月が平成27年4月以降の場合に設定する。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

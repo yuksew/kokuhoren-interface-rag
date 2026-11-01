@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 52,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 5720,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003869,
+    "cost_usd_batch": 0.001935,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 52,
+    "printed_page": "173",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．７　原案作成委託料情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護予防支援費原案作成委託料明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防支援費にかかる原案作成委託料の明細を出力する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8411"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→介護予防支援事業所（地域包括支援センター）"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防ケアマネジメント費にかかる原案作成委託料の明細を出力する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8421"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→介護予防支援事業所（地域包括支援センター）"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(3)",
+            "name_path": [
+              "原案作成委託料支払内容明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防支援費及び介護予防ケアマネジメント費にかかる原案作成委託料の支払内容の明細を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8431"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→居宅介護支援事業所"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(4)",
+            "name_path": [
+              "原案作成委託料未支払一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防支援事業所（地域包括支援センター）が提出した給付管理票、介護予防支援費及び介護予防ケアマネジメント費が返戻となり原案作成委託料が未支払となった理由を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8441"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→居宅介護支援事業所"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付",
+          "出力媒体種別 > 磁気受付",
+          "出力媒体種別 > 帳票受付"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防支援費原案作成委託料明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "原案作成委託料支払内容明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "原案作成委託料未支払一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "2番目の表（出力媒体種別）は見出しがなく、「種別」「帳票名」は縦結合セルのため、各行に同じ値を入れた。"
+    ]
+  },
+  "raw_text": null
+}

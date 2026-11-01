@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 157,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 2653,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002336,
+    "cost_usd_batch": 0.001168,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 157,
+    "printed_page": "48-16",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・ヘッダレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "ヘッダレコード",
+          "parent": "原案作成委託料未支払一覧表"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“ 8441” 固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“ H1” 固定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "審査年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "1 0",
+            "content": "委託先の居宅介護支援事業所の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "4 0",
+            "content": "委託先の居宅介護支援事業所の事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "データの作成年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "頁"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "“ 1” 固定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "国保連合会名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "3 0",
+            "content": "国保連合会名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月」欄 参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "インタフェース仕様書 共通編 1.4 コード一覧 参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄 参照。(P.42)"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は1ページのみで、その内容は（4）原案作成委託料未支払一覧表のヘッダレコードである。添付ページの表をそのまま書き起こした。",
+      "ヘッダレコードの「record.exchange_id」は原文に明示されていないため空文字とした。",
+      "「record.parent」は見出しの「原案作成委託料未支払一覧表」を入れたが、上位情報名として妥当かは不確か。",
+      "脚注の「1.5 留意事項 :「年月」欄」の区切り記号（コロン）と「年月」欄の引用括弧の表記は画像からの読み取りで、原文の表記と完全に一致するかは確認できない。",
+      "備考欄の「“ 8441” 固定」「“ H1” 固定」「“ 1” 固定」の引用符・空白は画像の見た目に基づく。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 51,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 8469,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005244,
+    "cost_usd_batch": 0.002622,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 51,
+    "printed_page": "17-2",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．５　サービス提供終了確認情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "サービス提供終了確認情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会より送付されたサービス提供終了確認情報登録対象者一覧表情報のうち、ケアプランに定める目標に照らし、サービスの提供が終了したと認められた受給者の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8311"
+              },
+              {
+                "column": "ルート",
+                "value": "介護予防支援事業所（地域包括支援センター）\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "年次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "サービス提供終了確認情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "サービス提供終了確認情報"
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "○"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．６　サービス提供終了確認情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "サービス提供終了確認情報登録対象者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "事業所評価加算の申し出がある事業所にて3ヶ月以上連続して選択的サービス等を受けており、かつ、要介護認定を更新して要介護度が維持であった受給者の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8321"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n介護予防支援事業所\n（地域包括支援センター）"
+              },
+              {
+                "column": "周期",
+                "value": "年次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "サービス提供終了確認者台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有のサービス提供終了確認情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "8331"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n介護予防支援事業所\n（地域包括支援センター）"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙A4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付",
+          "出力媒体種別 > 磁気受付",
+          "出力媒体種別 > 帳票受付"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "サービス提供終了確認",
+              "サービス提供終了確認情報登録対象者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "サービス提供終了確認"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "サービス提供終了確認",
+              "サービス提供終了確認者台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "サービス提供終了確認"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付",
+                "value": "伝送"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付",
+                "value": "帳票"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "○ … 必須、× … 不要、◎ … 必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "2.2.6の出力形式「帳票形式」見出しに取り消し線状の重なった文字があり、判読した文字は『帳票形式』だけとした。",
+      "2.2.6(1)の内容『3 ヶ月』は原文の空白や全角半角の別を確認できず、『3ヶ月』と書き写した。",
+      "2.2.5と2.2.6の媒体種別表の○、帳票、伝送は、必須記号の扱いが明示されていないため、required_byではなくcellsに入れた。"
+    ]
+  },
+  "raw_text": null
+}

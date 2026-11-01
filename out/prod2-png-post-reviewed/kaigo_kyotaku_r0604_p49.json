@@ -1,0 +1,341 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotaku_r0604",
+ "page": 49,
+ "edition": "令和6年4月版",
+ "volume": "居宅介護支援事業所編",
+ "printed_page": "17",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "２．２．４　支払通知書（出力情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体",
+    "出力形式 > CSV",
+    "出力形式 > 帳票形式"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "介護給付費等支払決定額通知書情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所への支払決定額を通知するための情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7515"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→居宅介護支援事業所"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4タテ"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "(2)",
+     "name_path": [
+      "介護給付費等支払決定額内訳書情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所へ支払決定額の内訳を通知するための情報(保険者等単位)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7521"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→居宅介護支援事業所"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "(3)",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費（経過措置）支払決定額内訳書情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "介護予防・日常生活支援総合事業費（経過措置）について、地域包括支援センターへ支払決定額の内訳を通知するためのリスト",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7541\n※ 1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→地域包括支援センター"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "(4)",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費支払決定額内訳書情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "介護予防・日常生活支援総合事業費について、地域包括支援センターへ支払決定額の内訳を通知するためのリスト",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7551\n※ 2"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→地域包括支援センター"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "(5)",
+     "name_path": [
+      "介護給付費過誤決定通知書情報（事業所分）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所へ過誤決定内容を通知するための情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7611"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→居宅介護支援事業所"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "(6)",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費（経過措置）過誤決定通知書情報（事業所分）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "介護予防・日常生活支援総合事業費（経過措置）について、地域包括支援センターへ過誤申立の決定額を通知するためのリスト",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7631\n※ 1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→地域包括支援センター"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "(7)",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費過誤決定通知書情報（事業所分）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "介護予防・日常生活支援総合事業費について、地域包括支援センターへ過誤申立の決定額を通知するためのリスト",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "7641\n※ 2"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→地域包括支援センター"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n帳票"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙 A4ヨコ"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "サービス提供年月が平成24年4月以降の場合に設定する。"
+  },
+  {
+   "mark": "※2",
+   "text": "サービス提供年月が平成27年4月以降の場合に設定する。"
+  }
+ ],
+ "uncertain": [
+  "依頼文では『次のページ』の表とあるが、添付の1ページは印字ページ17（PDF上のページ49）の『２．２．４　支払通知書（出力情報）』で、そのページの表を書き起こした。",
+  "媒体の「伝送」「帳票」は同一セル内の2段表示として扱い、改行で残した。",
+  "ルートの矢印（→）は原文の折り返し位置を詰めて『国保連合会→居宅介護支援事業所』としたが、原文は矢印の上下に改行がある。"
+ ]
+}

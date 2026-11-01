@@ -1,0 +1,119 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotaku_r0604",
+ "page": 115,
+ "edition": "令和6年4月版",
+ "volume": "居宅介護支援事業所編",
+ "printed_page": "38-1",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 29,
+     "no_raw": "29",
+     "name_path": [
+      "金融機関支店名"
+     ],
+     "type": "漢字",
+     "length": 28,
+     "length_raw": "28",
+     "content": "支払を受けるサービス事業所等の金融機関支店名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 30,
+     "no_raw": "30",
+     "name_path": [
+      "作成年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "金融機関への振込日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 31,
+     "no_raw": "31",
+     "name_path": [
+      "国保連合会名"
+     ],
+     "type": "漢字",
+     "length": 30,
+     "length_raw": "30",
+     "content": "支払を行なう国保連合会の連合会名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※3",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "表に見出し行がなく、前ページからの続きと判断した（項番29から始まる）。見出しは columns に、このページに印字されていない列名は入れていない。",
+  "レコード名・上位情報名・交換情報識別番号はこのページから読み取れないため空文字とした。",
+  "項番29・30・31の備考欄は、30のみ「※ 3」があり、29・31は空欄のため null とした。",
+  "内容列の「(YYYYMMDD) )」の括弧は原文の字形が不鮮明なため、「（西暦年月日(YYYYMMDD)）」と読んだ。"
+ ]
+}

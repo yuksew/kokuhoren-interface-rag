@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 126,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 1490,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.035088,
+    "cost_usd_batch": 0.017544,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 126,
+    "printed_page": "45-4",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード2",
+        "record": {
+          "exchange_id": "7541",
+          "name": "トレーラレコード2",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“7541”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“T2” 固定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費(経過措置)サービス件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護予防・日常生活支援総合事業費(経過措置)サービス費の過誤調整件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費(経過措置)サービス日数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "介護予防・日常生活支援総合事業費(経過措置)サービス費の日数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費(経過措置)サービス単位数"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "介護予防・日常生活支援総合事業費(経過措置)サービス費の過誤調整単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費(経過措置)サービス金額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "介護予防・日常生活支援総合事業費(経過措置)サービス費の過誤調整金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費(経過措置)負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "介護予防・日常生活支援総合事業費(経過措置)サービス費の保険者過誤調整額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "予備3"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "予備4"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番3〜7の項目名の括弧が全角か半角か不明確(全角として記載)",
+      "備考の「※S」のスペース有無は不明確"
+    ]
+  },
+  "raw_text": null
+}

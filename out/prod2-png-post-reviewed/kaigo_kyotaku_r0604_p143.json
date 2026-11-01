@@ -1,0 +1,201 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotaku_r0604",
+ "page": 143,
+ "edition": "令和6年4月版",
+ "volume": "居宅介護支援事業所編",
+ "printed_page": "48-2",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・集計レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "集計レコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“7641”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "“ T1”固定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費",
+      "件数"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "過誤件数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費",
+      "単位数"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "1 3",
+     "content": "過誤調整を行った単位数の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費",
+      "保険者負担額（公費負担額）"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "1 3",
+     "content": "過誤調整を行ったサービスの保険者及び公費負担者負担額の合計額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "予備1"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "予備2"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "1 3",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "予備3"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "1 3",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※",
+   "text": "S 固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "備考・内容の“ T1”固定（項番2）は、「T1」か「Tl」か、また引用符内の空白の有無が画像から判然としない。",
+  "項目名列の縦結合見出し「介護予防・日常生活支援総合事業費」は name_path にのみ入れた。"
+ ]
+}

@@ -25,6 +25,8 @@ SPLIT = re.compile(r"[\s、。，,．.？?！!「」『』（）()\[\]【】・/
 MATRIX_Q = re.compile(r"必須|様式ごと|様式別|対応表|入力必須")
 # 質問の向き: 仕様書（CSV の形式）か、算定ルール（いつ・何を算定・請求できるか）か
 SPEC_Q = re.compile(r"桁|属性|項目|レコード|形式|CSV|交換情報|識別番号|設定|フォーマット|インタフェース")
+# 古い様式（「サービス提供年月が平成18年3月以前の場合」など）を聞いている質問
+OLD_Q = re.compile(r"平成|以前|旧様式|昔|過去|H[0-9]{1,2}")
 RULE_Q = re.compile(r"算定|加算|減算|単位|請求|時間|回数|何回|できる|可能|留意|告示|Q&A|サービスコード|要件|基準|間隔|上限|最大|日割")
 VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
@@ -63,6 +65,8 @@ class Retriever:
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
         assert len(self.vecs) == len(self.meta), "chunks と vectors の件数が合わない（build_index.py をやり直す）"
+        # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
+        self.old_tables = {r["table_id"] for r in self.con.execute("SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'")}
         self.ex_tables: dict[str, set[int]] = {}
         for r in self.con.execute("SELECT exchange_id, table_id FROM table_exchange_ids"):
             self.ex_tables.setdefault(r["exchange_id"], set()).add(r["table_id"])
@@ -157,7 +161,8 @@ class Retriever:
         return list(dict.fromkeys(out))
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
-               fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5) -> list[dict]:
+               fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5,
+               old_weight: float = 0.3) -> list[dict]:
         ok = self._allowed(domain, exchange)
         lists = []
         if use_codes and mode != "vector":
@@ -173,11 +178,14 @@ class Retriever:
         mx = 1.0 if MATRIX_Q.search(nk(q)) else matrix_weight
         # 仕様書の形式だけを聞いている質問では、算定ルール資料（数が多い）が仕様書の行を押し出すので重みを下げる
         rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
+        ow = 1.0 if OLD_Q.search(nk(q)) else old_weight
         for name, lst, w in lists:
             for rank, c in enumerate(lst):
                 wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
                 if self.meta[c]["kind"] in ("rule", "svc"):
                     wm = rw
+                if self.meta[c]["table_id"] in self.old_tables:
+                    wm *= ow
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         top = sorted(score, key=lambda c: -score[c])[:k]

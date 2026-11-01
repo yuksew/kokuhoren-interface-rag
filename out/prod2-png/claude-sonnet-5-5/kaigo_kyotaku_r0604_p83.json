@@ -1,0 +1,481 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 83,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 2752,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.047708,
+    "cost_usd_batch": 0.023854,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 83,
+    "printed_page": "29-12",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・集計情報レコード",
+        "record": {
+          "exchange_id": "8171",
+          "name": "集計情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "“8171”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "１０を設定する\n（集計情報レコード）",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "地域包括支援センターの事業所番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "集計を行うサービス種類コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "“AF”固定",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービス実日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "該当サービス種類の実日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "計画単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "該当サービス種類の計画単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "限度額管理対象単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "該当サービス種類の集計限度額管理対象単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "限度額管理対象外単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "該当サービス種類の集計限度額管理対象外単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "短期入所計画日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "入所期間の計画日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "短期入所実日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "入所期間中の実入所日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "保険",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険給付対象単位数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "保険",
+              "単位数単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "単位数単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "保険",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "保険請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "保険",
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "利用者負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "公費1",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費1単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "公費1",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "公費1請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "公費1",
+              "本人負担額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費1本人負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "公費2",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費2単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "公費2",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "公費2請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "公費2",
+              "本人負担額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費2本人負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "公費3",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費3単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "公費3",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "公費3請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "公費3",
+              "本人負担額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費3本人負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項目名の左の結合見出し（保険、公費1〜3）はname_pathに入れた。",
+      "備考の「※ 1」等は原文の空白を詰めて記載。"
+    ]
+  },
+  "raw_text": null
+}

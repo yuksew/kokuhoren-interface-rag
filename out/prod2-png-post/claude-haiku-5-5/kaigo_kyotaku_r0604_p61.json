@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 61,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 2697,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002358,
+    "cost_usd_batch": 0.001179,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 61,
+    "printed_page": "22-4",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "※5 以下のとおり設定する。",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "設定内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "設定内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービスの給付対象年月(西暦年月(YYYYMM))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3：居宅サービス・介護予防サービス・総合事業区分給付管理票を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "居宅・介護予防・総合事業支給限度額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス区分支給限度基準額(単位数)を設定する(バウチャ等利用があり、居宅サービス区分支給限度基準額の事前切り分けがある場合は、バウチャ分を差し引いた額(単位数)を設定する)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "給付計画単位数 / 日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "給付計画単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "限度額管理期間における前月までの給付計画日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "指定サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "基準該当サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "給付計画合計単位数 / 日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "当月サービス単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※7",
+        "text": "事業対象者の場合、未入力を可とする。"
+      },
+      {
+        "mark": "※8",
+        "text": "事業対象者の場合、要支援1の区分支給限度基準額を設定する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "添付ページの下部ページ番号は「22-4」と読めたが、依頼文の PDF 上のページ 61 と一致しない。添付された1ページの内容をそのまま書き起こした。",
+      "依頼文は「次のページの表」と指定しているが、添付画像は1ページのみで、表は1つ（※5 以下の設定表）のみ。",
+      "「※5 以下のとおり設定する。」は表の直前の導入文のため title に入れた。表の種別は項番・項目名・設定内容の設定例なので other とした。",
+      "項番15の設定内容は画像上で折り返されていたため、改行を詰めて1行にした。括弧内の空白（「( 単位数 )」など）は画像の表示を完全には判別できず、詰めて書いた。"
+    ]
+  },
+  "raw_text": null
+}

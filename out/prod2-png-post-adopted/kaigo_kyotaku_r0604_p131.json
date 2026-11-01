@@ -1,0 +1,273 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotaku_r0604",
+ "page": 131,
+ "edition": "令和6年4月版",
+ "volume": "居宅介護支援事業所編",
+ "printed_page": "459-9",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・トレーラレコード１",
+   "record": {
+    "exchange_id": "",
+    "name": "トレーラレコード1",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“7551”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"7551\"固定",
+       "to": "“7551”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "“T1” 固定",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "\"T1\"　固定",
+       "to": "“T1” 固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費サービス審査決定件数"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "明細レコードの介護予防・日常生活支援総合事業費サービス件数の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費サービス審査決定日数（回数）"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "介護予防・日常生活支援総合事業費サービス日数（回数）の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費サービス審査決定単位数"
+     ],
+     "type": "数字",
+     "length": 11,
+     "length_raw": "11",
+     "content": "明細レコードの介護予防・日常生活支援総合事業費サービス単位数の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費サービス審査決定金額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "12",
+     "content": "明細レコードの介護予防・日常生活支援総合事業費サービス金額の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "介護予防・日常生活支援総合事業費サービス審査決定保険者（公費負担者）負担金額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "12",
+     "content": "明細レコードの介護予防・日常生活支援総合事業費サービス保険者（公費負担者）負担金額の合計を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "予備1"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "予備2"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "予備3"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "12",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "予備4"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "12",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※",
+   "text": "Ｓ　固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "ページ下部の印字は「- 459 - 9」に見えるが、「- 459 -」の数字の区切り位置が判然とせず、printed_page を「459-9」とした。",
+  "内容列の「明細レコードの介護予防・日常生活支援総合事業費サービス単位数の合計を出力する」等、折り返し箇所の区切りは表示上の折り返しとして詰めた。"
+ ]
+}

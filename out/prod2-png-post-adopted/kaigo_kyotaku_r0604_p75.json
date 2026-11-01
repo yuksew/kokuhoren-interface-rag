@@ -1,0 +1,367 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotaku_r0604",
+ "page": 75,
+ "edition": "令和6年4月版",
+ "volume": "居宅介護支援事業所編",
+ "printed_page": "29-4",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 22,
+     "no_raw": "２２",
+     "name_path": [
+      "請求金額"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "請求金額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 6\n※ S",
+     "cells": [
+      {
+       "column": "必須入力",
+       "value": "サービス計画費明細行番号が”99”の場合、必須"
+      }
+     ],
+     "note_refs": [
+      {
+       "mark": "※6",
+       "text": "サービス計画費明細行番号が“99”の場合にのみ設定する。サービス計画費明細行番号による各項目の設定方法は次の通り。",
+       "source": "page"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "cells",
+       "from": [
+        {
+         "column": "必須入力",
+         "value": "サービス計画費明細行番号が“99”の場合、必須"
+        }
+       ],
+       "to": [
+        {
+         "column": "必須入力",
+         "value": "サービス計画費明細行番号が”99”の場合、必須"
+        }
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "no_raw": "２３",
+     "name_path": [
+      "担当介護支援専門員番号"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "サービス計画を作成した介護支援専門員番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "必須入力",
+       "value": "交換情報識別番号が”8124”の場合、必須"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "cells",
+       "from": [
+        {
+         "column": "必須入力",
+         "value": "交換情報識別番号が“8124”の場合、必須"
+        }
+       ],
+       "to": [
+        {
+         "column": "必須入力",
+         "value": "交換情報識別番号が”8124”の場合、必須"
+        }
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "no_raw": "２４",
+     "name_path": [
+      "摘要"
+     ],
+     "type": "英数",
+     "length": 20,
+     "length_raw": "２０",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "必須入力",
+       "value": null
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "other",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "設定する内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "設定する内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "1\n：\n15",
+     "name_path": [
+      "交換情報識別番号\n：\n居宅サービス計画作成依頼届出年月日"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "サービス計画費明細行番号が01～99の全ての行について、同じ値を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "サービス計画費明細行番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "レコードが複数件になる場合、01～98の順次番号を設定する\nレコードが1件のみの場合、及び複数レコードの最後レコードには99を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "サービスコード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "各レコードのサービスコードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "単位数"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "各サービスコードに対応する単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "回数"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "各サービスコードに対応する回数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "サービス単位数"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "単位数に回数を乗じた値を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "サービス単位数合計"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "-\nサービス計画費明細行番号が01～99までのサービス単位数の和を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "請求金額"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "-\nサービス単位数合計に単位数単価を乗じた額（小数点以下切捨て）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "担当介護支援専門員番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "サービス計画費明細行番号が01～99の全ての行について、同じ値を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 24,
+     "no_raw": "24",
+     "name_path": [
+      "摘要"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "各サービスコードに対応する摘要欄を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※3",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※4",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項「単位数単価」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※5",
+   "text": "被保険者でない生活保護受給者の場合は設定不要。"
+  },
+  {
+   "mark": "※6",
+   "text": "サービス計画費明細行番号が“99”の場合にのみ設定する。サービス計画費明細行番号による各項目の設定方法は次の通り。"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "1ページ目の表は見出し行が印字されているが項番22から始まっているため、前ページからの続きと判断した（continued_from_prev_page は true）。",
+  "2つ目の表の行16・21・22は「設定する内容」が左右2つのセルに分かれているが、対応する見出しがないため、左右のセル文を改行区切りで content に入れた。",
+  "1つ目の表の必須入力列は必須記号ではなく条件文のため、required に入れず cells に入れた。"
+ ]
+}

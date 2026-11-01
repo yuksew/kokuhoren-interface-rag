@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotaku_r0604",
+    "page": 80,
+    "domain": "kaigo",
+    "volume": "居宅介護支援事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 居宅介護支援事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10094,
+      "output_tokens": 4235,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003127,
+    "cost_usd_batch": 0.001563,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Sh8xeoEmVBXpzEZbjGeDmH",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T14:57:25+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "居宅介護支援事業所編",
+    "page": 80,
+    "printed_page": "29-9",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "合計情報",
+              "特定入所者介護サービス費等請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "特定入所者介護サービス費等の公費 1 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 2 対象のサービス単位数の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 2 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "本人負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 2 本人負担額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "緊急時施設療養費請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費公費 2 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "特定診療費請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "特定診療費又は特別療養費公費 2 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "合計情報",
+              "公費2",
+              "特定入所者介護サービス費等請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "特定入所者介護サービス費等の公費 2 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 3 対象のサービス単位数の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 3 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "本人負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費 3 本人負担額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "緊急時施設療養費請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費公費 3 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "特定診療費請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "特定診療費又は特別療養費公費 3 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "合計情報",
+              "公費3",
+              "特定入所者介護サービス費等請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "特定入所者介護サービス費等の公費 3 請求額の合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "設定不要",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "インタフェース仕様書 共通編 1.5 留意事項 「年月」欄参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "インタフェース仕様書 共通編 1.4 コード一覧 参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の符号付き形式項目。なお、※Sが付加されていない数字属性項目は、符号なし形式項目である。"
+      }
+    ],
+    "uncertain": [
+      "先頭の項番44は前ページからの続きと判断したが、表見出しが繰り返されているため継続表として扱った。",
+      "項目名列は見出しが3つの副列にまたがるため、列は「項目名」の1列とし、合計情報・公費2・公費3は name_path に入れた。",
+      "行44の副列（公費の区分）は空欄のため name_path から除外した。",
+      "各行の内容欄の「公費 2」「公費 3」等の数字の全角半角は画像から判別しきれず、半角で書き写した。",
+      "注記の※1・※2・※3 は本文中の参照記号が画像上で確認できなかった。"
+    ]
+  },
+  "raw_text": null
+}
