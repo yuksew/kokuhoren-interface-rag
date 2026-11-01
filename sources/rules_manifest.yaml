@@ -1,0 +1,1280 @@
+# 算定ルール資料 ソース一覧（告示・留意事項・記載要領・Q&A・サービスコード表）
+# - 調査の根拠と判断は sources/rules_survey.md。取得は:
+#     uv run python src/fetch.py --manifest sources/rules_manifest.yaml
+#   → sources/raw/rules/{domain}/{id}.{pdf,html,xlsx,xls,zip}、sha256 はこのファイルに書き戻す（ログは fetch_log.rules.json）
+# - 方針（2026-11-01 に利用者と決定）:
+#   1. 全文があるものは全文を使う（介護の告示 = 法令等データベースの溶け込み版、障害の留意事項 = 新旧2段の「改正後」欄）。
+#      全文が無いものは新旧対照表を日付つきで積み重ね、新しい方を優先して答えさせる。自前で溶け込み版は作らない。
+#   2. 介護の記載要領は WAM 確定版（R8.5.25、インタフェース仕様書と同じ確定版に同梱）を正本とする。
+#   3. Q&A は現行の系統だけ（介護 R6 Vol.1〜18 と R8 系、障害 R6・R8 系）。令和3年度以前は後回し。
+#   4. 次の改定（R9）は status: future で登録だけ。取り込まない。
+# - フィールド:
+#   category: kokuji（告示）| kokuji_kaisei（改正告示）| ryui（留意事項）| kisai（記載要領・記載例）| qa | errata（正誤）
+#             | servicecode（サービスコード表）| kozo（算定構造・対応表）| sogo（総合事業）
+#   format:   pdf | html_pages（法令等DB、複数ページを1ファイルに）| xlsx | xls | zip
+#   effective: 施行・適用日（分かる範囲）。答えるときの「新しい方を優先」に使う
+#   ingest:   prose（本文として取り込む）| table（Excel を表として取り込む）| none（保存だけ）
+
+# =====================================================================
+# 介護保険（kaigo）
+# =====================================================================
+
+# --- 告示（単位数表）: 法令等データベースの溶け込み版（R8 告示第87号まで反映）
+- id: kaigo_kokuji_h12_19
+  domain: kaigo
+  category: kokuji
+  title: 指定居宅サービスに要する費用の額の算定に関する基準（平成12年厚生省告示第19号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa0253&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: R8 告示第87号の内容（処遇改善加算(Ⅰ)イ・1000分の270 など）が本文に入っていることを確かめた（2026-11-01）。末尾の改正文の一覧は令和4年までしか載っていないので、版の判断には使わない
+  sha256: 6ebf710a46566a9ccb3451f1529a424fe00f02d56b707f4f6b0db9ef2a8cfebb
+
+- id: kaigo_kokuji_h12_20
+  domain: kaigo
+  category: kokuji
+  title: 指定居宅介護支援に要する費用の額の算定に関する基準（平成12年厚生省告示第20号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa0254&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: dfca46ed888cd661e450b92db89e60e6c0af817e961e9d75d6f8af3dab4e197a
+
+- id: kaigo_kokuji_h12_21
+  domain: kaigo
+  category: kokuji
+  title: 指定施設サービス等に要する費用の額の算定に関する基準（平成12年厚生省告示第21号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa0255&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: e5fcf1f6af6c56f07ed5880a65f2ce7ac64fc550dbfa087a137c975e05cdd6a0
+
+- id: kaigo_kokuji_h18_126
+  domain: kaigo
+  category: kokuji
+  title: 指定地域密着型サービスに要する費用の額の算定に関する基準（平成18年厚生労働省告示第126号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa7862&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: b83022afcdce37b146a211e3305c952f8d27d193957acdb158be8c7c4610e529
+
+- id: kaigo_kokuji_h18_127
+  domain: kaigo
+  category: kokuji
+  title: 指定介護予防サービスに要する費用の額の算定に関する基準（平成18年厚生労働省告示第127号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa7863&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: 2fbe9b9322a41b5a8385dc439484b064526cea15cdc65a4d0a029be7857dd8aa
+
+- id: kaigo_kokuji_h18_128
+  domain: kaigo
+  category: kokuji
+  title: 指定地域密着型介護予防サービスに要する費用の額の算定に関する基準（平成18年厚生労働省告示第128号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa7864&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: e688b13257235f1143d89a3bce2e8a951b7b854dfb9b26235ea8922798207bb9
+
+- id: kaigo_kokuji_h18_129
+  domain: kaigo
+  category: kokuji
+  title: 指定介護予防支援に要する費用の額の算定に関する基準（平成18年厚生労働省告示第129号）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82aa7865&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: 259c9427dbd8d08d4c770c344389b70a90257d7c62b3906f23991cc7b3348fcd
+
+- id: kaigo_kokuji_r03_72
+  domain: kaigo
+  category: kokuji
+  title: 介護保険法施行規則第百四十条の六十三の二第一項第一号に規定する厚生労働大臣が定める基準（令和3年厚生労働省告示第72号。総合事業・介護予防ケアマネジメントの単位数）
+  edition: 法令等データベース 溶け込み版
+  effective: null
+  format: html_pages
+  ingest: prose
+  url: https://www.mhlw.go.jp/web/t_doc?dataId=82ab8054&dataType=0&pageNo=1
+  source_page: https://www.mhlw.go.jp/hourei/
+  note: null
+  sha256: bd9756ffb962a5cb5207832fa58a7ade195c00bc26988c2286eb3f4ea5957bed
+
+- id: kaigo_kokuji_kaisei_r08_87
+  domain: kaigo
+  category: kokuji_kaisei
+  title: 指定居宅サービスに要する費用の額の算定に関する基準等の一部を改正する告示（令和8年厚生労働省告示第87号）
+  edition: R8.3.13 公布
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: https://www.mhlw.go.jp/content/12404000/001675895.pdf
+  source_page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  note: 改正部分だけ。溶け込み版が87号を反映しているかの照合用に保存
+  sha256: 22dcf892db41a275c867760fc3fbfdaf40df74c3e0f00252c24c9a5b1ef8481e
+
+# --- 留意事項通知（全文なし。新旧対照表を日付順に積み重ねる）
+- id: kaigo_ryui_36_r060315
+  domain: kaigo
+  category: ryui
+  title: 老企第36号（訪問通所サービス・居宅療養管理指導・福祉用具貸与・居宅介護支援の留意事項）新旧対照表（抄）
+  edition: R6.3.15 改正
+  effective: 2024-04-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001227887.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: 826dc8f8521ff8387fdde90f880290422ed9a846e71cc3277494b1ea38693241
+
+- id: kaigo_ryui_36_r060418
+  domain: kaigo
+  category: ryui
+  title: 老企第36号 新旧対照表
+  edition: R6.4.18 改正
+  effective: 2024-04-18
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001247345.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: d21e1fa7ea4e5f4296da183f35fef04ad8a61c608793e5b74a29200bd79a0fde
+
+- id: kaigo_ryui_36_r080313
+  domain: kaigo
+  category: ryui
+  title: 老企第36号 新旧対照表
+  edition: R8.3.13 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12404000/001682729.pdf
+  source_page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  note: null
+  sha256: 6b1fdda31a1e23cda5e8299ae88ec28f7bf7971535923a112da2ba44a8078eef
+
+- id: kaigo_ryui_40_r060315
+  domain: kaigo
+  category: ryui
+  title: 老企第40号（短期入所・特定施設・施設サービスの留意事項）新旧対照表
+  edition: R6.3.15 改正
+  effective: 2024-04-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001227894.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: d76d2c39c00c61f169f76c9126c5698bd7800b93ee8e078c35bc79a7b5490d54
+
+- id: kaigo_ryui_yobo_r060315
+  domain: kaigo
+  category: ryui
+  title: 老計発第0317001号等（介護予防サービスの留意事項）新旧対照表
+  edition: R6.3.15 改正
+  effective: 2024-04-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001227907.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: c8126bb0bab047c47f03ad50ac29cacdfbdf86778fb2b34b058067cdb4de3a15
+
+- id: kaigo_ryui_yobo_r060418
+  domain: kaigo
+  category: ryui
+  title: 老計発第0317001号等 新旧対照表
+  edition: R6.4.18 改正
+  effective: 2024-04-18
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001247346.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: 88a2c3e7dd9fefa828468f07a56a2dd717f8aa876566e06c6f5535775183a977
+
+- id: kaigo_ryui_yobo_r080313
+  domain: kaigo
+  category: ryui
+  title: 指定介護予防サービスに要する費用の額の算定に関する基準の制定に伴う実施上の留意事項について（新旧）
+  edition: R8.3.13 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12404000/001675938.pdf
+  source_page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  note: null
+  sha256: d8492623cad6468354585ff4f2e55eb127c582ef1536ea0a088d9228a952e27d
+
+- id: kaigo_ryui_mitchaku_r060315
+  domain: kaigo
+  category: ryui
+  title: 老計発第0331005号等（地域密着型サービスの留意事項）新旧対照表
+  edition: R6.3.15 改正
+  effective: 2024-04-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001227915.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: d0513fc0bac5784c2b3fe12602232002dbdc9495a4ffa18afb041f5c052ed568
+
+- id: kaigo_ryui_mitchaku_r060418
+  domain: kaigo
+  category: ryui
+  title: 老計発第0331005号等 新旧対照表
+  edition: R6.4.18 改正
+  effective: 2024-04-18
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/001247347.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: 505aaec21d034c98403a335ae610d53439701e87b26c43943a96090c0aba1759
+
+- id: kaigo_ryui_all_r080508
+  domain: kaigo
+  category: ryui
+  title: "留意事項通知（老企第36号ほか）等の一部改正 新旧対照表 及び 当該通知の発出に伴うQ&A（介護保険最新情報 Vol.1502）"
+  edition: R8.5.8 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/001698614.pdf
+  source_page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  note: 4通知の R8.5.8 改正（新旧）と Q&A（Vol.1）をまとめた29頁
+  sha256: 5592ae7819b447253e92cbf6ebf2d7a0e070ca6c711dcdee9cec28bc4f78cf0e
+
+- id: kaigo_ryui_sogo
+  domain: kaigo
+  category: ryui
+  title: 介護予防・日常生活支援総合事業の留意事項（老認発0319第3号）
+  edition: 改正前（全文）
+  effective: null
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/12300000/000947634.pdf
+  source_page: https://www.mhlw.go.jp/stf/newpage_38790.html
+  note: null
+  sha256: ef9ebdab71168ba81ecf818fbe26fbcdf5492d5fae46a8ddab2c11f12f0473e8
+
+- id: kaigo_ryui_sogo_r080313
+  domain: kaigo
+  category: ryui
+  title: 介護予防・日常生活支援総合事業の留意事項 新旧対照表
+  edition: R8.3.13 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.mhlw.go.jp/content/001673837.pdf
+  source_page: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  note: null
+  sha256: a586a8bd10a224ac3db2048dccccbe1b4bbcb7e49ca9c4662a99a808695a7c36
+
+# --- 記載要領・記載例（WAM 確定版 R8.5.25 に同梱）
+- id: kaigo_kisai_youryou
+  domain: kaigo
+  category: kisai
+  title: 介護給付費請求書等の記載要領について（平成13年11月16日老老発第31号）
+  edition: R8.6 施行分 確定版（R8.5.25 事務連絡）
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0414230733572/20260416_014.pdf
+  source_page: https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010
+  note: 正本（厚労省 介護保険最新情報 Vol.1489 の版ではなくこちら）
+  sha256: 255090c1adb21265f1c66a0173db38a2ee8fc89489356ff4e4b4aa929c6e4d3b
+
+- id: kaigo_kisai_youryou_beppyo
+  domain: kaigo
+  category: kisai
+  title: 介護給付費請求書等の記載要領について 別表
+  edition: R8.6 施行分 確定版（R8.5.25 事務連絡）
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/041423074279/20260416_015.pdf
+  source_page: https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010
+  note: null
+  sha256: e047e69ffed558af6d0377a8efdcf0922e78ce4fd23d278347e8bb8cd14d0708
+
+- id: kaigo_kisai_rei
+  domain: kaigo
+  category: kisai
+  title: 介護給付費請求書・明細書及び給付管理票記載例
+  edition: R8.6 施行分 確定版（R8.5.25 事務連絡）
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0420143053543/20260416_024.pdf
+  source_page: https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010
+  note: null
+  sha256: 53beef9776cf3fd055d3c5bfb5aa633b78092d0e2061958f2ee78e2d7408ecc3
+
+# --- Q&A（令和6年度介護報酬改定 Vol.1〜18、処遇改善）
+- id: kaigo_qa_r6_v01
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.1）"
+  edition: R6.3.15
+  effective: 2024-03-15
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001230308.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 90f2c8bc4519fc75e4030ead8751150c75920998850a42e227c4f35273ad2a83
+
+- id: kaigo_qa_r6_v02
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.2）"
+  edition: R6.3.19
+  effective: 2024-03-19
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001239535.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 648b374bb36f1e04eaf1ad870faeebddc211724eb8667739349fcd599d2f311f
+
+- id: kaigo_qa_r6_v03
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.3）"
+  edition: R6.3.29
+  effective: 2024-03-29
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001239536.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 3001d4239493fc4567c4fd29a2a6d07f8e4d2e77246aa6d486d9ef5abfe89044
+
+- id: kaigo_qa_r6_v04
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.4）"
+  edition: R6.4.18
+  effective: 2024-04-18
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001247348.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: e2cec8e2d60ce80131f44ff060df8a11483ce860d50136ef372ace4c0be4fc99
+
+- id: kaigo_qa_r6_v05
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.5）"
+  edition: R6.4.30
+  effective: 2024-04-30
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001250798.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 0646a499c3e4b3f8ece737a011dd54e2fd11e13c43aa308693245be72a083e0a
+
+- id: kaigo_qa_r6_v06
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.6）"
+  edition: R6.5.17
+  effective: 2024-05-17
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001255640.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 64b7f16cae06f6b501879f6fe8068766d763eb6c382198a6b442c0f85b3a9c2b
+
+- id: kaigo_qa_r6_v07
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.7）"
+  edition: R6.6.7
+  effective: 2024-06-07
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001261868.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: ccb84359a8bfca2da992d243bdf19548ca3e14e1a197905f03737a2d0addd34b
+
+- id: kaigo_qa_r6_v08
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.8）"
+  edition: R6.7.9
+  effective: 2024-07-09
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001309722.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 6e6e62ab4793a676750cbae4c85c738eded832c87f18df45c6ef5e1754346faf
+
+- id: kaigo_qa_r6_v09
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.9）"
+  edition: R6.8.29
+  effective: 2024-08-29
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001309723.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: e6ae29adba2b37eb3a5acb0d75a104802b71d07b7c6b5f95ef5c85b0a6fed916
+
+- id: kaigo_qa_r6_v10
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.10）"
+  edition: R6.9.27
+  effective: 2024-09-27
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001309718.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 2567fc4511ee7bc325b96f5220875065a3fe1fc89ac95511ac997690337b1add
+
+- id: kaigo_qa_r6_v11
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.11）"
+  edition: R6.11.11
+  effective: 2024-11-11
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001404862.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: f4d170084c2b19cd78bad3c23c49236c355eade6ae02a5b66ce8c0be12450290
+
+- id: kaigo_qa_r6_v12
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.12）"
+  edition: R7.1.22
+  effective: 2025-01-22
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001381691.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: a5befc5c04656ec9cf430426ea3040c2c3013ca5d0432d694dc5e71433682d15
+
+- id: kaigo_qa_r6_v13
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.13）"
+  edition: R7.4.7
+  effective: 2025-04-07
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001473357.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: b39daefd77577a3ef65148b6a7b8e24d799f9b0e98212a5f6d6a0961395d1435
+
+- id: kaigo_qa_r6_v14
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.14）"
+  edition: R7.4.18
+  effective: 2025-04-18
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001478559.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 5b024057e4e89cc0a2551a8738eb3a0f1aa069e585d5026427266e97e080e2ec
+
+- id: kaigo_qa_r6_v15
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.15）"
+  edition: R7.7.9
+  effective: 2025-07-09
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001552756.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: f7b03f223ac191325e8061778624ac4b9652913426448aaa6e166bb52e9f37a4
+
+- id: kaigo_qa_r6_v16
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.16）"
+  edition: R7.9.5
+  effective: 2025-09-05
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001557055.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: a2b1d433c23ffebba74b3d4f10f1a9e0ca5f754cff71a7a927f6d36aae1b2800
+
+- id: kaigo_qa_r6_v17
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.17）"
+  edition: R7.10.1
+  effective: 2025-10-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001572619.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: 15539d2176f5c8bb5a2a0cdbab8dc0deac7ace47a21951d515d8a742c6c41e25
+
+- id: kaigo_qa_r6_v18
+  domain: kaigo
+  category: qa
+  title: "令和6年度介護報酬改定に関するQ&A（Vol.18）"
+  edition: R8.7.14
+  effective: 2026-07-14
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001723857.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: b9bde973a0e0195e49b65c33e83a50fa7a2dc0f3ebaf3495d93be747a58569e3
+
+- id: kaigo_qa_shogu_r6_3
+  domain: kaigo
+  category: qa
+  title: "介護職員等処遇改善加算等に関するQ&A（第3版）"
+  edition: R6.6.20
+  effective: 2024-06-20
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001266718.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/newpage_38790.html"
+  note: null
+  sha256: b17f642121a9df15d4de50d5a8ae5dae6461377e0bb8c8f3875904aab9168341
+
+- id: kaigo_qa_shogu_r8_1
+  domain: kaigo
+  category: qa
+  title: "令和8年度介護職員等処遇改善加算に関するQ&A（第1版）"
+  edition: R8
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12404000/001675711.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html"
+  note: null
+  sha256: ef89ee24afd143a3ee2c9164d8b83a8a254d88531177916e083f8a0478e06fab
+
+- id: kaigo_qa_ryui_r8_v2
+  domain: kaigo
+  category: qa
+  title: "「「指定居宅サービスに要する費用の額の算定に関する基準…の留意事項について」等の一部改正について」の発出等に伴うQ&A（Vol.2）（介護保険最新情報 Vol.1523）"
+  edition: R8.7.13
+  effective: 2026-07-13
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001722713.pdf"
+  source_page: null
+  note: null
+  sha256: b89328d399e4add92a92d57ed86e681129160dd75f582de2826049ca1a3ca832
+
+
+# --- サービスコード表（R8.6.1 施行、Excel は zip）
+- id: kaigo_sc_kaigo_pdf
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 介護サービス（R8.6.1）
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/052008190186/20260522_003.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: ページ参照用。中身は Excel 版から取り込む
+  sha256: e951d3330554bc627b8141510e43d1aed21d76315775e3243554620e926da1e9
+
+- id: kaigo_sc_kaigo_xlsx
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 介護サービス（R8.6.1）エクセル版
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: zip
+  ingest: table
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0521184041930/20260522_013.zip"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: e32e4406158fe34db804e5268c6452322f4a9a066faf749690895bc3e078e5b2
+
+- id: kaigo_sc_yobo_pdf
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 介護予防サービス（R8.6.1）
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520081914484/20260522_004.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: d1c741b1ebb288b536227203727c63599a712021436e3c79254642ee2fa92494
+
+- id: kaigo_sc_yobo_xlsx
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 介護予防サービス（R8.6.1）エクセル版
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: zip
+  ingest: table
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0521184051104/20260522_014.zip"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: aab8f15f748707d3148df385706026afbff40dcdaa5aa323a6418ca4ca107fbd
+
+- id: kaigo_sc_mitchaku_pdf
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 地域密着型サービス（R8.6.1）
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520081927889/20260522_005.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 28c3f44da3e7ed8b5671457ea007d377c958ccd2a7a2433883cc5fac24c22055
+
+- id: kaigo_sc_mitchaku_xlsx
+  domain: kaigo
+  category: servicecode
+  title: 介護給付費単位数等サービスコード表 地域密着型サービス（R8.6.1）エクセル版
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: zip
+  ingest: table
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/052118405922/20260522_015.zip"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 525b53e712ba2b6f023978e6dbdd5a61f340b0d01f5f5634f125ddfaf0e5ca09
+
+- id: kaigo_sc_sogo_pdf
+  domain: kaigo
+  category: servicecode
+  title: 介護予防・日常生活支援総合事業サービスコード表（R8.6.1）
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520082055424/20260522_007.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: c68ec8dfbaa3e2803feb06f976503b8d931e5363f258f6da705bff93bb1f9148
+
+- id: kaigo_sc_sogo_xlsx
+  domain: kaigo
+  category: servicecode
+  title: 介護予防・日常生活支援総合事業サービスコード表（R8.6.1）エクセル版
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: zip
+  ingest: table
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0521184108165/20260522_016.zip"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 215ce063110e2ed2a1640c206f62a55f4a9895f43621d0dfc5581330a14ca122
+
+- id: kaigo_kozo
+  domain: kaigo
+  category: kozo
+  title: 介護報酬の算定構造のイメージ（R8.6.1）
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520081831222/20260522_001.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 7ad2736085e9e9ff388aa3d1a813e1feafa8aabd5adf194fbdd8e00c9d952b75
+
+
+# --- 総合事業（請求の考え方・記載例）
+- id: kaigo_sogo_shurui
+  domain: kaigo
+  category: sogo
+  title: 令和6年4月以降の介護予防・日常生活支援総合事業におけるサービス種類の考え方
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0522171821794/20260522_017.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: c6437f0486c5bed4326bf05d488b4a8ec5315fb7a6576599973d781e2378eff7
+
+- id: kaigo_sogo_pattern
+  domain: kaigo
+  category: sogo
+  title: 介護予防・日常生活支援総合事業における請求明細書と給付管理票の提出パターン
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0522171834175/20260522_018.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 836b79e5cb62bce9acf7494b0482bb950efb1f051e365b862aed6d35feb23dad
+
+- id: kaigo_sogo_kisai_rei
+  domain: kaigo
+  category: sogo
+  title: 介護予防・日常生活支援総合事業費請求書・明細書及び給付管理票記載例
+  edition: R8.6 施行分 確定版
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520082144743/20260522_008.pdf"
+  source_page: "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010"
+  note: null
+  sha256: 19a4baf5936a65a2fd6792b090115aae52a49b07728b8d828eaae461d431390d
+
+- id: kaigo_sogo_guideline
+  domain: kaigo
+  category: sogo
+  title: 介護予防・日常生活支援総合事業のガイドラインについて（老発0605第5号、最終改正 老発0820第2号）
+  edition: R8.8.20
+  effective: 2026-08-20
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001741382.pdf"
+  source_page: null
+  note: 改正後全文
+  sha256: 986a9268c86457ffdd337821af6fd7cf49bba60ac032f0f9cd66748fcadd4e9e
+
+- id: kaigo_sogo_youkou
+  domain: kaigo
+  category: sogo
+  title: 地域支援事業の実施について（老発第0609001号、最終改正 老発0820第1号）
+  edition: R8.8.20
+  effective: 2026-08-20
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12300000/001741386.pdf"
+  source_page: null
+  note: 改正後全文
+  sha256: a0d8bbb7ca5110474f02f4fce76d9939d63a663157b43eb26ec6f3b92d9f3769
+
+
+# --- 次の改定（R9）: 登録だけ
+- id: kaigo_future_r9_notice
+  domain: kaigo
+  category: sogo
+  status: future
+  title: 介護保険事務処理システム変更に係る参考資料（R9 総合事業のサービス種類の変更 その1）
+  edition: R8.10.6 事務連絡
+  effective: null
+  format: pdf
+  ingest: none
+  url: null
+  source_page: null
+  note: インタフェース仕様書側の kaigo_notice_20261006（sources/manifest.yaml）が同じ事務連絡。確定版が出たら取り込みを判断する
+  sha256: null
+
+
+# =====================================================================
+# 障害福祉（shogai）※障害児を含む
+# =====================================================================
+
+# --- 告示（全文なし。改正告示を積み重ねる）
+- id: shogai_kokuji_kaisei_r06
+  domain: shogai
+  category: kokuji_kaisei
+  title: 障害福祉サービス等の算定基準等の一部を改正する告示（令和6年こども家庭庁・厚生労働省告示第3号）
+  edition: R6
+  effective: 2024-04-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001239565.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 5d32a1fa54d928be5c91861ecf68490e820768a93b9923a5d8b342c267351d54
+
+- id: shogai_kokuji_kaisei_r07
+  domain: shogai
+  category: kokuji_kaisei
+  title: 障害福祉サービス等の算定基準等の一部を改正する告示（令和7年こども家庭庁・厚生労働省告示第2号）
+  edition: R7
+  effective: null
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12200000/001471228.pdf"
+  source_page: null
+  note: null
+  sha256: bf32dbdae8736933b34ac3ddb1a2c225ec2c4479803ae8819fba0e71e0137bc8
+
+- id: shogai_kokuji_kaisei_r08_service
+  domain: shogai
+  category: kokuji_kaisei
+  title: 指定障害福祉サービス等及び基準該当障害福祉サービスに要する費用の額の算定に関する基準等の一部を改正する告示（令和8年）
+  edition: R8.3.31
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001684450.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: null
+  sha256: f4b7a05e33b5dd91bf745ef078fd5563930ea3a2a7b84463e7bd092c36ff036c
+
+- id: shogai_kokuji_kaisei_r08_chiiki
+  domain: shogai
+  category: kokuji_kaisei
+  title: 指定地域相談支援に要する費用の額の算定に関する基準等の一部を改正する告示（令和8年）
+  edition: R8.3.31
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001684361.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: null
+  sha256: 2e99e3b8e89b0810e497cb47846300b9a5ca7c0b0b488a6f1fc84258623e6375
+
+- id: shogai_kokuji_kaisei_r08_ji
+  domain: shogai
+  category: kokuji_kaisei
+  title: 【官報】児童福祉法に基づく指定通所支援及び基準該当通所支援に要する費用の額の算定に関する基準等の一部を改正する告示（令和8年こども家庭庁告示第5号）
+  edition: R8.3.31
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2c5e1bb4-ee80-462b-992f-06f0d8c9b774/255d371a/20260402_policies_shougaijishien_shisaku_r8hoshukaitei_15.pdf"
+  source_page: "https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei"
+  note: null
+  sha256: 0a3db5b1cefc5e5818506518889876bfa7c0e37518cd7ca408a106ba0f443c01
+
+
+# --- 留意事項通知
+- id: shogai_ryui_r080528
+  domain: shogai
+  category: ryui
+  title: 障発第1031001号（指定障害福祉サービス等の算定基準の留意事項）新旧対照表（全文2段）
+  edition: R8.5.28 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001705650.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: 全文を2段に並べた形式。取り込みは「改正後」の欄だけ（約440頁）
+  sha256: 0c4f357f4dfd20c71ec0ab8b688db4323d3a4f52c1545fdf46a996cb15485d99
+
+- id: shogai_qa_ryui_r080528
+  domain: shogai
+  category: qa
+  title: "「「指定障害福祉サービス等…の留意事項について」の一部改正について」等の発出に伴うQ&A（令和8年5月28日）"
+  edition: R8.5.28
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001705652.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: null
+  sha256: 68811f40164727ffa7165d53bd6a090363f23a7cf5aaacd2302ded41add2ad35
+
+- id: shogai_ryui_ji_zenbun
+  domain: shogai
+  category: ryui
+  title: 児童福祉法に基づく指定通所支援等の算定基準の留意事項（障発0330第16号）改正後全文
+  edition: R8.4 時点
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2c5e1bb4-ee80-462b-992f-06f0d8c9b774/4aacbf83/20260402_policies_shougaijishien_shisaku_r8hoshukaitei_17.pdf"
+  source_page: "https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei"
+  note: null
+  sha256: f2dae1a68b8323e3ea9be4094f5f94a0c31b14d60a5e2e4970c5bce40cba5697
+
+- id: shogai_ryui_ji_r080528
+  domain: shogai
+  category: ryui
+  title: 児童福祉法に基づく指定通所支援等の算定基準の留意事項 新旧対照表
+  edition: R8.5.28 改正
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2c5e1bb4-ee80-462b-992f-06f0d8c9b774/65f8ab1f/20260528_policies_shougaijishien_shisaku_r8hoshukaitei_28.pdf"
+  source_page: "https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei"
+  note: 全文（_17）より新しい。答えるときはこちらを優先
+  sha256: b575b862cf45c2147fe17b64810689bdf28801037c835a852e5f1861e46524e6
+
+
+# --- 請求（明細書・実績記録票の記載例）。明細書の記載要領は現行版が見つからないので、記載例で代える
+- id: shogai_kisai_rei_meisai
+  domain: shogai
+  category: kisai
+  title: 請求書明細書（記載例）
+  edition: 令和7年10月施行分（R8.6 は変更なし）
+  effective: 2025-10-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12200000/001565602.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00021.html"
+  note: null
+  sha256: 35586ddf25e5771ae7b2219c48ee38a0c90c17ad41f7cad6d10b2e8740705415
+
+- id: shogai_kisai_rei_jisseki
+  domain: shogai
+  category: kisai
+  title: 実績記録票（記載例）
+  edition: 令和7年10月施行分（R8.6 は変更なし）
+  effective: 2025-10-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12200000/001565588.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00021.html"
+  note: null
+  sha256: ab5f500826548582b0ea4198b33519437848b5352f14c630a3066decffe19ca1
+
+
+# --- Q&A（令和6年度・令和8年度）
+- id: shogai_qa_r6_v1
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.1"
+  edition: R6.3.29
+  effective: 2024-03-29
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001260473.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: 正誤（その1〜3）は errata として別に入れる
+  sha256: 88309c362a23aac08fce7947bb4aadcc892531164ad7d56a37188ca01be1d95a
+
+- id: shogai_qa_r6_v2
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.2"
+  edition: R6.4.5
+  effective: 2024-04-05
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001250243.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: bd773dfe577b8a83fd99b28fd10f8cdc1b55d47114a03fd64c128777e54e6b8d
+
+- id: shogai_qa_r6_v3
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.3"
+  edition: R6.5.10
+  effective: 2024-05-10
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001253308.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 8968925cfae7a563d68fa2b7131e19c7746e30e3a65b91b37ff7c3812c90e2b4
+
+- id: shogai_qa_r6_v4
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.4"
+  edition: R6.6.4
+  effective: 2024-06-04
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001260438.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: f2f1a2388e9a94d7b4662f1714b7c2f95a4f1f1d661f3e87d3b6ab580fe31837
+
+- id: shogai_qa_r6_v5
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.5"
+  edition: R6.8.29
+  effective: 2024-08-29
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001297221.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 5a5c07db593c2d75a14fa12714ed9ed112d62a00feb3ffd7855cc7e1f6ee5eb7
+
+- id: shogai_qa_r6_v6
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.6"
+  edition: R6.10.11
+  effective: 2024-10-11
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001316215.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 14346b90b13893e201bcad9f1db325becf5b109353b92b0ace362987ffd55802
+
+- id: shogai_qa_r6_v7
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.7"
+  edition: R7.1.24
+  effective: 2025-01-24
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001385141.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 943ed022a46f706adc23e2a6c40724acf7c994c4549d0b1df709c335c46215f5
+
+- id: shogai_qa_r6_v8
+  domain: shogai
+  category: qa
+  title: "令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.8"
+  edition: R7.3.31
+  effective: 2025-03-31
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001471548.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 09187ef8d8f88edf95e3454fec96eb39c1e455a7fd72f76eae871fab6c40b340
+
+- id: shogai_qa_r6_ji
+  domain: shogai
+  category: qa
+  title: "障害福祉サービス等報酬改定（障害児支援）に関するQ&A"
+  edition: R6.5.17
+  effective: 2024-05-17
+  format: pdf
+  ingest: prose
+  url: "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/87a60237/20240517_policies_shougaijishien_shisaku_hoshukaitei_98.pdf"
+  source_page: "https://www.cfa.go.jp/policies/shougaijishien/shisaku/hoshukaitei"
+  note: null
+  sha256: 7d6a67054c3fa835889f376627ca6ec0e0b228ba22c7efa9f6837e4a4558fca7
+
+- id: shogai_qa_r8_v1
+  domain: shogai
+  category: qa
+  title: "令和8年度障害福祉サービス等報酬改定等に関するQ&A VOL.1"
+  edition: R8.3.31
+  effective: 2026-03-31
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001683290.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: null
+  sha256: e2b95e451418c928e6e2ec7e05360d1810079fa81fa70acfe76fe91126276e78
+
+- id: shogai_qa_r8_v2
+  domain: shogai
+  category: qa
+  title: "令和8年度障害福祉サービス等報酬改定等に関するQ&A VOL.2"
+  edition: R8.7.13
+  effective: 2026-07-13
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001722503.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html"
+  note: null
+  sha256: 3baf0c8215f4563944c148025e093b2a0c0f153d3094bc2eaa26c53007ec4e9f
+
+- id: shogai_errata_qa_r6_v1_1
+  domain: shogai
+  category: errata
+  title: "「令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.1」の正誤について"
+  edition: R6
+  effective: null
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001241668.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 81db930576745d6b7b53e82e0105805ec182f9d294118a6f822f9b8b3a3ad246
+
+- id: shogai_errata_qa_r6_v1_2
+  domain: shogai
+  category: errata
+  title: "「令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.1」の正誤（その2）及び VOL.2 の正誤"
+  edition: R6
+  effective: null
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001250239.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: ee37c492b6989ad874f4be0f8febddab2ff351e6fe5bb0afff04223a7e2df8df
+
+- id: shogai_errata_qa_r6_v1_3
+  domain: shogai
+  category: errata
+  title: "「令和6年度障害福祉サービス等報酬改定等に関するQ&A VOL.1」の正誤（その3）について"
+  edition: R6
+  effective: null
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/001260428.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html"
+  note: null
+  sha256: 0a5b18d0d1f413d1599861db90d4735bb8a39c99cb6d48e4e0e45fa090f7c57a
+
+
+# --- サービスコード表・算定構造（令和8年6月施行分）
+- id: shogai_sc_1_pdf
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その1 居宅介護〜（訪問系・日中活動系など）
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.mhlw.go.jp/content/12200000/001696433.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: db9c20a55c40f831537b9d59eaa02d54906544432397e8f1914d0098b2578760
+
+- id: shogai_sc_2_pdf
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その2 短期入所〜
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.mhlw.go.jp/content/12200000/001696434.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: 0ff507138037c0b58bdada54d35677c27cf54e708635706d41004638626a7445
+
+- id: shogai_sc_3_pdf
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その3 障害児（児童発達支援〜）
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.mhlw.go.jp/content/12200000/001696435.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: a04396b70fdfce15a71c67809b4469287edb67ec52037c6fe7e57f1f4c832f1f
+
+- id: shogai_sc_1_xlsx
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その1 Excel
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: xlsx
+  ingest: table
+  url: "https://www.mhlw.go.jp/content/12200000/001696436.xlsx"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: b0d5495bdc684cd5c3e6e4f8c97dc247f169df7fd628660e085014564f266908
+
+- id: shogai_sc_2_xlsx
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その2 Excel
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: xlsx
+  ingest: table
+  url: "https://www.mhlw.go.jp/content/12200000/001696437.xlsx"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: 307b631ed91a07d4fc9a77b090030b2819731aa018a0374544c1984bf2935049
+
+- id: shogai_sc_3_xlsx
+  domain: shogai
+  category: servicecode
+  title: 介護給付費等単位数サービスコード（令和8年6月施行分）その3 Excel
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: xlsx
+  ingest: table
+  url: "https://www.mhlw.go.jp/content/12200000/001696438.xlsx"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: 949fa36f8e89704430ddb3edb93a9dadbf463c93a3670b3c9beddcb6e4b503b5
+
+- id: shogai_kozo
+  domain: shogai
+  category: kozo
+  title: 障害福祉サービス費等の報酬算定構造（令和8年6月）
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: pdf
+  ingest: prose
+  url: "https://www.mhlw.go.jp/content/12200000/001663319.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: 8c2638482364d57c7a42c87f5a4ff0dc9a58b0f32c1908ac3702e2a1c35a2b49
+
+- id: shogai_sc_taiou_pdf
+  domain: shogai
+  category: kozo
+  title: 請求サービスコードと決定サービスコード対応表（令和8年6月）
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: pdf
+  ingest: none
+  url: "https://www.mhlw.go.jp/content/12200000/001696448.pdf"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: 26d10690efee3b26a21d219e32ffdc92892cad6044d4414864c853e09e15033e
+
+- id: shogai_sc_taiou_1_xls
+  domain: shogai
+  category: kozo
+  title: 請求サービスコードと決定サービスコード対応表（令和8年6月）Excel その1
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: xls
+  ingest: table
+  url: "https://www.mhlw.go.jp/content/12200000/001696450.xls"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: dd11bfc99831aab4d0ec6eaef1e97fc52cbaf7f15c036f6edd114fa36fd249b2
+
+- id: shogai_sc_taiou_2_xls
+  domain: shogai
+  category: kozo
+  title: 請求サービスコードと決定サービスコード対応表（令和8年6月）Excel その2
+  edition: R8.6 施行分
+  effective: 2026-06-01
+  format: xls
+  ingest: table
+  url: "https://www.mhlw.go.jp/content/12200000/001696451.xls"
+  source_page: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html"
+  note: null
+  sha256: fa309d628643d313e522cdd19d39cdd957336f3d8eff3f1274556ce886e6a0ff

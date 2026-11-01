@@ -6,7 +6,11 @@
   （公開元でファイルが差し替えられた可能性があるため。--accept-changed で受け入れ）。
 - 元ファイルは一切加工しない。
 
-usage: uv run python src/fetch.py [--only ID ...] [--accept-changed]
+usage: uv run python src/fetch.py [--manifest sources/rules_manifest.yaml] [--only ID ...] [--accept-changed]
+  --manifest を省くとインタフェース仕様書（sources/manifest.yaml → sources/raw/）。
+  算定ルール資料は sources/rules_manifest.yaml → sources/raw/rules/（ログは sources/fetch_log.rules.json）。
+- format: html_pages のエントリ（厚労省 法令等データベース）は、pageNo=1 から「該当ページ数： N」まで取得し、
+  区切り行 <!-- page N --> でつないだ1つの .html にする。
 """
 
 from __future__ import annotations
@@ -38,9 +42,36 @@ def sha256_of(path: Path) -> str:
     return h.hexdigest()
 
 
-def local_path(entry: dict) -> Path:
-    ext = Path(entry["url"].split("?")[0]).suffix or ".bin"
-    return RAW / entry["domain"] / f"{entry['id']}{ext}"
+def local_path(entry: dict, raw: Path = RAW) -> Path:
+    if entry.get("format") == "html_pages":
+        ext = ".html"
+    else:
+        ext = Path(entry["url"].split("?")[0]).suffix or ".bin"
+    return raw / entry["domain"] / f"{entry['id']}{ext}"
+
+
+def download_html_pages(url: str, dest: Path) -> int:
+    """法令等データベース（t_doc?...&pageNo=1）の全ページを1ファイルにつなぐ。ページ数を返す。"""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    parts, n, page = [], 1, 1
+    while page <= n:
+        u = re.sub(r"pageNo=\d+", f"pageNo={page}", url)
+        r = requests.get(u, headers={"User-Agent": UA}, timeout=(15, 120))
+        r.raise_for_status()
+        r.encoding = "utf-8"
+        if page == 1:
+            m = re.search(r"該当ページ数：\s*(?:<span>)?\s*(\d+)", r.text)
+            if m:
+                n = int(m.group(1))
+            elif 'class="pageNum"' not in r.text and "○" in r.text:
+                n = 1  # 1ページだけの告示にはページ数の表示が無い
+            else:
+                raise RuntimeError("「該当ページ数」が見つからない（ページの形式が変わった？）")
+        parts.append(f"<!-- page {page} -->\n{r.text}")
+        page += 1
+        time.sleep(1)
+    dest.write_text("\n".join(parts), encoding="utf-8", newline="\n")
+    return n
 
 
 def download(url: str, dest: Path) -> None:
@@ -89,11 +120,16 @@ def write_sha_back(text: str, entry_id: str, sha: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--manifest", default="sources/manifest.yaml")
     ap.add_argument("--only", nargs="*", help="指定した id だけ処理")
     ap.add_argument("--accept-changed", action="store_true", help="sha256 不一致でも新しい内容を受け入れる")
     args = ap.parse_args()
 
-    text = MANIFEST.read_text(encoding="utf-8")
+    manifest = ROOT / args.manifest
+    rules = manifest.name != "manifest.yaml"
+    raw = RAW / "rules" if rules else RAW
+    log_f = LOG.with_name("fetch_log.rules.json") if rules else LOG
+    text = manifest.read_text(encoding="utf-8")
     entries = yaml.safe_load(text)
     ids = [e["id"] for e in entries]
     dup = {i for i in ids if ids.count(i) > 1}
@@ -101,12 +137,15 @@ def main() -> int:
         print(f"id 重複: {dup}", file=sys.stderr)
         return 2
 
-    log = json.loads(LOG.read_text(encoding="utf-8")) if LOG.exists() else {}
+    log = json.loads(log_f.read_text(encoding="utf-8")) if log_f.exists() else {}
     errors = []
     for e in entries:
         if args.only and e["id"] not in args.only:
             continue
-        dest = local_path(e)
+        if e.get("status") == "future" or not e.get("url"):
+            print(f"future {e['id']}（登録だけ）")
+            continue
+        dest = local_path(e, raw)
         expected = e.get("sha256")
         if dest.exists() and expected and sha256_of(dest) == expected:
             print(f"skip  {e['id']}")
@@ -114,7 +153,10 @@ def main() -> int:
         print(f"get   {e['id']}  <- {e['url']}")
         tmp_dest = dest.with_name(dest.name + ".new")
         try:
-            download(e["url"], tmp_dest)
+            if e.get("format") == "html_pages":
+                download_html_pages(e["url"], tmp_dest)
+            else:
+                download(e["url"], tmp_dest)
         except Exception as ex:  # noqa: BLE001
             errors.append(f"{e['id']}: ダウンロード失敗 {ex}")
             continue
@@ -128,13 +170,14 @@ def main() -> int:
         log[e["id"]] = {
             "file": dest.relative_to(ROOT).as_posix(),
             "bytes": dest.stat().st_size,
-            "pages": pdf_pages(dest),
+            "pages": pdf_pages(dest) if dest.suffix.lower() == ".pdf" else
+                     (dest.read_text(encoding="utf-8").count("<!-- page ") if dest.suffix == ".html" else None),
             "sha256": sha,
             "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         }
 
-    MANIFEST.write_text(text, encoding="utf-8", newline="\n")
-    LOG.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    manifest.write_text(text, encoding="utf-8", newline="\n")
+    log_f.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     if errors:
         print("\nERRORS:", *errors, sep="\n  ", file=sys.stderr)
         return 1

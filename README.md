@@ -17,6 +17,7 @@ reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報�
 ```sh
 uv sync
 uv run python src/fetch.py                      # フェーズ0: 原本のダウンロード（sha256 照合あり。再実行するとスキップ）
+uv run python src/fetch.py --manifest sources/rules_manifest.yaml   # 算定ルール資料（告示・留意事項・記載要領・Q&A・サービスコード表）→ sources/raw/rules/
 
 # フェーズ1（ANTHROPIC_API_KEY が必要。環境変数か、プロジェクト直下の .env に ANTHROPIC_API_KEY=... と書く）
 uv run python src/transcribe.py                 # Haiku 5.5 と Sonnet 5.5 で config/pages.yaml の全ページを書き起こす
