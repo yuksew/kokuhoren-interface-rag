@@ -1,0 +1,366 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 325,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2150,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037832,
+    "cost_usd_batch": 0.018916,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 325,
+    "printed_page": "168",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "日中支援加算欄",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "日中支援加算欄",
+              "当該事業所への通所日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "請求額集計欄 合計",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "単位数の合計を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "請求額集計欄 合計",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額の合計を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "請求額集計欄 合計",
+              "上限月額調整（①②の内少ない数）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "請求額集計欄 合計",
+              "A型減免",
+              "事業者減免額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "請求額集計欄 合計",
+              "A型減免",
+              "減免後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "請求額集計欄 合計",
+              "調整後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "請求額集計欄 合計",
+              "上限額管理後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "請求額集計欄 合計",
+              "決定利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "算定した結果の利用者負担額を設定する（自治体助成分請求額を控除する前の利用者負担額である）。",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "請求額集計欄 合計",
+              "請求額",
+              "給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "給付費の請求額を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "請求額集計欄 合計",
+              "請求額",
+              "高額障害福祉サービス費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "請求額集計欄 合計",
+              "請求額",
+              "特別対策費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "請求額集計欄 合計",
+              "自治体助成分請求額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "特定障害者特別給付費（合計）",
+              "算定日額"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "特定障害者特別給付費（合計）",
+              "日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "特定障害者特別給付費（合計）",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "特定障害者特別給付費（合計）",
+              "実費算定額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目　○ : 請求内容により必要　△ : 任意設定　空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 3.1.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "項番28〜30の「請求額」、項番23・24の「A型減免」、項番18・19の「日中支援加算欄」は縦書きのグループ見出しで、name_pathの文言は縦書き文字の読み取りによる",
+      "項番20〜31の外側グループ見出し「請求額集計欄 合計」は縦書きのため文字の並びが不確か",
+      "項番32〜35の縦書きグループ見出し「特定障害者特別給付費（合計）」の括弧位置が不確か"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 81,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 4308,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002968,
+    "cost_usd_batch": 0.001484,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 81,
+    "printed_page": "４１－１３",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 189,
+            "no_raw": "189",
+            "name_path": [
+              "目コード（介護予防・日常生活支援総合事業（経過措置））"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:要支援者向け事業費\n02:二次予防向け事業費",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 190,
+            "no_raw": "190",
+            "name_path": [
+              "住所地特例対象者区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:非該当　2:該当",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 191,
+            "no_raw": "191",
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "住所地特例対象者が入所（居）する施設の所在する市町村の証記載保険者番号",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 192,
+            "no_raw": "192",
+            "name_path": [
+              "再審査申立事由コード（介護予防・日常生活支援総合事業）",
+              "申立対象項目番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "[図]\n01：給付管理票修正（※４）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 192,
+            "no_raw": "192",
+            "name_path": [
+              "再審査申立事由コード（介護予防・日常生活支援総合事業）",
+              "申立理由番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "51：給付管理票の修正（※４）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 193,
+            "no_raw": "193",
+            "name_path": [
+              "過誤申立事由コード（介護予防・日常生活支援総合事業）",
+              "様式番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "[図]\n10：介護予防・日常生活支援総合事業費明細書（訪問型サービス費・通所型サービス費・その他の生活支援サービス費）\n20：介護予防・日常生活支援総合事業費明細書（介護予防ケアマネジメント費）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 193,
+            "no_raw": "193",
+            "name_path": [
+              "過誤申立事由コード（介護予防・日常生活支援総合事業）",
+              "申立理由番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "01:台帳誤り修正による保険者申立の過誤調整\n02:請求誤りによる実績取り下げ\n09:時効による保険者申立の取下げ\n11:台帳誤り修正による事業所申立の過誤調整\n12:請求誤りによる実績取り下げ（同月）\n21:台帳誤り修正による公費負担者申立の過誤調整\n29:時効による公費負担者申立の取下げ\n32:給付管理票取消による実績の取下げ（※５）\n42:適正化（その他）による保険者申立の過誤取下げ\n43:適正化（ケアプラン点検）による保険者申立の過誤取下げ\n44:適正化（介護給付費通知）による保険者申立の過誤取下げ\n45:適正化（医療突合）による保険者申立の過誤取下げ\n46:適正化（縦覧点検）による保険者申立の過誤取下げ\n47:適正化（給付実績を活用した情報提供）による保険者申立の過誤取下げ",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ先頭の見出し行が繰り返されており、項番189から始まるため前ページからの続きと判断した。",
+      "項番192・193の上部の桁図解（×1～×4と申立対象項目番号・申立理由番号・様式番号の矢印）は図として[図]と記載し、文字のみ抽出した。",
+      "項番192・193の内容セルは縦結合の小見出し（申立対象項目番号・申立理由番号・様式番号）ごとに分けて記載した。",
+      "項番193の申立理由番号一覧は、ページ末尾で罫線が閉じているものの、次ページに続く可能性がある。",
+      "項番192・193の内容に含まれる「※４」「※５」の注記本文は本ページ内に見当たらなかった。",
+      "項番193の申立理由番号「32」の「（※５）」は原文で行が折り返されていたため、折り返しを詰めて1行にした。"
+    ]
+  },
+  "raw_text": null
+}

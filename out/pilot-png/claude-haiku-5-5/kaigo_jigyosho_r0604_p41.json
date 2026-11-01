@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 41,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 4737,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003183,
+    "cost_usd_batch": 0.001592,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 41,
+    "printed_page": "18",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.2.4 支払通知情報（出力情報）",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護給付費等支払決定額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等への支払決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7515 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4タテ"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護給付費等支払決定額内訳書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7521 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）支払決定額内訳書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）について、サービス事業所等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7541※1 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費支払決定額内訳書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費について、サービス事業所等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7551※2 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護給付費過誤決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7611 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）過誤決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）について、サービス事業所等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7631※1 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "介護給付費再審査決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ再審査請求の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7621 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費過誤決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費について、サービス事業所等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7641※2 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費再審査決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所へ再審査請求の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7651※2 / ルート: 国保連合会 → サービス事業所等 / 周期: 月次 / 媒体: 伝送、帳票 / CSV: ○ / 帳票形式: ○ 汎用紙 A4ヨコ"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年4月以降の場合に設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成27年4月以降の場合に設定する。"
+      }
+    ],
+    "uncertain": [
+      "この表は項番・識別・情報名・内容・ルート・周期・媒体・出力形式の列を持つインタフェース一覧だが、スキーマの項目は項番・情報名・内容が中心のため、識別・ルート・周期・媒体・出力形式の値は note に列名付きで書き写した。",
+      "ユーザー指定の「PDF上のページ: 41」と添付ページの印字ページ番号「- 18 -」が一致しないが、添付画像の内容に基づき printed_page を 18 とした。",
+      "媒体の列は「伝送」「帳票」が1セル内に上下で並んでいるため、「伝送、帳票」として書き写した。"
+    ]
+  },
+  "raw_text": null
+}

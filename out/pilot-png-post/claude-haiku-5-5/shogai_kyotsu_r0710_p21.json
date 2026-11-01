@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 21,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 2953,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002293,
+    "cost_usd_batch": 0.001146,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 21,
+    "printed_page": "19",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "決定サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "521000:計画相談支援決定\n522000:計画相談支援特別地域加算対象者決定\n523000:計画相談支援居宅介護支援費重複減算Ⅰ対象者決定\n524000:計画相談支援居宅介護支援費重複減算Ⅱ対象者決定\n525000:計画相談支援介護予防支援費重複減算対象者決定\n526000:計画相談支援居宅介護支援費重複減算Ⅰ・特別地域加算対象者決定\n527000:計画相談支援居宅介護支援費重複減算Ⅱ・特別地域加算対象者決定\n528000:計画相談支援介護予防支援費重複減算・特別地域加算対象者決定\n531000:地域移行支援基本決定\n530908:地域移行支援加算特別地域加算対象者\n541000:地域定着支援基本決定\n540908:地域定着支援加算特別地域加算対象者\n810000:旧身体入所更生基本決定\n810911:旧身体入所更生加算重複障害\n820000:旧身体通所更生基本決定\n820911:旧身体通所更生加算重複障害\n830000:旧身体入所療護基本決定\n830911:旧身体入所療護加算重複障害\n830915:旧身体入所療護加算ALS\n830916:旧身体入所療護加算遷延性\n840000:旧身体通所療護基本決定\n840911:旧身体通所療護加算重複障害\n850000:旧身体入所授産基本決定\n850911:旧身体入所授産加算重複障害\n860000:旧身体通所授産基本決定\n860911:旧身体通所授産加算重複障害\n910000:旧知的入所更生基本決定\n910911:旧知的入所更生加算重複障害\n910912:旧知的入所更生加算強行\n910913:旧知的入所更生加算自活(内)\n910914:旧知的入所更生加算自活(外)\n920000:旧知的通所更生基本決定\n920911:旧知的通所更生加算重複障害\n930000:旧知的入所授産基本決定\n930911:旧知的入所授産加算重複障害\n930913:旧知的入所授産加算自活(内)\n930914:旧知的入所授産加算自活(外)\n940000:旧知的通所授産基本決定\n940911:旧知的通所授産加算重複障害\n950000:旧知的通勤寮基本決定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "旧障害程度区分等コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:A 02:B 03:C 04:1 05:2 06:3",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表頭（項番・コード名称・属性・バイト数・内容）が再掲されているため前ページからの続きと判断し continued_from_prev_page を true にしたが、項番8の先頭が前ページのどこまでに当たるかは画像からは確認できない。",
+      "項番8の内容の多くの行と項番9の「01:A 02:B 03:C」に取消線が引かれている。取消線の有無は本文に反映していないため、削除扱いかどうかは原本で確認が必要。",
+      "添付ページの印字ページ番号は「- 19 -」だが、依頼上のPDFページ番号は21とされている。printed_page は印字の19を記録した。"
+    ]
+  },
+  "raw_text": null
+}

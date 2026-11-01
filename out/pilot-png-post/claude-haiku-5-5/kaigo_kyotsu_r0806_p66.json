@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 66,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 4531,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00308,
+    "cost_usd_batch": 0.00154,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 66,
+    "printed_page": "40",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "高額介護サービス等費"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "01:高額介護サービス費\n02:高額介護予防サービス費",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "市町村特別給付費"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "01:市町村特別給付費",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特定入所者介護サービス等費"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "01:特定入所者介護サービス費\n02:特例特定入所者介護サービス費\n03:特定入所者介護予防サービス費\n04:特例特定入所者介護予防サービス費",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 93,
+            "no_raw": "９３",
+            "name_path": [
+              "節コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:負担金、補助及び交付金",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 94,
+            "no_raw": "９４",
+            "name_path": [
+              "支給区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:支給　2:不支給",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 95,
+            "no_raw": "９５",
+            "name_path": [
+              "支払方法区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:窓口払　2:口座払",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 96,
+            "no_raw": "９６",
+            "name_path": [
+              "給付実績区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:現物　2:償還",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 97,
+            "no_raw": "９７",
+            "name_path": [
+              "給付実績情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:新規　2:修正　3:取消",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 98,
+            "no_raw": "９８",
+            "name_path": [
+              "公費負担上限額減額の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1.無し　2.有り\n※生活保護受給者は2",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 99,
+            "no_raw": "９９",
+            "name_path": [
+              "法別番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費負担医療に係る法律を表した番号",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 100,
+            "no_raw": "100",
+            "name_path": [
+              "有料老人ホーム等同意書の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 101,
+            "no_raw": "101",
+            "name_path": [
+              "再審査申立事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "[図]\n01:給付管理票修正（※4）\n10:サービス種類コード及びサービス項目コードで示すサービス\n11:緊急時施設療養（診療）費　緊急時療養管理\n12:緊急時施設療養（診療）費　リハビリテーション\n13:緊急時施設療養（診療）費　処置\n14:緊急時施設療養（診療）費　手術\n15:緊急時施設療養（診療）費　麻酔\n16:緊急時施設療養（診療）費　放射線治療\n平成15年3月以前\n21:特定診療費　指導管理等\n22:特定診療費　単純エックス線\n23:特定診療費　リハビリテーション\n24:特定診療費　精神科専門療法\n平成15年4月以降\n20:特定診療費・特別療養費・特別診療費\n平成24年4月以降\n17:所定疾患施設療養費\n20:特定診療費・特別療養費・特別診療費",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ先頭の高額介護サービス等費・市町村特別給付費・特定入所者介護サービス等費の行は前ページからの続きと思われ、項番・コード名称・属性・バイト数が見えないため項番・属性・バイト数はnullとした。",
+      "項番101の「※4」に対応する注記（※4）は本ページ内に見当たらなかった。",
+      "項番101の図（申立理由番号・申立対象項目番号）は図の文字のみ書き写し、[図]と表記した。",
+      "項番101の「リハビリテーション」（13行目相当）の表記が原図では小さな字体で判読しづらいため、通常の表記で書き写した。",
+      "添付の1ページには「次のページの表」は含まれておらず、書き起こしはこの1ページ内の表のみを対象とした。"
+    ]
+  },
+  "raw_text": null
+}

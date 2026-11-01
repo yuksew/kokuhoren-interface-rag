@@ -1,0 +1,457 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 157,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 2664,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042932,
+    "cost_usd_batch": 0.021466,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 157,
+    "printed_page": "73",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード",
+        "record": {
+          "exchange_id": "7515",
+          "name": "明細レコード",
+          "parent": "介護給付費等支払決定額通知書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“7515”固定"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“H1”固定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "支払対象となるサービス審査年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "郵便番号（3桁）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "支払を受けるサービス事業所等の郵便番号（上位3桁）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "郵便番号（4桁）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "支払を受けるサービス事業所等の郵便番号（下位4桁）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "１２８",
+            "content": "支払を受けるサービス事業所等の住所を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "支払を受けるサービス事業所等の事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "開設者氏名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "支払を受けるサービス事業所等の開設者氏名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "支払を受けるサービス事業所等の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2"
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "振込金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "支払決定金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "介護給付費支払額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "介護給付費支払額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "主治医意見書作成料"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "主治医意見書作成料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "主治医意見書作成料消費税"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "主治医意見書作成料の消費税を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "認定調査費委託料"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "認定調査費委託料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "認定調査費委託料消費税"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "認定調査費委託料の消費税を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費支払額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "介護予防・日常生活支援総合事業費支払額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "電子証明書発行手数料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "電子証明書発行手数料（消費税を含む）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "ケアプランデータ連携システムライセンス料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "ケアプランデータ連携システムライセンス料（消費税を含む）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "原案作成委託料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "原案作成委託料(消費税を含む)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "予備3"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "予備4"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "予備5"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "予備6"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "予備7"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "予備8"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "合計金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "支払決定金額の合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S"
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 28,
+            "length_raw": "２８",
+            "content": "支払を受けるサービス事業所等の金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

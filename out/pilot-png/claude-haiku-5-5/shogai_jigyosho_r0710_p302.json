@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 302,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2841,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002237,
+    "cost_usd_batch": 0.001119,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 302,
+    "printed_page": "148-3",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "実績記録票 紙様式記載",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "No",
+          "実績記録票 紙様式記載"
+        ],
+        "items": [
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "退所後に保育・教育等移行支援加算、または通所施設移行支援加算のみを算定する場合"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "[図] 平成30年5月 受給者証番号 1111111111 障害者名 受給太郎 事業所番号 9950000000001 事業所名 〇〇事業所 日 サービス提供の状況 提供時間 〇〇加算 〇〇加算 〇〇加算 〇〇加算 備考 合計 保育・教育等移行支援加算 移行日 H30 年 4 月 28 日 移行後算定日 H30 年 5 月 20 日",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "実績記録票インタフェース設定",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "実績記録票インタフェース設定"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "実績記録票インタフェース設定"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "[図] 平成30年5月 受給者証番号 1111111111 事業所番号 9950000000001 明細情報レコードは設定しない 保育・教育等移行支援加算 移行日 H30 年 4 月 28 日 移行後算定日 H30 年 5 月 20 日",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "基本情報レコードの必須項目（項番 1～項番 7)と、保育・教育等移行支援加算の「移行日」、「移行後算定日」もしくは、通所施設移行支援加算の「移行日」、「算定日」のみ設定が必要。明細情報レコードは設定しない。なお、保育・教育等移行支援加算について、退所後に複数回算定する場合（サービス提供年月が令和6年4月以降）は、「移行後算定日」には算定日の属する月の最後に保育・教育等移行支援加算を算定する日付を設定する。（例:令和6年4月20日に一般施策へ移行し、令和6年5月8日及び令和6年5月10日に算定される支援を行った場合、「移行後算定日」には令和6年5月10日を設定する。）"
+      }
+    ],
+    "uncertain": [
+      "項番2の「紙様式記載」欄は図（帳票イメージ）であり、図内の印字文字のみを content に書き写した。表の列構造は判別できない。",
+      "「実績記録票インタフェース設定」欄も図（設定イメージ）で、見出し行がないため columns は見出しの文字のみとした。",
+      "注記は表の枠内にあるが表形式ではないため footnotes に入れた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 69,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 2088,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037164,
+    "cost_usd_batch": 0.018582,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 69,
+    "printed_page": "41-2",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "4E:適正化（給付実績を活用した情報提供）による保険者申立の過誤取下げ（同月）\n52:適正化（その他）による公費負担者申立の過誤取下げ\n53:適正化（ケアプラン点検）による公費負担者申立の過誤取下げ\n54:適正化（介護給付費通知）による公費負担者申立の過誤取下げ\n55:適正化（医療突合）による公費負担者申立の過誤取下げ\n56:適正化（縦覧点検）による公費負担者申立の過誤取下げ\n57:適正化（給付実績を活用した情報提供）による公費負担者申立の過誤取下げ\n59:適正化（その他）による公費負担者申立の過誤取下げ（同月）\n5A:適正化（ケアプラン点検）による公費負担者申立の過誤取下げ（同月）\n5B:適正化（介護給付費通知）による公費負担者申立の過誤取下げ（同月）\n5C:適正化（医療突合）による公費負担者申立の過誤取下げ（同月）\n5D:適正化（縦覧点検）による公費負担者申立の過誤取下げ（同月）\n5E:適正化（給付実績を活用した情報提供）による公費負担者申立の過誤取下げ（同月）\n62:不正請求による実績取り下げ\n69:不正請求による実績取り下げ（同月）\n90:その他の事由による台帳過誤\n99:その他の事由による実績の取り下げ",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 103,
+            "no_raw": "103",
+            "name_path": [
+              "時間延長サービス体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可　※１",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 104,
+            "no_raw": "104",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可　※１　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 105,
+            "no_raw": "105",
+            "name_path": [
+              "居住費対策"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可　※１",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 106,
+            "no_raw": "106",
+            "name_path": [
+              "夜間ケアの有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※１　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 107,
+            "no_raw": "107",
+            "name_path": [
+              "識別番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "介護給付費等の記載要領で示される特定診療費、特別療養費、特別診療費の識別番号のうち、＠を除く２桁の数字",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（総合ﾘﾊﾋﾞﾘﾃｰｼｮﾝ施設）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※３　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※３　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅲ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※３　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（作業療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※３　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘ提供体制(言語聴覚療法Ⅰ)の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "個別ﾘﾊﾋﾞﾘ提供体制(言語聴覚療法Ⅱ)の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※８",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "先頭行（4E〜99）は前ページからの続きのセルで、項番・コード名称・属性・バイト数は不明のため null とした。内容の改行は折り返しとして詰め、コードごとに改行した。",
+      "コード名称の半角カナ小書き文字（ﾘﾊﾋﾞﾘﾃｰｼｮﾝ等）の表記は画像から判断した。"
+    ]
+  },
+  "raw_text": null
+}

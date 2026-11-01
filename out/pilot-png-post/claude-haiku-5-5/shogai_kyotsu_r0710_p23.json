@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 23,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 4755,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003194,
+    "cost_usd_batch": 0.001597,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 23,
+    "printed_page": "21",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:居宅介護　12:重度訪問介護\n13:行動援護　14:重度包括\n15:同行援護\n21:療養介護　22:生活介護\n23:児童デイ　24:短期入所\n31:共同生活介護　32:施設入所支援\n33:共同生活援助　34:宿泊型自立訓練\n35:自立生活援助\n41:自立訓練(機能訓練)　42:自立訓練(生活訓練)\n43:就労移行支援　44:就労移行支援(養成施設)\n45:就労継続支援(A型)　46:就労継続支援(B型)\n47:就労定着支援\n48:就労選択支援\n51:相談支援事業\n52:計画相談支援　53:地域移行支援\n54:地域定着支援\n81:身体入所更生　82:身体通所更生\n83:身体入所療護　84:身体通所療護\n85:身体入所授産　86:身体通所授産\n91:知的入所更生　92:知的通所更生\n93:知的入所授産　94:知的通所授産\n95:知的通勤寮",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "地域区分コード",
+              "指定事業所等"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:一級地　02:二級地　03:三級地\n04:四級地　05:五級地　06:六級地\n07:七級地　08:八級地　09:九級地\n10:十級地　11:十一級地　12:十二級地\n13:十三級地　14:十四級地　15:十五級地\n16:十六級地　17:十七級地　18:十八級地\n19:十九級地　20:その他",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "地域区分コード",
+              "児童施設経過措置事業所"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "21:一級地(旧障害児施設)\n22:二級地(旧障害児施設)\n23:三級地(旧障害児施設)\n24:四級地(旧障害児施設)\n25:五級地(旧障害児施設)\n26:六級地(旧障害児施設)\n27:七級地(旧障害児施設)\n28:その他(旧障害児施設)\n29:八級地(旧障害児施設)\n30:九級地(旧障害児施設)\n31:十級地(旧障害児施設)\n32:十一級地(旧障害児施設)\n33:十二級地(旧障害児施設)\n34:十三級地(旧障害児施設)\n35:十四級地(旧障害児施設)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:特別区　02:特甲地　03:甲地　04:乙地　05:丙地\n11:一級地　12:二級地　13:三級地　14:四級地\n15:五級地　16:六級地　17:七級地　18:八級地\n19:九級地　20:十級地　21:十一級地　22:十二級地\n23:その他",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "生活介護※3"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:一般　2:小規模多機能\n3:当該施設が単独施設\n4:当該施設に併設する施設が主たる施設\n5:当該施設が主たる施設",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "短期入所※5"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:福祉型　2:医療型　3:福祉型(強化)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼では PDF上のページ23 とあるが、添付ページの下部の印字は「- 21 -」であり、添付ページは21ページとして書き起こした。ページ取り違えの可能性があるため確認が必要。",
+      "添付ページは「次のページ」ではなく、この1ページのみを対象とした。",
+      "コード一覧の多くの行に取消線（削除を示すと思われる表示）があるが、JSONで表現できないため取消線の有無は書き写していない。",
+      "項番16の下段（児童施設経過措置事業所）は表の末尾まで含まれるかの判断が難しいが、ページ内の表は項番17の短期入所の行で終わっている。下端の罫線から、表が次ページへ続く可能性がある。",
+      "項番の欠けた行（地域区分コード 01:特別区…）は前の項番16の続きか独立した項目か判断しきれないため、no と no_raw を null にして別項目とした。",
+      "※3 と ※5 の注記本文はこのページに見当たらなかった。"
+    ]
+  },
+  "raw_text": null
+}

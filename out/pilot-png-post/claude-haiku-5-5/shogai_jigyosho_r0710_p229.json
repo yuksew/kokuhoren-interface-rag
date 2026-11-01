@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 229,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 3384,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002509,
+    "cost_usd_batch": 0.001254,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 229,
+    "printed_page": "111",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.6.支払通知情報(出力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児給付費等支払決定額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等への支払決定額を通知するためのリスト。処遇改善助成金（※1）の支払決定額も出力される。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8A1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児給付費等支払決定額内訳書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8B1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "事業所別障害児給付費等支払明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等へ支払決定額の明細を通知するためのリスト",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8C1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害児給付費等支払過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8D1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "障害児給付費等助成金支払決定額内訳書（※1）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等へ処遇改善助成金（※1）の支払決定額の内訳を通知するためのリスト（※3）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8E1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "障害児給付費等処遇改善加算等総額のお知らせ（※2、※4、※5、※6）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等へ福祉・介護職員処遇改善加算等（※2、※4、※5、※6）の加算総額及び内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [
+              {
+                "column": "識別",
+                "value": "K8F1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→障害児施設等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成24年4月以降、令和6年5月以前の福祉・介護職員処遇改善加算。\nサービス提供年月が平成24年4月以降、令和4年3月以前の福祉・介護職員処遇改善特別加算。"
+      },
+      {
+        "mark": "※3",
+        "text": "処理対象年月が平成25年12月以降使用しない。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が令和1年10月以降、令和6年5月以前の福祉・介護職員等特定処遇改善加算。"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が令和4年10月以降、令和6年5月以前の福祉・介護職員等ベースアップ等支援加算。"
+      },
+      {
+        "mark": "※6",
+        "text": "サービス提供年月が令和6年6月以降の福祉・介護職員等処遇改善加算。"
+      }
+    ],
+    "uncertain": [
+      "添付はページ111の1ページのみで、依頼文の『次のページ』(PDF上229)は含まれていないため、このページの表のみを書き起こした。",
+      "スキーマに識別・ルート・周期・媒体の列がないため、これらの値は required_by に列名付きで格納した（required は null）。",
+      "ルート列の『国保連合会／→／障害児施設等』は折り返しを詰めて『国保連合会→障害児施設等』とした。"
+    ]
+  },
+  "raw_text": null
+}

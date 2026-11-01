@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 13,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1851,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.034834,
+    "cost_usd_batch": 0.017417,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 13,
+    "printed_page": "11",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "項目例"
+        ],
+        "items": [
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "件数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・請求書 基本情報レコード 小計 介護給付費等・特例介護給付費等件数\n・サービス利用計画作成費請求書等 基本情報レコード 件数\n・一次審査結果票 受付件数 正常件数 警告件数 返戻(予定)件数\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "割合"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 集計情報レコード 請求額集計欄 給付率\n・実績記録票 基本情報レコード 重度包括 実績割合(%)\n・受給者台帳(基本情報) 法第三十一条に基づく給付率\n・障害児支援受給者台帳(基本情報) 法第二十四条に基づく給付率\n・市町村台帳(独自助成情報) 助成率\n・都道府県等台帳(独自助成情報) 助成率",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "支給量"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・受給者台帳(支給決定情報) 決定支給量\n・受給者台帳(支給決定情報) 1回当たりの最大提供量\n・明細書 契約情報レコード 契約支給量\n・地域生活支援事業単位数台帳 決定支給量換算単位",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "項番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・サービス利用計画作成費請求書等 明細情報レコード 項番\n・利用者負担上限額管理結果票 明細情報レコード 項番\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "時間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・実績記録票 基本情報レコード 合計1 内訳100% 内訳70% 内訳重訪 合計算定時間数計\n・実績記録票 基本情報レコード 重度包括 その他サービス合計時間数\n・実績記録票 明細情報レコード 自立訓練 訪問型時間数\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "提供通番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・実績記録票 明細情報レコード 提供通番",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "頁"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・支払決定増減表情報 ヘッダレコード 頁\n・返戻等一覧表 ヘッダレコード 頁",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "保障単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・事業所台帳(サービス情報) 保障単位数",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "定員数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・事業所台帳(サービス情報) 利用定員数\n・事業所台帳(サービス情報) 旧法施設定員数\n・障害児施設台帳(サービス情報) 入所定員数\n・障害児施設台帳(サービス情報) 旧法施設定員数",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 明細情報レコード 回数\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "例外的な値が設定される数値項目",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "項目例"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "未設定項目"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・障害児給付費等 明細書 基本情報レコード 請求額集計欄合計 A型減免 事業者減免額\n・障害児給付費等 明細書 基本情報レコード 請求額集計欄合計 A型減免 減免後利用者負担額\n・地域生活支援事業 明細書 基本情報レコード 上限額管理事業所管理結果額\n・地域生活支援事業 明細書 基本情報レコード 請求額集計欄合計 請求額 特別対策費\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "1つ目の表は前ページからの続き（項番4から開始）",
+      "表の種類は該当区分がないため other とした"
+    ]
+  },
+  "raw_text": null
+}

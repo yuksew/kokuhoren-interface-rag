@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 12,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 4603,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003118,
+    "cost_usd_batch": 0.001559,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 12,
+    "printed_page": "10",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（２）　データ設定例 以下の交換情報のデータレコードにデータを設定する例を示す。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "必須入力",
+          "備考",
+          "設定値例"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "A(文字列)"
+            ],
+            "type": "英数",
+            "length": 5,
+            "length_raw": "5",
+            "content": "ABCD",
+            "required": "○",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "B(数字)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "1542",
+            "required": "○",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "C(漢字文字列)"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "障害",
+            "required": "○",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "D(年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "2007年10月1日",
+            "required": "○",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "E(中間にスペースを含む文字列)"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "XY Z",
+            "required": "○",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "F(ゼロ)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "0",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "G(スペースのみ)"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "H(先頭にスペースを含む文字列)"
+            ],
+            "type": "英数",
+            "length": 5,
+            "length_raw": "5",
+            "content": " KLM",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "I(数字…金額等)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "987,654 円",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "・設定例",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "位置",
+          "設定値"
+        ],
+        "items": [],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "①数値について 数値は計算値等の項目を示す。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "項目例"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "単位数(点数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 基本情報レコード 請求額集計欄 合計 給付単位数\n・明細書 明細情報レコード サービス単位数\n・明細書 集計情報レコード 請求額集計欄 給付単位数\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 日数情報レコード サービス開始日等 利用日数\n・明細書 日数情報レコード サービス開始日等 入院日数\n・明細書 日数情報レコード サービス開始日等 外泊日数\n・明細書 集計情報レコード 請求額集計欄 サービス利用日数\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 基本情報レコード 上限額管理事業所 管理結果額\n・明細書 基本情報レコード 請求額集計欄 合計 決定利用者負担額\n・明細書 集計情報レコード 特定障害者特別給付費 給付費請求額\n等",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "（レコード番号(連番)＝123とする。）"
+      }
+    ],
+    "uncertain": [
+      "依頼文はPDF上のページ12としていますが、添付ページの印字ページ番号は「- 10 -」です。添付の1ページ分のみを書き起こしました。",
+      "依頼文は「次のページ」の表の書き起こしですが、添付は1ページだけのため、添付ページ内の表を対象にしました。",
+      "データ設定例の表で、スキーマに対応する列がない「設定値例」列の値は content に入れました。",
+      "「・設定例」の位置・設定値の桁図は図として扱い、items を空にしました。図内の印字文字は「2,123,ABCD,1542,\"障害　　\",\"　\",2007 1001,\"XY Z\",0,,\"　KLM\",9876 54」付近で、桁位置や改行コードを含めて正確に書き起こせていないため、要確認です。",
+      "データ設定例の項目8の設定値「KLM」先頭の空白、および項目7の設定値（スペースのみ）は、原文の空白幅を正確に判別できないため要確認です。",
+      "数値項目の表（項番1〜3）は属性・バイト数の列がないため other としました。項目名は name_path に、項目例は content に入れ、項目例の「・」区切りは改行で残しました。"
+    ]
+  },
+  "raw_text": null
+}

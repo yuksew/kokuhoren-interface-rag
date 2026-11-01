@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 39,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 2066,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036952,
+    "cost_usd_batch": 0.018476,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 39,
+    "printed_page": "17",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．３　増減単位数返戻通知情報（出力情報）",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護保険審査決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7211",
+            "content": "保険者ごとの請求差、返戻、査定増減、保留、保留復活分の状況をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7211 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業（経過措置）審査決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7221 ※1",
+            "content": "介護予防・日常生活支援総合事業（経過措置）について、保険者ごとの請求差、返戻分の状況をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7221 ※1 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4タテ"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業審査決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7231 ※2",
+            "content": "介護予防・日常生活支援総合事業について、保険者ごとの請求差、返戻分の状況をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7231 ※2 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護保険審査増減単位数通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7311",
+            "content": "審査により増減単位された請求明細書の内容及び審査結果内容をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7311 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業審査増減単位数通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7321 ※2",
+            "content": "審査により増減単位された請求明細書の内容及び審査結果内容をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7321 ※2 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "請求明細書・給付管理票返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7411",
+            "content": "返戻（保留）する請求明細書を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7411 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業（経過措置）請求明細書返戻一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7421 ※1",
+            "content": "返戻する介護予防・日常生活支援総合事業費（経過措置）請求明細書を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7421 ※1 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業請求明細書返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "7431 ※2",
+            "content": "返戻（保留）する介護予防・日常生活支援総合事業費請求明細書を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別:7431 ※2 / ルート:国保連合会→サービス事業所等 / 周期:月次 / 媒体:伝送、帳票 / CSV:○ / 帳票形式:○ 汎用紙 A4ヨコ"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年4月以降の場合に設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成27年4月以降の場合に設定する。"
+      }
+    ],
+    "uncertain": [
+      "interface_list用の識別・ルート・周期・媒体・出力形式の専用フィールドがないため、識別はlength_raw、その他はnoteにまとめて入れた",
+      "情報名はname_pathに折り返しを詰めて記載"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 32,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 5036,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003332,
+    "cost_usd_batch": 0.001666,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 32,
+    "printed_page": "28",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "（２）データ設定例 以下の交換情報のデータレコードにデータを設定する例を示す。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "必須入力",
+          "備考",
+          "設定値例"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "A（文字列）"
+            ],
+            "type": "英数",
+            "length": 5,
+            "length_raw": "５",
+            "content": "ABCD",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "B（数値）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "1542",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "C（漢字文字列）"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "介護",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "D（年月日）"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "2000 年 4 月 1日",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "E（中間にスペースを含む文字列）"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "XY Z",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "F（ゼロ）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "0",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "G（スペースのみ）"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "６",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "H（先頭にスペースを含む文字列）"
+            ],
+            "type": "英数",
+            "length": 5,
+            "length_raw": "５",
+            "content": " KLM",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "I（数値…金額等）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "987,654 円",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "① ＣＳＶ形式の場合 以下のデータを設定する。（設定例1、設定例2の何れも同じ結果となる。）・設定例1",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "位置",
+          "設定値"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "設定例1",
+              "位置1～40"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "2,123,ABCD,1542,\"介護  \",20000401,\"XY",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "設定例1",
+              "位置41～61"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "Z\",0,,\"  KLM\",987654[図]改行コード",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "（レコード番号（連番）＝123とする。）"
+      }
+    ],
+    "uncertain": [
+      "表の列「設定値例」に対応する専用の項目がスキーマに無いため、「設定値例」の値を content 欄に入れた。",
+      "「データ設定例」の表は属性・バイト数・必須入力・備考を持つが内容列が無いため table_kind を other にした。",
+      "CSV設定例1の表は図（位置の枠）のため、枠内の文字を言葉で補わず文字列を組み立てた。「介護」の後の空白の個数、および「KLM」の前の空白の個数は画像から正確に数えられず、推定の空白数で書いた箇所がある。",
+      "G（スペースのみ）の設定値例は空欄で、null とした。",
+      "設定例2がこのページに見当たらないため、次ページへ続く可能性があるが continues_to_next_page は false とした。判断に自信がない。"
+    ]
+  },
+  "raw_text": null
+}

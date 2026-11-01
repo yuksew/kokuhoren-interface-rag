@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 56,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 4209,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002919,
+    "cost_usd_batch": 0.001459,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 56,
+    "printed_page": "３６－１",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "ユニット型診療所型"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1:療養機能強化型以外\n2:療養機能強化型Ａ\n3:療養機能強化型Ｂ",
+            "required": null,
+            "required_by": [],
+            "note": "なし"
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "ユニット型認知症疾患型"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "5:Ｉ型　6:Ⅱ型",
+            "required": null,
+            "required_by": [],
+            "note": "なし"
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "病院経過型"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "2:Ｉ型　3:Ⅱ型",
+            "required": null,
+            "required_by": [],
+            "note": "なし"
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "以下は平成18年4月以降設定",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "コード名称",
+          "平成18年4月以降",
+          "平成24年4月以降"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特定施設入居者生活介護（短期利用型以外）",
+              "有料老人ホーム"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1:一般型\n2:外部サービス利用型",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特定施設入居者生活介護（短期利用型以外）",
+              "軽費老人ホーム"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1:一般型\n2:外部サービス利用型",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特定施設入居者生活介護（短期利用型以外）",
+              "養護老人ホーム"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "2:外部サービス利用型",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特定施設入居者生活介護（短期利用型以外）",
+              "高齢者専用賃貸住宅"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1:一般型\n2:外部サービス利用型",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "1つ目の表は見出し行がページ上にないため、列名は前ページの見出しから補った。内容欄の右端にある「なし」が、どの列（備考など）に当たるかは判別できず、note に入れた。",
+      "1つ目の表の「ユニット型認知症疾患型」「病院経過型」のコード値にある「Ｉ」が、ローマ数字のⅠか英字風のＩか判然としない。ページ上の表記をそのまま「Ｉ」と書いた。",
+      "2つ目の表は、平成18年4月以降と平成24年4月以降の列が有料老人ホーム・軽費老人ホーム・養護老人ホームの行で横に結合されているため、結合された内容は content に入れ、note は null とした。",
+      "2つ目の表は前の表の続きとして区切られているが、見出しがあるため continued_from_prev_page は false とした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,478 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 94,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 6075,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003852,
+    "cost_usd_batch": 0.001926,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 94,
+    "printed_page": "46",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "データ種別（コントロールレコード）",
+          "格納するデータレコード > 識別",
+          "格納するデータレコード > 情報名"
+        ],
+        "items": [
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "231：振込依頼書（償還）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "2311 振込依頼書（償還）情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "311：要介護認定期限到来者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3111 要介護認定期限到来者一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "312:要介護認定・要支援認定有効期間終了のお知らせ情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3121 要介護認定・要支援認定有効期間終了のお知らせ情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "313:要介護（更新）認定・要支援（更新）認定申請書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3131 要介護（更新）認定・要支援（更新）認定申請書情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "321：介護給付費通知一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3211 介護給付費通知一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "322：介護給付費通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3222 介護給付費通知書",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "324：介護給付費通知一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3241 介護給付費通知一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "331：高額介護サービス費給付対象者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3311 高額介護サービス費給付対象者一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "332：高額介護サービス費給付のお知らせ情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3322 高額介護サービス費給付のお知らせ情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 40,
+            "no_raw": "４０",
+            "name_path": [
+              "333：高額介護（居宅支援）サービス費支給申請書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3331 高額介護（居宅支援）サービス費支給申請書情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "335：高額介護サービス費給付対象者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3351 高額介護サービス費給付対象者一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "341：高額介護サービス費給付判定結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3411 高額介護サービス費給付判定結果情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "341：高額介護サービス費給付判定結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3412 年間高額介護サービス費給付判定結果情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "342：高額介護サービス費給付判定結果情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3421 高額介護サービス費給付判定結果情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "342：高額介護サービス費給付判定結果情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3422 年間高額介護サービス費給付判定結果情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "351：高額介護サービス費支給（不支給）決定者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3511 高額介護サービス費支給（不支給）決定者一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "352：高額介護サービス費支給（不支給）決定通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3522 高額介護サービス費支給（不支給）決定通知書情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "354：高額介護サービス費支給（不支給）決定者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3541 高額介護サービス費支給（不支給）決定者一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "355:高額介護サービス費支給（不支給）決定通知書情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3552 高額介護サービス費支給（不支給）決定通知書情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "361：振込依頼書（高額）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3611 振込依頼書（高額）情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "362：振込依頼書（高額）情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3621 振込依頼書（高額）情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "3D1：高額介護サービス費月別集計一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3D11 高額介護サービス費月別集計一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "3D2：高額介護サービス費月別集計一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3D21 高額介護サービス費月別集計一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "391：振込データ情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3911 振込データ情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "393：振込者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3931 振込者一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "394：振込不能者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3941 振込不能者一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "395：振込データ情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3951 振込データ情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "397：振込者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3971 振込者一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 57,
+            "no_raw": "５７",
+            "name_path": [
+              "398：振込不能者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3981 振込不能者一覧表情報（総合事業）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "この表は項番・データ種別・識別・情報名の4列で、スキーマの項目列（属性・バイト数・内容など）に対応する列がないため、識別と情報名を content に「識別 情報名」の形で連結して入れた。データ種別は name_path に入れた。",
+      "項番42と43はデータ種別・項番が2行にまたがる縦結合セルのため、それぞれ2行に同じ値を入れた。",
+      "データ種別欄の区切りが「：」と「:」で混在しているが、画像の表記のまま書き写した。",
+      "printed_page は画像下部の「- 46 -」を採用した。PDF上のページ94とは一致しない。",
+      "表が次ページへ続くかは画像から判断できないため false とした。"
+    ]
+  },
+  "raw_text": null
+}

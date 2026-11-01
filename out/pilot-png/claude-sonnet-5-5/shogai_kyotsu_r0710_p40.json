@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 40,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 2060,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036924,
+    "cost_usd_batch": 0.018462,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 40,
+    "printed_page": "37",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "旧障害程度区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:A 02:B 03:C",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "23:児童デイ\n51:相談支援事業\n81:身体入所更生 82:身体通所更生\n83:身体入所療護 84:身体通所療護\n85:身体入所授産 86:身体通所授産\n91:知的入所更生 92:知的通所更生\n93:知的入所授産 94:知的通所授産\n95:知的通勤寮",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "施設等の区分",
+              "児童デイ"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1: 児童デイサービス(Ⅰ)\n2: 児童デイサービス(Ⅱ)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "施設等の区分",
+              "身体入所更生/身体通所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:内部障害者更生施設以外\n2:内部障害者更生施設",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "施設等の区分",
+              "知的入所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:併設施設\n2:主たる施設",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "施設等の区分",
+              "身体通所授産/知的通所更生/知的通所授産"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:入所通所部\n2:入所分場\n3:通所本体\n4:通所分場",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:特別区 02:特甲地 03:甲地 04:乙地 05:丙地\n11:一級地 12:二級地 13:三級地 14:四級地\n15:五級地 16:六級地 17:七級地 18:八級地\n19:九級地 20:十級地 21:十一級地 22:十二級地\n23:その他",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体入所更生/身体入所授産/知的入所授産"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40人以下\n02:41人以上60人以下\n03:61人以上90人以下\n04:91人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体入所療護/知的入所更生"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10人\n02:11人以上20人以下\n03:30人以上40人以下\n04:41人以上60人以下\n05:61人以上90人以下\n06:91人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体通所療護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:4人\n02:5人以上10人以下\n03:11人以上20人以下",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体通所授産/知的通所更生/知的通所授産"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:20人\n02:21人以上40人以下\n03:41人以上60人以下\n04:61人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "児童デイ"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10人以下\n02:11～20人\n03:21人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "大規模住居減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し 2:定員8人以上 3:定員21人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "申立事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "【様式番号(上2桁)】\n20:サービス利用計画作成費請求書(様式第四)\n40:障害児施設給付費明細書(様式第二)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番4,6の小区分（児童デイ等）は内容列内の左サブ列を name_path に入れた。複数行の区分名は '/' で連結",
+      "項番6の content 内の数字と「人」の間の空白は原文では半角スペースが入っているが詰めて記載",
+      "項番6 身体入所療護/知的入所更生の「03:30人以上40人以下」は原文どおり",
+      "前ページからの続き（項番2から始まる）、項番8は次ページへ続く可能性あり"
+    ]
+  },
+  "raw_text": null
+}

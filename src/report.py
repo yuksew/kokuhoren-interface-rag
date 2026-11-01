@@ -161,6 +161,57 @@ def render_model(model: str, res: dict | None, v: dict, other: str | None, diffs
     return "".join(out)
 
 
+def page_score(p: dict) -> int:
+    """要確認度: エラー・警告・テキスト不一致・モデル間の食い違いの数。"""
+    n = len([d for d in (p.get("diffs") or []) if d["field"] != "tables"])
+    for v in p["by_model"].values():
+        n += sum(1 for i in v.get("issues", []) if i["level"] in ("error", "warn", "text"))
+    return n
+
+
+def ensure_img(key: str, doc: str, page: int) -> None:
+    f = ROOT / "reports" / "img" / f"{key}.png"
+    if f.exists():
+        return
+    import pymupdf
+
+    dom = "kaigo" if doc.startswith("kaigo") else "shogai"
+    f.parent.mkdir(parents=True, exist_ok=True)
+    with pymupdf.open(ROOT / "sources" / "raw" / dom / f"{doc}.pdf") as d:
+        d[page - 1].get_pixmap(dpi=110).save(str(f))
+
+
+def aggregate_table(val: dict) -> str:
+    models = val["models"]
+    agg: dict = defaultdict(lambda: defaultdict(int))
+    for p in val["pages"]:
+        a = agg[p["doc_id"]]
+        a["pages"] += 1
+        nd = len([d for d in (p.get("diffs") or []) if d["field"] not in ("tables",)])
+        a["diff_cells"] += nd
+        a["pages_with_diff"] += nd > 0
+        a["pages_flagged"] += page_score(p) > 0
+        for m in models:
+            v = p["by_model"].get(m) or {}
+            s = v.get("stats", {})
+            a[f"{m}:items"] += s.get("items", 0) or 0
+            a[f"{m}:err"] += sum(1 for i in v.get("issues", []) if i["level"] == "error")
+            a[f"{m}:warn"] += sum(1 for i in v.get("issues", []) if i["level"] == "warn")
+            a[f"{m}:text"] += s.get("text_missing", 0) or 0
+            a[f"{m}:cost"] += (v.get("meta") or {}).get("cost_usd_batch" if (v.get("meta") or {}).get("billed_as") == "batch" else "cost_usd", 0) or 0
+    h = ['<h2>文書別の集計</h2><table class="summary"><tr><th>文書</th><th>ページ</th><th>食い違いのあるページ</th><th>食い違いセル</th><th>要確認ページ</th>']
+    for m in models:
+        h.append(f"<th colspan=5>{esc(m)}</th>")
+    h.append("</tr><tr><th></th><th></th><th></th><th></th><th></th>" + "<th>行数</th><th>error</th><th>warn</th><th>テキスト不一致</th><th>$（実費）</th>" * len(models) + "</tr>")
+    for doc, a in agg.items():
+        h.append(f"<tr><td class=l>{esc(doc)}</td><td>{a['pages']}</td><td>{a['pages_with_diff']}</td><td>{a['diff_cells']}</td><td>{a['pages_flagged']}</td>")
+        for m in models:
+            h.append(f"<td>{a[m + ':items']}</td><td>{a[m + ':err']}</td><td>{a[m + ':warn']}</td><td>{a[m + ':text']}</td><td>{a[m + ':cost']:.3f}</td>")
+        h.append("</tr>")
+    h.append("</table>")
+    return "".join(h)
+
+
 def build_html(run: str, val: dict) -> str:
     run_dir = ROOT / "out" / run
     models = val["models"]
@@ -173,6 +224,11 @@ def build_html(run: str, val: dict) -> str:
                  '<span style="background:#ffe0b3">片方のモデルにしかない行</span>'
                  ' <label><input type=checkbox id=onlydiff> 食い違いのある行だけ表示</label></p>')
     # サマリ
+    big = len(val["pages"]) > 30
+    shown = [p for p in val["pages"] if not big or page_score(p) > 0]
+    if big:
+        parts.append(aggregate_table(val))
+        parts.append(f"<p>全 {len(val['pages'])} ページのうち、要確認（エラー・警告・テキスト不一致・食い違いのいずれかがある）{len(shown)} ページだけを以下に表示する。</p>")
     parts.append('<table class="summary"><tr><th>ページ</th><th>種類</th>')
     for m in models:
         parts.append(f'<th colspan=5>{esc(m)}</th>')
@@ -180,7 +236,7 @@ def build_html(run: str, val: dict) -> str:
     for _ in models:
         parts.append("<th>行数</th><th>error</th><th>warn</th><th>テキスト不一致</th><th>$</th>")
     parts.append("<th>セル</th></tr>")
-    for p in val["pages"]:
+    for p in shown:
         cat = "・".join(CAT_LABEL.get(c, c) for c in p.get("category", []))
         parts.append(f'<tr><td class=l><a href="#{p["key"]}">{esc(p["key"])}</a> (印字p.{esc(p.get("printed"))})</td><td class=l>{cat}</td>')
         for m in models:
@@ -198,7 +254,8 @@ def build_html(run: str, val: dict) -> str:
         parts.append(f"<td>{'-' if p['diffs'] is None else len([d for d in p['diffs'] if d['field'] != 'tables'])}</td></tr>")
     parts.append("</table>")
 
-    for p in val["pages"]:
+    for p in shown:
+        ensure_img(p["key"], p["doc_id"], p["page"])
         parts.append(f'<section class="page" id="{p["key"]}"><h2>{esc(p["key"])} — 印字p.{esc(p.get("printed"))} '
                      f'<span class=meta>{esc(p.get("note"))}</span></h2><div class="grid">')
         parts.append(f'<div class="img"><img src="img/{p["key"]}.png" alt="{esc(p["key"])}"></div><div class="models">')

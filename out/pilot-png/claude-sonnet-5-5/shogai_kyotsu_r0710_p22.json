@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 22,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1459,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.030914,
+    "cost_usd_batch": 0.015457,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 22,
+    "printed_page": "20",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "[図]\n都道府県コード 事業所区分コード 郡市区コード 通番 チェックデジット\n※ 都道府県コードの先頭0は省略不可とする。\n※ 事業所区分コードのみを英数とし、これ以外は数字とする。なお、英字は大文字アルファベットのみであり、「I」、「O」、「Q」を除く。\n※ チェックデジットは、モジュラス10ウェイト2－1分割方式を独自に拡張したものとする。具体的には、英字を数字に読み替え、A=10、B=11、C=12、D=13、E=14、F=15、・・・Z=32 とし、モジュラス10ウェイト2－1分割方式で算出する。これにより、E=14 に 2 を乗じると 28 になるが、この場合 2+8=10 として計算すること。(「1」+「0」とせず、また、「0」としないこと)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "事業所区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:総合支援法(指定事業所)(GH・相談支援事業所を除く)\n(異動年月日の年月、またはサービス提供年月が\n平成 26 年 3 月以前は\n総合支援法(指定事業所)(GH・CH・相談支援事業所を除く))\n2:総合支援法(指定事業所)(GH)\n(異動年月日の年月、またはサービス提供年月が\n平成 26 年 3 月以前は\n総合支援法(指定事業所)(GH・CH))\n3:総合支援法(指定事業所)(相談支援事業所)\n4:総合支援法(基準該当事業所)\n5:児童福祉法(指定事業所)(障害児相談支援事業所を除く)\n6:地域生活支援事業\n7:児童福祉法(指定事業所)(障害児相談支援事業所)\n8:児童福祉法(基準該当事業所)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "[図]\nサービス種類コード サービス項目コード\n※ サービス項目コードはサービスの内容・行為を表す。\n※ サービス種類コード及びサービス項目コードの全てを英数とする。なお、英字は大文字アルファベットのみであり、「I」、「O」、「Q」を除く。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "法人等種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:社会福祉法人(社協以外) 02:社会福祉法人(社協)\n03:医療法人 04:社団・財団 05:営利法人\n06:非営利法人(NPO) 07:農協 08:生協\n09:その他法人 10:地方公共団体(都道府県)\n11:地方公共団体(市町村)\n12:地方公共団体(広域連合・一部事務組合等)\n13:非法人 14:国立施設 99:その他",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:指定事業所\n2:基準該当事業所\n3:特定基準該当事業所",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページから続く（項番10から開始）",
+      "項番10・12の図内の「×1」〜「×10」等は図として[図]で省略した",
+      "項番14のコード名称は折り返しを詰めて記載"
+    ]
+  },
+  "raw_text": null
+}

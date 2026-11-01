@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 228,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2074,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037072,
+    "cost_usd_batch": 0.018536,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 228,
+    "printed_page": "110",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.2. 利用者負担上限額管理結果票情報(入力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "利用者負担上限額管理結果票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "上限額管理者が作成する利用者負担上限額管理結果票の集計情報(上限額管理を行った場合に上限額管理者が送信する)。",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K411 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "利用者負担上限額管理結果票情報(複数児童)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "上限額管理者が作成する利用者負担上限額管理結果票の集計情報(同一世帯における複数児童の上限額管理を行った場合に上限額管理者が送信する)。(※1)",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K421 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.3. 利用者負担額一覧表情報(サービス事業所等間の受け渡し情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "利用者負担額一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等の間で上限額管理対象者の利用者負担額を受け渡すための情報",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K511 / ルート: 障害児施設等→上限額管理者 / 周期: 月次 / 媒体: FD 等"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.4. サービス提供実績記録票情報(入力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "サービス提供実績記録票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から障害児給付費等の請求を行う際に提出する、サービス提供実績記録票の情報",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K611 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.5. 増減単位数返戻通知情報(出力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児給付費等支払決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等ごとの請求差、返戻の状況を障害児施設等へ通知するためのリスト。処遇改善助成金(※1)の都道府県ごとの請求差、返戻の状況も出力される。\n※障害児施設等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K711 / ルート: 国保連合会→障害児施設等 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "返戻等一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト\n※障害児施設等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K721 / ルート: 国保連合会→障害児施設等 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児給付費等支払決定増減表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等ごとの請求差、返戻の状況を障害児施設等へ通知するためのリスト。処遇改善助成金(※1)の都道府県ごとの請求差、返戻の状況も出力される。",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K7A1 / ルート: 国保連合会→障害児施設等 / 周期: 月次 / 媒体: PDF"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "返戻等一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K7B1 / ルート: 国保連合会→障害児施設等 / 周期: 月次 / 媒体: PDF"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が令和7年4月以降使用する。"
+      },
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      }
+    ],
+    "uncertain": [
+      "各表の識別・ルート・周期・媒体は専用のフィールドがないため note にまとめて記載した",
+      "情報名の改行は折り返しとして詰めた"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,5643 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 297,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 43351,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.022492,
+    "cost_usd_batch": 0.011246,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 297,
+    "printed_page": "147-10",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "（8）入力必須項目と様式の対応表（明細情報レコード）【サービス提供年月：平成21年3月以前～令和6年3月】",
+        "record": {
+          "exchange_id": null,
+          "name": "明細情報レコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "R3/4～R6/3 > 0101",
+          "R3/4～R6/3 > 0301",
+          "R3/4～R6/3 > 0401",
+          "R3/4～R6/3 > 0501",
+          "R3/4～R6/3 > 0601",
+          "R3/4～R6/3 > 0701",
+          "H30/4～R3/3 > 0101",
+          "H30/4～R3/3 > 0301",
+          "H30/4～R3/3 > 0401",
+          "H30/4～R3/3 > 0501",
+          "H30/4～R3/3 > 0601",
+          "H30/4～R3/3 > 0701",
+          "H24/4～H30/3 > 0101",
+          "H24/4～H30/3 > 0301",
+          "H24/4～H30/3 > 0401",
+          "H24/4～H30/3 > 0501",
+          "H24/4～H30/3 > 0601",
+          "H21/4～H24/3 > 0101",
+          "H21/4～H24/3 > 0201",
+          "H21/3以前 > 0101",
+          "H21/3以前 > 0201"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "提供通番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "日付"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "◎"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "サービス提供回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス内容"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "ヘルパー資格"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "運転フラグ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "開始時間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "終了時間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "算定時間数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "乗降(回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "移動"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "派遣人数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "前月からの継続サービス"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "送迎加算 住"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "送迎加算 復"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "家庭連携加算(サービス提供時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "家庭連携加算(算定時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "自活訓練加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "短期滞在加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "訪問支援特別加算(サービス提供時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "訪問支援特別加算(算定時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "施設外支援"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "退所時特別支援加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "地域移行加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "食事提供加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "入院・外泊時加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "提供形態"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "備考"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "サービス提供の状況"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○ ※1"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": "○ ※2"
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": "○ ※2"
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": "○ ※2"
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○ ※1"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○ ※1"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○ ※1"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": "○ ※2"
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○ ※1"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "夜間支援体制加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "入院時支援特別加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "入院時支援特別加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "帰宅時支援加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "帰宅時支援加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "自立生活支援加算(Ⅱ)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "日中支援加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "日中支援加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "算定日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "自立訓練 訪問型時間数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "実費算定",
+              "朝食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "実費算定",
+              "昼食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "実費算定",
+              "夕食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "実費算定",
+              "光熱水費"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "重度包括",
+              "適用単価"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "重度包括",
+              "基本単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "重度包括",
+              "加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "重度包括",
+              "加算後単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "重度包括",
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "重度包括",
+              "1日計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "R3/4～R6/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "R3/4～R6/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H30/4～R3/3 > 0701",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0301",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0401",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0501",
+                "value": null
+              },
+              {
+                "column": "H24/4～H30/3 > 0601",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/4～H24/3 > 0201",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0101",
+                "value": null
+              },
+              {
+                "column": "H21/3以前 > 0201",
+                "value": null
+              }
+            ],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "列見出しの縦書き様式名（障害児入所支援・児童発達支援・医療型児童発達支援・放課後等デイサービス・保育所等訪問支援・居宅訪問型児童発達支援、H21期間の障害児施設支援～入所～／～通所～）は列名に含めず、様式種別番号のみで列を区別した。",
+      "36行目の※1・※2は記号として値に付記したが、本ページ内に脚注本文は見当たらない。",
+      "39行目の項目名「入院時支援特別加算(算定回数)」の「回数」表記は画像の読み取りに自信がない。"
+    ]
+  },
+  "raw_text": null
+}

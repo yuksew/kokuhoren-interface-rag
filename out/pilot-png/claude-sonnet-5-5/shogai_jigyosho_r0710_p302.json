@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 302,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 885,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.025182,
+    "cost_usd_batch": 0.012591,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 302,
+    "printed_page": "148－3",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "No",
+          "実績記録票 紙様式記載",
+          "実績記録票インタフェース設定"
+        ],
+        "items": [
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "退所後に保育・教育等移行支援加算、または通所施設移行支援加算のみを算定する場合"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "実績記録票 紙様式記載: 平成30年5月 [図] 受給者証番号 1111111111 障害者名 受給太郎 事業所番号 9950000001 事業所名 ○○事業所 日 サービス提供の状況 提供時間 ○○加算 ○○加算 ○○加算 ○○加算 備考 合計 保育・教育等移行支援加算 移行日 H30 年 4 月 28 日 移行後算定日 H30 年 5 月 20 日\n実績記録票インタフェース設定: 平成30年5月 受給者証番号 1111111111 事業所番号 9950000001 明細情報レコードは設定しない 保育・教育等移行支援加算 移行日 H30 年 4 月 28 日 移行後算定日 H30 年 5 月 20 日",
+            "required": null,
+            "required_by": [],
+            "note": "基本情報レコードの必須項目(項番 1～項番 7)と、保育・教育等移行支援加算の「移行日」、「移行後算定日」もしくは、通所施設移行支援加算の「移行日」、「算定日」のみ設定が必要。\n明細情報レコードは設定しない。\nなお、保育・教育等移行支援加算について、退所後に複数回算定する場合(サービス提供年月が令和 6 年 4 月以降)は、「移行後算定日」には算定日の属する月の最後に保育・教育等移行支援加算を算定する日付を設定する。(例:令和 6 年 4 月 20 日に一般施策へ移行し、令和 6 年 5 月 8 日及び令和 6 年 5 月 10 日に算定される支援を行った場合、「移行後算定日」には令和 6 年 5 月 10 日を設定する。)"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は設定例の図解を含むため、図中の印字文字を content にまとめて書き写した。",
+      "ページは前ページの表の続き（No 2 のみ）の可能性があるが、見出し行が存在するため false とした。"
+    ]
+  },
+  "raw_text": null
+}

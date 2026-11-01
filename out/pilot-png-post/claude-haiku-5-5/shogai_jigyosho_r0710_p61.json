@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 61,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 4620,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003127,
+    "cost_usd_batch": 0.001563,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 61,
+    "printed_page": "46",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名 > 区分",
+          "項目名 > 項目名",
+          "属性（※Z）",
+          "バイト数",
+          "説明",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "合計1",
+              "合計 算定時間数計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（身体介護）、行動援護、重度訪問介護、共同生活援助（受託居宅介護サービス費）、生活介護において、算定時間数（時間）の合計を整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": "※14",
+            "note_refs": [
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "合計2",
+              "内訳 100%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（通院介護（伴う））において、初任者研修課程修了者等の実績時間数を設定。\n同行援護（伴う）において、初任者研修課程修了者等、または初任者研修課程修了者等（通訳）の実績時間数を設定。\n実績時間数（時間）は整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※11",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "内訳 90%数値居宅介護(通院等乗降介助)において、基礎研修課程修了者等、または重度訪問介護研修修了者による実績回数を設定",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※11",
+                "text": "合計内訳 100%数値居宅介護(通院等乗降介助)において、初任者研修課程修了者等による実績回数を設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "合計2",
+              "内訳 70%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（通院介護（伴う））、同行援護（伴う）において、基礎研修課程修了者等による実績時間数（時間）を整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※11",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "合計 算定回数計数値居宅介護(通院等乗降介助)において、算定回数の合計を設定提供実績の合計算定 移動介護分数値移動介護の時間数(時間)を整数部2 桁+小数部1 桁で設定(例:10.5 時間→時間を超える場合は999 を設定(例:100時間→999)。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※11",
+                "text": "合計内訳 100%数値居宅介護(通院等乗降介助)において、初任者研修課程修了者等による実績回数を設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "合計2",
+              "内訳 重訪"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（通院介護（伴う））において、重度訪問介護研修修了者による時間数（時間）を整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "合計2",
+              "合計 算定時間数計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（通院介護（伴う））、同行援護（伴う）において、算定時間数（時間）の合計を整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": "※11",
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": "合計内訳 100%数値居宅介護(通院等乗降介助)において、初任者研修課程修了者等による実績回数を設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "合計3",
+              "内訳 100%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（家事援助）において、初任者研修課程修了者等の実績時間数を設定。\n同行援護において、初任者研修課程修了者等、または初任者研修課程修了者等（通訳）の実績時間数を設定。\n実績時間数（時間）は整数部３桁＋小数部２桁で設定。例：99.25 時間→09925（または9925）",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "内訳 90%数値居宅介護(通院等乗降介助)において、基礎研修課程修了者等、または重度訪問介護研修修了者による実績回数を設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "合計3",
+              "内訳 90%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（家事援助）において、基礎研修課程修了者等、または重度訪問介護研修修了者の実績時間数を設定。\n同行援護において、基礎研修課程修了者等、基礎研修課程修了者等（通訳）、または盲ろう者向け通訳・介助員の実績時間数を設定。\n実績時間数（時間）は整数部３桁＋小数部２桁で設定。例：99.25 時間→09925（または9925）",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "合計 算定回数計数値居宅介護(通院等乗降介助)において、算定回数の合計を設定提供実績の合計算定 移動介護分数値移動介護の時間数(時間)を整数部2 桁+小数部1 桁で設定(例:10.5 時間→時間を超える場合は999 を設定(例:100時間→999)。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "合計3",
+              "合計 算定時間数計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（家事援助）、同行援護において、算定時間数（時間）の合計を整数部３桁＋小数部２桁で設定。例：99.25 時間→09925（または9925）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "合計4",
+              "内訳 100%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護（通院介護（伴ず））において、初任者研修課程修了者等の実績時間数を設定。\n同行援護（伴ず）において、初任者研修課程修了者等、または初任者研修課程修了者等（通訳）の実績時間数を設定。\n実績時間数（時間）は整数部３桁＋小数部２桁で設定。例：99.5 時間→09950（または9950）",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※11",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "内訳 90%数値居宅介護(通院等乗降介助)において、基礎研修課程修了者等、または重度訪問介護研修修了者による実績回数を設定",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※11",
+                "text": "合計内訳 100%数値居宅介護(通院等乗降介助)において、初任者研修課程修了者等による実績回数を設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は1ページ（印字ページ46）で、依頼の『次のページ』（PDF上のページ61）とは一致しない可能性がある。添付されたこのページの表を書き起こした。",
+      "項番19〜27の表は表見出しがなく項番19から始まるため前ページからの続きと判断した。ページ末尾で終わるが、次ページへ続くかは画像だけでは確定できない。",
+      "項番27の説明にある『伴ず』は『伴う』の誤記の可能性があるが、原文どおり『伴ず』と書き写した。",
+      "項番20〜27の『100%』『70%』『90%』の数字の全角・半角は画像から判別しきれず、半角として書き写した。",
+      "『※2』『※3』『※11』『※14』の注記本文はこのページに含まれていないため、footnotesは空にした。",
+      "項目名の区分列（合計1〜4）は縦に結合されたセルとして、結合範囲の各行に同じ値を入れた。"
+    ]
+  },
+  "raw_text": null
+}

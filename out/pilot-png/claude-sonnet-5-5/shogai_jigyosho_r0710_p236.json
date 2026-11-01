@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 236,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2087,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037202,
+    "cost_usd_batch": 0.018601,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 236,
+    "printed_page": "118",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（3）障害児給付費等 明細書 日数情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "日数情報レコード",
+          "parent": "障害児給付費等 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須 > K121 K122",
+          "※必須 > K221",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "02を設定する（日数情報レコード）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県番号、または市町村番号（チェックデジット1桁含む）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C"
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C"
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C"
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コード2桁を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C"
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービス開始日等",
+              "開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "サービス種類毎の開始年月日（入所年月日等）（西暦年月日YYYYMMDDを設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "サービス開始日等",
+              "終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "サービス種類毎の終了年月日（退所年月日等）（西暦年月日YYYYMMDDを設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "K221",
+                "value": "○"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "サービス開始日等",
+              "利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に利用日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※2"
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス開始日等",
+              "入院日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に入院日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "K221",
+                "value": null
+              }
+            ],
+            "note": "※1"
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "サービス開始日等",
+              "外泊日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に外泊日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "K221",
+                "value": null
+              }
+            ],
+            "note": "※1"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目 ○ : 請求内容により必要 △ : 任意設定 空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 2.1.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "障害児給付費等明細書へは、入院、または外泊をした日数の合計を入院日数欄に記載するが、インタフェース上は入院日数、外泊日数を分けて設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成27年4月以降、欠席時対応加算のみの場合、0を設定する。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

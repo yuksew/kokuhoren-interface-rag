@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 8,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1582,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001607,
+    "cost_usd_batch": 0.000804,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 8,
+    "printed_page": "6",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・使用不可能文字",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "使用不可能文字",
+          "文字コード(16進表記)"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "‘(シングルコーテーション)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "27",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※外字コード",
+        "text": "シフト JIS コード上での外字コード領域には、16進コード…0xF040〜0xF9FC の範囲で2バイト目が16進コード…0x40〜0x7E 及び 0x80〜0xFC の1880文字が割り当てられている。"
+      }
+    ],
+    "uncertain": [
+      "依頼文では『次のページの表』の書き起こしとありますが、添付は印字ページ番号「6」（PDF上のページ8とのこと）の1ページのみで、このページに含まれる表は「使用不可能文字」の表だけのため、それを書き起こしました。次のページは添付されていません。",
+      "使用不可能文字の表には「文字コード(16進表記)」の列があるが、items のスキーマに対応する列がないため、その値 27 は content に入れました。",
+      "表の列名の括弧が全角か半角かは画像から判別しにくいため、半角の「(16進表記)」としました。"
+    ]
+  },
+  "raw_text": null
+}

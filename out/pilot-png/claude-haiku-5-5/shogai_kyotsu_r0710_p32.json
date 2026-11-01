@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 32,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 4012,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002822,
+    "cost_usd_batch": 0.001411,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 32,
+    "printed_page": "30",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "サービス種類コード（障害児給付費）"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:知的障害児施設\n12:第1種自閉症児施設\n13:第2種自閉症児施設\n21:知的障害児通園施設\n31:盲児施設\n32:ろうあ児施設\n33:難聴幼児通園施設\n41:肢体不自由児施設(入所)\n42:肢体不自由児施設(通所)\n43:肢体不自由児療護施設\n44:肢体不自由児通園施設\n45:指定医療機関(肢体不自由児)\n51:重症心身障害児施設\n52:指定医療機関(重心)\n55:障害児相談支援\n61:児童発達支援\n62:医療型児童発達支援\n63:放課後等デイサービス\n64:保育所等訪問支援\n65:居宅訪問型児童発達支援\n71:障害児入所支援\n72:医療型障害児入所支援",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "指定事業所等"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:一級地\n12:二級地\n13:三級地\n14:四級地\n15:五級地\n16:六級地\n17:七級地\n18:八級地\n19:九級地\n20:十級地\n21:十一級地\n22:十二級地\n23:その他\n24:十三級地\n25:十四級地",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "児童デイ経過措置事業所"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "31:一級地(旧児童デイ)\n32:二級地(旧児童デイ)\n33:三級地(旧児童デイ)\n34:四級地(旧児童デイ)\n35:五級地(旧児童デイ)\n36:六級地(旧児童デイ)\n37:七級地(旧児童デイ)\n38:八級地(旧児童デイ)\n39:九級地(旧児童デイ)\n40:十級地(旧児童デイ)\n41:十一級地(旧児童デイ)\n42:十二級地(旧児童デイ)\n43:十三級地(旧児童デイ)\n44:十四級地(旧児童デイ)\n45:十五級地(旧児童デイ)\n46:十六級地(旧児童デイ)\n47:十七級地(旧児童デイ)\n48:十八級地(旧児童デイ)\n49:十九級地(旧児童デイ)\n50:二十級地(旧児童デイ)\n51:その他(旧児童デイ)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページの表」だが、添付は1ページのみで、そのページには印字上のページ番号「30」の表が写っている。文書メタ情報の PDF ページ 32 とは一致しないため、添付画像の表を書き起こした。",
+      "取り消し線（打ち消し線）が付いたコード行が多数あるが、取り消しの意味は画像上の書式にとどまるため、文字はすべて原文どおり書き写し、取り消しの扱いは表現していない。",
+      "35 の2行は、「内容」列の左側に小見出し（指定事業所等／児童デイ経過措置事業所）があるため、name_path の2段目に小見出しを入れて区別した。",
+      "表の上部に表見出しは見当たらないため title は null、レコード名・交換情報識別番号も読み取れないため record の各値は null とした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 311,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2156,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001895,
+    "cost_usd_batch": 0.000947,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 311,
+    "printed_page": "154",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(2)ヘッダレコード",
+        "record": {
+          "exchange_id": null,
+          "name": "ヘッダレコード",
+          "parent": "返戻等一覧表情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を出力する（ヘッダレコード）",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C"
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "処理年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y"
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "頁"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "頁数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "国保連合会名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "30",
+            "content": "国保連合会名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "データ種別名"
+            ],
+            "type": "漢字",
+            "length": 18,
+            "length_raw": "18",
+            "content": "データ種別名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※１"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「障害児給付費」を出力する。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 ２．１．２ インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 １．４ コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 １．５ 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 １．３ 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼文では「次のページの表」とありますが、添付は1ページのみで、そのページ（印字ページ番号154）の表を書き起こしました。PDF上のページ311は画像内に記載がないため、printed_pageには印字の154を入れています。",
+      "ヘッダレコードの交換情報識別番号（レコードの識別番号）は画像に記載がないため exchange_id を null にしました。parent は「返戻等一覧表情報」と読み取りました。"
+    ]
+  },
+  "raw_text": null
+}

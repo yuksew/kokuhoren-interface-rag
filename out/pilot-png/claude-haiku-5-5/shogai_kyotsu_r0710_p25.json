@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 25,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 4465,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003049,
+    "cost_usd_batch": 0.001524,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 25,
+    "printed_page": "23",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容 > (左欄)",
+          "内容 > (右欄)"
+        ],
+        "items": [
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体入所更生\n身体入所授産\n知的入所授産"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 90 人以下\n04:91 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体入所療護\n知的入所更生"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10 人\n02:11 人以上 20 人以下\n03:30 人以上 40 人以下\n04:41 人以上 60 人以下\n05:61 人以上 90 人以下\n06:91 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体通所療護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:4 人\n02:5 人以上 10 人以下\n03:11 人以上 20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "身体通所授産\n知的通所更生\n知的通所授産"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:20 人\n02:21 人以上 40 人以下\n03:41 人以上 60 人以下\n04:61 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "児童デイ"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10 人以下\n02:11～20 人\n03:21 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "生活介護 ※12"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅱ型(1.7:1 以上)\n02:Ⅲ型(2:1 以上)\n03:Ⅳ型(2.5:1 以上)\n04:Ⅴ型(3:1 以上)\n05:Ⅵ型(3.5:1 以上)\n06:Ⅶ型(4:1 以上)\n07:Ⅷ型(4.5:1 以上)\n08:Ⅸ型(5:1 以上)\n09:Ⅹ型(5.5:1 以上)\n10:ⅩⅠ型(6:1 以上)\n11:Ⅰ型(1.5:1 以上)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "療養介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型(2:1 以上)\n02:Ⅱ型(3:1 以上)\n03:Ⅲ型(4:1 以上)\n04:Ⅳ型(6:1 以上)\n05:Ⅴ型(特定旧法受給者)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページの表」とあるが、添付は印字ページ23の1ページのみのため、このページの表を書き起こした。",
+      "項番18・19の内容の値（取消線が引かれた行が多数ある）。取消線の意味は原文に説明がないため、取消線の有無は反映していない。",
+      "項番18・19の「内容」列は左右2つの欄に分かれているが、左欄の見出しが印字されていないため、列名を「内容 > (左欄)」「内容 > (右欄)」とした。",
+      "項番19の「生活介護 ※12」の※12 に対応する注記は、このページには見当たらない。",
+      "項番18の左欄セルの「定員区分」と「(多機能型等定員区分(加算))」は改行で分かれていたが、1行にまとめて記載した。"
+    ]
+  },
+  "raw_text": null
+}

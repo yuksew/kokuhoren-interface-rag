@@ -27,6 +27,9 @@ from pathlib import Path
 import pymupdf
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pagemeta import doc_profile  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_MARKS = {"◎", "○", "△"}
 KNOWN_TYPES = {"数字", "英数", "漢字", "数値", "コード値", "英数カナ", "カナ", "日付", "全角", "半角", "英字", "英数字"}
@@ -257,8 +260,29 @@ def main() -> int:
     if not run_dir.exists():
         print(f"{run_dir} がない。先に transcribe.py を実行する", file=sys.stderr)
         return 1
-    pages = yaml.safe_load((ROOT / "config" / "pages.yaml").read_text(encoding="utf-8"))
     models = sorted(p.name for p in run_dir.iterdir() if p.is_dir())
+    # 対象ページ: 出力ファイルから見つけ、config/pages.yaml にある分類・メモを付ける
+    known = {(x["doc_id"], x["page"]): x for x in yaml.safe_load((ROOT / "config" / "pages.yaml").read_text(encoding="utf-8"))}
+    found = set()
+    for m in models:
+        for f in (run_dir / m).glob("*_p*.json"):
+            mm = re.fullmatch(r"(.+)_p(\d+)\.json", f.name)
+            if mm:
+                found.add((mm.group(1), int(mm.group(2))))
+    profiles: dict[str, list[dict]] = {}
+    pages = []
+    for doc, page in sorted(found):
+        x = dict(known.get((doc, page), {"doc_id": doc, "page": page, "category": []}))
+        if "pair" not in x:  # 改ページの相手はテキストレイヤ判定（pagemeta）から決める
+            if doc not in profiles:
+                dom = "kaigo" if doc.startswith("kaigo") else "shogai"
+                profiles[doc] = doc_profile(ROOT / "sources" / "raw" / dom / f"{doc}.pdf")
+            prof = profiles[doc]
+            if prof[page - 1]["continues_to_next"]:
+                nxt = next((q["page"] for q in prof[page:] if not q["blank"]), None)
+                if nxt and (doc, nxt) in found:
+                    x["pair"] = nxt
+        pages.append(x)
     cache: dict = {}
     report: dict = {"run": args.run, "models": models, "pages": []}
 

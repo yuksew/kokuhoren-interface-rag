@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 35,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 1949,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.035782,
+    "cost_usd_batch": 0.017891,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 35,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.2.1 介護給付費請求情報（入力情報）",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費請求を行う際に提出するサービス事業所単位の集計情報\n識別: 7111\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護予防・日常生活支援総合事業費（経過措置）請求を行う際に提出するサービス事業所単位の集計情報\n識別: 7112 ※11\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護予防・日常生活支援総合事業費請求を行う際に提出するサービス事業所単位の集計情報\n識別: 7113 ※12\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護給付費請求書別紙情報 ※2"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費請求を行う際に提出するサービス事業所のサービス情報\n識別: 7121\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "居宅介護（支援）給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・訪問通所区分介護サービス\n・居宅療養管理指導\n識別: 7131\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "居宅介護（支援）給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・短期入所生活介護\n識別: 7143 ※1 ※6\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "居宅介護（支援）給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・老人保健施設における短期入所療養介護\n識別: 7155 ※1 ※6 ※8\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "居宅介護（支援）給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護医療院における短期入所療養介護\n識別: 7157 ※13\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "居宅介護（支援）給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・病院･診療所における短期入所療養介護\n識別: 7164 ※1 ※3 ※6\nルート: サービス事業所等→国保連合会\n周期: 月次\n媒体: 伝送 磁気 帳票",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "識別・ルート・周期・媒体は独立した列だが、items のスキーマに専用フィールドがないため content 末尾に併記した",
+      "情報名は name_path に入れた（折り返しを詰めて記載）"
+    ]
+  },
+  "raw_text": null
+}

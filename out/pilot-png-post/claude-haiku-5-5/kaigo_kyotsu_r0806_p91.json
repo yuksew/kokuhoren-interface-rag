@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 91,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 3094,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002361,
+    "cost_usd_batch": 0.001181,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 91,
+    "printed_page": "43",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "データ種別（コントロールレコード）",
+          "格納するデータレコード > 識別",
+          "格納するデータレコード > 情報名"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "111：保険者向け給付実績情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有給付実績情報",
+            "required": null,
+            "required_by": [],
+            "note": "1111\n1112\n1113\n1114\n1115\n1116\n1117\n1118\n1119"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "112：保険者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者向け給付管理票情報",
+            "required": null,
+            "required_by": [],
+            "note": "1121\n1122"
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "113：保険者保有給付実績情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者保有給付実績情報",
+            "required": null,
+            "required_by": [],
+            "note": "1131\n1132\n1133\n1134\n1135\n1136\n1137\n1138\n1139"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "114：保険者保有給付実績更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者保有給付実績更新結果情報",
+            "required": null,
+            "required_by": [],
+            "note": "1141\n1142\n1143\n1144\n1145\n1146\n1147\n1148\n1149"
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "121：介護給付費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費資格照合表情報",
+            "required": null,
+            "required_by": [],
+            "note": "1211"
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "122：介護予防・日常生活支援総合事業費（経過措置）資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）資格照合表情報",
+            "required": null,
+            "required_by": [],
+            "note": "1221"
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "123：介護予防・日常生活支援総合事業費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費資格照合表情報",
+            "required": null,
+            "required_by": [],
+            "note": "1231"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付の1ページは印字ページ番号「- 43 -」の『1.6 データ種別一覧』のページで、PDF上のページ番号91との対応は確認できない。添付された表をそのまま書き起こした。",
+      "表は『データ種別』『識別』『情報名』の3項目の対応表で、仕様書の項目表の形式ではないため table_kind を other とした。識別と情報名は本来の列構造に当てはまらないため、情報名は content に、識別は note に入れた。name_path はデータ種別の文字列をそのまま入れている。",
+      "項番6・7のデータ種別と情報名は、折り返しの改行を詰めて1行にした。"
+    ]
+  },
+  "raw_text": null
+}

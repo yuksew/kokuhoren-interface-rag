@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 215,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2150,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001892,
+    "cost_usd_batch": 0.000946,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 215,
+    "printed_page": "98",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(4)合計レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "合計レコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "03を出力する(合計レコード)",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "処遇改善助成金(※4)の情報を出力する場合、06を出力する。（受付年月が平成25年12月以降、06は使用しない。）",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "請求差件数合計"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "請求差件数合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "請求差単位数合計"
+            ],
+            "type": "数値",
+            "length": 12,
+            "length_raw": "12",
+            "content": "請求差単位数合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "処遇改善助成金(※4)の情報を出力する場合、請求差助成金合計を出力する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "返戻件数合計"
+            ],
+            "type": "数値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "返戻件数合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "返戻単位数合計"
+            ],
+            "type": "数値",
+            "length": 11,
+            "length_raw": "11",
+            "content": "返戻単位数合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "処遇改善助成金(※4)の情報を出力する場合、返戻助成金合計を出力する。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "処遇改善助成金(※4)の情報を出力する場合、06を出力する。（受付年月が平成25年12月以降、06は使用しない。）"
+      },
+      {
+        "mark": "※2",
+        "text": "処遇改善助成金(※4)の情報を出力する場合、請求差助成金合計を出力する。"
+      },
+      {
+        "mark": "※3",
+        "text": "処遇改善助成金(※4)の情報を出力する場合、返戻助成金合計を出力する。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      }
+    ],
+    "uncertain": [
+      "依頼文では分野が障害福祉・PDF上のページ215とされていたが、添付画像は印字ページ98で国保連合会向けの合計レコード表であり、依頼内容と一致しない。添付された1ページ（ページ98）のみを書き起こした。",
+      "表の見出しは「(4)合計レコード」で、レコードの交換情報識別番号は表中に記載がないためexchange_idはnullとした。"
+    ]
+  },
+  "raw_text": null
+}

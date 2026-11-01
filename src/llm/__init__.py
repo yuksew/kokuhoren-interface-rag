@@ -1,4 +1,4 @@
-from .base import Attachment, LLMClient, LLMResult, Usage
+from .base import Attachment, BatchItemResult, LLMClient, LLMResult, Usage
 
 
 def get_client(provider: str) -> LLMClient:
@@ -13,4 +13,4 @@ def get_client(provider: str) -> LLMClient:
     raise ValueError(f"unknown provider: {provider}")
 
 
-__all__ = ["Attachment", "LLMClient", "LLMResult", "Usage", "get_client"]
+__all__ = ["Attachment", "BatchItemResult", "LLMClient", "LLMResult", "Usage", "get_client"]

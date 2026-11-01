@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 320,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 2042,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036752,
+    "cost_usd_batch": 0.018376,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 320,
+    "printed_page": "163",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "3.1.2.1.請求書･明細書情報(入力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "地域生活支援事業請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から地域生活支援事業の請求を行う際に提出するサービス事業所単位の集計情報。",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L111 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "地域生活支援事業明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から地域生活支援事業の請求を行う際に提出するサービス事業所単位の集計情報。",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L121 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "3.1.2.2.増減単位数返戻通知情報(出力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "地域生活支援事業等支払決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村ごとの請求差、返戻の状況をサービス事業所等へ通知するためのリスト\n※サービス事業所等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L711 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "返戻等一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト\n※サービス事業所等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L721 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "地域生活支援事業等支払決定増減表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村ごとの請求差、返戻の状況をサービス事業所等へ通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L7A1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "返戻等一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L7B1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "3.1.2.3.支払通知情報(出力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "地域生活支援事業等支払決定額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等への支払決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L8A1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "地域生活支援事業等支払決定額内訳書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L8B1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "事業所別地域生活支援事業等支払明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ支払決定額の明細を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L8C1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "地域生活支援事業等支払過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": "識別: L8D1 / ルート: 国保連合会→サービス事業所等 / 周期: 月次 / 媒体: PDF"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "各表の識別・ルート・周期・媒体は専用フィールドがないため note にまとめて記載した",
+      "ルートのセル内の矢印は改行表示を「→」で連結した"
+    ]
+  },
+  "raw_text": null
+}

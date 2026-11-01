@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 44,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1565,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.031974,
+    "cost_usd_batch": 0.015987,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 44,
+    "printed_page": "41",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "以下のコードについては平成27年4月以降、使用不可となるコードである。当該コードは異動年月・サービス提供年月等が平成27年3月までのデータに関してのみ有効となる。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "決定サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "332000:共同生活援助経過的居宅介護決定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "指定事業所等 ※1\n07:七級地 08:八級地 09:九級地\n10:十級地 11:十一級地 12:十二級地\n13:十三級地 14:十四級地 15:十五級地\n16:十六級地 17:十七級地 18:十八級地\n19:十九級地",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "地域区分コード（障害児給付費）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "児童デイ経過措置事業所\n31:一級地(旧児童デイ)\n32:二級地(旧児童デイ)\n33:三級地(旧児童デイ)\n34:四級地(旧児童デイ)\n35:五級地(旧児童デイ)\n36:六級地(旧児童デイ)\n37:七級地(旧児童デイ)\n38:八級地(旧児童デイ)\n39:九級地(旧児童デイ)\n40:十級地(旧児童デイ)\n41:十一級地(旧児童デイ)\n42:十二級地(旧児童デイ)\n43:十三級地(旧児童デイ)\n44:十四級地(旧児童デイ)\n45:十五級地(旧児童デイ)\n46:十六級地(旧児童デイ)\n47:十七級地(旧児童デイ)\n48:十八級地(旧児童デイ)\n49:十九級地(旧児童デイ)\n50:二十級地(旧児童デイ)\n51:その他(旧児童デイ)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "code_list",
+        "title": "以下のコードについては平成28年4月以降、使用不可となるコードである。当該コードは異動年月・サービス提供年月等が平成28年3月までのデータに関してのみ有効となる。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "児童施設経過措置事業所\n29:八級地(旧障害児施設)\n30:九級地(旧障害児施設)\n31:十級地(旧障害児施設)\n32:十一級地(旧障害児施設)\n33:十二級地(旧障害児施設)\n34:十三級地(旧障害児施設)\n35:十四級地(旧障害児施設)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "地域区分コード（障害児給付費）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "指定事業所等 ※1\n18:八級地 19:九級地\n20:十級地 21:十一級地 22:十二級地\n24:十三級地 25:十四級地",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "平成30年4月以降の場合、「07:七級地」は使用可。"
+      },
+      {
+        "mark": "※1",
+        "text": "平成24年4月以降、平成27年3月以前の場合、「18:八級地」「19:九級地」「20:十級地」「21:十一級地」「22:十二級地」は使用不可。"
+      }
+    ],
+    "uncertain": [
+      "内容列は「指定事業所等」「児童デイ経過措置事業所」等の区分セルとコード値セルに分かれているが、content にまとめて記載した",
+      "各表の前の説明文は title として扱った"
+    ]
+  },
+  "raw_text": null
+}

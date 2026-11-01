@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 43,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1672,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.033044,
+    "cost_usd_batch": 0.016522,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 43,
+    "printed_page": "40",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "定員区分（障害児施設給付費）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "知的障害児通園施設 1:21人以上30人以下\n2:31人以上40人以下\n難聴幼児通園施設 3:41人以上50人以下\n4:51人以上60人以下\n肢体不自由児施設(通所) 5:61人以上70人以下\n6:71人以上80人以下\n肢体不自由児通園施設 7:81人以上\n8:20人",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "定員区分（障害児施設給付費）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "肢体不自由児療護施設 1:50人以下\n2:51人以上60人以下\n3:61人以上70人以下\n4:71人以上",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "code_list",
+        "title": "以下のコードについては平成26年4月以降、使用不可となるコードである。当該コードは異動年月・サービス提供年月等が平成26年3月までのデータに関してのみ有効となる。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "決定サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "311000:共同生活介護基本決定\n312000:共同生活介護経過的居宅介護決定\n313000:共同生活介護重度障害者居宅介護利用対象者決定\n310902:共同生活介護加算重度障害者支援加算対象者\n310903:共同生活介護加算自立生活支援加算対象者\n310906:共同生活介護加算地域生活移行個別支援加算対象者\n310801:共同生活介護特定障害者特別給付費対象者\n330903:共同生活援助加算自立生活支援加算対象者",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "31:共同生活介護",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "人員配置区分",
+              "共同生活介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型(4:1以上)\n02:Ⅱ型(5:1以上)\n03:Ⅲ型(6:1以上)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "大規模住居等減算の有無",
+              "共同生活介護"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し 2:定員8人以上 3:定員21人以上\n4:定員21人以上(一体的な運営が行われている場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "共同生活介護夜間支援対象利用者数"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10人以下 02:11人 03:12人 04:13人\n05:14人 06:15人 07:16人 08:17人 09:18人\n10:19人 11:20人 12:21人以上30人以下 13:4人以下 14:5人 15:6人 16:7人 17:8人以上10人以下 18:11人以上13人以下 19:14人以上16人以下 20:17人以上20人以下",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "共同生活援助夜間防災・緊急時支援対象利用者数"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:4人以下 02:5人 03:6人 04:7人 05:8人以上30人以下",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "最初の表は前ページからの続き（項番11の内容が左サブ見出し（施設名）と右コード値の2段構成で、施設名とコード値の対応は目視で並べたもの）",
+      "項番5の内容で「12:21人以上30人以下 13:4人以下」の並びは原文どおり",
+      "最初の表の項番11を内容ブロックごとに2行に分けた"
+    ]
+  },
+  "raw_text": null
+}

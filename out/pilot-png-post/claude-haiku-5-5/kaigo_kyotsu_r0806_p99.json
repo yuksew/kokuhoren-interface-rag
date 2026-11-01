@@ -1,0 +1,541 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 99,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 8731,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00518,
+    "cost_usd_batch": 0.00259,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 99,
+    "printed_page": "51",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "データ種別（コントロールレコード）",
+          "格納するデータレコード > 識別",
+          "格納するデータレコード > 情報名"
+        ],
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防サービス給付費請求明細書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7172\n7174\n7176"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費請求明細書（居宅サービス計画費）情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "8121\n8122\n8124"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防支援介護給付費明細書",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "8123\n8125"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "71P:介護予防・日常生活支援総合事業費（経過措置）請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）請求書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7112"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "71P:介護予防・日常生活支援総合事業費（経過措置）請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）請求明細書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "71P1"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "71P:介護予防・日常生活支援総合事業費（経過措置）請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）請求明細書（ケアマネジメント費）情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "8161"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "71R:介護予防・日常生活支援総合事業費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費請求書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7113"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "71R:介護予防・日常生活支援総合事業費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費請求明細書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "71R1"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "71R:介護予防・日常生活支援総合事業費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費請求明細書（介護予防ケアマネジメント費）情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "8171"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 121,
+            "no_raw": "121",
+            "name_path": [
+              "71B:介護給付費再審査申立書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費再審査申立書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "71B1\n71B2"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 122,
+            "no_raw": "122",
+            "name_path": [
+              "71C:主治医意見書作成料請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "主治医意見書作成料請求書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "71C1"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 123,
+            "no_raw": "123",
+            "name_path": [
+              "71D:主治医意見書作成料請求書情報（保険者）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "主治医意見書作成料請求書情報（保険者）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "71D1"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 124,
+            "no_raw": "124",
+            "name_path": [
+              "721:介護保険審査決定増減表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護保険審査決定増減表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7211"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 125,
+            "no_raw": "125",
+            "name_path": [
+              "722:介護予防・日常生活支援総合事業（経過措置）審査決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業（経過措置）審査決定増減表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7221"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 126,
+            "no_raw": "126",
+            "name_path": [
+              "723:介護予防・日常生活支援総合事業審査決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業審査決定増減表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7231"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 127,
+            "no_raw": "127",
+            "name_path": [
+              "731:介護保険審査増減単位数通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護保険審査増減単位数通知書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7311"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 128,
+            "no_raw": "128",
+            "name_path": [
+              "732:介護予防・日常生活支援総合事業審査増減単位数通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業審査増減単位数通知書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7321"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 129,
+            "no_raw": "129",
+            "name_path": [
+              "741:請求明細書・給付管理票返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求明細書・給付管理票返戻（保留）一覧表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7411"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 130,
+            "no_raw": "130",
+            "name_path": [
+              "742:介護予防・日常生活支援総合事業（経過措置）請求明細書返戻一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業（経過措置）請求明細書返戻一覧表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7421"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 131,
+            "no_raw": "131",
+            "name_path": [
+              "743:介護予防・日常生活支援総合事業請求明細書返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業請求明細書返戻（保留）一覧表情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7431"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 132,
+            "no_raw": "132",
+            "name_path": [
+              "751:介護給付費等支払決定額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費等支払決定額通知書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7515"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 133,
+            "no_raw": "133",
+            "name_path": [
+              "752:介護給付費等支払決定額内訳書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費等支払決定額内訳書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7521"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 134,
+            "no_raw": "134",
+            "name_path": [
+              "754:介護予防・日常生活支援総合事業費（経過措置）支払決定額内訳書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費（経過措置）支払決定額内訳書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7541"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 135,
+            "no_raw": "135",
+            "name_path": [
+              "755:介護予防・日常生活支援総合事業費支払決定額内訳書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業費支払決定額内訳書情報",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7551"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 136,
+            "no_raw": "136",
+            "name_path": [
+              "761:介護給付費過誤決定通知書情報（事業所分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護給付費過誤決定通知書情報（事業所分）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "7611"
+              }
+            ],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の先頭3行（識別7172〜8125）は項番・データ種別が空欄で、前ページからの続きと判断した。所属する項番は読み取れないため no は null とした。",
+      "項番・データ種別は縦結合されているため、結合範囲の全行に同じ値を入れた（119・120）。",
+      "この表には属性・バイト数・必須の列がなく、「識別」「情報名」を専用の項目で表せないため、識別は required_by に列名付きで格納し、情報名は content に入れた。required は null とした。",
+      "121の識別欄には71B1と71B2が1セルに並んでいるため、1行の値として「71B1\\n71B2」と書いた。",
+      "表は136で終わっているが、次ページに続く可能性があるとして continues_to_next_page を true にした。"
+    ]
+  },
+  "raw_text": null
+}

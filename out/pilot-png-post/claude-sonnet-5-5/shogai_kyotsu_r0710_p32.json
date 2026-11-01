@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 32,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1340,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.029724,
+    "cost_usd_batch": 0.014862,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 32,
+    "printed_page": "30",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "サービス種類コード（障害児給付費）"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:知的障害児施設 12:第1種自閉症児施設\n13:第2種自閉症児施設 21:知的障害児通園施設\n31:盲児施設 32:ろうあ児施設\n33:難聴幼児通園施設\n41:肢体不自由児施設(入所)\n42:肢体不自由児施設(通所)\n43:肢体不自由児療護施設\n44:肢体不自由児通園施設\n45:指定医療機関(肢体不自由児)\n51:重症心身障害児施設\n52:指定医療機関(重心)\n55:障害児相談支援\n61:児童発達支援 62:医療型児童発達支援\n63:放課後等デイサービス 64:保育所等訪問支援\n65:居宅訪問型児童発達支援\n71:障害児入所支援\n72:医療型障害児入所支援",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "指定事業所等"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:一級地 12:二級地 13:三級地\n14:四級地 15:五級地 16:六級地\n17:七級地 18:八級地 19:九級地\n20:十級地 21:十一級地 22:十二級地\n23:その他\n24:十三級地 25:十四級地",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "児童デイ経過措置事業所"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "31:一級地(旧児童デイ)\n32:二級地(旧児童デイ)\n33:三級地(旧児童デイ)\n34:四級地(旧児童デイ)\n35:五級地(旧児童デイ)\n36:六級地(旧児童デイ)\n37:七級地(旧児童デイ)\n38:八級地(旧児童デイ)\n39:九級地(旧児童デイ)\n40:十級地(旧児童デイ)\n41:十一級地(旧児童デイ)\n42:十二級地(旧児童デイ)\n43:十三級地(旧児童デイ)\n44:十四級地(旧児童デイ)\n45:十五級地(旧児童デイ)\n46:十六級地(旧児童デイ)\n47:十七級地(旧児童デイ)\n48:十八級地(旧児童デイ)\n49:十九級地(旧児童デイ)\n50:二十級地(旧児童デイ)\n51:その他(旧児童デイ)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番34の内容: 11〜52は取消線あり、55以降は取消線なし。取消線は文字として表現していない",
+      "項番35 指定事業所等: 18,19,20,21,22,24,25は取消線あり",
+      "項番35 児童デイ経過措置事業所: 全行に取消線あり",
+      "項番35のコード名称は原文では「地域区分コード（障害児給付費）」で、「指定事業所等」「児童デイ経過措置事業所」は内容の左側の小項目として name_path に入れた",
+      "項番34のコード名称は原文で「サービス種類コード」「（障害児給付費）」の2行",
+      "前ページからの続きの表（見出し行は繰り返し）"
+    ]
+  },
+  "raw_text": null
+}

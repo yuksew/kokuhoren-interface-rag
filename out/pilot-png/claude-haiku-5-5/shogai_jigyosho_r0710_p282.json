@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 282,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 4003,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002818,
+    "cost_usd_batch": 0.001409,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 282,
+    "printed_page": "145",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "説明",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "日中支援加算（算定回数）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "算定日数"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "保育所等訪問支援、居宅訪問型児童発達支援を行った場合に1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "自立訓練 訪問型 時間数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "実費算定",
+              "朝食"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付適用の有無が有りの場合で、利用契約に従って朝食を提供した場合1を設定。",
+            "required": null,
+            "required_by": [],
+            "note": "※2"
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "実費算定",
+              "昼食"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付適用の有無が有りの場合で、利用契約に従って昼食を提供した場合1を設定。",
+            "required": null,
+            "required_by": [],
+            "note": "※2"
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "実費算定",
+              "夕食"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付適用の有無が有りの場合で、利用契約に従って夕食を提供した場合1を設定。",
+            "required": null,
+            "required_by": [],
+            "note": "※2"
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "実費算定",
+              "光熱水費"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付適用の有無が有りの場合で、利用契約に従って、光熱水費を徴収する日に1を設定。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "重度包括",
+              "適用単価"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "重度包括",
+              "基本単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "重度包括",
+              "加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "重度包括",
+              "加算後単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "重度包括",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "重度包括",
+              "1日計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "1時間（13時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "2時間（14時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "3時間（15時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "4時間（16時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "5時間（17時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "6時間（18時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "7時間（19時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "8時間（20時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "重度訪問〈様式３－２〉",
+              "9時間（21時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番44から始まり、表題がないため前ページからの続きと判断した（後処理で再判定）。",
+      "最終行（65）の後の重度訪問（様式３－２）の行が次ページに続く可能性がある。continues_to_next_pageは推定。",
+      "備考欄の※2の本文は本ページに見当たらない。",
+      "説明欄の「1」の全角・半角表記は画像から判別しきれなかったため半角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

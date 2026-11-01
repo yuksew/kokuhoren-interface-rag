@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 38,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1322,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.029544,
+    "cost_usd_batch": 0.014772,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 38,
+    "printed_page": "35",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "以下のコードについては平成21年4月以降、使用不可となるコードである。当該コードは異動年月・サービス提供年月等が平成21年3月までのデータに関してのみ有効となる。",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "決定サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "420904:自立訓練(生活訓練)加算継続的短期滞在加算対象者",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "施設等の区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労継続支援(B型) 1:一般 2:強化型",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "人員配置区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "施設入所支援\n01:Ⅰ型\n(平均障害程度区分5.0以上、障害程度区分6が60%以上)\n02:Ⅱ型\n(平均障害程度区分5.0以上、障害程度区分6が50%以上60%未満)\n03:Ⅲ型\n(平均障害程度区分5.0以上、障害程度区分6が40%以上50%未満)\n04:Ⅳ型\n(平均障害程度区分5.0以上、障害程度区分6が40%未満)または(平均障害程度区分4.5以上5未満、障害程度区分5,6が50%以上)\n05:Ⅴ型\n(平均障害程度区分4.5以上5未満、障害程度区分5,6が40%以上50%未満)\n06:Ⅵ型\n(平均障害程度区分4.5以上5未満、障害程度区分5, 6が40%未満)または(平均障害程度区分4以上4.5未満、障害程度区分5,6が40%以上)\n07:Ⅶ型\n(平均障害程度区分4以上4.5未満、障害程度区分5,6が30%以上40%未満)\n08:Ⅷ型\n(平均障害程度区分4以上4.5未満、障害程度区分5,6が30%未満)または(平均障害程度区分4未満、障害程度区分5,6が30%以上)\n09:Ⅸ型\n(平均障害程度区分4未満、障害程度区分5,6が20%以上30%未満)\n10:Ⅹ型\n(平均障害程度区分4未満、障害程度区分5,6が20%未満)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "夜間支援対象利用者数"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:10人以下 02:11人 03:12人 04:13人\n05:14人 06:15人 07:16人 08:17人 09:18人\n10:19人 11:20人",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "夜間支援対象利用者数(小規模事業所)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:4人 2:5人 3:6人 4:7人 5:8人 6:9人",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番2・3の内容セルは左に「就労継続支援(B型)」「施設入所支援」のサブ列があり、内容に含めて記載した",
+      "項番3の内容の改行・字下げは簡略化して記載"
+    ]
+  },
+  "raw_text": null
+}

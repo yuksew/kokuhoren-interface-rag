@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 60,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 4332,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002983,
+    "cost_usd_batch": 0.001491,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 60,
+    "printed_page": "45",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(2)基本情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "基本情報レコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "説明",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を設定する(基本情報レコード)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "様式番号2桁、枝番2桁を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付適用の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し 2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付額（円／日）"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "補足給付適用の有無が有りの場合に、一日単位の補足給付額を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 朝食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、朝食の単価を設定(契約が毎食毎の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 昼食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、昼食の単価を設定(契約が毎食毎の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 夕食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、夕食の単価を設定(契約が毎食毎の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 一日（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、一日単位の単価を設定(契約が1日単位の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価 一日（円／日）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補足給付適用の有無が有りの場合に、日単位の光熱水費単価を設定(契約が一日単位の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価 一月（円／月）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補足給付適用の有無が有りの場合に、一月単位の光熱水費単価を設定(契約が一月単位の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "合計1",
+              "内訳 100%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護(身体介護)において、初任者研修課程修了者等による実績時間数(時間)を整数部3桁＋小数部2桁で設定。例:99.5時間→09950(または 9950)",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※9",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※9",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "合計1",
+              "内訳 70%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護(身体介護)において、基礎研修課程修了者等による実績時間数(時間)を整数部3桁＋小数部2桁で設定。例:99.5時間→09950(または 9950)",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※10",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "合計 算定時間数計数値居宅介護(家事援助)、同行援護において、算定時間数(時間)の合計を整数部→09925(または9925)合計内訳 100%数値居宅介護(通院介護(伴ず))において、初任者研修課程修了者等の実績時間数を設定。同行援護(伴ず)において、初任者研修課程修了者等、または初任者研修課程修了者等(通訳)の実績時間数を設定。実績時間数(時間)は整数部3 桁+小数部2 桁で設定。例:99.5 時間→09950(または9950)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "合計1",
+              "内訳 重訪"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護(身体介護)において、重度訪問介護研修修了者による時間数(時間)を整数部3桁＋小数部2桁で設定。例:99.5時間→09950(または 9950)",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページは印字ページ番号「45」で、依頼文の「PDF上のページ 60」「次のページ」と一致しない可能性がある。添付された1ページのみを書き起こした。",
+      "レコード名は表題「(2)基本情報レコード」から読み取り、交換情報識別番号・上位情報名（parent）は本ページに記載がないため null とした。",
+      "項番17の備考は原文で『※1O』と読めるが、『0』か『O』かは判別が不確か。『※10』として書き起こした。",
+      "項目名の『合計1』は縦に2行に分かれて印字されていた（『合計』『1』）ため、『合計1』として連結した。"
+    ]
+  },
+  "raw_text": null
+}

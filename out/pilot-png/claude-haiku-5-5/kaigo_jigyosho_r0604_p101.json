@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 101,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 2651,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00214,
+    "cost_usd_batch": 0.00107,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 101,
+    "printed_page": "48-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名 > 公費",
+          "項目名 > 項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "公費2",
+              "負担額合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費 2 負担額合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "公費2",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費 2 請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "公費2",
+              "本人負担月額"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "公費 2 本人負担月額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "公費3",
+              "負担額合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費 3 負担額合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "公費3",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "公費 3 請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "公費3",
+              "本人負担月額"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "公費 3 本人負担月額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S"
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "設定する内容は様式による。様式と交換情報識別番号の対応は P15 を参照のこと。"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "特定入所者介護サービス費用情報レコード順次番号が 99 のときのみ設定する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "添付は1ページのみで、依頼文の「次のページ」の表は含まれていないため、このページに見える表のみを書き起こした。",
+      "項目名見出しが2列にまたがっているため、columns の「項目名 > 公費」「項目名 > 項目名」は見た目の区分として解釈した。",
+      "項番28の上に見出し行がなく前ページからの続きと判断したが、前ページの内容は確認できない。",
+      "※2 の注記中の「:」「(P.42)」の表記が原文でどうなっているか画像では判然としない。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,557 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 22,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 5286,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00346,
+    "cost_usd_batch": 0.00173,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 22,
+    "printed_page": "17",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(3)介護給付費等 明細書 日数情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "日数情報レコード",
+          "parent": "介護給付費等 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須（識別番号毎） > J121",
+          "※必須（識別番号毎） > J131",
+          "※必須（識別番号毎） > J141",
+          "※必須（識別番号毎） > J221",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "02を設定する（日数情報レコード）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月 YYYYMM を設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（チェックデジット1桁含む）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コード2桁を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービス開始日等",
+              "開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "サービス種類毎の開始年月日(入所年月日等)（西暦年月日 YYYYMMDD を設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "サービス開始日等",
+              "終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "サービス種類毎の終了年月日(退所年月日等)（西暦年月日 YYYYMMDD を設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "○"
+              }
+            ],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "サービス開始日等",
+              "利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に利用日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎ ※3"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "○ ※2"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎ ※3"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス開始日等",
+              "入院日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に入院日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "※1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "介護給付費等明細書へは、入院又は外泊をした日数の合計を入院日数欄に記載するが、インタフェース上は入院日数、外泊日数を分けて設定する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "サービス開始日等",
+              "外泊日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類毎に外泊日数を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "※1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "介護給付費等明細書へは、入院又は外泊をした日数の合計を入院日数欄に記載するが、インタフェース上は入院日数、外泊日数を分けて設定する。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "※必須 ◎：必須項目 ○：請求内容により必要 △：任意設定 空白：不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "介護給付費等明細書へは、入院又は外泊をした日数の合計を入院日数欄に記載するが、インタフェース上は入院日数、外泊日数を分けて設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供があった場合のみ設定する。"
+      },
+      {
+        "mark": "※3",
+        "text": "サービス提供年月が平成27年4月以降、欠席時対応加算のみの場合、0を設定する。"
+      }
+    ],
+    "uncertain": [
+      "添付ページの下部の印字は『17』で、依頼文のPDF上のページ22と一致しない。また依頼の分野（障害福祉）と文書名（サービス事業所編）に対し、添付ページの内容は『介護給付費等 明細書』（国保連合会向け）の日数情報レコードであり、文書の対応が確認できない。",
+      "依頼は『次のページの表』の書き起こしだが、添付は1ページのみで、そのページには日数情報レコードの表のみが含まれているため、この表を書き起こした。",
+      "交換情報識別番号（レコード）の値は添付ページからは読み取れないため record.exchange_id は null とした。",
+      "表の内容セルの括弧は原文が半角と全角の混在に見えるため、表示上の字間を詰めて書き写した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,857 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 20,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 3583,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.052162,
+    "cost_usd_batch": 0.026081,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 20,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（2）介護給付費等 明細書 基本情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "基本情報レコード",
+          "parent": "介護給付費等 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須（識別番号毎） > J121",
+          "※必須（識別番号毎） > J131",
+          "※必須（識別番号毎） > J141",
+          "※必須（識別番号毎） > J221",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01 を設定する(基本情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMMを設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(チェックデジット 1 桁含む)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "助成自治体番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "助成自治体がある場合、市町村番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "○"
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "○"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "支給決定者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定者カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "△"
+              },
+              {
+                "column": "J131",
+                "value": "△"
+              },
+              {
+                "column": "J141",
+                "value": "△"
+              },
+              {
+                "column": "J221",
+                "value": "△"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "支給決定児童氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定児童カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "△"
+              },
+              {
+                "column": "J131",
+                "value": "△"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "△"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "地域区分コードを設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "就労継続支援A型事業者負担減免措置実施"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し 2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": null
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "利用者負担上限月額①"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "所得区分に応じた利用者負担上限月額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "就労継続支援A型減免対象者"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し 2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": null
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "月の末日における障害支援区分コードを設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": null
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": null
+              }
+            ],
+            "note": "※C\n※5",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "サービス提供年月が平成26 年3 月以前の場合、「障害支援区分コード」は「障害程度区分コード」と読み替えて使用する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "上限額管理事業所",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理事業所の事業所番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "○"
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "○"
+              }
+            ],
+            "note": "※C\n※2",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※2",
+                "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理結果票の管理結果を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "○"
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "○"
+              }
+            ],
+            "note": "※1\n※2",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "“1” : 管理事業所で利用者負担額を充当したため、他事業所の利用者負担は発生しない。“2” : 利用者負担額の合計額が、負担上限月額以下のため、調整事務は行わない。“3” : 利用者負担額の合計額が、負担上限月額を超過するため、下記のとおり調整した。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※2",
+                "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "上限額管理結果票の管理結果額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "○"
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0 円の場合)は設定しない。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "日中支援加算欄",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "連絡調整を行った日中介護事業所の事業所番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": null
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "日中支援加算欄",
+              "当該事業所への通所日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日中介護事業所への通所日数を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": null
+              },
+              {
+                "column": "J131",
+                "value": "○"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "請求額集計欄 合計",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "単位数の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "請求額集計欄 合計",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": "◎"
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "請求額集計欄 合計",
+              "上限月額調整(①②の内少ない数)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "上限月額調整(①②の内少ない数)の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "J121",
+                "value": "◎"
+              },
+              {
+                "column": "J131",
+                "value": "◎"
+              },
+              {
+                "column": "J141",
+                "value": null
+              },
+              {
+                "column": "J221",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "縦書きグループ見出し（上限額管理事業所、日中支援加算欄、請求額集計欄 合計）の文字順は縦書きのため推定。",
+      "項番22の項目名は改行位置から「上限月額調整(①②の内少ない数)」と判断。"
+    ]
+  },
+  "raw_text": null
+}

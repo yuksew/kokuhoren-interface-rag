@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 36,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 2456,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040852,
+    "cost_usd_batch": 0.020426,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 36,
+    "printed_page": "15-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 10,
+            "no_raw": "( 10)",
+            "name_path": [
+              "居宅介護(支援)給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・認知症対応型共同生活介護\n・特定施設入居者生活介護(平成１８年３月サービス以前)",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7171 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 11,
+            "no_raw": "( 11)",
+            "name_path": [
+              "施設介護給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護老人福祉施設",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7183 ※3 ※6 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 12,
+            "no_raw": "( 12)",
+            "name_path": [
+              "施設介護給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護老人保健施設",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7195 ※3 ※6 ※8 ※10 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 13,
+            "no_raw": "( 13)",
+            "name_path": [
+              "施設介護給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護医療院",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7196 ※13 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 14,
+            "no_raw": "( 14)",
+            "name_path": [
+              "施設介護給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護療養型医療施設",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 71A3 ※3 ※6 ※14 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 15,
+            "no_raw": "( 15)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護予防訪問通所区分介護サービス\n・介護予防居宅療養管理指導",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7132 ※7 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 16,
+            "no_raw": "( 16)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護予防短期入所生活介護",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7144 ※7 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 17,
+            "no_raw": "( 17)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・老人保健施設における介護予防短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7156 ※7 ※9 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 18,
+            "no_raw": "( 18)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護医療院における介護予防短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7158 ※13 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 19,
+            "no_raw": "( 19)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・病院･診療所における介護予防短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7165 ※7 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          },
+          {
+            "no": 20,
+            "no_raw": "( 20)",
+            "name_path": [
+              "介護予防サービス給付費請求明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から下記のサービスに対する介護給付費請求を行う際に提出する被保険者単位の明細情報\n・介護予防認知症対応型共同生活介護",
+            "required": null,
+            "required_by": [],
+            "note": "識別: 7172 ※7 / ルート: サービス事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送 磁気 帳票"
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の先頭は前ページからの続き（項番10から開始）",
+      "識別・ルート・周期・媒体は専用のitemフィールドがないためnoteにまとめて記載した",
+      "情報名は専用フィールドがないためname_pathに入れた"
+    ]
+  },
+  "raw_text": null
+}

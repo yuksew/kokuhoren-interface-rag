@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 53,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8162,
+      "output_tokens": 1880,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001756,
+    "cost_usd_batch": 0.000878,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 53,
+    "printed_page": "47",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・エンドレコードフォーマット",
+        "record": {
+          "exchange_id": null,
+          "name": "エンドレコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "レコード種別"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "エンドレコードを示す 3 を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード番号（連番）"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "ファイル内の先頭レコードからの連番（1 から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "ブランク"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "改行(16 進コード…0x0D0A)を設定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文の『PDF上のページ 53』と、添付ページ下部の印字ページ番号『- 47 -』が一致しないため、添付画像のページ（47）を書き起こした。",
+      "依頼文は『次のページの表』を求めているが、添付は1ページのみで、そのページ内の表は『エンドレコードフォーマット』の1表だけだったため、その表を書き起こした。",
+      "レコード名『エンドレコード』は表見出し『・エンドレコードフォーマット』から推定した。原文に明示された名称ではない。"
+    ]
+  },
+  "raw_text": null
+}

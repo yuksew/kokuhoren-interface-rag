@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 30,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8142,
+      "output_tokens": 1193,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001411,
+    "cost_usd_batch": 0.000705,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 30,
+    "printed_page": "26",
+    "tables": [],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "属性として数字となっているものは、0, 1, 2, 3, 4, 5, 6, 7, 8, 9の数字1桁をそれぞれ1バイトで表す。"
+      },
+      {
+        "mark": "※2",
+        "text": "マイナス数値については、CSV形式の場合は左側に半角の(\"-\")を付加する。ただし、この場合の\"-\"を含む設定値の桁数は、各交換情報の項目説明に示す項目長を超えてはならない。例: マイナス10は「-10」で表現する。"
+      },
+      {
+        "mark": "※3",
+        "text": "プラス数値およびゼロ値については、CSV形式の場合は左側には何も付けない。例: プラス10は「10」で表現する。"
+      },
+      {
+        "mark": "※4",
+        "text": "マイナス数値の固定長形式については、符号付きアンパック(ゾーン)10進数形式で表現する。アンパック(ゾーン)10進数形式については、(3)を参照"
+      },
+      {
+        "mark": "※5",
+        "text": "プラス数値およびゼロ値の固定長形式については、CSV形式同様、符号なしの形式とするが、値が決定後に形式を確定することは困難であるため、マイナス値を取り得るものについては、符号付きアンパック(ゾーン)10進数形式とし、マイナス値を取り得ないものについては、符号なしアンパック(ゾーン)10進数形式とする。"
+      }
+    ],
+    "uncertain": [
+      "添付ページ（印字ページ26）には表が存在せず、説明文のみのため tables は空配列とした。依頼の「次のページの表（PDF上のページ30）」は添付されていないため書き起こしていない。",
+      "本文の「上記 ※2～※5をまとめると下記の表になる。」が指す表は、このページには含まれていない。その表は添付されていない次のページ以降にある可能性がある。",
+      "footnotes の ※1～※5 は表の下の注記ではなく本文中の注記だが、注記として扱える形で記録した。"
+    ]
+  },
+  "raw_text": null
+}

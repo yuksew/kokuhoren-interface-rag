@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 187,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 2480,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002055,
+    "cost_usd_batch": 0.001027,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 187,
+    "printed_page": "835",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（７）　介護予防・日常生活支援総合事業費過誤決定通知書情報（事業所分） ・ヘッダレコード",
+        "record": {
+          "exchange_id": null,
+          "name": "ヘッダレコード",
+          "parent": "介護予防・日常生活支援総合事業費過誤決定通知書情報（事業所分）"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“7641”固定"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“H1”固定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "取扱年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "取扱年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1"
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "介護予防・日常生活支援総合事業費過誤決定通知の対象となるサービス事業所等の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3"
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "データの作成年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2"
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "頁"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "“1”固定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "国保連合会名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "３０",
+            "content": "国保連合会名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "インタフェース仕様書　共通編　1.5　留意事項「年月」欄参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "インタフェース仕様書　共通編　1.5　留意事項「年月日」欄参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "インタフェース仕様書　共通編　1.4　コード一覧参照。(P.31)"
+      }
+    ],
+    "uncertain": [
+      "依頼文では『次のページ』の表を求めているが、添付は1ページのみで、そのページの表（ヘッダレコード）を書き起こした。",
+      "レコードの交換情報識別番号はページ内に明示されていないため exchange_id を null にした（備考の“7641”固定は項番1の備考として記録）。",
+      "注記の鉤括弧などの記号は画像の字形が判然としないため、「」に置き換えて記載した。"
+    ]
+  },
+  "raw_text": null
+}

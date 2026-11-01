@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 265,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 4989,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003311,
+    "cost_usd_batch": 0.001656,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 265,
+    "printed_page": "129",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(5)利用者負担上限額管理結果票(複数児童) 基本情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "基本情報レコード",
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "※必須",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書　事業所編　２．１．２　インタフェース一覧」を参照のこと。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を設定する(基本情報レコード)",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月YYYYMMを設定する)",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書　共通編　１．５　留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "上限額管理結果票情報作成区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理結果票の作成区分を設定する。\n1:新規　2:修正　3:取消",
+            "required": "◎",
+            "required_by": [],
+            "note": "※1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "上限額管理結果票情報の作成区分を設定する。当該サービス提供年月の中で初めて送付する場合および、返戻となった上限額管理結果票を再提出する場合「新規」を設定する。一度決定した上限額管理結果票の内容に変更が発生し、再度送付する場合は、「修正」を設定する。同様に一度決定した情報自体を取り消す場合は「取消」を設定する。設定の詳細は「(7)利用者負担上限額管理結果票情報レコード作成方法」を参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県番号、または市町村番号（チェックデジット１桁含む）",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "上限額管理事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理を行った事業所の事業所番号を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "同一世帯の複数児童において、主となる児童の受給者証に記載されている受給者証番号を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "支給決定者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定者カナ氏名",
+            "required": "△",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "支給決定児童氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "同一世帯の複数児童において、主となる児童の支給決定児童カナ氏名",
+            "required": "△",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "利用者負担上限月額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "利用者負担上限月額を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "利用者負担上限額管理結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理結果を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "\"1\" : 管理事業所で利用者負担額を充当したため、他事業所の利用者負担は発生しない。\n\"2\" : 利用者負担額の合計額が、負担上限月額以下のため、調整事務は行わない。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "合計",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額",
+            "required": "◎",
+            "required_by": [],
+            "note": "※3",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。(6)利用者負担上限額管理結果票(複数児童) 明細情報レコード項番項目名属性(※Z)バイト数内容※必須備考交換情報識別番号英数当情報の内容を識別するための番号◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "合計",
+              "利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担額",
+            "required": "◎",
+            "required_by": [],
+            "note": "※3",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。(6)利用者負担上限額管理結果票(複数児童) 明細情報レコード項番項目名属性(※Z)バイト数内容※必須備考交換情報識別番号英数当情報の内容を識別するための番号◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "合計",
+              "管理結果後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "管理結果後利用者負担額",
+            "required": "◎",
+            "required_by": [],
+            "note": "※3",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。(6)利用者負担上限額管理結果票(複数児童) 明細情報レコード項番項目名属性(※Z)バイト数内容※必須備考交換情報識別番号英数当情報の内容を識別するための番号◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目　○ : 請求内容により必要　△ : 任意設定　空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　事業所編　２．１．２　インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　１．５　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　１．３　表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "上限額管理結果票情報の作成区分を設定する。当該サービス提供年月の中で初めて送付する場合および、返戻となった上限額管理結果票を再提出する場合「新規」を設定する。一度決定した上限額管理結果票の内容に変更が発生し、再度送付する場合は、「修正」を設定する。同様に一度決定した情報自体を取り消す場合は「取消」を設定する。設定の詳細は「(7)利用者負担上限額管理結果票情報レコード作成方法」を参照。"
+      },
+      {
+        "mark": "※2",
+        "text": "\"1\" : 管理事業所で利用者負担額を充当したため、他事業所の利用者負担は発生しない。\n\"2\" : 利用者負担額の合計額が、負担上限月額以下のため、調整事務は行わない。"
+      }
+    ],
+    "uncertain": [
+      "ページ下部の印字は「129」で、依頼文のPDF上ページ265・障害福祉の文書とは一致しない。画像の内容は介護給付系（利用者負担上限額管理結果票）に見えるため、文書の取り違えの可能性がある。",
+      "項番12〜14の備考に「※3」が付いているが、※3の注記本文はこのページに見当たらないため、次ページ以降にあると思われる（本ページでは未記載）。",
+      "項番4・項番2の属性「コード値」は2行に折り返された表記を1語に詰めて書き起こした。",
+      "項番5の「チェックデジット」は小さい字の表記で、読み取りは画像ベースで行った。"
+    ]
+  },
+  "raw_text": null
+}

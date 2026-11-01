@@ -1,0 +1,651 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 327,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 6134,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003884,
+    "cost_usd_batch": 0.001942,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 327,
+    "printed_page": "170",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(4)地域生活支援事業 明細書 集計情報レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "集計情報レコード",
+          "parent": "地域生活支援事業 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "※必須 > 定率負担",
+          "※必須 > 定額負担",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書 事業所編 3.1.2 インタフェース一覧」を参照のこと。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "04を設定する(集計情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（チェックデジット1桁含む）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コード2桁を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※6",
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "01~09 を使用する。(5) 地域生活支援事業明細書における集計情報レコードの設定方法についてサービス種類単位に定率負担もしくは、定額負担の集計情報レコードを作成することになる。よって同一サービス種類で定率負担と定額負担の両方を用いることはできない。サービス種類コードの昇順に集計することとする。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "請求額集計欄",
+              "集計欄分類番号"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1固定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "請求額集計欄",
+              "サービス利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス利用日数を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "請求額集計欄",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービス種類コードごと集計欄分類番号ごとの単位数を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "請求額集計欄",
+              "単位数単価"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "10000を設定(10円固定)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "請求額集計欄",
+              "給付率"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "給付率を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "請求額集計欄",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "請求額集計欄",
+              "給付率に基づく",
+              "請求額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "請求額を設定する。\n定率負担と定額負担の場合で設定方法が異なる。※1、※2参照。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※1\n※2",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "定率負担の場合の請求額=総費用額×給付率/100(小数点以下切捨)。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※2",
+                "text": "定額負担の場合の請求額=総費用額-給付率に基づく利用者負担額2。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "請求額集計欄",
+              "給付率に基づく",
+              "利用者負担額②"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担額を設定する。\n定率負担と定額負担の場合で設定方法が異なる。※3、※4参照。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※3\n※4",
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "定率負担の場合の利用者負担額2=総費用額-給付率に基づく請求額。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "定額負担の場合の利用者負担額2=サービスコードごとに設定された利用者負担額×そのサービスコードの回数。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "請求額集計欄",
+              "上限月額調整(①②の内少ない数)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "請求額集計欄",
+              "A型減免",
+              "事業者減免額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "請求額集計欄",
+              "A型減免",
+              "減免後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "請求額集計欄",
+              "調整後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "請求額集計欄",
+              "上限額管理後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "請求額集計欄",
+              "決定利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "算定した結果の利用者負担額を設定する。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※5",
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "利用者負担の上限調整を行うなどの理由で利用者負担額の調整が必要な場合には決定利用者負担額にて調整を行うこととする。(7)(8)設定例参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの印字ページ番号は170だが、依頼文のPDF上のページ327、分野（障害福祉）、文書名（サービス事業所編）とは一致しない。添付画像の内容（国保連合会向け・地域生活支援事業 明細書 集計情報レコード）に基づいて書き起こした。",
+      "依頼は『次のページ』の表だったが、添付は1ページのみで、その1ページに含まれる表を書き起こした。",
+      "表の下に※B、※Y、※C、※6、※1〜※5の注記本文が見当たらないため、footnotesは空にした。",
+      "交換情報識別番号（レコード全体）の値は画像から読み取れないため、record.exchange_idはnullとした。",
+      "項番14・15の内容欄にある改行は文の区切りとして\\nで残したが、折り返しの可能性もある。",
+      "項目名の『給付率に基づく』『A型減免』は縦結合の見出しとして name_path の外側に入れた。"
+    ]
+  },
+  "raw_text": null
+}

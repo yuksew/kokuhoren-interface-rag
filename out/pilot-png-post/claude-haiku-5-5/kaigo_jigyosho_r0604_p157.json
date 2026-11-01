@@ -1,0 +1,606 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 157,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 4840,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003235,
+    "cost_usd_batch": 0.001617,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 157,
+    "printed_page": "73",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード",
+        "record": {
+          "exchange_id": null,
+          "name": "明細レコード",
+          "parent": "介護給付費等支払決定額通知書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“7515”固定"
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“H1”固定",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "支払対象となるサービス審査年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "郵便番号（3桁）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "支払を受けるサービス事業所等の郵便番号（上位3桁）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "郵便番号（4桁）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "支払を受けるサービス事業所等の郵便番号（下位4桁）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "支払を受けるサービス事業所等の住所を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "支払を受けるサービス事業所等の事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "開設者氏名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "支払を受けるサービス事業所等の開設者氏名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "支払を受けるサービス事業所等の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "振込金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "支払決定金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "介護給付費支払額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "介護給付費支払額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "主治医意見書作成料"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "主治医意見書作成料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "主治医意見書作成料消費税"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "主治医意見書作成料の消費税を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "認定調査費委託料"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "認定調査費委託料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "認定調査費委託料消費税"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "認定調査費委託料の消費税を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費支払額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "介護予防・日常生活支援総合事業費支払額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "電子証明書発行手数料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "電子証明書発行手数料（消費税を含む）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "ケアプランデータ連携システムライセンス料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "ケアプランデータ連携システムライセンス料（消費税を含む）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "原案作成委託料（消費税を含む）"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "原案作成委託料(消費税を含む)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "予備3"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "予備4"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "予備5"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "予備6"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "予備7"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "予備8"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "合計金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "支払決定金額の合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 28,
+            "length_raw": "28",
+            "content": "支払を受けるサービス事業所等の金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は印字ページ73の1ページのみで、指定のPDF上ページ157の内容とは対応を確認できないため、添付ページの表を書き起こした。",
+      "表の末尾（項番28）の後に続きがあるかはページ内に見えないため、continues_to_next_pageはtrueとした（後処理で再判定のこと）。",
+      "record.exchange_idは本ページに明示されていないため null とした（項番1の備考「“7515”固定」は項目値の固定値）。",
+      "備考の「※ 1」「※ 2」「※ S」の注記本文は本ページに無いため footnotes は空。",
+      "項番1の備考・項番2の内容の引用符は原文の全角引用符（“ ”）を使用した。"
+    ]
+  },
+  "raw_text": null
+}

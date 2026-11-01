@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 131,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8146,
+      "output_tokens": 604,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.022332,
+    "cost_usd_batch": 0.011166,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EmLjQNoVePusCgqGSTyGTm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:37+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 131,
+    "printed_page": "65-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "単位数（介護）"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護の保留復活分のサービス事業所の合計単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S"
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "特定入所者介護サービス費等"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "特定入所者介護サービス費等のサービス事業所の合計保留復活分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1\n※ S"
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※ 1",
+        "text": "平成 17年 9月サービス以前は、食事提供費用にかかる値を設定する。平成 17年 10月サービス以降は、特定入所者介護サービス費等費用にかかる値を設定する。"
+      },
+      {
+        "mark": "※ 2",
+        "text": "未出力とする場合がある。"
+      },
+      {
+        "mark": "※ S",
+        "text": "固定長形式で表現する場合の 「符号付き形式項目 」。\nなお、※ Sが付加されていない数字属性項目は、 「符号なし形式項目 」である。"
+      }
+    ],
+    "uncertain": [
+      "項目名列の左側に空の結合列（2列）があるが、見出しは「項目名」に統合されており、name_pathには含めていない。",
+      "前ページからの続きの表（項番21から開始）。"
+    ]
+  },
+  "raw_text": null
+}

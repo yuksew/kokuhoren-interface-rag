@@ -74,6 +74,61 @@ def load_dotenv() -> None:
         os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 
+def load_prompts() -> tuple[str, str, dict]:
+    system = (ROOT / "prompts" / "transcribe_system.md").read_text(encoding="utf-8")
+    user_tmpl = (ROOT / "prompts" / "transcribe_user.md").read_text(encoding="utf-8")
+    schema = json.loads((ROOT / "prompts" / "transcribe.schema.json").read_text(encoding="utf-8"))
+    return system, user_tmpl, schema
+
+
+def build_inputs(entry: dict, page: int, input_kind: str, dpi: int, user_tmpl: str,
+                 provider: str = "anthropic") -> tuple[list[Attachment], str]:
+    """1ページ分の添付とユーザー文。"""
+    src = pdf_path(entry)
+    if input_kind == "pdf":
+        att = Attachment("pdf", extract_page_pdf(src, page))
+    else:
+        att = Attachment("png", render_png(src, page, dpi=dpi))
+    # モックはテキストレイヤを読むので常に PDF も渡す
+    atts = [att] if provider != "mock" or att.kind == "pdf" else [Attachment("pdf", extract_page_pdf(src, page)), att]
+    user_text = user_tmpl.format(domain_label=DOMAIN_LABEL[entry["domain"]], title=entry["title"],
+                                 edition=entry["edition"], page=page)
+    return atts, user_text
+
+
+def save_result(out_dir: Path, entry: dict, spec: dict, model: str, res, *, provider: str,
+                input_kind: str, effort: str, batch: bool = False, batch_id: str | None = None) -> dict:
+    """書き起こし結果を out/{run}/{model}/{doc_id}_p{page}.json に保存し、calls.jsonl に追記する。"""
+    u = res.usage
+    cost = cost_usd(model, u.input_tokens, u.output_tokens, u.cache_creation_input_tokens, u.cache_read_input_tokens)
+    cost_batch = cost_usd(model, u.input_tokens, u.output_tokens, u.cache_creation_input_tokens,
+                          u.cache_read_input_tokens, batch=True)
+    meta = {
+        "doc_id": spec["doc_id"], "page": spec["page"], "domain": entry["domain"],
+        "volume": entry["volume"], "edition": entry["edition"], "title": entry["title"],
+        "category": spec.get("category", []), "requested_model": model, "model": res.model,
+        "provider": provider, "input": input_kind, "effort": effort,
+        "stop_reason": res.stop_reason, "request_id": res.request_id,
+        "latency_s": round(res.latency_s, 2),
+        "usage": u.__dict__, "cost_usd": round(cost, 6), "cost_usd_batch": round(cost_batch, 6),
+        "billed_as": "batch" if batch else "standard", "batch_id": batch_id,
+        "parsed_ok": res.parsed is not None,
+        "created_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "stop_details": res.raw.get("stop_details"),
+    }
+    dest = out_dir / model / f"{spec['doc_id']}_p{spec['page']}.json"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    # スキーマのたたき台にあった domain / edition / volume / page は呼び出し側で付与する
+    body = {"domain": entry["domain"], "edition": entry["edition"], "volume": entry["volume"],
+            "page": spec["page"], **(res.parsed or {})}
+    dest.write_text(json.dumps({"meta": meta, "result": body if res.parsed is not None else None,
+                                "raw_text": None if res.parsed is not None else res.text},
+                               ensure_ascii=False, indent=2), encoding="utf-8")
+    with (out_dir / "calls.jsonl").open("a", encoding="utf-8") as f:
+        f.write(json.dumps(meta, ensure_ascii=False) + "\n")
+    return meta
+
+
 def main() -> int:
     load_dotenv()
     ap = argparse.ArgumentParser()
@@ -93,15 +148,10 @@ def main() -> int:
     pages = yaml.safe_load((ROOT / "config" / "pages.yaml").read_text(encoding="utf-8"))
     if args.only:
         pages = [p for p in pages if f"{p['doc_id']}:{p['page']}" in set(args.only)]
-    system = (ROOT / "prompts" / "transcribe_system.md").read_text(encoding="utf-8")
-    user_tmpl = (ROOT / "prompts" / "transcribe_user.md").read_text(encoding="utf-8")
-    schema = json.loads((ROOT / "prompts" / "transcribe.schema.json").read_text(encoding="utf-8"))
+    system, user_tmpl, schema = load_prompts()
 
     run = args.run or f"{args.provider}-{args.input}"
     out_dir = ROOT / "out" / run
-    img_dir = ROOT / "reports" / "img"
-    img_dir.mkdir(parents=True, exist_ok=True)
-    calls_log = out_dir / "calls.jsonl"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     client = get_client(args.provider)
@@ -109,26 +159,10 @@ def main() -> int:
     failures = 0
     for p in pages:
         entry = manifest[p["doc_id"]]
-        src = pdf_path(entry)
         key = f"{p['doc_id']}_p{p['page']}"
-        img = img_dir / f"{key}.png"
-        if not img.exists():
-            img.write_bytes(render_png(src, p["page"], dpi=110))
-
-        if args.input == "pdf":
-            att = Attachment("pdf", extract_page_pdf(src, p["page"]))
-        else:
-            att = Attachment("png", render_png(src, p["page"], dpi=args.dpi))
-        # モックはテキストレイヤを読むので常に PDF も渡す
-        atts = [att] if args.provider != "mock" or att.kind == "pdf" else [Attachment("pdf", extract_page_pdf(src, p["page"])), att]
-        user_text = user_tmpl.format(
-            domain_label=DOMAIN_LABEL[entry["domain"]], title=entry["title"],
-            edition=entry["edition"], page=p["page"],
-        )
-
+        atts, user_text = build_inputs(entry, p["page"], args.input, args.dpi, user_tmpl, args.provider)
         for model in args.models:
-            dest = out_dir / model / f"{key}.json"
-            if dest.exists() and not args.force:
+            if (out_dir / model / f"{key}.json").exists() and not args.force:
                 print(f"skip  {model:20s} {key}")
                 continue
             print(f"call  {model:20s} {key} ...", flush=True)
@@ -144,35 +178,11 @@ def main() -> int:
                     print("認証エラーのため中断します（ANTHROPIC_API_KEY を確認してください）", file=sys.stderr)
                     return 2
                 continue
-
+            meta = save_result(out_dir, entry, p, model, res, provider=args.provider,
+                               input_kind=args.input, effort=args.effort)
+            total += meta["cost_usd"]
             u = res.usage
-            cost = cost_usd(model, u.input_tokens, u.output_tokens,
-                            u.cache_creation_input_tokens, u.cache_read_input_tokens)
-            cost_batch = cost_usd(model, u.input_tokens, u.output_tokens,
-                                  u.cache_creation_input_tokens, u.cache_read_input_tokens, batch=True)
-            total += cost
-            meta = {
-                "doc_id": p["doc_id"], "page": p["page"], "domain": entry["domain"],
-                "volume": entry["volume"], "edition": entry["edition"], "title": entry["title"],
-                "category": p.get("category", []), "requested_model": model, "model": res.model,
-                "provider": args.provider, "input": args.input, "effort": args.effort,
-                "stop_reason": res.stop_reason, "request_id": res.request_id,
-                "latency_s": round(res.latency_s, 2),
-                "usage": u.__dict__, "cost_usd": round(cost, 6), "cost_usd_batch": round(cost_batch, 6),
-                "parsed_ok": res.parsed is not None,
-                "created_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-                "stop_details": res.raw.get("stop_details"),
-            }
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            # スキーマのたたき台にあった domain / edition / volume / page は呼び出し側で付与する
-            body = {"domain": entry["domain"], "edition": entry["edition"], "volume": entry["volume"],
-                    "page": p["page"], **(res.parsed or {})}
-            dest.write_text(json.dumps({"meta": meta, "result": body if res.parsed is not None else None,
-                                        "raw_text": None if res.parsed is not None else res.text},
-                                       ensure_ascii=False, indent=2), encoding="utf-8")
-            with calls_log.open("a", encoding="utf-8") as f:
-                f.write(json.dumps(meta, ensure_ascii=False) + "\n")
-            print(f"  in={u.input_tokens} out={u.output_tokens} ${cost:.4f} "
+            print(f"  in={u.input_tokens} out={u.output_tokens} ${meta['cost_usd']:.4f} "
                   f"stop={res.stop_reason} {res.latency_s:.1f}s parsed={res.parsed is not None}")
             if res.stop_reason == "max_tokens":
                 print("  WARNING: max_tokens で打ち切られた", file=sys.stderr)

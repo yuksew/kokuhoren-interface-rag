@@ -1,0 +1,14 @@
+# パイロット: 事業所向け4編の「表のあるページ」すべてを両モデルで Batch 処理する。
+# 対象ページは src/pagemeta.py の has_table（テキストレイヤ判定）で決める。
+# 最終的には居宅介護支援事業所編・都道府県編・保険者編なども対象にする（急がない）。
+run: pilot-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+docs:
+  - kaigo_kyotsu_r0806
+  - kaigo_jigyosho_r0604
+  - shogai_kyotsu_r0710
+  - shogai_jigyosho_r0710

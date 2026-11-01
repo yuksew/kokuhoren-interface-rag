@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 227,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 8166,
+      "output_tokens": 3679,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002656,
+    "cost_usd_batch": 0.001328,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_018Vix4GF8qDbqsEePswKQh6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T01:55:35+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 227,
+    "printed_page": "109",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2.1.2.1.障害児給付費等請求書・明細書情報(入力情報)",
+        "record": {
+          "exchange_id": null,
+          "name": null,
+          "parent": null
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児施設給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から障害児施設給付費の請求を行う際に提出する障害児施設単位の集計情報。（※1）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K111 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児通所給付費・入所給付費等請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から障害児通所給付費・入所給付費の請求を行う際に提出する障害児施設単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K112 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児施設給付費明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から障害児施設給付費の請求を行う際に提出する障害児施設単位、利用者単位の集計情報。（※1）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K121 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害児通所給付費・入所給付費等明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から障害児通所給付費・入所給付費の請求を行う際に提出する障害児施設単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K122 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "特例障害児通所給付費等請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から特例障害児通所給付費の請求を行う際に提出する障害児施設単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K211 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "特例障害児通所給付費等明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児施設等から特例障害児通所給付費の請求を行う際に提出する障害児施設単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K221 / ルート: 障害児施設等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "障害児相談支援給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児相談支援事業者等が障害児相談支援給付費の請求を行う際に提出する障害児相談支援事業者等単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K311 / ルート: 障害児相談支援事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "特例障害児相談支援給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児相談支援事業者等が特例障害児相談支援給付費の請求を行う際に提出する障害児相談支援事業者等、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": "識別: K321 / ルート: 障害児相談支援事業所等→国保連合会 / 周期: 月次 / 媒体: 伝送"
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年4月以降使用しない。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成24年4月以降使用する。"
+      }
+    ],
+    "uncertain": [
+      "この表は interface_list 形式だが、スキーマに「識別」「ルート」「周期」「媒体」の専用欄がないため、これらは note に「識別: … / ルート: … / 周期: … / 媒体: …」の形で書き写した。",
+      "PDF上のページ番号は227とのことだが、ページ下部に印字された番号は109だったため printed_page には109を入れた。",
+      "ルート列の「障害児施設等 → 国保連合会」等は改行で2〜3行に折り返されていたため、矢印を含めて1行に詰めた。"
+    ]
+  },
+  "raw_text": null
+}
