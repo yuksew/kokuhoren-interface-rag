@@ -112,3 +112,44 @@
   domain: shogai
   kind: table
   gold: [{doc: shogai_jigyosho, table: 基本情報レコード, exchange: J611}]
+# --- 介護 居宅介護支援事業所編（2026-11-02 追加。給付管理票・居宅サービス計画費の明細書など、ケアマネジャー向け）
+- q: 給付管理票の給付計画単位数は何桁で設定する？
+  domain: kaigo
+  kind: exact
+  gold: [{doc: kaigo_kyotaku, name: 給付計画単位数}]
+  expect: ["6"]
+- q: 給付管理票を修正して出し直すとき、作成年月日には何を入れる？
+  domain: kaigo
+  kind: paraphrase
+  gold: [{doc: kaigo_kyotaku, name: 給付管理票作成年月日}]
+  expect: ["修正年月日"]
+- q: 地域包括支援センターが給付管理票の作成をよその居宅介護支援事業所に委託したら、委託先の番号はどこに入れる？
+  domain: kaigo
+  kind: paraphrase
+  gold: [{doc: kaigo_kyotaku, name: 委託先の居宅介護支援事業所番号}]
+  expect: ["委託先の居宅介護支援事業所番号"]
+- q: 給付管理票で担当ケアマネの番号が必須になるのはどんなとき？
+  domain: kaigo
+  kind: paraphrase
+  gold: [{doc: kaigo_kyotaku, name: 担当介護支援専門員番号, page: 59}]
+  expect: ["居宅サービス計画作成区分コード"]
+- q: 交換情報識別番号 8222 は何の情報？
+  domain: kaigo
+  kind: code
+  gold: [{doc: kaigo_kyotaku, name: 給付管理票情報, page: 43}]
+  expect: ["給付管理票情報"]
+- q: 居宅サービス計画費の請求明細書で、証記載保険者番号は何桁？
+  domain: kaigo
+  kind: exact
+  gold: [{doc: kaigo_kyotaku, name: 証記載保険者番号, page: 74}]
+  expect: ["6"]
+- q: 短期入所の給付管理票で、前の月までに計画した日数を入れる項目は？
+  domain: kaigo
+  kind: paraphrase
+  gold: [{doc: kaigo_kyotaku, name: 前月までの給付計画日数}]
+  expect: ["前月までの給付計画日数"]
+- q: 給付管理票総括票情報にはどんな項目がある？
+  domain: kaigo
+  kind: table
+  gold: [{doc: kaigo_kyotaku, table: 給付管理票総括票情報}]
+  expect: ["提出年月"]
