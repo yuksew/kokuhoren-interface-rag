@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>確認キュー</title>
+<style>
+  :root { --bd:#d0d4da; --hl:#fff3b0; --diff:#ffd2c8; --sel:#2b6cb0; --ok:#2f855a; --hold:#b7791f; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 13px/1.45 "Yu Gothic UI","Meiryo",sans-serif; color:#1a202c; height:100vh; display:flex; flex-direction:column; }
+  header { display:flex; gap:12px; align-items:center; padding:6px 10px; border-bottom:1px solid var(--bd); background:#f7f8fa; flex-wrap:wrap; }
+  header b { font-size:14px; }
+  .bar { width:160px; height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden; display:inline-block; vertical-align:middle; }
+  .bar i { display:block; height:100%; background:var(--ok); }
+  select, button { font:inherit; }
+  button { border:1px solid var(--bd); background:#fff; border-radius:4px; padding:3px 9px; cursor:pointer; }
+  button:hover { background:#edf2f7; }
+  button kbd { font-size:11px; background:#edf2f7; border:1px solid #cbd5e0; border-radius:3px; padding:0 4px; margin-right:4px; }
+  main { flex:1; display:flex; min-height:0; }
+  #side { width:190px; overflow:auto; border-right:1px solid var(--bd); background:#fafbfc; }
+  #side div { padding:4px 8px; cursor:pointer; border-bottom:1px solid #edf0f3; display:flex; justify-content:space-between; }
+  #side div.cur { background:#dbeafe; font-weight:bold; }
+  #side div.fin { color:var(--ok); }
+  #side small { color:#718096; }
+  #imgpane { flex:1 1 45%; overflow:auto; position:relative; background:#525659; }
+  #imgwrap { position:relative; margin:8px auto; background:#fff; }
+  #imgwrap img { width:100%; display:block; }
+  .band { position:absolute; border:3px solid #e53e3e; background:rgba(255,230,0,.25); pointer-events:none; }
+  #gridpane { flex:1 1 55%; overflow:auto; border-left:1px solid var(--bd); }
+  table.g { border-collapse:collapse; margin:6px; font-size:12px; }
+  table.g th, table.g td { border:1px solid var(--bd); padding:2px 4px; vertical-align:top; max-width:260px; white-space:pre-wrap; word-break:break-all; }
+  table.g th { background:#f1f3f6; position:sticky; top:0; z-index:1; font-weight:normal; font-size:11px; }
+  table.g td.m { text-align:center; min-width:22px; cursor:pointer; }
+  table.g .f-no { white-space:nowrap; }
+  table.g .f-name { min-width:170px; }
+  table.g .f-content { min-width:220px; }
+  table.g th.mh { font-size:10px; max-width:56px; }
+  table.g td.e { cursor:text; }
+  table.g tr.q td { background:#fffbe6; }
+  table.g tr.selrow td { background:var(--hl); }
+  table.g td.diff { background:var(--diff) !important; outline:2px solid #e53e3e; outline-offset:-2px; }
+  table.g tr.del td { text-decoration:line-through; color:#a0aec0; }
+  table.g tr.ghost td { color:#a0aec0; font-style:italic; background:#f7fafc; }
+  table.g tr.added td { background:#e6ffed; }
+  table.g td.edited { box-shadow: inset 0 0 0 2px var(--sel); }
+  .tcap { margin:10px 6px 0; font-weight:bold; }
+  .tcap small { font-weight:normal; color:#718096; }
+  footer { border-top:2px solid var(--bd); padding:6px 10px; background:#f7f8fa; max-height:38vh; overflow:auto; }
+  #chips { display:flex; gap:4px; flex-wrap:wrap; margin-bottom:6px; }
+  #chips span { padding:1px 7px; border-radius:10px; border:1px solid var(--bd); cursor:pointer; font-size:11px; background:#fff; }
+  #chips span.cur { border-color:var(--sel); box-shadow:0 0 0 2px var(--sel); }
+  #chips span.done { background:#c6f6d5; }
+  #chips span.hold { background:#fefcbf; }
+  .cmp { display:grid; grid-template-columns: 90px 1fr 1fr; gap:2px 8px; margin:4px 0; }
+  .cmp div { white-space:pre-wrap; word-break:break-all; }
+  .cmp .h { color:#718096; }
+  .val { background:#fff; border:1px solid var(--bd); padding:2px 6px; border-radius:3px; }
+  .chosen { outline:3px solid var(--ok); }
+  .actions { display:flex; gap:6px; flex-wrap:wrap; margin-top:4px; align-items:center; }
+  .status { font-weight:bold; }
+  .status.done { color:var(--ok); } .status.hold { color:var(--hold); }
+  #help { color:#4a5568; font-size:11px; }
+  .msg { padding:20px; color:#4a5568; }
+</style>
+</head>
+<body>
+<header>
+  <b>確認キュー</b>
+  <span id="prog"></span>
+  <label>文書 <select id="fdoc"><option value="">すべて</option></select></label>
+  <label>判定 <select id="fver"><option value="">すべて</option></select></label>
+  <label><input type="checkbox" id="fopen"> 未完了のページだけ</label>
+  <button onclick="movePage(-1)"><kbd>P</kbd>前のページ</button>
+  <button onclick="movePage(1)"><kbd>N</kbd>次のページ</button>
+  <button onclick="zoom(1.2)">拡大 <kbd>+</kbd></button><button onclick="zoom(1/1.2)">縮小 <kbd>-</kbd></button>
+  <span id="help">↑↓ 項目を移る ／ 1 Haiku ／ 2 Sonnet ／ 3 値を入力 ／ Del 行を削除 ／ H 保留 ／ Backspace 判定を取り消す ／ Shift+A このページの未判定を全部 Haiku ／ 表のセルをクリックで直接修正（記号の列は ◎→○→△→空 の順に切り替え）</span>
+</header>
+<main>
+  <div id="side"></div>
+  <div id="imgpane"><div id="imgwrap"><img id="img" alt=""></div></div>
+  <div id="gridpane"></div>
+</main>
+<footer id="panel"><div class="msg">読み込み中…</div></footer>
+<script>
+const S = { pages: [], idx: 0, page: null, cur: 0, zoom: 1, verdicts: [] };
+const MARKS = ["", "◎", "○", "△"];
+const esc = s => s == null ? "" : String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const api = (u, body) => fetch(u, body ? {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)} : {})
+  .then(async r => { if (!r.ok) throw new Error(await r.text()); return r.json(); });
+
+async function loadPages() {
+  const d = await api("/api/pages");
+  S.pages = d.pages;
+  if (!S.verdicts.length) {
+    S.verdicts = d.verdicts;
+    const fv = document.getElementById("fver"), fd = document.getElementById("fdoc");
+    d.verdicts.forEach(([v, n]) => fv.insertAdjacentHTML("beforeend", `<option value="${esc(v)}">${esc(v)}（${n}）</option>`));
+    d.docs.forEach(v => fd.insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
+  }
+  const tot = S.pages.reduce((a, p) => a + p.n, 0), done = S.pages.reduce((a, p) => a + p.done, 0), hold = S.pages.reduce((a, p) => a + p.hold, 0);
+  document.getElementById("prog").innerHTML =
+    `<span class="bar"><i style="width:${100 * done / tot}%"></i></span> ${done} / ${tot} 件済み` + (hold ? `（保留 ${hold}）` : "");
+  renderSide();
+}
+
+function visible() {
+  const fd = document.getElementById("fdoc").value, fv = document.getElementById("fver").value, fo = document.getElementById("fopen").checked;
+  return S.pages.map((p, i) => [p, i]).filter(([p]) => (!fd || p.label === fd) && (!fv || p.verdicts.includes(fv)) && (!fo || p.done < p.n));
+}
+
+function renderSide() {
+  document.getElementById("side").innerHTML = visible().map(([p, i]) =>
+    `<div class="${i === S.idx ? "cur" : ""} ${p.done === p.n ? "fin" : ""}" onclick="openPage(${i})">
+       <span>${esc(p.label.replace(/^(介護|障害) /, "$1"))} p${p.page}</span><small>${p.done}/${p.n}</small></div>`).join("");
+  const c = document.querySelector("#side .cur"); if (c) c.scrollIntoView({block:"nearest"});
+}
+
+async function openPage(i, keepCur) {
+  S.idx = i;
+  const p = S.pages[i];
+  history.replaceState(null, "", `#${p.doc}:${p.page}`);
+  const data = await api(`/api/page?doc=${p.doc}&page=${p.page}`);
+  const sameImg = S.page && S.page.img === data.img;
+  S.page = data;
+  if (!keepCur) {
+    const firstOpen = data.items.findIndex(it => !it.decision);
+    S.cur = firstOpen >= 0 ? firstOpen : 0;
+  }
+  if (!sameImg) document.getElementById("img").src = data.img;
+  renderSide(); renderGrid(); renderPanel(); select(S.cur, !keepCur);
+}
+
+function movePage(dir) {
+  const v = visible().map(([, i]) => i);
+  if (!v.length) return;
+  let pos = v.indexOf(S.idx);
+  pos = pos < 0 ? 0 : Math.min(v.length - 1, Math.max(0, pos + dir));
+  openPage(v[pos]);
+}
+
+function zoom(f) {
+  S.zoom = Math.min(4, Math.max(0.4, S.zoom * f));
+  document.getElementById("imgwrap").style.width = (S.zoom * 100) + "%";
+  showBand(true);
+}
+
+function cellKey(ti, row, ci) { return `${S.page.doc}|${S.page.page}|${ti}|${row}|${ci}`; }
+
+function renderGrid() {
+  const P = S.page, items = P.items;
+  const qRows = new Set(items.filter(it => it.row != null).map(it => `${it.table}:${it.row}`));
+  let h = "";
+  P.tables.forEach((t, ti) => {
+    h += `<div class="tcap">表${ti + 1} ${esc(t.title)} <small>${esc(t.kind)}・${esc((t.source || "").replace("claude-", ""))}・${t.rows.length}行</small></div>`;
+    const fc = ci => t.fields[ci] ? ` f-${t.fields[ci]}` : "";
+    h += `<table class="g"><tr>${t.columns.map((c, ci) => `<th class="${t.matrix && !t.fixed[ci] ? "mh" : ""}${fc(ci)}" title="${esc(c)}">${esc(t.matrix && !t.fixed[ci] ? c.split(">").pop().trim() : c)}</th>`).join("")}</tr>`;
+    t.rows.forEach(r => {
+      const cls = [qRows.has(`${ti}:${r.key}`) ? "q" : "", r.deleted ? "del" : "", r.ghost ? "ghost" : "", r.added ? "added" : ""].join(" ");
+      h += `<tr class="${cls}" data-row="${ti}:${esc(r.key)}">` + r.values.map((v, ci) => {
+        const mark = t.matrix && !t.fixed[ci];
+        const ed = P.cells[cellKey(ti, r.key, ci)] ? " edited" : "";
+        return `<td class="${mark ? "m" : "e"}${ed}${fc(ci)}" data-t="${ti}" data-r="${esc(r.key)}" data-c="${ci}">${esc(v)}</td>`;
+      }).join("") + `</tr>`;
+    });
+    h += `</table>`;
+  });
+  if (!P.tables.length) h = `<div class="msg">表がありません（両モデルとも出力なし）。原本を見て保留か確認済みにしてください。</div>`;
+  document.getElementById("gridpane").innerHTML = h;
+}
+
+function choiceOf(it) { return it.decision && it.decision.action; }
+
+function actionsFor(it) {
+  const k = it.field;
+  if (k === "row" && it.row && it.row.startsWith("q:")) return [["1", "haiku", "追加しない（Haiku のまま）"], ["2", "sonnet", "Sonnet の行を追加する"]];
+  if (k === "row") return [["1", "haiku", "残す（Haiku のまま）"], ["Del", "delete", "この行を削除する"]];
+  if (k === "page") return [["1", "haiku", "確認した（このまま）"]];
+  if (k === "cells" || k === "required_by") return [["1", "haiku", "Haiku の値"], ["2", "sonnet", "Sonnet の値"]];
+  return [["1", "haiku", "Haiku の値"], ["2", "sonnet", "Sonnet の値"], ["3", "edit", "値を入力"]];
+}
+
+function renderPanel() {
+  const P = S.page, items = P.items;
+  if (!items.length) { document.getElementById("panel").innerHTML = `<div class="msg">このページに確認項目はありません</div>`; return; }
+  const it = items[S.cur], ch = choiceOf(it);
+  const chips = items.map((x, i) => {
+    const a = choiceOf(x), cls = (i === S.cur ? "cur " : "") + (a === "hold" ? "hold" : a ? "done" : "");
+    return `<span class="${cls}" onclick="select(${i}, true)">${x.no ?? ""} ${esc(x.field_label)}</span>`;
+  }).join("");
+  const head = `<b>${esc(P.label)} p${P.page}</b>　項目 ${S.cur + 1}/${items.length}　表${(it.table ?? -1) + 1}　項番 ${esc(it.no ?? "-")}　列: <b>${esc(it.field_label)}</b>　判定: ${esc(it.verdict)}`;
+  let cmp = "";
+  const keys = Object.keys(it.haiku_vals || {});
+  if ((it.field === "cells" || it.field === "required_by") && keys.length) {
+    const t = P.tables[it.table], show = it.diffcols.length ? it.diffcols : keys.map(Number);
+    cmp = `<div class="cmp"><div class="h">列</div><div class="h ${ch === "haiku" ? "chosen" : ""}">Haiku</div><div class="h ${ch === "sonnet" ? "chosen" : ""}">Sonnet</div>` +
+      show.map(ci => `<div class="h">${esc(t.columns[ci])}</div><div class="val">${esc(it.haiku_vals[ci]) || "（空）"}</div><div class="val">${esc(it.sonnet_vals[ci]) || "（空）"}</div>`).join("") +
+      `</div><div class="h">食い違いの列は表の中で赤枠になっています。セルをクリックすると個別に直せます。</div>`;
+  } else {
+    cmp = `<div class="cmp"><div class="h">Haiku</div><div class="val ${ch === "haiku" || ch === "delete" ? "chosen" : ""}" style="grid-column:span 2">${esc(it.haiku) || "（なし）"}</div>
+           <div class="h">Sonnet</div><div class="val ${ch === "sonnet" ? "chosen" : ""}" style="grid-column:span 2">${esc(it.sonnet) || "（なし）"}</div>
+           ${it.detail ? `<div class="h">補足</div><div style="grid-column:span 2">原本に見つからない列名: ${esc(it.detail)}</div>` : ""}
+           ${ch === "edit" ? `<div class="h">入力した値</div><div class="val chosen" style="grid-column:span 2">${esc(it.decision.value)}</div>` : ""}</div>`;
+  }
+  const label = {haiku:"Haiku に決定", sonnet:"Sonnet に決定", edit:"入力した値に決定", delete:"削除に決定", manual:"セルを個別に修正", hold:"保留"};
+  const st = ch ? `<span class="status ${ch === "hold" ? "hold" : "done"}">${label[ch]}</span>` : `<span class="status">未判定</span>`;
+  const btns = actionsFor(it).map(([k, a, l]) => `<button onclick="decide('${a}')"><kbd>${k}</kbd>${l}</button>`).join("") +
+    `<button onclick="decide('hold')"><kbd>H</kbd>保留</button><button onclick="decide(null)"><kbd>⌫</kbd>取り消す</button>` +
+    `<button onclick="pageAllHaiku()"><kbd>Shift+A</kbd>このページの未判定を全部 Haiku</button>`;
+  document.getElementById("panel").innerHTML = `<div id="chips">${chips}</div><div>${head}</div>${cmp}<div class="actions">${st}${btns}</div>`;
+}
+
+function select(i, scroll) {
+  const items = S.page.items;
+  if (!items.length) { showBand(false); return; }
+  S.cur = Math.max(0, Math.min(items.length - 1, i));
+  const it = items[S.cur];
+  document.querySelectorAll("tr.selrow").forEach(e => e.classList.remove("selrow"));
+  document.querySelectorAll("td.diff").forEach(e => e.classList.remove("diff"));
+  if (it.row != null) {
+    const tr = document.querySelector(`tr[data-row="${it.table}:${CSS.escape(it.row)}"]`);
+    if (tr) {
+      tr.classList.add("selrow");
+      (it.diffcols || []).forEach(ci => tr.children[ci] && tr.children[ci].classList.add("diff"));
+      if (scroll) tr.scrollIntoView({block:"center", inline:"nearest"});
+    }
+  } else if (it.table != null && scroll) {
+    const caps = document.querySelectorAll(".tcap"); if (caps[it.table]) caps[it.table].scrollIntoView({block:"start"});
+  }
+  renderPanel(); showBand(scroll);
+}
+
+function showBand(scroll) {
+  document.querySelectorAll(".band").forEach(e => e.remove());
+  const it = S.page && S.page.items[S.cur];
+  if (!it || it.row == null) return;
+  const b = S.page.bands[`${it.table}:${it.row}`];
+  if (!b) return;
+  const wrap = document.getElementById("imgwrap"), W = wrap.clientWidth, H = W * S.page.aspect;
+  const d = document.createElement("div");
+  d.className = "band";
+  Object.assign(d.style, {left: "0px", width: W + "px", top: (b[1] * H - 4) + "px", height: ((b[3] - b[1]) * H + 8) + "px"});
+  wrap.appendChild(d);
+  if (scroll) { const pane = document.getElementById("imgpane"); pane.scrollTop = wrap.offsetTop + b[1] * H - pane.clientHeight / 3; }
+}
+
+async function save(itemsUpd, cellsUpd) {
+  await api("/api/decide", {items: itemsUpd || [], cells: cellsUpd || []});
+}
+
+async function decide(action) {
+  const it = S.page.items[S.cur];
+  if (!it) return;
+  if (action && !actionsFor(it).some(a => a[1] === action) && action !== "hold") return;
+  let dec = action ? {action} : null;
+  if (action === "edit") {
+    const init = it.field === "columns" ? it.haiku : (it.decision && it.decision.value) || it.haiku || it.sonnet || "";
+    const v = prompt(it.field === "columns" ? "列名を「 | 」区切りで入力" : `${it.field_label} の正しい値（改行は \\n で）`, init);
+    if (v === null) return;
+    dec.value = v.replace(/\\n/g, "\n");
+  }
+  await save([{id: it.id, decision: dec}]);
+  await refresh(action !== null);
+}
+
+async function pageAllHaiku() {
+  const upd = S.page.items.filter(it => !it.decision).map(it => ({id: it.id, decision: {action: it.field === "row" && it.row && !it.row.startsWith("q:") ? "haiku" : "haiku"}}));
+  if (!upd.length) return;
+  if (!confirm(`このページの未判定 ${upd.length} 件をすべて「Haiku のまま」にします`)) return;
+  await save(upd);
+  await refresh(true);
+}
+
+async function refresh(advance) {
+  await loadPages();
+  await openPage(S.idx, true);
+  if (advance) {
+    const items = S.page.items;
+    const nxt = items.findIndex((x, i) => i > S.cur && !x.decision);
+    const any = items.findIndex(x => !x.decision);
+    if (nxt >= 0) select(nxt, true); else if (any >= 0) select(any, true);
+    else document.getElementById("panel").insertAdjacentHTML("afterbegin", `<div class="status done">このページはすべて判定しました。N で次のページへ。</div>`);
+  }
+}
+
+document.getElementById("gridpane").addEventListener("click", async e => {
+  const td = e.target.closest("td"); if (!td) return;
+  const ti = +td.dataset.t, rk = td.dataset.r, ci = +td.dataset.c, t = S.page.tables[ti];
+  const row = t.rows.find(r => r.key === rk);
+  if (row.ghost || row.deleted) return;
+  const qi = S.page.items.findIndex(x => x.table === ti && x.row === rk);
+  if (qi >= 0 && qi !== S.cur) { select(qi, false); }
+  const curv = row.values[ci] || "";
+  let v;
+  if (td.classList.contains("m") && !e.shiftKey) {
+    const base = curv.replace(/[◯〇]/g, "○");
+    const k = MARKS.indexOf(base);
+    v = k >= 0 ? MARKS[(k + 1) % MARKS.length] : "";
+  } else {
+    v = prompt(`${t.columns[ci]} の値（改行は \\n で）`, curv.replace(/\n/g, "\\n"));
+    if (v === null) return;
+    v = v.replace(/\\n/g, "\n");
+  }
+  const upd = [];
+  S.page.items.filter(x => x.table === ti && x.row === rk && (x.field === "cells" || x.field === "required_by") && (!x.decision || x.decision.action !== "manual"))
+    .forEach(x => upd.push({id: x.id, decision: {action: "manual"}}));
+  await save(upd, [{key: cellKey(ti, rk, ci), value: v, no: row.no}]);
+  await refresh(false);
+});
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT" || e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = e.key;
+  const map = {"1": () => decide("haiku"), "2": () => {
+      const it = S.page.items[S.cur]; decide(it && it.field === "row" && it.row && !it.row.startsWith("q:") ? "delete" : "sonnet"); },
+    "3": () => decide("edit"), "Delete": () => decide("delete"), "h": () => decide("hold"), "H": () => decide("hold"),
+    "Backspace": () => decide(null), "ArrowDown": () => select(S.cur + 1, true), "j": () => select(S.cur + 1, true),
+    "ArrowUp": () => select(S.cur - 1, true), "k": () => select(S.cur - 1, true), "n": () => movePage(1), "N": () => movePage(1),
+    "PageDown": () => movePage(1), "p": () => movePage(-1), "P": () => movePage(-1), "PageUp": () => movePage(-1),
+    "+": () => zoom(1.2), ";": () => zoom(1.2), "-": () => zoom(1 / 1.2), "A": () => pageAllHaiku()};
+  if (map[k]) { e.preventDefault(); map[k](); }
+});
+["fdoc", "fver", "fopen"].forEach(id => document.getElementById(id).addEventListener("change", () => {
+  renderSide(); const v = visible(); if (v.length && !v.some(([, i]) => i === S.idx)) openPage(v[0][1]);
+}));
+window.addEventListener("resize", () => showBand(false));
+document.getElementById("img").addEventListener("load", () => showBand(true));
+
+loadPages().then(() => {
+  const h = decodeURIComponent(location.hash.slice(1)).split(":");
+  let p = S.pages.findIndex(x => x.doc === h[0] && String(x.page) === h[1]);
+  if (p < 0) p = S.pages.findIndex(x => x.done < x.n);
+  openPage(p >= 0 ? p : 0); })
+  .catch(err => document.getElementById("panel").innerHTML = `<div class="msg">エラー: ${esc(err.message)}</div>`);
+</script>
+</body>
+</html>
