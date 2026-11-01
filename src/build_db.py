@@ -104,6 +104,9 @@ def js(v) -> str | None:
     return None if v is None else json.dumps(v, ensure_ascii=False)
 
 
+PROSE_ONLY = ["kaigo_internet_r0410"]
+
+
 def blank(v) -> str | None:
     return None if v in (None, "") else str(v)
 
@@ -130,7 +133,8 @@ def main() -> int:
     con = sqlite3.connect(tmp)
     con.executescript(SCHEMA)
 
-    docs = sorted({lt["doc_id"] for lt in logical})
+    # 表の無い編（本文だけ）。書き起こしは要らず、build_index.py が PDF のテキストレイヤから文章を取る
+    docs = sorted({lt["doc_id"] for lt in logical} | set(PROSE_ONLY))
     for d in docs:
         e = manifest[d]
         con.execute("INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?,?)",

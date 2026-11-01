@@ -1,0 +1,11 @@
+# 本番3: 介護 都道府県編・生保単独編の「表のあるページ」すべてを、新しいスキーマ（column_map / cells）で両モデル処理する。
+# 採用ルール: 必須対応表は Haiku、それ以外は Haiku を主・Sonnet を第2意見（src/adopt.py）
+run: prod3-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+docs:
+  - kaigo_todofuken_r0806
+  - kaigo_seiho_r0806
