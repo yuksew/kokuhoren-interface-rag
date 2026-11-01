@@ -1,0 +1,99 @@
+"""回答生成の評価: eval/questions.yaml の質問に両モデルで答えさせ、自動の指標と回答本文をまとめる（API を使う）。
+
+usage: uv run --group rag python src/eval_answers.py [--models claude-haiku-5-5 claude-sonnet-5-5] [--out reports/answer_eval.md]
+自動の指標
+  facts    expect の語がすべて回答に含まれる
+  gold     正解の行（または表）を出典として引用した
+  invalid  存在しない抜粋番号を引用した
+  insufficient  モデルが「抜粋だけでは答えられない」とした
+回答本文も載せるので、最終的な良し悪しは人が読んで判断する。
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+import unicodedata
+from pathlib import Path
+
+import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ask import answer  # noqa: E402
+from eval_retrieval import gold_hits  # noqa: E402
+from llm import get_client  # noqa: E402
+from retrieve import Retriever  # noqa: E402
+from transcribe import load_dotenv  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def norm(s) -> str:
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", str(s or "")))
+
+
+def main() -> int:
+    sys.stdout.reconfigure(encoding="utf-8")
+    load_dotenv()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--models", nargs="+", default=["claude-haiku-5-5", "claude-sonnet-5-5"])
+    ap.add_argument("--out", default="reports/answer_eval.md")
+    args = ap.parse_args()
+    qs = yaml.safe_load((ROOT / "eval" / "questions.yaml").read_text(encoding="utf-8"))
+    r, client = Retriever(), get_client("anthropic")
+    results = {m: [] for m in args.models}
+    for i, q in enumerate(qs, 1):
+        gi, gt = gold_hits(r, q["gold"])
+        for m in args.models:
+            a = answer(q["q"], r=r, client=client, model=m, domain=q.get("domain"), log_extra={"eval": True})
+            text = norm(a["answer"])
+            a["facts_ok"] = all(any(norm(alt) in text for alt in e.split("|")) for e in q.get("expect") or []) if q.get("expect") else None
+            a["gold_cited"] = any(s["item_id"] in gi or s["table_id"] in gt for s in a["sources"].values())
+            a["gold_retrieved"] = any(h["item_id"] in gi or h["table_id"] in gt for h in a["retrieved"])
+            a["kind"] = q["kind"]
+            results[m].append(a)
+            print(f"{i:2d} {m:18s} facts={a['facts_ok']} gold={a['gold_cited']} ${a['cost_usd']:.4f}", flush=True)
+    (ROOT / "out" / "answers").mkdir(parents=True, exist_ok=True)
+    (ROOT / "out" / "answers" / "eval_results.json").write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    L = [f"# 回答生成の評価（{len(qs)} 問）", "",
+         "抜粋は検索（ハイブリッド＋番号の直接引き、上位12件）。effort=low。facts は expect の語がすべて回答にあるか（expect のある問だけ数える）。", "",
+         "| モデル | facts | 正解の行を引用 | 存在しない番号の引用 | 「答えられない」 | 入力トークン（平均） | 出力トークン（平均） | 費用（合計） | 1問あたり | 応答秒（平均） |",
+         "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+    for m, rs in results.items():
+        n = len(rs)
+        fx = [x for x in rs if x["facts_ok"] is not None]
+        cost = sum(x["cost_usd"] for x in rs)
+        L.append(f"| {m} | {sum(x['facts_ok'] for x in fx)}/{len(fx)} | {sum(x['gold_cited'] for x in rs)}/{n} | "
+                 f"{sum(bool(x['invalid_citations']) for x in rs)} | {sum(bool(x['insufficient']) for x in rs)} | "
+                 f"{sum(x['usage']['input_tokens'] for x in rs) / n:,.0f} | {sum(x['usage']['output_tokens'] for x in rs) / n:,.0f} | "
+                 f"${cost:.3f} | ${cost / n:.4f} | {sum(x['latency_s'] for x in rs) / n:.1f} |")
+    L += ["", "正解の行が検索結果に入っていたのに引用しなかった問・facts を外した問", ""]
+    for m, rs in results.items():
+        bad = [f"「{x['question']}」" + ("（facts×）" if x["facts_ok"] is False else "") +
+               ("（正解が検索結果にあるのに引用せず）" if x["gold_retrieved"] and not x["gold_cited"] else "") +
+               ("（正解が検索結果に無い）" if not x["gold_retrieved"] else "")
+               for x in rs if x["facts_ok"] is False or not x["gold_cited"]]
+        L.append(f"- {m}: " + ("、".join(bad) if bad else "なし"))
+    L += ["", "## 回答本文", ""]
+    for i, q in enumerate(qs):
+        L.append(f"### {i + 1}. {q['q']}（{q.get('domain')}・{q['kind']}）")
+        for m in args.models:
+            x = results[m][i]
+            marks = f"facts={'○' if x['facts_ok'] else '×' if x['facts_ok'] is False else '-'} 引用={'○' if x['gold_cited'] else '×'}"
+            L.append(f"**{m}**（{marks}）")
+            L.append("")
+            L.append("> " + (x["answer"] or "").replace("\n", "\n> "))
+            if x["sources"]:
+                L.append("")
+                L += [f"- [{n}] {s['label']}" for n, s in sorted(x["sources"].items(), key=lambda kv: int(kv[0]))][:6]
+            L.append("")
+    (ROOT / args.out).write_text("\n".join(L) + "\n", encoding="utf-8")
+    print("\n".join(L[:12]))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RRF_K = 60
 # 助詞・疑問の言い回しで区切って、全文検索の語を取り出す（trigram なので3文字以上の語だけ使う）
 SPLIT = re.compile(r"[\s、。，,．.？?！!「」『』（）()\[\]【】・/:：]+|について|とは|には|では|での|への|から|まで|より|ですか|ますか|ください|教えて|何桁|何|どこ|どの|どう|いつ|[はがをにのでとやもかへ]")
+MATRIX_Q = re.compile(r"必須|様式ごと|様式別|対応表|入力必須")
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 
 
@@ -42,9 +43,10 @@ class Retriever:
         self.con = sqlite3.connect(self.db_path)
         self.con.row_factory = sqlite3.Row
         self.embedder_name = embedder
+        self._df: dict[str, int] = {}
         self._emb = embedder_obj
         rows = self.con.execute(
-            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, d.domain FROM chunks c "
+            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, d.domain, t.table_kind FROM chunks c "
             "JOIN spec_tables t USING (table_id) JOIN documents d USING (doc_id) ORDER BY c.chunk_id").fetchall()
         self.meta = [dict(r) for r in rows]
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
@@ -78,8 +80,18 @@ class Retriever:
             ok &= np.array([m["table_id"] in ts for m in self.meta])
         return ok
 
+    def df(self, term: str) -> int:
+        if term not in self._df:
+            self._df[term] = self.con.execute("SELECT count(*) FROM items_fts WHERE items_fts MATCH ?",
+                                              ('"' + term.replace('"', '""') + '"',)).fetchone()[0]
+        return self._df[term]
+
     def fts(self, q: str, n: int = 50) -> list[int]:
         terms = fts_terms(q)
+        # 「設定する」のようにほとんどの行にある語は手がかりにならないので外す（行の 3% 超）。全部外れたら一番まれな語だけ使う
+        limit = len(self.item_chunk) * 0.03
+        kept = [t for t in terms if self.df(t) <= limit]
+        terms = kept or sorted(terms, key=self.df)[:1]
         if not terms:
             return []
         expr = " OR ".join('"' + t.replace('"', '""') + '"' for t in terms)
@@ -95,7 +107,7 @@ class Retriever:
         return [c for code in CODE.findall(nk(q)) for c in self.code_items.get(code, [])]
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
-               fts_weight: float = 1.0, use_codes: bool = True) -> list[dict]:
+               fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5) -> list[dict]:
         ok = self._allowed(domain, exchange)
         lists = []
         if use_codes and mode != "vector":
@@ -106,12 +118,19 @@ class Retriever:
             lists.append(("vector", [c for c in self.vector(q) if ok[c]][:50], 1.0))
         score: dict[int, float] = {}
         via: dict[int, list[str]] = {}
+        # 必須対応表の行は同じ項目名が版（サービス提供年月）ごとに何十回も出てきて、項目の定義を押し出すので重みを下げる。
+        # 質問が必須・様式について聞いているときは下げない。
+        mx = 1.0 if MATRIX_Q.search(nk(q)) else matrix_weight
         for name, lst, w in lists:
             for rank, c in enumerate(lst):
-                score[c] = score.get(c, 0.0) + w / (RRF_K + rank + 1)
+                wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
+                score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         top = sorted(score, key=lambda c: -score[c])[:k]
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
+
+    def describe_table(self, table_id: int) -> str:
+        return self.con.execute("SELECT text FROM chunks WHERE kind = 'table' AND table_id = ?", (table_id,)).fetchone()["text"]
 
     def describe(self, chunk_id: int) -> str:
         return self.con.execute("SELECT text FROM chunks WHERE chunk_id = ?", (chunk_id,)).fetchone()["text"]

@@ -19,9 +19,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from retrieve import Retriever  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-# (表示名, mode, fts_weight, use_codes)
-MODES = [("fts", "fts", 1.0, False), ("vector", "vector", 1.0, False), ("hybrid", "hybrid", 1.0, False),
-         ("hybrid+code", "hybrid", 1.0, True), ("hybrid+code fts0.5", "hybrid", 0.5, True)]
+# (表示名, mode, fts_weight, use_codes, matrix_weight)
+MODES = [("fts", "fts", 1.0, False, 1.0), ("vector", "vector", 1.0, False, 1.0), ("hybrid", "hybrid", 1.0, False, 1.0),
+         ("hybrid+code", "hybrid", 1.0, True, 1.0), ("hybrid+code+matrix0.5", "hybrid", 1.0, True, 0.5)]
 
 
 def norm(s) -> str:
@@ -40,9 +40,11 @@ def gold_hits(r: Retriever, gold: list[dict]) -> tuple[set[int], set[int]]:
                 ps.append(g["exchange"])
             tables |= {x[0] for x in r.con.execute(sql, ps)}
             continue
-        for x in r.con.execute("SELECT item_id, name_full, page FROM items WHERE doc_id LIKE ?", (g["doc"] + "%",)):
+        for x in r.con.execute("SELECT i.item_id, i.name_full, i.page, t.table_kind FROM items i JOIN spec_tables t USING (table_id) "
+                               "WHERE i.doc_id LIKE ?", (g["doc"] + "%",)):
             nf = norm(x["name_full"]).replace(">", "")
-            if norm(g["name"]).replace(">", "") in nf and (g.get("page") is None or x["page"] == g["page"]):
+            if (norm(g["name"]).replace(">", "") in nf and (g.get("page") is None or x["page"] == g["page"])
+                    and (g.get("table_kind") is None or x["table_kind"] == g["table_kind"])):
                 items.add(x["item_id"])
     return items, tables
 
@@ -60,8 +62,8 @@ def main() -> int:
         gi, gt = gold_hits(r, q["gold"])
         assert gi or gt, f"正解が DB に見つからない: {q['q']}"
         row = {"q": q["q"], "kind": q["kind"]}
-        for m, mode, w, uc in MODES:
-            hits = r.search(q["q"], k=10, domain=q.get("domain"), mode=mode, fts_weight=w, use_codes=uc)
+        for m, mode, w, uc, mw in MODES:
+            hits = r.search(q["q"], k=10, domain=q.get("domain"), mode=mode, fts_weight=w, use_codes=uc, matrix_weight=mw)
             rank = next((i + 1 for i, h in enumerate(hits)
                          if (h["item_id"] in gi) or (h["table_id"] in gt)), None)
             res[m].append((q["kind"], rank))

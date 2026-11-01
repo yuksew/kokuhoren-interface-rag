@@ -13,9 +13,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sqlite3
 import sys
 import time
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -28,17 +30,31 @@ ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = {"kaigo": "介護保険", "shogai": "障害福祉"}
 
 
+INFO_NAMES: dict[tuple[str, str], str] = {}  # (domain, 識別番号) → 情報名（インタフェース一覧から）
+
+
 def header(r) -> list[str]:
     ex = f"（交換情報識別番号 {r['record_exchange_id']}）" if r["record_exchange_id"] else ""
     out = [f"{DOMAIN.get(r['domain'], r['domain'])} インタフェース仕様書 {r['volume']} {r['edition']}"]
     if r["section_name"]:
         out.append(f"節: {r['section_no'] or ''} {r['section_name']}")
     out.append(f"表: {r['title'] or '（表題なし）'}{ex}")
+    # 識別番号の情報名（例: 7131 → 居宅介護（支援）給付費請求明細書情報）。表題に「明細書」などが無い表も見つかるように
+    names = list(dict.fromkeys(INFO_NAMES[(r["domain"], x)] for x in (r["record_exchange_id"] or "").split(",")
+                               if (r["domain"], x) in INFO_NAMES))
+    if names:
+        out.append("情報: " + "、".join(names[:6]))
     return out
 
 
 def build_chunks(con: sqlite3.Connection) -> list[dict]:
     con.row_factory = sqlite3.Row
+    for r in con.execute("SELECT d.domain, i.name, iv.value FROM item_values iv JOIN items i USING (item_id) "
+                         "JOIN spec_tables t USING (table_id) JOIN documents d ON d.doc_id = t.doc_id "
+                         "WHERE t.table_kind = 'interface_list' AND iv.column_name LIKE '%識別%'"):
+        m = re.search(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])", unicodedata.normalize("NFKC", r["value"] or ""))
+        if m and r["name"]:
+            INFO_NAMES.setdefault((r["domain"], m.group(0)), re.sub(r"\s*※\s*\S+", "", r["name"]).strip())
     tables = {r["table_id"]: r for r in con.execute(
         "SELECT t.*, d.domain, d.volume, d.edition FROM spec_tables t JOIN documents d USING (doc_id)")}
     vals = defaultdict(list)

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["answer", "used", "insufficient"],
+  "properties": {
+    "answer": {"type": "string", "description": "回答本文。事実には [n] で抜粋番号を付ける"},
+    "used": {"type": "array", "items": {"type": "integer"}, "description": "根拠にした抜粋の番号"},
+    "insufficient": {"type": "boolean", "description": "抜粋だけでは十分に答えられないとき true"}
+  }
+}

@@ -8,7 +8,7 @@
 sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
-src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -52,6 +52,10 @@ uv sync --group rag
 uv run --group rag python src/build_index.py                     # 索引（build_db.py の後に毎回）
 uv run --group rag python src/retrieve.py "要介護度はどのコードで何桁？" --domain kaigo
 uv run --group rag python src/eval_retrieval.py                  # 検索の評価 reports/retrieval_eval.md
+
+# フェーズ2: 回答生成（Claude API。既定は Sonnet 5.5、1問 約 $0.01）
+uv run --group rag python src/ask.py "要介護度はどのコードで何桁？" --domain kaigo
+uv run --group rag python src/eval_answers.py                    # 回答の評価（両モデル、約 $0.25）
 
 # API を使わずにパイプラインだけ試す
 uv run python src/transcribe.py --provider mock && uv run python src/validate.py --run mock-png && uv run python src/report.py --run mock-png

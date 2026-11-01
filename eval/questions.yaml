@@ -1,87 +1,109 @@
 # 検索の評価用の質問（正解は DB の行を条件で指定する。item_id は DB を作り直すと変わるので使わない）
 # gold: どれか1つの行が上位に入れば正解。doc は doc_id の前方一致、name は項目名（階層つき）に含まれる文字列（空白を無視）
+# table_kind: 指定すると、その種類の表の行だけを正解にする（必須対応表の同名の行を除く など）
 # domain: 画面で介護・障害を選んだ想定の絞り込み
+# expect: 回答に含まれるべき語（NFKC・空白無視で照合。「A|B」はどちらかでよい）
 # kind: exact = 項目名をそのまま含む質問 / paraphrase = 言い換え / code = 番号で聞く / table = 表単位の質問
 - q: 受給者証番号の桁数と属性を教えて
   domain: shogai
   kind: exact
   gold: [{doc: shogai_jigyosho, name: 受給者証番号}]
+  expect: ["英数", "10"]
 - q: 介護給付費明細書の被保険者番号は何桁？
   domain: kaigo
   kind: exact
   gold: [{doc: kaigo_jigyosho, name: 被保険者番号}]
+  expect: ["10"]
 - q: 明細書の基本情報レコードで、被保険者証に書かれた保険者の番号はどの項目に入れる？
   domain: kaigo
   kind: paraphrase
   gold: [{doc: kaigo_jigyosho, name: 証記載保険者番号}]
+  expect: ["証記載保険者番号"]
 - q: 交換情報識別番号 J421 は何の情報？
   domain: shogai
   kind: code
   gold: [{doc: shogai_jigyosho, name: 利用者負担上限額管理結果票情報(複数児童)}]
+  expect: ["複数児童"]
 - q: 7131 の情報名は？
   domain: kaigo
   kind: code
   gold: [{doc: kaigo_jigyosho, name: 居宅介護（支援）給付費請求明細書情報, page: 35}]
+  expect: ["居宅介護(支援)給付費請求明細書情報"]
 - q: 処遇改善助成金の請求額はどう計算して設定する？
   domain: shogai
   kind: paraphrase
   gold: [{doc: shogai_jigyosho, name: 処遇改善助成金>請求額}]
+  expect: ["交付率"]
 - q: 71B2 はどの申立書の情報か
   domain: kaigo
   kind: code
   gold: [{doc: kaigo_jigyosho, name: 介護給付費再審査申立書情報}]
+  expect: ["再審査申立書"]
 - q: 明細書の集計情報で特定入所者介護サービス費等の保険請求額の合計はどこに設定する？
   domain: kaigo
   kind: exact
   gold: [{doc: kaigo_jigyosho, name: 保険>特定入所者介護サービス費等請求額}]
+  expect: ["特定入所者介護サービス費等請求額"]
 - q: 居宅介護支援事業所の事業所番号が必須になるのはどんなとき？
   domain: kaigo
   kind: paraphrase
   gold: [{doc: kaigo_jigyosho, name: 事業所番号, page: 80}]
+  expect: ["居宅介護支援事業所作成"]
 - q: コントロールレコードのレコード種別には何を設定する？
   domain: kaigo
   kind: exact
   gold: [{doc: kaigo_kyotsu, name: レコード種別, page: 11}, {doc: kaigo_kyotsu, name: レコード種別, page: 15}]
+  expect: ["1"]
 - q: 補足給付を適用する場合の一日あたりの補足給付額の属性と桁数
   domain: shogai
   kind: paraphrase
   gold: [{doc: shogai_jigyosho, name: 補足給付額（円／日）}]
+  expect: ["数値", "4"]
 - q: 旧措置入所者特例コードとは
   domain: kaigo
   kind: exact
   gold: [{doc: kaigo_jigyosho, name: 旧措置入所者特例コード}]
+  expect: ["旧措置入所者特例"]
 - q: 要介護度はどのコードで何桁で設定する？
   domain: kaigo
   kind: paraphrase
   gold: [{doc: kaigo_jigyosho, name: 要介護状態区分コード}]
+  expect: ["要介護状態区分コード", "2"]
 - q: 自立訓練（機能訓練）の基本決定の決定サービスコードは？
   domain: shogai
   kind: exact
   gold: [{doc: shogai_kyotsu, name: 決定サービスコード}]
+  expect: ["411000"]
 - q: 様式種別番号はどういう形式で設定する？
   domain: shogai
   kind: exact
-  gold: [{doc: shogai_jigyosho, name: 様式種別番号}]
+  gold: [{doc: shogai_jigyosho, name: 様式種別番号, table_kind: record_layout}]
+  expect: ["枝番"]
 - q: 返戻となる情報を確認するためのリストの交換情報識別番号
   domain: shogai
   kind: paraphrase
   gold: [{doc: shogai_jigyosho, name: 返戻等一覧表情報}]
+  expect: ["J721|K721|L721"]
 - q: 認定有効期間の開始日の形式
   domain: kaigo
   kind: paraphrase
   gold: [{doc: kaigo_jigyosho, name: 認定有効期間}]
+  expect: ["YYYYMMDD"]
 - q: 利用者の生まれた日はどの形式で入れますか
   domain: kaigo
   kind: paraphrase
   gold: [{doc: kaigo_jigyosho, name: 生年月日}]
+  expect: ["YYYYMMDD"]
 - q: 男女の区別を入れる項目は？
   domain: kaigo
   kind: paraphrase
-  gold: [{doc: kaigo_jigyosho, name: 性別コード}]
+  gold: [{doc: kaigo_jigyosho, name: 性別コード}, {doc: kaigo_kyotsu, name: 性別コード}]
+  expect: ["性別コード"]
 - q: サービス提供年月は和暦と西暦どちらで設定する？
   domain: shogai
   kind: paraphrase
   gold: [{doc: shogai_jigyosho, name: サービス提供年月}]
+  expect: ["西暦"]
 - q: 食事費用情報レコードにはどんな項目がある？
   domain: kaigo
   kind: table
