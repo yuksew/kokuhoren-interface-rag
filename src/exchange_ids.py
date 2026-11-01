@@ -6,7 +6,9 @@
   columns   列見出しに識別番号がある（障害: 「※必須 J121 J131 J221」）
   section   同じ節（1.2.3.2. など）のほかの表の番号がすべて同じとき、それを共有する
   name      節の見出しを、同じ章のインタフェース一覧の情報名と照合した（一致率 0.8 以上）
-決められない表（介護の明細書のように1つのレコード形式を多数の様式で使い、対応が別ページの注記にあるもの）は空のままにする。
+  title     表題を、同じ章のインタフェース一覧の情報名と照合した（一致率 0.9 以上）
+  residual  節に対応するインタフェース一覧の節の番号から、同じ節のほかの表が固定値で持つ番号を除いた残り
+決められない表は空のままにする。
 1つの表が複数の識別番号に対応することがある（同じレコード形式を複数の情報で使う）。
 """
 
@@ -136,6 +138,55 @@ def assign(tables: list[dict], items_by_table: dict) -> dict[int, dict]:
                         best, score = ids, 1.0
                 if best and score >= 0.8:
                     r["ids"], r["source"] = set(best), "name"
+        # 残り: 表題が情報名と一致すればその番号（title）。
+        # それでも無ければ、節に対応するインタフェース一覧の節の番号から、同じ節のほかの表が固定値で持つ番号を除いた残り（residual）。
+        # 例: 介護 2.3.1 介護給付費請求書情報 ↔ 2.2.1 介護給付費請求情報。請求書の表が 7111/7112/7113/7121 を持つので、
+        #     明細書のレコード（基本情報・明細情報など）は残りの明細書の番号（7131〜71R1）に対応する。
+        if_secs: dict[str, dict] = defaultdict(lambda: {"name": "", "ids": set(), "names": defaultdict(set)})
+        for t in ts:
+            if t.get("table_kind") != "interface_list":
+                continue
+            rr = result[t["table_id"]]
+            sec = if_secs[rr["section_no"] or ""]
+            sec["name"] = rr["section_name"] or ""
+            for it in items_by_table.get(t["table_id"], []):
+                if it.get("ids"):
+                    sec["ids"] |= set(it["ids"])
+                    if it.get("name"):
+                        sec["names"][it["name"]] |= set(it["ids"])
+        self_ids: dict[str, set[str]] = defaultdict(set)
+        for t in ts:
+            rr = result[t["table_id"]]
+            if rr["source"] == "self" and rr["section_no"]:
+                self_ids[rr["section_no"]] |= set(rr["ids"])
+        for t in ts:
+            r = result[t["table_id"]]
+            if r["ids"] or t.get("table_kind") not in ("record_layout", "required_matrix"):
+                continue
+            ch = (r["section_no"] or "").split(".")[0]
+            title = squash(re.sub(r"^\s*[（(]\s*\d+\s*[）)]", "", nk(t.get("title"))))
+            best, score = None, 0.0
+            for sno, sec in if_secs.items():
+                if sno.split(".")[0] != ch:
+                    continue
+                for name, ids in sec["names"].items():
+                    sc = difflib.SequenceMatcher(None, title, squash(name)).ratio() if title else 0
+                    if sc > score:
+                        best, score = ids, sc
+            if best and score >= 0.9:
+                r["ids"], r["source"] = set(best), "title"
+                continue
+            claimed = self_ids.get(r["section_no"] or "")
+            if not claimed or not r["section_name"]:
+                continue
+            key = squash(r["section_name"])
+            cand = [(difflib.SequenceMatcher(None, key, squash(sec["name"])).ratio(), sno) for sno, sec in if_secs.items()
+                    if sno.split(".")[0] == ch and sec["ids"]]
+            if cand:
+                sc, sno = max(cand)
+                rest = if_secs[sno]["ids"] - claimed
+                if sc >= 0.85 and rest and claimed <= if_secs[sno]["ids"]:
+                    r["ids"], r["source"] = rest, "residual"
     for r in result.values():
         r["ids"] = sorted(r["ids"])
     return result

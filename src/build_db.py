@@ -23,8 +23,10 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import re
 import sqlite3
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -91,6 +93,10 @@ SELECT i.item_id, d.domain, d.volume, d.edition, i.doc_id, i.page, p.printed_pag
 FROM items i JOIN spec_tables t USING (table_id) JOIN documents d ON d.doc_id = i.doc_id
 LEFT JOIN pages p ON p.doc_id = i.doc_id AND p.page = i.page;
 """
+
+
+def nk(s) -> str:
+    return unicodedata.normalize("NFKC", str(s or ""))
 
 
 def js(v) -> str | None:
@@ -180,7 +186,8 @@ def main() -> int:
               for r in con.execute("SELECT t.*, d.domain FROM spec_tables t JOIN documents d USING (doc_id)")]
     idv: dict[int, list[str]] = {}
     for r in con.execute("SELECT item_id, value FROM item_values WHERE column_name LIKE '%識別%'"):
-        idv.setdefault(r["item_id"], []).append(r["value"])
+        # 「7112 ※ 11」のように注記記号が付くので、識別番号だけを取り出す
+        idv.setdefault(r["item_id"], []).extend(re.findall(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])", nk(r["value"]))[:1])
     items_by_table: dict[int, list[dict]] = {}
     for r in con.execute("SELECT item_id, table_id, name, content, note FROM items"):
         items_by_table.setdefault(r["table_id"], []).append({**dict(r), "ids": idv.get(r["item_id"], [])})
