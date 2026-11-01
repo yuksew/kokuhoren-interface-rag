@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 13,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9995,
+      "output_tokens": 4897,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003448,
+    "cost_usd_batch": 0.001724,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 13,
+    "printed_page": "9",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.2.1.介護給付費等請求書・明細書情報(入力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護給付費・訓練等給付費等請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費・訓練等給付費等の請求を行う際に提出するサービス事業所単位の集計情報。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J111"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護給付費・訓練等給付費等明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費・訓練等給付費等の請求を行う際に提出するサービス事業所単位、利用者単位の集計情報。（居宅介護、重度訪問介護、同行援護、行動援護、重度障害者等包括支援、児童デイサービス（※1）、短期入所、療養介護、生活介護、施設入所支援、旧法施設支援（※1）、自立訓練、就労選択支援（※5）、就労移行支援、就労継続支援、就労定着支援（※4）、自立生活援助（※4））",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J121"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護給付費・訓練等給付費等明細書情報（GH・CH）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費・訓練等給付費等の請求を行う際に提出するサービス事業所単位、利用者単位の集計情報。（共同生活介護（※3）、共同生活援助）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J131"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "地域相談支援給付費明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "相談支援事業者が地域相談支援給付費の請求を行う際に提出する相談支援事業者単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J141"
+              },
+              {
+                "column": "ルート",
+                "value": "相談支援事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "特例介護給付費・特例訓練等給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から特例介護給付費・特例訓練等給付費の請求を行う際に提出するサービス事業所単位の集計情報。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J211"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "特例介護給付費・特例訓練等給付費明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から特例介護給付費・特例訓練等給付費の請求を行う際に提出するサービス事業所単位、利用者単位の集計情報。（居宅介護、重度訪問介護、同行援護、行動援護、児童デイサービス（※1）、短期入所、生活介護、自立訓練、就労継続支援）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J221"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "サービス利用計画作成費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "相談支援事業者がサービス利用計画作成費の請求を行う際に提出する、相談支援事業者単位、利用者単位の集計情報。（※1）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J311"
+              },
+              {
+                "column": "ルート",
+                "value": "相談支援事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "計画相談支援給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "相談支援事業者等が計画相談支援給付費の請求を行う際に提出する、相談支援事業者単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J312"
+              },
+              {
+                "column": "ルート",
+                "value": "相談支援事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "特例計画相談支援給付費請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "相談支援事業者等が特例計画相談支援給付費の請求を行う際に提出する、相談支援事業者単位、利用者単位の集計情報。（※2）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J321"
+              },
+              {
+                "column": "ルート",
+                "value": "相談支援事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年4月以降使用しない。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成24年4月以降使用する。"
+      },
+      {
+        "mark": "※3",
+        "text": "サービス提供年月が平成26年4月以降使用しない。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が平成30年4月以降使用する。"
+      }
+    ],
+    "uncertain": [
+      "添付ページの下部に印字された表示は「9」であり、PDF上のページ13とは一致しない。printed_page には印字の「9」を入れた。",
+      "ページ内の表はインタフェース一覧1表のみ。表の見出しは「1.2.2.2.1.介護給付費等請求書・明細書情報(入力情報)」と読めるが、原文の見出し文字列は「1.2.2.1.」と表記されている可能性があるため、原文どおり転記した。",
+      "行(2)の内容に出現する「※5」の注記本文はこのページに見当たらない。次ページ以降の注記の可能性がある。",
+      "レコード名・上位情報名・交換情報識別番号は本ページから読み取れないため空文字とした。",
+      "「ルート」欄の「サービス事業所等→国保連合会」「相談支援事業所等→国保連合会」は、原文で改行されて縦に配置された表記を連結したもの。"
+    ]
+  },
+  "raw_text": null
+}

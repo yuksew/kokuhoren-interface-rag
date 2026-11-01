@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 8,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9991,
+      "output_tokens": 439,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001219,
+    "cost_usd_batch": 0.000609,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 8,
+    "printed_page": "6",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・使用不可能文字",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "使用不可能文字",
+          "文字コード(16進表記)"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "使用不可能文字",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "‘(シングルコーテーション)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "27",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "文字コード(16進表記)",
+                "value": "27"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページ（printed_page 6）は表示上「- 6 -」のページであり、指示のPDF上のページ8とページ番号が一致しない点。ページ上にある表は「使用不可能文字」の1表のみで、次のページの表ではないため、この1ページの内容を書き起こした。",
+      "「使用不可能文字」表の項番1の name_path は、原文の列構成に合わせて文字内容のみを入れ、column_map の name 列に対応させた。"
+    ]
+  },
+  "raw_text": null
+}

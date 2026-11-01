@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 43,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9971,
+      "output_tokens": 6210,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004102,
+    "cost_usd_batch": 0.002051,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 43,
+    "printed_page": "34-2",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 40,
+            "no_raw": "４０",
+            "name_path": [
+              "福祉用具販売費の種目コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "01:腰掛便座\n02:特殊尿器\n03:入浴補助用具\n04:簡易浴槽\n05:移動用リフトのつり具の部分\n06:自動排泄処理装置の交換可能部品\n07:排泄予測支援機器\n08:スロープ\n09:歩行器\n10:歩行補助つえ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "サービス種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "サービス種類",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "施設等の区分コード",
+              "訪問介護※1"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:身体介護\n2:生活援助\n3:通院等乗降介助",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "施設等の区分コード",
+              "訪問看護"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "１",
+            "content": "平成24年3月以前\n1:訪問看護ステーション\n2:病院または診療所\n平成24年4月以降\n1:訪問看護ステーション\n2:病院または診療所\n3:定期巡回・随時対応サービス連携",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "施設等の区分コード",
+              "訪問リハビリテーション※1"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "１",
+            "content": "平成30年3月以前\n1:病院または診療所\n2:介護老人保健施設\n平成30年4月以降\n1:病院または診療所\n2:介護老人保健施設\n3:介護医療院",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "施設等の区分コード",
+              "通所介護"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "１",
+            "content": "平成18年3月以前\n1:単独型\n2:併設型\n平成18年4月以降\n3:小規模型事業所\n4:通常規模型事業所\n5:療養通所介護事業所\n平成21年4月以降\n3:小規模型事業所\n4:通常規模型事業所\n5:療養通所介護事業所\n6:大規模型事業所（Ⅰ）\n7:大規模型事業所（Ⅱ）\n平成28年4月以降\n4:通常規模型事業所\n6:大規模型事業所（Ⅰ）\n7:大規模型事業所（Ⅱ）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表1（項番40）は見出し行の直後から始まり、前ページからの続きの可能性がある。前ページの有無は添付からは判断できない。",
+      "表2（項番41）の「内容」は期間見出し（平成○年○月以前/以降）と値が入れ子の表になっている。期間見出しは内容欄の本文に改行で残し、期間ごとの列には分けていない。",
+      "訪問介護※1の行は、平成15年3月以前の欄が空欄で、「1:身体介護」以下が平成15年4月以降から平成18年7月以降までの欄にまたがって書かれている。どの期間に対応するかは判断していない。",
+      "通所介護の行は、平成18年3月以前の「1:単独型／2:併設型」と平成18年4月以降の「3:小規模型事業所」以下が左右に並ぶ配置のため、改行順で書き起こした。対応関係は原図の配置に依る。"
+    ]
+  },
+  "raw_text": null
+}

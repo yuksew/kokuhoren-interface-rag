@@ -47,6 +47,8 @@ def parse_custom_id(cid: str, models: list[str]) -> tuple[str, str, int]:
 
 
 def target_pages(cfg: dict, manifest: dict) -> list[tuple[str, int]]:
+    if cfg.get("pages"):  # "doc_id:page" の明示リスト（再実行用）
+        return [(x.rsplit(":", 1)[0], int(x.rsplit(":", 1)[1])) for x in cfg["pages"]]
     out = []
     for doc in cfg["docs"]:
         for p in doc_profile(pdf_path(manifest[doc])):

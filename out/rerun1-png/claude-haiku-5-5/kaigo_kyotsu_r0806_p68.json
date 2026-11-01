@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 68,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9971,
+      "output_tokens": 3991,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002993,
+    "cost_usd_batch": 0.001496,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 68,
+    "printed_page": "４１－１",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "32:居宅サービス介護給付費明細書（特定施設入居者生活介護・地域密着型特定施設入居者介護）※7\n33:介護予防サービス介護給付費明細書（介護予防特定施設入居者生活介護）※7\n34:居宅サービス介護給付費明細書（認知症対応型共同生活介護（短期利用型））※7\n35:介護予防サービス介護給付費明細書（介護予防認知症対応型共同生活介護（短期利用型））※7\n36:居宅サービス・地域密着型サービス介護給付費明細書（特定施設入居者生活介護（短期利用型）・地域密着型特定施設入居者生活介護（短期利用型））\n40:居宅介護支援介護給付費明細書\n41:介護予防支援介護給付費明細書（介護予防支援）※7\n50:施設サービス等介護給付費明細書(介護老人福祉施設・地域密着型介護老人福祉施設)\n60:施設サービス等介護給付費明細書(介護老人保健施設)\n61:施設サービス等介護給付費明細書（介護医療院）※9\n70:施設サービス等介護給付費明細書(介護療養型医療施設)　※１２",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "申立理由番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "01:台帳誤り修正による保険者申立の過誤調整\n02:請求誤りによる実績取り下げ\n09:時効による保険者申立の取下げ\n11:台帳誤り修正による事業所申立の過誤調整\n12:請求誤りによる実績取り下げ（同月）\n21:台帳誤り修正による公費負担者申立の過誤調整\n29:時効による公費負担者申立の取下げ\n32:給付管理票取消による実績の取下げ（※５）\n42:適正化（その他）による保険者申立の過誤取下げ\n43:適正化（ケアプラン点検）による保険者申立の過誤取下げ\n44:適正化（介護給付費通知）による保険者申立の過誤取下げ\n45:適正化（医療突合）による保険者申立の過誤取下げ\n46:適正化（縦覧点検）による保険者申立の過誤取下げ\n47:適正化（給付実績を活用した情報提供）による保険者申立の過誤取下げ\n49:適正化（その他）による保険者申立の過誤取下げ（同月）\n4A:適正化（ケアプラン点検）による保険者申立の過誤取下げ（同月）\n4B:適正化（介護給付費通知）による保険者申立の過誤取下げ（同月）\n4C:適正化（医療突合）による保険者申立の過誤取下げ（同月）\n4D:適正化（縦覧点検）による保険者申立の過誤取下げ（同月）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続き。上段の内容セル（32から70まで）は前ページから続いており、項番・コード名称の結合セルも前ページからの続きと思われるため、項番は読み取れず null とした。",
+      "上段の内容には対応するコード名称が見えないため name_path を空にした。",
+      "下段のコード名称列の縦書き「申立理由番号」を name_path に入れた。",
+      "※5 ※7 ※9 ※１２ などの注記記号は本文中に印字されているが、このページ内に注記本文がないため footnotes は空とした。",
+      "次ページへ続くかどうかは表下端の罫線の位置から推定した。"
+    ]
+  },
+  "raw_text": null
+}

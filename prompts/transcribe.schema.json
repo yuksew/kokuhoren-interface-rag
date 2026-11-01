@@ -1,10 +1,18 @@
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["printed_page", "tables", "footnotes", "uncertain"],
+  "required": [
+    "printed_page",
+    "tables",
+    "footnotes",
+    "uncertain"
+  ],
   "properties": {
     "printed_page": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "ページ下部に印字されたページ番号（例: '35', '62-7', '３４－１'）。原文の表記のまま。"
     },
     "tables": {
@@ -13,32 +21,97 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "table_kind", "title", "record", "columns", "items",
-          "continued_from_prev_page", "continues_to_next_page"
+          "table_kind",
+          "title",
+          "record",
+          "columns",
+          "column_map",
+          "items",
+          "continued_from_prev_page",
+          "continues_to_next_page"
         ],
         "properties": {
           "table_kind": {
             "type": "string",
-            "enum": ["record_layout", "code_list", "required_matrix", "interface_list", "other"]
+            "enum": [
+              "record_layout",
+              "code_list",
+              "required_matrix",
+              "interface_list",
+              "other"
+            ]
           },
           "title": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "description": "表の直前にある見出し（例: '・基本情報レコード', '（５）介護給付費等 明細書 明細情報レコード'）。無ければ null。"
           },
           "record": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["exchange_id", "name", "parent"],
+            "required": [
+              "exchange_id",
+              "name",
+              "parent"
+            ],
             "properties": {
-              "exchange_id": {"type": ["string", "null"]},
-              "name": {"type": ["string", "null"]},
-              "parent": {"type": ["string", "null"]}
-            }
+              "exchange_id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "parent": {
+                "type": "string"
+              }
+            },
+            "description": "読み取れない項目は空文字 \"\"。"
           },
           "columns": {
             "type": "array",
-            "items": {"type": "string"},
+            "items": {
+              "type": "string"
+            },
             "description": "見出し行の列名を左から順に。多段見出しは '※必須 > J121' のように ' > ' で連結する。"
+          },
+          "column_map": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "no",
+              "name",
+              "type",
+              "length",
+              "content",
+              "required",
+              "note"
+            ],
+            "description": "決まった欄（no/name/type/length/content/required/note）に対応する列名を columns の表記のまま入れる。required は必須記号の列が1列だけのとき。対応する列が無ければ空文字 \"\"。name に複数段の列（グループ見出し＋項目名）が対応する場合は項目名の列名を入れる。",
+            "properties": {
+              "no": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "length": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              },
+              "required": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
           },
           "items": {
             "type": "array",
@@ -46,41 +119,137 @@
               "type": "object",
               "additionalProperties": false,
               "required": [
-                "no", "no_raw", "name_path", "type", "length", "length_raw",
-                "content", "required", "required_by", "note"
+                "no",
+                "no_raw",
+                "name_path",
+                "type",
+                "length",
+                "length_raw",
+                "content",
+                "required",
+                "required_by",
+                "note",
+                "cells"
               ],
               "properties": {
-                "no": {"type": ["integer", "null"], "description": "項番を整数化したもの。整数にできなければ null。"},
-                "no_raw": {"type": ["string", "null"], "description": "項番セルの原文表記。"},
+                "no": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "項番を整数化したもの。整数にできなければ null。"
+                },
+                "no_raw": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "項番セルの原文表記。"
+                },
                 "name_path": {
                   "type": "array",
-                  "items": {"type": "string"},
+                  "items": {
+                    "type": "string"
+                  },
                   "description": "項目名（コード名称）。縦結合のグループ見出しがあれば外側から順に並べ、最後が項目名本体。"
                 },
-                "type": {"type": ["string", "null"], "description": "属性（例: 数字, 英数, 漢字, 数値, コード値）。"},
-                "length": {"type": ["integer", "null"], "description": "バイト数（桁数）を整数化したもの。空欄なら null。"},
-                "length_raw": {"type": ["string", "null"], "description": "バイト数セルの原文表記。"},
-                "content": {"type": ["string", "null"], "description": "「内容」列の全文。コード一覧ではコード値の一覧。"},
-                "required": {"type": ["string", "null"], "description": "必須列が1列だけのときの記号（◎ ○ △ など）。空欄・列なしは null。"},
+                "type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "属性（例: 数字, 英数, 漢字, 数値, コード値）。"
+                },
+                "length": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "バイト数（桁数）を整数化したもの。空欄なら null。"
+                },
+                "length_raw": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "バイト数セルの原文表記。"
+                },
+                "content": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "「内容」列の全文。コード一覧ではコード値の一覧。"
+                },
+                "required": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "必須列が1列だけのときの記号（◎ ○ △ など）。空欄・列なしは null。"
+                },
                 "required_by": {
                   "type": "array",
-                  "description": "必須が複数列（識別番号ごと・様式ごと）に分かれているとき、列ごとの記号。空欄の列は value を null にする。",
+                  "description": "必須記号（◎○△）の列が複数あるときだけ使う。列ごとの記号。空欄の列は value を null にする。記号以外の値の列は cells に入れる。",
                   "items": {
                     "type": "object",
                     "additionalProperties": false,
-                    "required": ["column", "value"],
+                    "required": [
+                      "column",
+                      "value"
+                    ],
                     "properties": {
-                      "column": {"type": "string"},
-                      "value": {"type": ["string", "null"]}
+                      "column": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
                     }
                   }
                 },
-                "note": {"type": ["string", "null"], "description": "「備考」列の全文。"}
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "「備考」列の全文。"
+                },
+                "cells": {
+                  "type": "array",
+                  "description": "column_map にも required_by にも当てはまらない列の値。該当する列はすべて、columns の表記のまま入れる（空欄は value を null）。",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "column",
+                      "value"
+                    ],
+                    "properties": {
+                      "column": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                }
               }
             }
           },
-          "continued_from_prev_page": {"type": "boolean"},
-          "continues_to_next_page": {"type": "boolean"}
+          "continued_from_prev_page": {
+            "type": "boolean"
+          },
+          "continues_to_next_page": {
+            "type": "boolean"
+          }
         }
       }
     },
@@ -90,16 +259,28 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["mark", "text"],
+        "required": [
+          "mark",
+          "text"
+        ],
         "properties": {
-          "mark": {"type": ["string", "null"]},
-          "text": {"type": "string"}
+          "mark": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
         }
       }
     },
     "uncertain": {
       "type": "array",
-      "items": {"type": "string"},
+      "items": {
+        "type": "string"
+      },
       "description": "読み取りに自信がない箇所の説明。"
     }
   }

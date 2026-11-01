@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 31,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9995,
+      "output_tokens": 1747,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.03746,
+    "cost_usd_batch": 0.01873,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 31,
+    "printed_page": "26",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（5）介護給付費等 明細書 明細情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "明細情報レコード",
+          "parent": "介護給付費等 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "※必須",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "※必須",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "03 を設定する(明細情報レコード)",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM を設定する)",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(ﾁｪｯｸﾃﾞｼﾞｯﾄ 1 桁含む)",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコード 6 桁",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコードごとの単位数",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "回数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "サービスコードごとの回数",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービスコードごとの算定額",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "摘要"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "100",
+            "content": "サービスコードごとの摘要",
+            "required": "○",
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目　○ : 請求内容により必要　△ : 任意設定　空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "訓練等給付費等明細書(様式第三)(サービス提供年月が平成 26 年 3 月以前は介護給付費・訓練等給付費等明細書(様式第三))において、障害支援区分(サービス提供年月が平成26年3月以前は障害程度区分)変更の場合に、変更前及び変更後の区分に係るサービスコードを記載した行の摘要欄に「令和〇〇年〇〇月〇〇日まで(から)」を記載する。"
+      },
+      {
+        "mark": "※2",
+        "text": "マイナスの単位数となるサービスコードを設定する場合は、単位数の左側に半角のマイナス(“-”)を付加する。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

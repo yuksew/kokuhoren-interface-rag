@@ -33,8 +33,8 @@ from pagemeta import doc_profile  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_MARKS = {"◎", "○", "△"}
 KNOWN_TYPES = {"数字", "英数", "漢字", "数値", "コード値", "英数カナ", "カナ", "日付", "全角", "半角", "英字", "英数字"}
-COMPARE_FIELDS = ["name", "type", "length", "content", "required", "required_by", "note"]
-TEXT_FIELDS = ["name", "content", "note"]
+COMPARE_FIELDS = ["name", "type", "length", "content", "required", "required_by", "note", "cells"]
+TEXT_FIELDS = ["name", "content", "note", "cells"]
 
 
 def norm(s) -> str:
@@ -44,6 +44,11 @@ def norm(s) -> str:
     s = unicodedata.normalize("NFKC", str(s))
     s = s.replace("◯", "○").replace("〇", "○")
     return re.sub(r"\s+", "", s)
+
+
+def is_mark(v) -> bool:
+    """必須記号として正しい値か。原本のセルには「○※2」のように注記が付くことがあるので許す。"""
+    return bool(re.fullmatch(r"[◎○△](※[0-9A-Za-z]+)*", norm(v)))
 
 
 def col_key(c) -> str:
@@ -73,6 +78,7 @@ def item_view(it: dict) -> dict:
         # 値は列の位置で比べる（列見出しの読み取りは表単位の columns で別途比べる）
         "required_by": " ".join(r.get("value") or "-" for r in rb) if rb else None,
         "note": it.get("note"),
+        "cells": " / ".join(f"{col_key(c.get('column'))}={c.get('value')}" for c in sorted(it.get("cells") or [], key=lambda c: col_key(c.get("column"))) if c.get("value") not in (None, "")) or None,
     }
 
 
@@ -122,7 +128,7 @@ def text_found(value, ptext: str) -> bool | None:
     return all(x in ptext for x in segs)
 
 
-def check_result(res: dict, ptext: str, cells: set[str] | None = None) -> tuple[list[dict], dict]:
+def check_result(res: dict, ptext: str, cells: set[str] | None = None, has_table: bool | None = None) -> tuple[list[dict], dict]:
     issues: list[dict] = []
     stats = {"tables": 0, "items": 0, "text_checked": 0, "text_missing": 0}
 
@@ -133,6 +139,14 @@ def check_result(res: dict, ptext: str, cells: set[str] | None = None) -> tuple[
     stats["tables"] = len(tables)
     if not tables:
         add("warn", "表が1つも書き起こされていない")
+    # 省略の検出: テキストレイヤでは表があるのに行が0、または uncertain に省略の記載
+    n_items = sum(len(t.get("items") or []) for t in tables)
+    if has_table and n_items == 0:
+        add("error", "[省略] テキストレイヤでは表があるのに行が0")
+    unc = " ".join(res.get("uncertain") or [])
+    if re.search(r"未実施|未転記|未記入|紙幅のため|一部のみ|items\s*(は|を)\s*(空|省略)|"
+                 r"(行|項番|転記|書き起こし)[^。、]{0,12}(を|は)?(省略し|割愛し)", unc):
+        add("error", "[省略] uncertain に省略の記載: " + unc[:80])
     for ti, t in enumerate(tables):
         items = t.get("items") or []
         stats["items"] += len(items)
@@ -150,6 +164,33 @@ def check_result(res: dict, ptext: str, cells: set[str] | None = None) -> tuple[
                     continue  # 結合行（同一項番の小項目）
                 if b != a + 1:
                     add("error", f"項番が連続していない: {a} → {b}", ti, b)
+        # 列名が原本の文字に存在するか（モデルが列名を作っていないか）
+        def col_in_text(c) -> bool:
+            # 最下段の見出しを空白・括弧で区切り、2文字以上の語がすべて原本の文字にあれば可とする
+            # （様式コード「0101」と縦書きの「居宅介護」は原本では別のセル）
+            toks = [x for x in re.split(r"[\s（）()\[\]]+", unicodedata.normalize("NFKC", str(c).split(">")[-1])) if len(norm(x)) >= 2]
+            return all(norm(x) in ptext for x in toks)
+
+        invented = [c for c in t.get("columns") or [] if not col_in_text(c)]
+        if invented:
+            add("warn", f"[列] 原本の文字に無い列名: {', '.join(invented)[:60]}", ti)
+        # 列の網羅: column_map ＋ required_by ＋ cells が columns を過不足なく覆うか
+        cols = {col_key(c) for c in t.get("columns") or [] if col_key(c)}
+        cmap = {col_key(c) for c in (t.get("column_map") or {}).values() if c}
+        if cols and "column_map" in t:
+            miss_rows, extra = 0, set()
+            missing_cols = set()
+            for it in items:
+                cov = cmap | {col_key(r.get("column")) for r in it.get("required_by") or []}                     | {col_key(c.get("column")) for c in it.get("cells") or []}
+                m = cols - cov
+                if m:
+                    miss_rows += 1
+                    missing_cols |= m
+                extra |= cov - cols
+            if miss_rows:
+                add("warn", f"[列] {miss_rows} 行で列が欠けている（{', '.join(sorted(missing_cols))[:60]}）", ti)
+            if extra:
+                add("warn", f"[列] columns に無い列名を使っている（{', '.join(sorted(extra))[:60]}）", ti)
         # 必須（列別）の列数が行ごとにそろっているか（空欄の列を省略していないか）
         widths = [len(it.get("required_by") or []) for it in items]
         if widths and max(widths) > 0 and min(widths) != max(widths):
@@ -170,11 +211,11 @@ def check_result(res: dict, ptext: str, cells: set[str] | None = None) -> tuple[
                 if ty and norm(ty) not in {norm(x) for x in KNOWN_TYPES}:
                     add("warn", f"未知の属性: {ty!r}", ti, no, "type", ri)
             r = it.get("required")
-            if r is not None and norm(r) not in {norm(x) for x in REQUIRED_MARKS}:
+            if r is not None and not is_mark(r):
                 add("error", f"必須の値が想定外: {r!r}", ti, no, "required", ri)
             for rb in it.get("required_by") or []:
                 v = rb.get("value")
-                if v is not None and norm(v) not in {norm(x) for x in REQUIRED_MARKS}:
+                if v is not None and not is_mark(v):
                     add("error", f"必須（{rb.get('column')}）の値が想定外: {v!r}", ti, no, "required_by", ri)
             # 5. テキストレイヤ照合
             v = item_view(it)
@@ -184,7 +225,10 @@ def check_result(res: dict, ptext: str, cells: set[str] | None = None) -> tuple[
                 stats["name_partial"] = stats.get("name_partial", 0) + 1
                 add("warn", f"項目名がPDFのセルと完全一致しない（部分一致のみ）: {(it.get('name_path') or [''])[-1]!r}", ti, no, "name", ri)
             for f in TEXT_FIELDS:
-                ok = text_found(v[f], ptext)
+                val = v[f]
+                if f == "cells":
+                    val = "\n".join(str(c.get("value")) for c in it.get("cells") or [] if c.get("value")) or None
+                ok = text_found(val, ptext)
                 if ok is None:
                     continue
                 stats["text_checked"] += 1
@@ -301,7 +345,10 @@ def main() -> int:
                 continue
             loaded[(m, p["doc_id"], p["page"])] = res
             ptext = page_text(p["doc_id"], res["domain"], p["page"], cache)
-            issues, stats = check_result(res, ptext, page_cells(p["doc_id"], res["domain"], p["page"], cache))
+            if p["doc_id"] not in profiles:
+                profiles[p["doc_id"]] = doc_profile(ROOT / "sources" / "raw" / res["domain"] / f"{p['doc_id']}.pdf")
+            issues, stats = check_result(res, ptext, page_cells(p["doc_id"], res["domain"], p["page"], cache),
+                                         profiles[p["doc_id"]][p["page"] - 1]["has_table"])
             entry["by_model"][m] = {"meta": data["meta"], "issues": issues, "stats": stats}
         if len(models) >= 2 and all((m, p["doc_id"], p["page"]) in loaded for m in models[:2]):
             entry["diffs"] = diff_models(loaded[(models[0], p["doc_id"], p["page"])],

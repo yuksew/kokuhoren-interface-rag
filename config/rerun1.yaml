@@ -1,0 +1,70 @@
+# パイロット後の改修（column_map / cells / 行の単位 / 省略禁止）の効果確認用。
+# 選定: 省略24 + 非標準列18 + 行の粒度10 + 対照（問題なし）5 = 57ページ
+run: rerun1-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+pages:
+  # 省略（Sonnet 23 + Haiku 1）
+  - shogai_jigyosho_r0710:83
+  - shogai_jigyosho_r0710:85
+  - shogai_jigyosho_r0710:87
+  - shogai_jigyosho_r0710:90
+  - shogai_jigyosho_r0710:95
+  - shogai_jigyosho_r0710:99
+  - shogai_jigyosho_r0710:101
+  - shogai_jigyosho_r0710:105
+  - shogai_jigyosho_r0710:108
+  - shogai_jigyosho_r0710:112
+  - shogai_jigyosho_r0710:115
+  - shogai_jigyosho_r0710:125
+  - shogai_jigyosho_r0710:126
+  - shogai_jigyosho_r0710:129
+  - shogai_jigyosho_r0710:132
+  - shogai_jigyosho_r0710:139
+  - shogai_jigyosho_r0710:141
+  - shogai_jigyosho_r0710:146
+  - shogai_jigyosho_r0710:147
+  - shogai_jigyosho_r0710:158
+  - shogai_jigyosho_r0710:295
+  - shogai_jigyosho_r0710:296
+  - shogai_jigyosho_r0710:297
+  - shogai_kyotsu_r0710:12
+  # 非標準列（インタフェース一覧・媒体種別・データ種別一覧・設定例・使用不可能文字・「説明」列）
+  - kaigo_jigyosho_r0604:35
+  - kaigo_jigyosho_r0604:36
+  - kaigo_jigyosho_r0604:38
+  - kaigo_jigyosho_r0604:41
+  - kaigo_jigyosho_r0604:42
+  - kaigo_kyotsu_r0806:12
+  - kaigo_kyotsu_r0806:16
+  - kaigo_kyotsu_r0806:26
+  - kaigo_kyotsu_r0806:92
+  - kaigo_kyotsu_r0806:93
+  - kaigo_kyotsu_r0806:100
+  - shogai_jigyosho_r0710:13
+  - shogai_jigyosho_r0710:14
+  - shogai_jigyosho_r0710:60
+  - shogai_jigyosho_r0710:82
+  - shogai_jigyosho_r0710:272
+  - shogai_jigyosho_r0710:273
+  - shogai_kyotsu_r0710:8
+  # 行の粒度（コード一覧の続き・コード値の並び）
+  - kaigo_kyotsu_r0806:43
+  - kaigo_kyotsu_r0806:44
+  - kaigo_kyotsu_r0806:46
+  - kaigo_kyotsu_r0806:47
+  - kaigo_kyotsu_r0806:53
+  - kaigo_kyotsu_r0806:55
+  - kaigo_kyotsu_r0806:68
+  - kaigo_kyotsu_r0806:71
+  - kaigo_kyotsu_r0806:84
+  - shogai_kyotsu_r0710:24
+  # 対照（パイロットで問題がなかったページ。悪化しないことの確認）
+  - kaigo_jigyosho_r0604:80
+  - kaigo_jigyosho_r0604:84
+  - kaigo_kyotsu_r0806:35
+  - shogai_jigyosho_r0710:20
+  - shogai_jigyosho_r0710:31

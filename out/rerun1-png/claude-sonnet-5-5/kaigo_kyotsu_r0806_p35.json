@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 35,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9971,
+      "output_tokens": 2491,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.044852,
+    "cost_usd_batch": 0.022426,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:32+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 35,
+    "printed_page": "31",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "1.4 コード一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:新規 2:変更 3:終了",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "受給者異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:受給資格取得 02:受給資格喪失\n03:広域連合における受給者の市町村間異動（政令市における受給者の区間異動）\n04:合併による新規\n99:その他異動",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "事業所異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "保険者異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "広域連合異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "市町村固有情報異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "市町村特別給付異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値（省略可能）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動事由",
+              "個人番号異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:受給者台帳の異動（新規、区間異動等）\n02:個人番号の変更による異動",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:（未使用） 2:修正 3:削除",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "媒体区分コード",
+              "保険者等"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:伝送 2:MO 4:FD （5:紙）\n※CD-R の場合は「4:FD」を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "媒体区分コード",
+              "事業所"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "2:MO 4:FD （5:紙）\n1 または 7:伝送（インターネット）\n※CD-R の場合は「4:FD」を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護保険の保険者番号\n[図] ×1 ×2 ×3 ×4 ×5 ×6 チェックデジット 市区町村コード 都道府県コード\n※チェックデジットはモジュラス10方式とする",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号\n広域連合（政令市）の場合は市町村コード（行政区番号）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "市町村コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "総務省にて定めるコード",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "年号コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:明治 2:大正 3:昭和 4:平成 5:令和",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "保険者区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:単独保険者 2:政令市 3:広域連合の保険者",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "介護保険の被保険者番号\n被保険者証記載の被保険者番号が10桁に満たない場合は右詰とし、左側を0で埋める\n福祉事務所から提供される生活保護受給者については先頭の1桁を“H”とすること",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:男 2:女",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "みなし要介護区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:通常の認定\n2:みなし認定（旧措置入所者）\n3:やむを得ない事由",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番3の「異動事由」は縦結合の行見出しとして name_path に入れた",
+      "項番5の「媒体区分コード」も縦結合の行見出しとして name_path に入れた",
+      "項番6の図は文字のみ書き写し、[図]で示した",
+      "属性の「ﾊﾞｲﾄ数」見出しは原文で折り返し表示"
+    ]
+  },
+  "raw_text": null
+}

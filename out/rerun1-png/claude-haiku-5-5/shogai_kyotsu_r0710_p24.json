@@ -1,0 +1,565 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 24,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 9991,
+      "output_tokens": 9240,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005619,
+    "cost_usd_batch": 0.00281,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_014Youwz13SPeMADP3yNACZv",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:03:33+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 24,
+    "printed_page": "22",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容 > 小項目",
+          "内容 > コード値"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "内容 > 小項目",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容 > コード値",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "施設入所支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:当該施設が単独施設\n2:当該施設に併設する施設が主たる施設\n3:当該施設が主たる施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "就労継続支援(B型)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:一般　2:強化型",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "児童デイ"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:児童デイサービス(Ⅰ)\n2:児童デイサービス(Ⅱ)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "身体入所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:内部障害者更生施設以外\n2:内部障害者更生施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "身体通所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:内部障害者更生施設以外\n2:内部障害者更生施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "知的入所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:併設施設\n2:主たる施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "身体通所授産"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:入所通所部\n2:入所分場\n3:通所本体\n4:通所分場",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "知的通所更生"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:入所通所部\n2:入所分場\n3:通所本体\n4:通所分場",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "知的通所授産"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:入所通所部\n2:入所分場\n3:通所本体\n4:通所分場",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "共同生活援助"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:介護サービス包括型\n2:外部サービス利用型\n3:日中サービス支援型",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "施設等の区分",
+              "地域移行支援※8"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:Ⅱ　2:Ⅲ　3:Ⅰ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "施設等の区分"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "生活介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "療養介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "自立訓練"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "就労移行支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "就労継続支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "施設入所支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "生活介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:21 人以上 40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上\n05:20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "自立訓練"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:21 人以上 40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上\n05:20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "就労移行支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:21 人以上 40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上\n05:20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "就労継続支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:21 人以上 40 人以下\n02:41 人以上 60 人以下\n03:61 人以上 80 人以下\n04:81 人以上\n05:20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "生活介護※11"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "04:81 人以上\n05:20 人以下\n06:21 人以上 30 人以下\n07:31 人以上 40 人以下\n08:41 人以上 50 人以下\n09:51 人以上 60 人以下\n10:61 人以上 70 人以下\n11:71 人以上 80 人以下\n12:5 人以下\n13:6 人以上 10 人以下\n14:11 人以上 20 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "定員区分(多機能型等定員区分(加算))",
+              "施設入所支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:40 人以下\n04:81 人以上\n05:41 人以上 50 人以下\n06:51 人以上 60 人以下\n07:61 人以上 70 人以下\n08:71 人以上 80 人以下",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード名称",
+                "value": "定員区分(多機能型等定員区分(加算))"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページの指示は『次のページ』だが、添付は印字ページ22の1ページのみのため、このページの表を書き起こした。",
+      "項番17・18の表は『内容』列が小項目名とコード値の2列に分かれているように見えたため、列を『内容 > 小項目』『内容 > コード値』として扱った。",
+      "項番17の『2:当該施設に併設する施設が主たる施設』『3:当該施設が主たる施設』『1:一般　2:強化型』『1:児童デイサービス(Ⅰ)』『2:児童デイサービス(Ⅱ)』『1:内部障害者更生施設以外』『1:併設施設』『2:主たる施設』『1:入所通所部』など複数の行に取消線が見えるが、取消線の有無は書き起こしていない。取消線の対象は画像から確定できない。",
+      "項番17の身体入所更生と身体通所更生、知的通所授産などは同一セルに複数の名称があるため、名称ごとに行を分けて同じ内容を入れた。",
+      "『※8』『※11』の脚注本文はこのページにないため footnotes は空。",
+      "項番18の定員区分の名称は原文の括弧の全角・半角を画像から判別しきれなかった。",
+      "項番18の『生活介護』『自立訓練』『就労移行支援』『就労継続支援』『施設入所支援』などは複数の区分に出現するため、区分ごとに行を分けた。"
+    ]
+  },
+  "raw_text": null
+}

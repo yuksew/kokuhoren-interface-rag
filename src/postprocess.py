@@ -179,7 +179,8 @@ def main() -> int:
                             logical.append(cur)
                         cur = {"doc_id": doc, "pages": [page], "table_kind": t.get("table_kind"),
                                "title": t.get("title"), "record": t.get("record"),
-                               "columns": t.get("columns"), "items": list(t.get("items") or []),
+                               "columns": t.get("columns"), "column_map": t.get("column_map"),
+                               "items": list(t.get("items") or []),
                                "starts_mid_table": bool(t["continued_from_prev_page"])}
                 prev_page = page
             if cur:

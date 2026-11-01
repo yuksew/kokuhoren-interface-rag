@@ -19,7 +19,7 @@ from pricing import PRICES, cost_usd  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FIELDS = [("no_raw", "項番"), ("name", "項目名"), ("type", "属性"), ("length", "桁数"),
-          ("content", "内容"), ("required", "必須"), ("note", "備考")]
+          ("content", "内容"), ("required", "必須"), ("note", "備考"), ("cells", "その他の列")]
 CAT_LABEL = {"simple": "単純", "merged": "セル結合", "split": "改ページ分断", "matrix": "必須対応表"}
 
 CSS = """
@@ -79,6 +79,7 @@ def item_cells(it: dict) -> dict:
         "content": it.get("content"),
         "required": req,
         "note": it.get("note"),
+        "cells": "\n".join(f"{c.get('column')}: {c.get('value') if c.get('value') is not None else '－'}" for c in it.get("cells") or []) or None,
     }
 
 
@@ -112,7 +113,7 @@ def render_model(model: str, res: dict | None, v: dict, other: str | None, diffs
             continue
         if d["field"] == "row":
             only_rows.add((d["table"], d[idx_key]))
-        elif d["field"] in ("name", "type", "length", "content", "required", "required_by", "note"):
+        elif d["field"] in ("name", "type", "length", "content", "required", "required_by", "note", "cells"):
             f = "required" if d["field"] == "required_by" else d["field"]
             diff_cells[(d["table"], d[idx_key])][f] = d["b" if side == "a" else "a"]
     miss = {(i["table"], i.get("row"), i["field"]) for i in iss if i["level"] == "text"}
@@ -131,6 +132,9 @@ def render_model(model: str, res: dict | None, v: dict, other: str | None, diffs
                    f' <span class="meta">record={esc(rec.get("name"))} parent={esc(rec.get("parent"))} '
                    f'id={esc(rec.get("exchange_id"))}</span></summary>')
         out.append(f'<div class="meta">列: {esc(" | ".join(t.get("columns") or []))}</div>')
+        cm = {k: v for k, v in (t.get("column_map") or {}).items() if v}
+        if cm:
+            out.append(f'<div class="meta">列の対応: {esc(", ".join(f"{k}={v}" for k, v in cm.items()))}</div>')
         out.append('<table class="items"><tr>' + "".join(f"<th>{lbl}</th>" for _, lbl in FIELDS) + "</tr>")
         for ri, it in enumerate(t.get("items") or []):
             c = item_cells(it)
