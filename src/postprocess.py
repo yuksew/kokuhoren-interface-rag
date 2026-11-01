@@ -122,7 +122,7 @@ def build_logical(pages_by_doc: dict[str, list[tuple[int, dict]]], profiles: dic
                             and all(p["blank"] for p in profiles[doc][prev_page:page - 1]))
                 if joinable:
                     cur["pages"].append(page)
-                    cur["items"].extend(t.get("items") or [])
+                    cur["items"].extend({**it, "page": page} for it in t.get("items") or [])
                     joined += 1
                 else:
                     if cur:
@@ -130,7 +130,7 @@ def build_logical(pages_by_doc: dict[str, list[tuple[int, dict]]], profiles: dic
                     cur = {"doc_id": doc, "pages": [page], "table_kind": t.get("table_kind"),
                            "title": t.get("title"), "record": t.get("record"),
                            "columns": t.get("columns"), "column_map": t.get("column_map"),
-                           "items": list(t.get("items") or []),
+                           "items": [{**it, "page": page} for it in t.get("items") or []],  # 出典表示用にページを持たせる
                            "starts_mid_table": bool(t["continued_from_prev_page"])}
                     if "source_model" in t:
                         cur["source_model"] = t["source_model"]
