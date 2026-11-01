@@ -8,7 +8,7 @@
 sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
-src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, query_db.py, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, query_db.py, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -45,6 +45,7 @@ uv run python src/apply_review.py                              # 判定を反映
 uv run python src/build_db.py
 uv run python src/query_db.py 受給者証番号 --domain shogai        # 全文検索（3文字以上）
 uv run python src/query_db.py --required 0101                     # 列（様式種別番号など）で ◎ の項目
+uv run python src/query_db.py --exchange J611                     # 交換情報識別番号のレコードの項目
 
 # API を使わずにパイプラインだけ試す
 uv run python src/transcribe.py --provider mock && uv run python src/validate.py --run mock-png && uv run python src/report.py --run mock-png

@@ -7,7 +7,8 @@ usage: uv run python src/build_db.py [--run prod1-png-post] [--src reviewed|adop
 テーブル
   documents      文書（版）。sources/manifest.yaml の内容
   pages          ページ（印刷ページ番号・ページ下の注記）
-  spec_tables    論理的な表（ページをまたぐ表は結合済み）
+  spec_tables    論理的な表（ページをまたぐ表は結合済み）。節・交換情報識別番号つき
+  table_exchange_ids  表 → 交換情報識別番号（1つの表が複数の番号に対応することがある）
   items          表の行（項番ごと）。name は最下段の項目名、name_full は階層つき
   item_values    行の列ごとの値（必須対応表の ◎○△、インタフェース一覧の識別・周期など）
   item_notes     行に付いた「※n」注記の本文
@@ -30,6 +31,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from exchange_ids import assign as assign_exchange_ids  # noqa: E402
 from review_core import col_key  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -50,7 +52,12 @@ CREATE TABLE spec_tables (
   title TEXT, table_kind TEXT, record_exchange_id TEXT, record_name TEXT, record_parent TEXT,
   page_from INTEGER, page_to INTEGER, pages TEXT,        -- pages は JSON 配列
   columns TEXT, column_map TEXT,                          -- JSON
-  source_model TEXT, starts_mid_table INTEGER, no_min INTEGER, no_max INTEGER, no_gaps TEXT
+  source_model TEXT, starts_mid_table INTEGER, no_min INTEGER, no_max INTEGER, no_gaps TEXT,
+  section_no TEXT, section_name TEXT,                     -- 表が属する節（原本の見出し）
+  exchange_source TEXT                                    -- record_exchange_id をどう決めたか（exchange_ids.py）
+);
+CREATE TABLE table_exchange_ids (
+  table_id INTEGER NOT NULL REFERENCES spec_tables(table_id), exchange_id TEXT NOT NULL, source TEXT
 );
 CREATE TABLE items (
   item_id INTEGER PRIMARY KEY, table_id INTEGER NOT NULL REFERENCES spec_tables(table_id), seq INTEGER NOT NULL,
@@ -73,13 +80,13 @@ CREATE INDEX ix_items_doc_page ON items(doc_id, page);
 CREATE INDEX ix_items_name ON items(name);
 CREATE INDEX ix_values_item ON item_values(item_id);
 CREATE INDEX ix_values_col ON item_values(column_key, value);
-CREATE INDEX ix_tables_exchange ON spec_tables(record_exchange_id);
+CREATE INDEX ix_tables_exchange ON table_exchange_ids(exchange_id);
 CREATE VIRTUAL TABLE items_fts USING fts5(
   name_full, content, note, values_text, table_title, tokenize='trigram'
 );
 CREATE VIEW v_items AS
 SELECT i.item_id, d.domain, d.volume, d.edition, i.doc_id, i.page, p.printed_page,
-       t.table_id, t.title AS table_title, t.table_kind, t.record_exchange_id, t.record_name,
+       t.table_id, t.title AS table_title, t.table_kind, t.record_exchange_id, t.record_name, t.section_no, t.section_name,
        i.no, i.no_raw, i.name, i.name_full, i.type, i.length, i.length_raw, i.content, i.required, i.note, i.human_fixed
 FROM items i JOIN spec_tables t USING (table_id) JOIN documents d ON d.doc_id = i.doc_id
 LEFT JOIN pages p ON p.doc_id = i.doc_id AND p.page = i.page;
@@ -167,6 +174,28 @@ def main() -> int:
             con.execute("INSERT INTO items_fts (rowid, name_full, content, note, values_text, table_title) VALUES (?,?,?,?,?,?)",
                         (iid, " > ".join(path), it.get("content") or "", it.get("note") or "", "\n".join(vals), lt.get("title") or ""))
 
+    # 交換情報識別番号と節を、原本の見出しと書き起こしから補う
+    con.row_factory = sqlite3.Row
+    tables = [dict(r, columns=json.loads(r["columns"] or "[]"))
+              for r in con.execute("SELECT t.*, d.domain FROM spec_tables t JOIN documents d USING (doc_id)")]
+    idv: dict[int, list[str]] = {}
+    for r in con.execute("SELECT item_id, value FROM item_values WHERE column_name LIKE '%識別%'"):
+        idv.setdefault(r["item_id"], []).append(r["value"])
+    items_by_table: dict[int, list[dict]] = {}
+    for r in con.execute("SELECT item_id, table_id, name, content, note FROM items"):
+        items_by_table.setdefault(r["table_id"], []).append({**dict(r), "ids": idv.get(r["item_id"], [])})
+    for tid, r in assign_exchange_ids(tables, items_by_table).items():
+        con.execute("UPDATE spec_tables SET section_no=?, section_name=?, record_exchange_id=?, exchange_source=? WHERE table_id=?",
+                    (r["section_no"], r["section_name"], ",".join(r["ids"]) or None, r["source"], tid))
+        con.executemany("INSERT INTO table_exchange_ids VALUES (?,?,?)", [(tid, x, r["source"]) for x in r["ids"]])
+        stats[f"exchange_{r['source'] or 'none'}"] += 1
+    # 全文検索の表題欄に、節の名前と識別番号も入れる
+    for r in con.execute("SELECT table_id, title, section_name, record_exchange_id FROM spec_tables").fetchall():
+        txt = " ".join(x for x in (r["title"], r["section_name"], r["record_exchange_id"]) if x)
+        con.execute("UPDATE items_fts SET table_title=? WHERE rowid IN (SELECT item_id FROM items WHERE table_id=?)", (txt, r["table_id"]))
+    con.row_factory = None
+    con.execute("INSERT INTO items_fts(items_fts) VALUES('optimize')")
+
     dec = ROOT / "reports" / f"review_decisions.{args.run}.json"
     info = {"built_at": dt.datetime.now().isoformat(timespec="seconds"), "run": args.run, "source": str(src.relative_to(ROOT)),
             "review_decisions_sha256": hashlib.sha256(dec.read_bytes()).hexdigest() if dec.exists() else "",
@@ -179,6 +208,7 @@ def main() -> int:
     tmp.replace(out)
     print(f"文書 {len(docs)} / 表 {stats['tables']} / 行 {stats['items']}（人が修正 {stats['human_fixed']}）"
           f" / 列の値 {stats['values']} / 注記 {stats['notes']}")
+    print("交換情報識別番号の決め方（表の数）: " + "、".join(f"{k[9:]} {v}" for k, v in sorted(stats.items()) if k.startswith("exchange_")))
     print(f"→ {out.relative_to(ROOT)}（{out.stat().st_size / 1e6:.1f} MB）")
     return 0
 
