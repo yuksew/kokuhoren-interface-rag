@@ -183,19 +183,24 @@ class Retriever:
         top = sorted(score, key=lambda c: -score[c])[:k]
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
 
-    def search_multi(self, queries: list[str], k: int = 10, **kw) -> list[dict]:
-        """複数の検索文（元の質問＋言い換え）の結果を、順位で融合する（RRF）。1つ目（元の質問）を少し重くする。"""
+    def search_multi(self, queries: list[str], k: int = 10, keep: int | None = None, **kw) -> list[dict]:
+        """複数の検索文（元の質問＋言い換え）の結果を、順位で融合する（RRF）。1つ目（元の質問）を少し重くする。
+        言い換えがずれても元の質問で引けていたものを失わないよう、元の質問の上位 keep 件（既定 k の半分）は必ず残す。"""
         if len(queries) <= 1:
             return self.search(queries[0], k=k, **kw)
+        keep = k // 2 if keep is None else keep
+        first = self.search(queries[0], k=50, **kw)
         score: dict[int, float] = {}
         via: dict[int, list[str]] = {}
         for qi, q in enumerate(queries):
             w = 1.2 if qi == 0 else 1.0
-            for rank, h in enumerate(self.search(q, k=50, **kw)):
+            for rank, h in enumerate(first if qi == 0 else self.search(q, k=50, **kw)):
                 c = h["chunk_id"]
                 score[c] = score.get(c, 0.0) + w / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"q{qi}#{rank + 1}")
-        top = sorted(score, key=lambda c: -score[c])[:k]
+        top = [h["chunk_id"] for h in first[:keep]]
+        top += [c for c in sorted(score, key=lambda c: -score[c]) if c not in top][: k - len(top)]
+        top.sort(key=lambda c: -score[c])
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
 
     def info_names(self) -> dict[tuple[str, str], str]:
