@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 25,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 4640,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00333,
+    "cost_usd_batch": 0.001665,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 25,
+    "printed_page": "13",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "居住費（ユニット型個室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者の居住費（ユニット型個室）負担限度額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "居住費（ユニット型個室的多床室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者の居住費（ユニット型個室的多床室）負担限度額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "居住費（従来型個室（特養等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者の居住費（従来型個室（特養等））負担限度額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "居住費（従来型個室（老健、医療院等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者の居住費（従来型個室（老健、医療院等））負担限度額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "居住費（多床室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者の居住費（多床室Ⅰ（特養等））負担限度額、居住費（多床室Ⅱ（老健・医療院））負担限度額または居住費（多床室Ⅲ（老健・医療院等））負担限度額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "単位数単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者が事業所から受けた介護サービスの単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "保険給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "保険給付率（100分の○○○）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "公費１給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費１給付率（100分の○○○）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "公費２給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費２給付率（100分の○○○）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "公費３給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費３給付率（100分の○○○）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "サービス日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "被保険者が事業所から受けた介護サービスの日数・回数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護サービスの単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "特定入所者介護サービス費等"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護サービスの特定入所者介護サービス費等を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※５\n※S",
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護サービスの利用者負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "食事標準負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護サービスの食事標準負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※５\n※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "種別は一文字で出力される。(サ:サービス計画費請求明細書、請:請求明細書、給:給付管理票)"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が平成17年9月以前の場合は、食事提供費にかかる値を出力する。"
+      },
+      {
+        "mark": "※6",
+        "text": "令和8年9月以降出力分では、「被保険者の居住費（多床室Ⅰ（特養等））負担限度額、居住費（多床室Ⅱ（老健・医療院））負担限度額または居住費（多床室Ⅲ（老健・医療院等））負担限度額」を出力する。令和8年8月以前出力分では、「居住費（多床室）負担限度額」を出力する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番29の内容欄「居住費（多床室Ⅱ（老健・医療院））」の「医療院」の字句は、画像が不鮮明なため「療養院」ではないかと読み違えた可能性があるため確認が必要。",
+      "前ページから続く表と判断したが、表見出しがページ内にないため、前ページの有無は後処理での確認が必要。"
+    ]
+  },
+  "raw_text": null
+}

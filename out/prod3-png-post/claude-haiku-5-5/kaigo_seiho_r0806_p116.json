@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 116,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 991,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001506,
+    "cost_usd_batch": 0.000753,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 116,
+    "printed_page": "44-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 70,
+            "no_raw": "７０",
+            "name_path": [
+              "過誤回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "過誤の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 71,
+            "no_raw": "７１",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "審査年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "基本情報レコード※4参照。"
+      },
+      {
+        "mark": "※5",
+        "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。"
+      },
+      {
+        "mark": "※6",
+        "text": "基本情報レコード※5参照。"
+      },
+      {
+        "mark": "※7",
+        "text": "交換情報識別番号が\"1111\"、\"1112\"、\"1113\"、\"1114\" 、\"1115\" 、\"1116\"、\"1117\"、\"1118\"または\"1119\"の場合は\" DC \"。"
+      },
+      {
+        "mark": "※8",
+        "text": "リハビリテーション点数、処置点数、手術点数、麻酔点数、放射線治療点数の合計を設定する。(緊急時治療管理、所定疾患施設療養の単位数は設定しない)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "ページ下部のページ番号は「- 44-3 -」と読み取ったが、printed_page は原文表記の「44-3」として記録した。",
+      "前ページからの続きと判断したが、表見出しが見えないため続き扱いは推定。",
+      "項番70・71の備考欄の※Sや※1は、表の備考欄の記号をそのまま記録した。"
+    ]
+  },
+  "raw_text": null
+}

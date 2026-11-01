@@ -1,0 +1,675 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 108,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 4779,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.0034,
+    "cost_usd_batch": 0.0017,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 108,
+    "printed_page": "４１",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "基本情報レコード※5参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "基本情報レコード※4参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "レコード種別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "交換情報識別番号が”1111”、”1112”、”1113”、”1114”、”1115”、”1116”、”1117”、”1118”または”1119”の場合は”D1”。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "サービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２\n※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "サービス項目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２\n※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "単位数を設定する\n食事サービスの場合、単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※８\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※8",
+                "text": "以下のサービスを記載する場合には、“0”またはNULL を設定する。・  福祉用具貸与(介護予防を含む)・  特定施設入居者生活介護における外部サービス利用型の福祉用具貸与・  介護予防特定施設入居者生活介護における外部サービス利用型の介護予防訪問介護、介護予防通所介護、介護予防通所リハ、介護予防福祉用具貸与(ただし、日割り計算用のサービスコードを記載する場合を除く)・  訪問看護(定期巡回・随時対応訪問介護看護)、介護予防訪問介護、介護予防通所介護、介護予防通所リハビリテーション、夜間対応型訪問介護、小規模多機能型居宅介護(介護予防を含む)、定期巡回・随時対応型訪問介護看護及び複合型サービス(看護小規模多機能型居宅介護)(ただし、日割り計算用のサービスコード並びに算定単位が「1 回につき」及び「1 日につき」のサービスコードを記載する場合を除く",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "日数または回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "公費１対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費１対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "公費２対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費２対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "公費３対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費３対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス単位数を設定する\n食事サービスの場合、金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "公費１対象サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費１対象分単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "公費２対象サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費２対象分単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "公費３対象サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費３対象分単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "摘要"
+            ],
+            "type": "英数",
+            "length": 20,
+            "length_raw": "２０",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "※９",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※9",
+                "text": "以下のサービスを記載する場合には、XXXXX-YYYYYY(XXXXX:企業コード、YYYYYY:商品コード)の12 桁のコードを設定する。・  福祉用具貸与(介護予防を含む)・  特定施設入居者生活介護における外部サービス利用型の福祉用具貸与・  介護予防特定施設入居者生活介護における外部サービス利用型の介護予防福祉用具貸与",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "決定後",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "決定後の単位数を設定する\n食事サービスの場合、決定後の単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※８\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※8",
+                "text": "以下のサービスを記載する場合には、“0”またはNULL を設定する。・  福祉用具貸与(介護予防を含む)・  特定施設入居者生活介護における外部サービス利用型の福祉用具貸与・  介護予防特定施設入居者生活介護における外部サービス利用型の介護予防訪問介護、介護予防通所介護、介護予防通所リハ、介護予防福祉用具貸与(ただし、日割り計算用のサービスコードを記載する場合を除く)・  訪問看護(定期巡回・随時対応訪問介護看護)、介護予防訪問介護、介護予防通所介護、介護予防通所リハビリテーション、夜間対応型訪問介護、小規模多機能型居宅介護(介護予防を含む)、定期巡回・随時対応型訪問介護看護及び複合型サービス(看護小規模多機能型居宅介護)(ただし、日割り計算用のサービスコード並びに算定単位が「1 回につき」及び「1 日につき」のサービスコードを記載する場合を除く",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "決定後",
+              "日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "サービス提供年月が平成15年4月以降平成17年9月以前の場合、食事サービス(サービス種類コード50)の該当情報を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "決定後",
+              "公費１対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の公費１対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "決定後",
+              "公費２対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の公費２対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "決定後",
+              "公費３対象日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の公費３対象分の日数・回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の末尾（項番25）の下で表が次ページへ続くかどうかは、このページからは判断できない。continues_to_next_page は推定である。",
+      "表の見出しに記載された記号（※１〜※９）の意味は、このページには記載がないため不明。備考欄は原文どおりに書き写した。",
+      "「※S」の S は全角か半角か画像からは判別しにくいため、半角の S として書き写した。",
+      "項目名や内容の一部は折り返して表示されていたため、行をつなげて1行にした（例: 公費１対象サービス単位数、サービス提供年月の(YYYYMM)）。"
+    ]
+  },
+  "raw_text": null
+}

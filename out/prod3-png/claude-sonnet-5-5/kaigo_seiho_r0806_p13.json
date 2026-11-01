@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 13,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 1827,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.038476,
+    "cost_usd_batch": 0.019238,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 13,
+    "printed_page": "6",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.1 介護給付費公費負担者情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "公費負担者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "今回審査済の給付管理票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1122\n※1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票\n※2"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4タテ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護給付費資格照合表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳との資格チェックにおいて警告エラーとなった情報を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1211"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費資格照合表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳との資格チェックにおいて警告エラーとなった情報を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1231"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費公費負担者情報",
+              "公費負担者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費公費負担者情報",
+              "介護給付費資格照合表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費公費負担者情報",
+              "介護予防・日常生活支援総合事業費資格照合表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成18年3月以前の交換情報識別番号は、“1121”を設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "帳票の様式については、インタフェース項目に揃えた様式で提供する。\nただし、大量な枚数になる場合等は、帳票での提供ができない場合がある。"
+      }
+    ],
+    "uncertain": [
+      "2つ目の表の出力媒体種別は3列（伝送返却・磁気返却・帳票返却）に分かれているが、見出しが結合されているためcellsに改行区切りで1つにまとめた"
+    ]
+  },
+  "raw_text": null
+}

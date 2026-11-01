@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 51,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 4649,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003333,
+    "cost_usd_batch": 0.001667,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 51,
+    "printed_page": "203",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力※1",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力※1",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "リハビリテーション提供体制（総合リハビリテーション施設）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（総合リハビリテーション施設）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "リハビリテーション提供体制（理学療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（理学療法Ⅱ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "リハビリテーション提供体制（理学療法Ⅲ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（理学療法Ⅲ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "リハビリテーション提供体制（作業療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（作業療法Ⅱ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "リハビリテーション提供体制（精神科作業療法）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（精神科作業療法）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "リハビリテーション提供体制（その他）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "リハビリテーション提供体制（その他）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "リハビリテーションの加算状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "22：短期入所療養介護、52：介護老人保健施設のリハビリテーションの加算状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "療養環境基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "療養環境基準をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "医師の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "医師の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "看護職員の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "看護職員の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "理学療法士の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "理学療法士の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "作業療法士の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "作業療法士の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "介護職員の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "介護職員の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "介護支援専門員の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "介護支援専門員の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "介護従業者の欠員による減算の状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "介護従業者の欠員による減算の状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "感染対策指導管理の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "感染対策指導管理の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "５７",
+            "name_path": [
+              "重症皮膚潰瘍管理指導の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "重症皮膚潰瘍管理指導の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出し行が本ページ先頭にあり表題がないため、前ページからの続き（見出しの繰り返し）と判断したが確証はない。",
+      "ページ末尾の表が次ページへ続くかは本ページのみでは判断できない。",
+      "項目名・内容の「リハビリテーション」の表記は、原本が半角カナ（ﾘﾊﾋﾞﾘﾃｰｼｮﾝ）に見えるが、全角カナとして書き起こした。",
+      "必須入力※1 列は全行で空欄のため null とした。",
+      "47の内容は、原本で「、」の後に折り返しがあるため1行にまとめた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 15,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 4284,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003152,
+    "cost_usd_batch": 0.001576,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 15,
+    "printed_page": "7",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細レコード",
+          "parent": "介護給付費公費負担者情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1121”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "審査年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービスの給付対象年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "事業所番号（居宅介護支援事業所）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "居宅介護支援事業所作成の場合、支援事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "給付管理票情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票の作成区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "給付管理票作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付管理票の作成年月日（西暦年月日(YYYYMMDD)）を出力する\n新規作成の場合、作成年月日を出力する\n修正または取消の場合は修正年月日または取消年月日を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票の種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※6",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "給付管理票明細行番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "同一被保険者の種別区分ごとの給付管理票連番を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "01～98:明細レコード\n99:終端レコード",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者証記載の被保険者番号を記載する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "被保険者生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "被保険者性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "被保険者の性別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "要介護状態区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "限度額適用期間(開始)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "限度額適用期間の開始年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "限度額適用期間(終了)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "限度額適用期間の終了年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "訪問通所／短期入所支給限度額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "区分支給限度基準額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票を作成した居宅サービス計画作成者の区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "事業所番号（サービス事業所）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "サービス事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の最終行（項番19）の下で表が次ページに続くかどうかは、このページだけでは確定できないため continues_to_next_page を true にした。",
+      "項番17の備考「※S」の記号が「※5」などではなく「S」かどうか不確か。原文どおり「※S」と書いた。",
+      "項番8・項番10の内容・備考の改行は、セル内で区切りとして読める箇所を\\nで残した。折り返しか区切りか判断に迷う箇所がある。",
+      "交換情報識別番号は本表のレコード単位では印字されていないため exchange_id は空文字とした。",
+      "本ページには表の注記（※1～※6、※S の説明）は印字されていないため footnotes は空とした。"
+    ]
+  },
+  "raw_text": null
+}

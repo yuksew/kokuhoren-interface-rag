@@ -1,0 +1,813 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 18,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 3331,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.053486,
+    "cost_usd_batch": 0.026743,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 18,
+    "printed_page": "14",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 84,
+            "no_raw": "８４",
+            "name_path": [
+              "事業所評価加算（申出）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "事業所評価加算（申出）の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４、※１８、※３９、※４６、※５９",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "、※18",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※39",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※46",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※59",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 85,
+            "no_raw": "８５",
+            "name_path": [
+              "事業所評価加算（決定）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "事業所評価加算（決定）の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４、※１８、※４０、※４７、※６０",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "、※18",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※40",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※47",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※60",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 86,
+            "no_raw": "８６",
+            "name_path": [
+              "緊急受入体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急受入体制の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:対応不可\n2:対応可\n※４、※１８、※２９",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "、※18",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 87,
+            "no_raw": "８７",
+            "name_path": [
+              "夜間看護体制加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "夜間看護体制加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３、※４、※１８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※4、",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "、※18",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 88,
+            "no_raw": "８８",
+            "name_path": [
+              "特定事業所加算（居宅介護支援）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特定事業所加算（居宅介護支援）の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３、※４、※１８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※4、",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "、※18",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 89,
+            "no_raw": "８９",
+            "name_path": [
+              "介護支援専門員数（専従の常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "介護支援専門員数（専従の常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 90,
+            "no_raw": "９０",
+            "name_path": [
+              "介護支援専門員数（専従の非常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "介護支援専門員数（専従の非常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 91,
+            "no_raw": "９１",
+            "name_path": [
+              "介護支援専門員数（兼務の常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "介護支援専門員数（兼務の常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 92,
+            "no_raw": "９２",
+            "name_path": [
+              "介護支援専門員数（兼務の非常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "介護支援専門員数（兼務の非常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 93,
+            "no_raw": "９３",
+            "name_path": [
+              "訪問介護サービス提供責任者数"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "訪問介護サービス提供責任者数を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 94,
+            "no_raw": "９４",
+            "name_path": [
+              "訪問介護員数（専従の常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "訪問介護員数（専従の常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 95,
+            "no_raw": "９５",
+            "name_path": [
+              "訪問介護員数（専従の非常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "訪問介護員数（専従の非常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 96,
+            "no_raw": "９６",
+            "name_path": [
+              "訪問介護員数（兼務の常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "訪問介護員数（兼務の常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 97,
+            "no_raw": "９７",
+            "name_path": [
+              "訪問介護員数（兼務の非常勤者）"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "訪問介護員数（兼務の非常勤者）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 98,
+            "no_raw": "９８",
+            "name_path": [
+              "訪問介護員数（常勤換算後の人数）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "訪問介護員数（常勤換算後の人数）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１３\n※１４",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 99,
+            "no_raw": "９９",
+            "name_path": [
+              "利用定員数"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "利用定員数を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※１１\n※１５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※15",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 100,
+            "no_raw": "100",
+            "name_path": [
+              "指定有効開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "指定有効開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※２\n※１８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "リハビリテーション提供体制(理学療法I)の有無数字リハビリテーション提供体制(理学療法I)の有無をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きの表のため、record は空文字",
+      "必須入力の新規・変更・終了列はすべて空欄と判断"
+    ]
+  },
+  "raw_text": null
+}

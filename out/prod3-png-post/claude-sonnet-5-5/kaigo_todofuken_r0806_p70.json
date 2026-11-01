@@ -1,0 +1,609 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 70,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 3218,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.052356,
+    "cost_usd_batch": 0.026178,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 70,
+    "printed_page": "25",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "施設等の区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "施設等の区分をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "人員配置区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "人員配置区分をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "特別地域加算の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特別地域加算の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急時訪問看護加算（緊急時対応加算）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "特別管理体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特別管理体制の対応をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "機能訓練指導体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "機能訓練指導体制の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "食事提供体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "入浴介助加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入浴介助加算をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "特別入浴介助体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特別入浴介助体制の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "常勤専従医師配置の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "常勤専従医師配置の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "医師の配置基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "医師の配置基準をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "精神科医師定期的療養指導の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "精神科医師定期的療養指導の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "夜間勤務条件基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "夜間勤務条件基準をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "認知症専門棟の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "認知症専門棟の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 40,
+            "no_raw": "４０",
+            "name_path": [
+              "食事提供の状況"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供の状況をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "送迎体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎体制の対応をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（総合ﾘﾊﾋﾞﾘﾃｰｼｮﾝ施設）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（総合ﾘﾊﾋﾞﾘﾃｰｼｮﾝ施設）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅱ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅲ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅲ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（作業療法Ⅱ）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（作業療法Ⅱ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（精神科作業療法）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（精神科作業療法）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（その他）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（その他）の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝの加算状況の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "22：短期入所療養介護、52：介護老人保健施設のﾘﾊﾋﾞﾘﾃｰｼｮﾝの加算状況の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "療養環境基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "療養環境基準をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページから続く表（項番26から開始）。",
+      "項目名・内容中の「ﾘﾊﾋﾞﾘﾃｰｼｮﾝ」は半角カナ風の小さい文字で印字されており、表記が原文と完全一致か不確か。",
+      "左下の縦書き「加除第11号」は欄外のため無視した。"
+    ]
+  },
+  "raw_text": null
+}

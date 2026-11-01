@@ -1,0 +1,289 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_todofuken_r0806",
+ "page": 52,
+ "edition": "令和8年6月版",
+ "volume": "都道府県編",
+ "printed_page": "２０－４",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力※1",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力※1",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 58,
+     "no_raw": "５８",
+     "name_path": [
+      "薬剤管理指導の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "薬剤管理指導の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 59,
+     "no_raw": "５９",
+     "name_path": [
+      "障害者生活支援体制の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "障害者生活支援体制の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:加算Ⅰ\n3:加算Ⅱ",
+     "cells": []
+    },
+    {
+     "no": 60,
+     "no_raw": "６０",
+     "name_path": [
+      "生活保護法による指定の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "生活保護法第54条の2による介護機関の指定等の有無を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:指定無し\n2:指定有り",
+     "cells": []
+    },
+    {
+     "no": 61,
+     "no_raw": "６１",
+     "name_path": [
+      "地域区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "厚生労働省の定める事業所が所在する地域に該当する区分をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 62,
+     "no_raw": "６２",
+     "name_path": [
+      "基準該当・地域密着型・介護予防・日常生活支援総合事業",
+      "登録保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "基準該当事業所、地域密着型事業所、介護予防・日常生活支援総合事業（経過措置）事業所、又は、介護予防・日常生活支援総合事業事業所を登録した保険者の番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 63,
+     "no_raw": "６３",
+     "name_path": [
+      "基準該当・地域密着型・介護予防・日常生活支援総合事業",
+      "受領委任の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "受領委任の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 64,
+     "no_raw": "６４",
+     "name_path": [
+      "基準該当・地域密着型・介護予防・日常生活支援総合事業",
+      "登録開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "登録開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 65,
+     "no_raw": "６５",
+     "name_path": [
+      "基準該当・地域密着型・介護予防・日常生活支援総合事業",
+      "登録終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "登録終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 66,
+     "no_raw": "６６",
+     "name_path": [
+      "時間延長サービス体制"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "時間延長サービス体制をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 67,
+     "no_raw": "６７",
+     "name_path": [
+      "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 68,
+     "no_raw": "６８",
+     "name_path": [
+      "居住費対策"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "居住費対策の対応をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:対応不可\n2:対応可",
+     "cells": []
+    },
+    {
+     "no": 69,
+     "no_raw": "６９",
+     "name_path": [
+      "夜間ケアの有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "夜間ケアの有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 70,
+     "no_raw": "７０",
+     "name_path": [
+      "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ機能強化の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "ﾘﾊﾋﾞﾘﾃｰｼｮﾝの機能強化の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 71,
+     "no_raw": "７１",
+     "name_path": [
+      "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（総合ﾘﾊﾋﾞﾘﾃｰｼｮﾝ施設）の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（総合ﾘﾊﾋﾞﾘﾃｰｼｮﾝ施設）の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 72,
+     "no_raw": "７２",
+     "name_path": [
+      "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅱ）の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "個別ﾘﾊﾋﾞﾘﾃｰｼｮﾝ提供体制（理学療法Ⅱ）の有無をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": true,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "このページの表は58項番から始まり表見出しがないため、前ページからの続きと判断した（continued_from_prev_page）。",
+  "最下行の72項番の後に表が続くかどうかはページ内からは判断できないため、次ページへ続くとしてcontinues_to_next_page=trueとした。",
+  "項目名の「基準該当・地域密着型・介護予防・日常生活支援総合事業」は縦書きの2段に分かれて印字されており、2段を連結して記載した。",
+  "項番62の備考にある「※４」の注記本文はこのページに印字されていない。",
+  "「必須入力※1」列は全行で空欄だったため、required は全行 null とした。",
+  "項目名・内容中の「ﾘﾊﾋﾞﾘﾃｰｼｮﾝ」等の半角カナ表記は原文の印字どおりに書き写したが、印字の判読に不確かさがある。"
+ ]
+}

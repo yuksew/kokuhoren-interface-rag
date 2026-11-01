@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 125,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 4928,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003474,
+    "cost_usd_batch": 0.001737,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 125,
+    "printed_page": "52",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・居宅サービス計画費情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "居宅サービス計画費情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "レコード種別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "対象年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "サービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "事業所区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "単位数単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "単位数単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４\n※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "居宅サービス計画作成依頼届出年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "居宅サービス計画作成依頼届出年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービスコードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "請求金額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービスの請求金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "決定後",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "決定後",
+              "請求金額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービスの請求金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "再審査回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "再審査の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "過誤回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "過誤の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "審査年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※２",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※３",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※４",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項「単位数単価」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※５",
+        "text": "基本情報レコード※4参照。"
+      },
+      {
+        "mark": "※６",
+        "text": "基本情報レコード※5参照。"
+      },
+      {
+        "mark": "※７",
+        "text": "交換情報識別番号が\"1111\"、\"1112\"、または\"1113\"の場合は\"D5\"。"
+      },
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は1ページのみで、そのページの表（居宅サービス計画費情報レコード）を書き起こした。",
+      "「バイト数」列の見出しは上段に小さく「ﾊﾞｲﾄ」、下段に「数」とあるため、「バイト数」として連結した。",
+      "項番15・16の「決定後」は縦に結合されたグループ見出しと判断し、name_path にのみ入れた。",
+      "レコード名・交換情報識別番号・親レコードは本文から読み取れないため、exchange_id と parent は空文字にした。"
+    ]
+  },
+  "raw_text": null
+}

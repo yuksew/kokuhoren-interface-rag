@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 121,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 5068,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003544,
+    "cost_usd_batch": 0.001772,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 121,
+    "printed_page": "48",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・特定診療費・特別療養費・特別診療費情報レコード（複数レコード） サービス提供年月が平成１５年４月以降の場合、以下の項目を設定する。",
+        "record": {
+          "exchange_id": "",
+          "name": "特定診療費・特別療養費・特別診療費情報レコード（複数レコード）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "レコード種別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "サービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "特定診療情報レコード順次番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "本レコードが複数になる場合、０１～９８の順次番号を設定する レコードが１件のみの場合、及び複数レコードの最後レコードには９９を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "傷病名"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "１００",
+            "content": "傷病名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "識別番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "保険",
+              "回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "保険",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "対象分のサービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "保険",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "保険分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４\n※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "公費１",
+              "回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費１対象分の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "公費１",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費１対象分のサービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "公費１",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費１分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４\n※S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "公費２",
+              "回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費２対象分の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "公費２",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費２対象分のサービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "公費２",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費２分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４\n※S",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "公費３",
+              "回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "公費３対象分の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "公費３",
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "公費３対象分のサービス単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "公費３",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "公費３分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※４\n※S",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "摘要"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "１００",
+            "content": "",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は1ページのみで、この画像は印字ページ48（PDF上121ページ）の表である。添付ページの表を書き起こした。",
+      "注記記号「※S」「※４」「※５」などは本文に対応する注記が添付ページに無いため、footnotesは空とした。「※S」の S が全角Ｓか半角Sかは画像から確定できず、半角で記した。",
+      "項番9の内容は、セル内の折り返し箇所を空白で連結した。"
+    ]
+  },
+  "raw_text": null
+}

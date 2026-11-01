@@ -1,0 +1,1389 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 160,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 7052,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004536,
+    "cost_usd_batch": 0.002268,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 160,
+    "printed_page": "68",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "食事費用情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "食事費用情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "様式第二",
+          "様式第三",
+          "様式第四",
+          "様式第五",
+          "様式第六",
+          "様式第七",
+          "様式第八",
+          "様式第九",
+          "様式第十"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "基本食提供費用",
+              "提供日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "基本食提供費用",
+              "提供単価"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "基本食提供費用",
+              "提供金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "特別食提供費用",
+              "提供日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "特別食提供費用",
+              "提供単価"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "特別食提供費用",
+              "提供金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "※1"
+              },
+              {
+                "column": "様式第九",
+                "value": "※1"
+              },
+              {
+                "column": "様式第十",
+                "value": "※1"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "食事提供延べ日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "公費１対象食事提供延べ日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "公費２対象食事提供延べ日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "公費３対象食事提供延べ日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "食事提供費合計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "標準負担額（月額）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "食事提供費請求額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "公費１食事提供費請求額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "公費２食事提供費請求額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "公費３食事提供費請求額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "標準負担額（日額）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二",
+                "value": null
+              },
+              {
+                "column": "様式第三",
+                "value": null
+              },
+              {
+                "column": "様式第四",
+                "value": null
+              },
+              {
+                "column": "様式第五",
+                "value": null
+              },
+              {
+                "column": "様式第六",
+                "value": null
+              },
+              {
+                "column": "様式第七",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": "○"
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は1ページのみで、PDF上のページ番号は160だが、印字されたページ番号は68と読めた。",
+      "※1 の意味を説明する注記がこのページには見当たらなかった。",
+      "表の下に続きがあるかどうかは、このページだけでは判断できない。"
+    ]
+  },
+  "raw_text": null
+}

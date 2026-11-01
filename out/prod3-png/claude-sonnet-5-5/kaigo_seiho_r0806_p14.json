@@ -1,0 +1,467 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 14,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 3019,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.050396,
+    "cost_usd_batch": 0.025198,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 14,
+    "printed_page": "6-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1．2．2　原案作成委託料公費負担者情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": "原案作成委託料公費負担者情報"
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護予防支援費原案作成委託料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者が介護予防支援費の原案作成委託料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6131"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ３タテ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者が介護予防ケアマネジメント費の原案作成委託料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6141"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ３タテ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防支援費原案作成委託料手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者が介護予防支援費の原案作成委託料支払にかかる事務処理手数料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6231"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ３タテ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者が介護予防ケアマネジメント費の原案作成委託料支払にかかる事務処理手数料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6241"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ３タテ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護予防支援費原案作成委託料明細表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者へ介護予防支援費の原案作成委託料を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6431"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ４ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料明細表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者へ介護予防ケアマネジメント費の原案作成委託料を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6441"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nＡ４ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "出力媒体種別",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防支援費原案作成委託料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防支援費原案作成委託料手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防支援費原案作成委託料明細表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防ケアマネジメント費原案作成委託料明細表情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "原案作成委託料公費負担者情報"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "2つ目の表の「出力媒体種別」は、明細表の2行のみ伝送返却・磁気返却・帳票返却の3セルに分かれているため、改行区切りで1つの content にまとめた",
+      "2つ目の表の「種別」は縦結合セルで、全行に同じ値を入れた"
+    ]
+  },
+  "raw_text": null
+}

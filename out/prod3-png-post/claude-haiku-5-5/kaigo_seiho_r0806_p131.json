@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 131,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 5132,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003576,
+    "cost_usd_batch": 0.001788,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 131,
+    "printed_page": "５６",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "決定後",
+              "公費１分出来高医療費",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費１分緊急時施設療養費・緊急時施設診療費単位数合計を設定する\n特定診療費・特別療養費・特別診療費の場合、公費１分特定診療費・特別療養費・特別診療費単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "決定後",
+              "公費１分出来高医療費",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費１分緊急時施設療養費・緊急時施設診療費請求額を設定する\n特定診療費・特別療養費・特別診療費の場合、公費１分特定診療費・特別療養費・特別診療費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "決定後",
+              "公費２分出来高医療費",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費２分緊急時施設療養費・緊急時施設診療費単位数合計を設定する\n特定診療費・特別療養費・特別診療費の場合、公費２分特定診療費・特別療養費・特別診療費単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "決定後",
+              "公費２分出来高医療費",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費２分緊急時施設療養費・緊急時施設診療費請求額を設定する\n特定診療費・特別療養費・特別診療費の場合、公費分２特定診療費・特別療養費・特別診療費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "決定後",
+              "公費３分出来高医療費",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費３分緊急時施設療養費・緊急時施設診療費単位数合計を設定する\n特定診療費・特別療養費・特別診療費の場合、公費３分特定診療費・特別療養費・特別診療費単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 57,
+            "no_raw": "５７",
+            "name_path": [
+              "決定後",
+              "公費３分出来高医療費",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合、公費３分緊急時施設療養費・緊急時施設診療費請求額を設定する\n特定診療費・特別療養費・特別診療費の場合、公費３分特定診療費・特別療養費・特別診療費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 58,
+            "no_raw": "５８",
+            "name_path": [
+              "再審査回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "再審査の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 59,
+            "no_raw": "５９",
+            "name_path": [
+              "過誤回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "過誤の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咆咆号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 60,
+            "no_raw": "６０",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "審査年月（西暦年月（YYYYMM））を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「単位数単価」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "基本情報レコード※4参照。"
+      },
+      {
+        "mark": "※5",
+        "text": "基本情報レコード※5参照。"
+      },
+      {
+        "mark": "※6",
+        "text": "交換情報識別番号が\"1111\"、\"1112\"、\"1113\"、\"1114\" 、\"1115\"、\"1116\" 、\"1117\"、\"1118\"または\"1119\"の場合は\"T1\"。"
+      },
+      {
+        "mark": "※7",
+        "text": "サービス提供年月が平成14年1月以降の短期入所サービスについて、請求明細書細書様式第三、第四、第五上の短期入所実日数を設定する。なお、サービス提供年月が平成13年12月以前のサービスについて設定があった場合、無視される。"
+      },
+      {
+        "mark": "※8",
+        "text": "決定前と決定後で、変更はされない。"
+      }
+    ],
+    "uncertain": [
+      "「決定後」「公費１分出来高医療費」などは縦書きの結合グループ見出しとして name_path にのみ入れた。項目名の見出しは3列にまたがって見えるが、列名は「項目名」1つとして扱った。",
+      "備考欄の「※S」は全角Sか半角Sか判別しにくいが、画像の印字どおり「※S」と書いた。",
+      "55行目の「公費分２特定診療費」は原文の表記のまま書いた（「公費２分」とは語順が異なる）。",
+      "ページ下部の表示は「- ５６ -」のため printed_page を「５６」とした。前後ページが無いためページ内の表の続き有無は判断しなかった（表は60で終わるので false）。"
+    ]
+  },
+  "raw_text": null
+}

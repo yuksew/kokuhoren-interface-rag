@@ -1,0 +1,193 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_seiho_r0806",
+ "page": 59,
+ "edition": "令和8年6月版",
+ "volume": "生保単独編",
+ "printed_page": "21",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "２．２．１　給付実績交換情報（出力情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体",
+    "出力形式 > CSV",
+    "出力形式 > 帳票形式"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "国保連合会保有給付実績情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "国保連合会保有の給付実績情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "1119\n※1\n※2\n※3\n※4\n※5\n※6\n※7\n※8"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会→公費負担者"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n磁気\n帳票\n※"
+      },
+      {
+       "column": "出力形式 > CSV",
+       "value": "○"
+      },
+      {
+       "column": "出力形式 > 帳票形式",
+       "value": "○\n汎用紙\nA4タテ"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "other",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "種別",
+    "帳票名",
+    "出力媒体種別 > 伝送受付分",
+    "出力媒体種別 > 磁気受付分",
+    "出力媒体種別 > 帳票受付分"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "種別",
+    "type": "",
+    "length": "",
+    "content": "",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "給付実績交換情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "帳票名",
+       "value": "国保連合会保有給付実績"
+      },
+      {
+       "column": "出力媒体種別 > 伝送受付分",
+       "value": "伝送返却"
+      },
+      {
+       "column": "出力媒体種別 > 磁気受付分",
+       "value": "磁気返却"
+      },
+      {
+       "column": "出力媒体種別 > 帳票受付分",
+       "value": "帳票返却"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "サービス提供年月が平成15年3月以前の交換情報識別番号は“1111”を設定する。"
+  },
+  {
+   "mark": "※2",
+   "text": "サービス提供年月が平成15年4月以降、平成17年9月以前の交換情報識別番号は“1112”を設定する。"
+  },
+  {
+   "mark": "※3",
+   "text": "サービス提供年月が平成17年10月以降、平成18年3月以前の交換情報識別番号は“1113”を設定する。"
+  },
+  {
+   "mark": "※4",
+   "text": "サービス提供年月が平成18年4月以降、平成20年3月以前の交換情報識別番号は“1114”を設定する。"
+  },
+  {
+   "mark": "※5",
+   "text": "サービス提供年月が平成20年4月以降、平成21年3月以前の交換情報識別番号は“1115”を設定する。"
+  },
+  {
+   "mark": "※6",
+   "text": "サービス提供年月が平成21年4月以降、平成24年3月以前の交換情報識別番号は“1116”を設定する。"
+  },
+  {
+   "mark": "※7",
+   "text": "サービス提供年月が平成24年4月以降、平成27年3月以前の交換情報識別番号は“1117”を設定する。"
+  },
+  {
+   "mark": "※8",
+   "text": "サービス提供年月が平成27年4月以降、平成30年3月以前の交換情報識別番号は“1118”を設定する。"
+  },
+  {
+   "mark": "※",
+   "text": "帳票の様式については、インタフェース項目に揃えた様式で提供する。ただし、大量な枚数になる場合等は、帳票での提供ができない場合がある。"
+  }
+ ],
+ "uncertain": [
+  "表1のルート欄は縦に折り返された「国保 / 連合会 / → / 公費 / 負担者」を1つの文字列にまとめた。矢印は文字として読んだ。",
+  "表1の媒体欄の「伝送 / 磁気 / 帳票 / ※」は改行区切りで残した。※が媒体の注記記号か、帳票の注記への参照かは判断していない。",
+  "表2は見出しがなく、「種別」「帳票名」の行の対応から表の性格を判断し other とした。"
+ ]
+}

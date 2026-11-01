@@ -1,0 +1,904 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 26,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 3640,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.056576,
+    "cost_usd_batch": 0.028288,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 26,
+    "printed_page": "15-7",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 218,
+            "no_raw": "218",
+            "name_path": [
+              "介護職員等ベースアップ等支援加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "介護職員等ベースアップ等支援加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※54\n※58",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※54",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※58",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 219,
+            "no_raw": "219",
+            "name_path": [
+              "３ユニットの事業所が夜勤職員を２人以上とする場合"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "３ユニットの事業所が夜勤職員を２人以上とする場合をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※52",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※52",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 220,
+            "no_raw": "220",
+            "name_path": [
+              "特定事業所加算Ｖ"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特定事業所加算Ｖをコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※52",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※52",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 221,
+            "no_raw": "221",
+            "name_path": [
+              "併設本体施設における介護職員等処遇改善加算Ⅰイ又はロの届出状況"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "併設本体施設における介護職員等処遇改善加算Ⅰイ又はロの届出状況をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※52、※67",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※52",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※67",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 222,
+            "no_raw": "222",
+            "name_path": [
+              "医療連携体制加算Ⅱ"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "医療連携体制加算Ⅱをコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 223,
+            "no_raw": "223",
+            "name_path": [
+              "高齢者虐待防止措置実施の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "高齢者虐待防止措置実施の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※61",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※61",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 224,
+            "no_raw": "224",
+            "name_path": [
+              "口腔連携強化加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "口腔連携強化加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※62",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※62",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 225,
+            "no_raw": "225",
+            "name_path": [
+              "生産性向上推進体制加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生産性向上推進体制加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 226,
+            "no_raw": "226",
+            "name_path": [
+              "高齢者施設等感染対策向上加算Ⅰ"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "高齢者施設等感染対策向上加算Ⅰをコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 227,
+            "no_raw": "227",
+            "name_path": [
+              "高齢者施設等感染対策向上加算Ⅱ"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "高齢者施設等感染対策向上加算Ⅱをコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 228,
+            "no_raw": "228",
+            "name_path": [
+              "認知症チームケア推進加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "認知症チームケア推進加算",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 229,
+            "no_raw": "229",
+            "name_path": [
+              "重度者ケア体制加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度者ケア体制加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 230,
+            "no_raw": "230",
+            "name_path": [
+              "専門管理加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "専門管理加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※63",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※63",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 231,
+            "no_raw": "231",
+            "name_path": [
+              "遠隔死亡診断補助加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "遠隔死亡診断補助加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※64",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※64",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 232,
+            "no_raw": "232",
+            "name_path": [
+              "業務継続計画策定の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "業務継続計画策定の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※65",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※65",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 233,
+            "no_raw": "233",
+            "name_path": [
+              "同一建物減算（同一敷地内建物等に居住する者への提供）"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一建物減算（同一敷地内建物等に居住する者への提供）をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 234,
+            "no_raw": "234",
+            "name_path": [
+              "同一建物減算（同一敷地内建物等に居住する者への提供（利用者 50 人以上））"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一建物減算（同一敷地内建物等に居住する者への提供（利用者 50 人以上））をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 235,
+            "no_raw": "235",
+            "name_path": [
+              "同一建物減算（同一敷地内建物等に居住する者への提供割合 90%以上）"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一建物減算（同一敷地内建物等に居住する者への提供割合 90%以上）をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3、※4\n※56",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "サービス種類等により体制の無い加算については“0”またはNULL を設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※56",
+                "text": "リハビリテーションマネジメント加算に係る医師による説明数字リハビリテーションマネジメント加算に係る医師による説明をコードで設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きの表。必須入力の新規・変更・終了列は全行空欄に見える",
+      "項番221の項目名・内容・備考に黄色ハイライトと取消線（※67）があるが、文字は原文のまま転記した",
+      "ヘッダ「必須入力※1」の注記マーク ※1 の本文は本ページに無い"
+    ]
+  },
+  "raw_text": null
+}

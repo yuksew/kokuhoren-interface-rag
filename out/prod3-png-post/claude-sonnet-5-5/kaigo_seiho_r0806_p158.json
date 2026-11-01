@@ -1,0 +1,1801 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 158,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 8160,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.101806,
+    "cost_usd_batch": 0.050903,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 158,
+    "printed_page": "66",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "特定診療費・特別療養費・特別診療費情報レコード（複数レコード）\nサービス提供年月が平成１５年４月以降の場合、以下の項目を出力する。\n但し、様式第四・四の二・九については、サービス提供年月が平成２０年５月以降の場合、以下の項目を設定する。様式第四の三・四の四・九の二については、サービス提供年月が平成３０年４月以降の場合、以下の項目を設定する。",
+        "record": {
+          "exchange_id": "",
+          "name": "特定診療費・特別療養費・特別診療費情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "様式第二・二の二",
+          "様式第二の三",
+          "様式第三・三の二",
+          "様式第四・四の二",
+          "様式第四の三・四の四",
+          "様式第五・五の二",
+          "様式第六～六の七",
+          "様式第七・七の二",
+          "様式第七の三",
+          "様式第八",
+          "様式第九",
+          "様式第九の二",
+          "様式第十"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "特定診療費情報レコード順次番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "傷病名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "保険",
+              "回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "保険",
+              "サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "保険",
+              "合計単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "公費1",
+              "回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "公費1",
+              "サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "公費1",
+              "合計単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "公費2",
+              "回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "公費2",
+              "サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "公費2",
+              "合計単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "公費3",
+              "回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "公費3",
+              "サービス単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "公費3",
+              "合計単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "摘要"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式第二・二の二",
+                "value": null
+              },
+              {
+                "column": "様式第二の三",
+                "value": null
+              },
+              {
+                "column": "様式第三・三の二",
+                "value": null
+              },
+              {
+                "column": "様式第四・四の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第四の三・四の四",
+                "value": "○"
+              },
+              {
+                "column": "様式第五・五の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第六～六の七",
+                "value": null
+              },
+              {
+                "column": "様式第七・七の二",
+                "value": null
+              },
+              {
+                "column": "様式第七の三",
+                "value": null
+              },
+              {
+                "column": "様式第八",
+                "value": null
+              },
+              {
+                "column": "様式第九",
+                "value": "○"
+              },
+              {
+                "column": "様式第九の二",
+                "value": "○"
+              },
+              {
+                "column": "様式第十",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "様式の列見出しは縦書きのため、横書きに直して書き写した（例：様式第四の三・四の四）。",
+      "必須記号は原文で「〇」に見えるが、指示に従い「○」で記載した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 124,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 3038,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002529,
+    "cost_usd_batch": 0.001265,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 124,
+    "printed_page": "51",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "決定後",
+              "基本食提供費用提供単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "決定後の基本食提供単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "基本情報レコード※5参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "決定後",
+              "特別食提供費用提供単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "決定後の特別食提供単価を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "基本情報レコード※5参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "決定後",
+              "食事提供費請求額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "決定後の食事提供費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "再審査回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "再審査の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "過誤回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "過誤の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "審査年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編　1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「インタフェース仕様書　共通編　1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※２",
+        "text": "「インタフェース仕様書　共通編　1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※３",
+        "text": "基本情報レコード※4参照。"
+      },
+      {
+        "mark": "※４",
+        "text": "基本情報レコード※5参照。"
+      },
+      {
+        "mark": "※５",
+        "text": "交換情報識別番号が\"1111\"、\"1112\"の場合は\"D4\"。"
+      },
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "表見出しが見当たらず、表の先頭行が見出し行で始まるため、前ページからの続きかどうかは判断が難しい。continued_from_prev_page は true としたが、後処理で再判定されたい。",
+      "「決定後」は項番26〜28にまたがる縦結合の見出しとして name_path に入れた。",
+      "「基本食提供費用 提供単価」等の折り返し位置の空白は、項目名として連結して記載した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,7 +1,7 @@
 """確定版（人の確認を反映した書き起こし）を SQLite に入れる。RAG の検索の土台。
 
 usage: uv run python src/build_db.py [--run prod1-png-post prod2-png-post] [--src reviewed|adopted] [--out db/interface_spec.sqlite]
-  複数の run（本番1 = 事業所向け4編、本番2 = 介護 居宅介護支援事業所編）をまとめて1つの DB にする。無い run は飛ばす。
+  複数の run（本番1 = 事業所向け4編、本番2 = 介護 居宅介護支援事業所編、本番3 = 介護 都道府県編・生保単独編）をまとめて1つの DB にする。無い run は飛ばす。
   前提: apply_review.py を実行済み（out/{run}-reviewed/ がある）
   DB は毎回作り直す（入力から再生成できるので git には入れない）。
 
@@ -114,7 +114,7 @@ def blank(v) -> str | None:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post"])
+    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post", "prod3-png-post"])
     ap.add_argument("--src", default="reviewed", choices=["reviewed", "adopted"])
     ap.add_argument("--out", default="db/interface_spec.sqlite")
     args = ap.parse_args()

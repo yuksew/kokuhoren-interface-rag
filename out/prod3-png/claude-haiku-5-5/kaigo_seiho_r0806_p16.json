@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 16,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 2865,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002443,
+    "cost_usd_batch": 0.001221,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 16,
+    "printed_page": "8",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "サービス事業所等の指定サービス・基準該当サービスの識別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※4",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "サービス種類コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※4",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "給付計画単位数／日数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "計画単位数（日数）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "限度額管理期間における前月までの給付計画日数"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "給付計画日数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "指定サービス分小計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "指定サービス分の給付計画単位数小計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "基準該当サービス分小計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "基準該当サービス分の給付計画単位数小計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "給付計画合計単位数／日数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "当月サービス単位数（日数）合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "給付管理票種別および給付管理票明細行番号によって出力する内容が異なる項目の出力方法は次の通り。なお、個々のサービス内容を出力する場合は、給付管理票明細行番号に明細レコードを表す01～98を指定する。小計／合計内容を設定する場合には、給付管理票明細行番号に終端レコードを表す99を指定し、終端レコードで利用しない項目については値を出力しない。"
+      }
+    ],
+    "uncertain": [
+      "添付ページは printed_page 8 の1ページのみで、表は項番20から26までの1つだけでした。依頼文の「次のページ」は添付と異なる可能性があるため、添付のページを書き起こしました。",
+      "表に表題がなく、見出し行から始まっているため前ページからの続きと判断しましたが、後処理で確認してください。"
+    ]
+  },
+  "raw_text": null
+}

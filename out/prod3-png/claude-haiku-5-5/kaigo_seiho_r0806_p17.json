@@ -1,0 +1,744 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 17,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 13014,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.007517,
+    "cost_usd_batch": 0.003759,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 17,
+    "printed_page": "9",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+          "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+          "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+          "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+          "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+          "対象年月が平成13年12月以前 > 短期入所サービス給付管理票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "給付管理票明細行番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "01～98"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "99"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "01～98"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "99"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "01～98"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "99"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "訪問通所／短期入所支給限度額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "事業所番号（サービス事業所）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "事業所番号"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "事業所番号"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "事業所番号"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "指定／基準該当事業所区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "コード値"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "給付計画単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "限度額管理期間における前月までの給付計画日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "指定サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "基準該当サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "給付計画合計単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成14年1月以降 > 居宅サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービス給付管理票",
+                "value": "単位数"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "－"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービス給付管理票",
+                "value": "日数"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "※6 対象年月及び給付管理票種別区分コードにより以下のとおり出力する。",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "対象年月が平成14年1月以降",
+          "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+          "対象年月が平成13年12月以前 > 短期入所サービスの場合"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "サービスの給付対象年月（西暦年月(YYYYMM)）を設定する（平成14年1月以降）"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "サービスの給付対象年月（西暦年月(YYYYMM)）を出力する（平成13年12月以前）"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "サービスの給付対象年月（西暦年月(YYYYMM)）を出力する（平成13年12月以前）"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "3：居宅サービス給付管理票を出力"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "1：訪問通所サービス給付管理票を出力"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "2：短期入所サービス給付管理票を出力"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "訪問通所／短期入所支給限度額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "居宅サービス区分支給限度基準額（単位数）を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "訪問通所区分支給限度基準額（単位数）を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "短期入所区分支給限度基準額（日数）を出力する"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "給付計画単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "給付計画単位数を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "給付計画単位数を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "給付計画日数を出力する"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "限度額管理期間における前月までの給付計画日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "出力なし"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "出力なし"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "給付計画日数を出力する"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "指定サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "指定サービス分の給付計画単位数小計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "指定サービス分の給付計画単位数小計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "指定サービス分の給付計画日数小計を出力する"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "基準該当サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "基準該当サービス分の給付計画単位数小計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "基準該当サービス分の給付計画単位数小計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "基準該当サービス分の給付計画日数小計を出力する"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "給付計画合計単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "対象年月が平成14年1月以降",
+                "value": "当月サービス単位数合計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 訪問通所サービスの場合",
+                "value": "当月サービス単位数合計を出力する"
+              },
+              {
+                "column": "対象年月が平成13年12月以前 > 短期入所サービスの場合",
+                "value": "当月給付計画日数合計を出力する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※5",
+        "text": "平成14年1月1日以降\"3：居宅サービス区分\"を追加する。平成14年1月1日以降提供分のサービスについては居宅サービス区分、平成13年12月31日以前提供分のサービスについては、従来通りの区分を出力する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付画像の印字ページ番号は「- 9 -」で、PDF上のページ17との対応は画像からは確認できない。添付ページの表を書き起こした。",
+      "表1は表見出しがなく、項番10から始まるため前ページからの続きと判断した。前ページの見出し行は添付に含まれていないため、列名は見えている範囲の見出しから組み立てた。",
+      "表1の列名は『居宅サービス給付管理票』『訪問通所サービス給付管理票』『短期入所サービス給付管理票』それぞれが2列ずつ（01～98／99）に分かれているため、同名の列名が重複している。",
+      "表1の左2列（項番・項目名）は見出しが空欄のため columns に含めず、項番と項目名は name_path と no のみに入れた。",
+      "表2の見出し『対象年月が 平成14年1月以降』は、上下2段にまたがる見出しと判断し、単一の列名とした。",
+      "※6 は表2の直前にある説明文のため title に入れた。",
+      "表2の項番4の原文は『（ 西 暦 年 月 (YYYYMM)） 』のように字間が空いているが、字間を詰めて『（西暦年月(YYYYMM)）』と書いた。"
+    ]
+  },
+  "raw_text": null
+}

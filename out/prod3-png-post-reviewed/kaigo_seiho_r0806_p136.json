@@ -1,0 +1,506 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_seiho_r0806",
+ "page": 136,
+ "edition": "令和8年6月版",
+ "volume": "生保単独編",
+ "printed_page": "５６－５",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・社会福祉法人軽減額情報レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "社会福祉法人軽減額情報レコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※５",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "基本情報レコード※５参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "入力識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "入力元の交換情報識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "基本情報レコード※４参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "レコード種別を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※６",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※6",
+       "text": "交換情報識別番号が\"1113\"、\"1114\"、\"1115\"、\"1116\"、\"1117\"、\"1118\"または\"1119\"の場合は\"DA\"。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "サービス提供年月（西暦年月(YYYYMM)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "サービス事業所等の事業所番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "整理番号"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "整理番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "軽減率"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "軽減率を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「軽減率」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "サービス種類コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "受領すべき利用者負担の総額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "受領すべき利用者負担の総額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "軽減額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "軽減額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "軽減後利用者負担額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "軽減後の利用者負担額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "備考"
+     ],
+     "type": "英数",
+     "length": 20,
+     "length_raw": "２０",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "決定後",
+      "受領すべき利用者負担の総額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定後の受領すべき利用者負担の総額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "１６",
+     "name_path": [
+      "決定後",
+      "軽減額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定後の軽減額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "１７",
+     "name_path": [
+      "決定後",
+      "軽減後利用者負担額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定後の軽減後の利用者負担額を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "no_raw": "１８",
+     "name_path": [
+      "再審査回数"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "再審査の回数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "１９",
+     "name_path": [
+      "過誤回数"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "過誤の回数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "２０",
+     "name_path": [
+      "審査年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "審査年月（西暦年月(YYYYMM)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※１",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※２",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※３",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項:「軽減率」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※４",
+   "text": "基本情報レコード※４参照。"
+  },
+  {
+   "mark": "※５",
+   "text": "基本情報レコード※５参照。"
+  },
+  {
+   "mark": "※６",
+   "text": "交換情報識別番号が\"1113\"、\"1114\"、\"1115\"、\"1116\"、\"1117\"、\"1118\"または\"1119\"の場合は\"DA\"。"
+  },
+  {
+   "mark": "※Ｓ",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "添付は1ページのみで、表の上に前のページからの続きを示す要素は見当たらないため、continued_from_prev_pageはfalseとした。",
+  "表の見出し「・社会福祉法人軽減額情報レコード（複数レコード）」のレコード名・交換情報識別番号は、表見出しから読み取れる範囲のみ記載し、交換情報識別番号は読み取れないため空文字とした。"
+ ]
+}

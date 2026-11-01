@@ -27,6 +27,10 @@ MATRIX_Q = re.compile(r"必須|様式ごと|様式別|対応表|入力必須")
 SPEC_Q = re.compile(r"桁|属性|項目|レコード|形式|CSV|交換情報|識別番号|設定|フォーマット|インタフェース")
 # 古い様式（「サービス提供年月が平成18年3月以前の場合」など）を聞いている質問
 OLD_Q = re.compile(r"平成|以前|旧様式|昔|過去|H[0-9]{1,2}")
+# 事業所向けでない編（自治体・生活保護・合併）と、それを聞いている質問。
+# これらの編には、事業所向けの編と同じ定義の項目（明細書・給付管理票の生保版など）が丸ごと載っていて、事業所の質問で上位を埋める
+OTHER_VOL = re.compile(r"都道府県編|保険者編|生保単独編|市町村合併編|市町村編")
+OTHER_Q = re.compile(r"都道府県|(?<!被)保険者|市町村|自治体|生保|生活保護|合併|異動連絡|台帳")
 RULE_Q = re.compile(r"算定|加算|減算|単位|請求|時間|回数|何回|できる|可能|留意|告示|Q&A|サービスコード|要件|基準|間隔|上限|最大|日割")
 VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
@@ -66,6 +70,7 @@ class Retriever:
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
         assert len(self.vecs) == len(self.meta), "chunks と vectors の件数が合わない（build_index.py をやり直す）"
         # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
+        self.other_docs = {r["doc_id"] for r in self.con.execute("SELECT doc_id, volume FROM documents") if OTHER_VOL.search(r["volume"] or "")}
         self.old_tables = {r["table_id"] for r in self.con.execute("SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'")}
         self.ex_tables: dict[str, set[int]] = {}
         for r in self.con.execute("SELECT exchange_id, table_id FROM table_exchange_ids"):
@@ -162,7 +167,7 @@ class Retriever:
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
                fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5,
-               old_weight: float = 0.3) -> list[dict]:
+               old_weight: float = 0.3, other_weight: float = 0.3) -> list[dict]:
         ok = self._allowed(domain, exchange)
         lists = []
         if use_codes and mode != "vector":
@@ -179,6 +184,7 @@ class Retriever:
         # 仕様書の形式だけを聞いている質問では、算定ルール資料（数が多い）が仕様書の行を押し出すので重みを下げる
         rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
         ow = 1.0 if OLD_Q.search(nk(q)) else old_weight
+        vw = 1.0 if OTHER_Q.search(nk(q)) else other_weight
         for name, lst, w in lists:
             for rank, c in enumerate(lst):
                 wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
@@ -186,6 +192,8 @@ class Retriever:
                     wm = rw
                 if self.meta[c]["table_id"] in self.old_tables:
                     wm *= ow
+                if self.meta[c]["doc_id"] in self.other_docs:
+                    wm *= vw
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         top = sorted(score, key=lambda c: -score[c])[:k]

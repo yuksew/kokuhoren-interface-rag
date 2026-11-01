@@ -1,0 +1,496 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 11,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 5616,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003817,
+    "cost_usd_batch": 0.001908,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 11,
+    "printed_page": "7",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "法人等種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "事業所の法人等の種別をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "指定又は基準該当等の事業所の区分をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3\n※5\n※6",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "コード",
+          "介護（介護予防）サービス",
+          "地域密着型サービス",
+          "介護予防・日常生活支援総合事業サービス（経過措置）",
+          "介護予防・日常生活支援総合事業サービス"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "1"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "指定事業所"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "2"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "基準該当事業所"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "3"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "相当サービス事業所"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし、又は、\n相当サービス事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "4"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "その他"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "5"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "6"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "指定事業所"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "みなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "7"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "基準該当事業所"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "みなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし、又は、\nみなし指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし、又は、\n指定事業所"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "8"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "指定事業所"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "情報なし"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "コード",
+                "value": "9"
+              },
+              {
+                "column": "介護（介護予防）サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "地域密着型サービス",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス（経過措置）",
+                "value": "情報なし"
+              },
+              {
+                "column": "介護予防・日常生活支援総合事業サービス",
+                "value": "指定事業所"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "異動区分コードにより入力必須項目が異なる。（○:必須）"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧 市町村コード（事業所所在地）」参照。(P.31)"
+      },
+      {
+        "mark": "※5",
+        "text": "以下の通り設定する。"
+      },
+      {
+        "mark": "※6",
+        "text": "介護予防支援事業所（地域包括支援センター）の場合は、1:指定事業所を設定する。"
+      }
+    ],
+    "uncertain": [
+      "2つ目の表（※5の設定表）には見出し行の上に表題がなく、table_kindを other とした。",
+      "2つ目の表の「経過措置」「介護予防・日常生活支援総合事業サービス」列は縦に結合されたセルのため、結合範囲の全行に同じ値を入れた。"
+    ]
+  },
+  "raw_text": null
+}

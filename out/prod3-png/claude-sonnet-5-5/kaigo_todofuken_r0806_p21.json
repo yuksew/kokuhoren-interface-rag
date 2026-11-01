@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "doc_id": "kaigo_todofuken_r0806",
+    "page": 21,
+    "domain": "kaigo",
+    "volume": "都道府県編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10088,
+      "output_tokens": 2895,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.049126,
+    "cost_usd_batch": 0.024563,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:18+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "都道府県編",
+    "page": 21,
+    "printed_page": "15-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 133,
+            "no_raw": "133",
+            "name_path": [
+              "日常生活継続支援加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "日常生活継続支援加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４､※２６",
+            "cells": []
+          },
+          {
+            "no": 134,
+            "no_raw": "134",
+            "name_path": [
+              "認知症専門ケア加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "認知症専門ケア加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:加算Ⅰ\n3:加算Ⅱ\n※４､※２６",
+            "cells": []
+          },
+          {
+            "no": 135,
+            "no_raw": "135",
+            "name_path": [
+              "２４時間通報対応加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "２４時間通報対応加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:対応不可\n2:対応可\n※４､※２６",
+            "cells": []
+          },
+          {
+            "no": 136,
+            "no_raw": "136",
+            "name_path": [
+              "看護職員配置加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "看護職員配置加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※２６",
+            "cells": []
+          },
+          {
+            "no": 137,
+            "no_raw": "137",
+            "name_path": [
+              "夜間ケア加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "夜間ケア加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※２６､※３７",
+            "cells": []
+          },
+          {
+            "no": 138,
+            "no_raw": "138",
+            "name_path": [
+              "集団コミュニケーション療法の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "集団コミュニケーション療法の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４､※２６",
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "サービス提供体制強化加算（併設型、空床型）"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "サービス提供体制強化加算（併設型、空床型）をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※２６､※２７",
+            "cells": []
+          },
+          {
+            "no": 140,
+            "no_raw": "140",
+            "name_path": [
+              "定期巡回・随時対応サービスに関する状況"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "定期巡回・随時対応サービスに関する状況をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:定期巡回の指定を受けていない\n2:定期巡回の指定を受けている\n3:定期巡回の整備計画がある\n※４､※３０",
+            "cells": []
+          },
+          {
+            "no": 141,
+            "no_raw": "141",
+            "name_path": [
+              "サービス提供責任者体制の減算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "サービス提供責任者体制の減算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※３０､※５０",
+            "cells": []
+          },
+          {
+            "no": 142,
+            "no_raw": "142",
+            "name_path": [
+              "同一建物に居住する利用者の減算の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一建物に居住する利用者の減算の有無で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４､※３０､※３７",
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "緊急短期入所体制確保加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急短期入所体制確保加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４､※３０､※３７",
+            "cells": []
+          },
+          {
+            "no": 144,
+            "no_raw": "144",
+            "name_path": [
+              "在宅復帰・在宅療養支援機能加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "在宅復帰・在宅療養支援機能加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※３０",
+            "cells": []
+          },
+          {
+            "no": 145,
+            "no_raw": "145",
+            "name_path": [
+              "生活機能向上グループ活動加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生活機能向上グループ活動加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "1:無し\n2:有り\n※４､※３０",
+            "cells": []
+          },
+          {
+            "no": 146,
+            "no_raw": "146",
+            "name_path": [
+              "介護職員等処遇改善加算"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "介護職員等処遇改善加算をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※３､※４､※３０､※６７､※６９､※７０",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続き。見出しの「必須入力※1」の※1は上付き。",
+      "項番146の備考の一部（、※６９、※７０など）は黄色ハイライト・赤字で印字されている。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "doc_id": "kaigo_seiho_r0806",
+    "page": 115,
+    "domain": "kaigo",
+    "volume": "生保単独編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 生活保護単独受給者にかかる追加インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10103,
+      "output_tokens": 5595,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003808,
+    "cost_usd_batch": 0.001904,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01EsoABKHgKKeq3uiawT3AdM",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T16:34:17+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "生保単独編",
+    "page": 115,
+    "printed_page": "４４－２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "摘要１"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "摘要２"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": ":",
+            "name_path": [
+              ":"
+            ],
+            "type": ":",
+            "length": null,
+            "length_raw": ":",
+            "content": ":",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "摘要２０"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "緊急時施設療養費合計点数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "緊急時施設療養費の合計点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※8\n※S",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "所定疾患施設療養費傷病名１"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "所定疾患施設療養費傷病名１を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "所定疾患施設療養費傷病名２"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "所定疾患施設療養費傷病名２を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "所定疾患施設療養費傷病名３"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "所定疾患施設療養費傷病名３を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "所定疾患施設療養費開始年月日１"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "所定疾患施設療養費開始年月日１（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "所定疾患施設療養費開始年月日２"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "所定疾患施設療養費開始年月日２（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "所定疾患施設療養費開始年月日３"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "所定疾患施設療養費開始年月日３（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "所定疾患施設療養費単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "所定疾患施設療養費の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "所定疾患施設療養費日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "所定疾患施設療養費の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "５７",
+            "name_path": [
+              "所定疾患施設療養費小計"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "所定疾患施設療養費の小計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "５８",
+            "name_path": [
+              "決定後",
+              "往診日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の往診日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "５９",
+            "name_path": [
+              "決定後",
+              "通院日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の通院日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 60,
+            "no_raw": "６０",
+            "name_path": [
+              "決定後",
+              "緊急時治療管理単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "決定後の緊急時治療管理の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 61,
+            "no_raw": "６１",
+            "name_path": [
+              "決定後",
+              "緊急時治療管理日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の緊急時治療の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 62,
+            "no_raw": "６２",
+            "name_path": [
+              "決定後",
+              "リハビリテーション点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "決定後のリハビリテーションの点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 63,
+            "no_raw": "６３",
+            "name_path": [
+              "決定後",
+              "処置点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "決定後の処理の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "６４",
+            "name_path": [
+              "決定後",
+              "手術点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "決定後の手術の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 65,
+            "no_raw": "６５",
+            "name_path": [
+              "決定後",
+              "麻酔点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "決定後の麻酔の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "６６",
+            "name_path": [
+              "決定後",
+              "放射線治療点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "決定後の放射線治療の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "６７",
+            "name_path": [
+              "決定後",
+              "所定疾患施設療養費単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "決定後の所定疾患施設療養費の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "６８",
+            "name_path": [
+              "決定後",
+              "所定疾患施設療養費日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "決定後の所定疾患施設療養費の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 69,
+            "no_raw": "６９",
+            "name_path": [
+              "再審査回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "再審査の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ上部が前ページからの続きかどうかは見えている範囲からの推測で、前ページ末尾は添付されていないため確認できない。continued_from_prev_page は項番28から始まることから true とした。",
+      "表の下端で罫線が閉じており、次ページへ続くかどうかは判断できないため continues_to_next_page は false とした。",
+      "備考欄の※3・※5・※8・※Sの注記本文はこのページに印字がなく footnotes に入れられない。",
+      "項目名「摘要１」「摘要２」「摘要２０」「所定疾患施設療養費傷病名１」等の数字は全角で印字されていると読んだ。",
+      "項番28と29の間などにある「:」の行は省略記号の行として書き起こし、項番は null とした。",
+      "決定後の列は縦結合の見出しのため name_path に入れ、columns には含めていない。",
+      "58行目の内容「決定後の往診日数を設定する」等は原文どおりで、63行目の「処理の点数」は原文表記が「処理」であるためそのまま書き写した。"
+    ]
+  },
+  "raw_text": null
+}

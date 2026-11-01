@@ -1,0 +1,121 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_seiho_r0806",
+ "page": 135,
+ "edition": "令和8年6月版",
+ "volume": "生保単独編",
+ "printed_page": "５６－４",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 60,
+     "no_raw": "６０",
+     "name_path": [
+      "過誤回数"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "過誤の回数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 61,
+     "no_raw": "６１",
+     "name_path": [
+      "審査年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "審査年月（西暦年月(YYYYMM)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※１",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※２",
+   "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※３",
+   "text": "特定入所者介護サービス費用情報レコード順次番号が99のときのみ設定する。"
+  },
+  {
+   "mark": "※４",
+   "text": "基本情報レコード※4参照。"
+  },
+  {
+   "mark": "※５",
+   "text": "基本情報レコード※5参照。"
+  },
+  {
+   "mark": "※６",
+   "text": "交換情報識別番号が\"1113\"、\"1114\"、\"1115\"、\"1117\"、\"1118\"または\"1119\"の場合は\"D9\"。"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "ページ上部の表は見出し行から始まっているが、項番60から始まり前ページからの続きと判断した。表のレコード名・交換情報識別番号は本ページから読み取れないため空文字とした。",
+  "項目61の内容は原文の括弧と空白の位置が画像から確定しにくいため、「審査年月（西暦年月(YYYYMM)）を設定する」と記載した。"
+ ]
+}

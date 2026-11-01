@@ -153,3 +153,14 @@
   kind: table
   gold: [{doc: kaigo_kyotaku, table: 給付管理票総括票情報}]
   expect: ["提出年月"]
+# --- 介護 都道府県編・生保単独編（2026-11-02 追加。事業所向けでない編の重みを下げても、聞かれれば引けるか）
+- q: 都道府県が送る事業所異動連絡票情報の異動年月日には何を設定する？
+  domain: kaigo
+  kind: exact
+  gold: [{doc: kaigo_todofuken, name: 異動年月日, page: 10}]
+  expect: ["YYYYMMDD"]
+- q: 生活保護単独の受給者について、国保連から福祉事務所に出す情報の公費受給者番号は何桁？
+  domain: kaigo
+  kind: exact
+  gold: [{doc: kaigo_seiho, name: 公費受給者番号}]
+  expect: ["7"]
