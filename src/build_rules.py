@@ -209,7 +209,11 @@ def service_rows(path: Path) -> list[dict]:
             h1, h2 = rows[hdr], rows[hdr + 1]
             col = lambda r, name: next((j for j, c in enumerate(r) if c is not None and re.sub(r"\s", "", nk(c)) == name), None)  # noqa: E731
             c_kind, c_item = col(h2, "種類"), col(h2, "項目")
-            c_name, c_units, c_unit = col(h1, "サービス内容略称"), col(h2, "単位数"), col(h2, "単位")
+            # 特定入所者介護サービス費（食費・居住費）のシートは、単位数の代わりに「費用額 (円)」
+            c_units = col(h2, "単位数")
+            if c_units is None:
+                c_units = col(h2, "(円)")
+            c_name, c_unit = col(h1, "サービス内容略称"), col(h2, "単位")
             if None in (c_kind, c_item, c_name, c_units):
                 print(f"  ! 見出しの列が分からないシート: {path.name} / {ws.title}", file=sys.stderr)
                 continue
