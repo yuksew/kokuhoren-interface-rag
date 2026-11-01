@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 63,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 3947,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002982,
+    "cost_usd_batch": 0.001491,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 63,
+    "printed_page": "38",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 82,
+            "no_raw": "８２",
+            "name_path": [
+              "市町村特別給付用サービスコード"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "[図]（8 1 ×3 ×4 ×5 ×6 / 固定 / サービス項目コード）\n＊サービス項目コードはサービスの内容・行為を表す",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 83,
+            "no_raw": "８３",
+            "name_path": [
+              "旧措置入所者特例のコード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:無し　　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 84,
+            "no_raw": "８４",
+            "name_path": [
+              "中止理由・入所（院）前の状況コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "様式第二、第二の二の場合\n中止理由として、以下のいずれかを設定する\n1:非該当\n2:介護施設※８\n3:医療機関入院\n4:死亡\n5:その他\n6:介護老人福祉施設入所　※７\n7:介護老人保健施設入所　※７\n8:介護療養型医療施設入院　※７　※１２\n9:介護医療院入所　※９\n平成２１年４月サービス以降、様式第六～六の四、八～十の場合、入所（院）前の状況として、以下のいずれかを設定する\n1:居宅\n2:医療機関\n3:介護老人福祉施設\n4:介護老人保健施設\n5:介護療養型医療施設\n6:認知症対応型共同生活介護\n7:特定施設入居者生活介護\n8:その他\n9:介護医療院　※９",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 85,
+            "no_raw": "８５",
+            "name_path": [
+              "退所（院）後の状態コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:居宅　　2:介護施設※８　　3:医療機関入院\n4:死亡　　5:その他\n6:介護老人福祉施設入所　※７\n7:介護老人保健施設入所　※７\n8:介護療養型医療施設入院　※７　※１２\n9:介護医療院入所　※９",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 86,
+            "no_raw": "８６",
+            "name_path": [
+              "標準負担額減免の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1.無し　　2.有り",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 87,
+            "no_raw": "８７",
+            "name_path": [
+              "申立者区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:サービス事業所等申立\n2:保険者申立\n3:公費負担者申立",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 88,
+            "no_raw": "８８",
+            "name_path": [
+              "給付管理票情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:新規　　2:修正　　3:取消",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 89,
+            "no_raw": "８９",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "1:訪問通所サービス給付管理票\n2:短期入所サービス給付管理票\n3:居宅サービス・介護予防サービス・総合事業区分給付管理票",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 90,
+            "no_raw": "９０",
+            "name_path": [
+              "款コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "02:保険給付費",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番82のセル内の図は、印字された文字のみ書き写し[図]と記載した。図の配置・矢印は再現していない。",
+      "項番84の内容セルは左右2つに分かれ、左は様式第二等の場合、右は平成21年4月サービス以降の場合の内容である。内容列に両方を改行で連結して入れた。",
+      "表の見出しの列名が『内容』のみのため、分割された内容の区別は内容列の中の文言で示した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 26,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 4538,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00328,
+    "cost_usd_batch": 0.00164,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 26,
+    "printed_page": "２４",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "施設入所支援"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型\n(平均障害程度区分5.0以上、障害程度区分6が60%以上)\n02:Ⅱ型\n(平均障害程度区分5.0以上、障害程度区分6が50%以上60%未満)\n03:Ⅲ型\n(平均障害程度区分5.0以上、障害程度区分6が40%以上50%未満)\n04:Ⅳ型\n(平均障害程度区分5.0以上、障害程度区分6が40%未満)または\n(平均障害程度区分4.5以上5未満、障害程度区分5,6が50%以上)\n05:Ⅴ型\n(平均障害程度区分4.5以上5未満、障害程度区分5,6が40%以上50%未満)\n06:Ⅵ型\n(平均障害程度区分4.5以上5未満、障害程度区分5,6が40%未満)または\n(平均障害程度区分4以上4.5未満、障害程度区分5,6が40%以上)\n07:Ⅶ型\n(平均障害程度区分4以上4.5未満、障害程度区分5,6が30%以上40%未満)\n08:Ⅷ型\n(平均障害程度区分4以上4.5未満、障害程度区分5,6が30%未満)または(平均障害程度区分4未満、障害程度区分5,6が30%以上)\n09:Ⅸ型\n(平均障害程度区分4未満、障害程度区分5,6が20%以上30%未満)\n10:Ⅹ型\n(平均障害程度区分4未満、障害程度区分5,6が20%未満)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "共同生活援助※7"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型(6:1以上)\n02:Ⅱ型(10:1以上)\n01:6:1 以上\n02:10:1 以上\n03:旧Ⅰ型(4:1以上)\n04:旧Ⅱ型(5:1以上)\n11:旧日中支援Ⅰ型(3:1以上)\n12:旧日中支援Ⅱ型(4:1以上)\n13:5:1 以上",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "共同生活介護"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型(4:1以上)\n02:Ⅱ型(5:1以上)\n03:Ⅲ型(6:1以上)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "就労継続支援（A型）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅰ型(7.5:1)\n02:Ⅱ型(10:1)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "人員配置区分",
+              "就労継続支援（B型）※13"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:Ⅱ型(7.5:1)\n02:Ⅲ型(10:1)\n03:Ⅰ型(6:1)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページの表は項番19（人員配置区分）から始まり、前ページから続く表か、次ページへ続くかは判断できない。見出し行は繰り返し印字されている。",
+      "項番19の内容欄には取消線（打ち消し線）が引かれたコード値が多数ある。取消線の有無は書き起こしに反映していない。",
+      "「共同生活援助※7」「就労継続支援（B型）※13」の※7・※13の注記本文はこのページに見当たらない。",
+      "「施設入所支援」「共同生活援助※7」等の小項目は、項番とコード名称の縦結合の下にある行見出しとして name_path に入れた。",
+      "内容欄の一部（例: 共同生活援助の「01:6:1 以上」）は原文の見た目どおりに書き写したが、取消線により有効・無効が異なる可能性がある。"
+    ]
+  },
+  "raw_text": null
+}

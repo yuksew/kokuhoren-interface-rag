@@ -1,0 +1,398 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_kyotsu_r0710",
+ "page": 6,
+ "edition": "令和7年10月施行分",
+ "volume": "共通編",
+ "printed_page": "4",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・コントロールレコードフォーマット",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "レコード種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "コントロールレコードを示す1を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード番号(連番)"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "ファイル内の先頭レコードからの連番(1から始まる通番)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "ボリューム通番"
+     ],
+     "type": "数値",
+     "length": 3,
+     "length_raw": "3",
+     "content": "0を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "レコード件数"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "データレコードの件数を設定(コントロールレコードおよびエンドレコードの件数は加算しない)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "データ種別"
+     ],
+     "type": "英数",
+     "length": 3,
+     "length_raw": "3",
+     "content": "「1．6 データ種別一覧」参照",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "送付元または送付先が市町村の場合は市町村番号を設定、市町村以外の場合は0を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "送付元または送付先が事業所の場合は事業所番号を設定、事業所以外の場合は0を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "都道府県番号"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "送付元または送付先が都道府県の場合は都道府県番号を設定、都道府県以外の場合は0を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "媒体区分"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1(伝送)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "処理対象年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "データの処理対象年月を設定する(注1)\n(例)2018年5月の場合、201805を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "予備"
+     ],
+     "type": "数値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "ブランク"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "改行(16進コード…0x0D0A)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "・データレコードフォーマット",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "レコード種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "データレコードを示す2を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード番号(連番)"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "ファイル内の先頭レコードからの連番(1から始まる通番)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "データ"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "交換情報ごとに、CSV形式でデータを設定\n設定する内容は、各交換情報の「項目説明」を参照",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "ブランク"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "改行(16進コード…0x0D0A)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "・エンドレコードフォーマット",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "レコード種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "エンドレコードを示す3を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード番号(連番)"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "ファイル内の先頭レコードからの連番(1から始まる通番)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "ブランク"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "改行(16進コード…0x0D0A)を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」の書き起こしを求めているが、添付は1ページのみで、そのページ（印字ページ4）に含まれる3つの表を書き起こした。次のページは添付されていないため書き起こしていない。",
+  "印字ページ番号は「4」だが、依頼上のPDFページは6と指定されている。PDF上のページ番号と印字ページ番号の食い違いの可能性がある。",
+  "コントロールレコードフォーマットの処理対象年月の「(注1)」の注記本文は、このページに見当たらないため footnotes に入れていない。",
+  "レコード名・交換情報識別番号・上位の情報名は、このページの表見出しや本文からは読み取れなかったため空文字とした。"
+ ]
+}

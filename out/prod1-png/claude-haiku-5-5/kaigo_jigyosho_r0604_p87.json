@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 87,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 6052,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004035,
+    "cost_usd_batch": 0.002018,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 87,
+    "printed_page": "39",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・緊急時施設療養・緊急時施設診療情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "緊急時施設療養・緊急時施設診療情報レコード（複数レコード）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "０３を設定する（緊急時施設療養情報レコード）",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "請求を行ったサービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "緊急時施設療養情報レコード順次番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "本レコードが複数になる場合、01～98の順次番号を設定する レコードが1件のみの場合、及び複数レコードの最後レコードには99を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "緊急時傷病名1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "緊急時傷病名1を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "緊急時傷病名2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "緊急時傷病名2を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "緊急時傷病名3"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "緊急時傷病名3を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "緊急時治療開始年月日1"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時の治療開始年月日1（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "緊急時治療開始年月日2"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時の治療開始年月日2（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "緊急時治療開始年月日3"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時の治療開始年月日3（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "往診日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "往診日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "往診医療機関名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "往診医療機関名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "通院日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "通院日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "通院医療機関名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "通院医療機関名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "緊急時治療管理単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "緊急時治療管理の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "緊急時治療管理日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "緊急時治療の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "緊急時治療管理小計"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "緊急時治療管理の小計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "リハビリテーション点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "リハビリテーションの点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "処置点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "処理の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "手術点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "手術の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は1ページのみで、そのページのページ番号は印字上39（PDF上の87ページ相当）である。添付されたこのページの表を書き起こした。",
+      "レコードの交換情報識別番号・上位の情報名は表や見出しから読み取れないため空文字とした。",
+      "項目7の内容は改行による折り返しを詰めて1文にしたため、文の区切りが原文と厳密に一致しない可能性がある。",
+      "※1〜※5、※S の注記本文は添付ページ内に記載がないため footnotes は空とした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 131,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 1807,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001912,
+    "cost_usd_batch": 0.000956,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 131,
+    "printed_page": "65-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "単位数（介護）"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護の保留復活分のサービス事業所の合計単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "特定入所者介護サービス費等"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "特定入所者介護サービス費等のサービス事業所の合計保留復活分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "平成17年9月サービス以前は、食事提供費用にかかる値を設定する。平成17年10月サービス以降は、特定入所者介護サービス費等費用にかかる値を設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "平成17年9月サービス以前は、食事提供費用にかかる値を設定する。平成17年10月サービス以降は、特定入所者介護サービス費等費用にかかる値を設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "未出力とする場合がある。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項目名の見出しの下に、罫線で区切られた空欄の列が2つあるが、見出し文字がないため列として扱わず、項目名は name_path にのみ入れた。",
+      "表の見出しやタイトルが見えないため title を null とし、前ページからの続きと判断して continued_from_prev_page を true にした。レコード名・交換情報識別番号は読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,428 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_jigyosho_r0604",
+ "page": 199,
+ "edition": "令和6年4月版",
+ "volume": "サービス事業所編",
+ "printed_page": "875",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・基本情報レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "基本情報レコード",
+    "parent": "主治医意見書作成料請求書情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "交換情報識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“71C1”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "レコード種別コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "事業所番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "・明細情報レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "明細情報レコード（複数レコード）",
+    "parent": "主治医意見書作成料請求書情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "交換情報識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“71C1”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "レコード種別コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“2”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "被保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "作成依頼年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "意見書の作成依頼年月日（西暦年月日(YYYYMMDD) ）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "意見書作成年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "意見書の作成年月日(西暦年月日(YYYYMMDD) )を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "意見書送付年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "意見書の送付年月日(西暦年月日(YYYYMMDD) )を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "意見書作成料種別"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "意見書の作成料種別を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "意見書作成料申請種別"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "意見書の作成料申請種別を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "意見書作成料"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "意見書の作成料を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "診断・検査費用"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "診断・検査費用を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "消費税"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "請求額の消費税を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "合計"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "合計額を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  },
+  {
+   "mark": "＜注意事項＞",
+   "text": "保険者が主治医意見書作成料支払業務を国保連合会に委託し、かつ、国保連合会が医療機関から直接主治医意見書作成料請求書を受け付ける運用としている場合に限り、医療機関が国保連合会に主治医意見書作成料請求書情報を提出する。"
+  }
+ ],
+ "uncertain": [
+  "レコード名と上位の情報名（record.name, record.parent）は見出しから推定して記入した。",
+  "明細情報レコードの属性・内容の全角・半角表記は原文のまま書き写したが、「YYYYMMDD」周辺の空白の有無は画像から判別しきれない箇所がある。"
+ ]
+}

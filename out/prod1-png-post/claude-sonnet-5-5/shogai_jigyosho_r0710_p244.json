@@ -1,0 +1,459 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 244,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 2665,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.04687,
+    "cost_usd_batch": 0.023435,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 244,
+    "printed_page": "126",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "※必須 > K121 K122",
+          "※必須 > K221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "給付費請求額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "高額障害児通所給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "高額障害児通所給付費を設定。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": null
+              },
+              {
+                "column": "※必須 > K221",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "特別対策費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービス提供年月が平成24年4月以降は、新体系定着支援に係る請求額を設定\nサービス提供年月が平成21年10月以降は、事業運営安定化に係る請求額を設定\nサービス提供年月が平成21年9月以前は、特別対策費である激変緩和加算に係る請求額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※6\n※7",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※7",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "請求額集計欄",
+              "自治体助成分請求額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担額のうち自治体が助成する額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "特定入所障害児食費等給付費",
+              "算定日額"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "サービス種類ごとに算定する日額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "特定入所障害児食費等給付費",
+              "日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類ごとに算定する日数を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "特定入所障害児食費等給付費",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "サービス種類ごとに給付費請求額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "特定入所障害児食費等給付費",
+              "実費算定額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス種類ごとに利用者が負担する実費の額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": "○"
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": null
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": null
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "利用日数管理票",
+              "当月の利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": null
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "利用日数管理票",
+              "原則日数の総和"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > K121 K122",
+                "value": null
+              },
+              {
+                "column": "※必須 > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎ : 必須項目　○ : 請求内容により必要　△ : 任意設定　空白 : 不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 2.1.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "【サービス提供年月が平成25年4月以降の場合】\n1 : 2および7以外の情報は1を設定する。\n2 : 単位数単価が10円以外の地域に所在する事業所において、下記障害児支援サービスを行った場合、同一サービス種類において単位数単価を分けて集計する必要があるため下記サービスを集計欄分類番号=2で集計する。\n(1)児童発達支援\n①人工内耳装用児支援加算(サービス提供年月が令和6年3月以前の場合)\n(2)医療型障害児入所支援\n①重度障害児支援加算\n②重度重複障害児加算\n③強度行動障害児特別支援加算(サービス提供年月が令和3年4月以降、令和6年3月以前の場合)\n(3)障害児入所支援\n①重度障害児支援加算"
+      }
+    ],
+    "uncertain": [
+      "表は前ページからの続き（項番22から開始）",
+      "項番22〜25の「請求額集計欄」「請求額」および項番26〜29の「特定入所障害児食費等給付費」の縦書き結合見出しの階層は目視判断",
+      "項番25は「請求額」グループに含まれるか不明確のため name_path は請求額集計欄配下のみとした",
+      "※1の本文は次ページに続く可能性あり"
+    ]
+  },
+  "raw_text": null
+}

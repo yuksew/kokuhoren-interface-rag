@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 15,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 4776,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003399,
+    "cost_usd_batch": 0.0017,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 15,
+    "printed_page": "11",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "返戻等一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J7B1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.6.支払通知情報(出力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害福祉サービス費等支払決定額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等への支払決定額を通知するためのリスト。処遇改善助成金(※1)の支払決定額も出力される。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8A1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害福祉サービス費等支払決定額内訳書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ支払決定額の内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8B1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "事業所別障害福祉サービス費等支払明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ支払決定額の明細を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8C1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害福祉サービス費等支払過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ過誤申立の決定額を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8D1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "訪問調査委託料支払明細一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ訪問調査委託料の支払明細一覧を通知する為のリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8E1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "障害福祉サービス費等処遇改善助成金支払決定額内訳書(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ処遇改善助成金(※1)の支払決定額の内訳を通知するためのリスト(※3)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8F1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "障害福祉サービス費等処遇改善加算等総額のお知らせ(※2、※4、※5、※6)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等へ福祉・介護職員処遇改善加算等(※2、※4、※5、※6)の加算総額及び内訳を通知するためのリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J8G1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成24年4月以降、令和6年5月以前の福祉・介護職員処遇改善加算。\nサービス提供年月が平成24年4月以降、令和4年3月以前の福祉・介護職員処遇改善特別加算。"
+      },
+      {
+        "mark": "※3",
+        "text": "処理対象年月が平成25年12月以降使用しない。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が令和1年10月以降、令和6年5月以前の福祉・介護職員等特定処遇改善加算。"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が令和4年10月以降、令和6年5月以前の福祉・介護職員等ベースアップ等支援加算。"
+      },
+      {
+        "mark": "※6",
+        "text": "サービス提供年月が令和6年6月以降の福祉・介護職員等処遇改善加算。"
+      }
+    ],
+    "uncertain": [
+      "1つ目の表は前ページからの続きと判断した（項番(4)から始まり表見出しがないため）。前ページの内容は見えていない。",
+      "添付ページの印字ページ番号は「11」で、依頼文のPDF上のページ15とは一致しない表記だが、印字されている値をそのまま記載した。",
+      "ルート欄は原文で「国保連合会」「→」「サービス」「事業所等」と改行されていたが、折り返しと判断して1行に詰めた。",
+      "内容・情報名の括弧は原文の全角・半角が画像から判別しにくいため、「(※1)」など半角括弧で書き写した。"
+    ]
+  },
+  "raw_text": null
+}

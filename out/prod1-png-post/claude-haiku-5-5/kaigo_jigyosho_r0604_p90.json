@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 90,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 5139,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003579,
+    "cost_usd_batch": 0.001789,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 90,
+    "printed_page": "402",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "緊急時施設療養情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "リハビリテーション点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "リハビリテーションの点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "処置点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "処理の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "手術点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "手術の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "麻酔点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "麻酔の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "放射線治療点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "放射線治療の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "摘要1"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": "：",
+            "name_path": [
+              "："
+            ],
+            "type": "：",
+            "length": null,
+            "length_raw": "：",
+            "content": "：",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "摘要20"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "緊急時施設療養費合計点数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費の合計点を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ 6\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※6",
+                "text": "リハビリテーション点数、処置点数、手術点数、麻酔点数、放射線治療点数の合計を設定する。(緊急時治療管理、所定疾患施設療養の単位数は設定しない)",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "所定疾患施設療養費傷病名1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名1を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "所定疾患施設療養費傷病名2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名2を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "所定疾患施設療養費傷病名3"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名3を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "所定疾患施設療養費開始年月日1"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日1（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "所定疾患施設療養費開始年月日2"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日2（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "所定疾患施設療養費開始年月日3"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日3（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "所定疾患施設療養費単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "所定疾患施設療養費の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "所定疾患施設療養費日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "所定疾患施設療養費の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "所定疾患施設療養費小計"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "所定疾患施設療養費の小計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "設定する内容は様式による。様式と交換情報識別番号の対応はP15を参照のこと。"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※5",
+        "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。"
+      },
+      {
+        "mark": "※6",
+        "text": "リハビリテーション点数、処置点数、手術点数、麻酔点数、放射線治療点数の合計を設定する。(緊急時治療管理、所定疾患施設療養の単位数は設定しない)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番26〜45の間の「：」の行は、項番の代わりに省略を表す行なので、その行を items に no null・name_path [\"：\"] として書き起こした。",
+      "表見出しがなくヘッダ行が先頭にあるため continued_from_prev_page を true としたが、前ページの有無は確認できていない。",
+      "record.name は注※5の「緊急時施設療養情報レコード」から取った。exchange_id と parent は本ページからは読み取れないため空文字とした。",
+      "注※2〜※4の引用符「」は原文の括弧表記を近似したもの。"
+    ]
+  },
+  "raw_text": null
+}

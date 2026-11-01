@@ -8,9 +8,9 @@
 sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
-src/       fetch.py, transcribe.py, pagemeta.py, postprocess.py, validate.py, report.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
-reports/   phase1_report.md（検証結果の報告）, compare.html（目視比較用）, cost.md, img/
+reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
 
 ## 実行
@@ -27,6 +27,15 @@ uv run python src/report.py                     # reports/compare.html と repor
 uv run python src/pagemeta.py                   # テキストレイヤからページ情報（表の有無・継続）→ out/pagemeta/
 uv run python src/postprocess.py                # → out/anthropic-png-post/（logical_tables.json を含む）
 uv run python src/validate.py --run anthropic-png-post && uv run python src/report.py --run anthropic-png-post
+
+# 多数ページの本番処理（Batch API、料金50%）: 投入 → 待つ → 回収 → 後処理 → 検証 → 採用版と確認キュー
+uv run python src/batch.py plan    --config config/prod1.yaml   # 対象ページ数と費用の見積もり
+uv run python src/batch.py submit  --config config/prod1.yaml
+uv run python src/batch.py status  --config config/prod1.yaml
+uv run python src/batch.py collect --config config/prod1.yaml
+uv run python src/postprocess.py --run prod1-png && uv run python src/validate.py --run prod1-png-post
+uv run python src/report.py --run prod1-png-post               # reports/compare.prod1-png-post.html
+uv run python src/adopt.py --run prod1-png-post                # 採用版 out/prod1-png-post-adopted/ と reports/review_queue.prod1-png-post.csv
 
 # API を使わずにパイプラインだけ試す
 uv run python src/transcribe.py --provider mock && uv run python src/validate.py --run mock-png && uv run python src/report.py --run mock-png

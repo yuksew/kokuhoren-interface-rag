@@ -1,0 +1,796 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 20,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 8369,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005195,
+    "cost_usd_batch": 0.002598,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 20,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(2)介護給付費等 明細書 基本情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "基本情報レコード",
+          "parent": "介護給付費等 明細書"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "※必須（識別番号毎） > J121",
+          "※必須（識別番号毎） > J131",
+          "※必須（識別番号毎） > J141",
+          "※必須（識別番号毎） > J221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01 を設定する(基本情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（チェックデジット 1 桁含む）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "助成自治体番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "助成自治体がある場合、市町村番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "○"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "支給決定者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定者カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "△"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "△"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "△"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "△"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "支給決定児童氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定児童カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "△"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "△"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "△"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "地域区分コードを設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "就労継続支援Ａ型事業者負担減免措置実施"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "利用者負担上限月額①"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "所得区分に応じた利用者負担上限月額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "就労継続支援Ａ型減免対象者"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "月の末日における障害支援区分コードを設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "※C\n※5",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "上限額管理事業所",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理事業所の事業所番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "○"
+              }
+            ],
+            "note": "※C\n※2",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理結果票の管理結果を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "○"
+              }
+            ],
+            "note": "※1\n※2",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "上限額管理結果票の管理結果額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "日中支援加算欄",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "連絡調整を行った日中介護事業所の事業所番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "日中支援加算欄",
+              "当該事業所への通所日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日中介護事業所への通所日数を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "○"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "請求額集計欄合計",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "単位数の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "請求額集計欄合計",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "請求額集計欄合計",
+              "上限月額調整（①②の内少ない数）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "上限月額調整（①②の内少ない数）の合計を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須（識別番号毎） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "※必須（識別番号毎） > J141",
+                "value": null
+              },
+              {
+                "column": "※必須（識別番号毎） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は1ページ（印字ページ番号15）のみで、依頼のPDF上のページ20とは一致しない。添付されたこのページの表を書き起こした。",
+      "表は最下行（項番22）でページ末尾まで届いており、次のページへ続く可能性があるが、続きは確認できていない。",
+      "項番4の内容「（チェックデジット 1 桁含む）」の括弧および半角・全角の表記は画像から判別しきれない。",
+      "項番20〜22の項目名は「請求額集計欄」と「合計」の縦書きグループ見出しを連結して「請求額集計欄合計」としたが、原本の見出し配置に基づく連結方法は確定できない。",
+      "項番22の項目名「上限月額調整（①②の内少ない数）」は、原本で①②の間で改行されている箇所を詰めて書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

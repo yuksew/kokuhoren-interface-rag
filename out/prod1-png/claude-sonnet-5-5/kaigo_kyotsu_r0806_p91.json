@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 91,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 1378,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.033952,
+    "cost_usd_batch": 0.016976,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 91,
+    "printed_page": "43",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "1.6 データ種別一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "データ種別（コントロールレコード）",
+          "格納するデータレコード > 識別",
+          "格納するデータレコード > 情報名"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "データ種別（コントロールレコード）",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "111：保険者向け給付実績情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1111\n1112\n1113\n1114\n1115\n1116\n1117\n1118\n1119"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "国保連合会保有給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "112：保険者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1121\n1122"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "保険者向け給付管理票情報"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "113：保険者保有給付実績情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1131\n1132\n1133\n1134\n1135\n1136\n1137\n1138\n1139"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "保険者保有給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "114：保険者保有給付実績更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1141\n1142\n1143\n1144\n1145\n1146\n1147\n1148\n1149"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "保険者保有給付実績更新結果情報"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "121：介護給付費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1211"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "介護給付費資格照合表情報"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "122：介護予防・日常生活支援総合事業費（経過措置）資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1221"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "介護予防・日常生活支援総合事業費（経過措置）資格照合表情報"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "123：介護予防・日常生活支援総合事業費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "格納するデータレコード > 識別",
+                "value": "1231"
+              },
+              {
+                "column": "格納するデータレコード > 情報名",
+                "value": "介護予防・日常生活支援総合事業費資格照合表情報"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

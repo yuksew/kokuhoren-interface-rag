@@ -1,0 +1,72 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_kyotsu_r0710",
+ "page": 47,
+ "edition": "令和7年10月施行分",
+ "volume": "共通編",
+ "printed_page": "４１－３",
+ "tables": [
+  {
+   "table_kind": "code_list",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "コード名称",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "コード名称",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "人員配置区分"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "03:旧Ⅰ型(4:1以上)\n04:旧Ⅱ型(5:1以上)\n11:旧日中支援Ⅰ型(3:1以上)\n12:旧日中支援Ⅱ型(4:1以上)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "内容",
+       "value": "共同生活援助"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": null,
+   "text": "以下のコードについては令和8年4月以降、使用不可となるコードである。当該コードは異動年月・サービス提供年月等が令和8年3月までのデータに関してのみ有効となる。"
+  }
+ ],
+ "uncertain": [
+  "依頼では PDF 上のページ 47 の次ページの表とあったが、添付は印字ページ「41－3」の1ページのみのため、添付ページの表のみを書き起こした。",
+  "「内容」見出しの下に、見出しのない列（「共同生活援助」の欄）が1つあるため、その値を cells の「内容」列として入れた。内容列が2つに分かれているかどうかは原本の見出しからは判断できない。"
+ ]
+}

@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 14,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 4960,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003491,
+    "cost_usd_batch": 0.001746,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 14,
+    "printed_page": "10",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.2.利用者負担上限額管理結果票情報(入力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "利用者負担上限額管理結果票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "上限額管理者が作成する利用者負担上限額管理結果票の集計情報（上限額管理を行った場合に上限額管理者が送信する）。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J411"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "利用者負担上限額管理結果票情報(複数児童)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "上限額管理者が作成する利用者負担上限額管理結果票の集計情報（同一世帯における複数児童の上限額管理を行った場合に上限額管理者が送信する）。（※1）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J421"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.3.利用者負担額一覧表情報(サービス事業所等間の受け渡し情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "利用者負担額一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等の間で上限額管理対象者の利用者負担額等を受け渡すための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J511"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→上限額管理者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "FD 等"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.4.サービス提供実績記録票情報(入力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "サービス提供実績記録票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス事業所等から介護給付費等の請求を行う際に提出する、サービス提供実績記録票の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J611"
+              },
+              {
+                "column": "ルート",
+                "value": "サービス事業所等→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.2.5.増減単位数返戻通知情報(出力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害福祉サービス費等支払決定増減表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村ごとの請求差、返戻の状況をサービス事業所等へ通知するためのリスト。処遇改善助成金（※1）の都道府県ごとの請求差、返戻の状況も出力される。\n※サービス事業所等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J711"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "返戻等一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻となる情報を確認するためのリスト\n※サービス事業所等からの依頼があった場合のみ提供",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J721"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害福祉サービス費等支払決定増減表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村ごとの請求差、返戻の状況をサービス事業所等へ通知するためのリスト。\n処遇改善助成金（※1）の都道府県ごとの請求差、返戻の状況も出力される。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "J7A1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→サービス事業所等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が令和7年10月以降使用する。"
+      },
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が令和7年4月以降使用する。"
+      }
+    ],
+    "uncertain": [
+      "依頼では「次のページ」の表を求められたが、添付は印字ページ10（PDF上のページ14とされるページ）の1枚のみのため、このページの表を書き起こした。",
+      "表中の「※1」は2種類ある（利用者負担上限額管理結果票の注記と、処遇改善助成金（※1）の注記）。footnotesには「サービス提供年月が令和7年4月以降使用する。」の1件のみを入れ、※1の対応関係は原文から確定できなかった。",
+      "表の最後の行の下端が次ページに続くかは画像からは判断できなかったため、continues_to_next_pageはfalseとした。"
+    ]
+  },
+  "raw_text": null
+}

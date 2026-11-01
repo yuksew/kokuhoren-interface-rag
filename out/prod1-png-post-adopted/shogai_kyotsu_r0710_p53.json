@@ -1,0 +1,93 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_kyotsu_r0710",
+ "page": 53,
+ "edition": "令和7年10月施行分",
+ "volume": "共通編",
+ "printed_page": "47",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・エンドレコードフォーマット",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "レコード種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "エンドレコードを示す 3 を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード番号（連番）"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "ファイル内の先頭レコードからの連番（1 から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "ブランク"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "改行（16 進コード…0x0D0A）を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付は PDF 上のページ 47（印字ページ「- 47 -」）で、依頼の「PDF上のページ 53」「次のページ」とは一致しない。添付された1ページの表のみを書き起こした。",
+  "前後のページは添付されていないため、次のページの表は書き起こせていない。",
+  "項目「ブランク」の内容欄『改行（16 進コード…0x0D0A）を設定』は、原文の全角半角・括弧の表記に多少の差がある可能性がある。"
+ ]
+}

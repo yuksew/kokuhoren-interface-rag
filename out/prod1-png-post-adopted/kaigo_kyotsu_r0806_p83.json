@@ -1,0 +1,623 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotsu_r0806",
+ "page": 83,
+ "edition": "令和8年6月版",
+ "volume": "共通編",
+ "printed_page": "41-15",
+ "tables": [
+  {
+   "table_kind": "code_list",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "コード名称",
+    "属性",
+    "バイト数",
+    "内容",
+    "サービス種類",
+    "届出内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "コード名称",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 197,
+     "no_raw": "197",
+     "name_path": [
+      "意見書作成料種別"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:在宅　2:施設",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 198,
+     "no_raw": "198",
+     "name_path": [
+      "意見書作成料申請種別"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:新規　2:継続",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 199,
+     "no_raw": "199",
+     "name_path": [
+      "事業対象者実施区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:実施不可　2:実施可",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 200,
+     "no_raw": "200",
+     "name_path": [
+      "短期集中リハビリテーション実施加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 201,
+     "no_raw": "201",
+     "name_path": [
+      "短期集中個別リハビリテーション実施加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "平成30年3月以前"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し　2:加算Ⅰ　3:加算Ⅱ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "平成30年4月以降",
+      "訪問リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "訪問リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n2:加算Ⅰ\n3:加算Ⅱ\n4:加算Ⅲ\n5:加算Ⅳ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "平成30年4月以降",
+      "通所リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "通所リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n2:加算Ⅰ\n3:加算Ⅱ\n4:加算Ⅲ\n5:加算Ⅳ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "平成30年4月以降",
+      "介護予防訪問リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "介護予防訪問リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n2:有り"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "平成30年4月以降",
+      "介護予防通所リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "介護予防通所リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n2:有り"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2021年4月以降",
+      "訪問リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "訪問リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n3:加算Ａイ\n6:加算Ａロ\n4:加算Ｂイ\n7:加算Ｂロ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2021年4月以降",
+      "通所リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "通所リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n3:加算Ａイ\n6:加算Ａロ\n4:加算Ｂイ\n7:加算Ｂロ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2021年4月以降",
+      "介護予防訪問リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "介護予防訪問リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "なし"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2021年4月以降",
+      "介護予防通所リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "介護予防通所リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "なし"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2024年6月以降",
+      "訪問リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "訪問リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n3:加算イ\n6:加算ロ"
+      }
+     ]
+    },
+    {
+     "no": 202,
+     "no_raw": "202",
+     "name_path": [
+      "リハビリテーションマネジメント加算",
+      "2024年6月以降",
+      "通所リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": "通所リハビリテーション"
+      },
+      {
+       "column": "届出内容",
+       "value": "1:無し\n3:加算イ\n6:加算ロ\n8:加算ハ"
+      }
+     ]
+    },
+    {
+     "no": 203,
+     "no_raw": "203",
+     "name_path": [
+      "移行支援加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 204,
+     "no_raw": "204",
+     "name_path": [
+      "中重度者ケア体制加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 205,
+     "no_raw": "205",
+     "name_path": [
+      "個別送迎体制強化加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 206,
+     "no_raw": "206",
+     "name_path": [
+      "入浴介助体制強化加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 207,
+     "no_raw": "207",
+     "name_path": [
+      "生活行為向上リハビリテーション実施加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 208,
+     "no_raw": "208",
+     "name_path": [
+      "医療連携強化加算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    },
+    {
+     "no": 209,
+     "no_raw": "209",
+     "name_path": [
+      "特定事業所集中減算"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:無し　2:有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "サービス種類",
+       "value": null
+      },
+      {
+       "column": "届出内容",
+       "value": null
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "202の内容欄は入れ子の表になっている。訪問リハビリテーションと通所リハビリテーションの届出内容、介護予防訪問と介護予防通所の届出内容は結合セルと判断して両行に同じ値を入れた。",
+  "202の「加算Ⅰ」「加算Ⅱ」などのローマ数字が画像の字形から判然としない箇所がある（Ⅰ/Ⅱ/Ⅲ/Ⅳ、Ａ/Ｂ/イ/ロ/ハ）。",
+  "セル内の全角スペース区切りの正確な幅は画像から確認しきれていない。"
+ ]
+}

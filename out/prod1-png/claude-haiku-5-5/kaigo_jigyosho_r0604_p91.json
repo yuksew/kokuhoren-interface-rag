@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 91,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 4590,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003304,
+    "cost_usd_batch": 0.001652,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 91,
+    "printed_page": "４１",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・特定診療費情報レコード（複数レコード）\nサービス提供年月が平成１５年３月以前の場合、以下の項目を設定する。",
+        "record": {
+          "exchange_id": "",
+          "name": "特定診療費情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "０４を設定する\n（特定診療費情報レコード）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "請求を行ったサービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者証記載の被保険者の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "特定診療費情報レコード順次番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "本レコードが複数になる場合、０１～９８の順次番号を設定する\nレコードが１件のみの場合、及び複数レコードの最後レコードには９９を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "傷病名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "傷病名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "保険",
+              "指導管理料等"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "保険分の指導管理料等の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "保険",
+              "単純ｴｯｸｽ線"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "保険分の単純ｴｯｸｽ線単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "保険",
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "保険分のﾘﾊﾋﾞﾘﾃｰｼｮﾝ単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "保険",
+              "精神科専門療法"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "保険分の精神科専門療法単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "保険",
+              "予備１"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "保険",
+              "予備２"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "保険",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "公費1",
+              "指導管理料等"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費１分の指導管理料等の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "公費1",
+              "単純ｴｯｸｽ線"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費１分の単純ｴｯｸｽ線単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "公費1",
+              "ﾘﾊﾋﾞﾘﾃｰｼｮﾝ"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費１分のﾘﾊﾋﾞﾘﾃｰｼｮﾝ単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "公費1",
+              "精神科専門療法"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費１分の精神科専門療法単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "公費1",
+              "予備１"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "公費1",
+              "予備２"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "公費1",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費１分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼では「次のページの表」の書き起こしとされていたが、添付は1ページのみで、今回の添付ページ（印字ページ４１、PDF上のページ91として指定されたもの）に見える特定診療費情報レコードの表を書き起こした。依頼どおりの別ページの内容は含まれていないため、対象ページの取り違えがないか確認が必要。",
+      "このページには※1、※2、※3、※4、※Sの注記本文が含まれていないため、footnotesは空とした。",
+      "備考列の「※ 4\\n※ S」は原文の改行を保持した。",
+      "項番7の内容の「０１～９８」などの全角数字は原文のまま書き写した。"
+    ]
+  },
+  "raw_text": null
+}

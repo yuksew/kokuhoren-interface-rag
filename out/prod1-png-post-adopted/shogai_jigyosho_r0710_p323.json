@@ -1,0 +1,324 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 323,
+ "edition": "令和7年10月施行分",
+ "volume": "サービス事業所編",
+ "printed_page": "166",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "(3)地域生活支援事業 請求書 明細情報レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "明細情報レコード",
+    "parent": "(3)地域生活支援事業 請求書"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性(※Z)",
+    "バイト数",
+    "内容",
+    "※必須",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性(※Z)",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "※必須",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": "「インタフェース仕様書 事業所編 3.1.2 インタフェース一覧」を参照のこと。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "02を設定する(明細情報レコード)",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービスを提供した年月(西暦年月YYYYMMを設定する)",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービスを提供した事業所番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "給付種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1固定",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "サービス種類コード",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "件数"
+     ],
+     "type": "数値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービス種類毎の明細書の件数",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "単位数"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "サービス種類毎の単位数",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "費用合計"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービス種類毎の総費用額(100/100の額)の合計",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "給付費請求額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービス種類毎の給付費請求額",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "特別対策費請求額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "利用者負担額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービス種類毎の利用者負担額",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "自治体助成額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※Y",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+  },
+  {
+   "mark": "※Z",
+   "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+  },
+  {
+   "mark": "※必須",
+   "text": "◎：必須項目 ○：請求内容により必要 △：任意設定 空白：不要"
+  },
+  {
+   "mark": "※B",
+   "text": "「インタフェース仕様書 事業所編 3.1.2 インタフェース一覧」を参照のこと。"
+  },
+  {
+   "mark": "※C",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+  },
+  {
+   "mark": "※Y",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+  },
+  {
+   "mark": "※Z",
+   "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+  }
+ ],
+ "uncertain": [
+  "添付ページの印字ページ番号は166で、依頼文のPDF上のページ323とは一致しない。添付された1ページ（印字166）の表のみを書き起こした。",
+  "ページ上部の※Y・※Zの注記が直前の表に属するのか本表に属するのか判別できないため、footnotesに記載したうえで重複して掲載した。",
+  "record.parent は表題の「(3)地域生活支援事業 請求書」から推定したもので、交換情報識別番号は読み取れないため空文字とした。"
+ ]
+}

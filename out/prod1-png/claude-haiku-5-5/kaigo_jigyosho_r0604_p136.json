@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 136,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 4084,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003051,
+    "cost_usd_batch": 0.001525,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 136,
+    "printed_page": "66-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "トレーラレコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "“7221”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“T1”固定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "合計",
+              "請求差",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護予防・日常生活支援総合事業（経過措置）の請求差のサービス事業所の合計件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1\n※ S",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "合計",
+              "請求差",
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "合計",
+              "請求差",
+              "金額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護予防・日常生活支援総合事業（経過措置）の請求差のサービス事業所の合計金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1\n※ S",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "合計",
+              "請求差",
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "合計",
+              "返戻",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護予防・日常生活支援総合事業（経過措置）の返戻のサービス事業所の合計件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "合計",
+              "返戻",
+              "予備3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "合計",
+              "返戻",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護予防・日常生活支援総合事業（経過措置）の返戻のサービス事業所の合計単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "合計",
+              "返戻",
+              "予備4"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "合計",
+              "予備5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "合計",
+              "予備6"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "合計",
+              "予備7"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "合計",
+              "予備8"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "合計",
+              "予備9"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "合計",
+              "予備10"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "合計",
+              "予備11"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "合計",
+              "予備12"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "合計",
+              "予備13"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "合計",
+              "予備14"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "合計",
+              "予備15"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "合計",
+              "予備16"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "未出力とする場合がある。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "表の見出しに「トレーラレコード」とあるが、交換情報識別番号や上位の情報名はこのページからは読み取れないため record.exchange_id と record.parent は空文字にした。",
+      "「合計」「請求差」「返戻」は縦結合の見出しとして name_path に入れた。"
+    ]
+  },
+  "raw_text": null
+}

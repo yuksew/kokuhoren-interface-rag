@@ -1,0 +1,578 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 59,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 13028,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.007523,
+    "cost_usd_batch": 0.003761,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 59,
+    "printed_page": "３６－３",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "地域区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:１級地　2:４級地　3:５級地　4:６級地　5:その他 6:２級地 7:３級地 9:７級地",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "特別地域加算の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年3月以前",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年4月以降",
+              "訪問看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年4月以降",
+              "介護予防訪問看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年4月以降",
+              "複合型サービス（看護小規模多機能型居宅介護）",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年4月以降",
+              "定期巡回・随時対応型訪問介護看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ　2:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年6月以降",
+              "訪問看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ　2:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年6月以降",
+              "介護予防訪問看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ　2:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年6月以降",
+              "定期巡回・随時対応型訪問介護看護",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ　2:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "2024年6月以降",
+              "複合型サービス（看護小規模多機能型居宅介護）",
+              "緊急時訪問看護加算（緊急時対応加算）の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "特別管理体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "機能訓練指導体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "食事提供体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "2021年3月以前",
+              "入浴介助加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "2021年4月以降",
+              "入浴介助加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:加算Ⅰ　3:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "特別入浴介助体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り　※8",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "送迎体制"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "常勤専従医師配置の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "施設等の区分",
+          "内容 > 平成19年3月以前",
+          "内容 > 平成19年4月以降",
+          "内容 > 平成20年4月以降"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "療養環境基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "施設等の区分",
+                "value": "病院療養型\nユニット型病院療養型\n病院経過型"
+              },
+              {
+                "column": "内容 > 平成19年3月以前",
+                "value": "1:基準\n2:減算型Ⅰ\n3:減算型Ⅱ\n4:減算型Ⅲ"
+              },
+              {
+                "column": "内容 > 平成19年4月以降",
+                "value": "1:基準型\n2:減算型Ⅰ\n3:減算型Ⅱ"
+              },
+              {
+                "column": "内容 > 平成20年4月以降",
+                "value": "1:基準型\n2:減算型"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "療養環境基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "施設等の区分",
+                "value": "診療所療養型\nユニット型診療所療養型"
+              },
+              {
+                "column": "内容 > 平成19年3月以前",
+                "value": "1:基準\n2:減算型Ⅰ\n3:減算型Ⅱ\n4:減算型Ⅲ"
+              },
+              {
+                "column": "内容 > 平成19年4月以降",
+                "value": "1:基準型\n2:減算型"
+              },
+              {
+                "column": "内容 > 平成20年4月以降",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "療養環境基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "施設等の区分",
+                "value": "ユニット型病院経過型"
+              },
+              {
+                "column": "内容 > 平成19年3月以前",
+                "value": "1:基準型\n2:減算型"
+              },
+              {
+                "column": "内容 > 平成19年4月以降",
+                "value": "1:基準型\n2:減算型"
+              },
+              {
+                "column": "内容 > 平成20年4月以降",
+                "value": "1:基準型\n2:減算型"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "医師の配置基準"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:基準　2:医療法施行規則第49条適用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "精神科医師定期的療養指導の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番43から始まり見出し行があるため、前ページからの続きかどうかは判断できない。continued_from_prev_page は true としたが参考扱い。",
+      "項番45の「サービス種類」「届出内容」「2024年3月以前」「2024年4月以降」「2024年6月以降」は見出し行にない内部見出しのため、列名には入れず name_path と content に分けた。届出内容の値は content に入れた。",
+      "項番50の「※8」は内容中の注記記号として原文のまま残したが、対応する注記本文はこのページに無い。",
+      "項番53の「平成20年5月以降」は3つの内容列にまたがる見出しで、ユニット型病院経過型の行の3列に同じ値を入れた。",
+      "項番53の「施設等の区分」は見出し行の列として扱い、各行のcellsに入れた。",
+      "表の下端で終わっているが、次ページに続く可能性は確認できない。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 71,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 6240,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004129,
+    "cost_usd_batch": 0.002064,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 71,
+    "printed_page": "41-4",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 136,
+            "no_raw": "136",
+            "name_path": [
+              "医療連携体制加算Ⅰ"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "平成30年3月以前\n1:対応不可　2:対応可\n平成30年4月以降\n1:無し　2:加算Ⅰ　3:加算Ⅱ　4:加算Ⅲ\n2024年4月以降\n1:無し　4:加算Ⅰイ　3:加算Ⅰロ　2:加算Ⅰハ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 137,
+            "no_raw": "137",
+            "name_path": [
+              "ユニットケア体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 138,
+            "no_raw": "138",
+            "name_path": [
+              "在宅・入所相互利用体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:対応不可　2:対応可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "ターミナルケア体制（看取り介護体制）の有無",
+              "平成30年3月以前"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "ターミナルケア体制（看取り介護体制）の有無",
+              "平成30年4月以降",
+              "介護福祉施設サービス"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:加算Ⅰ\n3:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "ターミナルケア体制（看取り介護体制）の有無",
+              "平成30年4月以降",
+              "地域密着型介護老人福祉施設"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:加算Ⅰ\n3:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "ターミナルケア体制（看取り介護体制）の有無",
+              "平成30年4月以降",
+              "上記以外"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 140,
+            "no_raw": "140",
+            "name_path": [
+              "身体拘束廃止取組の有無",
+              "平成30年3月以前"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 140,
+            "no_raw": "140",
+            "name_path": [
+              "身体拘束廃止取組の有無",
+              "平成30年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:減算型　2:基準型",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 141,
+            "no_raw": "141",
+            "name_path": [
+              "小規模拠点集合体制の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 142,
+            "no_raw": "142",
+            "name_path": [
+              "認知症ケア加算の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "通所介護",
+              "平成21年3月以前"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "通所介護",
+              "平成21年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:加算Ⅰ\n3:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "通所介護",
+              "平成24年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ\n4:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "通所介護",
+              "平成30年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "なし",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "地域密着型通所介護（平成28年4月1日～）",
+              "平成28年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ\n4:加算Ⅱ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "地域密着型通所介護（平成28年4月1日～）",
+              "平成30年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "なし",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "介護福祉施設サービス",
+              "2024年3月以前"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "介護福祉施設サービス",
+              "2024年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ\n4:加算Ⅱ　5:加算Ⅲ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "地域密着型介護老人福祉施設",
+              "2024年3月以前"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "地域密着型介護老人福祉施設",
+              "2024年4月以降"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　3:加算Ⅰ\n4:加算Ⅱ　5:加算Ⅲ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "個別機能訓練加算",
+              "上記以外"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページ先頭は項番136から始まり表見出しがないため前ページからの続きと判断したが、前ページは添付されていないため確認できない。",
+      "表の末尾（143）の下に次ページへの続きがあるかは判断できない。",
+      "139・143のサービス種類と届出内容の入れ子構造は、サービス種類をname_path、届出内容をcontentに入れた。139と143で届出内容が縦に結合された行は同じ内容を各行に入れた。",
+      "「平成30年4月以降」「2024年4月以降」の見出しは、136の内容欄の中の見出し行として改行区切りで含めた。",
+      "表見出しや記録名は読み取れなかったためrecordは空文字、titleはnullとした。"
+    ]
+  },
+  "raw_text": null
+}

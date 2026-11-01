@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 14,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 3456,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002739,
+    "cost_usd_batch": 0.001369,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 14,
+    "printed_page": "12",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "②コード値について",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "項目例"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "項目例",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "年月日（日付）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・各異動情報及び台帳情報の異動年月日\n・受給者台帳（基本情報） 障害支援区分情報 障害支援区分認定有効期間 開始年月日／終了年月日\n・受給者台帳（基本情報） 利用者負担上限額情報 利用者負担上限月額有効期間 開始年月日／終了年月日\n・受給者台帳（基本情報） 利用者負担上限額管理情報 上限額管理有効期間 開始年月日／終了年月日\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・明細書 基本情報レコード サービス提供年月\n・一次審査結果票情報 基本情報レコード 受付年月\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "年度"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・受給者台帳（モニタリング情報） モニタリング対象年度\n・障害児支援受給者台帳（モニタリング情報） モニタリング対象年度\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・受給者台帳（基本情報） 障害区分コード\n・事業所台帳（サービス情報） 地域区分コード\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・市町村番号\n・都道府県等番号\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・金融機関コード\n・金融機関支店コード\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "フラグ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・実績記録票 明細情報レコード 運転フラグ\n・実績記録票 明細情報レコード 退所時支援特別加算\n・実績記録票 明細情報レコード 地域移行加算\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "例外的な値が設定されるコード値項目",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "項目例"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "項目例",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "固定値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・市町村台帳（基本情報） 異動事由\n・都道府県等台帳（基本情報） 異動事由\n・事業所台帳（基本情報） 異動事由\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "未設定項目"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "・障害児給付費等 明細書 基本情報レコード 障害支援区分コード\n・地域生活支援事業 明細書 基本情報レコード 上限額管理事業所管理結果\n等",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼では「PDF上のページ14」「次のページ」とあったが、添付は印字ページ番号「- 12 -」のこの1ページのみのため、添付ページの表を書き起こした。",
+      "2つ目の表（例外的な値が設定されるコード値項目）は、コード一覧と同じ列構成だが見出しが別のため table_kind を other にした。",
+      "項番1の項目例の全角括弧（）の表記は画像からの判読のため、原文と異なる可能性がある。"
+    ]
+  },
+  "raw_text": null
+}

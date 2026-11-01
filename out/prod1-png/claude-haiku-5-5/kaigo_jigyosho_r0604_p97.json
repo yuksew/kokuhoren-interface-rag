@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 97,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 3429,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002723,
+    "cost_usd_batch": 0.001362,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 97,
+    "printed_page": "47",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "保険分出来高医療費",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合保険分緊急時施設療養費・緊急時施設診療費点数合計を設定する\n特定診療費・特別療養費・特別診療費の場合、保険分特定診療費・特別療養費・特別診療費単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "保険分出来高医療費",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合緊急時施設療養費・緊急時施設診療費請求額を設定する\n特定診療費・特別療養費・特別診療費の場合、保険分特定診療費・特別療養費・特別診療費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "保険分出来高医療費",
+              "出来高医療費利用者負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合保険分緊急時施設療養費・緊急時施設診療費利用者負担額を設定する\n特定診療費・特別療養費・特別診療費の場合、保険分特定診療費・特別療養費・特別診療費利用者負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "公費1分出来高医療費",
+              "単位数合計"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合公費1分緊急時施設療養費・緊急時施設診療費点数合計を設定する\n特定診療費・特別療養費・特別診療費の場合、公費1分特定診療費・特別療養費・特別診療費単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "公費1分出来高医療費",
+              "請求額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合公費1分緊急時施設療養費・緊急時施設診療費請求額を設定する\n特定診療費・特別療養費・特別診療費の場合、公費1分特定診療費・特別療養費・特別診療費請求額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "公費1分出来高医療費",
+              "出来高医療費本人負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費・緊急時施設診療費の場合公費1分緊急時施設療養費・緊急時施設診療費本人負担額を設定する\n特定診療費・特別療養費・特別診療費の場合、公費1分特定診療費・特別療養費・特別診療費本人負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページの表は見出し行がなく、前ページからの続きと判断した（項番27から始まる）。",
+      "レコード名・上位の情報名・交換情報識別番号はこのページから読み取れないため空文字とした。",
+      "項番の数字が全角か半角かは画像からは判別しきれないため、印字どおりの半角で書き起こした。",
+      "公費1の「1」の全角・半角、および「公費1分」の表記の空白の有無は画像から確実に判別できないため、空白なしの半角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

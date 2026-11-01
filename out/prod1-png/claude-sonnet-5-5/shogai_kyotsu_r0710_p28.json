@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 28,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 1627,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036482,
+    "cost_usd_batch": 0.018241,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 28,
+    "printed_page": "26",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "申立事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "[図]\n×1 ×2 ×3 ×4\n様式番号 申立理由番号\n【様式番号(上2桁)】\n10:介護給付費･訓練等給付費等明細書(様式第二)\n11:訓練等給付費等明細書(様式第三)\n(サービス提供年月が平成26年3月以前は\n介護給付費･訓練等給付費等明細書(様式第三))\n12:地域相談支援給付費明細書\n20:サービス利用計画作成費請求書\n21:計画相談支援給付費請求書\n30:特例介護給付費･特例訓練等給付費等明細書\n31:特例計画相談支援給付費請求書\n40:障害児施設給付費明細書\n41:障害児通所給付費･入所給付費等明細書\n50:地域生活支援事業明細書\n60:障害児相談支援給付費請求書\n70:特例障害児通所給付費等明細書\n71:特例障害児相談支援給付費請求書\n【申立理由番号(下2桁)】\n01:台帳誤り修正による市町村申立の過誤調整\n02:請求誤りによる実績取り下げ\n09:時効による市町村申立の取り下げ\n11:台帳誤り修正による事業所申立の実績取り下げ\n32:提供実績記録票誤りによる実績の取り下げ\n33:上限の誤りによる実績取り下げ\n90:その他の事由による台帳過誤\n99:その他の事由による実績の取り下げ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "[図]\n×1 ×2 ×3 ×4 ×5 ×6\n都道府県コード 下4桁は「0」固定\n×1 ×2 ×3 ×4 ×5 ×6\n0又はチェックデジット\n「0」固定\n都道府県コード",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "金融機関コード"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "全銀協が定めたコード体系",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "金融機関支店コード"
+            ],
+            "type": "コード値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "全銀協が定めたコード体系",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "口座種目"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:普通預金 2:当座預金 3:別段 9:その他",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "口座番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "全銀協が定めたコード体系",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "世帯算定所得区分 ※2､※4"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:生活保護 02:低所得1 03:低所得2 04:一般\n11:生活保護(支給決定保護者以外)\n12:低所得1(支給決定保護者以外)\n13:低所得2(支給決定保護者以外)\n14:一般(支給決定保護者以外)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番25の内容: 「20:サービス利用計画作成費請求書」「40:障害児施設給付費明細書」は取り消し線あり、原文のまま記載",
+      "項番26: 図中の上段の図(×1〜×6)に取り消し線あり、図は文字のみ書き写し",
+      "前ページからの続きの表のため、見出し行は繰り返されている"
+    ]
+  },
+  "raw_text": null
+}

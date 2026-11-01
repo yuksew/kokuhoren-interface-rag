@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 67,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 1506,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.035232,
+    "cost_usd_batch": 0.017616,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 67,
+    "printed_page": "41",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "申立理由番号\n01:固定単位数に誤りがある場合\n02:計算に誤りがある場合\n03:給付内容に疑義がある場合\n04:審査内容に疑義がある場合\n05:重複して請求されている場合\n06:適正化（その他）による場合\n07:適正化（ケアプラン点検）による場合\n08:適正化（介護給付費通知）による場合\n09:適正化（医療突合）による場合\n10:適正化（縦覧点検）による場合\n11:適正化（給付実績を活用した情報提供）による場合\n51:給付管理票の修正（※４）\n99:その他の再審査請求",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 102,
+            "no_raw": "102",
+            "name_path": [
+              "過誤申立事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "[図]\n×1 ×2 ×3 ×4\n様式番号\n申立理由番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 102,
+            "no_raw": "102",
+            "name_path": [
+              "過誤申立事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "様式番号\n10:居宅サービス介護給付費明細書（訪問介護・訪問入浴介護・訪問看護・訪問リハ・居宅療養管理指導・通所介護・通所リハ・福祉用具貸与・定期巡回・随時対応型訪問介護看護・夜間対応型訪問介護・地域密着型通所介護・認知症対応型通所介護・小規模多機能型居宅介護・複合型サービス（看護小規模多機能型居宅介護））\n11:介護予防サービス介護給付費明細書（介護予防訪問介護・介護予防訪問入浴介護・介護予防訪問看護・介護予防訪問リハ・介護予防居宅療養管理指導・介護予防通所介護・介護予防通所リハ・介護予防福祉用具貸与・介護予防認知症対応型通所介護・介護予防小規模多機能型居宅介護）※７\n21:居宅サービス介護給付費明細書(短期入所生活介護)\n24:介護予防サービス介護給付費明細書（介護予防短期入所生活介護）※７\n22:居宅サービス介護給付費明細書(介護老人保健施設における短期入所療養介護)\n25:介護予防サービス介護給付費明細書（介護老人保健施設における短期入所療養介護）※７\n23:居宅サービス介護給付費明細書(病院又は診療所における短期入所療養介護)\n26:介護予防サービス介護給付費明細書（病院又は診療所における短期入所療養介護）※７\n2A:居宅サービス介護給付費明細書（介護医療院における短期入所療養介護）※９\n2B:介護予防サービス介護給付費明細書（介護医療院における短期入所療養介護）※９\n30:居宅サービス介護給付費明細書（認知症対応型共同生活介護・特定施設入居者生活介護）\n31:介護予防サービス介護給付費明細書（介護予防認知症対応型共同生活介護）※７",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "先頭の行（申立理由番号の01〜99）は前ページからの続きで、項番・コード名称が見えないため no を null とした。",
+      "項番102の内容は図のセルと様式番号のセルに分かれており、それぞれ別行にした。図中の文字は×1〜×4、様式番号、申立理由番号のみ。",
+      "属性・バイト数・コード名称は縦結合セルのため、102の両行に同じ値を入れた。"
+    ]
+  },
+  "raw_text": null
+}

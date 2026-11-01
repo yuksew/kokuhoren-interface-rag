@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 185,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 2595,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002306,
+    "cost_usd_batch": 0.001153,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 185,
+    "printed_page": "83-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・集計レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "集計レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“7631”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "“T1”固定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "過誤件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "過誤調整を行った単位数の合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）",
+              "保険者負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "過誤調整を行ったサービスの保険者負担額の合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "予備3"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※",
+        "text": "S 固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "ページ番号が「- 8 3 - 3 -」のように読め、「83-3」か「833-3」か判別しにくいため、printed_page を 83-3 としたが不確か。",
+      "添付は1ページのみで、依頼文の「次のページ」は添付されていないため、添付の1ページ（PDF上のページ185相当）のみを書き起こした。",
+      "表の上の「・集計レコード」の直前に上位の情報名や交換情報識別番号は読み取れなかったため、record の exchange_id と parent は空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

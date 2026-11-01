@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 16,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 4008,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003015,
+    "cost_usd_batch": 0.001507,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 16,
+    "printed_page": "14",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "１．４　コード一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "異動事由",
+              "受給者異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:受給者資格取得\n02:受給者資格喪失\n03:政令市における受給者の区間異動\n04:合併による新規\n99:その他異動",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "異動事由",
+              "事業所異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値(省略可能)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "異動事由",
+              "市町村異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:固定値(省略可能)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "異動事由",
+              "個人番号異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:受給者資格取得\n02:受給者資格喪失\n99:その他異動",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "証記載市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の市町村番号\n[図] ×1 ×2 ×3 ×4 ×5 ×6 チェックデジット 市区町村コード 都道府県コード",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "政令市市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "政令市が受給者を行政区で分けて管理する場合のみ政令市の市町村番号を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証記載の受給者証番号が10桁に満たない場合は右詰とし、左側を0で埋める",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "障害区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:身体障害者 02:知的障害者 03:精神障害者 04: 障害児\n05:難病等対象者",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "21:区分1 22:区分2 23:区分3\n24:区分4 25:区分5 26:区分6 99:なし",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "所得区分コード※2"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:生活保護 02:低所得1 03:低所得2\n04:一般1 05: 一般2 99:その他 ※6\n(一般 1:所得割 16 万未満、一般 2:所得割 16 万以上とする。\n  但し、平成 19 年 4 月から 6 月迄に所得認定を受けた者に\n  ついては、16 万円を 10 万円と読み替えること)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼では「次のページ（PDF上のページ16）」の表を求められていたが、添付は1ページのみで、そのページには印字ページ「14」の『１．４　コード一覧』が写っていたため、添付された表をそのまま書き起こした。",
+      "異動事由（項番1）は縦結合の見出しとして name_path にのみ入れた。",
+      "項番2の図は『[図]』とし、図内に印字された文字（×1〜×6、チェックデジット、市区町村コード、都道府県コード）を content に併記した。",
+      "『※2』『※6』の注記本文はこのページに見当たらないため footnotes は空とした。",
+      "項番7の「6 月迄に」は画像上の字が判読しきれないため「迄」と読んだ。"
+    ]
+  },
+  "raw_text": null
+}

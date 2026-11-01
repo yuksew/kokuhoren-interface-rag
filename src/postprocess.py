@@ -107,6 +107,43 @@ def link_footnotes(res: dict, next_page_notes: dict[str, str]) -> tuple[int, int
     return resolved, unresolved
 
 
+def build_logical(pages_by_doc: dict[str, list[tuple[int, dict]]], profiles: dict[str, list[dict]]) -> tuple[list[dict], int]:
+    """ページ単位の結果から、ページをまたぐ表を結合した論理的な表の一覧を作る。"""
+    logical: list[dict] = []
+    joined = 0
+    for doc, pages in pages_by_doc.items():
+        pages = sorted(pages, key=lambda x: x[0])
+        cur = None
+        prev_page = None
+        for page, res in pages:
+            for i, t in enumerate(res.get("tables") or []):
+                joinable = (i == 0 and t["continued_from_prev_page"] and cur is not None
+                            and prev_page is not None
+                            and all(p["blank"] for p in profiles[doc][prev_page:page - 1]))
+                if joinable:
+                    cur["pages"].append(page)
+                    cur["items"].extend(t.get("items") or [])
+                    joined += 1
+                else:
+                    if cur:
+                        logical.append(cur)
+                    cur = {"doc_id": doc, "pages": [page], "table_kind": t.get("table_kind"),
+                           "title": t.get("title"), "record": t.get("record"),
+                           "columns": t.get("columns"), "column_map": t.get("column_map"),
+                           "items": list(t.get("items") or []),
+                           "starts_mid_table": bool(t["continued_from_prev_page"])}
+                    if "source_model" in t:
+                        cur["source_model"] = t["source_model"]
+            prev_page = page
+        if cur:
+            logical.append(cur)
+    for lt in logical:
+        nos = [it.get("no") for it in lt["items"] if it.get("no") is not None]
+        lt["no_range"] = [min(nos), max(nos)] if nos else None
+        lt["no_gaps"] = [b for a, b in zip(nos, nos[1:]) if b not in (a, a + 1)]
+    return logical, joined
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", default="anthropic-png")
@@ -160,35 +197,8 @@ def main() -> int:
             pages_by_doc[doc].append((page, res))
 
         # 4. ページをまたぐ表の結合
-        logical = []
-        for doc, pages in pages_by_doc.items():
-            pages.sort(key=lambda x: x[0])
-            cur = None
-            prev_page = None
-            for page, res in pages:
-                for i, t in enumerate(res.get("tables") or []):
-                    joinable = (i == 0 and t["continued_from_prev_page"] and cur is not None
-                                and prev_page is not None
-                                and all(p["blank"] for p in profiles[doc][prev_page:page - 1]))
-                    if joinable:
-                        cur["pages"].append(page)
-                        cur["items"].extend(t.get("items") or [])
-                        stats[model]["tables_joined"] += 1
-                    else:
-                        if cur:
-                            logical.append(cur)
-                        cur = {"doc_id": doc, "pages": [page], "table_kind": t.get("table_kind"),
-                               "title": t.get("title"), "record": t.get("record"),
-                               "columns": t.get("columns"), "column_map": t.get("column_map"),
-                               "items": list(t.get("items") or []),
-                               "starts_mid_table": bool(t["continued_from_prev_page"])}
-                prev_page = page
-            if cur:
-                logical.append(cur)
-        for lt in logical:
-            nos = [it.get("no") for it in lt["items"] if it.get("no") is not None]
-            lt["no_range"] = [min(nos), max(nos)] if nos else None
-            lt["no_gaps"] = [b for a, b in zip(nos, nos[1:]) if b not in (a, a + 1)]
+        logical, joined = build_logical(pages_by_doc, profiles)
+        stats[model]["tables_joined"] += joined
         (dst_dir / model / "logical_tables.json").write_text(json.dumps(logical, ensure_ascii=False, indent=1), encoding="utf-8")
         stats[model]["logical_tables"] = len(logical)
 

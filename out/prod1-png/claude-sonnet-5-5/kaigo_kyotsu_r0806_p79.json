@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 79,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 1952,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039692,
+    "cost_usd_batch": 0.019846,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 79,
+    "printed_page": "41-11",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 176,
+            "no_raw": "176",
+            "name_path": [
+              "生活機能向上グループ活動加算"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 177,
+            "no_raw": "177",
+            "name_path": [
+              "介護職員等処遇改善加算"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "平成27年3月以前: 1:無し　2:加算Ⅰ　3:加算Ⅱ　4:加算Ⅲ\n平成27年4月以降: 1:無し　5:加算Ⅰ　2:加算Ⅱ　3:加算Ⅲ　4:加算Ⅳ\n平成29年4月以降: 1:無し　6:加算Ⅰ　5:加算Ⅱ　2:加算Ⅲ　3:加算Ⅳ　4:加算Ⅴ\n2022年4月以降: 1:無し　6:加算Ⅰ　5:加算Ⅱ　2:加算Ⅲ\n2024年6月以降: 1:無し　7:加算Ⅰ　8:加算Ⅱ　9:加算Ⅲ　A:加算Ⅳ　B:加算Ⅴ(1)　C:加算Ⅴ(2)　D:加算Ⅴ(3)　E:加算Ⅴ(4)　F:加算Ⅴ(5)　G:加算Ⅴ(6)　H:加算Ⅴ(7)　J:加算Ⅴ(8)　K:加算Ⅴ(9)　L:加算Ⅴ(10)　M:加算Ⅴ(11)　N:加算Ⅴ(12)　P:加算Ⅴ(13)　R:加算Ⅴ(14)\n2025年4月以降: 1:無し　7:加算Ⅰ　8:加算Ⅱ　9:加算Ⅲ　A:加算Ⅳ\n2026年6月以降 訪問看護/訪問リハビリテーション/居宅介護支援/介護予防支援/介護予防訪問看護/介護予防訪問リハビリテーション/介護予防ケアマネジメント: 1:無し　2:有り\n2026年6月以降 上記以外: 1:無し　7:加算Ⅰイ　S:加算Ⅰロ　8:加算ⅡイT:加算Ⅱロ　9:加算Ⅲ　A:加算Ⅳ",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 178,
+            "no_raw": "178",
+            "name_path": [
+              "二次予防事業区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:非該当　2:該当",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 179,
+            "no_raw": "179",
+            "name_path": [
+              "算定単位"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:１回につき　02:１日につき　03:１月につき\n05:１週間につき",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 180,
+            "no_raw": "180",
+            "name_path": [
+              "算定回数制限期間"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01:１月につき　08:１日につき　16:１週間につき",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 181,
+            "no_raw": "181",
+            "name_path": [
+              "支給限度額対象区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "3:区分支給限度額管理の対象",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 182,
+            "no_raw": "182",
+            "name_path": [
+              "利用者負担定率／定額区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:定率　2:定額",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 183,
+            "no_raw": "183",
+            "name_path": [
+              "二次予防事業対象者実施区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:実施不可　2:実施可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 184,
+            "no_raw": "184",
+            "name_path": [
+              "要支援１受給者実施区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:実施不可　2:実施可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 185,
+            "no_raw": "185",
+            "name_path": [
+              "要支援２受給者実施区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:実施不可　2:実施可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番177の内容は入れ子の表（期間別）で、期間名と内容を1つのcontentにまとめて書いた。2026年6月以降の部分は黄色の強調表示あり。",
+      "項番177の「8:加算ⅡイT:加算Ⅱロ」の間の区切りは原文で判別しづらい（改行折り返し）。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "doc_id": "kaigo_jigyosho_r0604",
+    "page": 88,
+    "domain": "kaigo",
+    "volume": "サービス事業所編",
+    "edition": "令和6年4月版",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10090,
+      "output_tokens": 1209,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.03227,
+    "cost_usd_batch": 0.016135,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和6年4月版",
+    "volume": "サービス事業所編",
+    "page": 88,
+    "printed_page": "40",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "麻酔点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "麻酔の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "放射線治療点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "放射線治療の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "摘要1"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "摘要2"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": "：",
+            "name_path": [
+              "："
+            ],
+            "type": "：",
+            "length": null,
+            "length_raw": "：",
+            "content": "：",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "摘要20"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "６４",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "緊急時施設療養費合計点数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費又は緊急時施設診療費の合計点を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "設定する内容は様式による。様式と交換情報識別番号の対応は P15 を参照のこと。"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※5",
+        "text": "緊急時施設療養情報レコード順次番号が99のときのみ設定する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番「：」の省略行は項番・属性・バイト数・項目名・内容とも「：」のみで、位置ずれがあり原文どおり記載",
+      "表は前ページからの続き（項番24から開始）"
+    ]
+  },
+  "raw_text": null
+}

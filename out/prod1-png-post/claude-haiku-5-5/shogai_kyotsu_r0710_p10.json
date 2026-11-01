@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 10,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 2229,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002125,
+    "cost_usd_batch": 0.001063,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 10,
+    "printed_page": "8",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "例:",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項目名",
+          "入力値"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "単位数（点数）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力値",
+                "value": "0(数字ゼロ)"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力値",
+                "value": "0(数字ゼロ)"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力値",
+                "value": "0(数字ゼロ)"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力値",
+                "value": "省略"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "提供通番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力値",
+                "value": "省略"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "属性として数値となっているものは、0, 1, 2, 3, 4, 5, 6, 7, 8, 9の数字1桁をそれぞれ1バイトで表す。"
+      },
+      {
+        "mark": "※2",
+        "text": "マイナス数字については、CSV形式の場合は左側に半角の(\"-\")を付加する。ただし、この場合の\"-\"を含む設定値の桁数は、各交換情報の項目説明に示す項目長を超えてはならない。例: マイナス10は「-10」で表現する。"
+      },
+      {
+        "mark": "※3",
+        "text": "プラス数字およびゼロ値については、CSV形式の場合は左側には何も付けない。例: プラス10は「10」で表現する。"
+      },
+      {
+        "mark": "※4",
+        "text": "数値属性の項目にゼロが設定されているとき、特に断りがない場合は、マイナス値を取り得る項目については数字ゼロが入力されているものと見なし、マイナス値をとり得ない項目については値の入力が省略されているものと見なす。"
+      },
+      {
+        "mark": "※5",
+        "text": "数値属性の項目については必須入力が未設定の場合はエラーとする。"
+      },
+      {
+        "mark": "※6",
+        "text": "任意項目が未設定の場合、\"0\"が設定されているものとして取り扱う。"
+      }
+    ],
+    "uncertain": [
+      "依頼は「次のページの表」だが、添付は印字ページ8の1ページのみで、次ページは含まれていないため、このページ内の表のみを書き起こした。",
+      "ページ内の表は「例:」の項目名・入力値の表1つのみ。表の見出し行は『項目名』『入力値』で、『入力値』列の値は原文どおり。",
+      "※1〜※6の注記は表の下ではなく本文中の注記だが、※付きのため footnotes に入れた。※2の例文は原文の改行を省略して1文に連結した。"
+    ]
+  },
+  "raw_text": null
+}

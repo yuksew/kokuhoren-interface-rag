@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 62,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 2487,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.04509,
+    "cost_usd_batch": 0.022545,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 62,
+    "printed_page": "47",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "説明",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "説明",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "合計4",
+              "内訳 90%"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護(通院介護(伴ず))において、基礎研修課程修了者等、または重度訪問介護研修修了者の実績時間数を設定。\n同行援護(伴ず)において、基礎研修課程修了者等、基礎研修課程修了者等(通訳)、または盲ろう者向け通訳・介助員の実績時間数を設定。\n実績時間数(時間)は整数部3桁+小数部2桁で設定。例:99.5 時間→09950(または 9950)",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※11",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "合計4",
+              "合計 算定時間数計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "居宅介護(通院介護(伴ず))、同行援護(伴ず)において、算定時間数(時間)の合計を整数部3桁+小数部2桁で設定。例:99.5 時間→09950(または 9950)",
+            "required": null,
+            "required_by": [],
+            "note": "※11",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "合計5",
+              "内訳 100%"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "居宅介護(通院等乗降介助)において、初任者研修課程修了者等による実績回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "合計5",
+              "内訳 90%"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "居宅介護(通院等乗降介助)において、基礎研修課程修了者等、または重度訪問介護研修修了者による実績回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "合計5",
+              "合計 算定回数計"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "居宅介護(通院等乗降介助)において、算定回数の合計を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "提供実績の合計",
+              "算定 移動介護分"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "移動介護の時間数(時間)を整数部2桁+小数部1桁で設定(例:10.5 時間→105)。移動介護の時間数(時間)が 100 時間を超える場合は 999 を設定(例:100 時間→999)。",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "提供実績の合計",
+              "実績 送迎加算(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "片道単位の送迎回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "提供実績の合計",
+              "実績 家庭連携加算(回)(サービス提供回数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "家庭連携加算のサービス提供回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "提供実績の合計",
+              "実績 家庭連携加算(回)(算定回数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "家庭連携加算の算定回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "提供実績の合計",
+              "合計 算定日数(日)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "算定日数の合計を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "提供実績の合計",
+              "夜間支援体制加算(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "共同生活援助、宿泊型自立訓練において、夜間支援等体制加算の算定回数を設定。",
+            "required": null,
+            "required_by": [],
+            "note": "※5",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "提供実績の合計",
+              "日中支援加算(回)(サービス提供回数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日中支援加算のサービス提供回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "提供実績の合計",
+              "日中支援加算(回)(算定回数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日中支援加算の算定回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "提供実績の合計",
+              "通所型(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "通所型の回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "提供実績の合計",
+              "訪問型 1時間未満(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "訪問型1時間未満の回数を設定\nただし、訪問型(視覚)は合計しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "提供実績の合計",
+              "訪問型 1時間以上(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "訪問型1時間以上の回数を設定\nただし、訪問型(視覚)は合計しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "提供実績の合計",
+              "短期滞在加算(回)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "短期滞在加算の回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表見出し行の列名「属性（※Z）」「ﾊﾞｲﾄ数」は画像上「属性(※Z)」「ﾊﾞｲﾄ数」と読み取った",
+      "項番28・29は前ページから続くグループ（合計4）の可能性があり、グループ見出しの範囲が前ページにまたがる",
+      "record の情報はこのページから読み取れない"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 33,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 1610,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036312,
+    "cost_usd_batch": 0.018156,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 33,
+    "printed_page": "31",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "施設等の区分(障害児給付費)",
+              "児童発達支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:児童発達支援センター\n2:児童発達支援センター以外",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "施設等の区分(障害児給付費)",
+              "医療型児童発達支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:医療型児童発達支援センター\n2:指定発達支援医療機関\n(異動年月日の年月、\nまたはサービス提供年月が\n平成27年3月以前は指定医療機関)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "施設等の区分(障害児給付費)",
+              "知的障害児施設、盲児施設、ろうあ児施設\n障害児入所支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:当該施設が単独施設\n2:当該施設に併設する施設が主たる施設\n3:当該施設が主たる施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "施設等の区分(障害児給付費)",
+              "医療型障害児入所支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:医療型障害児入所施設\n2:指定発達支援医療機関\n(異動年月日の年月、\nまたはサービス提供年月が\n平成27年3月以前は指定医療機関)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "定員区分(障害児給付費)",
+              "知的障害児施設"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "1:5人以上10人未満\n2:10人\n3:11人以上20人以下\n4:21人以上30人以下\n5:31人以上40人以下\n6:41人以上50人以下\n7:51人以上60人以下\n8:61人以上70人以下\n9:71人以上80人以下\n10:81人以上90人以下\n11:91人以上100人以下\n12:101人以上110人以下\n13:111人以上120人以下\n14:121人以上130人以下\n15:131人以上140人以下\n16:141人以上150人以下\n17:151人以上160人以下\n18:161人以上170人以下\n19:171人以上180人以下\n20:181人以上190人以下\n21:191人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "定員区分(障害児給付費)",
+              "第2種自閉症児施設"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "1:40人以下\n2:41人以上50人以下\n3:51人以上60人以下\n4:61人以上70人以下\n5:71人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "定員区分(障害児給付費)",
+              "知的障害児通園施設"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "1:30人以下\n2:31人以上40人以下\n3:41人以上50人以下\n4:51人以上60人以下\n5:61人以上70人以下\n6:71人以上80人以下\n7:81人以上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "定員区分の行は項番セルが空欄(前ページ続きの可能性)のためno=null。項番36の続きか別項番か不明",
+      "定員区分の行は取消線が付いており、コード名称・属性・バイト数・内容すべて取消線表示。原文の文字のみ転記",
+      "コード名称の列は縦結合で内容列の左側に小項目名(児童発達支援等)があるが、見出しのない列のためname_pathに含めた",
+      "「(障害児給付費)」も定員区分側は取消線"
+    ]
+  },
+  "raw_text": null
+}

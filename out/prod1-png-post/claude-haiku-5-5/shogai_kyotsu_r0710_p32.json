@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 32,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 4134,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003078,
+    "cost_usd_batch": 0.001539,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 32,
+    "printed_page": "30",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "サービス種類コード（障害児給付費）"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:知的障害児施設 12:第1種自閉症児施設\n13:第2種自閉症児施設 21:知的障害児通園施設\n31:盲児施設 32:ろうあ児施設\n33:難聴幼児通園施設\n41:肢体不自由児施設(入所)\n42:肢体不自由児施設(通所)\n43:肢体不自由児療護施設\n44:肢体不自由児通園施設\n45:指定医療機関(肢体不自由児)\n51:重症心身障害児施設\n52:指定医療機関(重心)\n55:障害児相談支援\n61:児童発達支援 62:医療型児童発達支援\n63:放課後等デイサービス 64:保育所等訪問支援\n65:居宅訪問型児童発達支援\n71:障害児入所支援\n72:医療型障害児入所支援",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "指定事業所等"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "11:一級地 12:二級地 13:三級地\n14:四級地 15:五級地 16:六級地\n17:七級地 18:八級地 19:九級地\n20:十級地 21:十一級地 22:十二級地\n23:その他\n24:十三級地 25:十四級地",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "地域区分コード（障害児給付費）",
+              "児童デイ経過措置事業所"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "31:一級地(旧児童デイ)\n32:二級地(旧児童デイ)\n33:三級地(旧児童デイ)\n34:四級地(旧児童デイ)\n35:五級地(旧児童デイ)\n36:六級地(旧児童デイ)\n37:七級地(旧児童デイ)\n38:八級地(旧児童デイ)\n39:九級地(旧児童デイ)\n40:十級地(旧児童デイ)\n41:十一級地(旧児童デイ)\n42:十二級地(旧児童デイ)\n43:十三級地(旧児童デイ)\n44:十四級地(旧児童デイ)\n45:十五級地(旧児童デイ)\n46:十六級地(旧児童デイ)\n47:十七級地(旧児童デイ)\n48:十八級地(旧児童デイ)\n49:十九級地(旧児童デイ)\n50:二十級地(旧児童デイ)\n51:その他(旧児童デイ)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの印字ページ番号は「- 30 -」で、依頼文のPDF上のページ32とは一致しない。添付された1ページ（印字30）を書き起こした。",
+      "原本では一部の項目に取り消し線が付いている（34行目の多くの項目、35行目の指定事業所等の18・19・20・21・22・24・25、児童デイ経過措置事業所の欄の大部分など）。取り消し線は構造化できないため、文字は取り消しの有無に関係なくすべて書き写した。どの項目が取り消し線付きかは原本で確認が必要。",
+      "35行目の「内容」列は左側に小見出し（指定事業所等／児童デイ経過措置事業所）、右側にコードが並ぶ二段構成になっている。小見出しは name_path に入れ、コード部分を content に入れた。",
+      "表の見出し行は1つだけで、ページ内に表題は確認できないため title は null とした。"
+    ]
+  },
+  "raw_text": null
+}

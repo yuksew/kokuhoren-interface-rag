@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 36,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 4439,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00323,
+    "cost_usd_batch": 0.001615,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 36,
+    "printed_page": "34",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "バイト数",
+          "内容",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "高次脳機能障害者支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生活介護\n施設入所支援\n共同生活援助\n宿泊型自立訓練\n自立訓練（機能訓練）\n自立訓練（生活訓練）\n就労移行支援\n就労移行支援（養成施設）\n就労継続支援（A型）\n就労継続支援（B型）\n就労選択支援",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "内容",
+                "value": "1:無し  2:有り"
+              }
+            ]
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "高次脳機能障害者支援体制加算の有無",
+              "計画相談支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "計画相談支援",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "内容",
+                "value": "1:無し  2:Ⅱ  3:Ⅰ"
+              }
+            ]
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "身体拘束廃止未実施減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "居宅介護\n重度訪問介護\n行動援護\n重度包括\n同行援護\n療養介護\n短期入所\n施設入所支援\n共同生活援助\n宿泊型自立訓練\n就労選択支援\n児童発達支援\n医療型児童発達支援\n放課後等デイサービス\n保育所等訪問支援\n居宅訪問型児童発達支援\n障害児入所支援\n医療型障害児入所支援",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "内容",
+                "value": "1:無し  2:有り"
+              }
+            ]
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "身体拘束廃止未実施減算の有無",
+              "生活介護・自立訓練等"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生活介護\n自立訓練（機能訓練）\n自立訓練（生活訓練）\n就労移行支援\n就労移行支援（養成施設）\n就労継続支援（A型）\n就労継続支援（B型）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "内容",
+                "value": "1:無し\n2:有り（障害者支援施設以外）\n3:有り（障害者支援施設）"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "保健所との連携をしている場合の届出については「2:その他栄養士」のコードを使用して届出を行うこと。"
+      },
+      {
+        "mark": "※2",
+        "text": "平成22年4月以降、低所得1・低所得2は「低所得」として一本化されるが、低所得1・低所得2のコードは使用可能とするため、どちらのコードも設定可能とする。"
+      },
+      {
+        "mark": "※3",
+        "text": "小規模多機能型居宅介護事業所において、共生型、または基準該当として生活介護を提供する場合のみ「2:小規模多機能」を設定する。それ以外の場合は、「1:一般」を設定する。"
+      },
+      {
+        "mark": "※4",
+        "text": "平成22年4月以降、世帯算定所得区分を設定する受給者と同一世帯に障害児がいる場合、当該受給者が障害児の保護者ではない場合に、11～14のコードで設定する。"
+      },
+      {
+        "mark": "※5",
+        "text": "平成30年3月以前、小規模多機能型居宅介護事業所において、基準該当として短期入所を提供する場合は「1:福祉型」を設定する。\n平成30年4月以降、小規模多機能型居宅介護事業所において、基準該当として短期入所を提供する場合は「1:福祉型」を設定する。共生型として短期入所を提供する場合は「1:福祉型」、または「3:福祉型（強化）」を設定する。"
+      }
+    ],
+    "uncertain": [
+      "添付ページの印字ページ番号は「- 34 -」だが、依頼文のPDF上のページは36となっており一致しない。添付の1ページ（印字34）を書き起こした。",
+      "表の「内容」見出しは2列にまたがっているが、右側の列には見出しの文字がない。columns では「内容」を2回並べ、右側の列は cells の「内容」として入れた。",
+      "表の先頭に見出し行があるが項番44から始まるため、前ページからの続きと判断し continued_from_prev_page を true にした。（後処理でテキストレイヤから再判定されるため参考扱い）",
+      "項番44・45の内容の右側列（1:無し 2:有り 等）は、行ごとに対応する内容の値の説明と読み取った。",
+      "項番44の2行目（計画相談支援）と項番45の2行目（生活介護・自立訓練等）は、縦結合された項目名の下の小項目として扱った。name_path の「生活介護・自立訓練等」は原文に無い見出しであるため、区別用の名称として付けた点に注意。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,13 @@
+# 本番1: 事業所向け4編の「表のあるページ」すべてを、新しいスキーマ（column_map / cells）で両モデル処理する。
+# 採用ルール: 必須対応表は Haiku、それ以外は Haiku を主・Sonnet を第2意見（src/adopt.py）
+run: prod1-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+docs:
+  - kaigo_kyotsu_r0806
+  - kaigo_jigyosho_r0604
+  - shogai_kyotsu_r0710
+  - shogai_jigyosho_r0710

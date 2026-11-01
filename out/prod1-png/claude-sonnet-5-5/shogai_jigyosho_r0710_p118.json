@@ -1,0 +1,4844 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 118,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 26054,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.28076,
+    "cost_usd_batch": 0.14038,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 118,
+    "printed_page": "62-35",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "(15) 入力必須項目と様式の対応表（基本情報レコード）【サービス提供年月：平成27年4月～平成30年3月】",
+        "record": {
+          "exchange_id": "",
+          "name": "基本情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "0101 居宅介護",
+          "0201 行動援護",
+          "0301 重度訪問介護3-1",
+          "0401 重度包括",
+          "0601 短期入所",
+          "0701 生活介護",
+          "0901 施設入所支援",
+          "1301 自立訓練(機能訓練)",
+          "1401 自立訓練(生活訓練)",
+          "1501 宿泊型自立訓練",
+          "1601 就労移行支援",
+          "1701 就労継続支援",
+          "1801 共同生活援助18-1",
+          "1802 共同生活援助18-2",
+          "1901 同行援護",
+          "2001 地域移行支援",
+          "2101 地域定着支援"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "◎"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "◎"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "◎"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": "◎"
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "◎"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "◎"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "◎"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "◎"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "◎"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "◎"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "◎"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "◎"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "◎"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "◎"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付適用の有無"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付額(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 朝食(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 昼食(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 夕食(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価 一日(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価 一日(円／日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価 一月(円／月)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "合計1",
+              "内訳 100%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "合計1",
+              "内訳 70%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "合計1",
+              "内訳 重訪"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "合計1",
+              "合計 算定時間数計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": "○"
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "○"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": "○"
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "合計2",
+              "内訳 100%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "合計2",
+              "内訳 70%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "合計2",
+              "内訳 重訪"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "合計2",
+              "合計 算定時間数計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "合計3",
+              "内訳 100%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "合計3",
+              "内訳 90%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "合計3",
+              "合計 算定時間数計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "合計4",
+              "内訳 100%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "合計4",
+              "内訳 90%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "合計4",
+              "合計 算定時間数計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": "○"
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "合計5",
+              "内訳 100%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "合計5",
+              "内訳 90%"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "合計5",
+              "合計 算定回数計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": "○"
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "提供実績の合計",
+              "算定 移動介護分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": "○"
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "提供実績の合計",
+              "実績 送迎加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "○"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "○"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "提供実績の合計",
+              "実績 家庭連携加算(回)(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "提供実績の合計",
+              "実績 家庭連携加算(回)(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "提供実績の合計",
+              "合計 算定日数(日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "○"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": "○"
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "提供実績の合計",
+              "夜間支援体制加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "提供実績の合計",
+              "日中支援加算(回)(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "提供実績の合計",
+              "日中支援加算(回)(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "提供実績の合計",
+              "通所型(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "提供実績の合計",
+              "訪問型 1時間未満(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "提供実績の合計",
+              "訪問型 1時間以上(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "提供実績の合計",
+              "短期滞在加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "提供実績の合計",
+              "食事提供加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": "○"
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "○"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": "○"
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "提供実績の合計",
+              "入院･外泊時加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "提供実績の合計",
+              "入院時支援特別加算(回)(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "提供実績の合計",
+              "入院時支援特別加算(回)(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": "○"
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "提供実績の合計",
+              "自立生活支援加算(Ⅱ)(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "提供実績の合計",
+              "自活訓練加算(回)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "提供実績の合計",
+              "訪問支援特別加算(回)(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "○"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "提供実績の合計",
+              "訪問支援特別加算(回)(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": "○"
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "提供実績の合計",
+              "施設外支援 当月(日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "提供実績の合計",
+              "施設外支援 累計(日／180日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": null
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": "○"
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": "○"
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": null
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "提供実績の合計",
+              "帰宅時支援加算(回)(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "提供実績の合計",
+              "帰宅時支援加算(回)(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "0101 居宅介護",
+                "value": null
+              },
+              {
+                "column": "0201 行動援護",
+                "value": null
+              },
+              {
+                "column": "0301 重度訪問介護3-1",
+                "value": null
+              },
+              {
+                "column": "0401 重度包括",
+                "value": null
+              },
+              {
+                "column": "0601 短期入所",
+                "value": null
+              },
+              {
+                "column": "0701 生活介護",
+                "value": null
+              },
+              {
+                "column": "0901 施設入所支援",
+                "value": null
+              },
+              {
+                "column": "1301 自立訓練(機能訓練)",
+                "value": null
+              },
+              {
+                "column": "1401 自立訓練(生活訓練)",
+                "value": null
+              },
+              {
+                "column": "1501 宿泊型自立訓練",
+                "value": "○"
+              },
+              {
+                "column": "1601 就労移行支援",
+                "value": null
+              },
+              {
+                "column": "1701 就労継続支援",
+                "value": null
+              },
+              {
+                "column": "1801 共同生活援助18-1",
+                "value": "○"
+              },
+              {
+                "column": "1802 共同生活援助18-2",
+                "value": null
+              },
+              {
+                "column": "1901 同行援護",
+                "value": null
+              },
+              {
+                "column": "2001 地域移行支援",
+                "value": null
+              },
+              {
+                "column": "2101 地域定着支援",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "列見出しの様式名称は縦書きのため、列名は識別番号＋様式名で記載。0301は「重度訪問介護3－1」、1801/1802は「共同生活援助18－1/18－2」と読み取り",
+      "項番41の項目名は「通所型(回)」と読み取ったが、印字は「通所型(回)」か「通所型(回)」の可能性があり、字形が小さく確信が低い",
+      "項番49・50は全列空欄と読み取り"
+    ]
+  },
+  "raw_text": null
+}

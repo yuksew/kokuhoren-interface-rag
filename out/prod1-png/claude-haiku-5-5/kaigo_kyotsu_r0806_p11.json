@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 11,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 4156,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003087,
+    "cost_usd_batch": 0.001543,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 11,
+    "printed_page": "7",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・コントロールレコードフォーマット",
+        "record": {
+          "exchange_id": "",
+          "name": "コントロールレコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "レコード種別"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "コントロールレコードを示す1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "レコード番号（連番）"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "ファイル内の先頭レコードからの連番（1から始まる通番）を設定\nマルチボリュームファイルの場合、マルチボリューム全体での通番となる",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "ボリューム通番"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "ボリュームに対して付与する番号\nボリュームにまたがらない単独のファイルの場合は0を設定\nマルチボリュームファイルの場合は先頭ボリュームからの連番（1から始まる通番）を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "レコード件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "データレコードの件数を設定（コントロールレコードおよびエンドレコードの件数は加算しない）\nマルチボリュームファイルの場合、分割されたそれぞれのファイル内でのデータレコード件数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "データ種別"
+            ],
+            "type": "英数",
+            "length": 3,
+            "length_raw": "３",
+            "content": "「1.6 データ種別一覧」参照（P.43）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "福祉事務所特定番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "送付元または送付先が福祉事務所の場合は12（法別番号）を設定、福祉事務所以外の場合は0を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "送付元または送付先が保険者の場合は保険者番号、福祉事務所の場合は福祉事務所番号を設定、保険者（福祉事務所）以外の場合は0を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "送付元または送付先が事業所の場合は事業所番号を設定、事業所以外の場合は0を設定、または設定を省略する（※）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "都道府県番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "送付元または送付先が都道府県の場合は都道府県番号を設定、都道府県以外の場合は0を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "媒体区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "保険者等：1（伝送）を設定\n事業所：1または7（伝送（インターネット））を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "処理対象年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "データの処理対象年月を設定する（注1）\n（例）２０００年４月の場合、２００００４を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "ファイル管理番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "マルチボリュームファイルの場合にのみ意味を持つ\n作成するファイル単位に一意な値を設定（分割された複数のファイルは全て同じ管理番号となる）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "ブランク"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "改行（16進コード…0x0D0A）を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※",
+        "text": "事業所番号について 事業所番号の省略については「1.5.1(6)「事業者番号」欄（P.42）」参照のこと。"
+      }
+    ],
+    "uncertain": [
+      "依頼では PDF 上のページ 11 の表とあったが、添付画像は印字ページ 7 の1ページのみで、このページの表（コントロールレコードフォーマット）を書き起こした。",
+      "列見出し「ﾊﾞｲﾄ数」は画像上で半角カナ表記に見えるため、そのまま記載した。",
+      "内容欄の改行位置は文の区切りから判断した。折り返しと区別しきれない箇所がある可能性がある。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 308,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 2764,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002393,
+    "cost_usd_batch": 0.001197,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 308,
+    "printed_page": "151",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "(3)明細レコード(複数レコード)",
+        "record": {
+          "exchange_id": "",
+          "name": "明細レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "２",
+            "content": "02を出力する(明細レコード)",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "６",
+            "content": "請求受付年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "６",
+            "content": "証記載都道府県等番号、または証記載市町村番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "都道府県等名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "都道府県名、または市町村名を全角文字で出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス提供年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "請求差件数"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "８",
+            "content": "請求差件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "請求差単位数"
+            ],
+            "type": "数値",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "請求差単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "返戻件数"
+            ],
+            "type": "数値",
+            "length": 7,
+            "length_raw": "７",
+            "content": "返戻件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "返戻単位数"
+            ],
+            "type": "数値",
+            "length": 11,
+            "length_raw": "１１",
+            "content": "返戻単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　事業所編　２．１．２　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　１．５　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　１．３　表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "処遇改善助成金（※4）の情報を出力する場合、05を出力する。（受付年月が平成25年12月以降、05は使用しない。）"
+      },
+      {
+        "mark": "※2",
+        "text": "処遇改善助成金（※4）の情報を出力する場合、請求差助成金を出力する。"
+      },
+      {
+        "mark": "※3",
+        "text": "処遇改善助成金（※4）の情報を出力する場合、返戻助成金を出力する。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      }
+    ],
+    "uncertain": [
+      "PDFページ308と印字ページ151の対応は画像からは確認できない。",
+      "レコード名の「明細レコード」は表見出しから取ったもので、上位の情報名（介護給付費等 明細書など）はこのページに無いため parent は空文字とした。",
+      "交換情報識別番号は画像上で読み取れないため exchange_id を空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

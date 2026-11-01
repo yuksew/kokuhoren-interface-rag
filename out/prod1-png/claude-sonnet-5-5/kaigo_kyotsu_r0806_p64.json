@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "doc_id": "kaigo_kyotsu_r0806",
+    "page": 64,
+    "domain": "kaigo",
+    "volume": "共通編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10086,
+      "output_tokens": 609,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.026262,
+    "cost_usd_batch": 0.013131,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "共通編",
+    "page": 64,
+    "printed_page": "38-1",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "コード名称",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "コード名称",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 91,
+            "no_raw": "９１",
+            "name_path": [
+              "項コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "平成 18 年3 月以前\n01:介護サービス等諸費\n02:支援サービス等諸費\n04:高額介護サービス等費\n05:市町村特別給付費\n06:特定入所者介護サービス等費\n平成 18 年4 月以降\n01:介護サービス等諸費\n02:介護予防サービス等諸費\n04:高額介護サービス等費\n05:市町村特別給付費\n06:特定入所者介護サービス等費\n平成 27 年5 月以降\n01:介護サービス等諸費\n02:介護予防サービス等諸費\n04:高額介護サービス等費\n06:市町村特別給付費\n07:特定入所者介護サービス等費",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "内容列は「平成18年3月以前」等の期間ラベルとコード値の2段に分かれているが、columnsは見出し「内容」のみのため1セルにまとめた",
+      "項番「９１」は全角表記。ページ番号は「－ ３８－１ －」を半角で記載"
+    ]
+  },
+  "raw_text": null
+}

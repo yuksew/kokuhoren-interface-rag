@@ -1,0 +1,4809 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 136,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 27073,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.29095,
+    "cost_usd_batch": 0.145475,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 136,
+    "printed_page": "63-11",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "（20）入力必須項目と様式の対応表（明細情報レコード）【サービス提供年月：平成24年4月～平成26年3月】",
+        "record": {
+          "exchange_id": "",
+          "name": "明細情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "様式種別番号 > 0101",
+          "様式種別番号 > 0201",
+          "様式種別番号 > 0301",
+          "様式種別番号 > 0401",
+          "様式種別番号 > 0601",
+          "様式種別番号 > 0701",
+          "様式種別番号 > 0801",
+          "様式種別番号 > 0901",
+          "様式種別番号 > 1301",
+          "様式種別番号 > 1401",
+          "様式種別番号 > 1501",
+          "様式種別番号 > 1601",
+          "様式種別番号 > 1701",
+          "様式種別番号 > 1801",
+          "様式種別番号 > 1901",
+          "様式種別番号 > 2001",
+          "様式種別番号 > 2101"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "提供通番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "日付"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "◎"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "サービス提供回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス内容"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "ヘルパー資格"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "運転フラグ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "開始時間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "終了時間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "算定時間数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "乗降(回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "移動"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "派遣人数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "前月からの継続サービス"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "送迎加算 往"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "送迎加算 復"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "家庭連携加算(サービス提供時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "家庭連携加算(算定時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "自活訓練加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "短期滞在加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "訪問支援特別加算(サービス提供時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "訪問支援特別加算(算定時間数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "施設外支援"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "退所時特別支援加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "地域移行加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "食事提供加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "入院･外泊時加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "提供形態"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "備考"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "サービス提供の状況"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": "○※2"
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○※1"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○※1"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○※2"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○※2"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○※3"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": "○※2"
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": "○※2"
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○※1"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "○※4"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": "○※5"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "夜間支援体制加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "入院時支援特別加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "入院時支援特別加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "帰宅時支援加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "帰宅時支援加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "自立生活支援加算(Ⅱ)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "日中支援加算(サービス提供回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "日中支援加算(算定回数)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "算定日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "自立訓練 訪問型時間数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "実費算定",
+              "朝食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "実費算定",
+              "昼食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "実費算定",
+              "夕食"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "実費算定",
+              "光熱水費"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "重度包括",
+              "適用単価"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "重度包括",
+              "基本単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "重度包括",
+              "加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "重度包括",
+              "加算後単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "重度包括",
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "重度包括",
+              "1日計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "様式種別番号 > 0101",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0201",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0401",
+                "value": "○"
+              },
+              {
+                "column": "様式種別番号 > 0601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 0901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1301",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1401",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1501",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1601",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1701",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1801",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 1901",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2001",
+                "value": null
+              },
+              {
+                "column": "様式種別番号 > 2101",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "列見出しは様式種別番号の識別番号（0101等）のみを列名に使用。見出し下段の様式名（居宅介護 等）は列名に含めていない",
+      "項番36のサービス提供の状況の「※1〜※5」は表内に印字されているが、注記本文はこのページに無い",
+      "項番47〜50の「実費算定」、項番51〜56の「重度包括」は縦書きのグループ見出しとして読み取り、name_path に入れた",
+      "マーク（◎/○）は画像から判読した。小さい記号のため読み違いの可能性が少しある"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 328,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 4920,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003471,
+    "cost_usd_batch": 0.001736,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 328,
+    "printed_page": "171",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "※必須 > 定率負担",
+          "※必須 > 定額負担",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性(※Z)",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "給付費の請求額を設定。\n総費用額－決定利用者負担額となる。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "高額障害福祉サービス費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "請求額集計欄",
+              "請求額",
+              "特別対策費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "請求額集計欄",
+              "自治体助成分請求額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "特定障害者特別給付費",
+              "算定日額"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "特定障害者特別給付費",
+              "日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "特定障害者特別給付費",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "特定障害者特別給付費",
+              "実費算定額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "利用日数管理票",
+              "当月の利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "利用日数管理票",
+              "原則日数の総和"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "設定しない。",
+            "required": null,
+            "required_by": [
+              {
+                "column": "※必須 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "※必須 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※必須",
+        "text": "◎：必須項目 ○：請求内容により必要 △：任意設定 空白：不要"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 3.1.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": "※1",
+        "text": "定率負担の場合の請求額＝総費用額×給付率／100(小数点以下切捨)。"
+      },
+      {
+        "mark": "※2",
+        "text": "定額負担の場合の請求額＝総費用額－給付率に基づく利用者負担額②。"
+      },
+      {
+        "mark": "※3",
+        "text": "定率負担の場合の利用者負担額②＝総費用額－給付率に基づく請求額。"
+      },
+      {
+        "mark": "※4",
+        "text": "定額負担の場合の利用者負担額②＝サービスコードごとに設定された利用者負担額×そのサービスコードの回数。"
+      },
+      {
+        "mark": "※5",
+        "text": "利用者負担の上限調整を行うなどの理由で利用者負担額の調整が必要な場合には決定利用者負担額にて調整を行うこととする。(7)(8)設定例参照。"
+      },
+      {
+        "mark": "※6",
+        "text": "01～09を使用する。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は1ページのみで、印字ページ番号は171（PDF上の328ページ指定とは一致しない可能性）。添付された本ページの表を書き起こした。",
+      "表見出しと項番22から始まる表で、見出し行が本ページ上部にあるため前ページからの続きと判断し continued_from_prev_page を true にした。後処理で再判定される想定。",
+      "項目名の「高額障害福祉サービス費」「対象期間(開始)」等は改行で折り返されていたため、折り返しを詰めて1行にした。",
+      "「給付費」行の内容は「。」で区切られた2文が改行されていたため、改行（\\n）を残した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 75,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 5043,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003533,
+    "cost_usd_batch": 0.001766,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01Gtk6QTPRgpsoLmJExBMNfn",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:48+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 75,
+    "printed_page": "54",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "説明",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "説明",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "重度包括",
+              "適用単価"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "適用単価を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※22",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "重度包括",
+              "基本単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "基本単位数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "重度包括",
+              "加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　3:夜間　4:深夜　5:早朝・喀痰吸引等　6:喀痰吸引等　7:夜間・喀痰吸引等　8:深夜・喀痰吸引等",
+            "required": null,
+            "required_by": [],
+            "note": "※9",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "重度包括",
+              "加算後単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "加算後単位数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "重度包括",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "単位数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "重度包括",
+              "1日計"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "1日計を設定\n同一日に複数サービスを提供する場合には、最終行に設定する。最終行とは「サービス開始時間」の昇順に並び替えた場合の最終行である。ただし、サービス提供時間を設定しない入所系サービス（短期入所、共同生活援助）の提供があった場合には、入所系サービスが最終行となる。",
+            "required": null,
+            "required_by": [],
+            "note": "※18",
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "1時間（13時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "2時間（14時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "3時間（15時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "4時間（16時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "5時間（17時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "6時間（18時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "7時間（19時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "8時間（20時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "9時間（21時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "66",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "10時間（22時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "67",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "11時間（23時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "68",
+            "name_path": [
+              "重度訪問（様式３－２）",
+              "12時間（24時間）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:早朝　2:日中　3:夜間　4:深夜",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 69,
+            "no_raw": "69",
+            "name_path": [
+              "緊急時対応加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "居宅介護、行動援護、重度訪問介護、同行援護において、緊急時対応加算を算定する場合、1を設定\n重度包括において、緊急時対応加算（地域生活支援拠点等）を算定する場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出しやタイトルが読み取れないため title は null とした。レコード名・交換情報識別番号も読み取れないため record は空文字とした。",
+      "項目名列の「重度包括」「重度訪問（様式３－２）」は縦結合のグループ見出しとして name_path に入れた。",
+      "項番69の「緊急時対応加算」は縦結合の見出しがなく項目名セルのみのため name_path を1要素とした。",
+      "項番53・56・57〜68の備考・説明の一部は画像の折り返し位置が不明瞭で、句読点や「（」「）」の字形を全角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

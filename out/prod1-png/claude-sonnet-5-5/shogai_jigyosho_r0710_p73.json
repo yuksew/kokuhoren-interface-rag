@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 73,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 2517,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.04539,
+    "cost_usd_batch": 0.022695,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_013ygvUHK3Qa3idFJoZZNps6",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T03:33:50+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 73,
+    "printed_page": "52",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "説明",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "説明",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "前月からの継続サービス"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "居宅介護、同行援護において、前月から継続したサービス提供を行った場合、1を設定する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "送迎加算　往"
+            ],
+            "type": "数値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎(往路)を行った回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "送迎加算　復"
+            ],
+            "type": "数値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎(復路)を行った回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "家庭連携加算(サービス提供時間数)"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "実際に支援に要した時間数(時間)を設定(整数部2桁＋小数部2桁を設定、例:1.5時間→0150(または150))",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "家庭連携加算(算定時間数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "算定する時間数(時間)を設定(整数)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "自活訓練加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "加算を算定する場合1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "短期滞在加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "加算を算定する場合1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "訪問支援特別加算(サービス提供時間数)"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "実際にサービス提供した時間数(時間)を整数部2桁＋小数部2桁で設定、例:1.5時間→0150(または150)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "訪問支援特別加算(算定時間数)"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "算定する時間数(時間)を設定(整数)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "施設外支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労移行支援において、移行準備支援体制加算を算定する場合、1を設定\n就労継続支援において、施設外支援を行った場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※12",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "退所時特別支援加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "退所時特別支援加算を行った場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "地域移行加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入所中において、地域移行加算を算定する場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※23",
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "食事提供加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "加算対象となる低所得者に対して食事を提供した場合1を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "入院･外泊時加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入院･外泊時加算(Ⅰ)を算定する場合、1を設定\n入院･外泊時加算(Ⅱ)を算定する場合、2を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※13",
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "提供形態"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:通所型　2:訪問型　3:訪問型(視覚)",
+            "required": null,
+            "required_by": [],
+            "note": "※21",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "備考"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "100",
+            "content": "備考欄に記載が必要な場合、設定",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "サービス提供の状況"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "様式種別番号ごとに定められたサービス提供の状況を表すコード1桁を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※8",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "夜間支援体制加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活援助において、以下の内容を設定。\n夜間支援等体制加算(Ⅰ)を算定する場合、1を設定\n夜間支援等体制加算(Ⅱ)を算定する場合、2を設定\n夜間支援等体制加算(Ⅲ)を算定する場合、3を設定\n夜間支援等体制加算(Ⅰ)及び(Ⅳ)を算定する場合、4を設定\n夜間支援等体制加算(Ⅰ)及び(Ⅴ)を算定する場合、5を設定\n夜間支援等体制加算(Ⅰ)及び(Ⅵ)を算定する場合、6を設定\n\n宿泊型自立訓練において、以下の内容を設定。\n夜間支援等体制加算(Ⅰ)を算定する場合、1を設定\n夜間支援等体制加算(Ⅱ)を算定する場合、2を設定\n夜間支援等体制加算(Ⅲ)を算定する場合、3を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※14",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番37の説明は次ページへ続く可能性がある",
+      "項番20-37は前ページからの続きの表",
+      "項目名の全角スペースや括弧内改行は詰めて記載"
+    ]
+  },
+  "raw_text": null
+}

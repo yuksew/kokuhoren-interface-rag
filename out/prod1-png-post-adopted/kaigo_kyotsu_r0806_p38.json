@@ -1,0 +1,213 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_kyotsu_r0806",
+ "page": 38,
+ "edition": "令和8年6月版",
+ "volume": "共通編",
+ "printed_page": "32",
+ "tables": [
+  {
+   "table_kind": "code_list",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "コード名称",
+    "属性",
+    "バイト数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "コード名称",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "居宅サービス計画作成区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "居宅介護支援事業所作成、自己作成、又は、介護予防支援事業所・地域包括支援センター作成の区分\n1:居宅介護支援事業所作成\n2:自己作成\n3:介護予防支援事業所・地域包括支援センター作成",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "１６",
+     "name_path": [
+      "減免申請中区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:申請無し　2:申請中　3:決定済み",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "１７",
+     "name_path": [
+      "申請種別コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:新規申請　2:更新申請　3:変更申請　4:職権",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "１８",
+     "name_path": [
+      "変更申請中区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:申請無し　2:申請中　3:決定済み",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "１９",
+     "name_path": [
+      "標準負担区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:標準負担　2:特定標準負担",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "２０",
+     "name_path": [
+      "利用者負担区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:利用者負担　2:旧措置入所者利用者負担",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "２１",
+     "name_path": [
+      "世帯所得区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "世帯の所得区分コード\n1:一般\n2:市町村民税世帯非課税者等\n3:生活保護\n4:現役並み所得相当Ⅰ\n5:現役並み所得相当Ⅱ\n6:現役並み所得相当Ⅲ",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 22,
+     "no_raw": "２２",
+     "name_path": [
+      "所得区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "個人の所得区分コード\n1:一般\n2:市町村民税非課税者等\n3:生活保護\n4:現役並み所得相当Ⅰ\n5:現役並み所得相当Ⅱ\n6:現役並み所得相当Ⅲ",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "２３",
+     "name_path": [
+      "老齢福祉年金受給の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1:受給無し　2:受給有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 24,
+     "no_raw": "２４",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "[図] 都道府県コード 事業所区分コード 郡市区コード 通番 チェックデジット\n※ 事業所区分コードのみを英数とし、これ以外は数字とする。なお、英字は大文字アルファベットのみであり、「I」、「O」、「Q」を除く。\n※ チェックデジットは、モジュラス１０ウェイト２－１分割方式を独自に拡張したものとする。具体的には、英字を数字に読み替え、A=10、B=11、C=12、D=13、E=14、F=15、・・・Z=32とし、モジュラス１０ウェイト２－１分割方式で算出する。これにより、E=14に２を乗じると28になるが、この場合2+8=10として計算すること。（「1」+「0」とせず、また、「0」としないこと）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 25,
+     "no_raw": "２５",
+     "name_path": [
+      "受領委任の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1: 受領委任契約無し　2: 受領委任契約有り",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "項番24の図は、図内の印字文字（×1〜×10、都道府県コード、事業所区分コード、郡市区コード、通番、チェックデジット）の位置関係を判別しきれず、ラベル列挙として書き写したため、図の構造は反映していない。",
+  "バイト数列の数字（1、１０）の全角・半角表記が画像から確実に判別できないため、length_raw は見たままに記した。",
+  "見出し「バイト数」は折り返しで「バイ／ト数」と分かれていたため、1語に連結して columns に入れた。"
+ ]
+}
