@@ -18,3 +18,21 @@ dependencies = [
 
 [tool.uv]
 package = false
+
+# フェーズ2（埋め込み検索）用。torch が大きいので通常の依存とは分ける: uv run --group rag ...
+[dependency-groups]
+rag = [
+    "numpy>=2.0",
+    "sentence-transformers>=4.0",
+    "transformers>=4.48",
+    "sentencepiece>=0.2",
+    "torch>=2.7",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
