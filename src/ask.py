@@ -1,4 +1,4 @@
-"""質問に、検索した仕様書の抜粋だけを根拠にして答える（Claude API）。
+"""質問に、検索した仕様書・算定ルール資料の抜粋だけを根拠にして答える（Claude API）。
 
 usage: uv run --group rag python src/ask.py "受給者証番号の桁数は？" [--domain shogai] [--exchange J611] [--model claude-sonnet-5-5] [-k 12]
   前提: build_db.py → build_index.py、.env に ANTHROPIC_API_KEY
@@ -35,6 +35,15 @@ def load_prompts() -> tuple[str, dict]:
 
 def source_label(r: Retriever, hit: dict) -> str:
     """抜粋の出典（DB から作る）。"""
+    if hit["kind"] in ("rule", "svc"):
+        x = r.con.execute("SELECT c.page, c.sc_from, c.sc_to, d.title, d.edition FROM chunks c JOIN rule_docs d USING (doc_id) "
+                          "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
+        dom = DOMAIN.get(hit["domain"], "")
+        if hit["kind"] == "rule":
+            return f"{dom} {x['title']}（{x['edition']}） p{x['page']}"
+        s = r.con.execute("SELECT sheet, min(row) a, max(row) b FROM service_codes WHERE sc_id BETWEEN ? AND ?",
+                          (x["sc_from"], x["sc_to"])).fetchone()
+        return f"{dom} {x['title']}（{x['edition']}） シート「{s['sheet']}」 {s['a']}〜{s['b']}行"
     if hit["kind"] == "prose":
         x = r.con.execute("SELECT c.page, c.printed_page, d.domain, d.volume, d.edition FROM chunks c JOIN documents d USING (doc_id) "
                           "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
@@ -85,7 +94,7 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
     def text(i, h):
         if h.get("expand"):
             return f"[{i}] (表全体)\n{table_listing(r, h['table_id'])}"
-        label = {"table": "表", "item": "行", "prose": "本文"}[h["kind"]]
+        label = {"table": "表", "item": "行", "prose": "本文", "rule": "算定ルール", "svc": "サービスコード表"}[h["kind"]]
         return f"[{i}] ({label})\n{r.describe(h['chunk_id'])}"
     ctx = "\n\n".join(text(i, h) for i, h in enumerate(hits, 1))
     cond = "、".join(x for x in [f"対象: {DOMAIN[domain]}" if domain else "", f"交換情報識別番号: {exchange}" if exchange else ""] if x)

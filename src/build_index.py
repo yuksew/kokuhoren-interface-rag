@@ -1,7 +1,7 @@
 """検索用の索引を作る: DB の行・表を「チャンク」にして埋め込み、ベクトルを保存する。
 
 usage: uv run --group rag python src/build_index.py [--db db/interface_spec.sqlite] [--embedder ruri-v3-310m]
-  前提: build_db.py を実行済み（DB を作り直したら、これも実行し直す）
+  前提: build_db.py → build_rules.py を実行済み（DB を作り直したら、これも実行し直す）
 出力:
   DB の chunks テーブル     チャンク（行ごと・表ごと）の本文とメタ情報
   db/vectors.{embedder}.npy  chunks の chunk_id 順のベクトル（L2 正規化済み）
@@ -102,9 +102,59 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
                 head.append(f"節: {pc['section']}")
             chunks.append({"kind": "prose", "item_id": None, "table_id": None, "doc_id": d["doc_id"], "page": pc["page"],
                            "printed_page": pc["printed_page"], "text": "\n".join(head + ["本文: " + pc["text"]])})
+    chunks += rule_chunks(con)
     for c in chunks:
         c["sha"] = hashlib.sha256(c["text"].encode("utf-8")).hexdigest()
     return chunks
+
+
+RULE_KIND = {"kokuji": "告示（単位数表）", "kokuji_kaisei": "改正告示", "ryui": "留意事項通知", "kisai": "記載要領・記載例",
+             "qa": "Q&A", "errata": "正誤", "kozo": "算定構造", "sogo": "総合事業", "servicecode": "サービスコード表"}
+
+
+def rule_head(d) -> str:
+    when = "、".join(x for x in [d["edition"], f"施行・発出 {d['effective']}" if d["effective"] else ""] if x)
+    return f"{DOMAIN.get(d['domain'], d['domain'])} {RULE_KIND.get(d['category'], d['category'])}: {d['title']}（{when}）"
+
+
+def rule_chunks(con: sqlite3.Connection, rows_per_chunk: int = 20) -> list[dict]:
+    """算定ルール資料（build_rules.py で DB に入れたもの）のチャンク。無ければ空"""
+    if not con.execute("SELECT 1 FROM sqlite_master WHERE name = 'rule_units'").fetchone():
+        return []
+    docs = {r["doc_id"]: r for r in con.execute("SELECT * FROM rule_docs")}
+    out = []
+    for u in con.execute("SELECT * FROM rule_units ORDER BY unit_id"):
+        d = docs[u["doc_id"]]
+        lines = [rule_head(d) + ("（新旧対照表の改正後の欄）" if u["side"] == "new" else "")]
+        if u["heading"]:
+            lines.append(f"見出し: {u['heading']}")
+        lines.append("本文: " + u["text"])
+        out.append({"kind": "rule", "item_id": None, "table_id": None, "doc_id": u["doc_id"], "page": u["page"],
+                    "unit_id": u["unit_id"], "text": "\n".join(lines)})
+    # サービスコード表: 同じシートの続いた行を rows_per_chunk 行ずつ
+    cur: list = []
+
+    def flush():
+        if not cur:
+            return
+        d = docs[cur[0]["doc_id"]]
+        kinds = "・".join(dict.fromkeys(r["kind_code"] for r in cur))
+        lines = [rule_head(d), f"表: {cur[0]['service']}（シート {cur[0]['sheet']}）", f"サービス種類コード: {kinds}",
+                 "行（種類 項目 サービス内容略称 単位数 算定単位 ［算定項目］）:"]
+        for r in cur:
+            lines.append(" ".join(x for x in [r["kind_code"], r["item_code"], r["name"] or "",
+                                              f"{r['units']}単位" if r["units"] else "", r["unit"] or "",
+                                              f"［{r['conditions']}］" if r["conditions"] else ""] if x))
+        out.append({"kind": "svc", "item_id": None, "table_id": None, "doc_id": cur[0]["doc_id"], "page": None,
+                    "sc_from": cur[0]["sc_id"], "sc_to": cur[-1]["sc_id"], "text": "\n".join(lines)})
+        cur.clear()
+
+    for r in con.execute("SELECT * FROM service_codes ORDER BY sc_id"):
+        if cur and (r["doc_id"], r["sheet"]) != (cur[0]["doc_id"], cur[0]["sheet"]) or len(cur) >= rows_per_chunk:
+            flush()
+        cur.append(r)
+    flush()
+    return out
 
 
 def main() -> int:
@@ -119,19 +169,21 @@ def main() -> int:
     con.row_factory = None
     con.executescript("""
 DROP TABLE IF EXISTS chunks;
-CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL,   -- item | table | prose
+CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL,   -- item | table | prose | rule（算定ルール資料の本文）| svc（サービスコード表）
                      item_id INTEGER, table_id INTEGER, doc_id TEXT NOT NULL, page INTEGER, printed_page TEXT,
+                     unit_id INTEGER, sc_from INTEGER, sc_to INTEGER,   -- rule_units / service_codes の範囲
                      text TEXT NOT NULL, sha TEXT NOT NULL);
 CREATE INDEX ix_chunks_item ON chunks(item_id);
 DROP TABLE IF EXISTS prose_fts;
 CREATE VIRTUAL TABLE prose_fts USING fts5(text, tokenize='trigram');
 """)
-    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, doc_id, page, printed_page, text, sha) "
-                    "VALUES (?,?,?,?,?,?,?,?,?)",
-                    [(i, c["kind"], c["item_id"], c["table_id"], c["doc_id"], c["page"], c.get("printed_page"), c["text"], c["sha"])
+    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, doc_id, page, printed_page, unit_id, sc_from, sc_to, text, sha) "
+                    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+                    [(i, c["kind"], c["item_id"], c["table_id"], c["doc_id"], c["page"], c.get("printed_page"),
+                      c.get("unit_id"), c.get("sc_from"), c.get("sc_to"), c["text"], c["sha"])
                      for i, c in enumerate(chunks)])
     con.executemany("INSERT INTO prose_fts (rowid, text) VALUES (?, ?)",
-                    [(i, c["text"]) for i, c in enumerate(chunks) if c["kind"] == "prose"])
+                    [(i, c["text"]) for i, c in enumerate(chunks) if c["kind"] in ("prose", "rule", "svc")])
     con.execute("INSERT OR REPLACE INTO build_info VALUES ('index_embedder', ?)", (args.embedder,))
     con.commit()
 
@@ -153,7 +205,7 @@ CREATE VIRTUAL TABLE prose_fts USING fts5(text, tokenize='trigram');
     kinds = defaultdict(int)
     for c in chunks:
         kinds[c["kind"]] += 1
-    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}・文章 {kinds['prose']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
+    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}・文章 {kinds['prose']}・算定ルール {kinds['rule']}・サービスコード {kinds['svc']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
           f" / 次元 {mat.shape[1]}")
     print(f"→ db/vectors.{args.embedder}.npy, DB の chunks テーブル")
     return 0

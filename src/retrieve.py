@@ -23,9 +23,14 @@ RRF_K = 60
 # 助詞・疑問の言い回しで区切って、全文検索の語を取り出す（trigram なので3文字以上の語だけ使う）
 SPLIT = re.compile(r"[\s、。，,．.？?！!「」『』（）()\[\]【】・/:：]+|について|とは|には|では|での|への|から|まで|より|ですか|ますか|ください|教えて|何桁|何|どこ|どの|どう|いつ|[はがをにのでとやもかへ]")
 MATRIX_Q = re.compile(r"必須|様式ごと|様式別|対応表|入力必須")
+# 質問の向き: 仕様書（CSV の形式）か、算定ルール（いつ・何を算定・請求できるか）か
+SPEC_Q = re.compile(r"桁|属性|項目|レコード|形式|CSV|交換情報|識別番号|設定|フォーマット|インタフェース")
+RULE_Q = re.compile(r"算定|加算|減算|単位|請求|時間|回数|何回|できる|可能|留意|告示|Q&A|サービスコード|要件|基準|間隔|上限|最大|日割")
 VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
+# サービスコード（種類2桁＋項目4桁。「11 4845」「114845」）
+SVC = re.compile(r"(?<![0-9A-Za-z])([0-9]{2})\s?([0-9A-Z]{4})(?![0-9A-Za-z])")
 
 
 def nk(s) -> str:
@@ -48,9 +53,11 @@ class Retriever:
         self._df: dict[str, int] = {}
         self._emb = embedder_obj
         rows = self.con.execute(
-            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, c.doc_id, c.page, d.domain, t.table_kind FROM chunks c "
-            "LEFT JOIN spec_tables t ON t.table_id = c.table_id JOIN documents d ON d.doc_id = c.doc_id "
-            "ORDER BY c.chunk_id").fetchall()
+            "SELECT c.chunk_id, c.kind, c.item_id, c.table_id, c.doc_id, c.page, COALESCE(d.domain, rd.domain) AS domain, "
+            "t.table_kind, rd.category AS rule_category FROM chunks c "
+            "LEFT JOIN spec_tables t ON t.table_id = c.table_id LEFT JOIN documents d ON d.doc_id = c.doc_id "
+            f"LEFT JOIN {'rule_docs' if self._has('rule_docs') else '(SELECT NULL AS doc_id, NULL AS domain, NULL AS category)'} rd "
+            "ON rd.doc_id = c.doc_id ORDER BY c.chunk_id").fetchall()
         self.meta = [dict(r) for r in rows]
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
@@ -75,6 +82,22 @@ class Retriever:
                     lst = self.value_items.setdefault(m.group(1), [])
                     if self.item_chunk[r["item_id"]] not in lst:
                         lst.append(self.item_chunk[r["item_id"]])
+
+        # サービスコード → そのコードの行を含むチャンク
+        self.svc_ranges = [(m["chunk_id"], r["sc_from"], r["sc_to"]) for m, r in zip(self.meta, self.con.execute(
+            "SELECT sc_from, sc_to FROM chunks ORDER BY chunk_id")) if m["kind"] == "svc"]
+
+    def _has(self, table: str) -> bool:
+        return self.con.execute("SELECT 1 FROM sqlite_master WHERE name = ?", (table,)).fetchone() is not None
+
+    def svc_chunks(self, q: str) -> list[int]:
+        if not self.svc_ranges:
+            return []
+        out = []
+        for kind, item in SVC.findall(nk(q)):
+            for (sc_id,) in self.con.execute("SELECT sc_id FROM service_codes WHERE code = ?", (kind + item,)):
+                out += [c for c, a, b in self.svc_ranges if a <= sc_id <= b]
+        return list(dict.fromkeys(out))
 
     @property
     def emb(self):
@@ -129,10 +152,11 @@ class Retriever:
         q = nk(q)
         out = [c for code in CODE.findall(q) for c in self.code_items.get(code, [])]
         out += [c for code in SHORT.findall(q) for c in self.value_items.get(code, [])[:10]]
+        out += self.svc_chunks(q)
         return list(dict.fromkeys(out))
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
-               fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5) -> list[dict]:
+               fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5) -> list[dict]:
         ok = self._allowed(domain, exchange)
         lists = []
         if use_codes and mode != "vector":
@@ -146,9 +170,13 @@ class Retriever:
         # 必須対応表の行は同じ項目名が版（サービス提供年月）ごとに何十回も出てきて、項目の定義を押し出すので重みを下げる。
         # 質問が必須・様式について聞いているときは下げない。
         mx = 1.0 if MATRIX_Q.search(nk(q)) else matrix_weight
+        # 仕様書の形式だけを聞いている質問では、算定ルール資料（数が多い）が仕様書の行を押し出すので重みを下げる
+        rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
         for name, lst, w in lists:
             for rank, c in enumerate(lst):
                 wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
+                if self.meta[c]["kind"] in ("rule", "svc"):
+                    wm = rw
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         top = sorted(score, key=lambda c: -score[c])[:k]
