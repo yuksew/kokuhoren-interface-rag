@@ -1,0 +1,219 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 303,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002693,
+ "request_id": null,
+ "result": {
+  "printed_page": "148－4",
+  "heading": null,
+  "examples": [
+   {
+    "no": "3",
+    "title": "入所中に保育・教育等移行支援加算を算定する場合",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "基本情報レコードの保育・教育等移行支援加算の「移行日」の設定が必要。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票　紙様式記載",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "障害者名",
+        "value": "受給太郎",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000001",
+        "unit": null
+       },
+       {
+        "label": "事業所名",
+        "value": "○○事業所",
+        "unit": null
+       },
+       {
+        "label": "移行日",
+        "value": "R6 年 5 月 28 日",
+        "unit": null
+       },
+       {
+        "label": "移行後算定日",
+        "value": null,
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "提供時間",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "備考"
+      ],
+      "rows": [
+       [
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…"
+       ],
+       [
+        "26",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "27",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "28",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000001",
+        "unit": null
+       },
+       {
+        "label": "移行日",
+        "value": "R6 年 5 月 28 日",
+        "unit": null
+       },
+       {
+        "label": "移行後算定日",
+        "value": null,
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "提供時間",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "備考"
+      ],
+      "rows": [
+       [
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…"
+       ],
+       [
+        "26",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "27",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "28",
+        null,
+        "09:00～11:00",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "入力側の表の「合計」行は、「日」から「提供時間」までの3列にまたがって結合されているように見えるため、そのまま第1列に「合計」、残りを null としたが、結合の有無は画像からは断定できない。",
+   "インタフェース設定の表の「合計」行も同様に3列にまたがると見え、第1列に「合計」、残りを null とした。",
+   "入力側の表の上にある「令和６年５月」は fields に入れず、説明にも含めていない。",
+   "入力側の表の下にある「保育・教育等移行支援加算」の表示（値なしの見出し枠）は fields に入れていない。"
+  ]
+ }
+}

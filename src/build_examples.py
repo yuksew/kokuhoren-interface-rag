@@ -28,14 +28,17 @@ from transcribe_examples import parse_pages  # noqa: E402
 
 
 def load_examples(doc: str, pages: list[int], base: str, use: dict[str, str], notes: dict[str, str] | None = None,
-                  spans: dict[str, list[dict]] | None = None) -> list[dict]:
+                  spans: dict[str, list[dict]] | None = None, label: str | None = None) -> list[dict]:
     out: list[dict] = []
     section = None
     for p in pages:
         res = {m: json.loads((ROOT / "out" / "examples" / doc / m / f"p{p}.json").read_text(encoding="utf-8"))["result"]
                for m in {base, *use.values()}}
         r = res[base]
-        section = r["heading"] or section
+        if r["heading"]:
+            section = " ".join(x for x in (label, r["heading"]) if x)
+        elif section is None:
+            section = label
         for i, e in enumerate(r["examples"]):
             m = use.get(f"{p}#{i}", base)
             e = res[m]["examples"][i]
@@ -107,7 +110,9 @@ CREATE TABLE examples (example_id INTEGER PRIMARY KEY, doc_id TEXT NOT NULL, pag
     for d in cfg["docs"]:
         doc = con.execute("SELECT * FROM documents WHERE doc_id = ?", (d["doc"],)).fetchone()
         head = f"{'障害福祉' if doc['domain'] == 'shogai' else '介護保険'} インタフェース仕様書 {doc['volume']} {doc['edition']}"
-        exs = load_examples(d["doc"], parse_pages(d["pages"]), d["base"], d.get("use") or {}, d.get("notes"), d.get("spans"))
+        exs = [e for part in (d.get("parts") or [{"pages": d["pages"]}])
+               for e in load_examples(d["doc"], parse_pages(str(part["pages"])), d["base"], d.get("use") or {}, d.get("notes"),
+                                      d.get("spans"), part.get("label"))]
         out_dir = ROOT / "out" / "examples" / d["doc"]
         md = [f"# 設定例: {head}", "", f"{len(exs)} 件。`src/build_examples.py` が作る（手で直さない）。", ""]
         with (out_dir / "examples.csv").open("w", encoding="utf-8-sig", newline="") as f1, \

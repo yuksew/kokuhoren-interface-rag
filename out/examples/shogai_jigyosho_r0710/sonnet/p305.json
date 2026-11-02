@@ -1,0 +1,168 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 305,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.02794,
+ "request_id": null,
+ "result": {
+  "printed_page": "148－6",
+  "heading": null,
+  "examples": [
+   {
+    "no": "2",
+    "title": "退所後に地域移行加算を算定する場合で、退所月と退所後における加算の算定月が異なる場合",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "基本情報レコードの必須項目（項番 1～項番 7）と、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票 紙様式記載",
+      "fields": [],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "○○時加算",
+       "○○加算",
+       "朝食",
+       "昼食",
+       "夕食",
+       "光熱水費"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "各小計",
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "実費合計額",
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "input",
+      "caption": "実績記録票 紙様式記載",
+      "fields": [],
+      "columns": [
+       "地域移行加算",
+       "入所中算定日",
+       "",
+       "退所日",
+       "",
+       "退所後算定日",
+       ""
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        "H30年3月28日",
+        null,
+        "H30年4月20日"
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "地域移行加算",
+       "",
+       "退所日",
+       "",
+       "退所後算定日",
+       ""
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        "H30年3月28日",
+        null,
+        "H30年4月20日"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "tables1: 紙様式記載の表の構造（合計行、各小計、実費合計額の位置）は推定で、列対応が不確か",
+   "tables2: 地域移行加算の表は見出し行・値のセル対応が不確か。見出しラベルと値が横並びのため、columns 空文字は推定",
+   "tables3: インタフェース設定の表も同様に横並びラベル／値のため columns 構成が不確か",
+   "他に画像内に「平成30年4月」「受給者証番号 1111111111」「事業所番号 9950000001」「障害者名 受給太郎」「事業所名 ○○事業所」「補足給付適用の有無」「補足給付額」「退所月と算定月が異なる」「明細情報レコードは設定しない」の記載あり、fields/tableに入れていない"
+  ]
+ }
+}

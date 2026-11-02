@@ -5687,14 +5687,14 @@
   "printed_page": "88－4",
   "section": "⑥重度包括",
   "no": "1",
-  "title": null,
+  "title": "【サービス提供年月:平成30年3月以前】",
   "provision_text": null,
   "provisions": [],
   "timeline_note": null,
   "tables": [
    {
     "role": "input",
-    "caption": "実績記録票 紙様式記載",
+    "caption": "実績記録票　紙様式記載",
     "fields": [],
     "columns": [
      "日",
@@ -6232,7 +6232,7 @@
   "explanation": "共同生活援助、短期入所では時間の設定は不要。\n実績時間数には30分(0.5)単位で繰り上げした時間数を設定。\n基本単位数には適用単価×実績時間数÷4が設定される。\n派遣人数は訪問系サービスのみ設定が必要。\n単位数には派遣人数に応じた単位数を設定。",
   "page_note": "【サービス提供年月:平成30年3月以前】",
   "models": [
-   "p195:sonnet"
+   "p195:haiku"
   ],
   "note": null,
   "spans": [],
@@ -9970,15 +9970,25 @@
   "printed_page": "94",
   "section": "⑨居住系",
   "no": "2",
-  "title": null,
+  "title": "退所後に退所時特別支援加算、地域移行加算、自立生活支援加算（Ⅱ）（※）を算定する場合で、退所月と退所後における加算の算定月が異なる場合",
   "provision_text": null,
   "provisions": [],
   "timeline_note": null,
   "tables": [
    {
     "role": "input",
-    "caption": "実績記録票　紙様式記載（様式9）",
+    "caption": "実績記録票 紙様式記載",
     "fields": [
+     {
+      "label": "対象年月",
+      "value": "平成30年5月",
+      "unit": null
+     },
+     {
+      "label": "様式",
+      "value": "（様式9）",
+      "unit": null
+     },
      {
       "label": "受給者証番号",
       "value": "1111111111",
@@ -9992,6 +10002,16 @@
      {
       "label": "事業所番号",
       "value": "9910000001",
+      "unit": null
+     },
+     {
+      "label": "補足給付適用の有無",
+      "value": null,
+      "unit": null
+     },
+     {
+      "label": "補足給付額",
+      "value": null,
       "unit": null
      },
      {
@@ -10088,6 +10108,11 @@
     "caption": "実績記録票インタフェース設定",
     "fields": [
      {
+      "label": "対象年月",
+      "value": "平成30年5月",
+      "unit": null
+     },
+     {
       "label": "受給者証番号",
       "value": "1111111111",
       "unit": null
@@ -10099,26 +10124,26 @@
      }
     ],
     "columns": [
-     "項目名",
+     "項目",
+     "値",
+     "項目",
+     "値",
+     "項目",
      "値"
     ],
     "rows": [
      [
       "地域移行加算",
-      null
-     ],
-     [
+      null,
       "退所日",
-      "H30 年 4 月 28 日"
-     ],
-     [
+      "H30 年 4 月 28 日",
       "退所後算定日",
       "H30 年 5 月 20 日"
      ]
     ]
    }
   ],
-  "explanation": "退所後に退所時特別支援加算、地域移行加算、自立生活支援加算（Ⅱ）（※）を算定する場合で、退所月と退所後における加算の算定月が異なる場合\n\n※サービス提供年月が令和6年3月以前の場合、「自立生活支援加算（Ⅱ）」は「自立生活支援加算」と読み替えて使用する。\n\n退所月と算定月が異なる\n\n明細情報レコードは設定しない。\n\n基本情報レコードの必須項目（項番1～項番7）と、退所時特別支援加算の「退所日」、「退所後算定日」もしくは、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+  "explanation": "※サービス提供年月が令和6年3月以前の場合、「自立生活支援加算（Ⅱ）」は「自立生活支援加算」と読み替えて使用する。\n退所月と算定月が異なる\n明細情報レコードは設定しない\n基本情報レコードの必須項目(項番1～項番7)と、退所時特別支援加算の「退所日」、「退所後算定日」もしくは、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
   "page_note": null,
   "models": [
    "p206:haiku"
@@ -10134,8 +10159,8 @@
   "printed_page": "94－1",
   "section": "⑨居住系",
   "no": "3",
-  "title": null,
-  "provision_text": "共同生活援助\n5日に退居し、\n10日と15日に\n退居後(外部\nサービス利用\n型)共同生活\n援助サービス\nを提供した場\n合",
+  "title": "共同生活援助5日に退居し、10日と15日に退居後（外部サービス利用型）共同生活援助サービスを提供した場合",
+  "provision_text": null,
   "provisions": [],
   "timeline_note": null,
   "tables": [
@@ -10145,7 +10170,7 @@
     "fields": [
      {
       "label": "退居日",
-      "value": "R6年4月5日",
+      "value": "R6 年 4 月 5 日",
       "unit": null
      }
     ],
@@ -10321,7 +10346,7 @@
      },
      {
       "label": "退所日",
-      "value": "R6年4月5日",
+      "value": "R6 年 4 月 5 日",
       "unit": null
      },
      {
@@ -10415,10 +10440,10 @@
     ]
    }
   ],
-  "explanation": "5日に退居し、10日と15日に退居後(外部サービス利用型)共同生活援助サービスを提供した場合、入居期間(1日～5日)及び退居後(外部サービス利用型)共同生活援助サービスを提供した日数分データを設定する。\n※退居後にサービス提供していない日数分(6日～9日、11日～14日、16日以降)のデータは作成しない。\n■退居後支援\n介護サービス包括型、または外部サービス利用型の事業所において、退居後(外部サービス利用型)共同生活援助サービスを提供した場合、1を設定する。",
+  "explanation": "5 日に退居し、10 日と 15 日に退居後(外部サービス利用型)共同生活援助サービスを提供した場合、入居期間(1 日～5 日)及び退居後(外部サービス利用型)共同生活援助サービスを提供した日数分データを設定する。\n※退居後にサービス提供していない日数分(6 日～9 日、11 日～14 日、16 日以降)のデータは作成しない。\n■退居後支援\n介護サービス包括型、または外部サービス利用型の事業所において、退居後(外部サービス利用型)共同生活援助サービスを提供した場合、1を設定する。",
   "page_note": null,
   "models": [
-   "p207:sonnet"
+   "p207:haiku"
   ],
   "note": null,
   "spans": [],
@@ -10827,5 +10852,1469 @@
   "note": null,
   "spans": [],
   "example_id": 57
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 300,
+  "page_to": 300,
+  "printed_page": "148－1",
+  "section": "障害児 ②通所系",
+  "no": "1",
+  "title": "【家庭連携加算、事業所内相談支援加算、医療連携体制加算】",
+  "provision_text": "児童発達支援\n2日～6日\n15日～16日\n25日～26日",
+  "provisions": [
+   {
+    "label": "児童発達支援",
+    "start": null,
+    "end": null,
+    "staff": null,
+    "day": "2日～6日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": null,
+    "end": null,
+    "staff": null,
+    "day": "15日～16日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": null,
+    "end": null,
+    "staff": null,
+    "day": "25日～26日"
+   }
+  ],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票 紙様式記載",
+    "fields": [],
+    "columns": [
+     "日",
+     "提供時間",
+     "家庭連携加算 > 提供時間",
+     "家庭連携加算 > 算定時間",
+     "事業所内相談支援加算",
+     "医療連携体制加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "2",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      "1",
+      null
+     ],
+     [
+      "3",
+      null,
+      "1",
+      null,
+      null,
+      null,
+      "家庭連携加算 13:00～14:00"
+     ],
+     [
+      "4",
+      "10:00～16:00",
+      "3",
+      null,
+      null,
+      null,
+      "家庭連携加算 17:00～20:00"
+     ],
+     [
+      "5",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      "2",
+      null
+     ],
+     [
+      "6",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      "13:00～15:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      "13:00～14:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      "13:00～16:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      null,
+      null,
+      null,
+      "1",
+      null,
+      "事業所内相談支援加算 10:00～11:00"
+     ],
+     [
+      "合計",
+      null,
+      "2",
+      null,
+      "1",
+      "2",
+      null
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [],
+    "columns": [
+     "日",
+     "提供時間",
+     "家庭連携加算 > 提供時間",
+     "家庭連携加算 > 算定時間",
+     "事業所内相談支援加算",
+     "医療連携体制加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "2",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      "1",
+      null
+     ],
+     [
+      "3",
+      null,
+      "1",
+      "2",
+      null,
+      null,
+      "家庭連携加算 13:00～14:00"
+     ],
+     [
+      "4",
+      "10:00～16:00",
+      "3",
+      "2",
+      null,
+      null,
+      "家庭連携加算 17:00～20:00"
+     ],
+     [
+      "5",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      "2",
+      null
+     ],
+     [
+      "6",
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      "13:00～15:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      "13:00～14:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      "13:00～16:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      null,
+      null,
+      null,
+      "1",
+      null,
+      "事業所内相談支援加算 10:00～11:00"
+     ],
+     [
+      "合計",
+      null,
+      "2",
+      "2",
+      "1",
+      "2",
+      null
+     ]
+    ]
+   }
+  ],
+  "explanation": "家庭連携加算は、実提供時間に加え、算定する時間数も設定する。\n1時間未満の場合、算定時間に1を設定し、1時間以上の場合は算定時間に2を設定する。\n同様に合計回数にも実提供回数に加え、算定する回数を設定する。\nサービス提供年月が平成27年4月以降において、家庭連携加算、または事業所内相談支援加算のみ算定する場合は、家庭連携加算及び事業所内相談支援加算のサービス提供時間は備考欄に設定し、開始時間及び終了時間は設定しない。\n本体報酬と家庭連携加算、または事業所内相談支援加算を同一日に算定する場合は、開始時間及び終了時間に本体報酬の提供時間を設定し、家庭連携加算及び事業所内相談支援加算のサービス提供時間は備考欄に設定する。\n事業所内相談支援加算を算定する場合は、1を設定する。\n医療連携体制加算(Ⅰ)の算定要件を満たす場合1、(Ⅱ)の算定要件を満たす場合2、(Ⅲ)の算定要件を満たす場合3、(Ⅳ)の算定要件を満たす場合4、(Ⅴ)の算定要件を満たす場合5、(Ⅶ)の算定要件を満たす場合7を設定する。",
+  "page_note": "【サービス提供年月:令和6年3月以前】",
+  "models": [
+   "p300:sonnet"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 58
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 301,
+  "page_to": 301,
+  "printed_page": "148－2",
+  "section": "障害児 ②通所系",
+  "no": "1",
+  "title": "【家族支援加算、医療連携体制加算】",
+  "provision_text": "児童発達支援\n2 日～6 日\n15 日～16 日\n25 日～26 日",
+  "provisions": [
+   {
+    "label": "児童発達支援",
+    "start": "9:00",
+    "end": "11:00",
+    "staff": null,
+    "day": "2日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "9:00",
+    "end": "11:00",
+    "staff": null,
+    "day": "5日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "9:00",
+    "end": "11:00",
+    "staff": null,
+    "day": "6日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "13:00",
+    "end": "15:00",
+    "staff": null,
+    "day": "15日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "13:00",
+    "end": "14:00",
+    "staff": null,
+    "day": "16日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "13:00",
+    "end": "16:00",
+    "staff": null,
+    "day": "25日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "13:00",
+    "end": "16:00",
+    "staff": null,
+    "day": "26日"
+   },
+   {
+    "label": "児童発達支援",
+    "start": "10:00",
+    "end": "16:00",
+    "staff": null,
+    "day": "4日"
+   }
+  ],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票 紙様式記載",
+    "fields": [],
+    "columns": [
+     "日",
+     "提供時間",
+     "家族支援加算",
+     "医療連携体制加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "2",
+      "09:00～11:00",
+      null,
+      "1",
+      null
+     ],
+     [
+      "3",
+      null,
+      "1",
+      null,
+      "家族支援加算 13:00～15:00"
+     ],
+     [
+      "4",
+      "10:00～16:00",
+      "2",
+      null,
+      "家族支援加算 11:00～11:30"
+     ],
+     [
+      "5",
+      "09:00～11:00",
+      null,
+      "2",
+      null
+     ],
+     [
+      "6",
+      "09:00～11:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      "13:00～15:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      "13:00～14:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      "13:00～16:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      "13:00～16:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      "2",
+      "2",
+      null
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [],
+    "columns": [
+     "日",
+     "提供時間",
+     "医療連携体制加算",
+     "家族支援加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "2",
+      "09:00～11:00",
+      "1",
+      null,
+      null
+     ],
+     [
+      "3",
+      null,
+      null,
+      "1",
+      "家族支援加算 13:00～15:00"
+     ],
+     [
+      "4",
+      "10:00～16:00",
+      null,
+      "2",
+      "家族支援加算 11:00～11:30"
+     ],
+     [
+      "5",
+      "09:00～11:00",
+      "2",
+      null,
+      null
+     ],
+     [
+      "6",
+      "09:00～11:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      "13:00～15:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      "13:00～14:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      "13:00～16:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      "13:00～16:00",
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      "2",
+      "2",
+      null
+     ]
+    ]
+   }
+  ],
+  "explanation": "■家族支援加算\n家族支援加算(Ⅰ)イを算定する場合 1、家族支援加算(Ⅰ)ロを算定する場合 2、家族支援加算(Ⅰ)ハを算定する場合 3、家族支援加算(Ⅰ)ニを算定する場合 4、家族支援加算(Ⅱ)イを算定する場合 5、家族支援加算(Ⅱ)ロを算定する場合 6 を設定する。\n■医療連携体制加算\n医療連携体制加算(Ⅰ)の算定要件を満たす場合 1、(Ⅱ)の算定要件を満たす場合 2、(Ⅲ)の算定要件を満たす場合 3、(Ⅳ)の算定要件を満たす場合 4、(Ⅴ)の算定要件を満たす場合 5、(Ⅶ)の算定要件を満たす場合 7 を設定する。",
+  "page_note": "【サービス提供年月:令和 6 年 4 月以降】",
+  "models": [
+   "p301:sonnet"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 59
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 302,
+  "page_to": 302,
+  "printed_page": "148－3",
+  "section": "障害児 ②通所系",
+  "no": "2",
+  "title": "退所後に保育・教育等移行支援加算、または通所施設移行支援加算のみを算定する場合",
+  "provision_text": null,
+  "provisions": [],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票 紙様式記載",
+    "fields": [
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "障害者名",
+      "value": "受給太郎",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     },
+     {
+      "label": "事業所名",
+      "value": "〇〇事業所",
+      "unit": null
+     },
+     {
+      "label": "保育・教育等移行支援加算 移行日",
+      "value": "H30 年 4 月 28 日",
+      "unit": null
+     },
+     {
+      "label": "移行後算定日",
+      "value": "H30 年 5 月 20 日",
+      "unit": null
+     }
+    ],
+    "columns": [
+     "日",
+     "サービス提供の状況",
+     "提供時間",
+     "〇〇加算",
+     "〇〇加算",
+     "〇〇加算",
+     "〇〇加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     },
+     {
+      "label": "保育・教育等移行支援加算 移行日",
+      "value": "H30 年 4 月 28 日",
+      "unit": null
+     },
+     {
+      "label": "移行後算定日",
+      "value": "H30 年 5 月 20 日",
+      "unit": null
+     }
+    ],
+    "columns": [],
+    "rows": []
+   }
+  ],
+  "explanation": "基本情報レコードの必須項目(項番 1～項番 7)と、保育・教育等移行支援加算の「移行日」、「移行後算定日」もしくは、通所施設移行支援加算の「移行日」、「算定日」のみ設定が必要。\n明細情報レコードは設定しない。\nなお、保育・教育等移行支援加算について、退所後に複数回算定する場合(サービス提供年月が令和 6 年 4 月以降)は、「移行後算定日」には算定日の属する月の最後に保育・教育等移行支援加算を算定する日付を設定する。(例:令和 6 年 4 月 20 日に一般施策へ移行し、令和 6 年 5 月 8 日及び令和 6 年 5 月 10 日に算定される支援を行った場合、「移行後算定日」には令和 6 年 5 月 10 日を設定する。)",
+  "page_note": null,
+  "models": [
+   "p302:sonnet"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 60
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 303,
+  "page_to": 303,
+  "printed_page": "148－4",
+  "section": "障害児 ②通所系",
+  "no": "3",
+  "title": "入所中に保育・教育等移行支援加算を算定する場合",
+  "provision_text": null,
+  "provisions": [],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票　紙様式記載",
+    "fields": [
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "障害者名",
+      "value": "受給太郎",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     },
+     {
+      "label": "事業所名",
+      "value": "○○事業所",
+      "unit": null
+     },
+     {
+      "label": "移行日",
+      "value": "R6 年 5 月 28 日",
+      "unit": null
+     },
+     {
+      "label": "移行後算定日",
+      "value": null,
+      "unit": null
+     }
+    ],
+    "columns": [
+     "日",
+     "サービス提供の状況",
+     "提供時間",
+     "○○加算",
+     "○○加算",
+     "○○加算",
+     "○○加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…"
+     ],
+     [
+      "26",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "27",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "28",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     },
+     {
+      "label": "移行日",
+      "value": "R6 年 5 月 28 日",
+      "unit": null
+     },
+     {
+      "label": "移行後算定日",
+      "value": null,
+      "unit": null
+     }
+    ],
+    "columns": [
+     "日",
+     "サービス提供の状況",
+     "提供時間",
+     "○○加算",
+     "○○加算",
+     "○○加算",
+     "○○加算",
+     "備考"
+    ],
+    "rows": [
+     [
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…",
+      "…"
+     ],
+     [
+      "26",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "27",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "28",
+      null,
+      "09:00～11:00",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ]
+   }
+  ],
+  "explanation": "基本情報レコードの保育・教育等移行支援加算の「移行日」の設定が必要。",
+  "page_note": null,
+  "models": [
+   "p303:haiku"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 61
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 304,
+  "page_to": 304,
+  "printed_page": "148－5",
+  "section": "障害児 ③入所系",
+  "no": "1",
+  "title": "【障害児入所支援】5 日～入居の場合",
+  "provision_text": null,
+  "provisions": [],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票 紙様式記載",
+    "fields": [],
+    "columns": [
+     "日",
+     "入院時支援特別加算 > 提供回数",
+     "入院時支援特別加算 > 算定回数",
+     "家族支援加算"
+    ],
+    "rows": [
+     [
+      "1",
+      null,
+      null,
+      null
+     ],
+     [
+      "2",
+      null,
+      null,
+      null
+     ],
+     [
+      "3",
+      null,
+      null,
+      null
+     ],
+     [
+      "4",
+      null,
+      null,
+      null
+     ],
+     [
+      "5",
+      null,
+      null,
+      null
+     ],
+     [
+      "6",
+      "1",
+      null,
+      null
+     ],
+     [
+      "7",
+      "1",
+      null,
+      null
+     ],
+     [
+      "8",
+      "1",
+      null,
+      null
+     ],
+     [
+      "9",
+      "1",
+      null,
+      null
+     ],
+     [
+      "10",
+      null,
+      null,
+      null
+     ],
+     [
+      "11",
+      null,
+      null,
+      null
+     ],
+     [
+      "12",
+      null,
+      null,
+      "1"
+     ],
+     [
+      "13",
+      null,
+      null,
+      "2"
+     ],
+     [
+      "14",
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      null,
+      null,
+      null
+     ],
+     [
+      "17",
+      null,
+      null,
+      null
+     ],
+     [
+      "18",
+      null,
+      null,
+      null
+     ],
+     [
+      "19",
+      null,
+      null,
+      null
+     ],
+     [
+      "20",
+      null,
+      null,
+      null
+     ],
+     [
+      "21",
+      null,
+      null,
+      null
+     ],
+     [
+      "22",
+      null,
+      null,
+      null
+     ],
+     [
+      "23",
+      null,
+      null,
+      null
+     ],
+     [
+      "24",
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      null,
+      null,
+      null
+     ],
+     [
+      "27",
+      null,
+      null,
+      null
+     ],
+     [
+      "28",
+      null,
+      null,
+      null
+     ],
+     [
+      "29",
+      null,
+      null,
+      null
+     ],
+     [
+      "30",
+      null,
+      null,
+      null
+     ],
+     [
+      "31",
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      "4",
+      null,
+      "2"
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [],
+    "columns": [
+     "日",
+     "入院時支援特別加算 > 提供回数",
+     "入院時支援特別加算 > 算定回数",
+     "家族支援加算"
+    ],
+    "rows": [
+     [
+      "5",
+      null,
+      null,
+      null
+     ],
+     [
+      "6",
+      "1",
+      "1",
+      null
+     ],
+     [
+      "7",
+      "1",
+      null,
+      null
+     ],
+     [
+      "8",
+      "1",
+      null,
+      null
+     ],
+     [
+      "9",
+      "1",
+      null,
+      null
+     ],
+     [
+      "10",
+      null,
+      null,
+      null
+     ],
+     [
+      "11",
+      null,
+      null,
+      null
+     ],
+     [
+      "12",
+      null,
+      null,
+      "1"
+     ],
+     [
+      "13",
+      null,
+      null,
+      "2"
+     ],
+     [
+      "14",
+      null,
+      null,
+      null
+     ],
+     [
+      "15",
+      null,
+      null,
+      null
+     ],
+     [
+      "16",
+      null,
+      null,
+      null
+     ],
+     [
+      "17",
+      null,
+      null,
+      null
+     ],
+     [
+      "18",
+      null,
+      null,
+      null
+     ],
+     [
+      "19",
+      null,
+      null,
+      null
+     ],
+     [
+      "20",
+      null,
+      null,
+      null
+     ],
+     [
+      "21",
+      null,
+      null,
+      null
+     ],
+     [
+      "22",
+      null,
+      null,
+      null
+     ],
+     [
+      "23",
+      null,
+      null,
+      null
+     ],
+     [
+      "24",
+      null,
+      null,
+      null
+     ],
+     [
+      "25",
+      null,
+      null,
+      null
+     ],
+     [
+      "26",
+      null,
+      null,
+      null
+     ],
+     [
+      "27",
+      null,
+      null,
+      null
+     ],
+     [
+      "28",
+      null,
+      null,
+      null
+     ],
+     [
+      "29",
+      null,
+      null,
+      null
+     ],
+     [
+      "30",
+      null,
+      null,
+      null
+     ],
+     [
+      "31",
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      "4",
+      "1",
+      "2"
+     ]
+    ]
+   }
+  ],
+  "explanation": "5 日入所開始なので、5 日～31 日までのサービス提供を受けた日数分データを設定する。\n■入院時支援特別加算\n①提供回数\n報酬上算定できる回数にかかわらず、要件を満たす場合、データを設定する。\n②算定回数\n報酬上算定できる回数を設定する。\n■家族支援加算\n設定内容については、②通所系の No1の家族支援加算並びとする。",
+  "page_note": null,
+  "models": [
+   "p304:sonnet"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 62
+ },
+ {
+  "doc_id": "shogai_jigyosho_r0710",
+  "page_from": 305,
+  "page_to": 305,
+  "printed_page": "148－6",
+  "section": "障害児 ③入所系",
+  "no": "2",
+  "title": "退所後に地域移行加算を算定する場合で、退所月と退所後における加算の算定月が異なる場合",
+  "provision_text": null,
+  "provisions": [],
+  "timeline_note": null,
+  "tables": [
+   {
+    "role": "input",
+    "caption": "実績記録票　紙様式記載",
+    "fields": [
+     {
+      "label": "年月",
+      "value": "平成30年4月",
+      "unit": null
+     },
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "障害者名",
+      "value": "受給太郎",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     },
+     {
+      "label": "事業所名",
+      "value": "○○事業所",
+      "unit": null
+     },
+     {
+      "label": "補足給付適用の有無",
+      "value": null,
+      "unit": null
+     },
+     {
+      "label": "補足給付額",
+      "value": null,
+      "unit": null
+     }
+    ],
+    "columns": [
+     "日",
+     "サービス提供の状況",
+     "○○時加算",
+     "○○加算",
+     "朝食",
+     "昼食",
+     "夕食",
+     "光熱水費"
+    ],
+    "rows": [
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "合計",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "各小計",
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "実費合計額",
+      null,
+      null,
+      null
+     ]
+    ]
+   },
+   {
+    "role": "input",
+    "caption": "",
+    "fields": [],
+    "columns": [
+     "地域移行加算",
+     "入所中算定日",
+     "退所日",
+     "退所後算定日"
+    ],
+    "rows": [
+     [
+      null,
+      null,
+      "H30 年 3 月 28 日",
+      "H30 年 4 月 20 日"
+     ]
+    ]
+   },
+   {
+    "role": "interface",
+    "caption": "実績記録票インタフェース設定",
+    "fields": [
+     {
+      "label": "年月",
+      "value": "平成30年4月",
+      "unit": null
+     },
+     {
+      "label": "受給者証番号",
+      "value": "1111111111",
+      "unit": null
+     },
+     {
+      "label": "事業所番号",
+      "value": "9950000001",
+      "unit": null
+     }
+    ],
+    "columns": [
+     "地域移行加算",
+     "退所日",
+     "退所後算定日"
+    ],
+    "rows": [
+     [
+      null,
+      "H30 年 3 月 28 日",
+      "H30 年 4 月 20 日"
+     ]
+    ]
+   }
+  ],
+  "explanation": "退所月と算定月が異なる\n明細情報レコードは設定しない\n基本情報レコードの必須項目（項番 1～項番 7）と、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+  "page_note": null,
+  "models": [
+   "p305:haiku"
+  ],
+  "note": null,
+  "spans": [],
+  "example_id": 63
  }
 ]

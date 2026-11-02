@@ -3,7 +3,7 @@
  "page": 207,
  "model": "claude-sonnet-5-5",
  "stop_reason": "end_turn",
- "cost_usd": 0.028984,
+ "cost_usd": 0.02894,
  "request_id": null,
  "result": {
   "printed_page": "94－1",
@@ -11,10 +11,10 @@
   "examples": [
    {
     "no": "3",
-    "title": null,
+    "title": "共同生活援助5日に退居し、10日と15日に退居後(外部サービス利用型)共同生活援助サービスを提供した場合",
     "continued_from_prev_page": false,
     "continues_to_next_page": false,
-    "provision_text": "共同生活援助\n5日に退居し、\n10日と15日に\n退居後(外部\nサービス利用\n型)共同生活\n援助サービス\nを提供した場\n合",
+    "provision_text": null,
     "provisions": [],
     "timeline_note": null,
     "explanation": "5日に退居し、10日と15日に退居後(外部サービス利用型)共同生活援助サービスを提供した場合、入居期間(1日～5日)及び退居後(外部サービス利用型)共同生活援助サービスを提供した日数分データを設定する。\n※退居後にサービス提供していない日数分(6日～9日、11日～14日、16日以降)のデータは作成しない。\n■退居後支援\n介護サービス包括型、または外部サービス利用型の事業所において、退居後(外部サービス利用型)共同生活援助サービスを提供した場合、1を設定する。",
@@ -22,13 +22,7 @@
      {
       "role": "input",
       "caption": "実績記録票　紙様式記載",
-      "fields": [
-       {
-        "label": "退居日",
-        "value": "R6年4月5日",
-        "unit": null
-       }
-      ],
+      "fields": [],
       "columns": [
        "日",
        "サービス提供の状況",
@@ -188,28 +182,7 @@
      {
       "role": "interface",
       "caption": "実績記録票インタフェース設定",
-      "fields": [
-       {
-        "label": "地域移行加算",
-        "value": null,
-        "unit": null
-       },
-       {
-        "label": "入所中算定日",
-        "value": null,
-        "unit": null
-       },
-       {
-        "label": "退所日",
-        "value": "R6年4月5日",
-        "unit": null
-       },
-       {
-        "label": "退所後算定日",
-        "value": null,
-        "unit": null
-       }
-      ],
+      "fields": [],
       "columns": [
        "日",
        "サービス提供の状況",
@@ -298,6 +271,8 @@
    }
   ],
   "other_text": null,
-  "uncertain": []
+  "uncertain": [
+   "入力表の下の「退居日｜R6年4月5日」の枠と、インタフェース設定表の下の「地域移行加算｜入所中算定日｜(空)｜退所日｜R6年4月5日｜退所後算定日｜(空)」の枠は tables に入れていない"
+  ]
  }
 }

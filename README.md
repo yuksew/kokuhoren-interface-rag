@@ -95,10 +95,10 @@ uv run python src/query_db.py --exchange J611                     # 交換情報
 uv run python src/ocr_rules.py --only kaigo_qa_r6_v11 kaigo_qa_r6_v13
 uv run python src/build_rules.py
 
-# 設定例（障害 サービス事業所編 p161〜210 の「サービス提供実績記録票設定例」57 件）: 図・表・説明を事例ごとに構造化する
-#   書き起こし（API、Haiku と Sonnet の両方、50 頁 $1.6）→ 採用（config/examples.yaml。違いは原本と照らして決めた）
+# 設定例（障害 サービス事業所編 p161〜210・p300〜305 の実績記録票設定例 63 件。障害者と障害児）: 図・表・説明を事例ごとに構造化する
+#   書き起こし（API、Haiku と Sonnet の両方、56 頁 約 $1.9）→ 採用（config/examples.yaml。違いは原本と照らして決めた）
 #   → DB の examples テーブル、out/examples/{doc}/examples.csv（事例1件1行）・example_cells.csv（セル1つ1行）・examples.md
-uv run python src/transcribe_examples.py --doc shogai_jigyosho_r0710 --pages 161-210
+uv run python src/transcribe_examples.py --doc shogai_jigyosho_r0710 --pages 161-210,300-305
 uv run python src/build_examples.py                              # build_db.py の後に毎回（API なし）
 
 # フェーズ2: 検索（埋め込みはローカル GPU。torch などは依存グループ rag）

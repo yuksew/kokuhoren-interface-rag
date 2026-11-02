@@ -1,0 +1,211 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 305,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.00484,
+ "request_id": null,
+ "result": {
+  "printed_page": "148－6",
+  "heading": null,
+  "examples": [
+   {
+    "no": "2",
+    "title": "退所後に地域移行加算を算定する場合で、退所月と退所後における加算の算定月が異なる場合",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "退所月と算定月が異なる\n明細情報レコードは設定しない\n基本情報レコードの必須項目（項番 1～項番 7）と、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票　紙様式記載",
+      "fields": [
+       {
+        "label": "年月",
+        "value": "平成30年4月",
+        "unit": null
+       },
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "障害者名",
+        "value": "受給太郎",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000001",
+        "unit": null
+       },
+       {
+        "label": "事業所名",
+        "value": "○○事業所",
+        "unit": null
+       },
+       {
+        "label": "補足給付適用の有無",
+        "value": null,
+        "unit": null
+       },
+       {
+        "label": "補足給付額",
+        "value": null,
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "○○時加算",
+       "○○加算",
+       "朝食",
+       "昼食",
+       "夕食",
+       "光熱水費"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "各小計",
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "実費合計額",
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "input",
+      "caption": "",
+      "fields": [],
+      "columns": [
+       "地域移行加算",
+       "入所中算定日",
+       "退所日",
+       "退所後算定日"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        "H30 年 3 月 28 日",
+        "H30 年 4 月 20 日"
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [
+       {
+        "label": "年月",
+        "value": "平成30年4月",
+        "unit": null
+       },
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000001",
+        "unit": null
+       }
+      ],
+      "columns": [
+       "地域移行加算",
+       "退所日",
+       "退所後算定日"
+      ],
+      "rows": [
+       [
+        null,
+        "H30 年 3 月 28 日",
+        "H30 年 4 月 20 日"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "No2の紙様式記載の表の「合計」行は、日とサービス提供の状況の2列にまたがるため、「合計」を日列に入れ、サービス提供の状況列はnullにした",
+   "No2の紙様式記載の表の「各小計」行は、朝食と昼食の2列にまたがるラベルで、その値欄は昼食の右側から夕食にまたがるため、「各小計」を朝食列に入れ、残りはnullにした",
+   "No2の紙様式記載の表の「実費合計額」行は、値欄が昼食・夕食・光熱水費にまたがるため、「実費合計額」を朝食列に入れ、残りはnullにした",
+   "No2の紙様式記載の表の4つの空白の行と合計行の○○時加算・○○加算・朝食～光熱水費の空欄は、原文どおりnullにした",
+   "No2の下段帯（地域移行加算｜入所中算定日｜退所日｜退所後算定日）の「地域移行加算」は値欄がなくラベルのみのため、値はnullにした",
+   "No2の入所側の表の「入所中算定日」の値欄は空欄のためnullにした",
+   "No2のインタフェース設定の「地域移行加算」の値欄は空欄のためnullにした"
+  ]
+ }
+}

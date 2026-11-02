@@ -1,0 +1,149 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 302,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.003443,
+ "request_id": null,
+ "result": {
+  "printed_page": "148－3",
+  "heading": null,
+  "examples": [
+   {
+    "no": "2",
+    "title": "退所後に保育・教育等移行支援加算、または通所施設移行支援加算のみを算定する場合",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "明細情報レコードは設定しない。\n基本情報レコードの必須項目（項番 1～項番 7）と、保育・教育等移行支援加算の「移行日」、「移行後算定日」もしくは、通所施設移行支援加算の「移行日」、「算定日」のみ設定が必要。\n明細情報レコードは設定しない。\nなお、保育・教育等移行支援加算について、退所後に複数回算定する場合（サービス提供年月が令和 6 年 4 月以降）は、「移行後算定日」には算定日の属する月の最後に保育・教育等移行支援加算を算定する日付を設定する。（例：令和 6 年 4 月 20 日に一般施策へ移行し、令和 6 年 5 月 8 日及び令和 6 年 5 月 10 日に算定される支援を行った場合、「移行後算定日」には令和 6 年 5 月 10 日を設定する。）",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "平成30年5月",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "障害者名",
+        "value": "受給太郎",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000000001",
+        "unit": null
+       },
+       {
+        "label": "事業所名",
+        "value": "〇〇事業所",
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "提供時間",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "○○加算",
+       "備考"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9950000000001",
+        "unit": null
+       },
+       {
+        "label": "保育・教育等移行支援加算 移行日",
+        "value": "H30 年 4 月 28 日",
+        "unit": null
+       },
+       {
+        "label": "移行後算定日",
+        "value": "H30 年 5 月 20 日",
+        "unit": null
+       }
+      ],
+      "columns": [],
+      "rows": []
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "入力表（No 2 の紙様式記載の表）の合計行: 「合計」が日・サービス提供の状況・提供時間の3列にまたがっているため、「合計」は日の列に書き、残りの2列は null にした（結合: 入力表の合計行、日〜提供時間の列、値「合計」）。",
+   "入力表の下にある「保育・教育等移行支援加算｜移行日｜H30 年 4 月 28 日｜移行後算定日｜H30 年 5 月 20 日」の枠は、表ではなく帯状の枠のため tables に入れず、表の下の枠として扱わなかった。",
+   "インタフェース設定の枠は表の列が無く、fields に項目を入れた。保育・教育等移行支援加算の移行日と移行後算定日の値は、帯の表記に合わせて fields に入れた。",
+   "入力表の「平成30年5月」は表の上の帯の文字として caption に入れた。"
+  ]
+ }
+}
