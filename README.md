@@ -31,7 +31,7 @@
 ## 社内で試す（Cloud Run）
 質問画面（`src/web_app.py`）を Google Cloud Run に載せ、IAP で社内の Google Workspace のドメインの人だけが開けるようにする。
 
-1. 手元で `build_db.py` → `build_rules.py` → `build_examples.py` → `build_index.py` を済ませる（`db/` の DB とベクトルをイメージに入れる）。
+1. 手元で `build_db.py` → `build_rules.py` → `build_examples.py` → `build_daysettings.py` → `build_index.py` を済ませる（`db/` の DB とベクトルをイメージに入れる）。
 2. gcloud CLI を入れて `gcloud auth login`。課金を有効にしたプロジェクトを用意する。
 3. `PROJECT=プロジェクトID DOMAIN=社内ドメイン bash deploy/deploy.sh all`
    - API の有効化 → `.env` の API キーを Secret Manager へ → Cloud Build でイメージを作る → Cloud Run（メモリ 4GB、最大1台、使わないときは0台）→ IAP でドメインの人に許可。
@@ -46,7 +46,7 @@ sources/   manifest.yaml・rules_manifest.yaml（取得対象と版情報）, SO
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
 deploy/   deploy.sh（Cloud Run に載せる）, requirements-web.txt。Dockerfile と .gcloudignore は直下
-src/       web_app.py + web_ui.html（質問画面）, list_sources.py（出典一覧を作る）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, transcribe_examples.py + build_examples.py（設定例を事例に）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       web_app.py + web_ui.html（質問画面）, list_sources.py（出典一覧を作る）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, transcribe_examples.py + build_examples.py（設定例を事例に）, build_daysettings.py（日数情報レコードの設定方法の表）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -101,9 +101,16 @@ uv run python src/build_rules.py
 uv run python src/transcribe_examples.py --doc shogai_jigyosho_r0710 --pages 161-210,300-305
 uv run python src/build_examples.py                              # build_db.py の後に毎回（API なし）
 
+# 設定方法の表（障害 サービス事業所編 p23〜30・p237〜241「日数情報レコードの設定方法」29 件。障害者と障害児）
+#   サービス種類｜事務処理要領｜データ設定例 の表を、事務処理要領を共有するサービスのまとまりごとに構造化する
+#   （「（N）と同様」の引き先と ※ の注記を付ける）。書き起こし（API、両モデル、13 頁 約 $0.4）→ 採用（config/daysettings.yaml）
+#   → DB の day_settings テーブル、out/daysettings/{doc}/day_settings.csv（サービス1つ1行）・day_settings.md
+uv run python src/transcribe_examples.py --kind daysettings --doc shogai_jigyosho_r0710 --pages 23-30,237-241
+uv run python src/build_daysettings.py                           # build_db.py の後に毎回（API なし）
+
 # フェーズ2: 検索（埋め込みはローカル GPU。torch などは依存グループ rag）
 uv sync --group rag
-uv run --group rag python src/build_index.py                     # 索引（build_db.py → build_rules.py → build_examples.py の後に毎回）
+uv run --group rag python src/build_index.py                     # 索引（build_db.py → build_rules.py → build_examples.py → build_daysettings.py の後に毎回）
 uv run --group rag python src/retrieve.py "要介護度はどのコードで何桁？" --domain kaigo
 uv run --group rag python src/eval_retrieval.py                  # 検索の評価 reports/retrieval_eval.md
 

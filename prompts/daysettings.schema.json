@@ -1,0 +1,178 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "printed_page",
+    "heading",
+    "sections",
+    "footnotes",
+    "other_text",
+    "uncertain"
+  ],
+  "properties": {
+    "printed_page": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ページ下部に印字されたページ番号（原文の表記のまま）。"
+    },
+    "heading": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "帯より上の見出し（例: '（４）日数情報レコードの設定方法'）。無ければ null。"
+    },
+    "sections": {
+      "type": "array",
+      "description": "「①開始年月日の設定方法」のような帯ごとに、上から順に。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "groups"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "帯の文字（例: '①開始年月日の設定方法'）。"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "services",
+                "procedure",
+                "example_text",
+                "example_tables"
+              ],
+              "properties": {
+                "services": {
+                  "type": "array",
+                  "description": "このまとまりのサービスの行を上から順にすべて。",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "name",
+                      "code"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "サービス種類の名前（※ の印も原文のまま）。"
+                      },
+                      "code": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "サービス種類のコード（'32' など）。"
+                      }
+                    }
+                  }
+                },
+                "procedure": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "事務処理要領のセルの文すべて。"
+                },
+                "example_text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "データ設定例のセルの文すべて（小さな表の位置は '［表］'）。"
+                },
+                "example_tables": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "caption",
+                      "columns",
+                      "rows"
+                    ],
+                    "properties": {
+                      "caption": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "表の上の文字があれば。無ければ null。"
+                      },
+                      "columns": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "見出し行の列名を左から順に。多段は '上段 > 下段'。"
+                      },
+                      "rows": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        },
+                        "description": "各行のセルを columns と同じ数・同じ順で。空欄は null。"
+                      }
+                    }
+                  },
+                  "description": "データ設定例のセルの中の小さな表（カレンダーなど）。無ければ空。"
+                }
+              }
+            },
+            "description": "事務処理要領のセルを共有する行のまとまりを、上から順に。"
+          }
+        }
+      }
+    },
+    "footnotes": {
+      "type": "array",
+      "description": "表の下の注記を上から順に。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "mark",
+          "text"
+        ],
+        "properties": {
+          "mark": {
+            "type": "string",
+            "description": "'※1' など（原文のまま）。"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "表と注記の外にある本文。無ければ null。"
+    },
+    "uncertain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "読めない・迷った箇所を「どの帯の、どのサービスの、どのセルか、なぜか」で。"
+    }
+  }
+}

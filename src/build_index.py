@@ -1,7 +1,7 @@
 """検索用の索引を作る: DB の行・表を「チャンク」にして埋め込み、ベクトルを保存する。
 
 usage: uv run --group rag python src/build_index.py [--db db/interface_spec.sqlite] [--embedder ruri-v3-310m]
-  前提: build_db.py → build_rules.py → build_examples.py を実行済み（DB を作り直したら、これも実行し直す）
+  前提: build_db.py → build_rules.py → build_examples.py → build_daysettings.py を実行済み（DB を作り直したら、これも実行し直す）
 出力:
   DB の chunks テーブル     チャンク（行ごと・表ごと）の本文とメタ情報
   db/vectors.{embedder}.npy  chunks の chunk_id 順のベクトル（L2 正規化済み）
@@ -98,6 +98,9 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
     has_ex = con.execute("SELECT 1 FROM sqlite_master WHERE name = 'examples'").fetchone() is not None
     ex_pages = {(r["doc_id"], p) for r in (con.execute("SELECT doc_id, page_from, page_to FROM examples") if has_ex else [])
                 for p in range(r["page_from"], r["page_to"] + 1)}
+    # 設定方法の表（build_daysettings.py）を構造化して入れた頁も同じ（表のセルの対応がテキストレイヤでは崩れる）
+    if con.execute("SELECT 1 FROM sqlite_master WHERE name = 'day_setting_pages'").fetchone():
+        ex_pages |= {(r["doc_id"], r["page"]) for r in con.execute("SELECT doc_id, page FROM day_setting_pages")}
     for d in con.execute("SELECT * FROM documents ORDER BY doc_id").fetchall():
         pdf = ROOT / "sources" / "raw" / d["domain"] / f"{d['doc_id']}.pdf"
         for pc in doc_prose(pdf):
@@ -111,6 +114,10 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
     for r in (con.execute("SELECT example_id, doc_id, page_from, printed_page, text FROM examples ORDER BY example_id") if has_ex else []):
         chunks.append({"kind": "example", "item_id": None, "table_id": None, "doc_id": r["doc_id"], "page": r["page_from"],
                        "printed_page": r["printed_page"], "example_id": r["example_id"], "text": r["text"]})
+    if con.execute("SELECT 1 FROM sqlite_master WHERE name = 'day_settings'").fetchone():
+        for r in con.execute("SELECT setting_id, doc_id, page, printed_page, text FROM day_settings ORDER BY setting_id"):
+            chunks.append({"kind": "daysetting", "item_id": None, "table_id": None, "doc_id": r["doc_id"], "page": r["page"],
+                           "printed_page": r["printed_page"], "setting_id": r["setting_id"], "text": r["text"]})
     chunks += rule_chunks(con)
     for c in chunks:
         c["sha"] = hashlib.sha256(c["text"].encode("utf-8")).hexdigest()
@@ -180,22 +187,23 @@ def main() -> int:
     con.row_factory = None
     con.executescript("""
 DROP TABLE IF EXISTS chunks;
-CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL,   -- item | table | prose | example（設定例）| rule（算定ルール資料の本文）| svc（サービスコード表）
+CREATE TABLE chunks (chunk_id INTEGER PRIMARY KEY, kind TEXT NOT NULL,   -- item | table | prose | example（設定例）| daysetting（設定方法の表）| rule（算定ルール資料の本文）| svc（サービスコード表）
                      item_id INTEGER, table_id INTEGER, doc_id TEXT NOT NULL, page INTEGER, printed_page TEXT,
                      unit_id INTEGER, sc_from INTEGER, sc_to INTEGER,   -- rule_units / service_codes の範囲
                      example_id INTEGER,   -- examples
+                     setting_id INTEGER,   -- day_settings
                      text TEXT NOT NULL, sha TEXT NOT NULL);
 CREATE INDEX ix_chunks_item ON chunks(item_id);
 DROP TABLE IF EXISTS prose_fts;
 CREATE VIRTUAL TABLE prose_fts USING fts5(text, tokenize='trigram');
 """)
-    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, doc_id, page, printed_page, unit_id, sc_from, sc_to, example_id, text, sha) "
-                    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+    con.executemany("INSERT INTO chunks (chunk_id, kind, item_id, table_id, doc_id, page, printed_page, unit_id, sc_from, sc_to, example_id, setting_id, text, sha) "
+                    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     [(i, c["kind"], c["item_id"], c["table_id"], c["doc_id"], c["page"], c.get("printed_page"),
-                      c.get("unit_id"), c.get("sc_from"), c.get("sc_to"), c.get("example_id"), c["text"], c["sha"])
+                      c.get("unit_id"), c.get("sc_from"), c.get("sc_to"), c.get("example_id"), c.get("setting_id"), c["text"], c["sha"])
                      for i, c in enumerate(chunks)])
     con.executemany("INSERT INTO prose_fts (rowid, text) VALUES (?, ?)",
-                    [(i, c["text"]) for i, c in enumerate(chunks) if c["kind"] in ("prose", "example", "rule", "svc")])
+                    [(i, c["text"]) for i, c in enumerate(chunks) if c["kind"] in ("prose", "example", "daysetting", "rule", "svc")])
     con.execute("INSERT OR REPLACE INTO build_info VALUES ('index_embedder', ?)", (args.embedder,))
     con.commit()
 
@@ -217,7 +225,7 @@ CREATE VIRTUAL TABLE prose_fts USING fts5(text, tokenize='trigram');
     kinds = defaultdict(int)
     for c in chunks:
         kinds[c["kind"]] += 1
-    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}・文章 {kinds['prose']}・設定例 {kinds['example']}・算定ルール {kinds['rule']}・サービスコード {kinds['svc']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
+    print(f"チャンク {len(chunks)}（行 {kinds['item']}・表 {kinds['table']}・文章 {kinds['prose']}・設定例 {kinds['example']}・設定方法 {kinds['daysetting']}・算定ルール {kinds['rule']}・サービスコード {kinds['svc']}）/ 新たに埋め込み {len(todo)} 件 {time.time() - t0:.0f} 秒"
           f" / 次元 {mat.shape[1]}")
     print(f"→ db/vectors.{args.embedder}.npy, DB の chunks テーブル")
     return 0
