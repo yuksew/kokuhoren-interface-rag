@@ -25,7 +25,7 @@ from transcribe import load_dotenv  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = {"kaigo": "介護", "shogai": "障害"}
-LOG = ROOT / "out" / "answers" / "calls.jsonl"
+LOG: Path | None = ROOT / "out" / "answers" / "calls.jsonl"  # None なら記録しない（web_app.py は自分で記録する）
 
 
 def load_prompts() -> tuple[str, dict]:
@@ -156,9 +156,10 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
         "created_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         **(log_extra or {}),
     }
-    LOG.parent.mkdir(parents=True, exist_ok=True)
-    with LOG.open("a", encoding="utf-8") as f:
-        f.write(json.dumps({k_: v for k_, v in out.items() if k_ != "retrieved"}, ensure_ascii=False) + "\n")
+    if LOG is not None:
+        LOG.parent.mkdir(parents=True, exist_ok=True)
+        with LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps({k_: v for k_, v in out.items() if k_ != "retrieved"}, ensure_ascii=False) + "\n")
     return out
 
 

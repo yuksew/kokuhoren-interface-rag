@@ -57,7 +57,8 @@ def fts_terms(q: str) -> list[str]:
 class Retriever:
     def __init__(self, db: str = "db/interface_spec.sqlite", embedder: str = "ruri-v3-310m", embedder_obj=None):
         self.db_path = ROOT / db
-        self.con = sqlite3.connect(self.db_path)
+        # 読むだけなので、画面（web_app.py）の複数のスレッドから同じ接続を使えるようにする（sqlite はシリアライズドモード）
+        self.con = sqlite3.connect(self.db_path, check_same_thread=False)
         self.con.row_factory = sqlite3.Row
         self.embedder_name = embedder
         self._df: dict[str, int] = {}

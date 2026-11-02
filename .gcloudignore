@@ -1,0 +1,15 @@
+# gcloud builds submit で送るもの（Dockerfile が使うものだけ）。
+# このファイルが無いと .gitignore が使われ、db/ が送られずにビルドが失敗する。
+.git/
+.gitignore
+.venv/
+.env
+**/__pycache__/
+out/
+reports/
+sources/
+eval/
+config/
+db/embed_cache.*
+*.md
+!prompts/*.md

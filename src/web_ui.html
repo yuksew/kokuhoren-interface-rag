@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>介護・障害 請求の仕様書 Q&amp;A（試行）</title>
+<style>
+  :root { --fg:#1f2328; --sub:#59636e; --line:#d1d9e0; --bg:#fff; --soft:#f6f8fa; --accent:#0969da; --warn:#9a6700; --warnbg:#fff8c5; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  .lead { color: var(--sub); margin: 0 0 16px; font-size: .92rem; }
+  .notice { background: var(--warnbg); color: var(--warn); border: 1px solid #d4a72c66; border-radius: 6px; padding: 8px 12px; font-size: .88rem; margin-bottom: 16px; }
+  label { font-weight: 600; font-size: .92rem; }
+  textarea { width: 100%; min-height: 96px; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 6px; resize: vertical; }
+  .row { display:flex; gap:12px; align-items:center; margin-top: 8px; flex-wrap: wrap; }
+  select, button { font: inherit; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); }
+  button { background: var(--accent); color: #fff; border-color: var(--accent); cursor: pointer; font-weight: 600; }
+  button:disabled { opacity: .5; cursor: wait; }
+  .hint { color: var(--sub); font-size: .85rem; }
+  #result { margin-top: 24px; }
+  .answer { white-space: pre-wrap; border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; background: var(--soft); }
+  .insufficient { color: var(--warn); font-size: .9rem; margin-top: 8px; }
+  .sources { margin-top: 12px; font-size: .88rem; }
+  .sources li { margin: 2px 0; }
+  .meta { color: var(--sub); font-size: .8rem; margin-top: 8px; }
+  .error { color: #d1242f; }
+  .examples button { background: var(--bg); color: var(--accent); border-color: var(--line); font-weight: 400; font-size: .85rem; padding: 2px 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>介護・障害 請求の仕様書 Q&amp;A（試行）</h1>
+  <p class="lead">国保連のインタフェース仕様書と、報酬の算定ルール資料（告示・留意事項通知・記載要領・Q&amp;A・サービスコード表）から探して答えます。答えには根拠の資料とページが付きます。</p>
+  <div class="notice">
+    ・利用者の氏名・被保険者番号・受給者証番号などの<strong>個人情報は書かないでください</strong>（質問は外部の AI サービスに送られます）。<br>
+    ・試行中です。答えは誤ることがあります。請求の実務では、出典の原本を必ず確かめてください。
+  </div>
+  <form id="f">
+    <label for="q">質問</label>
+    <textarea id="q" placeholder="例: 給付管理票の給付計画単位数は何桁で設定する？" required maxlength="1000"></textarea>
+    <div class="row">
+      <select id="domain" aria-label="対象">
+        <option value="">介護・障害の両方から探す</option>
+        <option value="kaigo">介護だけ</option>
+        <option value="shogai">障害だけ</option>
+      </select>
+      <button id="go" type="submit">質問する</button>
+      <span class="hint">Ctrl+Enter でも送れます。答えまで 10〜20 秒ほどかかります。</span>
+    </div>
+    <div class="row examples">
+      <span class="hint">例:</span>
+      <button type="button" data-d="shogai">重度訪問介護のサービス種類コードは？</button>
+      <button type="button" data-d="kaigo">総合事業の A4 ってどういうサービス？</button>
+      <button type="button" data-d="kaigo">給付費請求の CSV の構造を教えて</button>
+    </div>
+  </form>
+  <section id="result" aria-live="polite"></section>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+async function ask() {
+  const q = $("#q").value.trim();
+  if (!q) return;
+  $("#go").disabled = true;
+  $("#result").innerHTML = '<p class="hint">資料を探して答えを作っています…</p>';
+  try {
+    const res = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
+                                         body: JSON.stringify({question: q, domain: $("#domain").value || null})});
+    const a = await res.json().catch(() => ({error: `サーバの応答を読めませんでした（${res.status}）`}));
+    if (!res.ok || a.error) throw new Error(a.error || `エラー（${res.status}）`);
+    let h = `<div class="answer">${esc(a.answer)}</div>`;
+    if (a.insufficient) h += '<p class="insufficient">※ 資料の抜粋だけでは十分に答えられない、と判断しました。</p>';
+    if (a.sources.length) h += '<div class="sources"><strong>出典</strong><ul>' +
+      a.sources.map((s) => `<li>[${s.n}] ${esc(s.label)}</li>`).join("") + "</ul></div>";
+    h += `<p class="meta">この回答の API 費用: 約 $${a.cost_usd.toFixed(3)}</p>`;
+    $("#result").innerHTML = h;
+  } catch (e) {
+    $("#result").innerHTML = `<p class="error">${esc(e.message)}</p>`;
+  } finally {
+    $("#go").disabled = false;
+  }
+}
+$("#f").addEventListener("submit", (e) => { e.preventDefault(); ask(); });
+$("#q").addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); ask(); } });
+document.querySelectorAll(".examples button").forEach((b) => b.addEventListener("click", () => {
+  $("#q").value = b.textContent; $("#domain").value = b.dataset.d; ask();
+}));
+</script>
+</body>
+</html>

@@ -14,12 +14,25 @@
 - コード（`src/`、`prompts/` など）は MIT License（`LICENSE`）。
 - 原本の PDF・Excel はリポジトリに含めない（`src/fetch.py` で取得する）。`out/`・`reports/` にある書き起こしや画像は、厚生労働省などが公開している資料を写したもので、その著作権・利用条件は各原本の公開元に従う（MIT License の対象外）。
 
+## 社内で試す（Cloud Run）
+質問画面（`src/web_app.py`）を Google Cloud Run に載せ、IAP で社内の Google Workspace のドメインの人だけが開けるようにする。
+
+1. 手元で `build_db.py` → `build_rules.py` → `build_index.py` を済ませる（`db/` の DB とベクトルをイメージに入れる）。
+2. gcloud CLI を入れて `gcloud auth login`。課金を有効にしたプロジェクトを用意する。
+3. `PROJECT=プロジェクトID DOMAIN=社内ドメイン bash deploy/deploy.sh all`
+   - API の有効化 → `.env` の API キーを Secret Manager へ → Cloud Build でイメージを作る → Cloud Run（メモリ 4GB、最大1台、使わないときは0台）→ IAP でドメインの人に許可。
+   - 1日の API 費用の上限は `MAX_USD_PER_DAY`（既定 $5）。超えるとその日は答えない。
+   - ログ（Cloud Logging）には、利用者・費用・時間だけを出す。質問文も出すときは `LOG_QUESTIONS=1`。
+   - 使わない間は止まるので、しばらくぶりの最初の質問は起動を待つ（数十秒）。
+4. DB を作り直したら `bash deploy/deploy.sh build` → `deploy`。
+
 ## ディレクトリ
 ```
 sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
-src/       fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+deploy/   deploy.sh（Cloud Run に載せる）, requirements-web.txt。Dockerfile と .gcloudignore は直下
+src/       web_app.py + web_ui.html（質問画面）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -81,6 +94,9 @@ uv run --group rag python src/eval_answers.py                    # 回答の評�
 # 実際の質問での評価: eval/real_questions.txt に質問を書く → 回答 → reports/real_eval.csv の「判定」列に ○△× → 集計
 uv run --group rag python src/eval_real.py run
 uv run --group rag python src/eval_real.py summary
+
+# 質問画面（ブラウザ）。http://127.0.0.1:8080/
+uv run --group rag python src/web_app.py
 
 # API を使わずにパイプラインだけ試す
 uv run python src/transcribe.py --provider mock && uv run python src/validate.py --run mock-png && uv run python src/report.py --run mock-png

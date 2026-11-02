@@ -6,6 +6,7 @@ import は実装の中で遅延させ、書き起こし側のスクリプトが 
 
 from __future__ import annotations
 
+import os
 from abc import ABC, abstractmethod
 
 import numpy as np
@@ -36,7 +37,8 @@ class RuriEmbedding(EmbeddingClient):
         from sentence_transformers import SentenceTransformer
 
         self.model_id = model_id
-        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        # EMBED_DEVICE=cpu で GPU があっても CPU を使う（サーバに置くときの確認用）
+        self.device = device or os.environ.get("EMBED_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
         self.batch_size = batch_size
         self._m = SentenceTransformer(model_id, device=self.device)
         self.dim = self._m.get_sentence_embedding_dimension()

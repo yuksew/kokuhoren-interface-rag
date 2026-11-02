@@ -1,0 +1,10 @@
+# 質問画面（src/web_app.py）をサーバで動かすのに要るものだけ。版は uv.lock に合わせる。
+# torch は Dockerfile で CPU 版を先に入れる（pyproject の cu128 版は大きすぎる）
+anthropic==2.3.0
+pyyaml==6.0.3
+pymupdf==2.0
+pypdf==6.21.4
+numpy==2.5.4
+sentence-transformers==6.2.0
+transformers==5.22.1
+sentencepiece==0.2.2
