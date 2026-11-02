@@ -84,7 +84,7 @@ def load_page(run: str, doc: str, page: int) -> tuple[dict, dict | None]:
 
 # ---------- 列とセル ----------
 
-_GUESS = [("no", r"^(項番|No|NO|番号)$"), ("name", r"項目名|^項目$|情報名"), ("type", r"属性"), ("length", r"桁"),
+_GUESS = [("no", r"^(項番|No|NO|番号)$"), ("name", r"項目名|^項目$|情報名"), ("type", r"属性"), ("length", r"^(?!.*\d\s*桁目).*桁"),
           ("content", r"^内容|説明"), ("required", r"^必須"), ("note", r"^備考")]
 
 
@@ -310,7 +310,15 @@ def apply_page(adopted: dict, sonnet: dict | None, items: list[dict], dec: dict,
         si = s_item(q)
         if si is None:
             continue
-        t = page["tables"][q["table"]]
+        # Haiku に無い表（Sonnet だけが拾った表）の行は、その表の枠を Sonnet から写して入れる
+        tables = page.setdefault("tables", [])
+        while len(tables) <= q["table"]:
+            st = s_tables[len(tables)]
+            tables.append({**{k: copy.deepcopy(v) for k, v in st.items() if k != "items"}, "items": [], "source_model": "claude-sonnet-5-5"})
+        # 同じ番号に別の表がある（表の並びが Haiku と Sonnet でずれている）ときは入れない
+        if (s_tables[q["table"]].get("title") or "") != (tables[q["table"]].get("title") or ""):
+            continue
+        t = tables[q["table"]]
         new = copy.deepcopy(si)
         new.update({"_ia": None, "_qid": q["id"], "_added": add, "_ghost": not add,
                     "_fixes": [{"field": "row", "from": None, "to": "Sonnet の行を追加", "by": "human", "qid": q["id"]}] if add else []})

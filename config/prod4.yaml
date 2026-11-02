@@ -1,0 +1,16 @@
+# 本番4: 残りの編（介護 保険者編4冊・市町村合併編、障害 市町村編・都道府県編）の「表のあるページ」すべてを、新しいスキーマ（column_map / cells）で両モデル処理する。
+# 採用ルール: 必須対応表は Haiku、それ以外は Haiku を主・Sonnet を第2意見（src/adopt.py）
+run: prod4-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+docs:
+  - kaigo_hokensha_r0806_1
+  - kaigo_hokensha_r0806_2
+  - kaigo_hokensha_r0806_3
+  - kaigo_hokensha_r0806_4
+  - kaigo_gappei_r0806
+  - shogai_shichoson_r0710
+  - shogai_todofuken_r0806
