@@ -7,8 +7,22 @@
 - 各段階の経緯と評価の数字は `reports/`（`phase1_report.md`、`prod1_report.md`、`phase2_report.md` など）にある。
 
 ## 注意
-- 厚生労働省・国保中央会などの公式のものではない。書き起こし・回答には誤りがありうるので、請求の実務では必ず原本（`sources/manifest.yaml`・`sources/rules_manifest.yaml` の URL）を確かめること。
+- 厚生労働省・国保中央会などの公式のものではない。書き起こし・回答には誤りがありうるので、請求の実務では必ず原本（下の「出典」）を確かめること。
 - 入れているのは公開されている一次資料だけ。自治体ごとの運用や、問い合わせで得た個別の指示は入れていない。
+
+## 出典
+取り込んだ資料はすべて、次の公開元が公開しているもの（調査・取得は 2026-11-01〜02）。件数は DB に入れたもの。1件ずつの一覧（資料名・原本の URL・掲載ページ・版。参考に登録しただけの新旧対照表なども含む）は **[`sources/SOURCES.md`](sources/SOURCES.md)**。
+
+| 資料 | 公開元・掲載場所 | 件数 |
+|---|---|---|
+| 介護保険のインタフェース仕様書（全編。令和8年6月版。サービス事業所編・居宅介護支援事業所編は令和6年4月版、伝送のインターネット編は令和4年10月版） | [WAM NET 行政情報 > 国保連インタフェース](https://www.wam.go.jp/gyoseiShiryou/detail-list?bun=020050010)（厚生労働省老健局の事務連絡「介護保険事務処理システム変更に係る参考資料」の添付。R8.5.25 確定版 [gno=22560](https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010)） | 8 編（11 ファイル。保険者編は4分冊） |
+| 障害福祉のインタフェース仕様書（共通編・事業所編・市町村編・都道府県編） | 厚生労働省の障害福祉の電子請求（インタフェース仕様書）の施行分ごとのページ（[令和7年10月施行分](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174643_00020.html)・[令和8年6月施行分](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174643_00025.html)） | 4 編 |
+| 介護の算定ルール資料（報酬告示・留意事項通知・記載要領・Q&A・サービスコード表・総合事業） | 厚生労働省（[令和6年度介護報酬改定のページ](https://www.mhlw.go.jp/stf/newpage_38790.html)、[法令等データベース](https://www.mhlw.go.jp/hourei/) ほか）、WAM NET | 59 件 |
+| 障害の算定ルール資料（改正告示・留意事項通知・Q&A・サービスコード表） | 厚生労働省（[令和8年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html)・[令和6年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html)の報酬改定のページ、[サービスコード表](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html) ほか）、[こども家庭庁](https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei)（障害児） | 35 件 |
+
+- 「最新」と判断した根拠は `sources/README.md`（仕様書）と `sources/rules_survey.md`（算定ルール資料）。取得日時と sha256 は `sources/fetch_log*.json`。
+- 質問画面の回答では、出典の資料名から原本の PDF の該当ページが開く。
+- `sources/SOURCES.md` は `uv run python src/list_sources.py` で manifest から作り直す。
 
 ## ライセンス
 - コード（`src/`、`prompts/` など）は MIT License（`LICENSE`）。
@@ -28,11 +42,11 @@
 
 ## ディレクトリ
 ```
-sources/   manifest.yaml（取得対象と版情報）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
+sources/   manifest.yaml・rules_manifest.yaml（取得対象と版情報）, SOURCES.md（出典一覧）, README.md（最新と判断した根拠）, raw/{kaigo,shogai}/（原本PDF。編集しない）, fetch_log.json
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
 deploy/   deploy.sh（Cloud Run に載せる）, requirements-web.txt。Dockerfile と .gcloudignore は直下
-src/       web_app.py + web_ui.html（質問画面）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       web_app.py + web_ui.html（質問画面）, list_sources.py（出典一覧を作る）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```

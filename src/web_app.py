@@ -106,7 +106,7 @@ def make_handler(r: Retriever, client, model: str, budget: Budget, log_questions
             log(event="answer", user=user, domain=domain, cost_usd=a["cost_usd"], latency_s=a["latency_s"],
                 insufficient=a["insufficient"], request_id=a["request_id"], **({"question": q} if log_questions else {}))
             self._json(200, {"answer": a["answer"], "insufficient": a["insufficient"],
-                             "sources": [{"n": n, "label": s["label"]} for n, s in sorted(a["sources"].items())],
+                             "sources": [{"n": n, "label": s["label"], "link": s.get("link")} for n, s in sorted(a["sources"].items())],
                              "cost_usd": a["cost_usd"]})
 
     return H

@@ -35,8 +35,10 @@
   <p class="lead">国保連のインタフェース仕様書と、報酬の算定ルール資料（告示・留意事項通知・記載要領・Q&amp;A・サービスコード表）から探して答えます。答えには根拠の資料とページが付きます。</p>
   <div class="notice">
     ・利用者の氏名・被保険者番号・受給者証番号などの<strong>個人情報は書かないでください</strong>（質問は外部の AI サービスに送られます）。<br>
-    ・試行中です。答えは誤ることがあります。請求の実務では、出典の原本を必ず確かめてください。
+    ・試行中です。答えは誤ることがあります。請求の実務では、出典の原本を必ず確かめてください（出典の資料名から原本の PDF のそのページが開きます）。
   </div>
+  <p class="hint">資料は、厚生労働省・WAM NET（厚生労働省の事務連絡の掲載先）・こども家庭庁が公開しているものだけです。厚生労働省・国保中央会などの公式のサービスではありません。
+    資料の一覧: <a href="https://github.com/yuksew/kokuhoren-interface-rag#出典" target="_blank" rel="noopener">GitHub の README「出典」</a></p>
   <form id="f">
     <label for="q">質問</label>
     <textarea id="q" placeholder="例: 給付管理票の給付計画単位数は何桁で設定する？" required maxlength="1000"></textarea>
@@ -62,6 +64,17 @@
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
+const host = (u) => { try { return new URL(u).hostname; } catch { return ""; } };
+const PUB = {"www.mhlw.go.jp": "厚生労働省", "www.wam.go.jp": "WAM NET", "www.cfa.go.jp": "こども家庭庁"};
+// 出典: 資料名から原本（公開元の PDF のそのページ）へ。掲載ページがあれば添える
+function srcItem(s) {
+  if (!s.link) return esc(s.label) + ' <span class="hint">（仕様書の表から作ったまとめ）</span>';
+  const h = host(s.link.url);
+  let t = `<a href="${esc(s.link.url)}" target="_blank" rel="noopener">${esc(s.label)}</a> <span class="hint">— ${esc(PUB[h] || h)}`;
+  if (s.link.source_page) t += `（<a href="${esc(s.link.source_page)}" target="_blank" rel="noopener">掲載ページ</a>）`;
+  return t + "</span>";
+}
+
 async function ask() {
   const q = $("#q").value.trim();
   if (!q) return;
@@ -75,7 +88,7 @@ async function ask() {
     let h = `<div class="answer">${esc(a.answer)}</div>`;
     if (a.insufficient) h += '<p class="insufficient">※ 資料の抜粋だけでは十分に答えられない、と判断しました。</p>';
     if (a.sources.length) h += '<div class="sources"><strong>出典</strong><ul>' +
-      a.sources.map((s) => `<li>[${s.n}] ${esc(s.label)}</li>`).join("") + "</ul></div>";
+      a.sources.map((s) => `<li>[${s.n}] ${srcItem(s)}</li>`).join("") + "</ul></div>";
     h += `<p class="meta">この回答の API 費用: 約 $${a.cost_usd.toFixed(3)}</p>`;
     $("#result").innerHTML = h;
   } catch (e) {

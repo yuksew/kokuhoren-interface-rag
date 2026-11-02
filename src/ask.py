@@ -63,6 +63,28 @@ def source_label(r: Retriever, hit: dict) -> str:
     return f"{DOMAIN[t['domain']]} {t['volume']} {t['edition']} PDF p{t['page_from']}〜{t['page_to']} 「{t['title'] or '表題なし'}」（表全体）"
 
 
+def source_link(r: Retriever, hit: dict) -> dict | None:
+    """抜粋の原本（公開元の URL と掲載ページ）。PDF はページ番号つき（#page=N）。DB から作ったまとめは None。"""
+    if hit["kind"] in ("overview", "limits"):
+        return None
+    if hit["kind"] in ("rule", "svc"):
+        x = r.con.execute("SELECT c.page, d.url, d.source_page FROM chunks c JOIN rule_docs d USING (doc_id) WHERE chunk_id = ?",
+                          (hit["chunk_id"],)).fetchone()
+    elif hit["kind"] == "prose":
+        x = r.con.execute("SELECT c.page, d.url, d.source_page FROM chunks c JOIN documents d USING (doc_id) WHERE chunk_id = ?",
+                          (hit["chunk_id"],)).fetchone()
+    else:
+        x = r.con.execute("SELECT t.page_from AS page, d.url, d.source_page FROM spec_tables t JOIN documents d USING (doc_id) "
+                          "WHERE t.table_id = ?", (hit["table_id"],)).fetchone()
+        if hit["item_id"] is not None:
+            p = r.con.execute("SELECT page FROM v_items WHERE item_id = ?", (hit["item_id"],)).fetchone()
+            x = {**dict(x), "page": p["page"]} if p else x
+    if not x or not x["url"]:
+        return None
+    url = x["url"] + (f"#page={x['page']}" if x["page"] and x["url"].lower().endswith(".pdf") else "")
+    return {"url": url, "source_page": x["source_page"]}
+
+
 LIST_Q = re.compile(r"項目|構成|一覧|レイアウト|どんな|並び|全部")
 # 交換情報・レコードの全体像を聞く質問（「請求の CSV の構造」「どの CSV に何を設定」）
 STRUCT_Q = re.compile(r"構造|どのCSV|どの CSV|どのレコード|何を送る|どんなファイル|どのような CSV|どのようなCSV")
@@ -147,7 +169,7 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
         "question": question, "domain": domain, "exchange": exchange, "model": model,
         "answer": p.get("answer"), "insufficient": p.get("insufficient"), "cited": [n for n in cited if n not in bad],
         "invalid_citations": bad,
-        "sources": {n: {"label": source_label(r, hits[n - 1]), "item_id": hits[n - 1]["item_id"], "table_id": hits[n - 1]["table_id"]}
+        "sources": {n: {"label": source_label(r, hits[n - 1]), "link": source_link(r, hits[n - 1]), "item_id": hits[n - 1]["item_id"], "table_id": hits[n - 1]["table_id"]}
                     for n in cited if n not in bad},
         "retrieved": [{"item_id": h["item_id"], "table_id": h["table_id"], "via": h["via"]} for h in hits],
         "queries": queries, "rewrite_usage": rw_usage,
