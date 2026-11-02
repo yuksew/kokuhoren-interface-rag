@@ -7,7 +7,7 @@ usage: uv run python src/build_examples.py [--config config/examples.yaml] [--db
   DB の examples テーブル                    事例1件1行（表は JSON）
   out/examples/{doc}/examples.json         採用した事例（頁をまたぐ事例はつないである）
   out/examples/{doc}/examples.csv          事例1件1行（入力と説明）
-  out/examples/{doc}/example_cells.csv     表のセル1つ1行（事例・表・行・列・値）
+  out/examples/{doc}/example_cells.csv     表のセル1つ1行（事例・表・行・列・値。横にまたがるセルは span_to にまたがる最後の列）
   out/examples/{doc}/examples.md           人が読む用の一覧
 """
 
@@ -27,7 +27,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from transcribe_examples import parse_pages  # noqa: E402
 
 
-def load_examples(doc: str, pages: list[int], base: str, use: dict[str, str], notes: dict[str, str] | None = None) -> list[dict]:
+def load_examples(doc: str, pages: list[int], base: str, use: dict[str, str], notes: dict[str, str] | None = None,
+                  spans: dict[str, list[dict]] | None = None) -> list[dict]:
     out: list[dict] = []
     section = None
     for p in pages:
@@ -50,7 +51,7 @@ def load_examples(doc: str, pages: list[int], base: str, use: dict[str, str], no
                         "no": e["no"], "title": e["title"], "provision_text": e["provision_text"], "provisions": e["provisions"],
                         "timeline_note": e["timeline_note"], "tables": e["tables"], "explanation": e["explanation"],
                         "page_note": r["other_text"] if i == 0 else None, "models": [f"p{p}:{m}"],
-                        "note": (notes or {}).get(f"{p}#{i}")})
+                        "note": (notes or {}).get(f"{p}#{i}"), "spans": (spans or {}).get(f"{p}#{i}", [])})
     return out
 
 
@@ -106,7 +107,7 @@ CREATE TABLE examples (example_id INTEGER PRIMARY KEY, doc_id TEXT NOT NULL, pag
     for d in cfg["docs"]:
         doc = con.execute("SELECT * FROM documents WHERE doc_id = ?", (d["doc"],)).fetchone()
         head = f"{'障害福祉' if doc['domain'] == 'shogai' else '介護保険'} インタフェース仕様書 {doc['volume']} {doc['edition']}"
-        exs = load_examples(d["doc"], parse_pages(d["pages"]), d["base"], d.get("use") or {}, d.get("notes"))
+        exs = load_examples(d["doc"], parse_pages(d["pages"]), d["base"], d.get("use") or {}, d.get("notes"), d.get("spans"))
         out_dir = ROOT / "out" / "examples" / d["doc"]
         md = [f"# 設定例: {head}", "", f"{len(exs)} 件。`src/build_examples.py` が作る（手で直さない）。", ""]
         with (out_dir / "examples.csv").open("w", encoding="utf-8-sig", newline="") as f1, \
@@ -114,7 +115,7 @@ CREATE TABLE examples (example_id INTEGER PRIMARY KEY, doc_id TEXT NOT NULL, pag
             w1, w2 = csv.writer(f1), csv.writer(f2)
             w1.writerow(["example_id", "section", "no", "title", "pdf_page_from", "pdf_page_to", "printed_page",
                          "provisions", "explanation", "note", "url"])
-            w2.writerow(["example_id", "table_no", "role", "caption", "row_no", "column", "value"])
+            w2.writerow(["example_id", "table_no", "role", "caption", "row_no", "column", "value", "span_to"])
             for e in exs:
                 eid += 1
                 e["example_id"] = eid
@@ -134,7 +135,10 @@ CREATE TABLE examples (example_id INTEGER PRIMARY KEY, doc_id TEXT NOT NULL, pag
                     for ri, r in enumerate(t["rows"], 1):
                         for c, v in zip(t["columns"], r):
                             if v not in (None, ""):
-                                w2.writerow([eid, ti, t["role"], t["caption"], ri, c, v])
+                                # 横にまたがるセル（config の spans）: 行のどこかに row の文字があり、from の列のもの
+                                to = next((sp["to"] for sp in e["spans"] if sp["from"] == c and sp["row"] in r
+                                           and sp.get("role", t["role"]) == t["role"]), "")
+                                w2.writerow([eid, ti, t["role"], t["caption"], ri, c, v, to])
                 md += [f"## {eid}. {e['section'] or ''} No.{e['no'] or '-'} {e['title'] or ''}", "", "```", text, "```", ""]
         (out_dir / "examples.json").write_text(json.dumps(exs, ensure_ascii=False, indent=1), encoding="utf-8")
         (out_dir / "examples.md").write_text("\n".join(md), encoding="utf-8")
