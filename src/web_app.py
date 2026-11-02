@@ -104,8 +104,8 @@ def make_handler(r: Retriever, client, model: str, budget: Budget, log_questions
                 return self._json(500, {"error": "回答の作成に失敗しました。少し待ってからもう一度試してください"})
             budget.add(a["cost_usd"])
             log(event="answer", user=user, domain=domain, cost_usd=a["cost_usd"], latency_s=a["latency_s"],
-                insufficient=a["insufficient"], request_id=a["request_id"], **({"question": q} if log_questions else {}))
-            self._json(200, {"answer": a["answer"], "insufficient": a["insufficient"],
+                insufficient=a["insufficient"], invalid_citations=a["invalid_citations"], request_id=a["request_id"], **({"question": q} if log_questions else {}))
+            self._json(200, {"answer": a["answer"], "insufficient": a["insufficient"], "invalid_citations": a["invalid_citations"],
                              "sources": [{"n": n, "label": s["label"], "link": s.get("link")} for n, s in sorted(a["sources"].items())],
                              "cost_usd": a["cost_usd"]})
 

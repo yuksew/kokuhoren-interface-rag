@@ -86,6 +86,7 @@ async function ask() {
     const a = await res.json().catch(() => ({error: `サーバの応答を読めませんでした（${res.status}）`}));
     if (!res.ok || a.error) throw new Error(a.error || `エラー（${res.status}）`);
     let h = `<div class="answer">${esc(a.answer)}</div>`;
+    if (a.invalid_citations && a.invalid_citations.length) h += `<p class="error">※ 回答が、渡していない抜粋の番号（${a.invalid_citations.map((n) => "[" + n + "]").join("")}）を引いています。その部分は根拠を確かめられないので、信用しないでください。</p>`;
     if (a.insufficient) h += '<p class="insufficient">※ 資料の抜粋だけでは十分に答えられない、と判断しました。</p>';
     if (a.sources.length) h += '<div class="sources"><strong>出典</strong><ul>' +
       a.sources.map((s) => `<li>[${s.n}] ${srcItem(s)}</li>`).join("") + "</ul></div>";
