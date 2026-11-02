@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 146,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1715,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037336,
+    "cost_usd_batch": 0.018668,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 146,
+    "printed_page": "44－11",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "１．３．12－５　原案作成委託料更新結果（基本）情報",
+        "record": {
+          "exchange_id": "5K31",
+          "name": "原案作成委託料更新結果（基本）情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "原案作成委託料更新結果情報の識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "“5K31”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "原案作成委託料情報の変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "原案作成委託料情報の異動事由を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "訂正年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "原案作成委託料台帳情報に訂正が生じた日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訂正区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "原案作成委託料の支払を委託する介護予防支援事業所（地域包括支援センター）の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "委託するサービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料の支払を委託する介護予防支援事業所（地域包括支援センター）が所在する市町村の証記載保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "委託料設定単位"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "委託料設定単位を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "原案作成委託料請求先"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "原案作成委託料請求先を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "委託料種類"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "委託料種類を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "委託料計算端数処理方法"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "委託料計算端数処理方法を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      }
+    ],
+    "uncertain": [
+      "全角数字の項番は半角整数に変換した。レコード名のexchange_idは備考の「5K31」固定から推定。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 32,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4254,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003136,
+    "cost_usd_batch": 0.001568,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 32,
+    "printed_page": "548",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 123,
+            "no_raw": "123",
+            "name_path": [
+              "基礎12",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 124,
+            "no_raw": "124",
+            "name_path": [
+              "基礎12",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 125,
+            "no_raw": "125",
+            "name_path": [
+              "基礎12",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 126,
+            "no_raw": "126",
+            "name_path": [
+              "基礎12",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 127,
+            "no_raw": "127",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第１期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "１期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 128,
+            "no_raw": "128",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第２期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "２期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 129,
+            "no_raw": "129",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第３期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "３期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 130,
+            "no_raw": "130",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第４期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "４期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 131,
+            "no_raw": "131",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第５期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "５期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 132,
+            "no_raw": "132",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第６期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "６期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 133,
+            "no_raw": "133",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第７期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "７期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 134,
+            "no_raw": "134",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第８期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "８期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 135,
+            "no_raw": "135",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第９期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "９期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 136,
+            "no_raw": "136",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第１０期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "10期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 137,
+            "no_raw": "137",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第１１期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "11期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 138,
+            "no_raw": "138",
+            "name_path": [
+              "延滞金含む保険料合計",
+              "第１２期"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "12期目の保険料を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "添付は1ページのみで、指定の「次のページ」は含まれていないため、添付されたページ（印字ページ548）の表のみを書き起こした。",
+      "表の上部に表見出しがなく、項番123から始まっているため、前ページからの続きと判断して continued_from_prev_page を true にしたが、前ページの内容は確認できていない。",
+      "レコード名・上位情報名・交換情報識別番号はこのページから読み取れないため空文字とした。",
+      "「項目名」列の見出しが2列以上にまたがっているように見えるため、グループ見出し（基礎12、延滞金含む保険料合計）は name_path に入れ、列としては扱わなかった。"
+    ]
+  },
+  "raw_text": null
+}

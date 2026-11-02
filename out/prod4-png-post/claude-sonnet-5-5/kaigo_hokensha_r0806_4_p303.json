@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 303,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2265,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042836,
+    "cost_usd_batch": 0.021418,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 303,
+    "printed_page": "717",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・ヘッダレコード",
+        "record": {
+          "exchange_id": "1831",
+          "name": "ヘッダレコード",
+          "parent": "介護予防ケアマネジメント負担金調整額通知書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1831”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“H1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "保険者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "保険者名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "開始年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "開始年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "page"
+              },
+              {
+                "mark": "※4",
+                "text": "各年の1月を出力する。ただし、平成27年のみ4月を出力する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "終了年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "終了年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "page"
+              },
+              {
+                "mark": "※5",
+                "text": "各年の12月を出力する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "作成年月日(西暦年月日(YYYYMMDD))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "頁"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "“1”固定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "国保連合会名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "30",
+            "content": "国保連合会名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード",
+        "record": {
+          "exchange_id": "1831",
+          "name": "明細レコード",
+          "parent": "介護予防ケアマネジメント負担金調整額通知書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1831”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "施設所在保険者から請求された被保険者の被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者氏名(カナ)"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "施設所在保険者から請求された被保険者の被保険者氏名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "半角カナ出力",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "金額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "請求金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "施設所在保険者の番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "施設所在保険者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "施設所在保険者の保険者名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "各年の1月を出力する。ただし、平成27年のみ4月を出力する。"
+      },
+      {
+        "mark": "※5",
+        "text": "各年の12月を出力する。"
+      },
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      }
+    ],
+    "uncertain": [
+      "見出し「6.3.2 介護予防ケアマネジメント負担金調整額通知書情報」を record.parent に使用。exchange_id は備考の固定値1831から推定"
+    ]
+  },
+  "raw_text": null
+}

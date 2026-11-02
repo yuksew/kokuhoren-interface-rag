@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 177,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4765,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003392,
+    "cost_usd_batch": 0.001696,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 177,
+    "printed_page": "418",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（２）共同処理用受給者異動連絡票情報（償還払給付額管理処理情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "共同処理用受給者異動連絡票情報（償還払給付額管理処理情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力 > 新規",
+          "必須入力 > 変更",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "共同処理用受給者異動連絡票情報の識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "“5D11”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者の変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "1: 新規\n2: 変更",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "共同処理用受給者情報の異動事由を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "保険給付支払の一時差止の開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険給付支払の一時差止を開始した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "保険給付支払の一時差止の終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険給付支払の一時差止を終了した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "保険給付支払の一時差止区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "保険給付支払の一時差止の区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "1: 一部差止\n2: 全部差止",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "保険給付支払の一時差止金額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "保険給付支払の一時差止金額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "保険給付支払の一時差止区分コードが\"1\"の場合必須"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "保険給付支払の一時差止区分コードが\"1\"の場合必須"
+              }
+            ],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※ 1",
+        "text": "異動区分コードにより入力必須項目が異なる。（◎ 必須）"
+      },
+      {
+        "mark": "※ 2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※ 3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※ S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページの表」だが、添付は PDF 177 ページ（印字ページ418）の1ページのみのため、添付ページ内の表を書き起こした。",
+      "必須入力の見出しは新規・変更の2列にまたがっており、項番10の「保険給付支払の一時差止区分コードが\"1\"の場合必須」は両列にまたがる結合セルと判断して両列に同じ文字列を入れた。",
+      "項番1の『5D11』の引用符は原文どおり“ ”を使用した。",
+      "項番1〜10の必須記号（○）と注記の『◎』は画像上の判読で、『◎』が『○』の誤植である可能性は低いが画像の解像度により断定できない。"
+    ]
+  },
+  "raw_text": null
+}

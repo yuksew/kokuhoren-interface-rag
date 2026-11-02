@@ -1,0 +1,601 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 124,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2699,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.047176,
+    "cost_usd_batch": 0.023588,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 124,
+    "printed_page": "613",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・基本情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "基本情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "レコード種別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "給付実績情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績情報の作成区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者証に記載された保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス提供年月(対象年月)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス提供年月(西暦年月(YYYYMM))を設定する\nサービス計画費の場合は対象年月を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "給付実績区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績の区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービス事業所等の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "公費1",
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費1負担対象の場合公費1負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "公費1",
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費1負担対象の場合公費1受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "公費2",
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費2負担対象の場合公費2負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "公費2",
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費2負担対象の場合公費2受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "公費3",
+              "負担者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費3負担対象の場合公費3負担者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "公費3",
+              "受給者番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費3負担対象の場合公費3受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "被保険者情報",
+              "生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者の生年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "被保険者情報",
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "被保険者の性別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "被保険者情報",
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "要介護状態区分を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "被保険者情報",
+              "旧措置入所者特例コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "旧措置入所者特例の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "数字数字数字数字合計情報协決定前卐保険サービス単位数数字",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "被保険者情報",
+              "認定有効期間　開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "被保険者情報",
+              "認定有効期間　終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "被保険者情報",
+              "老人保健市町村番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "老人保健の市町村番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "被保険者情報",
+              "老人保健受給者番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "老人保健の受給者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "サービス提供年月が平成20年3月以前の場合に設定する項目という本文あり（表ではないため未記載）",
+      "項番7・17・21・22の内容の括弧内の英字表記は文字が詰まっており(YYYYMM/YYYYMMDD)と推定"
+    ]
+  },
+  "raw_text": null
+}

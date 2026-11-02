@@ -1,0 +1,523 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 29,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "13-3",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力※1 > 新規",
+    "必須入力※1 > 変更",
+    "必須入力※1 > 終了",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 107,
+     "no_raw": "107",
+     "name_path": [
+      "指定市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "当該事業所を所管する市町村の番号を設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "※18\n※19\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※19",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 108,
+     "no_raw": "108",
+     "name_path": [
+      "みなし指定の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "みなし指定の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5\n※18\n※26\n※93",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※26",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※93",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 109,
+     "no_raw": "109",
+     "name_path": [
+      "福祉・介護職員処遇改善特別加算の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "福祉・介護職員処遇改善特別加算の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5、※18",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 110,
+     "no_raw": "110",
+     "name_path": [
+      "緊急短期入所体制確保加算の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "緊急短期入所体制確保加算の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5\n※18",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 111,
+     "no_raw": "111",
+     "name_path": [
+      "栄養士配置減算の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "栄養士配置減算の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:非常勤栄養士減算\n3:栄養士未配置減算\n※5\n※18",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 112,
+     "no_raw": "112",
+     "name_path": [
+      "就労移行・定着実績区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "就労移行・定着実績区分をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "※5\n※18\n※27",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※27",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 113,
+     "no_raw": "113",
+     "name_path": [
+      "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅰ)の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅰ)の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5\n※18",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 114,
+     "no_raw": "114",
+     "name_path": [
+      "職業指導員体制の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "職業指導員体制の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5\n※18",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 115,
+     "no_raw": "115",
+     "name_path": [
+      "重度知的障害児収容棟設置の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "重度知的障害児収容棟設置の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5、※18\n※76",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※76",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 116,
+     "no_raw": "116",
+     "name_path": [
+      "肢体不自由児施設重度病棟設置の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "肢体不自由児施設重度病棟設置の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:有り\n※5、※18\n※77",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※18",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※77",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 117,
+     "no_raw": "117",
+     "name_path": [
+      "心理担当職員配置加算の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "心理担当職員配置加算の有無をコードで設定",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:無し\n2:Ⅰ\n3:Ⅱ\n※5\n※55",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "、※33",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※55",
+       "text": null,
+       "source": null
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表は107項から始まり表見出しがないため、前ページからの続きと判断した。continued_from_prev_pageは true としたが、後処理で再判定される想定。",
+  "117項の下に次ページへ続く行があるかは、このページ単独では判断できないため continues_to_next_page は false とした。",
+  "113項の項目名と内容に含まれる「(Ⅰ)」の括弧・ローマ数字の字形（半角/全角、Ⅰ/I）は画像からは判別しきれないため、原文表記と異なる可能性がある。",
+  "備考欄の「※」注記（※5、※18など）は本ページには脚注本文が無いため footnotes は空とした。"
+ ]
+}

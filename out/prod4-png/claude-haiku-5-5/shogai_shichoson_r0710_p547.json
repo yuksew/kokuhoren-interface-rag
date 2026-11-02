@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 547,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3555,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002788,
+    "cost_usd_batch": 0.001394,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 547,
+    "printed_page": "243",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "提出・問い合わせ先名称1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "提出・問い合わせ先の名称1を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "帳票関連付け番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "高額障害福祉サービス費給付対象者一覧表のNo.を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "提出・問い合わせ先名称2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "提出・問い合わせ先の名称2を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "提出・問い合わせ先電話番号"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "提出・問い合わせ先の電話番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "宛先郵便番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "受給者の郵便番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "宛先住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "受給者の住所を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "宛先氏名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者の氏名（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "宛先敬称"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "‘様’を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "高額介護サービス費支給額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "高額介護（予防）サービス費を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "高額介護サービス費（年額）等種別区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "介護保険サービスを併用している受給者を含む世帯において、高額障害福祉サービス費支給金額を算定する際に高額介護（予防）サービス費（年額）等を加味しているかを表す高額介護サービス費（年額）等種別区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "1:高額介護（予防）サービス費（年額）\n2:高額医療合算介護サービス費\n3:高額介護（予防）サービス費（年額）かつ高額医療合算介護サービス費\n※2",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "高額介護サービス費（年額）支給額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "高額介護（予防）サービス費（年額）を介護保険サービスの給付実績からサービス提供年月ごとに按分した金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "補正済自己負担額情報有無区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "高額医療合算介護サービス費を介護保険サービスの給付実績から按分する際に補正済自己負担額情報を使用しているかを表す補正済自己負担額情報有無区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※2",
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "高額医療合算介護サービス費支給額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "高額医療合算介護サービス費を介護保険サービスの給付実績からサービス提供年月ごとに按分した金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "介護保険システムから提供される情報を基に設定する。なお、介護保険システムから提供されていない場合、“0”を設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "介護保険システムから提供される情報を基に設定する。なお、介護保険システムから提供されていない場合、設定しない。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 市町村編 Ⅲ. 市町村事務共同処理 3.2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "表は項番20から始まり見出し行が繰り返されているため、前ページからの続きと判断した（前ページの内容は添付されていない）。",
+      "レコード名・上位情報名・交換情報識別番号はこのページから読み取れないため空文字とした。",
+      "項目名の折り返し（例: 提出・問い合わせ先 名称1）は詰めて1行にした。"
+    ]
+  },
+  "raw_text": null
+}

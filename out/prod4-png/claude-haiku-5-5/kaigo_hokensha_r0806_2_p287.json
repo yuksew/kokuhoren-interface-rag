@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 287,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 9141,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00558,
+    "cost_usd_batch": 0.00279,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 287,
+    "printed_page": "289",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "3．2．7　各種支払支援処理情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "振込データ情報\n※ 1\n（保険者単位に振込データ作成までを行う場合）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関へ提出する振込情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3911"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "磁気"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が国保連合会に払い込みをする金額等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3921"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 専用紙 A3タテ ※ 2"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "振込者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象となった振込先の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3931"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "振込不能者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象であるが、振込が正常に終了しなかった振込先の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3941"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "随時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "振込データ情報（総合事業）\n※ 1\n（保険者単位に振込データ作成までを行う場合）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関へ提出する振込情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3951"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "磁気"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "払込請求書情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が国保連合会に払い込みをする金額等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3961"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 専用紙 A3タテ ※ 2"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "振込者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象となった振込先の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3971"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "振込不能者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象であるが、振込が正常に終了しなかった振込先の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3981"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "随時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付分",
+          "出力媒体種別 > 磁気受付分",
+          "出力媒体種別 > 帳票受付分"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込データ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "磁気返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "払込請求書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込不能者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込データ（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "磁気返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "払込請求書（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込者一覧表（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込不能者一覧表（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "各種支払支援処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※ 1",
+        "text": "振込データ情報は全銀協フォーマットのため、以下の仕様となる。\n・コントロールレコードは付加されない\n・固定長レコードとなる"
+      },
+      {
+        "mark": "※ 2",
+        "text": "保険者からの申し出により請求情報の合算を行う場合、合併後の保険者に合併前の保険者分を合算する。"
+      }
+    ],
+    "uncertain": [
+      "依頼文では『次のページ』とPDF上のページ287とされていたが、添付画像の下部の印字ページ番号は『289』で、添付はこの1ページのみ。添付された画像のページを書き起こした。",
+      "2つ目の表の『出力媒体種別』で『磁気返却』『帳票返却』が3列にまたがって結合されている。結合セルの値は3列すべてに同じ値を入れたが、どの列に属するかは画像からは確定できない。",
+      "2つ目の表の『種別』列は『各種支払支援処理』が8行にわたって縦結合されているため、全行に同じ値を入れた。",
+      "2つ目の表の伝送受付分・磁気受付分・帳票受付分で『伝送返却』『磁気返却』『帳票返却』が2行にまたがる箇所は、両行に同じ値を入れた。",
+      "1つ目の表の『媒体』列の『伝送 磁気 帳票』は、画像上で縦に並んだ値を空白区切りで1セルにまとめた。"
+    ]
+  },
+  "raw_text": null
+}

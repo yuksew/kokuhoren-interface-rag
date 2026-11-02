@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 136,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 1198,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.032162,
+    "cost_usd_batch": 0.016081,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 136,
+    "printed_page": "46",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "受給者関連情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "情報名",
+          "媒体 > 磁気・伝送",
+          "媒体 > 帳票",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "受給者異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "入力情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※１）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "受給者情報突合情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "入力情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※１）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受給者情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "項番１の結果情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※２）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "受給者情報突合結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "項番２の結果情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※２）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "－"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "受給者台帳（単票）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "出力情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※３）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者台帳(一覧表)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": "出力情報",
+            "cells": [
+              {
+                "column": "媒体 > 磁気・伝送",
+                "value": "○（※３）"
+              },
+              {
+                "column": "媒体 > 帳票",
+                "value": "○"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "（※１）",
+        "text": "国保連合会へ送付する異動情報等のコントロールレコードの保険者番号には、合併前・合併後のいずれの保険者番号も設定可能となります。\n・送付ファイルは１ファイルにまとめても、複数ファイルに分けた状態でも処理可能とします。\n・各入力情報の更新結果等は入力情報送付元の保険者に送付します。"
+      }
+    ],
+    "uncertain": [
+      "表中の記号「○」は原文で大きめの丸（◯相当）に見えるが、○で記載した。",
+      "※２・※３の注記はこのページに印字されていない。"
+    ]
+  },
+  "raw_text": null
+}

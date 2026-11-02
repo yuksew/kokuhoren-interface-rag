@@ -1,0 +1,716 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 55,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4094,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.061126,
+    "cost_usd_batch": 0.030563,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 55,
+    "printed_page": "22",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "１．３．３　市町村固有異動連絡票情報",
+        "record": {
+          "exchange_id": "5511",
+          "name": "市町村固有異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "市町村固有異動連絡票情報の識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "“5511”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険者の支給限度額等に変更が生じた年月日(西暦年月日(YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "市町村固有情報の異動事由を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "01（固定値）",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険者コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "有効開始日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効開始日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "有効終了日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効終了日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護4"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護1"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "６月間の限度額を日数で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護2"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護3"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護4"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護5"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "訪問介護",
+              "要介護1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "訪問介護",
+              "要介護2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "訪問介護",
+              "要介護3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "訪問介護",
+              "要介護4"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "訪問介護",
+              "要介護5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出し「必須入力※1」の下に新規・変更・終了の3列があるため、columnsは「必須入力※1 > 新規」等で表記した",
+      "18〜22行の縦結合見出し「居宅介護サービス費種類支給限度基準額」は文字が左右に分かれて印字されており、読み順は推測"
+    ]
+  },
+  "raw_text": null
+}

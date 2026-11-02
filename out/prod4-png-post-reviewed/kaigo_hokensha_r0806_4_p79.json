@@ -1,0 +1,193 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_4",
+ "page": 79,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "595",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "５．２．１　給付実績交換情報(入力情報)",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "保険者保有給付実績情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "保険者で保有している給付実績情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "1139\n※ 1、※ 3\n※ 5、※ 7\n※ 9、※ 11\n※ 13\n※ 15"
+      },
+      {
+       "column": "ルート",
+       "value": "保険者→国保連合会"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n磁気\n帳票"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "required_matrix",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "種別",
+    "帳票名",
+    "受付媒体種別 > 伝送",
+    "受付媒体種別 > 磁気",
+    "受付媒体種別 > 帳票"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "帳票名",
+    "type": "",
+    "length": "",
+    "content": "",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "保険者保有給付実績情報"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [
+      {
+       "column": "受付媒体種別 > 伝送",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 磁気",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 帳票",
+       "value": "◎"
+      }
+     ],
+     "note": null,
+     "cells": [
+      {
+       "column": "種別",
+       "value": "給付実績交換情報"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "サービス提供年月が平成15年3月以前の交換情報識別番号は、“1131”を設定する。"
+  },
+  {
+   "mark": "※3",
+   "text": "サービス提供年月が平成15年4月以降、平成17年9月以前の交換情報識別番号は、“1132”を設定する。"
+  },
+  {
+   "mark": "※5",
+   "text": "サービス提供年月が平成17年10月以降、平成18年3月以前の交換情報識別番号は、“1133”を設定する。"
+  },
+  {
+   "mark": "※7",
+   "text": "サービス提供年月が平成18年4月以降、平成20年3月以前の交換情報識別番号は、“1134”を設定する。"
+  },
+  {
+   "mark": "※9",
+   "text": "サービス提供年月が平成20年4月以降、平成21年3月以前の交換情報識別番号は、“1135”を設定する。"
+  },
+  {
+   "mark": "※11",
+   "text": "サービス提供年月が平成21年4月以降、平成24年3月以前の交換情報識別番号は、“1136”を設定する。"
+  },
+  {
+   "mark": "※13",
+   "text": "サービス提供年月が平成24年4月以降、平成27年3月以前の交換情報識別番号は、“1137”を設定する。"
+  },
+  {
+   "mark": "※15",
+   "text": "サービス提供年月が平成27年4月以降、平成30年3月以前の交換情報識別番号は、“1138”を設定する。"
+  },
+  {
+   "mark": "○",
+   "text": "必須"
+  },
+  {
+   "mark": "×",
+   "text": "不要"
+  },
+  {
+   "mark": "◎",
+   "text": "必須かつ紙媒体受付の際の入力対象"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページの表」だが、添付は PDF 79ページ目（印字ページ595）の1ページのみのため、添付ページに載っている表を書き起こした。",
+  "表見出しの「給付実績交換情報（入力情報）」はレコード名とは明示されていないため、record の name は空文字にした。",
+  "ルート欄の矢印（保険者→国保連合会）は図ではなく文字の並びとして扱い、1行に詰めた。",
+  "受付媒体種別の表は属性・バイト数の列がなく記号のみの行列のため required_matrix とした。種別列は行の名前ではなく種別の値として cells に入れた。"
+ ]
+}

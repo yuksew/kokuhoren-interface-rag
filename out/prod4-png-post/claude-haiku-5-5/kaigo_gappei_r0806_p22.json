@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 22,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3852,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002935,
+    "cost_usd_batch": 0.001468,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 22,
+    "printed_page": "７－１２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・原案作成委託料異動連絡票（事業所単位）情報",
+        "record": {
+          "exchange_id": "",
+          "name": "原案作成委託料異動連絡票（事業所単位）情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "合併前の各市町村が設定する内容",
+          "新設された市町村が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "合併前の各市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5K13”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“5K13”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村の効力が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“3:終了”を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“1:新規”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“01”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併前の市町村に所在する介護予防支援事業所（地域包括支援センター）の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村に所在が変更となる介護予防支援事業所（地域包括支援センター）の事業所番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "サービス種類コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス項目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "サービス項目コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された保険者としての効力が発生する年月（西暦年月(YYYYMM)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併により保険者としての効力が消滅する年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "委託割合"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "委託割合を設定する"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "委託金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "委託金額を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "原案作成委託料異動連絡票情報(原案作成委託料(基本)情報)の委託料設定区分が“3:事業所単位”の場合、提出する。"
+      }
+    ],
+    "uncertain": [
+      "表の列が「合併前の各市町村が設定する内容」と「新設された市町村が設定する内容」の2列で、column_mapのcontentには前者を入れ、後者はcellsに入れた。",
+      "交換情報識別番号・上位の情報名はこのページに印字がないため、recordのexchange_id・parentは空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

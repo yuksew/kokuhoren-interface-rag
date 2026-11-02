@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 148,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2262,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042806,
+    "cost_usd_batch": 0.021403,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 148,
+    "printed_page": "217-21",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード",
+        "record": {
+          "exchange_id": "1652",
+          "name": "明細レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1652”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D2”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "事業所番号(地域包括支援センター)"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "介護予防支援事業所(地域包括支援センター)の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "地域包括支援センター名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "介護予防支援事業所(地域包括支援センター) の事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証に記載された保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "被保険者氏名"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "２５",
+            "content": "被保険者カナ氏名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "公費負担者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費負担者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "公費負担者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "公費負担者名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "公費受給者番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費受給者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスの提供年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "委託先居宅介護支援事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "委託先の居宅介護支援事業所の事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "委託先居宅介護支援事業所名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "委託先の居宅介護支援事業所の事業所名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "介護予防ケアマネジメント費"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "介護予防ケアマネジメント費を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "原案作成委託料"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "原案作成委託料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "原案作成委託料請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "原案作成委託料の請求額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "原案作成委託料未請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "未請求分の原案作成委託料を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "備考"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "５０",
+            "content": "備考を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※２",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※３",
+        "text": "備考として、「過誤取下」、「給付管理票取消」や未請求の理由を出力する。複数の内容を同時に出力する場合は、読点「、」で句切る。"
+      },
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "record.exchange_id は項番1の備考「“1652”固定」から推定",
+      "備考列の※1等の全角・半角表記は原文と若干異なる可能性あり"
+    ]
+  },
+  "raw_text": null
+}

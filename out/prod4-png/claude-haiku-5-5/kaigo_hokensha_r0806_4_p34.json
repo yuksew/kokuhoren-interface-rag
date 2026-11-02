@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 34,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5119,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003569,
+    "cost_usd_batch": 0.001784,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 34,
+    "printed_page": "550",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・ヘッダレコード",
+        "record": {
+          "exchange_id": "4211",
+          "name": "ヘッダレコード",
+          "parent": "４．３．３ 被保険者証作成情報（出力情報）"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "被保険者証作成一覧表情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“4211”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“H1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "情報を作成した年月日（西暦年月日（YYYYMMDD））を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "国保連合会名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "国保連合会名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "保険者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "被保険者証記載の保険者番号に対応する保険者名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "出力順"
+            ],
+            "type": "漢字",
+            "length": 60,
+            "length_raw": "６０",
+            "content": "明細のソート条件を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "4211",
+          "name": "明細レコード（複数レコード）",
+          "parent": "４．３．３ 被保険者証作成情報（出力情報）"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "被保険者証作成一覧表情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“4211”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "No"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "帳票関連付け番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "氏名（カナ）"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "２５",
+            "content": "被保険者のカナ氏名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "半角カタカナ",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "２０",
+            "content": "被保険者の氏名（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "性別"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "性別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“男”または“女”",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "生年月日（西暦年月日（YYYYMMDD））を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "要介護状態区分等"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "要介護状態区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "住所"
+            ],
+            "type": "漢字",
+            "length": 60,
+            "length_raw": "６０",
+            "content": "住所１～３行目を結合し先頭より３０文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※ 1",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項：年月日欄」参照。(P.42)"
+      },
+      {
+        "mark": "※ 2",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※ 1",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項：年月日欄」参照。(P.42)"
+      },
+      {
+        "mark": "※ 2",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      }
+    ],
+    "uncertain": [
+      "表の内容欄「住所」の「１～３」は原文で「1 ~ 3」と見える箇所があり、記号の字形を全角の「～」として書き写したため、字形に差がある可能性がある。",
+      "記録のparent欄は見出し「４．３．３ 被保険者証作成情報（出力情報）」を入れたが、上位情報名の記載は本ページにないため推定に近い。"
+    ]
+  },
+  "raw_text": null
+}

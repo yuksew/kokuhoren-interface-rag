@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 20,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 6528,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004273,
+    "cost_usd_batch": 0.002137,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 20,
+    "printed_page": "536",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "４．２．３　被保険者証作成情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "被保険者証作成一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4211"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護保険被保険者証情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4141"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n専用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "外字空白印字リスト（被保険者証）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "外字を含む被保険者証の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4911"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "被保険者証作成情報エラーリスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証作成情報のエラー分のリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4311"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "伝送受付分",
+          "磁気受付分 > 磁気返却",
+          "磁気受付分 > 帳票返却"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "被保険者証作成一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証作成"
+              },
+              {
+                "column": "伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "磁気受付分 > 磁気返却",
+                "value": "磁気返却"
+              },
+              {
+                "column": "磁気受付分 > 帳票返却",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護保険被保険者証"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証作成"
+              },
+              {
+                "column": "伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "磁気受付分 > 磁気返却",
+                "value": null
+              },
+              {
+                "column": "磁気受付分 > 帳票返却",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "外字空白印字リスト（被保険者証）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証作成"
+              },
+              {
+                "column": "伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "磁気受付分 > 磁気返却",
+                "value": null
+              },
+              {
+                "column": "磁気受付分 > 帳票返却",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "被保険者証作成情報エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証作成"
+              },
+              {
+                "column": "伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "磁気受付分 > 磁気返却",
+                "value": "磁気返却"
+              },
+              {
+                "column": "磁気受付分 > 帳票返却",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページの表」だが、添付は1ページのみで、そのページ（印字ページ536）の表を書き起こした。次のページは添付されていない。",
+      "2つ目の表の上部見出し「出力媒体種別」は、伝送受付分・磁気受付分を束ねる見出しだが、columnsには印字された列名のみを入れ、この見出しは反映していない。",
+      "2つ目の表で、介護保険被保険者証・外字空白印字リストの行は「伝送受付分」と「磁気受付分」の2列が1つの「帳票返却」セルに結合されている。伝送受付分の列に値を入れ、磁気側の列は null にした。",
+      "2つ目の表の「種別」セル（被保険者証作成）は縦結合のため、全4行に同じ値を入れた。",
+      "1つ目の表の媒体・ルート・帳票形式の値は、セル内の折り返しを詰めつつ、内容の区切りとして改行を残した。"
+    ]
+  },
+  "raw_text": null
+}

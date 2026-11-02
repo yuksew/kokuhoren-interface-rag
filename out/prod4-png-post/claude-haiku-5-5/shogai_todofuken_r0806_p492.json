@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 492,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 5852,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003937,
+    "cost_usd_batch": 0.001968,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 492,
+    "printed_page": "170",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "< 二次審査結果一覧情報作成対象レコード >",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "二次審査結果一覧情報作成レコード",
+          "入力識別番号"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "二次審査結果一覧情報作成レコード",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児施設給付費明細書情報\n※サービス提供年月が平成24年3月まで使用"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力識別番号",
+                "value": "K121"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児通所給付費・入所給付費等明細書情報\n※サービス提供年月が平成24年4月以降使用"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "入力識別番号",
+                "value": "K122"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "< 二次審査結果一覧情報作成項目 >",
+        "record": {
+          "exchange_id": "",
+          "name": "二次審査結果一覧情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　2．2　インタフェース一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　2．3．2(2)入力識別番号一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月 YYYYMM)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書　共通編　1．5　留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "二次審査年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "二次審査年月日（西暦年月日 YYYYMMDD）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書　共通編　1．5　留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "返戻事由コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "都道府県等が定めた任意の番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "返戻事由コードの構成は下記のとおり。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "返戻事由"
+            ],
+            "type": "漢字",
+            "length": 134,
+            "length_raw": "134",
+            "content": "都道府県等が定めた返戻事由コードに対応する返戻事由を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM を設定する)",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書　共通編　1．5　留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号(チェックデジット1桁含む)",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　1．4　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　1．4　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書　共通編　1．4　コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "※3 返戻事由コードの構成",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "図"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "図",
+                "value": "[図] 1桁目 / 2桁目 / 3桁目 / 4桁目 ／ 'T'（固定） / 任意の英字 / 任意の数字"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力　◎:必須項目、○:請求内容により必要、△:任意設定、空白:不要"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　2．3．2(2)入力識別番号一覧」参照。"
+      },
+      {
+        "mark": "※3",
+        "text": "返戻事由コードの構成は下記のとおり。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　2．2　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　1．4　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　1．5　留意事項」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は『次のページの表』でしたが、添付はこのページ（印字ページ170、PDF上492ページ相当）のみで、ここに含まれる表を書き起こしました。",
+      "『（２）二次審査結果一覧情報』の見出しと本文から record.name を『二次審査結果一覧情報』としました。交換情報識別番号などは読み取れなかったため空文字にしています。",
+      "返戻事由コードの構成は図のため、図の位置を [図] で示し、図内の印字文字のみを other 表として書き写しました。図の列配置は原図から正確に読み取れていません。",
+      "表1の作成レコード名は2行（レコード名と「※サービス提供年月…」の注記）で、注記部分も name 列に含めました。",
+      "表2の『バイト数』見出しは『バ イト数』と2行に分かれていたため『バイト数』と書きました。"
+    ]
+  },
+  "raw_text": null
+}

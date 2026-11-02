@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 508,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1198,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.032194,
+    "cost_usd_batch": 0.016097,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 508,
+    "printed_page": "217-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "世帯集約番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "世帯集約番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "特例世帯有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特例世帯の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "世帯算定所得区分"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "世帯基準となる所得区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "世帯算定基準額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "世帯算定基準額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "介護保険情報",
+              "保険者番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護保険の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "介護保険情報",
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "介護保険の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "支給申請書出力の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支給申請書出力の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:出力無し\n2:一覧のみ\n3:出力有り",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "帳票出力順序コード"
+            ],
+            "type": "英数",
+            "length": 3,
+            "length_raw": "3",
+            "content": "市町村コード等の任意のコードを設定する(帳票出力のソートで使用する)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 市町村編 Ⅲ.市町村事務共同処理 1.2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "表は前ページからの続き（項番15から開始）"
+    ]
+  },
+  "raw_text": null
+}

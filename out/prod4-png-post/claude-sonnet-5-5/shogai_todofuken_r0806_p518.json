@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 518,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1955,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039766,
+    "cost_usd_batch": 0.019883,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 518,
+    "printed_page": "186",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "世帯算定所得区分"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "世帯基準となる所得区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "世帯算定基準額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "算定基準額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "介護保険情報",
+              "保険者番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "介護保険の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "介護保険情報",
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "介護保険の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "支給申請書出力の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支給申請書出力の有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:出力無し\n2:一覧のみ\n3:出力有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "帳票出力順序コード"
+            ],
+            "type": "英数",
+            "length": 3,
+            "length_raw": "3",
+            "content": "都道府県コード等の任意のコードを設定する(帳票出力のソートで使用する)",
+            "required": "○",
+            "required_by": [],
+            "note": "※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "(1)世帯集約番号構成(英数:10桁)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "1桁目",
+          "2桁目",
+          "3桁目",
+          "4桁目",
+          "5桁目",
+          "6桁目",
+          "7桁目",
+          "8桁目",
+          "9桁目",
+          "10桁目"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "都道府県番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "1桁目〜2桁目",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "3桁目〜5桁目",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "連番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "6桁目〜10桁目",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "名称",
+          "説明"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "名称",
+          "type": "",
+          "length": "",
+          "content": "説明",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "都道府県番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県番号を設定する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県内で一意の番号を設定する(都道府県と協議し番号を設定する)。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "連番"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村内で重複しないように設定する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力 ◎:必須、○:パターン毎に必須、△:任意設定、空白:不要"
+      },
+      {
+        "mark": "※2",
+        "text": "受給者台帳が終了している場合、高額障害福祉サービス費世帯等異動連絡票情報、高額障害児給付費世帯等異動連絡票情報も終了していると判断されるため、“終了”を設けていない。"
+      },
+      {
+        "mark": "※3",
+        "text": "世帯集約番号は下記ルールにより、都道府県、市町村間で番号を協議し、設定する。"
+      }
+    ],
+    "uncertain": [
+      "1つ目の表は前ページからの続き（項番15から開始）",
+      "世帯集約番号構成の図表は桁の図解を含み、列名・items は桁目表記から便宜的に構成した。ブレース図は書き起こしていない",
+      "項番17・18の「介護保険情報」は縦結合の見出しとして name_path に入れた"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 138,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4558,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00329,
+    "cost_usd_batch": 0.001645,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 138,
+    "printed_page": "20",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "施設等の区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "施設等の区分をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5\n※21",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※21",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "人員配置区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "配置基準をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5\n※22",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※22",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "定員区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "報酬算定上の入所定員数をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5\n※12",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "送迎加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅰ\n4:Ⅱ\n※5、※39\n※72",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※39",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※72",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "利用定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "利用定員数を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※5、※63",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※63",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "旧法施設設定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "H18.3 の利用者数を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "新事業移行施設区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "旧法施設から移行した施設か否かをコードで設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "1:非該当\n2:該当\n※5、※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "栄養士配置加算の基準"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養士配置加算の基準をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5\n※11",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※11",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "看護職員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "看護職員配置加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅱ\n※5、※13\n※50",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※13",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※50",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "強度行動障害者特別支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "強度行動障害者特別支援加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※23\n※51、※72",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※23",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※51",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※72",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "経過的居宅介護利用型区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "経過的居宅介護利用型に該当するか否かをコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:非該当\n2:該当\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "視覚・聴覚言語障害者支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "視覚・聴覚言語障害者支援体制加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:Ⅱ\n3:Ⅰ\n※5、※40\n※86",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※40",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※86",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "自活訓練加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅰ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "自活訓練加算（Ⅱ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅱ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ冒頭が項番32から始まり見出しのみのため前ページからの続きと判断したが、継続判定は後処理で確認が必要。",
+      "ページ末尾（項番45の後）で表が次ページへ続くかどうかは画像からは判断できなかったため false とした。",
+      "添付画像の印字ページ番号は「20」だが、指定の PDF 上のページは138で、対応関係は確認していない。"
+    ]
+  },
+  "raw_text": null
+}

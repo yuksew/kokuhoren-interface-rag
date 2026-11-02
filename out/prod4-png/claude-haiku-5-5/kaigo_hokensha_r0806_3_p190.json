@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 190,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4129,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003074,
+    "cost_usd_batch": 0.001537,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 190,
+    "printed_page": "429-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細レコード（複数レコード）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "高額介護サービス費月別集計一覧表情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“3D11”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "世帯主被保険者番号（世帯集約番号）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "世帯主被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "被保険者氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "被保険者氏名（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "情報区分"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "情報区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "８月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "８月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "９月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "９月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "１０月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１０月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "１１月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１１月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "１２月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１２月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "１月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "２月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "２月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "３月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "３月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "４月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "４月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "５月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "５月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "６月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "６月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "７月サービス提供分"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "７月サービス提供分の金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "合計額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項　:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は PDF 上のページ190（印字ページ429-2）の1ページのみのため、添付ページの表を書き起こした。",
+      "明細レコードの交換情報識別番号・親の情報名は本ページに明記がないため空文字とした。レコード名は表見出しの「明細レコード（複数レコード）」をそのまま入れた。",
+      "項番10〜19・バイト数の全角数字表記は画像の印字どおりに書いたが、全角・半角の判別に自信がない箇所がある。"
+    ]
+  },
+  "raw_text": null
+}

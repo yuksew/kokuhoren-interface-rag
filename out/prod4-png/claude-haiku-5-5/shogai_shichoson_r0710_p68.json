@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 68,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 6031,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004026,
+    "cost_usd_batch": 0.002013,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 68,
+    "printed_page": "34",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "１．３．１１ 市町村訂正連絡票情報（基本情報）(E261)",
+        "record": {
+          "exchange_id": "E261",
+          "name": "市町村訂正連絡票情報（基本情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "必須入力(※1) > 新規",
+          "必須入力(※1) > 変更",
+          "必須入力(※1) > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性(※Z)",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "訂正年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "市町村異動連絡票情報（基本情報）に訂正が生じた年月（西暦年月(YYYYMM)）と連番（異動順）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訂正区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "2:修正\n3:削除",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "市町村異動連絡票情報（基本情報）に変更等が生じた年月（西暦年月(YYYYMM)）と連番（異動順）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "市町村異動連絡票情報（基本情報）の異動事由を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "01(固定値)",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "市町村番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "市町村名(カナ)"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "市町村名カナを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "△"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "△"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "△"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "市町村名(漢字)"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "市町村名を全角文字で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "有効開始日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効開始日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "有効終了日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効終了日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "市町村区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "市町村区分を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:単独市町村\n2:政令市\n3:都道府県",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "郵便番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "郵便番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "電話番号"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "市町村の電話番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "住所(カナ)"
+            ],
+            "type": "英数",
+            "length": 75,
+            "length_raw": "75",
+            "content": "市町村の住所をカナ文字で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "△"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "△"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "△"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "住所(漢字)"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "市町村の住所を全角文字で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力(※1) > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力(※1) > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "異動区分コードにより入力必須項目が異なる。"
+      },
+      {
+        "mark": null,
+        "text": "（◎：必須、○：パターン毎に必須、△：任意設定、空白：不要）"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 市町村編 Ⅰ．障害福祉サービス等 1.2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼では PDF 上のページ 68 とされていたが、添付画像の下部ページ番号は「- 34 -」であり、添付されたのはこの1ページのみのため、添付ページの表を書き起こした。",
+      "表見出しの「(E261)」は表の直前の見出しから取り、record.exchange_id に入れた。record.parent は読み取れないため空文字とした。",
+      "有効終了日(項番11)の新規・変更列は空欄のため null とした。"
+    ]
+  },
+  "raw_text": null
+}

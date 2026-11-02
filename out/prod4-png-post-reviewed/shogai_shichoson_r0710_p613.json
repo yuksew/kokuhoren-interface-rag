@@ -1,0 +1,212 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 613,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "２８１",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "１．２．５　取込エラーリスト（出力情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "障害福祉サービス費\n市町村保有給付実績情報取込エラーリスト"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "障害福祉サービス費市町村保有給付実績情報取込時のエラーリスト",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "識別",
+       "value": "G2A1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会 → 市町村"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "PDF"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "(2)",
+     "name_path": [
+      "障害児給付費\n都道府県等保有給付実績情報取込エラーリスト"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "障害児給付費都道府県等保有給付実績情報取込時のエラーリスト",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "識別",
+       "value": "D2A1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会 → 市町村"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "PDF"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "interface_list",
+   "title": "１．２．６　給付実績情報チェックエラーリスト（出力情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "障害福祉サービス費\n市町村保有給付実績情報チェックエラーリスト"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "障害福祉サービス費市町村保有給付実績情報チェック時のエラーリスト",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "識別",
+       "value": "G3A1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会 → 市町村"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "PDF"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "(2)",
+     "name_path": [
+      "障害児給付費\n都道府県等保有給付実績情報チェックエラーリスト"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "障害児給付費都道府県等保有給付実績情報チェック時のエラーリスト",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "識別",
+       "value": "D3A1"
+      },
+      {
+       "column": "ルート",
+       "value": "国保連合会 → 市町村"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "PDF"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付ページは依頼の『次のページ』ではなく、添付された1ページ（ページ番号２８１）の表を書き起こした。",
+  "情報名・内容のセル内改行は、折り返しか意味のある改行かを画像から判断できなかったため、名称の途中の改行は\\nで残し、内容は折り返しとみなして連結した。",
+  "ルート欄の「国保連合会」「→」「市町村」の改行は表示上の配置と判断し、「国保連合会 → 市町村」として書き起こした。"
+ ]
+}

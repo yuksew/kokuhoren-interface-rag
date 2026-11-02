@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 481,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1685,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037066,
+    "cost_usd_batch": 0.018533,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 481,
+    "printed_page": "167-12",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "出力対象項目（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "出力対象項目（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "明細",
+              "前回決定金額",
+              "給付分"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "前回分の給付費、特別対策費、自治体助成分請求額及び決定利用者負担額の合計値を設定する\nただし、対応する前回決定金額がない場合、設定しない",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "明細",
+              "前回決定金額",
+              "特定入所障害児食費等給付費"
+            ],
+            "type": "数値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "前回分の特定入所障害児食費等給付費の決定金額を設定する\nただし、対応する前回決定金額がない場合、設定しない",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "明細",
+              "今回決定金額",
+              "給付分"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "今回分の給付費、特別対策費、自治体助成分請求額及び決定利用者負担額の合計値を設定する\nただし、対応する今回決定金額がない場合、設定しない",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "明細",
+              "今回決定金額",
+              "特定入所障害児食費等給付費"
+            ],
+            "type": "数値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "今回分の特定入所障害児食費等給付費の決定金額を設定する\nただし、対応する今回決定金額がない場合、設定しない",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "明細",
+              "前回処理区分"
+            ],
+            "type": "漢字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "前回の処理区分（請求、返戻、過誤）を設定する\nただし、対応する前回の処理がない場合、設定しない",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "明細",
+              "備考"
+            ],
+            "type": "英数",
+            "length": 30,
+            "length_raw": "30",
+            "content": "前回処理区分が「返戻」で初回決定受付年月が未設定の場合、催告発生年月（消滅時効前半年間に返戻となった最初の受付年月（西暦年月YYYYMM））を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "児童明細:障害児通所給付費・入所給付費等明細書\n（サービス提供年月が平成24年3月以前は障害児施設給付費明細書）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目　◎:出力対象項目、○:請求内容により出力対象となる項目\n△:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "出力される様式名称は、以下のとおり。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 都道府県編 Ⅱ.障害児支援 2.2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "1つ目の表は前ページからの続き（項番21から開始）",
+      "「明細」は縦結合のグループ見出しとして name_path に入れた",
+      "2つ目の表は※2の枠内の文で、表というより囲み記事のため other とした"
+    ]
+  },
+  "raw_text": null
+}

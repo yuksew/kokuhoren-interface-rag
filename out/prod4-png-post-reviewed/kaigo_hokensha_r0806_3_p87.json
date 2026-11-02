@@ -1,0 +1,288 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 87,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "372",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "明細レコード",
+    "parent": "高額介護サービス費給付判定結果情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "高額介護サービス費給付判定結果情報の交換情報識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“3411”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "被保険者証に記載された保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "被保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービス提供年月(西暦年月(YYYYMM) )を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "受付年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "保険者が被保険者からの申請を受け付けた年月日(西暦年月日(YYYYMMDD) )を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "決定年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "保険者が支給または不支給を決定した年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "保険者が支払または不支給を決定した年月日(西暦年月日(YYYYMMDD) )を設定する",
+       "to": "保険者が支給または不支給を決定した年月日(西暦年月日(YYYYMMDD))を設定する",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "本人支払額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "被保険者が支払った金額を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咈号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "支給区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "支給区分コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "支給金額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "被保険者に支給する金額を設定する",
+     "required": "支給区分コードが“1”の場合、必須",
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。加除第咈号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "不支給理由"
+     ],
+     "type": "漢字",
+     "length": 160,
+     "length_raw": "160",
+     "content": "不支給の場合の理由を設定する",
+     "required": "支給区分コードが“2”の場合、必須",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "支払方法区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "支払方法区分コードを設定する",
+     "required": "支給金額が0より大きく、支給区分コードが“1”の場合、必須",
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」だが、添付は1ページのみで、そのページ（印字ページ372）の表を書き起こした。",
+  "ページ番号「372」は全角・半角の判別が画像からは確実でないため半角で記載した。項番10・バイト数160の表記も同様。",
+  "「必須入力」列が1列だけで、記号（○）と「支給区分コードが“1”の場合、必須」等の文言が混在している。文言はそのまま required に入れた。",
+  "備考の「※ S」はSと読めるが、画像の文字が確実でない。",
+  "項番10の備考は空欄のため note を null にした。"
+ ]
+}

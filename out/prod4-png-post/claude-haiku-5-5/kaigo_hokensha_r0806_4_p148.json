@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 148,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4423,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003221,
+    "cost_usd_batch": 0.00161,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 148,
+    "printed_page": "623",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "公費2",
+              "指導管理料等"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費2分の指導管理料等単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "公費2",
+              "単純エックス線"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費2分の単純エックス線単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "公費2",
+              "リハビリテーション"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費2分のリハビリテーション単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "公費2",
+              "精神科専門療法"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費2分の精神科専門療法単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "公費2",
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "公費2",
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "公費2",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費2分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "公費3",
+              "指導管理料等"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費3分の指導管理料等単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "公費3",
+              "単純エックス線"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費3分の単純エックス線単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "公費3",
+              "リハビリテーション"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費3分のリハビリテーション単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "公費3",
+              "精神科専門療法"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "公費3分の精神科専門療法単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "公費3",
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "公費3",
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "公費3",
+              "合計単位数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費3分の合計単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "摘要1"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "摘要2"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": ":",
+            "name_path": [
+              ":"
+            ],
+            "type": ":",
+            "length": null,
+            "length_raw": ":",
+            "content": ":",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "摘要20"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "決定後",
+              "保険",
+              "指導管理料等"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の保険分の指導管理料等単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "決定後",
+              "保険",
+              "単純エックス線"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の保険分の単純エックス線単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "決定後",
+              "保険",
+              "リハビリテーション"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の保険分のリハビリテーション単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "決定後",
+              "保険",
+              "精神科専門療法"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の保険分の精神科専門療法単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "項番9「特定診療費情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "決定後",
+              "保険",
+              "予備1"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "決定後",
+              "保険",
+              "予備2"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "先頭の項番25が1から始まっておらず表題もないため、前ページからの続きと判断した（表見出しの行は本ページ上部に印字されている）。",
+      "項番の行「：」は省略記号の行で、項目名・属性・バイト数・内容の各欄も「：」のみが印字されているため、そのまま書き写した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 239,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3551,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002786,
+    "cost_usd_batch": 0.001393,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 239,
+    "printed_page": "135-19",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "出力対象項目(※1)",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性(※Z)",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "出力対象項目(※1)",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "サービス種類2"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "エラー事由内容に関するサービス種類コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "サービス種類　種別が「サ:サービス提供実績記録票」の場合、「様式番号（様式種別番号上 2桁）」を設定する。\n様式番号については「インタフェース仕様書　サービス事業所編　1．2．3．6　サービス提供実績記録票情報（4）様式と様式種別番号の対応」を参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "レコード種別名称2"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "エラー事由内容に関するレコード種別名称を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "レコード種別名称　請求情報の場合、「基本」「日数」「明細」「集計」「契約」「処遇」「サービス」\n台帳情報の場合、「基本」「サービス」「支給決定」「独自助成」「行政区」",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "項目名称2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "エラー事由内容に関する項目名称を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "項目値2"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "エラー事由内容に関する項目値を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "補足2"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "項目値2の設定値がコード値の場合、該当する名称を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "2:警告\n3:返戻\n6:警告（重度）",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "一次審査結果内容"
+            ],
+            "type": "漢字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "一次審査結果内容を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "備考"
+            ],
+            "type": "英数",
+            "length": 30,
+            "length_raw": "30",
+            "content": "設定なし",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目　◎：出力対象項目、○：請求内容により出力対象となる項目\n△：事業所の設定状況により出力対象となる項目、空白：出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "データ種別区分が「1:障害福祉サービス費」の場合、「者－999999」の形式で設定する。\nデータ種別区分が「3:地域生活支援事業等」の場合、「地－999999」の形式で設定する。"
+      },
+      {
+        "mark": "※3",
+        "text": "種別　「明」･･･請求明細書、「計」･･･サービス利用計画作成費請求書等、\n「サ」･･･サービス提供実績記録票、「利」･･･利用者負担上限額管理結果票"
+      },
+      {
+        "mark": "※4",
+        "text": "情報　「請求明細書」「利用計画作成費請求書」「相談支援給付費請求書」「上限額管理結果票」\n「実績記録票」\n「事業所台帳」「受給者台帳」「市町村台帳」「都道府県等台帳」「単位数表(決定)」\n「単位数表(請求)」「単価表」「地域生活支援単位数表」"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス種類　種別が「サ:サービス提供実績記録票」の場合、「様式番号（様式種別番号上 2桁）」を設定する。\n様式番号については「インタフェース仕様書　サービス事業所編　1．2．3．6　サービス提供実績記録票情報（4）様式と様式種別番号の対応」を参照。"
+      },
+      {
+        "mark": "※6",
+        "text": "レコード種別名称　請求情報の場合、「基本」「日数」「明細」「集計」「契約」「処遇」「サービス」\n台帳情報の場合、「基本」「サービス」「支給決定」「独自助成」「行政区」"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　市町村編　Ⅰ．障害福祉サービス等　2．2　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　1．4　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　1．5　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　1．3　表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "ページ番号は印字の「－135－19－」を printed_page に入れた。PDF上のページ239とは別の番号。",
+      "表の上部に表見出し・レコード名がなく、前ページからの続きと判断した（continued_from_prev_page は true）。",
+      "『出力対象項目(※1)』の見出しは改行で「出力対象項目」「(※1)」に分かれていたため、括弧付きで連結した。",
+      "備考(項番29)の『6:警告（重度）』は枠内で『警告(重』『度）』と折り返されていたため、連結して記載した。"
+    ]
+  },
+  "raw_text": null
+}

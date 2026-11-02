@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 25,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5562,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00379,
+    "cost_usd_batch": 0.001895,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 25,
+    "printed_page": "541",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "給付制限2"
+            ],
+            "type": "漢字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "給付制限記載事項を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "給付制限2・開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付制限開始と終了の年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：年月日」欄参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "給付制限2・終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付制限開始と終了の年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：年月日」欄参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "給付制限3"
+            ],
+            "type": "漢字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "給付制限記載事項を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "給付制限3・開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付制限開始と終了の年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：年月日」欄参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "給付制限3・終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付制限開始と終了の年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：年月日」欄参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名1",
+              "1行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名1",
+              "2行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名1",
+              "3行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名1",
+              "届出年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "届出年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名2",
+              "1行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名2",
+              "2行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名2",
+              "3行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名2",
+              "届出年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "届出年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名3",
+              "1行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名3",
+              "2行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "66",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名3",
+              "3行目"
+            ],
+            "type": "漢字",
+            "length": 50,
+            "length_raw": "50",
+            "content": "居宅介護支援事業者名、事業所名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "67",
+            "name_path": [
+              "居宅介護支援事業者及びその事業所の名称",
+              "事業所名3",
+              "届出年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "届出年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "68",
+            "name_path": [
+              "帳票出力順序コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "帳票出力順序コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：年月日」欄参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付きアンパック(ゾーン)10進数形式項目（以下「符号付き形式項目」）」。なお、※Sが付加されていない数字属性項目は、「符号なしアンパック(ゾーン)10進数形式項目（以下「符号なし形式項目」）」である。"
+      }
+    ],
+    "uncertain": [
+      "前ページからの続き：表見出しが無く、項番50から始まっているため、前ページから続く表と判断した。見出し行はこのページ上部に印字されている。",
+      "項番・項目名の縦結合見出し「居宅介護支援事業者及びその事業所の名称」は項番56〜67にまたがるため、各行の name_path に入れた。",
+      "レコード名・上位の情報名・交換情報識別番号はページ上に読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

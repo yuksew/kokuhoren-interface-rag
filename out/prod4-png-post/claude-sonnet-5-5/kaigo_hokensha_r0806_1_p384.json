@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 384,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2469,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.044876,
+    "cost_usd_batch": 0.022438,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 384,
+    "printed_page": "154",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．３　増減単位数返戻通知情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "請求明細書・給付管理票返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻する給付管理票を確認するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "7411"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送返却",
+          "出力媒体種別 > 磁気返却",
+          "出力媒体種別 > 帳票返却"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "請求明細書・給付管理票返戻（保留）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "増減単位数返戻通知情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送返却",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気返却",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 帳票返却",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．４　再審査・過誤決定通知情報（保険者分）　（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "介護給付費過誤決定通知書情報（保険者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1711"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）過誤決定通知書情報（保険者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1751"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費過誤決定通知書情報（保険者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1771"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護給付費再審査決定通知書情報（保険者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へ再審査で調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1721"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費再審査決定通知書情報（保険者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へ再審査で調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1781"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "2つ目の表（種別・帳票名・出力媒体種別）の伝送返却・磁気返却・帳票返却の列は値が空欄（記号なし）。帳票名は種別の行に対応させて記載したが、name_pathは帳票名セルの値を入れており、種別列との対応は原文のとおり"
+    ]
+  },
+  "raw_text": null
+}

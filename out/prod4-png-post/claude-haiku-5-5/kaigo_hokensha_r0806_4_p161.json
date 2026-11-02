@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 161,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5807,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003913,
+    "cost_usd_batch": 0.001956,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 161,
+    "printed_page": "632-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・高額介護サービス費情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "高額介護サービス費情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5 ※ 8",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "基本情報レコード※ 5参照。",
+                "source": "page"
+              },
+              {
+                "mark": "※8",
+                "text": "介護給付費にかかる月間の高額介護(介護予防)サービス費、総合事業費にかかる月間の高額介護予防サービス費の給付実績交換を提出する際は、支給額に応じて変動が発生する介護給付費にかかる年間の高額介護(介護予防)サービス費、総合事業費にかかる年間の高額介護予防サービス費の給付実績交換も提出する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "給付実績区分コードが\"1\"(現物)の場合は未設定。\n給付実績区分コードが\"2\"(償還)の場合は\"3411\"、\"3412\"、\"3421\"または\"3422\"を設定する。\nなお、介護給付費にかかる月間の高額介護（介護予防）サービス費は\"3411\"、総合事業費にかかる月間の高額介護予防サービス費は\"3421\"。処理年月が平成30年9月以降、介護給付費にかかる年間の高額介護（介護予防）サービス費は\"3412\"、総合事業費にかかる年間の高額介護予防サービス費は\"3422\"を設定する。\n介護給付費にかかる月間の高額介護（介護予防）サービス費\"3411\"、総合事業費にかかる月間の高額介護予防サービス費\"3421\"を提出する際は、支給額に応じて変動が発生する介護給付費にかかる年間の高額介護（介護予防）サービス費\"3412\"、総合事業費にかかる年間の高額介護予防サービス費\"3422\"を提出する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "レコード種別を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "交換情報識別番号が”1131”、”1132”、”1133”、”1134”、”1135”、”1136”、”1137”の場合は、”09”。”1138”、”1139”の場合は、介護給付費にかかる高額介護(介護予防)サービス費は”09”、総合事業費にかかる高額介護予防サービス費の場合は”15”。交換情報識別番号が”1141”、”1142”、”1143”、”1144”、”1145”、”1146”、”1147”、”1111”、”1112”、”1113”、”1114”、”1115”、”1116”、”1117”の場合は、”D8”。”1148”、”1149”、”1118”、”1119”の場合は、介護給付費にかかる高額介護(介護予防)サービス費は”D8”、総合事業費にかかる高額介護予防サービス費は”DE”。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "給付実績情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績情報作成区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1\n※ 7\n※ 9",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)",
+                "source": "page"
+              },
+              {
+                "mark": "※7",
+                "text": "介護給付費にかかる年間の高額介護(介護予防)サービス費及び総合事業費にかかる年間の高額介護予防サービス費の場合は、対象の年度の8 月を設定する。(2017 年度分の場合は、201708 とする)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※9",
+                "text": "介護給付費にかかる年間の高額介護(介護予防)サービス費及び総合事業費にかかる年間の高額介護予防サービス費については、2019 年度分(201908)までを設定可能とし、2020 年度分(202008)以降が設定された場合はエラーとする。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "給付実績区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "受付年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者からの申請を受け付けた年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "決定年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険者が支給を決定した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "公費1負担番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費1の負担番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "公費2負担番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費2の負担番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "公費3負担番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費3の負担番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者が支払った金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "公費1負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費1の負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "公費2負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費2の負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "公費3負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費3の負担額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "支給額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者に支払った金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "公費1支給額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費1の支給額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "公費2支給額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費2の支給額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "公費3支給額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "公費3の支給額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S ※ 10",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※10",
+                "text": "入力識別番号が”3412”(介護給付費にかかる年間の高額介護(介護予防)サービス費)または“3422”(総合事業費にかかる年間の高額介護予防サービス費)の場合、最大6バイトまで設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "審査年月(西暦年月(YYYYMM))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "給付実績区分コードが\"1\"(現物)の場合は未設定。\n給付実績区分コードが\"2\"(償還)の場合は\"3411\"、\"3412\"、\"3421\"または\"3422\"を設定する。\nなお、介護給付費にかかる月間の高額介護（介護予防）サービス費は\"3411\"、総合事業費にかかる月間の高額介護予防サービス費は\"3421\"。処理年月が平成30年9月以降、介護給付費にかかる年間の高額介護（介護予防）サービス費は\"3412\"、総合事業費にかかる年間の高額介護予防サービス費は\"3422\"を設定する。\n介護給付費にかかる月間の高額介護（介護予防）サービス費\"3411\"、総合事業費にかかる月間の高額介護予防サービス費\"3421\"を提出する際は、支給額に応じて変動が発生する介護給付費にかかる年間の高額介護（介護予防）サービス費\"3412\"、総合事業費にかかる年間の高額介護予防サービス費\"3422\"を提出する。"
+      },
+      {
+        "mark": "※5",
+        "text": "基本情報レコード※ 5参照。"
+      }
+    ],
+    "uncertain": [
+      "※4の注記は引用符が原文で判別しにくい字形のため、\"\"の表記が原文と異なる可能性がある。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 311,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1125,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.031436,
+    "cost_usd_batch": 0.015718,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 311,
+    "printed_page": "725",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "介護予防ケアマネジメント負担金調整依頼書",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "施設所在保険者番号",
+          "施設所在保険者名"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "901010",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "施設所在保険者番号",
+                "value": "901010"
+              },
+              {
+                "column": "施設所在保険者名",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "施設所在保険者名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "○ ○ 市",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "施設所在保険者番号",
+                "value": null
+              },
+              {
+                "column": "施設所在保険者名",
+                "value": "○ ○ 市"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "介護予防ケアマネジメント負担金調整依頼書",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "証記載保険者番号",
+          "被保険者番号 被保険者氏名(カナ)",
+          "金額"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "証記載保険者番号",
+                "value": "902020"
+              },
+              {
+                "column": "被保険者番号 被保険者氏名(カナ)",
+                "value": "3000000001 ｶｲｺﾞ ｻﾌﾞﾛｳ"
+              },
+              {
+                "column": "金額",
+                "value": "8600"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "合計金額"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "合計金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "8600",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合計金額",
+                "value": "8600"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※",
+        "text": "要支援者等に係る介護予防ケアマネジメント費を国保連経由で支払った場合の人数は含めないこと。"
+      }
+    ],
+    "uncertain": [
+      "帳票イメージのため、項番2〜50の空欄行は書き起こしていない。項番26以降の右側ブロックも空欄。",
+      "ヘッダー部の「保険者→国保連合会」「平成29年1月分~平成29年12月分」「平成30年1月20日」「1頁」「1811」は表外の文字。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 9,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5403,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003711,
+    "cost_usd_batch": 0.001855,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 9,
+    "printed_page": "１６１－１",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "対象年月が平成１８年４月以降の場合、以下の項目を設定する。",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "給付管理票情報の識別番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "“8222”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービスの給付対象年月（西暦年月(YYYYMM)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "６桁の保険者番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "居宅介護支援事業所番号又は介護予防支援事業所（地域包括支援センター）番号を設定する",
+            "required": "事業所作成の場合、必須",
+            "required_by": [],
+            "note": "※１\n“0”固定",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "給付管理票情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票の作成区分を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "給付管理票作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付管理票の作成年月日（西暦年月日(YYYYMMDD)）を設定する\n新規作成の場合、作成年月日を設定する\n修正または取消の場合は、修正年月日または取消年月日を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票の種別を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "給付管理票明細行番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "同一被保険者の種別区分ごとの給付管理票連番を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "01～98:明細レコード\n99:終端レコード",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者証記載の被保険者番号を記載する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "被保険者生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "被保険者の性別を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "要介護状態区分を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "限度額適用期間(開始)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "限度額適用期間の開始年月（西暦年月(YYYYMM)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※２",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "限度額適用期間(終了)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "限度額適用期間の終了年月（西暦年月(YYYYMM)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※２\n※７",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "居宅・介護予防・総合事業支給限度額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "区分支給限度基準額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※４\n※５\n※８\n※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "給付管理票を作成した居宅サービス計画作成者の区分を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "事業所番号（サービス事業所）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "サービス事業所の事業所番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※１\n※４",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の最終行（項番17）の下に罫線があり、次ページへ続く可能性がある。",
+      "備考欄の※1〜※8・※Sに対応する注記本文はこのページに無いため、footnotesには入れていない。",
+      "必須入力列の「事業所作成の場合、必須」は記号ではないが、この列の原文のため required にそのまま記載した。"
+    ]
+  },
+  "raw_text": null
+}

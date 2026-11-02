@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 139,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3997,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003008,
+    "cost_usd_batch": 0.001504,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 139,
+    "printed_page": "395-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・データレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "データ区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "2・・… データレコード",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "被仕向銀行番号"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "振込先銀行番号（統一金融機関番号）",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "被仕向銀行名"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "１５",
+            "content": "振込先銀行名（カナ文字および英数字）",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被仕向支店番号"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "振込先支店番号（統一店番号）",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "被仕向支店名"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "１５",
+            "content": "振込先支店名（カナ文字および英数字）",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "手形交換所番号"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "預金種目"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1・・… 普通預金\n2・・… 当座預金\n9・・… その他",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "口座番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "受取人の口座番号",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "受取人名"
+            ],
+            "type": "英数",
+            "length": 30,
+            "length_raw": "３０",
+            "content": "カナ文字および英数字",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "振込金額"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "数字",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "新規コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1・・… 第1回振込分\n2・・… 変更分（被仕向銀行・支店、預金種目・口座番号）\n0・・… その他",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "顧客コード1"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "依頼人が定めた受取人識別のためのコード",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "顧客コード2"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "依頼人が定めた受取人識別のためのコード",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "振込指定区分"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "7・・… テレ振込\n8・・… 文書振込",
+            "required": null,
+            "required_by": [],
+            "note": "任意省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "識別表示"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "「Y」またはスペース",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "ダミー"
+            ],
+            "type": "英数",
+            "length": 7,
+            "length_raw": "7",
+            "content": "スペース",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※ S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "レコード名・交換情報識別番号・上位の情報名は本ページから読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

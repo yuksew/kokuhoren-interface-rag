@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 187,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 6370,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004196,
+    "cost_usd_batch": 0.002098,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 187,
+    "printed_page": "１２１－１",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "利用日数管理票",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > J121",
+          "出力対象項目（※1） > J131",
+          "出力対象項目（※1） > J141",
+          "出力対象項目（※1） > J221",
+          "出力対象項目（※1） > L121 > 定率負担",
+          "出力対象項目（※1） > L121 > 定額負担",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数の特例開始年月(西暦年月 YYYYMM を設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": "※6\n※Y",
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "利用日数管理票",
+              "対象期間(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数の特例終了年月(西暦年月 YYYYMM を設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": "※6\n※Y",
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "利用日数管理票",
+              "当月の利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "当月の利用日数",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": "※6",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "利用日数管理票",
+              "原則日数の総和"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "対象期間における原則日数の総和を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": null
+              }
+            ],
+            "note": "※6",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月 YYYYMM)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定率負担",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121 > 定額負担",
+                "value": "◎"
+              }
+            ],
+            "note": "1:正常\n2:警告\n3:返戻\n4:過誤\n5:過誤の取下\n6:警告(重度)",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目 ◎:出力対象項目、○:請求内容により出力対象となる項目\n△:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 市町村編 Ⅰ．障害福祉サービス等２．３．１（４）入力識別番号一覧」参照。"
+      },
+      {
+        "mark": "※3",
+        "text": "【サービス提供年月が平成25年4月以降の場合】\n1：2以外の情報は1を設定する。\n2：同一サービス種類で単位数単価が異なる場合、2を設定する。具体的には単位数単価が10円以外の地域に所在する事業所において、児童移行者に対して下記サービスを行った場合となる(サービス提供年月が令和6年3月以前の場合)。\n①重度障害児支援加算\n②重度重複障害児加算\n③強度行動障害児特別支援加算\n④自活訓練加算\n【サービス提供年月が平成24年4月以降、平成25年3月以前の場合】\n1：2および4以外の情報は1を設定する。\n2：同一サービス種類で単位数単価が異なる場合、2を設定する。具体的には単位数単価が10円以外の地域に所在する事業所において、児童移行者に対して下記サービスを行った場合となる。\n①重度障害児支援加算\n②重度重複障害児加算\n③強度行動障害児特別支援加算\n④自活訓練加算\n4：同一サービス種類で給付率が異なる場合(新体系定着支援に係る請求額)(※15)"
+      }
+    ],
+    "uncertain": [
+      "表の見出しはこのページ内にあるため continued_from_prev_page は false としたが、項番32から始まるため前ページからの続きの可能性がある。",
+      "項番32〜35の縦結合ラベル「利用日数管理票」は項目名の上位グループとして name_path に入れ、record.name にも入れたが、交換情報識別番号と上位情報名は読み取れず空文字とした。",
+      "※3の末尾にある「4：同一サービス種類で給付率が異なる場合(新体系定着支援に係る請求額)(※15)」は※3の一部か独立した注記か判断できず、※3の本文に含めた。",
+      "※3の本文は「(サービス提供年月が令和6年3月以前の場合)」など括弧の位置や全角半角が画像から確実に読めない箇所がある。",
+      "※2の「Ⅰ．」「２．３．１（４）」の表記は画像から読み取った。"
+    ]
+  },
+  "raw_text": null
+}

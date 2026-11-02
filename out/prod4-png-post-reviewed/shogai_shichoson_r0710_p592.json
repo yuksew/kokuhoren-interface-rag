@@ -1,0 +1,289 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 592,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "264",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "② データレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "データ区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "2･･･データレコード",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "被仕向銀行番号"
+     ],
+     "type": "コード値",
+     "length": 4,
+     "length_raw": "4",
+     "content": "振込先銀行番号（統一金融機関番号）",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "被仕向銀行名"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "振込先銀行名（カナ文字および英数字）",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "被仕向支店番号"
+     ],
+     "type": "コード値",
+     "length": 3,
+     "length_raw": "3",
+     "content": "振込先支店番号（統一店番号）",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "被仕向支店名"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "振込先支店名（カナ文字および英数字）",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "手形交換所番号"
+     ],
+     "type": "コード値",
+     "length": 4,
+     "length_raw": "4",
+     "content": "数字",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "預金種目"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1･････普通預金\n2･････当座預金\n9･････その他",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "口座番号"
+     ],
+     "type": "コード値",
+     "length": 7,
+     "length_raw": "7",
+     "content": "受取人の口座番号",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "受取人名"
+     ],
+     "type": "英数",
+     "length": 30,
+     "length_raw": "30",
+     "content": "カナ文字および英数字",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "振込金額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "数字",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "新規コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1･････第1回振込分\n2･････変更分（被仕向銀行・支店、預金種目・口座番号）\n0･････その他",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "顧客コード1"
+     ],
+     "type": "コード値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "依頼人が定めた受取人識別のためのコード",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "顧客コード2"
+     ],
+     "type": "コード値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "依頼人が定めた受取人識別のためのコード",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "振込指定区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "7･････テレ振込\n8･････文書振込",
+     "required": null,
+     "required_by": [],
+     "note": "任意 省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "識別表示"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "1",
+     "content": "「Y」またはスペース",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "ダミー"
+     ],
+     "type": "英数",
+     "length": 7,
+     "length_raw": "7",
+     "content": "スペース",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼では『次のページの表』とあるが、添付は1ページのみで、印字ページ番号は『- 264 -』（メタデータのPDF上のページ592と一致しない）。添付された本ページの表を書き起こした。",
+  "項番12・13の『内容』『備考』は縦に結合されたセルのため、両行に同じ文字列を入れた。",
+  "備考の『任意 / 省略時は / スペース』は改行で区切られていたが、1つの文として連結した。内容の『1･････』等の点線は原文の点列を簡略化して書いた。"
+ ]
+}

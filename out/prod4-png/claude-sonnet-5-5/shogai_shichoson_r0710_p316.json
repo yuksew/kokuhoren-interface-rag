@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 316,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1924,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039454,
+    "cost_usd_batch": 0.019727,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 316,
+    "printed_page": "154-49",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理を行う事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y\n(終了時のみ設定する)",
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害児相談支援有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "障害児相談支援を行う事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "障害児相談支援有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "障害児相談支援有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の適用有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "法第二十一条の五の十一(災害その他の厚生労働省令で定める特別の事情)に基づく市町村が定める額の適用有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "法第二十一条の五の十一(災害その他の厚生労働省令で定める特別の事情)に基づく市町村が定める額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第二十一条の五の十一に基づく市町村が定める額の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第二十一条の五の十一に基づく市町村が定める額の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページから続く表。項番29〜40の項目名は縦結合のグループ見出しを name_path の先頭に入れた。",
+      "項番33〜36の「障害児相談支援情報」グループ見出しは項番33の行も含むと判断した。",
+      "改行位置による折り返しは詰めて記載。"
+    ]
+  },
+  "raw_text": null
+}

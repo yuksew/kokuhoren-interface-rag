@@ -1,0 +1,541 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 173,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "４１４",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（3）共同処理用保険者情報（基本情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "共同処理用保険者情報（基本情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "共同処理用保険者情報の識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“5A41”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "保険者の変更等が生じた年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項：年月日欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "訂正年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "訂正年月日を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項：年月日欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "異動区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "1: 新規\n2: 変更",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "共同処理用保険者情報の異動事由を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "口座情報",
+      "金融機関コード"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "保険者の口座の金融機関コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "口座情報",
+      "金融機関支店コード"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "3",
+     "content": "保険者の口座の金融機関支店コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "口座情報",
+      "口座種目"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "保険者の口座の口座種目を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "口座情報",
+      "口座番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "保険者の口座の口座番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "口座情報",
+      "口座名義人（カナ）"
+     ],
+     "type": "英数",
+     "length": 40,
+     "length_raw": "40",
+     "content": "保険者の口座の口座名義人（カナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "口座情報",
+      "振込依頼人コード"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "銀行が採番した振込依頼人識別のためのコードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "問い合わせ先情報",
+      "郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "問い合わせ先の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "問い合わせ先情報",
+      "電話番号"
+     ],
+     "type": "英数",
+     "length": 12,
+     "length_raw": "12",
+     "content": "問い合わせ先の電話番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "問い合わせ先情報",
+      "住所（カナ）"
+     ],
+     "type": "英数",
+     "length": 75,
+     "length_raw": "75",
+     "content": "問い合わせ先の住所（カナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "問い合わせ先情報",
+      "住所（漢字）"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "問い合わせ先の住所（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "問い合わせ先情報",
+      "名称1"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "問い合わせ先の市区町村名等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "問い合わせ先情報",
+      "名称2"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "問い合わせ先の部署名等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "問い合わせ先情報",
+      "備考"
+     ],
+     "type": "漢字",
+     "length": 80,
+     "length_raw": "80",
+     "content": "問い合わせ先の備考を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "計算結果送付先情報",
+      "郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "高額介護合算療養費計算結果送付先の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "計算結果送付先情報",
+      "電話番号"
+     ],
+     "type": "英数",
+     "length": 12,
+     "length_raw": "12",
+     "content": "高額介護合算療養費計算結果送付先の電話番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "計算結果送付先情報",
+      "住所"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "高額介護合算療養費計算結果送付先の住所を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "計算結果送付先情報",
+      "名称1"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "高額介護合算療養費計算結果送付先の市区町村名等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 24,
+     "no_raw": "24",
+     "name_path": [
+      "計算結果送付先情報",
+      "名称2"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "高額介護合算療養費計算結果送付先の部署名等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 25,
+     "no_raw": "25",
+     "name_path": [
+      "証明書発行者情報",
+      "発行者名"
+     ],
+     "type": "漢字",
+     "length": 100,
+     "length_raw": "100",
+     "content": "証明書発行者名（市町村長等）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 26,
+     "no_raw": "26",
+     "name_path": [
+      "証明書発行者情報",
+      "郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "証明書発行者の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 27,
+     "no_raw": "27",
+     "name_path": [
+      "証明書発行者情報",
+      "住所"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "証明書発行者の住所を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項：年月日欄」を参照。(P.42)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」を参照。(P.31)"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページ」の表の書き起こしだが、添付はこの1ページ（PDF上のページ173、印字ページ414）のみのため、このページの表を書き起こした。",
+  "ページ下部の縦書きの「加除第8号」は表ではないため書き起こしていない。",
+  "「証明書発行者情報」のグループ見出しは縦書きで「証明書」と「発行者情報」に分かれて印字されており、連結して「証明書発行者情報」として name_path に入れた。",
+  "continues_to_next_page は、ページ末尾までに表が終わり次ページへの続きの手がかりが見えないため false とした。"
+ ]
+}

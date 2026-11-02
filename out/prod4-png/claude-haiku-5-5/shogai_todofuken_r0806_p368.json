@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 368,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4237,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003129,
+    "cost_usd_batch": 0.001565,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 368,
+    "printed_page": "103-5",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 102,
+            "no_raw": "102",
+            "name_path": [
+              "福祉・介護職員等特定処遇改善加算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員等特定処遇改善加算区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:Ⅰ\n2:Ⅱ",
+            "cells": []
+          },
+          {
+            "no": 103,
+            "no_raw": "103",
+            "name_path": [
+              "事業変更年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業変更年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 104,
+            "no_raw": "104",
+            "name_path": [
+              "専門的支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "専門的支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 105,
+            "no_raw": "105",
+            "name_path": [
+              "ソーシャルワーカー配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ソーシャルワーカー配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 106,
+            "no_raw": "106",
+            "name_path": [
+              "主任相談支援専門員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "主任相談支援専門員配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:Ⅱ\n3:Ⅰ",
+            "cells": []
+          },
+          {
+            "no": 107,
+            "no_raw": "107",
+            "name_path": [
+              "ピアサポート体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ピアサポート体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "福祉・介護職員等ベースアップ等支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員等ベースアップ等支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "経過措置対象区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "経過措置対象区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:非該当\n2:該当",
+            "cells": []
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "中核機能強化加算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "中核機能強化加算区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:Ⅰ\n3:Ⅱ\n4:Ⅲ",
+            "cells": []
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "支援プログラム未公表減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支援プログラム未公表減算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "入浴支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入浴支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "送迎加算（医ケア）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算（医ケア）の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 114,
+            "no_raw": "114",
+            "name_path": [
+              "個別サポート加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "個別サポート加算（Ⅰ）の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 115,
+            "no_raw": "115",
+            "name_path": [
+              "視覚・聴覚言語障害児支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "視覚・聴覚言語障害児支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 116,
+            "no_raw": "116",
+            "name_path": [
+              "多職種連携支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "多職種連携支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 117,
+            "no_raw": "117",
+            "name_path": [
+              "小規模グループケア体制（サテライト型）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模グループケア体制（サテライト型）の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出しがこのページになく、項番102から始まるため前ページからの続きと判断した。表の所属レコード名・交換情報識別番号はこのページから読み取れないため空文字とした。",
+      "項番103の備考「※Y」の注記本文はこのページに無いため footnotes には入れていない。",
+      "項目名・内容の一部は文字間隔が広く印字されているが、空白を詰めて書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,430 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 104,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "204-2",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "集計情報の場合、サービス種類単位での明細情報",
+   "record": {
+    "exchange_id": "6321",
+    "name": "明細レコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“6321”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"6321\"固定",
+       "to": "“6321”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別文字を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"D1\"固定",
+       "to": "“D1”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "目コード"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "目コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1\n※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      },
+      {
+       "mark": "※2",
+       "text": "すべての款・項・目について集計した明細のとき、目コードは99を指定する。\nその時の目名は空白を指定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "目名"
+     ],
+     "type": "漢字",
+     "length": 30,
+     "length_raw": "３０",
+     "content": "目名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "すべての款・項・目について集計した明細のとき、目コードは99を指定する。\nその時の目名は空白を指定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "請求対象となるサービスのサービス種類コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1　※3\n※4",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      },
+      {
+       "mark": "※3",
+       "text": "目単位の小計情報の場合、サービス種類コードは“ST”を指定する。\nその時のサービス種類名は目名を指定する。",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "高額介護予防サービス費の場合、サービス種類コードは空白とし、\nサービス種類名には「高額介護予防サービス費」を指定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "サービス種類名"
+     ],
+     "type": "漢字",
+     "length": 34,
+     "length_raw": "３４",
+     "content": "サービス種類名を出力する\nサービス項目名が必要な場合はサービス項目名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※3\n※4",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "目単位の小計情報の場合、サービス種類コードは“ST”を指定する。\nその時のサービス種類名は目名を指定する。",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "高額介護予防サービス費の場合、サービス種類コードは空白とし、\nサービス種類名には「高額介護予防サービス費」を指定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "通常分",
+      "件数"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "サービス種類単位に集計したサービス件数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "通常分",
+      "実日数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "サービス種類単位に集計したサービス実日数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "通常分",
+      "公費対象単位数"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "サービス種類単位に集計した公費対象となる単位数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "通常分",
+      "公費対象金額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "サービス種類単位に集計した公費対象となる金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "再審査・過誤",
+      "件数"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "サービス種類単位に集計した再審査・過誤となる件数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "再審査・過誤",
+      "公費対象単位数"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "１３",
+     "content": "サービス種類単位に集計した再審査・過誤となる公費対象単位数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "再審査・過誤",
+      "公費対象調整額"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "１３",
+     "content": "サービス種類単位に集計した再審査・過誤調整額となる公費対象額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "負担額"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "１３",
+     "content": "サービス種類単位に集計した公費負担者負担分の金額（再審査・過誤分を考慮したもの高額介護費を含む）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "公費分本人負担額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "サービス種類単位に集計した公費分の被保険者負担額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※2",
+   "text": "すべての款・項・目について集計した明細のとき、目コードは99を指定する。\nその時の目名は空白を指定する。"
+  },
+  {
+   "mark": "※3",
+   "text": "目単位の小計情報の場合、サービス種類コードは“ST”を指定する。\nその時のサービス種類名は目名を指定する。"
+  },
+  {
+   "mark": "※4",
+   "text": "高額介護予防サービス費の場合、サービス種類コードは空白とし、\nサービス種類名には「高額介護予防サービス費」を指定する。"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "依頼は『次のページ』（PDF上のページ104）の表とあるが、添付は印字ページ『204-2』の1ページのみのため、添付されているこのページの表を書き起こした。",
+  "項目6の内容は2文が改行で区切られて見えるが、折り返しか文の区切りか判別しきれない（改行で残した）。",
+  "項番1・2の「交換情報識別番号」「帳票レコード種別」は備考の固定値から対応を推定せず、レコードの交換情報識別番号は備考の「6321」を用いた。",
+  "親レコード名（介護給付費等 明細書など）は本ページから読み取れないため空文字とした。"
+ ]
+}

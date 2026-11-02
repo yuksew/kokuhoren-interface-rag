@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 141,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1900,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001959,
+    "cost_usd_batch": 0.00098,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 141,
+    "printed_page": "２１７－１４",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・集計レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "集計レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1642”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“T1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "介護予防支援費"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "明細レコードの介護予防支援費の合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "原案作成委託料"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "明細レコードの原案作成委託料の合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "原案作成委託料請求額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "明細レコードの原案作成委託料請求額の合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "原案作成委託料未請求額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "明細レコードの原案作成委託料未請求額の合計額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページの表」を求めているが、添付は PDF 1ページ（印字ページ２１７－１４）のみで、次のページは含まれていない。添付ページ内の『集計レコード』の表を書き起こした。",
+      "record.exchange_id と record.parent は、このページ内に読み取れる記載がないため空文字とした。",
+      "項目名の列に上下の見出しはなく、各行の項目名を name_path に入れた。"
+    ]
+  },
+  "raw_text": null
+}

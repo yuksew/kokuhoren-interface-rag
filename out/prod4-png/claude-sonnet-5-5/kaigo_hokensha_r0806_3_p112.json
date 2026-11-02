@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 112,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2017,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040356,
+    "cost_usd_batch": 0.020178,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 112,
+    "printed_page": "381-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "口座払",
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "３０",
+            "content": "口座払の振込先金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "口座払",
+              "金融機関支店名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "口座払の振込先金融機関支店名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "口座払",
+              "口座種目名"
+            ],
+            "type": "漢字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "口座払の振込先口座種目名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "口座払",
+              "口座番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "口座払の振込先口座番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "口座払",
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "口座払の振込先口座名義人（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "問い合わせ先郵便番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "問い合わせ先の郵便番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "問い合わせ先住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "１２８",
+            "content": "問い合わせ先の住所（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "問い合わせ先名称1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "問い合わせ先の名称1を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "問い合わせ先名称2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "問い合わせ先の名称2を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "問い合わせ先電話番号"
+            ],
+            "type": "英数",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "問い合わせ先の電話番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "不服の申し立て先"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "不服の申し立て先を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "帳票関連付け番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "高額介護サービス費支給（不支給）決定者一覧表の No.を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス提供年月（西暦年月（YYYYMM））を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※３",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "帳票題目"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "１００",
+            "content": "帳票題目を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "項目名称1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "項目名称1を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "説明文1"
+            ],
+            "type": "漢字",
+            "length": 200,
+            "length_raw": "２００",
+            "content": "説明文1を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "表は前ページからの続き（項番24から開始）",
+      "ページ左端に縦書きで「加除第2号」の印字あり（表外）"
+    ]
+  },
+  "raw_text": null
+}

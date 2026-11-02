@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 200,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3097,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002559,
+    "cost_usd_batch": 0.00128,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 200,
+    "printed_page": "41-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 123,
+            "no_raw": "123",
+            "name_path": [
+              "送迎加算(重度)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算(重度)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 124,
+            "no_raw": "124",
+            "name_path": [
+              "指定有効開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "指定有効開始年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 125,
+            "no_raw": "125",
+            "name_path": [
+              "指定有効終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "指定有効終了年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 126,
+            "no_raw": "126",
+            "name_path": [
+              "指定更新申請中区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "指定更新申請中区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 127,
+            "no_raw": "127",
+            "name_path": [
+              "効力停止開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "効力停止開始年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 128,
+            "no_raw": "128",
+            "name_path": [
+              "効力停止終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "効力停止終了年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 129,
+            "no_raw": "129",
+            "name_path": [
+              "主たる事業所サービス種類コード2"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "主たる事業所で実施しているサービスの種類を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "指定管理者制度適用区分コード値指定管理者制度適用区分をコードで設定支所コード英数当該事業所を所管する支所に対する任意のコードを設定※英字は大文字アルファベットのみであり、「I」、「O」、「Q」を除く",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 130,
+            "no_raw": "130",
+            "name_path": [
+              "延長支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "延長支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 131,
+            "no_raw": "131",
+            "name_path": [
+              "移行準備支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "移行準備支援体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 132,
+            "no_raw": "132",
+            "name_path": [
+              "移行準備支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "移行準備支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 133,
+            "no_raw": "133",
+            "name_path": [
+              "共同生活介護夜間支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活介護夜間支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 134,
+            "no_raw": "134",
+            "name_path": [
+              "共同生活援助夜間防災・緊急時支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活援助夜間防災・緊急時支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 135,
+            "no_raw": "135",
+            "name_path": [
+              "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページの表は項番123から始まり、表題がないため前ページからの続きと判断した。",
+      "属性欄・備考欄の ※Y、※C、属性見出しの ※Z の説明文はこのページに無く、footnotes には入れていない。",
+      "内容欄の「(YYYYMMDD))」の括弧の全角・半角は画像から判別しきれず半角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

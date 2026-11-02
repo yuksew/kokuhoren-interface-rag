@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 165,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3446,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002732,
+    "cost_usd_batch": 0.001366,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 165,
+    "printed_page": "407-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "計算結果送付先情報",
+              "住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "１２８",
+            "content": "高額介護合算療養費計算結果送付先の住所を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "計算結果送付先情報",
+              "名称1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "高額介護合算療養費計算結果送付先の市区町村名等を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "計算結果送付先情報",
+              "名称2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "高額介護合算療養費計算結果送付先の部署名等を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "証明書発行者情報",
+              "発行者名"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "１００",
+            "content": "証明書発行者名（市町村長等）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "高額医療合算介護サービス費支給処理を委託した場合、必須",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "証明書発行者情報",
+              "郵便番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "証明書発行者の郵便番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "高額医療合算介護サービス費支給処理を委託した場合、必須",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "証明書発行者情報",
+              "住所"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "１２８",
+            "content": "証明書発行者の住所を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "異動区分コードにより入力必須項目が異なる。(◎ 必須)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "償還払給付額管理処理、高額介護サービス費支給処理、または、高額医療合算介護サービス費支給処理を委託した場合、必須とする。"
+      },
+      {
+        "mark": "※5",
+        "text": "各種支払支援処理を委託して、保険者単位に振込データ作成を行う場合、または、高額医療合算介護サービス費支給処理を委託して、保険者単位に振込データ作成を行う場合、必須とする。"
+      }
+    ],
+    "uncertain": [
+      "必須入力※1の新規・変更列はすべて空欄に見えたため、value は null とした。",
+      "表は前ページからの続きと判断したが、前ページの内容は含まれていない。",
+      "「(◎ 必須)」の◎記号の字形が不鮮明なため、原文の記号をそのまま書いたかどうか確認が必要。",
+      "項番24・25の備考は縦に結合されているため、同じ文字列を両行に入れた。"
+    ]
+  },
+  "raw_text": null
+}

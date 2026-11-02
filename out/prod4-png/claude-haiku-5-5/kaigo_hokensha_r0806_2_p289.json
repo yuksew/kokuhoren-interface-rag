@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 289,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4068,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003043,
+    "cost_usd_batch": 0.001522,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 289,
+    "printed_page": "291",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "3.2.10 認定調査委託料支払処理情報（入力情報）",
+        "record": {
+          "exchange_id": "3B11",
+          "name": "認定調査委託料支払一覧表情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": "(1)",
+            "name_path": [
+              "認定調査委託料支払一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が決定した認定調査委託料の支払一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3B11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "認定調査委託料支払一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "認定調査委託料支払処理"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "○",
+        "text": "必須"
+      },
+      {
+        "mark": "×",
+        "text": "不要"
+      },
+      {
+        "mark": "◎",
+        "text": "必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "添付は1ページのみで、依頼の『次のページ』と同一ページかは確認できないため、添付ページの表を書き起こした。",
+      "2つ目の表は帳票×受付媒体の記号行列として required_matrix に分類したが、種別が表の見出し的に扱われているか判断に迷う。",
+      "媒体セルの伝送・磁気・帳票は原文の改行を区切りとして残した。"
+    ]
+  },
+  "raw_text": null
+}

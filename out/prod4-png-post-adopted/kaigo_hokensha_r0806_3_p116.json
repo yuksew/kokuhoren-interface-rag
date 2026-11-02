@@ -1,0 +1,452 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 116,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "383",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・ヘッダレコード",
+   "record": {
+    "exchange_id": "3611",
+    "name": "ヘッダレコード",
+    "parent": "振込依頼書（高額）情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "振込依頼書（高額）情報の交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“3611”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“H1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "宛先",
+      "金融機関コード"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "保険者が契約している金融機関のコードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "宛先",
+      "金融機関名"
+     ],
+     "type": "漢字",
+     "length": 30,
+     "length_raw": "30",
+     "content": "保険者が契約している金融機関名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "宛先",
+      "金融機関支店コード"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "3",
+     "content": "保険者が契約している金融機関の支店コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "宛先",
+      "金融機関支店名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "保険者が契約している金融機関の支店名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "保険者名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "保険者名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード（複数レコード）",
+   "record": {
+    "exchange_id": "3611",
+    "name": "明細レコード（複数レコード）",
+    "parent": "振込依頼書（高額）情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "振込依頼書（高額）情報の交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“3611”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "口座情報",
+      "金融機関コード"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "受給者の口座の金融機関コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "口座情報",
+      "金融機関名"
+     ],
+     "type": "漢字",
+     "length": 30,
+     "length_raw": "30",
+     "content": "受給者の口座の金融機関名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "口座情報",
+      "金融機関支店コード"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "3",
+     "content": "受給者の口座の金融機関支店コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "口座情報",
+      "金融機関支店名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "受給者の口座の金融機関支店名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "口座情報",
+      "口座種目"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "受給者の口座の口座種目を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "口座情報",
+      "口座種目名（略語）"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "1",
+     "content": "受給者の口座の口座種目名（略語）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "半角カタカナ\n普通　：ﾌ\n当座　：ﾄ\nその他：ｿ",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "口座情報",
+      "口座番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "受給者の口座の口座番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "口座情報",
+      "口座名義人（カナ）"
+     ],
+     "type": "英数",
+     "length": 40,
+     "length_raw": "40",
+     "content": "受給者の口座の口座名義人（カナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "振込金額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "9",
+     "content": "受給者の口座への振込金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "明細レコードの口座種目名（略語）の半角カタカナ（普通・当座・その他の値）は画像が粗く、ﾌ・ﾄ・ｿの字が確実に読み取れない。",
+  "ヘッダレコード・明細レコードの record.exchange_id の “3611” は備考欄の固定値から読み取った。表見出しに識別番号の明記は見当たらない。",
+  "record.parent の「振込依頼書（高額）情報」は表題からの推定である。"
+ ]
+}

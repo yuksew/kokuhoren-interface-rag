@@ -1,0 +1,394 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 137,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "19",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "事業所",
+      "住所(カナ)"
+     ],
+     "type": "英数",
+     "length": 75,
+     "length_raw": "75",
+     "content": "事業所の住所をカナ文字で設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "事業所",
+      "住所(漢字)"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "事業所の住所を全角文字で設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "事業所",
+      "電話番号"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "事業所の電話番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "事業所",
+      "FAX番号"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "事業所のFAX番号を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "サービスの種類を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "サービス提供単位番号"
+     ],
+     "type": "コード値",
+     "length": 3,
+     "length_raw": "3",
+     "content": "サービスの提供単位 \"000\"～\"999\"の範囲で設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "事業実施区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "事業の実施形態をコードで設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:単独\n2:多機能",
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "地域区分コード"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "厚生労働省の定める事業所が所在する地域に該当する区分をコードで設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C\n※20",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※2O",
+       "text": null,
+       "source": null
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "※C\n※2O",
+       "to": "※C\n※20",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "no_raw": "24",
+     "name_path": [
+      "基準該当",
+      "登録市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "基準該当事業所を登録した市町村の番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※3\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※C",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 25,
+     "no_raw": "25",
+     "name_path": [
+      "基準該当",
+      "受領委任の有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "受領委任の有無をコードで設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "1:無し\n2:有り",
+     "cells": []
+    },
+    {
+     "no": 26,
+     "no_raw": "26",
+     "name_path": [
+      "基準該当",
+      "登録開始年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "登録開始年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 27,
+     "no_raw": "27",
+     "name_path": [
+      "基準該当",
+      "登録終了年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "登録終了年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "no_raw": "28",
+     "name_path": [
+      "事業開始年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "事業開始年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y\n※4",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※4",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 29,
+     "no_raw": "29",
+     "name_path": [
+      "事業休止年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "事業休止年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 30,
+     "no_raw": "30",
+     "name_path": [
+      "事業廃止年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "事業廃止年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 31,
+     "no_raw": "31",
+     "name_path": [
+      "事業再開年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "事業再開年月日(西暦年月日(YYYYMMDD))を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": null,
+       "source": null
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": true,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付は印字ページ19（項番16〜31）の1ページのみで、依頼文の『次のページ』は添付されていないため、添付ページの表を書き起こした。",
+  "項番23の備考『※2O』は『※20』の可能性があるが、画像のとおり『※2O』と書き写した。",
+  "表の見出しの『※1』『※2』などに対応する注記本文はこのページに見当たらないため、footnotes は空にした。",
+  "表は項番31までで下端に達しており、次ページへ続くかは添付のみでは判断できないため continues_to_next_page を true とした。",
+  "『項目』列は見出しが1つだけで、『事業所』『基準該当』は縦結合の見出しのため name_path にのみ入れた。",
+  "『住所(カナ)』『登録開始年月日(西暦年月日(YYYYMMDD))』等の括弧が全角か半角か画像からは判別しにくいが、半角で書き写した。"
+ ]
+}

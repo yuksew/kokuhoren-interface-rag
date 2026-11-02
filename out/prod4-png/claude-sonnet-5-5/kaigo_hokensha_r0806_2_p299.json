@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 299,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1298,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.033166,
+    "cost_usd_batch": 0.016583,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 299,
+    "printed_page": "300",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "3111",
+          "name": "明細レコード",
+          "parent": "要介護認定期限到来者一覧表"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "要介護認定期限到来者一覧表情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“3111”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "No."
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "要介護認定・要支援認定有効期間終了のお知らせ等との関連付け番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※１",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "被保険者氏名（カナ）"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "２５",
+            "content": "被保険者氏名（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "被保険者氏名（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "郵便番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "被保険者の郵便番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "住所（漢字）"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "１２８",
+            "content": "被保険者の住所（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "電話番号"
+            ],
+            "type": "英数",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者の電話番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "要介護状態区分等"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者の要介護状態区分等を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“旧措置者”“経過介護”“要介護1”等",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      }
+    ],
+    "uncertain": [
+      "record の exchange_id・parent は表中の項番1の内容から推定した値で、見出しには明記されていない"
+    ]
+  },
+  "raw_text": null
+}

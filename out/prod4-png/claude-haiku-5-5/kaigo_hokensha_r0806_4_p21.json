@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 21,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 9136,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005577,
+    "cost_usd_batch": 0.002789,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 21,
+    "printed_page": "537",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "４．２．４　第１号被保険者保険料徴収情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "保険料納付通知書等作成一覧表（普通徴収者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "普通徴収者の保険料、納期の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4511"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "保険料納付書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "普通徴収者の保険料納付手続き書類",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4611"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n専用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "納入通知書兼特別徴収開始通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "普通徴収者の年間保険料通知書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4711"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n専用紙\nA4タテ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "外字空白印字リスト（普通徴収者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "外字を含む納付書等の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4921"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "保険料納付通知書等作成一覧表（特別徴収者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "特別徴収者の保険料の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4521"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "特別徴収開始通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "特別徴収者の年間保険料通知書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4721"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n専用紙\nA4タテ"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "外字空白印字リスト（特別徴収者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "外字を含む通知書の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4931"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "第1号被保険者保険料徴収情報エラーリスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "第1号被保険者保険料徴収情報のエラー分のリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4321"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付分",
+          "出力媒体種別 > 磁気受付分（1列目）",
+          "出力媒体種別 > 磁気受付分（2列目）"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "保険料納付通知書等作成一覧表（普通徴収者）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "保険料納付書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "納入通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "外字空白印字リスト（普通徴収者）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "保険料納付通知書等作成一覧表（特別徴収者）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "特別徴収開始通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "外字空白印字リスト（特別徴収者）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "第１号被保険者保険料徴収情報エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "第１号被保険者保険料徴収"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（1列目）",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分（2列目）",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は1ページ（PDF上のページ21、印字ページ537）のみで、依頼文の『次のページ』は含まれていないため、添付ページの表を書き起こした。",
+      "出力形式の見出し「帳票形式」は文字が重なって見えるため、原文どおりの表記として扱った。",
+      "第1号の数字が全角か半角か判別しにくいため、原文どおり「第1号」と書いた。",
+      "出力媒体種別表の磁気受付分の下位列（磁気返却・帳票返却）の見出しは原本に印字がないため、『磁気受付分（1列目）』『磁気受付分（2列目）』と位置で区別した。",
+      "帳票返却が伝送・磁気の列を横断して結合されている行は、結合の位置が判別しにくいため伝送受付分の列に1つだけ入れ、他の列はnullとした。",
+      "ルートの「国保連合会 → 保険者」は矢印を含むため、読みやすさを優先し「国保連合会→保険者」と1行に詰めた。"
+    ]
+  },
+  "raw_text": null
+}

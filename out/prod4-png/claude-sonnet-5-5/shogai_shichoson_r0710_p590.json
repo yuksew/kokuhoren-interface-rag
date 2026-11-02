@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 590,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2146,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.041674,
+    "cost_usd_batch": 0.020837,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 590,
+    "printed_page": "262",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "4．2．1　各種支払支援処理情報（高額障害福祉サービス等給付費）（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "振込データ情報\n（※1）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関へ提出する振込情報(各種支払支援処理を委託している場合に、市町村単位に振込データ情報作成までを行う)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FJ11"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害福祉サービス費等払込請求書\n（※2）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村が国保連合会に払い込みをする金額等の払込請求書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FJA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "振込者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象となった振込先の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FJB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "振込不能者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象であるが、振込が正常に終了しなかった振込先の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FJC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "随時"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "4．2．2　各種支払支援処理情報（高額障害児給付費）（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "振込データ情報\n（※1）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関へ提出する振込情報(各種支払支援処理を委託している場合に、市町村単位に振込データ情報作成までを行う)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CD11"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児給付費等払込請求書\n（※2）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村が国保連合会に払い込みをする金額等の払込請求書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CDA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "振込者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象となった振込先の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CDB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "振込不能者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "支払支援処理の対象であるが、振込が正常に終了しなかった振込先の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CDC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "随時"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "振込データ情報は全銀協フォーマットのため、以下の仕様となる。\n・コントロールレコードは付加されない\n・固定長レコードとなる"
+      },
+      {
+        "mark": "※2",
+        "text": "市町村からの申し出により請求情報の合算を行う場合、合併後の市町村に合併前の市町村分を合算する。"
+      },
+      {
+        "mark": "※1",
+        "text": "振込データ情報は全銀協フォーマットのため、以下の仕様となる。\n・コントロールレコードは付加されない\n・固定長レコードとなる"
+      },
+      {
+        "mark": "※2",
+        "text": "市町村からの申し出により請求情報の合算を行う場合、合併後の市町村に合併前の市町村分を合算する。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 386,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3416,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.054346,
+    "cost_usd_batch": 0.027173,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 386,
+    "printed_page": "155",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "2．2．5　介護給付費給付実績情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "保険者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "今回審査済の給付管理票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1122\n※4"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票\n※1"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4タテ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "介護給付費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳との資格チェックにおいて警告エラーとなった情報を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1211"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳との資格チェックにおいて警告エラーとなった情報を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1221"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳との資格チェックにおいて警告エラーとなった情報を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1231"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "介護給付費払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が介護給付費を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1311"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が介護予防・日常生活支援総合事業費を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1321"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が介護予防・日常生活支援総合事業費を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1331"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "介護給付費審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が審査支払手数料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1411"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が審査支払手数料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1421"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者が審査支払手数料を国保連合会へ納入するための払込請求書情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1431"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA3タテ\n※2"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "介護給付費等請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1511"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ\n※3"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1521"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ\n※3"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ルート列の「国保連合会→保険者」は原文では改行・矢印で折り返し表示されている",
+      "出力形式の帳票形式セルの「○」と「汎用紙 A4タテ」等は結合セルで一体として記載"
+    ]
+  },
+  "raw_text": null
+}

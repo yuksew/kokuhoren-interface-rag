@@ -1,0 +1,414 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 97,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "377-1",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "明細レコード（複数レコード）",
+    "parent": "高額介護サービス費給付のお知らせ情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "高額介護サービス費給付のお知らせ情報の交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“3322”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "宛先郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "被保険者の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "宛先住所"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "被保険者の住所（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "宛先氏名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "宛先氏名敬称"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "宛先氏名敬称を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“様”固定",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "被保険者氏名（カナ）"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "25",
+     "content": "被保険者氏名（カナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "被保険者氏名（漢字）"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "性別"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "被保険者の性別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“男”または“女”",
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "生年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "被保険者証記載の保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービス提供年月（西暦年月(YYYYMM)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "自己負担金額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "9",
+     "content": "被保険者の自己負担金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。項番項目名属性バイト数内容備考漢字漢字漢字漢字",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "支給（予定）金額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "9",
+     "content": "被保険者に支給する金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。項番項目名属性バイト数内容備考漢字漢字漢字漢字",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "提出・問い合わせ先郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "提出・問い合わせ先の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "提出・問い合わせ先住所"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "提出･問い合わせ先の住所(漢字)を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "提出・問い合わせ先名称1"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "提出・問い合わせ先の名称1を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "提出・問い合わせ先名称2"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "提出・問い合わせ先の名称2を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "提出・問い合わせ先電話番号"
+     ],
+     "type": "英数",
+     "length": 12,
+     "length_raw": "12",
+     "content": "提出・問い合わせ先の電話番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "帳票関連付け番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "高額介護サービス費給付対象者一覧表、または、高額介護サービス費給付対象者一覧表（総合事業）の No. を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "同一受給者にて介護・予防給付分と総合事業分の両方に高額介護サービス費の支給が発生する場合、高額介護サービス費給付のお知らせ情報は受給者に対し、サービス提供年月毎に1枚の出力とするため、帳票関連付け番号は高額介護サービス費給付対象者一覧表のNo.を出力する。総合事業分のみに支給が発生する場合、帳票関連付け番号は高額介護サービス費給付対象者一覧表(総合事業)のNo.を出力する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "備考欄の「※ S」は原文表記のまま書き写したが、記号の意味（※5の誤記の可能性など）は判断できない。",
+  "注記の「※ 1」「※ 2」「※ 3」「※ 4」の本文はこのページに含まれていないため footnotes は空。",
+  "表の見出し直上にレコード名は「・明細レコード（複数レコード）」とあるのみで、交換情報識別番号は読み取れないため exchange_id は空文字とした。",
+  "表の末尾が次ページへ続くかは判断できないため continues_to_next_page は false とした。"
+ ]
+}

@@ -1,0 +1,350 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 58,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "356",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "明細レコード（複数レコード）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "償還払支給決定者一覧表情報の交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“2211”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "№"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "償還払支給（不支給）決定通知書等との関連付け番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "整理番号"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "整理番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "被保険者氏名（漢字）"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "サービス提供年月（西暦年月(YYYYMM)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "サービス提供事業所の事業所番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "事業所名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "サービス提供事業所の事業所名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "提供サービスのサービス種類コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "サービス種類名"
+     ],
+     "type": "漢字",
+     "length": 16,
+     "length_raw": "１６",
+     "content": "提供サービスのサービス種類名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "単位数 / 金額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "提供サービスの単位数、または金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "支払金額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "支払われる金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "増減単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "出来高分の審査後の増減単位数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "支払方法区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "支払方法区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "１６",
+     "name_path": [
+      "備考"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "増減理由等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "添付は1ページのみで、依頼文の「次のページ」は添付ページ（PDF上のページ58）として扱った。",
+  "record.exchange_id は本ページに明示されていないため空文字とした。"
+ ]
+}

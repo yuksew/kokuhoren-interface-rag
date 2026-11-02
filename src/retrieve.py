@@ -31,6 +31,9 @@ OLD_Q = re.compile(r"平成|以前|旧様式|昔|過去|H[0-9]{1,2}")
 # これらの編には、事業所向けの編と同じ定義の項目（明細書・給付管理票の生保版など）が丸ごと載っていて、事業所の質問で上位を埋める
 OTHER_VOL = re.compile(r"都道府県編|保険者編|生保単独編|市町村合併編|市町村編")
 OTHER_Q = re.compile(r"都道府県|(?<!被)保険者|市町村|自治体|生保|生活保護|合併|異動連絡|台帳")
+# 質問の言葉 → その言葉が指す編（質問がどれかを指していれば、その編だけ重みを戻す。どれも指さなければ全部戻す）
+VOL_Q = [(re.compile(r"都道府県"), "都道府県編"), (re.compile(r"(?<!被)保険者"), "保険者編"),
+         (re.compile(r"生保|生活保護"), "生保単独編"), (re.compile(r"合併"), "市町村合併編"), (re.compile(r"市町村(?!合併)"), "市町村編")]
 RULE_Q = re.compile(r"算定|加算|減算|単位|請求|時間|回数|何回|できる|可能|留意|告示|Q&A|サービスコード|要件|基準|間隔|上限|最大|日割")
 VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
@@ -70,7 +73,8 @@ class Retriever:
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
         assert len(self.vecs) == len(self.meta), "chunks と vectors の件数が合わない（build_index.py をやり直す）"
         # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
-        self.other_docs = {r["doc_id"] for r in self.con.execute("SELECT doc_id, volume FROM documents") if OTHER_VOL.search(r["volume"] or "")}
+        self.doc_volume = {r["doc_id"]: r["volume"] or "" for r in self.con.execute("SELECT doc_id, volume FROM documents")}
+        self.other_docs = {d for d, v in self.doc_volume.items() if OTHER_VOL.search(v)}
         self.old_tables = {r["table_id"] for r in self.con.execute("SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'")}
         self.ex_tables: dict[str, set[int]] = {}
         for r in self.con.execute("SELECT exchange_id, table_id FROM table_exchange_ids"):
@@ -135,7 +139,8 @@ class Retriever:
 
     def fts(self, q: str, n: int = 50) -> list[int]:
         terms = fts_terms(q)
-        # 「設定する」のようにほとんどの行にある語は手がかりにならないので外す（行の 3% 超）。全部外れたら一番まれな語だけ使う
+        # 「設定する」のようにほとんどの行にある語は手がかりにならないので外す（行の 3% 超）。全部外れたら一番まれな語だけ使う。
+        # 行の数は、事業所向けでない編を除いて数える（これらの編を足すたびに、外す語の基準が緩まないように）
         limit = len(self.meta) * 0.03
         kept = [t for t in terms if self.df(t) <= limit]
         terms = kept or sorted(terms, key=self.df)[:1]
@@ -169,15 +174,6 @@ class Retriever:
                fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5,
                old_weight: float = 0.3, other_weight: float = 0.3) -> list[dict]:
         ok = self._allowed(domain, exchange)
-        lists = []
-        if use_codes and mode != "vector":
-            lists.append(("code", [c for c in self.codes(q) if ok[c]], 2.0))
-        if mode in ("hybrid", "fts"):
-            lists.append(("fts", [c for c in self.fts(q) if ok[c]][:50], fts_weight if mode == "hybrid" else 1.0))
-        if mode in ("hybrid", "vector"):
-            lists.append(("vector", [c for c in self.vector(q) if ok[c]][:50], 1.0))
-        score: dict[int, float] = {}
-        via: dict[int, list[str]] = {}
         # 必須対応表の行は同じ項目名が版（サービス提供年月）ごとに何十回も出てきて、項目の定義を押し出すので重みを下げる。
         # 質問が必須・様式について聞いているときは下げない。
         mx = 1.0 if MATRIX_Q.search(nk(q)) else matrix_weight
@@ -185,15 +181,46 @@ class Retriever:
         rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
         ow = 1.0 if OLD_Q.search(nk(q)) else old_weight
         vw = 1.0 if OTHER_Q.search(nk(q)) else other_weight
+        named = {v for pat, v in VOL_Q if pat.search(nk(q))}
+        # 編ごとの重み（事業所向けでない編だけ）。質問が編を指していれば、指した編は 1、ほかは下げたまま
+        dw = {d: (1.0 if vw >= 1.0 and (not named or self.doc_volume[d] in named) else other_weight) for d in self.other_docs}
+
+        def cut(cs: list[int], n: int = 50) -> list[int]:
+            # 重みを下げる編（事業所向けでない編）の候補は、上位 n 件の枠に数えない。
+            # 数えると、これらの編が枠を埋めて、事業所向けの正解が重みを掛ける前に候補から落ちる。
+            out, m = [], 0
+            for c in cs:
+                if not ok[c]:
+                    continue
+                out.append(c)
+                if dw.get(self.meta[c]["doc_id"], 1.0) >= 1.0:
+                    m += 1
+                    if m >= n:
+                        break
+            return out
+
+        lists = []
+        if use_codes and mode != "vector":
+            lists.append(("code", [c for c in self.codes(q) if ok[c]], 2.0))
+        if mode in ("hybrid", "fts"):
+            lists.append(("fts", cut(self.fts(q)), fts_weight if mode == "hybrid" else 1.0))
+        if mode in ("hybrid", "vector"):
+            lists.append(("vector", cut(self.vector(q)), 1.0))
+        score: dict[int, float] = {}
+        via: dict[int, list[str]] = {}
         for name, lst, w in lists:
-            for rank, c in enumerate(lst):
+            seen = 0  # 重みを下げた編を除いた順位（下げた編が前に並んでも、ほかの候補の順位は下げない）
+            for pos, c in enumerate(lst):
+                vd = dw.get(self.meta[c]["doc_id"], 1.0)
+                rank = pos if vd < 1.0 else seen
+                if vd >= 1.0:
+                    seen += 1
                 wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
                 if self.meta[c]["kind"] in ("rule", "svc"):
                     wm = rw
                 if self.meta[c]["table_id"] in self.old_tables:
                     wm *= ow
-                if self.meta[c]["doc_id"] in self.other_docs:
-                    wm *= vw
+                wm *= vd
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         top = sorted(score, key=lambda c: -score[c])[:k]

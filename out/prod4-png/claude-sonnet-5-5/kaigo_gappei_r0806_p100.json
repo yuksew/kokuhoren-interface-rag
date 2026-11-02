@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 100,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3302,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.053202,
+    "cost_usd_batch": 0.026601,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 100,
+    "printed_page": "32",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・受給者異動連絡票情報",
+        "record": {
+          "exchange_id": "5311",
+          "name": "受給者異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入する市町村が設定する内容",
+          "編入先の広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“5311”（固定値）"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“5311”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合での被保険者の資格が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“3:終了”を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“1:新規”を設定する"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“02:受給資格喪失”を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“01:受給資格取得”もしくは“04:合併による新規”を設定する"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入前の市町村の保険者番号を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合の証記載保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入前の市町村で付番されていた被保険者番号を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合で新たに付番した被保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "被保険者氏名（カナ）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "被保険者氏名をカナ文字で設定する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "生年月日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "性別コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "資格取得年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入により広域連合での被保険者資格が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "資格喪失年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入により前市町村の被保険者資格を喪失する日（西暦年月日(YYYYMMDD)）を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "老人保健市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "老人保健市町村番号を設定する（省略可）"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "老人保健受給者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "老人保健受給者番号を設定する（省略可）"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "公費負担者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "福祉事務所番号を設定する\n福祉事務所からの異動情報提出時のみ設定する"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "広域連合（政令市）保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "広域連合又は政令市の保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "申請種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“1:新規申請”を設定"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "変更申請中区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "申請年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "みなし要介護区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "みなし要介護区分コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "要介護状態区分コードを設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ左下の縦書き「加除第11号」は表外のため記載していない"
+    ]
+  },
+  "raw_text": null
+}

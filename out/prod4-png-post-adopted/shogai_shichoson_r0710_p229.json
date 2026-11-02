@@ -1,0 +1,230 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 229,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "１３５－９",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "出力対象項目（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "出力対象項目（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "一次審査結果６"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "サービス提供量"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "サービス提供量（上 6 桁整数部、下 2 桁小数部）の合計を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "契約支給量"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "契約支給量（上 6 桁整数部、下 2 桁小数部）の合計を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※3\n※4",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "利用日数の特例に関する決定支給量超過のエラーが発生し、再掲を出力する場合に設定しない。",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "契約情報レコードが未作成の場合、または作成対象外サービスの場合、設定しない。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "no_raw": "24",
+     "name_path": [
+      "決定支給量"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "決定支給量（上 6 桁整数部、下 2 桁小数部）の合計を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 25,
+     "no_raw": "25",
+     "name_path": [
+      "給付単位数"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "給付単位数の合計を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "利用日数の特例に関する決定支給量超過のエラーが発生し、再掲を出力する場合に設定しない。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 26,
+     "no_raw": "26",
+     "name_path": [
+      "支給量単位区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "支給量単位区分を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 １．４ コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 27,
+     "no_raw": "27",
+     "name_path": [
+      "支給量単位区分名"
+     ],
+     "type": "漢字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "支給量単位区分名を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 28,
+     "no_raw": "28",
+     "name_path": [
+      "備考"
+     ],
+     "type": "漢字",
+     "length": 30,
+     "length_raw": "30",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "出力対象項目 ◎：出力対象項目、○：請求内容により出力対象となる項目 △：事業所の設定状況により出力対象となる項目、空白：出力対象外項目"
+  },
+  {
+   "mark": "※2",
+   "text": "利用日数の特例に関する決定支給量超過のエラーが発生し、再掲を出力する場合に設定する。"
+  },
+  {
+   "mark": "※3",
+   "text": "利用日数の特例に関する決定支給量超過のエラーが発生し、再掲を出力する場合に設定しない。"
+  },
+  {
+   "mark": "※4",
+   "text": "契約情報レコードが未作成の場合、または作成対象外サービスの場合、設定しない。"
+  },
+  {
+   "mark": "※B",
+   "text": "「インタフェース仕様書 市町村編 Ｉ．障害福祉サービス等 ２．２ インタフェース一覧」参照。"
+  },
+  {
+   "mark": "※C",
+   "text": "「インタフェース仕様書 共通編 １．４ コード一覧」参照。"
+  },
+  {
+   "mark": "※Y",
+   "text": "「インタフェース仕様書 共通編 １．５ 留意事項」参照。"
+  },
+  {
+   "mark": "※Z",
+   "text": "「インタフェース仕様書 共通編 １．３ 表記法」参照。"
+  }
+ ],
+ "uncertain": [
+  "この表は前ページからの続きと判断した（項番21から始まり、表見出しが無いため）。前ページの内容は含まれていない。",
+  "record の exchange_id・name・parent は、このページ内から読み取れないため空文字とした。",
+  "「出力対象項目（※1）」列は ◎○△ の記号だけが並ぶ単一の列のため required に入れたが、必須の列ではなく出力対象を示す列である可能性がある。",
+  "「属性（※Z）」「バイト数」の見出しは原文では改行されているが、列名は連結せず「属性（※Z）」「バイト数」と書いた。"
+ ]
+}

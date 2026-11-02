@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 370,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4014,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003018,
+    "cost_usd_batch": 0.001509,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 370,
+    "printed_page": "162-15",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > K122",
+          "出力対象項目（※1） > K221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "特定入所障害児食費等給付費(合計)",
+              "算定日額"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "特定入所障害児食費等給付費(合計)",
+              "日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "特定入所障害児食費等給付費(合計)",
+              "給付費請求額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "特定入所障害児食費等給付費(合計)",
+              "実費算定額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月（西暦年月YYYYMM）を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "1:正常\n2:警告\n3:返戻\n4:過誤\n5:過誤の取下\n6:警告(重度)",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目 ◎:出力対象項目、○:請求内容により出力対象となる項目\n△:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 市町村編 Ⅱ．障害児支援2．3．1(4)入力識別番号一覧」参照。"
+      },
+      {
+        "mark": "※3",
+        "text": "\"1\"：管理事業所で利用者負担額を充当したため、他事業所の利用者負担は発生しない。\n\"2\"：利用者負担額の合計額が、負担上限月額以下のため、調整事務は行わない。\n\"3\"：利用者負担額の合計額が、負担上限月額を超過するため、下記のとおり調整した。"
+      },
+      {
+        "mark": "※4",
+        "text": "利用者負担上限額管理を行った場合のみ設定する。利用者負担上限額管理が必要ない場合(例えば、利用者負担上限月額が0円の場合)は設定しない。"
+      },
+      {
+        "mark": "※5",
+        "text": "サービス提供年月が平成25年4月以降は、設定しない。"
+      },
+      {
+        "mark": "※6",
+        "text": "受付年月が平成25年12月以降は、設定しない。"
+      },
+      {
+        "mark": "※7",
+        "text": "サービス提供年月が令和7年3月以前は、当該給付決定に係る障害児が児童福祉法施行令(昭和23年政令第74号)第24条第3号に定める無償化対象通所児童又は同令第27条の2第3号に定める無償化対象入所児童である場合であっても、当該給付決定に係る障害児が無償化対象期間外であるものとして算定した利用者負担上限月額を設定する。\nサービス提供年月が令和7年4月以降は、当該給付決定に係る障害児が児童福祉法施行令(昭和23年政令第74号)第24条第3号に定める無償化対象通所児童又は同令第27条の2第3号に定める無償化対象入所児童であり、受給者証の「負担上限月額」欄に記載がある場合は、当該給付決定に係る障害児が無償化対象期間外であるものとして算定した利用者負担上限月額を設定し、受給者証の「負担上限月額」欄に記載がない場合は、「0」を設定する。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 市町村編 Ⅱ．障害児支援 2．2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1．3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "表の先頭に見出し行があるが、前ページからの続きかどうかは画像だけでは断定できないため、continued_from_prev_page を true にした。",
+      "特定入所障害児食費等給付費(合計)の縦書きグループ見出しは、画像上で「特定入所障害児食費等」と「給付費(合計)」に分かれて読めるため、連結した名称として記録した。",
+      "※3 の「下記のとおり調整した」に続く下記の内容は本ページに見えないため、書き起こしていない。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,471 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 111,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "381-1",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "高額介護サービス費支給（不支給）決定通知書情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "高額介護サービス費支給（不支給）決定通知書情報の交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“3522”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "宛先郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "７",
+     "content": "被保険者の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "宛先住所"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "１２８",
+     "content": "被保険者の住所（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "宛先氏名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "宛先氏名敬称"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "宛先氏名敬称を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“様”固定",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "被保険者氏名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "受付年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "保険者が被保険者からの申請を受付けた年月日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "決定年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "保険者が支給（不支給）を決定した年月日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "本人支払額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "９",
+     "content": "受給者が支払った金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。項番項目名属性バイト数内容備考口座払金融機関名漢字出力する金融機関支店名漢字名を出力する口座種目名漢字出力する口座番号数字力する口座名義人(カナ)英数ナ)を出力する数字力する漢字出力する漢字する漢字する英数力する漢字数字高額介護サービス費支給(不支給)決定者一覧表のNo.を出力する数字(YYYYMM))を出力する",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "給付の種類"
+     ],
+     "type": "漢字",
+     "length": 336,
+     "length_raw": "３３６",
+     "content": "給付の種類を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "支給区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "支給区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "支給金額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "９",
+     "content": "受給者に支給する金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。項番項目名属性バイト数内容備考口座払金融機関名漢字出力する金融機関支店名漢字名を出力する口座種目名漢字出力する口座番号数字力する口座名義人(カナ)英数ナ)を出力する数字力する漢字出力する漢字する漢字する英数力する漢字数字高額介護サービス費支給(不支給)決定者一覧表のNo.を出力する数字(YYYYMM))を出力する",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "不支給の理由"
+     ],
+     "type": "漢字",
+     "length": 160,
+     "length_raw": "１６０",
+     "content": "不支給の場合の理由を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "支払方法区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "支払方法区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "窓口払",
+      "支払場所"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "窓口払の支払場所を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "窓口払の支払期間の開始年月日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "窓口払の支払期間の終了年月日（西暦年月日(YYYYMMDD)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "開始曜日"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "窓口払の支払期間の開始曜日を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "終了曜日"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "窓口払の支払期間の終了曜日を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "開始時間"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "窓口払の支払期間の開始時間を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "窓口払",
+      "支払期間",
+      "終了時間"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "窓口払の支払期間の終了時間を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼は『次のページ』の表でしたが、添付は PDF ページ111（印字ページ 381-1）の1ページのみで、このページの表を書き起こした。",
+  "表の上端の見出し「（8） 高額介護サービス費支給（不支給）決定通知書情報」は「・明細レコード（複数レコード）」の直前にあるため、record.name はその情報名を入れ、exchange_id は読み取れないため空文字とした（項番1の備考に“3522”固定とある）。",
+  "項番17〜23の左側の縦書きグループ見出し「窓口払」「支払期間」は name_path にのみ入れた。「支払期間」の縦結合範囲（18〜23）は画像から判断した。",
+  "※1・※2・※Sの注記本文はこのページに見当たらなかったため footnotes は空とした。"
+ ]
+}

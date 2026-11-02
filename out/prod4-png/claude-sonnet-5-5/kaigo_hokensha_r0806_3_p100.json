@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 100,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1973,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039916,
+    "cost_usd_batch": 0.019958,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 100,
+    "printed_page": "377-4",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード(複数レコード)",
+        "record": {
+          "exchange_id": "3331",
+          "name": "明細レコード",
+          "parent": "高額介護(居宅支援)サービス費支給申請書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "高額介護(居宅支援)サービス費支給申請書情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“3331”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス提供年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者氏名(カナ)"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "被保険者氏名(カナ)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "被保険者氏名(漢字)"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "被保険者氏名(漢字)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者の生年月日(西暦年月日(YYYYMMDD))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "性別"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "被保険者の性別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“男”または“女”",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "住所(漢字)"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "被保険者の住所(漢字)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "電話番号"
+            ],
+            "type": "英数",
+            "length": 12,
+            "length_raw": "12",
+            "content": "被保険者の電話番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "該当月分の支払額合計"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "帳票関連付け番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "高額介護サービス費給付対象者一覧表、または、高額介護サービス費給付対象者一覧表(総合事業)の No.を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 :「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "同一受給者にて介護・予防給付分と総合事業分の両方に高額介護サービス費の支給が発生する場合、高額介護(居宅支援)サービス費支給申請書情報は受給者に対し、サービス提供年月毎に1枚の出力とするため、帳票関連付け番号は高額介護サービス費給付対象者一覧表の No.を出力する。総合事業分のみに支給が発生する場合、帳票関連付け番号は高額介護サービス費給付対象者一覧表(総合事業)の No.を出力する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "record.exchange_id は項番1の備考(“3331”固定)から推定した。"
+    ]
+  },
+  "raw_text": null
+}

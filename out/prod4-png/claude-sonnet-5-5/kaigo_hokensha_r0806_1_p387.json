@@ -1,0 +1,605 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 387,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3755,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.057736,
+    "cost_usd_batch": 0.028868,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 387,
+    "printed_page": "155-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 13,
+            "no_raw": "(13)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費等請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1531"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ\n※3"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "(14)",
+            "name_path": [
+              "介護給付費等審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス事業者及びサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1611"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "(15)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス事業者及びサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1621"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "(16)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者へサービス事業者及びサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1631"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "出力媒体種別",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "保険者向け給付管理票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護給付費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防・日常生活支援総合事業費（経過措置）資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防･日常生活支援総合事業費資格照合表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護給付費払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防・日常生活支援総合事業費（経過措置）払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防･日常生活支援総合事業費払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護給付費審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防・日常生活支援総合事業費（経過措置）審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防･日常生活支援総合事業費審査支払手数料払込請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護給付費等請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防・日常生活支援総合事業費（経過措置）請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防･日常生活支援総合事業費等請求額通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護給付費等審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防・日常生活支援総合事業費（経過措置）審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付実績情報",
+              "介護予防･日常生活支援総合事業費審査決定請求明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送返却\n磁気返却\n帳票返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付実績情報"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "2つ目の表: 「種別」列は縦結合のため name_path と cells に入れた。種別の列は見出しとして印字されているため cells に記載",
+      "2つ目の表: 出力媒体種別は3列(伝送返却/磁気返却/帳票返却)で、帳票返却のみの行は3列結合。content に改行区切りで入れた",
+      "最初の表は前ページから続く表(見出し行あり)",
+      "1つ目の表の「識別」「帳票形式」の改行は推定"
+    ]
+  },
+  "raw_text": null
+}

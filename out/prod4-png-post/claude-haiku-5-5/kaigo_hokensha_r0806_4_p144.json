@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 144,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5232,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003625,
+    "cost_usd_batch": 0.001813,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 144,
+    "printed_page": "621-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "摘要1"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "摘要2"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": "：",
+            "name_path": [
+              "："
+            ],
+            "type": "：",
+            "length": null,
+            "length_raw": "：",
+            "content": "：",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "摘要20"
+            ],
+            "type": "漢字",
+            "length": 64,
+            "length_raw": "64",
+            "content": "摘要を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "緊急時施設療養費合計点数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "緊急時施設療養費の合計点を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ 8\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※8",
+                "text": "リハビリテーション点数、処置点数、手術点数、麻酔点数、放射線治療点数の合計を設定する。(緊急時治療管理、所定疾患施設療養の単位数は設定しない)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "所定疾患施設療養費傷病名1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名1を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "所定疾患施設療養費傷病名2"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名2を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "所定疾患施設療養費傷病名3"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "所定疾患施設療養費傷病名3を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "所定疾患施設療養費開始年月日1"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日1 (西暦年月日(YYYYMMDD) )を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "所定疾患施設療養費開始年月日2"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日2 (西暦年月日(YYYYMMDD) )を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "所定疾患施設療養費開始年月日3"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "所定疾患施設療養費開始年月日3 (西暦年月日(YYYYMMDD) )を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "所定疾患施設療養費単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "所定疾患施設療養費の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "所定疾患施設療養費日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "所定疾患施設療養費の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "所定疾患施設療養費小計"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "所定疾患施設療養費の小計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "決定後",
+              "往診日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定後の往診日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "決定後",
+              "通院日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定後の通院日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "決定後",
+              "緊急時治療管理単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "決定後の緊急時治療管理の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "決定後",
+              "緊急時治療管理日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定後の緊急時治療の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "決定後",
+              "リハビリテーション点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後のリハビリテーションの点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "決定後",
+              "処置点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の処理の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "決定後",
+              "手術点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の手術の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "決定後",
+              "麻酔点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の麻酔の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 66,
+            "no_raw": "66",
+            "name_path": [
+              "決定後",
+              "放射線治療点数"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "決定後の放射線治療の点数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 67,
+            "no_raw": "67",
+            "name_path": [
+              "決定後",
+              "所定疾患施設療養費単位数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "決定後の所定疾患施設療養費の単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 68,
+            "no_raw": "68",
+            "name_path": [
+              "決定後",
+              "所定疾患施設療養費日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定後の所定疾患施設療養費の日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 5\n※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "項番9「緊急時施設療養情報レコード順次番号」が99のときのみ設定する。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 69,
+            "no_raw": "69",
+            "name_path": [
+              "再審査回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "再審査の回数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番28から始まり前ページからの続きと判断したが、見出し行が本ページ先頭にあるため、続きかどうかは後処理での確認が必要。次ページへ続くかどうかもページ末尾の表示から推定した。",
+      "項番「：」の行は省略記号の行として書き写した。項目名・属性・バイト数・内容の各欄の「：」をそのまま入れた。",
+      "所定疾患施設療養費開始年月日の内容欄の括弧表記（西暦年月日(YYYYMMDD) ）は、原文の字間が詰まって見えるため、空白の位置が正確でない可能性がある。",
+      "「決定後」は縦結合のグループ見出しとして name_path にのみ入れた。",
+      "記録の交換情報識別番号・レコード名・上位情報名は本ページから読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

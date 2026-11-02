@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 274,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 5028,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003525,
+    "cost_usd_batch": 0.001762,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 274,
+    "printed_page": "74-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "心理担当職員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "心理担当職員配置加算の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:Ⅰ\n3:Ⅱ\n※3、※4\n※17",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "福祉・介護職員処遇改善加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員処遇改善加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※5",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "福祉・介護職員処遇改善加算キャリアパス区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員処遇改善加算キャリアパス区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※3、※5\n※6、※7",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "サービス提供単位番号"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービスの提供単位”00”～”99”の範囲で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※9",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "事業実施区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "事業の実施形態をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:単独\n2:多機能\n※8",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "指定市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "当該事業所を所管する市町村番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※8\n※10\n※C",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "みなし指定の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "みなし指定の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3\n※8",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "基準該当",
+              "登録市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "基準該当事業所を登録した市町村の番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※8\n※11\n※C",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "基準該当",
+              "受領委任の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "受領委任の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※8",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "基準該当",
+              "登録開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "登録開始年月日（西暦年月日（YYYYMMDD））を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※8\n※Y",
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "基準該当",
+              "登録終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "登録終了年月日（西暦年月日（YYYYMMDD））を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※8\n※Y",
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "障害児施設区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "障害児施設の区分をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※3\n※8\n※C",
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "職員欠如による減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "職員欠如による減算の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※8",
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "特別支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特別支援加算の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※8",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "PDFページ274の印字ページ番号は「74-1」と読み取った。",
+      "「必須入力※1」の※1の注記本文はこのページに無く、footnotesには入れていない。",
+      "表の直前に見出し・レコード名・交換情報識別番号が見当たらないため、record は空文字とした。",
+      "最終行（59）の下に表が続くかどうかは画像からは判断できず、continues_to_next_page は false とした。",
+      "項目 50 の内容のコード値表記は画像の「（改行）」位置を基に推定し、原文の全角括弧の入れ子を「（西暦年月日（YYYYMMDD））」の形で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

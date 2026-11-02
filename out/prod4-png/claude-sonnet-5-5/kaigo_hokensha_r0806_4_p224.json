@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 224,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 580,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.025986,
+    "cost_usd_batch": 0.012993,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 224,
+    "printed_page": "664-4",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "様式第二・二の二",
+          "様式第三・三の二",
+          "様式第四の三・四の四",
+          "様式第四・四の二",
+          "様式第五・五の二",
+          "様式第六・六の二",
+          "様式第六の三・六の四",
+          "様式第六の五〜六の七",
+          "様式第七・七の二",
+          "様式第八",
+          "様式第九",
+          "様式第九の二",
+          "様式第十",
+          "様式第十三・十三の二",
+          "様式第十四・十四の二",
+          "様式第十五〜十五の四"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "凡例",
+        "text": "○ … 出力対象項目　空白… 出力対象外項目"
+      },
+      {
+        "mark": "※1",
+        "text": "給付実績情報作成区分コードが\"1\"(新規)または\"2\"(修正)の場合、出力対象項目。"
+      },
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成21年4月以降のサービスについて、出力対象項目とするよう変更する。\nなお、サービス提供年月が平成21年3月以前のサービスについては、従来通り(出力対象外項目)とする。"
+      }
+    ],
+    "uncertain": [
+      "表の items は空配列にしている。理由: 全行（項番74〜93）の記号列がすべて空欄に見え、出力が不確かなため行の書き起こしを省略した。",
+      "表の注記内の「※2」が表内のどの項目に付くかは不明。"
+    ]
+  },
+  "raw_text": null
+}

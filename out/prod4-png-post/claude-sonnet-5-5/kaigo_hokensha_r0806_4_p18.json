@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 18,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1088,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.031066,
+    "cost_usd_batch": 0.015533,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 18,
+    "printed_page": "534",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "4.2.1 被保険者証作成情報(入力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "被保険者証作成情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "被保険者証作成情報(共通部)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証の作成情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4111"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "被保険者証作成情報(明細部)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証の作成情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "4122"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "被保険者証作成情報(共通部)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証"
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "×"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "被保険者証作成情報(明細部)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "被保険者証"
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "×"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "○ … 必須、× … 不要"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

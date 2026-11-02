@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 332,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4197,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003109,
+    "cost_usd_batch": 0.001555,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 332,
+    "printed_page": "89",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "小規模加算体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模加算体制の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "重度知的障害児収容棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度知的障害児収容棟設置の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3、※34",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※34",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "肢体不自由児施設重度病棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "肢体不自由児施設重度病棟設置の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3、※35",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※35",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "強度行動障害加算体制整備の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "強度行動障害加算体制整備の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅰ\n4:Ⅱ\n※3、※21",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※21",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "障害児通園施設の相互利用制度体制（知的障害児）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害児通園施設の相互利用制度体制（知的障害児）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "障害児通園施設の相互利用制度体制（肢体不自由児）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害児通園施設の相互利用制度体制（肢体不自由児）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "障害児通園施設の相互利用制度体制（難聴幼児）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害児通園施設の相互利用制度体制（難聴幼児）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "自活訓練加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅰ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "自活訓練加算（Ⅱ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅱ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "食事提供体制加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制加算（Ⅰ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "食事提供体制加算（Ⅱ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制加算（Ⅱ）の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "重度盲ろうあ児支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度盲ろうあ児支援加算の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "利用定員超過による減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度盲ろうあ児支援加算の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "事業運営安定化事業による助成の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "事業運営安定化事業による助成の届出の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3、※15",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※15",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "福祉専門職員配置等加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉専門職員配置等加算の有無をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅱ\n4:Ⅲ\n5:Ⅰ\n※3、※4\n※16",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※8",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※16",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページは項番32から始まり、見出し行が付いているため前ページ（項番1〜31）からの続きと判断したが、見出しの繰り返しかどうかは画像からは確定できない。",
+      "表の直後の次ページへの続きの有無は、ページ末尾の位置から推定したもので確定していない。",
+      "レコード名・交換情報識別番号は表の見出しや本文から読み取れなかったため空文字とした。",
+      "備考欄の「※3」「※34」などは参照記号として原文のまま書き写し、対応する注記本文はこのページに見当たらなかったため footnotes は空とした。"
+    ]
+  },
+  "raw_text": null
+}

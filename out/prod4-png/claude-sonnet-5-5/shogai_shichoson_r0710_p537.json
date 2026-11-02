@@ -1,0 +1,430 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 537,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2854,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.048754,
+    "cost_usd_batch": 0.024377,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 537,
+    "printed_page": "236-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "外字空白印字リスト(高額障害福祉サービス費支給(不支給)決定者)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害福祉サービス費支給(不支給)決定者一覧表及び高額障害福祉サービス費支給(不支給)決定通知書で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCG1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "高額障害福祉サービス費振込依頼書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関に振り込みを行ってもらうための口座・金額等の振込依頼書(各種支払支援処理を委託しない場合に作成する)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCH1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "高額障害福祉サービス等給付費給付のお知らせ情報(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費の給付対象となる受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FC61"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "(13)",
+            "name_path": [
+              "高額障害福祉サービス等給付費支給(不支給)決定通知書情報(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費に対する、支給または不支給の受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FC71"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "(14)",
+            "name_path": [
+              "高額障害福祉サービス等給付費給付対象者一覧表(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費の給付対象となる受給者の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCI1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "(15)",
+            "name_path": [
+              "高額障害福祉サービス等給付費給付のお知らせ(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費の給付対象となる受給者への通知",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCJ1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "(16)",
+            "name_path": [
+              "高額障害福祉サービス等給付費支給申請書(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費の給付対象となる受給者が提出するための申請書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCK1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "(17)",
+            "name_path": [
+              "外字空白印字リスト(高額障害福祉サービス等給付費給付対象者)(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害福祉サービス等給付費給付対象者一覧表(施行令第四十三条の五第六項)等で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCL1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "(18)",
+            "name_path": [
+              "高額障害福祉サービス等給付費支給(不支給)決定者一覧表(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費に対する、支給または不支給の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCM1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "(19)",
+            "name_path": [
+              "高額障害福祉サービス等給付費支給(不支給)決定通知書(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費に対する、支給または不支給の受給者への通知",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCN1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "(20)",
+            "name_path": [
+              "外字空白印字リスト(高額障害福祉サービス等給付費支給(不支給)決定者)(施行令第四十三条の五第六項)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害福祉サービス等給付費支給(不支給)決定者一覧表(施行令第四十三条の五第六項)及び高額障害福祉サービス等給付費支給(不支給)決定通知書(施行令第四十三条の五第六項)で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FCO1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "情報名の改行位置は折り返しとして詰めて記載した",
+      "前ページから続く表（項番(10)から開始）"
+    ]
+  },
+  "raw_text": null
+}

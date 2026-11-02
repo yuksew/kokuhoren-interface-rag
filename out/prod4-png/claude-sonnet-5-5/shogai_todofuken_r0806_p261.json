@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 261,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2195,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042166,
+    "cost_usd_batch": 0.021083,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 261,
+    "printed_page": "64",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理の有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理を行う事業所番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y\n（終了時のみ設定する）",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無しを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "障害児相談支援情報",
+              "障害児相談支援有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の適用有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "法第二十四条の五(災害その他の厚生労働省令で定める特別の事情)に基づく都道府県等が定める額の適用有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※9",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "法第二十四条の五(災害その他の厚生労働省令で定める特別の事情)に基づく都道府県等が定める額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※6",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第二十四条の五に基づく都道府県等が定める額の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y\n※9",
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "都道府県等が定める額の有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第二十四条の五に基づく都道府県等が定める額の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y\n※9",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "多子軽減対象区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "独自助成対象者区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "独自助成対象者の場合に設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:対象外\n2:対象",
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "介護保険給付対象者有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "重度包括支援対象者有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番27〜30のグループ見出し「利用者負担上限額管理情報」、31〜34「障害児相談支援情報」、35〜38「給付費等の額の特例情報」は縦書きのため読み取り。",
+      "前ページから続く表（項番27から開始）。"
+    ]
+  },
+  "raw_text": null
+}

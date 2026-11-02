@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 98,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3773,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002896,
+    "cost_usd_batch": 0.001448,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 98,
+    "printed_page": "31-6",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・原案作成委託料異動連絡票（保険者単位・証記載保険者単位）情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入する市町村が設定する内容",
+          "編入先の広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“5K12”（固定値）"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“5K12”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合の市町村の効力が発生する日(西暦年月日(YYYYMMDD))を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“3:終了”を設定"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“1:新規”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“01”（固定値）"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "“01”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合の市町村の証記載保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入前の市町村の保険者番号を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合の保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "サービス種類コードを設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "サービス種類コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "サービス項目コードを設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "サービス項目コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "編入先広域連合により保険者としての効力が発生する年月（西暦年月(YYYYMM)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入により保険者としての効力が消滅する年月（西暦年月(YYYYMM)）を設定する"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "委託割合"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "委託割合を設定する"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "委託金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              },
+              {
+                "column": "編入先の広域連合が設定する内容",
+                "value": "委託金額を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "原案作成委託料異動連絡票情報（原案作成委託料（基本）情報）の委託料設定区分が“1:保険者単位”または“2:行政区・構成市区町村単位”の場合、提出する。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

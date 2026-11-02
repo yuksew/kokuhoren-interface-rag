@@ -1,0 +1,233 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_1",
+ "page": 183,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "５９－９",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "１．３．１７－４　個人番号情報",
+   "record": {
+    "exchange_id": "",
+    "name": "個人番号情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "個人番号情報の識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "“5J41”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "個人番号情報の登録または変更が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "訂正年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "個人番号情報に訂正が生じた日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "異動区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:新規\n2:変更\n3:終了",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "個人番号情報の異動事由を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "個人番号"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "個人番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※３\n※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.41-12)",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "保険者番号単位に出力する場合は、個人番号を設定しない。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※3",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.41-12)"
+  },
+  {
+   "mark": "※4",
+   "text": "保険者番号単位に出力する場合は、個人番号を設定しない。"
+  }
+ ],
+ "uncertain": [
+  "record.exchange_id は本文から読み取れなかったため空文字にした。備考の“5J41”固定が本レコードの識別番号を指す可能性はあるが、原文に明記されていないため採用していない。",
+  "record.parent は読み取れないため空文字にした。",
+  "表見出しの「個人番号情報」をレコード名として扱った。"
+ ]
+}

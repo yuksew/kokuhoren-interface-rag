@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 285,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3333,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002676,
+    "cost_usd_batch": 0.001338,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 285,
+    "printed_page": "287-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "高額介護サービス費支給（不支給）決定者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費（総合事業）に対する、支給または不支給の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3541"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "高額介護サービス費支給（不支給）決定通知書情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費支給（総合事業）に対する、支給または不支給の受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3552"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "(13)",
+            "name_path": [
+              "外字空白印字リスト（高額介護サービス費支給（不支給）決定者）情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費支給（不支給）決定者一覧表（総合事業）及び高額介護サービス費支給（不支給）決定通知書（総合事業）で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3561"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "(14)",
+            "name_path": [
+              "振込依頼書（高額）情報（総合事業）（各種支払支援処理を委託しない場合に発生する）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関に振り込みを行ってもらうための口座・金額等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3621"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼の「PDF上のページ: 285」と、添付画像の下部に印字されたページ番号「287-1」が一致しない。添付画像の内容に基づいて書き起こした。",
+      "表の上端に見出し行があるが、項番が(11)から始まるため前ページからの続きと判断した（continued_from_prev_pageはテキストレイヤ判定で後処理される参考値）。",
+      "媒体列の「伝送 磁気 帳票」は原文で縦に並んだ3語の値で、区切りを空白で表した。",
+      "帳票形式列の「○」「汎用紙」「A4ヨコ/A4タテ」は原文で改行されているため、空白で連結して1行にした。"
+    ]
+  },
+  "raw_text": null
+}

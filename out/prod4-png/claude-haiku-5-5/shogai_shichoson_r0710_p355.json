@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 355,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4295,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003158,
+    "cost_usd_batch": 0.001579,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 355,
+    "printed_page": "162",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．４　過誤申立書情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "過誤申立書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "過誤を申し立てるための理由と対象となる給付実績を特定するための情報を記載した情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BA11"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．５　過誤決定通知書情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BBA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．６　取込エラーリスト（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "二次審査結果票情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査結果票情報取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BEA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "二次審査結果一覧情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査結果一覧情報取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BEB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "過誤申立書情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "過誤申立書情報取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BEC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．７　受付点検エラーリスト（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "二次審査結果票情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査結果票情報受付点検時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BFA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "二次審査結果一覧情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査結果一覧情報受付点検時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BFB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "過誤申立書情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "過誤申立書情報受付点検時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BFC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの内容は国保連合会向け『過誤・エラーリスト』のインタフェース一覧（２．２．４〜２．２．７）で、依頼文の『障害福祉（PDF上のページ355）』とは内容・ページ番号（印字は162）が一致しない。依頼と異なる文書の可能性がある。",
+      "ルート欄の『市町村』『→』『国保連合会』は原文で改行表示されていたが、表示上の折り返しとみなして1行に連結した。",
+      "情報名・内容の2行表記（例: 二次審査結果票情報／取込エラーリスト）は表示上の折り返しとみなして詰めて1行にした。",
+      "前ページからの続きではなく、各表に見出しが付いているため continued_from_prev_page と continues_to_next_page はいずれも false とした。"
+    ]
+  },
+  "raw_text": null
+}

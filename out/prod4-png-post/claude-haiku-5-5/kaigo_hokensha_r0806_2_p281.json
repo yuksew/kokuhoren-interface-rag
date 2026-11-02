@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 281,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 8524,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005271,
+    "cost_usd_batch": 0.002636,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 281,
+    "printed_page": "284",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "償還連絡票"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "償還明細書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "３．２．３　償還払給付額管理処理情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "償還払支給決定者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還請求に対して結果が支給となった受給者の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2211"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "償還払不支給決定者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還請求に対して結果が不支給となった受給者の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2221"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "償還払支給（不支給）決定通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還請求に対して行われた審査結果の受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2232"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "外字空白印字リスト(償還払支給(不支給)決定者)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還払支給決定者一覧表等で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2241"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "振込依頼書(償還)情報（各種支払支援処理を委託しない場合に発生する）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関に振り込みを行ってもらうための口座・金額等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2311"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付分",
+          "出力媒体種別 > 磁気受付分",
+          "出力媒体種別 > 帳票受付分"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "償還払支給決定者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "償還払不支給決定者一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "償還払支給（不支給）決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "外字空白印字リスト(償還払支給(不支給)決定者)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "帳票返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": null
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "振込依頼書（償還）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "償還払給付額管理処理"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "○ … 必須、× … 不要、◎ … 必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は PDF 上のページ 281 として切り出された 1 ページのみで、印字ページ番号は284。添付ページに載っている表を書き起こした。",
+      "表1の見出し「受付媒体種別」の下の列名は「伝送」「磁気」「帳票」として書き起こした。",
+      "表2の「帳票形式」見出しは取り消し線のように重なって読みにくいが、「帳票形式」と読んだ。",
+      "表2の媒体・帳票形式セルの改行は表示上の折り返しとみなし、1行にまとめた。",
+      "表3の「外字空白印字リスト」行は「帳票返却」が3列にまたがる結合セルのため、先頭の伝送受付分のみに値を入れ、磁気・帳票の列は null とした。",
+      "表1の列「種別」は縦結合セルを各行の cells に入れた。"
+    ]
+  },
+  "raw_text": null
+}

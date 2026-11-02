@@ -1,0 +1,507 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 143,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1905,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039266,
+    "cost_usd_batch": 0.019633,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 143,
+    "printed_page": "23-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※１）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※１）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 103,
+            "no_raw": "103",
+            "name_path": [
+              "福祉･介護職員処遇改善加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉･介護職員処遇改善加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※14\n※95",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※95",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 104,
+            "no_raw": "104",
+            "name_path": [
+              "主たる事業所サービス種類コード1"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "主たる事業所で実施しているサービスの種類を設定",
+            "required": "△",
+            "required_by": [],
+            "note": "※C\n※5、※14\n※16、※34\n※36",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※16",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※34",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※36",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 105,
+            "no_raw": "105",
+            "name_path": [
+              "福祉･介護職員処遇改善加算キャリアパス区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉･介護職員処遇改善加算キャリアパス区分をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※5、※9\n※14、※15\n※95",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※9",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※15",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※95",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 106,
+            "no_raw": "106",
+            "name_path": [
+              "多機能型等定員区分（加算）"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "加算の算定に用いる定員数をコードで設定",
+            "required": "△",
+            "required_by": [],
+            "note": "※C\n※5、※7\n※17",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※7",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※17",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 107,
+            "no_raw": "107",
+            "name_path": [
+              "移行時運営安定化事業による助成の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "移行時運営安定化事業による助成の届出の有無を設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※14",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "保障単位数（移行時運営安定化）"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "移行時運営安定化事業における保障単位数を設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※5、※9\n※14",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※9",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※14",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "指定市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "当該事業所を所管する市町村番号を設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※18\n※19\n※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※19",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "みなし指定の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "みなし指定の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18\n※26\n※93",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※26",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※93",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "福祉･介護職員処遇改善特別加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉･介護職員処遇改善特別加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "緊急短期入所体制確保加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急短期入所体制確保加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "栄養士配置減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養士配置減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:非常勤栄養士減算\n3:栄養士未配置減算\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 114,
+            "no_raw": "114",
+            "name_path": [
+              "就労移行･定着実績区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労移行･定着実績区分をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※5\n※18\n※27",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※27",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 115,
+            "no_raw": "115",
+            "name_path": [
+              "宿泊型自立訓練夜間防災･緊急時支援体制加算(Ⅰ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "宿泊型自立訓練夜間防災･緊急時支援体制加算(Ⅰ)の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページから続く表（項番103から開始）",
+      "ページ番号は「－ 23－2 －」と印字、23-2として記載"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 424,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2716,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.047376,
+    "cost_usd_batch": 0.023688,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 424,
+    "printed_page": "136-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．４　都道府県助成金請求情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金決定請求明細表情報(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求の内訳明細一覧情報(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "処遇改善助成金事業所別過誤差額調整残高一覧情報(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求額がマイナス金額となり事業所からの還付が必要な事業所別過誤調整残高一覧情報(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金未調整事業所一覧情報(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求額がマイナス金額となり事業所からの還付が必要な事業所別過誤調整残高一覧の受給者・サービス種類別内訳情報(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金決定請求明細表(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求の内訳明細一覧(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHD1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "処遇改善助成金事業所別過誤差額調整残高一覧(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求額がマイナス金額となり事業所からの還付が必要な事業所別過誤調整残高一覧(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHE1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金未調整事業所一覧(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処遇改善助成金(※1)請求額がマイナス金額となり事業所からの還付が必要な事業所別過誤調整残高一覧の受給者・サービス種類別内訳(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHF1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金払込請求書(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県が国保連合会へ納入するための払込請求書(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHG1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "障害児給付費等処遇改善助成金払込請求書内訳表(※1)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児給付費等処遇改善助成金(※1)払込請求書の内訳表(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BHH1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．５　過誤申立書情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "過誤申立書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "過誤を申立てるための理由と対象となる給付実績を特定するための情報を記載した情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BA11"
+              },
+              {
+                "column": "ルート",
+                "value": "都道府県等\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．６　過誤決定通知書情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BBA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "サービス提供年月が平成24年3月までの処遇改善助成金。"
+      },
+      {
+        "mark": "※2",
+        "text": "受付年月が平成25年12月以降使用しない。"
+      }
+    ],
+    "uncertain": []
+  },
+  "raw_text": null
+}

@@ -1,0 +1,365 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_1",
+ "page": 199,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "64",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "１．３．１９　受給者情報突合結果情報",
+   "record": {
+    "exchange_id": "5371",
+    "name": "受給者情報突合結果情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "受給者情報突合結果情報の識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "“5371”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "突合結果区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "突合結果の区分をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:保険者情報のみ存在\n2:国保連合会情報のみ存在\n3:内容不一致",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "突合情報区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "突合情報の区分をコードで設定する",
+     "required": null,
+     "required_by": [],
+     "note": "1:保険者保有受給者情報\n2:国保連合会保有受給者情報",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "受給者の資格を取得または変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "異動区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "受給者情報の異動事由を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "英数",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "被保険者氏名（カナ）"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "２５",
+     "content": "被保険者氏名をカナ文字で設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "生年月日"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "生年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "性別コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "性別コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "資格取得年月日"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "資格取得年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "資格喪失年月日"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "資格喪失年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "老人保健市町村番号"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "老人保健市町村番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "老人保健受給者番号"
+     ],
+     "type": "英数",
+     "length": 7,
+     "length_raw": "７",
+     "content": "老人保健受給者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "１６",
+     "name_path": [
+      "公費負担者番号"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "福祉事務所番号を設定する\n福祉事務所からの異動情報提出時のみ設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "１７",
+     "name_path": [
+      "広域連合（政令市）保険者番号"
+     ],
+     "type": "英数",
+     "length": 6,
+     "length_raw": "６",
+     "content": "受給者が広域連合又は政令市の市町村（行政区）に属する場合にのみ広域連合又は政令市の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 18,
+     "no_raw": "１８",
+     "name_path": [
+      "申請種別コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "申請種別コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 19,
+     "no_raw": "１９",
+     "name_path": [
+      "変更申請中区分コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "変更申請中区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 20,
+     "no_raw": "２０",
+     "name_path": [
+      "申請年月日"
+     ],
+     "type": "英数",
+     "length": 8,
+     "length_raw": "８",
+     "content": "要介護状態区分の変更を申請した年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 21,
+     "no_raw": "２１",
+     "name_path": [
+      "みなし要介護区分コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "みなし要介護区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」だが、添付は1ページのみで、そのページ（印字ページ64）の表を書き起こした。",
+  "record.exchange_id の \"5371\" は項番1の備考「“5371”固定」から取った。レコード自体の識別番号として読めるかは原本の確認が必要。",
+  "record.parent は読み取れなかったため空文字にした。",
+  "表の下端がページ末尾にあり次ページへの続きかは画像からは判定できないため continues_to_next_page を false にした（後処理で再判定される想定）。"
+ ]
+}

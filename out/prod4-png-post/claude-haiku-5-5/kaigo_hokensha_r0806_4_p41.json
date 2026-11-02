@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 41,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3251,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002635,
+    "cost_usd_batch": 0.001317,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 41,
+    "printed_page": "557",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "保険料納付通知書等作成一覧表（特別徴収者）情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“4521”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "No"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "帳票関連付け番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "氏名（カナ）"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "２５",
+            "content": "被保険者の氏名（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "半角カタカナ",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "特別徴収額（上段）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "特別徴収額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "繰り返し 6回 (4, 6, 8, 10, 12, 2月) ※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "計（上段）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "特別徴収額の計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 26,
+            "length_raw": "２６",
+            "content": "被保険者の氏名（漢字）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "普通徴収額（下段）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "月別の普通徴収額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "繰り返し 12回 ※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "計（下段）"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "普通徴収額の計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "合計"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "徴収額の合計を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※ S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番3の項目名「No」は原文の記号が「No」に見えるが、「No.」「№」の可能性を完全には否定できない。",
+      "項番10・11の項番および項番4・5・8のバイト数は、全角数字として読み取った（「１０」「１１」「２５」「２６」）。半角か全角かは確定できない。",
+      "「次のページの表をすべて」との指示だが、添付は当該1ページ（printed_page 557）のみのため、この1ページの表を書き起こした。",
+      "表の上に記載の見出し「・明細レコード（複数レコード）」からレコード名は読み取れず、record の各項目は空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

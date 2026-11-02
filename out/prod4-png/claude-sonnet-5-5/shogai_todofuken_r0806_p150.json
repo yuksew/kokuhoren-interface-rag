@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 150,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2155,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.041766,
+    "cost_usd_batch": 0.020883,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 150,
+    "printed_page": "23-9",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 197,
+            "no_raw": "197",
+            "name_path": [
+              "常勤看護職員等配置(看護職員常勤換算員数)"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "看護職員の常勤換算員数を設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※5、※9\n※81",
+            "cells": []
+          },
+          {
+            "no": 198,
+            "no_raw": "198",
+            "name_path": [
+              "入浴支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入浴支援加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 199,
+            "no_raw": "199",
+            "name_path": [
+              "目標工賃達成の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "目標工賃達成の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 200,
+            "no_raw": "200",
+            "name_path": [
+              "支援体制構築未実施減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支援体制構築未実施減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 201,
+            "no_raw": "201",
+            "name_path": [
+              "中核的人材配置体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "中核的人材配置体制の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 202,
+            "no_raw": "202",
+            "name_path": [
+              "移行支援住居体制(自立生活支援加算(Ⅲ))の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "移行支援住居体制(自立生活支援加算(Ⅲ))の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 203,
+            "no_raw": "203",
+            "name_path": [
+              "地域生活支援拠点等機能強化体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "地域生活支援拠点等機能強化体制の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 204,
+            "no_raw": "204",
+            "name_path": [
+              "虐待防止措置未実施減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "虐待防止措置未実施減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 205,
+            "no_raw": "205",
+            "name_path": [
+              "身体拘束廃止未実施減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "身体拘束廃止未実施減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 206,
+            "no_raw": "206",
+            "name_path": [
+              "高次脳機能障害者支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "高次脳機能障害者支援体制加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 207,
+            "no_raw": "207",
+            "name_path": [
+              "情報公表未報告減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "情報公表未報告減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 208,
+            "no_raw": "208",
+            "name_path": [
+              "栄養改善加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養改善加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81",
+            "cells": []
+          },
+          {
+            "no": 209,
+            "no_raw": "209",
+            "name_path": [
+              "地域移行等意向確認体制未整備減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "地域移行等意向確認体制未整備減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※90",
+            "cells": []
+          },
+          {
+            "no": 210,
+            "no_raw": "210",
+            "name_path": [
+              "業務継続計画未策定減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "業務継続計画未策定減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※81\n※91",
+            "cells": []
+          },
+          {
+            "no": 211,
+            "no_raw": "211",
+            "name_path": [
+              "障害者支援施設等感染対策向上加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害者支援施設等感染対策向上加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:Ⅰ\n3:Ⅱ\n4:Ⅰ・Ⅱ\n※5、※81",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続き（見出し行は繰り返されている）",
+      "備考欄のローマ数字（Ⅰ、Ⅱ）の表記は画像からの判読"
+    ]
+  },
+  "raw_text": null
+}

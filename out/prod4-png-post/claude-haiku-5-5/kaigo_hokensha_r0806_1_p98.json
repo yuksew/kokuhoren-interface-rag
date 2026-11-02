@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 98,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1113,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001566,
+    "cost_usd_batch": 0.000783,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 98,
+    "printed_page": "３０－５",
+    "tables": [],
+    "footnotes": [
+      {
+        "mark": "※１７",
+        "text": "処理年月が2021年5月以降の場合、異動年月日が2021年8月1日以降の情報において、設定する。異動年月日が2021年7月31日以前の情報において、設定された場合はエラーとして台帳への登録は行わない。なお、処理年月が2021年4月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。"
+      },
+      {
+        "mark": "※１８",
+        "text": "処理年月が2026年7月以降の場合、異動年月日が2026年8月1日以降の情報において、設定する。異動年月日が2026年7月31日以前の情報において、設定された場合はエラーとして台帳への登録は行わない。なお、処理年月が2026年6月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。"
+      }
+    ],
+    "uncertain": [
+      "添付ページには表がなく、欄外の注記2件（※１７・※１８）のみが印字されていた。",
+      "※１８の部分は黄色の背景と赤字で強調されているが、本文は通常の注記として書き写した。",
+      "ページ番号は「－３０－５－」と印字されているため printed_page に「３０－５」として入れた。"
+    ]
+  },
+  "raw_text": null
+}

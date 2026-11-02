@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 331,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1878,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.038996,
+    "cost_usd_batch": 0.019498,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 331,
+    "printed_page": "88",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "事業所",
+              "住所(カナ)"
+            ],
+            "type": "英数",
+            "length": 75,
+            "length_raw": "75",
+            "content": "事業所の住所をカナ文字で設定する",
+            "required": "△",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "事業所",
+              "住所(漢字)"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "事業所の住所を全角文字で設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "事業所",
+              "電話番号"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "事業所の電話番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "事業所",
+              "FAX番号"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "事業所の FAX 番号を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービスの種類を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "厚生労働省の定める事業所が所在する地域に該当する区分をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※12",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※12",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "事業開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y\n※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "事業休止年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業休止年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "事業廃止年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業廃止年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "事業再開年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業再開年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "施設等の区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "施設等の区分をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※3",
+                "text": "、※4",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "定員区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "報酬算定上の定員区分をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※3",
+                "text": "、※4",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "入所定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "定員数を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "旧法施設定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "H18.9 の利用者数を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "栄養士配置加算の基準"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養士配置加算の基準をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※3",
+                "text": "、※4",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "職業指導員体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "職業指導員体制の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※3、※46",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※4",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※46",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続き（項番16から開始）",
+      "「事業所」は項番16〜19にまたがる縦結合のグループ見出しとして name_path に入れた"
+    ]
+  },
+  "raw_text": null
+}

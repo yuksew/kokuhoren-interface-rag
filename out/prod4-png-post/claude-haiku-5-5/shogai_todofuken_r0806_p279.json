@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 279,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 5652,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003837,
+    "cost_usd_batch": 0.001918,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 279,
+    "printed_page": "74-6",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 100,
+            "no_raw": "100",
+            "name_path": [
+              "福祉・介護職員等特定処遇改善加算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員等特定処遇改善加算区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "1:Ⅰ\n2:Ⅱ\n※3、※6\n※29、※30",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※30",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 101,
+            "no_raw": "101",
+            "name_path": [
+              "事業変更年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "事業変更年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※Y\n※29",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 102,
+            "no_raw": "102",
+            "name_path": [
+              "専門的支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "専門的支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※32\n※36",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※32",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※36",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 103,
+            "no_raw": "103",
+            "name_path": [
+              "ソーシャルワーカー配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ソーシャルワーカー配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※32",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※32",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 104,
+            "no_raw": "104",
+            "name_path": [
+              "主任相談支援専門員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "主任相談支援専門員配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:Ⅱ\n3:Ⅰ\n※3、※32\n※40",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※32",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※40",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 105,
+            "no_raw": "105",
+            "name_path": [
+              "ピアサポート体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "ピアサポート体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※32",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※32",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 106,
+            "no_raw": "106",
+            "name_path": [
+              "福祉・介護職員等ベースアップ等支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉・介護職員等ベースアップ等支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※37",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※37",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 107,
+            "no_raw": "107",
+            "name_path": [
+              "経過措置対象区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "経過措置対象区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:非該当\n2:該当\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "中核機能強化加算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "中核機能強化加算区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:Ⅰ\n3:Ⅱ\n4:Ⅲ\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "支援プログラム未公表減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支援プログラム未公表減算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "入浴支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "入浴支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "送迎加算（医ケア）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算（医ケア）の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "個別サポート加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "個別サポート加算（Ⅰ）の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "視覚・聴覚言語障害児支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "視覚・聴覚言語障害児支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※3、※38",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番100から始まり見出し行が付いているため前ページからの続きの可能性があるが、前ページを確認できないため continued_from_prev_page は推定である。",
+      "項番113の行の下で表が切れており、次ページへ続く可能性が高いが、次ページを確認できないため continues_to_next_page は推定である。",
+      "「必須入力※1」の※1に対応する注記は本ページに見当たらず、footnotes は空にした。",
+      "record の exchange_id・name・parent は本ページから読み取れないため空文字にした。",
+      "101行の内容の括弧（西暦年月日(YYYYMMDD)）は画像上の括弧の字形から半角括弧とみなして書き写したが、字形が判然としない。"
+    ]
+  },
+  "raw_text": null
+}

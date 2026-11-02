@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 78,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5004,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003511,
+    "cost_usd_batch": 0.001756,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 78,
+    "printed_page": "１９２－８",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "集計情報の場合、サービス種類単位での明細情報",
+        "record": {
+          "exchange_id": "1531",
+          "name": "明細レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1531”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "目コード（介護予防・日常生活支援総合事業）"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "目コード（介護予防・日常生活支援総合事業）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※2",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "目名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "３０",
+            "content": "目名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "請求対象となるサービスのサービス種類コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1　※3\n※4",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類名"
+            ],
+            "type": "漢字",
+            "length": 34,
+            "length_raw": "３４",
+            "content": "請求対象となるサービスのサービス種類名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※4",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "通常分",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス種類単位に集計したサービス件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "通常分",
+              "実日数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "サービス種類単位に集計したサービス実日数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "通常分",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "サービス種類単位に集計したサービス単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "通常分",
+              "金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "サービス種類単位に集計したサービス金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "再審査・過誤",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "サービス種類単位に集計した再審査・過誤となる件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "再審査・過誤",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "サービス種類単位に集計した再審査・過誤となる単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "再審査・過誤",
+              "調整額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "サービス種類単位に集計した再審査・過誤調整額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "サービス種類単位に集計した介護予防・日常生活支援総合事業費（再審査・過誤分を考慮したもの）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "サービス種類単位に集計した自己負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "公費負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "サービス種類単位に集計した公費負担額（高齢介護を含む）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編　1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "すべての款・項・目について集計した明細のとき、目コード（介護予防・日常生活支援総合事業）には99を指定する。その時の目名は空白を指定する。"
+      },
+      {
+        "mark": "※3",
+        "text": "目単位の小計情報の場合、サービス種類コードは“ST“を指定する。その時のサービス種類名には目名を指定する。"
+      },
+      {
+        "mark": "※4",
+        "text": "高額介護予防サービス費の場合、サービス種類コードは空白とし、サービス種類名には「高額介護予防サービス費」を指定する。"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "record.exchange_id の「1531」は表の備考欄「“1531”固定」（交換情報識別番号の固定値）から読み取った。レコード自体の識別番号として明示された記載はこのページには見当たらない。",
+      "record.parent は本ページに上位の情報名（介護給付費等 明細書など）が読み取れなかったため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

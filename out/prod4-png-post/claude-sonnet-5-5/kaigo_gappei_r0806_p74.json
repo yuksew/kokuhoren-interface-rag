@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 74,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3627,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.056452,
+    "cost_usd_batch": 0.028226,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 74,
+    "printed_page": "24",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・受給者異動連絡票情報",
+        "record": {
+          "exchange_id": "",
+          "name": "受給者異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入前の市町村および編入先の市町村が設定する内容",
+          "広域連合の保険者が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "広域連合の保険者が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5311”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "編入先市町村への編入日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“2:変更”を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“99:その他異動”を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の証記載保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "被保険者氏名（カナ）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "性別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "資格取得年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "資格喪失年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "老人保健市町村番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "老人保健受給者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "公費負担者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "広域連合（政令市）保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "広域連合の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "申請種別コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "変更申請中区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "申請年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "みなし要介護区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "認定有効期間(開始年月日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "認定有効期間(終了年月日)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "居宅介護支援事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "居宅サービス計画適用開始年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "居宅サービス計画適用終了年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入前の市町村および編入先の市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "「編入前の市町村および編入先の市町村が設定する内容」列は全行にわたる結合セルで「インタフェースの提供は不要」とあり、全行に同じ値を入れた",
+      "ページ左端の縦書き「加除第2号」は表外のため記載せず"
+    ]
+  },
+  "raw_text": null
+}

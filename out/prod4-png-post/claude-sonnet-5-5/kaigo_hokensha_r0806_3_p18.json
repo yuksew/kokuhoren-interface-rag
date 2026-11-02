@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 18,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2033,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040516,
+    "cost_usd_batch": 0.020258,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 18,
+    "printed_page": "334",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・福祉用具販売費情報レコード",
+        "record": {
+          "exchange_id": "21C1",
+          "name": "福祉用具販売費情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "“21C1”、又は、“21C2”",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "レコード種別コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "“07”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "任意",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "被保険者の申請単位に付与する整理番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "福祉用具販売年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "福祉用具を販売した年月日(西暦年月(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "福祉用具商品名"
+            ],
+            "type": "漢字",
+            "length": 60,
+            "length_raw": "６０",
+            "content": "福祉用具の商品名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "福祉用具種目コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "福祉用具の種目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "福祉用具製造事業者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "福祉用具を製造した事業者名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "福祉用具販売事業者名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "福祉用具を販売した事業者名を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "販売金額"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "販売金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "摘要（品目コード）"
+            ],
+            "type": "英数",
+            "length": 20,
+            "length_raw": "２０",
+            "content": "特定福祉用具の品目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "審査方法区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "国保連合会に審査を依頼するかどうかの区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "交換情報識別番号はレコードの備考から21C1/21C2のため、record.exchange_idは21C1とした（推測を含む）"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,578 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 125,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5899,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003959,
+    "cost_usd_batch": 0.001979,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 125,
+    "printed_page": "40",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 76,
+            "no_raw": "７６",
+            "name_path": [
+              "基準該当訪問介護サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 77,
+            "no_raw": "７７",
+            "name_path": [
+              "基準該当訪問入浴サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定訪問入浴サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 78,
+            "no_raw": "７８",
+            "name_path": [
+              "基準該当通所介護サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定通所介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 79,
+            "no_raw": "７９",
+            "name_path": [
+              "基準該当短期入所生活介護サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定短期入所生活介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 80,
+            "no_raw": "８０",
+            "name_path": [
+              "基準該当福祉用具貸与サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定福祉用具貸与サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 81,
+            "no_raw": "８１",
+            "name_path": [
+              "基準該当居宅支援サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定居宅支援サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 82,
+            "no_raw": "８２",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "経過的要介護"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "1月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 83,
+            "no_raw": "８３",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "要介護1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 84,
+            "no_raw": "８４",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "要介護2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 85,
+            "no_raw": "８５",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "要介護3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 86,
+            "no_raw": "８６",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "要介護4"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 87,
+            "no_raw": "８７",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "夜間対応型訪問介護",
+              "要介護5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 88,
+            "no_raw": "８８",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "経過的要介護"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "1月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 89,
+            "no_raw": "８９",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "要介護1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 90,
+            "no_raw": "９０",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "要介護2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 91,
+            "no_raw": "９１",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "要介護3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 92,
+            "no_raw": "９２",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "要介護4"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 93,
+            "no_raw": "９３",
+            "name_path": [
+              "居宅介護サービス費種類支給限度基準額",
+              "認知症対応型通所介護",
+              "要介護5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 94,
+            "no_raw": "９４",
+            "name_path": [
+              "介護予防サービス費",
+              "区分支給限度基準額",
+              "要支援1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "1月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 95,
+            "no_raw": "９５",
+            "name_path": [
+              "介護予防サービス費",
+              "区分支給限度基準額",
+              "要支援2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "基準該当介護予防訪問介護サービス費比率数字指定介護予防訪問介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番76から始まり前ページからの続きと判断したが、前ページは添付されていない。continued_from_prev_pageはtrueとしたが後処理で再判定が必要。",
+      "表末尾の95の後に次ページへの続きがあるかは本ページだけでは確定できないためcontinues_to_next_pageはtrueとした。",
+      "項目名列の縦書きグループ見出し「介護予防サービス費」「区分支給限度基準額」（94〜95行）の読み順と階層は、2列の縦書きから判断して name_path を組んだ。",
+      "備考列の「※5」「※S」は対応する注記本文がこのページ内に見当たらないため footnotes は空とした。"
+    ]
+  },
+  "raw_text": null
+}

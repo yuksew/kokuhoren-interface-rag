@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 109,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3850,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002934,
+    "cost_usd_batch": 0.001467,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 109,
+    "printed_page": "380",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "支払方法区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支払方法区分コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "窓口払",
+              "支払場所"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "窓口払の支払場所を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "窓口払の支払期間の開始年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "窓口払の支払期間の終了年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始曜日"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "窓口払の支払期間の開始曜日を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了曜日"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "窓口払の支払期間の終了曜日を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始時間"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "窓口払の支払期間の開始時間を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了時間"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "窓口払の支払期間の終了時間を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "口座払",
+              "金融機関コード"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "口座払の金融機関コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "口座払",
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "30",
+            "content": "口座払の金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "口座払",
+              "金融機関支店コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "口座払の金融機関支店コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "口座払",
+              "金融機関支店名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "口座払の金融機関支店名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "口座払",
+              "口座種目"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "口座払の口座種目を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "口座払",
+              "口座種目名"
+            ],
+            "type": "漢字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "口座払の口座種目名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "口座払",
+              "口座番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "口座払の口座番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "口座払",
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "口座払の口座名義人（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付はこのページ（PDF上のページ109）のみのため、このページの表を書き起こした。",
+      "13・14の内容欄の「（西暦年月日(YYYYMMDD)）」の括弧と空白は画像の印字に基づく表記で、全角・半角の区別に確信がない。",
+      "表の下端の「※3」「※2」の注記が、表本文の参照記号と対応するかは画像からは判別しきれない箇所がある。"
+    ]
+  },
+  "raw_text": null
+}

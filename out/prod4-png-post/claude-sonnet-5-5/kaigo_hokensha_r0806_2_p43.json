@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 43,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2508,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.045266,
+    "cost_usd_batch": 0.022633,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 43,
+    "printed_page": "178",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "1121",
+          "name": "明細レコード",
+          "parent": "保険者向け給付管理票情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1121”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "審査年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "審査年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスの給付対象年月（西暦年月(YYYYMM)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "事業所番号(居宅介護支援事業所)"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "居宅介護支援事業所作成の場合、支援事業所番号を出力する\n自己作成の場合、“0”を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "給付管理票情報作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付管理票の作成区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "給付管理票作成年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付管理票の作成年月日(西暦年月日(YYYYMMDD))を出力する\n新規作成の場合、作成年月日を出力する\n修正または取消の場合は修正年月日または取消年月日を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付管理票の種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※6",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "給付管理票明細行番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "同一被保険者の種別区分ごとの給付管理票連番を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "01～98: 明細レコード\n99: 終端レコード",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者証記載の被保険者番号を記載する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "被保険者生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者の生年月日（西暦年月日(YYYYMMDD)）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "被保険者性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "被保険者の性別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "要介護状態区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "限度額適用期間(開始)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "限度額適用期間の開始年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "限度額適用期間(終了)"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "限度額適用期間の終了年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "訪問通所／短期入所支給限度額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "区分支給限度基準額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4\n※6\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "給付管理票種別および給付管理票明細行番号によって出力する内容が異なる項目の出力方法は次の通り。なお、個々のサービス内容を出力する場合は、給付管理票明細行番号に明細レコードを表す01~98を指定する。小計/合計内容を設定する場合には、給付管理票明細行番号に終端レコードを表す99を指定し、終端レコードで利用しない項目については値を出力しない。対象年月が平成14年1月以降対象年月が平成13年12月以前居宅サービス給付管理票訪問通所サービス給付管理票短期入所サービス給付管理票給付管理票明細行番号訪問通所/短期入所支給限度額-単位数-単位数-日数事業所番号(サービス事業所)事業所番号-事業所番号-事業所番号-指定/基準該当等事業所区分コードコード値-コード値-コード値-サービス種類コードコード値-コード値-コード値-給付計画単位数/日数単位数-単位数-日数-限度額管理期間における前月までの給付計画日数-----日数指定サービス分小計-単位数-単位数-日数基準該当サービス分小計-単位数-単位数-日数給付計画合計単位数/日数-単位数-単位数-日数",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※6",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付管理票を作成した居宅サービス計画作成者の区分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "事業所番号(サービス事業所)"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービス事業所番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "給付管理票種別および給付管理票明細行番号によって出力する内容が異なる項目の出力方法は次の通り。なお、個々のサービス内容を出力する場合は、給付管理票明細行番号に明細レコードを表す01~98を指定する。小計/合計内容を設定する場合には、給付管理票明細行番号に終端レコードを表す99を指定し、終端レコードで利用しない項目については値を出力しない。対象年月が平成14年1月以降対象年月が平成13年12月以前居宅サービス給付管理票訪問通所サービス給付管理票短期入所サービス給付管理票給付管理票明細行番号訪問通所/短期入所支給限度額-単位数-単位数-日数事業所番号(サービス事業所)事業所番号-事業所番号-事業所番号-指定/基準該当等事業所区分コードコード値-コード値-コード値-サービス種類コードコード値-コード値-コード値-給付計画単位数/日数単位数-単位数-日数-限度額管理期間における前月までの給付計画日数-----日数指定サービス分小計-単位数-単位数-日数基準該当サービス分小計-単位数-単位数-日数給付計画合計単位数/日数-単位数-単位数-日数",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "サービス事業所等の指定サービス・基準該当サービスの識別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "給付管理票種別および給付管理票明細行番号によって出力する内容が異なる項目の出力方法は次の通り。なお、個々のサービス内容を出力する場合は、給付管理票明細行番号に明細レコードを表す01~98を指定する。小計/合計内容を設定する場合には、給付管理票明細行番号に終端レコードを表す99を指定し、終端レコードで利用しない項目については値を出力しない。対象年月が平成14年1月以降対象年月が平成13年12月以前居宅サービス給付管理票訪問通所サービス給付管理票短期入所サービス給付管理票給付管理票明細行番号訪問通所/短期入所支給限度額-単位数-単位数-日数事業所番号(サービス事業所)事業所番号-事業所番号-事業所番号-指定/基準該当等事業所区分コードコード値-コード値-コード値-サービス種類コードコード値-コード値-コード値-給付計画単位数/日数単位数-単位数-日数-限度額管理期間における前月までの給付計画日数-----日数指定サービス分小計-単位数-単位数-日数基準該当サービス分小計-単位数-単位数-日数給付計画合計単位数/日数-単位数-単位数-日数",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": "給付管理票種別および給付管理票明細行番号によって出力する内容が異なる項目の出力方法は次の通り。なお、個々のサービス内容を出力する場合は、給付管理票明細行番号に明細レコードを表す01~98を指定する。小計/合計内容を設定する場合には、給付管理票明細行番号に終端レコードを表す99を指定し、終端レコードで利用しない項目については値を出力しない。対象年月が平成14年1月以降対象年月が平成13年12月以前居宅サービス給付管理票訪問通所サービス給付管理票短期入所サービス給付管理票給付管理票明細行番号訪問通所/短期入所支給限度額-単位数-単位数-日数事業所番号(サービス事業所)事業所番号-事業所番号-事業所番号-指定/基準該当等事業所区分コードコード値-コード値-コード値-サービス種類コードコード値-コード値-コード値-給付計画単位数/日数単位数-単位数-日数-限度額管理期間における前月までの給付計画日数-----日数指定サービス分小計-単位数-単位数-日数基準該当サービス分小計-単位数-単位数-日数給付計画合計単位数/日数-単位数-単位数-日数",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の前の「対象年月が平成18年3月以前の場合、以下の項目を出力する。」は本文として扱い、表には含めていない",
+      "record の exchange_id は項番1の内容(1121)から推定"
+    ]
+  },
+  "raw_text": null
+}

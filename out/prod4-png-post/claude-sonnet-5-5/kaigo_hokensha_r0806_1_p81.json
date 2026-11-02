@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 81,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1197,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.032156,
+    "cost_usd_batch": 0.016078,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 81,
+    "printed_page": "29-13",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "項番13 制限回数日数の設定内容について",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番12 算定単位",
+          "項番14 算定回数制限期間 > 01：１月につき",
+          "項番14 算定回数制限期間 > 08：１日につき",
+          "項番14 算定回数制限期間 > 16：１週間につき"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "項番12 算定単位",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項番１２ 算定単位",
+              "01：１回につき"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "項番14 算定回数制限期間 > 01：１月につき",
+                "value": "制限なし（0～99）"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 08：１日につき",
+                "value": "制限なし（0～99）"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 16：１週間につき",
+                "value": "制限なし（0～99）"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項番１２ 算定単位",
+              "02：１日につき"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "項番14 算定回数制限期間 > 01：１月につき",
+                "value": "0～31"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 08：１日につき",
+                "value": "登録時エラー（※）"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 16：１週間につき",
+                "value": "0～7"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項番１２ 算定単位",
+              "03：１月につき"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "項番14 算定回数制限期間 > 01：１月につき",
+                "value": "0～1"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 08：１日につき",
+                "value": "登録時エラー（※）"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 16：１週間につき",
+                "value": "登録時エラー（※）"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項番１２ 算定単位",
+              "05：１週間につき"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "項番14 算定回数制限期間 > 01：１月につき",
+                "value": "0～6"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 08：１日につき",
+                "value": "登録時エラー（※）"
+              },
+              {
+                "column": "項番14 算定回数制限期間 > 16：１週間につき",
+                "value": "登録時エラー（※）"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※",
+        "text": "登録時エラー:算定単位と算定回数制限期間の関連チェックにてエラーとなる。"
+      }
+    ],
+    "uncertain": [
+      "表見出しの列名は多段見出しを推測して連結。左上セルは斜線で空欄。",
+      "項番12の縦書き見出し「項番１２ 算定単位」は name_path に入れた。",
+      "設定例1・設定例2は表ではなく本文のため省略。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 5,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2804,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002411,
+    "cost_usd_batch": 0.001206,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 5,
+    "printed_page": "１５８",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "自県分",
+              "訪問通所サービス・居宅サービス給付管理票",
+              "新規件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県訪問通所サービス、居宅サービス給付管理票の新規件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "自県分",
+              "訪問通所サービス・居宅サービス給付管理票",
+              "修正件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県訪問通所サービス、居宅サービス給付管理票の修正件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "自県分",
+              "訪問通所サービス・居宅サービス給付管理票",
+              "取消件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県訪問通所サービス、居宅サービス給付管理票の取消件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "自県分",
+              "短期入所サービス給付管理票",
+              "新規件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県短期入所サービス給付管理票の新規件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "自県分",
+              "短期入所サービス給付管理票",
+              "修正件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県短期入所サービス給付管理票の修正件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "自県分",
+              "短期入所サービス給付管理票",
+              "取消件数"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "９",
+            "content": "自県短期入所サービス給付管理票の取消件数を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。（P.31）"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項：「年月」欄」参照。（P.42）"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付きアンパック（ゾーン）10進数形式項目〔以下：符号付き形式項目〕」\nなお、※Sが付加されていない数字属性項目は、「符号なしアンパック（ゾーン）10進数形式項目〔以下：符号なし形式項目〕」である。"
+      }
+    ],
+    "uncertain": [
+      "表見出し行が1ページ目上部に繰り返されているため前ページからの続きと判断したが、前ページの内容は確認できない。",
+      "「自県分」は項番12〜17にまたがる縦結合の見出しとして name_path に入れた。",
+      "必須入力の記号「○」は原文の字形が〇に近いが、スキーマの記号 ○ で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

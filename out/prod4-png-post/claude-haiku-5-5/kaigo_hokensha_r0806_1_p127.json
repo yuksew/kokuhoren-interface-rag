@@ -1,0 +1,627 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 127,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 6080,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004049,
+    "cost_usd_batch": 0.002025,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 127,
+    "printed_page": "４０－２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "基準該当介護予防通所介護サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定介護予防通所介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "基準該当介護予防短期入所生活介護サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定介護予防短期入所生活介護サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 114,
+            "no_raw": "114",
+            "name_path": [
+              "基準該当介護予防福祉用具貸与サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定介護予防福祉用具貸与サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 115,
+            "no_raw": "115",
+            "name_path": [
+              "基準該当介護予防支援サービス費比率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "指定介護予防支援サービス費支給限度基準額に対する基準該当サービス費の比率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      },
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 116,
+            "no_raw": "116",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）区分支給限度基準額",
+              "二次予防"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 117,
+            "no_raw": "117",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）区分支給限度基準額",
+              "要支援１"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 118,
+            "no_raw": "118",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）区分支給限度基準額",
+              "要支援２"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "訪問型予防サービス",
+              "二次予防"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "訪問型予防サービス",
+              "要支援１"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 121,
+            "no_raw": "121",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "訪問型予防サービス",
+              "要支援２"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 122,
+            "no_raw": "122",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "通所型予防サービス",
+              "二次予防"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 123,
+            "no_raw": "123",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "通所型予防サービス",
+              "要支援１"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 124,
+            "no_raw": "124",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "通所型予防サービス",
+              "要支援２"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 125,
+            "no_raw": "125",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（配食）",
+              "二次予防"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 126,
+            "no_raw": "126",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（配食）",
+              "要支援１"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 127,
+            "no_raw": "127",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（配食）",
+              "要支援２"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 128,
+            "no_raw": "128",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（見守り）",
+              "二次予防"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 129,
+            "no_raw": "129",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（見守り）",
+              "要支援１"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 130,
+            "no_raw": "130",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費（経過措置）種類支給限度基準額",
+              "生活支援サービス（見守り）",
+              "要支援２"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※７\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ先頭の見出し行は前ページからの続きの表と判断したが、前ページの内容は添付されていないため確認できない。",
+      "120・121行の備考欄「※７ ※S」は画像の下端で切れて見えており、後段の文字を確認できない。",
+      "内容欄の「サービス」の一部は半角カタカナ（ｻｰﾋﾞｽ）の可能性があるが、表示の字形から確定できないため通常の表記で書き写した。",
+      "record（レコード名・交換情報識別番号）はページ内に読み取れる記載がないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

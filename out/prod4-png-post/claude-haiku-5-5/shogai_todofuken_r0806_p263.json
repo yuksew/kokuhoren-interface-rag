@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 263,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3274,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002648,
+    "cost_usd_batch": 0.001324,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 263,
+    "printed_page": "65",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（２）　障害児支援受給者異動連絡票情報（支給決定情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "障害児支援受給者異動連絡票情報（支給決定情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": ":「インタフェース仕様書 都道府県編 II.障害児支援 1.2 インタフェース一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者異動連絡票情報（支給決定情報）に変更等が生じた年月（西暦年月(YYYYMM)）と連番（異動順）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "受給者異動連絡票情報（支給決定情報）の異動事由を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の都道府県等番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "政令市市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "政令市が受給者を行政区で分けて管理する場合のみ政令市の市町村番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※C\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※3",
+                "text": ":異動年月日の年月が平成24 年3 月以前の場合、“0”または“NULL”を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "決定サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "決定したサービスのコードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "旧障害程度区分等コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "決定支給量"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "1回当たりの最大提供量"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "支給量単位区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "決定支給期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "決定サービスの有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": ":国保連合会に同じサービス提供年月に対して有効となる複数の支給決定情報が存在する場合(月途中で変更が発生した場合)は、最新の異動年月日の支給決定情報に設定されている決定支給期間のみではなく、当該サービス提供年月に関する支給決定情報に設定されている決定支給期間を使用して実績とのチェックを行う。例)支給決定情報に月途中で変更が発生した場合(障害児入所支援)受給者台帳(支給決定情報)※一次審査で使用する情報は背景色ありチェックで有効とする情報設定パターン異動年月日決定支給期間サービス提供年月が2019 年10 月の場合開始年月日終了年月日提供できる日提供できない日期間に空きが無い場合なし期間に空きがある場合",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "決定支給期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "決定サービスの有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": ":国保連合会に同じサービス提供年月に対して有効となる複数の支給決定情報が存在する場合(月途中で変更が発生した場合)は、最新の異動年月日の支給決定情報に設定されている決定支給期間のみではなく、当該サービス提供年月に関する支給決定情報に設定されている決定支給期間を使用して実績とのチェックを行う。例)支給決定情報に月途中で変更が発生した場合(障害児入所支援)受給者台帳(支給決定情報)※一次審査で使用する情報は背景色ありチェックで有効とする情報設定パターン異動年月日決定支給期間サービス提供年月が2019 年10 月の場合開始年月日終了年月日提供できる日提供できない日期間に空きが無い場合なし期間に空きがある場合",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "相互利用対象者区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "相互利用者対象者の場合、対象者区分を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "1:知的障害児\n2:肢体不自由児\n3:難聴幼児\n※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":異動年月日の年月が平成24 年3 月以前の場合、障害児通園施設の相互利用制度により、障害種別の異なる施設を利用する場合、および、知的障害児が盲児・ろうあ児施設を利用する場合に設定する。異動年月日の年月が平成24 年4 月以降の場合、“0”または“NULL”を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページの表」の書き起こしを求めているが、添付は1ページのみで、そのページには本表（printed_page 65）のみが載っていたため、この表を書き起こした。",
+      "本ページには表の下の注記が無く、※1・※2・※3・※4・※B・※C・※Y の本文は確認できないため footnotes は空にした。",
+      "レコード名は表見出しから読み取って name に入れた。exchange_id と parent は本ページから読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 85,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 826,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.028446,
+    "cost_usd_batch": 0.014223,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 85,
+    "printed_page": "195",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード１（高額介護サービス費）",
+        "record": {
+          "exchange_id": "1611",
+          "name": "トレーラレコード１（高額介護サービス費）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1611”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“T1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "高額該当件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "高額該当件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "高額介護サービス費"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "高額介護サービス費を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "公費負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "高額介護サービス費による公費負担額の減少分を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "バイト数列の数字の全角/半角表記（1〜3桁目の判別）が不確か"
+    ]
+  },
+  "raw_text": null
+}

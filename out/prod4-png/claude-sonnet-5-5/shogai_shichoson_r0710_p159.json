@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 159,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2008,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040294,
+    "cost_usd_batch": 0.020147,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 159,
+    "printed_page": "99-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 14,
+            "no_raw": "(14)",
+            "name_path": [
+              "返戻(予定)一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "一次審査結果が返戻(予定)となった内容の一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7G1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "(15)",
+            "name_path": [
+              "警告一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "一次審査結果が警告・警告(重度)となった内容の一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7H1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "(16)",
+            "name_path": [
+              "支給量オーバーチェックリスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "決定支給量を超過している対象者に関する決定サービスコード単位の決定支給量超過状況の一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7J1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "(17)",
+            "name_path": [
+              "請求時効該当確認リスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求時効該当確認のリスト情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7K1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "(18)",
+            "name_path": [
+              "時効却下リスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "時効却下のリスト情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7L1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "(19)",
+            "name_path": [
+              "審査対象明細表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査対象となった請求情報に関する一次審査結果の詳細内容の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7M1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "(20)",
+            "name_path": [
+              "審査対象明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査対象となった請求情報に関する一次審査結果の詳細内容の一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E7N1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．２　二次審査結果情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "二次審査結果票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "一次審査結果票情報に二次審査結果を付加した結果情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E811"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "二次審査結果一覧情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "明細書単位の二次審査結果の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "E821"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "1つ目の表は前ページからの続き（項番14から開始）",
+      "印字ページ番号は「－ 99－1 －」と表記"
+    ]
+  },
+  "raw_text": null
+}

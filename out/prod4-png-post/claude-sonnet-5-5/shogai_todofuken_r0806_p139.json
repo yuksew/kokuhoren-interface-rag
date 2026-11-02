@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 139,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2157,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.041786,
+    "cost_usd_batch": 0.020893,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 139,
+    "printed_page": "21",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "重度障害者支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※41",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※41",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "重度障害者支援(体制)加算Ⅰ(基本)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援(体制)加算(基本)Ⅰの有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※74",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※74",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "重度障害者支援(体制)加算Ⅰ(重度)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援(体制)加算(重度)Ⅰの有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "重度障害者支援加算Ⅱ・Ⅲの有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援加算Ⅱ・Ⅲの有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※52\n※88",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※52",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※88",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "重度重複障害者加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度重複障害者加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "就労移行支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労移行支援体制加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※38\n※53",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※38",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※53",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "小規模事業加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模事業加算の有無をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "1:無し\n2:定員4人\n3:定員5人\n※5、※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※6",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "常勤医師加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "常勤医師加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "食事提供体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "訪問訓練の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訪問訓練の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 56,
+            "no_raw": "56",
+            "name_path": [
+              "自立生活支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自立生活支援加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 57,
+            "no_raw": "57",
+            "name_path": [
+              "神経内科医加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "神経内科医加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 58,
+            "no_raw": "58",
+            "name_path": [
+              "精神障害者退院支援施設加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "精神障害者退院支援施設加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 59,
+            "no_raw": "59",
+            "name_path": [
+              "短期滞在加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "短期滞在加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 60,
+            "no_raw": "60",
+            "name_path": [
+              "目標工賃達成加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "目標工賃達成加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅱ\n4:Ⅲ\n5:Ⅰ\n※5、※8",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※8",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "全行：前ページからの続きの表（見出し行は繰り返し）",
+      "項番49 備考：「※5、※52」と「※88」の改行位置は折り返しの可能性あり",
+      "項番46-60 項目名：ローマ数字の表記（Ⅰ、Ⅱ、Ⅲ）は画像上の判読"
+    ]
+  },
+  "raw_text": null
+}

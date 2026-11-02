@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 329,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3584,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002803,
+    "cost_usd_batch": 0.001401,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 329,
+    "printed_page": "86",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "代表者",
+              "氏名（カナ）"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "代表者氏名をカナ文字で設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "代表者",
+              "氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "代表者氏名を全角文字で設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "代表者",
+              "職名"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "代表者の役職名を全角文字で設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "代表者",
+              "郵便番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "郵便番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "代表者",
+              "住所（カナ）"
+            ],
+            "type": "英数",
+            "length": 75,
+            "length_raw": "75",
+            "content": "代表者の住所をカナ文字で設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "代表者",
+              "住所（漢字）"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "申請(開設)者の住所を全角文字で設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "主たる事業所名称"
+            ],
+            "type": "漢字",
+            "length": 80,
+            "length_raw": "80",
+            "content": "主たる事業所の名称を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "法人等種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "施設の法人等の種別をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "指定／基準該当等事業所区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "指定又は基準該当等の事業所の区分をコードで設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※3\n※4",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力 ◎:必須、○:パターン毎に必須、△:任意設定、空白:不要"
+      },
+      {
+        "mark": "※2",
+        "text": "申請書にはないが、その事業所の主たるサービスを提供している事業所名称を設定する。"
+      },
+      {
+        "mark": "※3",
+        "text": "異動年月日の年月が平成24年3月以前の場合、\"0\"または\"NULL\"を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+      },
+      {
+        "mark": "※4",
+        "text": "「3:特定基準該当事業所」については、使用しない。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 都道府県編 Ⅱ．障害児支援 1．2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1．3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼は『次のページ（PDF上のページ329）』の表の書き起こしでしたが、添付画像の下部ページ番号は『- 86 -』で、添付されているのはこの1ページのみです。添付されているページの表を書き起こしました。",
+      "項目列は『代表者』の縦結合グループ見出しを含む2段見出しですが、列名としては『項目』のみを columns に入れ、『代表者』は name_path にのみ入れました。",
+      "備考列の『※C』『※3』『※4』は縦に積まれた3行の記号を改行区切りで1セルにまとめました。"
+    ]
+  },
+  "raw_text": null
+}

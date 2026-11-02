@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 101,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 4878,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003448,
+    "cost_usd_batch": 0.001724,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 101,
+    "printed_page": "33",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入する市町村が設定する内容",
+          "編入先の広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "編入先の広域連合が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "認定有効期間（開始年月日）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "編入先広域連合で認定が有効となる日 （西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "認定有効期間（終了年月日）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "認定有効期間（開始年月日）から月を単位として３月以上経過した日（西暦年月日(YYYYMMDD)）を設定する\nただし異動事由に“04:合併による新規”を設定した場合は編入前の市町村が設定した日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス計画作成区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "居宅介護支援事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅介護支援事業所の番号を設定する（居宅サービス計画作成区分コードが\"2:自己作成\"の場合は省略可）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "居宅サービス計画適用開始年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス計画の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する（省略可）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "居宅サービス計画適用終了年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス計画の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する（省略可）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "訪問通所サービス",
+              "支給限度基準額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の訪問通所サービス支給限度基準額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "訪問通所サービス",
+              "上限管理適用期間開始年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "訪問通所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "訪問通所サービス",
+              "上限管理適用期間終了年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "訪問通所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "短期入所サービス",
+              "支給限度基準額※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の短期入所サービス支給限度基準額を日数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "短期入所サービス",
+              "上限管理適用期間開始年月日※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "短期入所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "短期入所サービス",
+              "上限管理適用期間終了年月日※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "短期入所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしだが、添付は1ページのみで、そのページの表（印字ページ33、項番21〜32）を書き起こした。",
+      "表の見出し行（項番・項目名など）は本ページに印字されているが、表題は見当たらないため title は null。レコード名・交換情報識別番号も読み取れないため record は空文字。",
+      "項番21の上（項番1〜20）が前ページにあると思われるため continued_from_prev_page を true にした（後処理で再判定される想定）。",
+      "項番30〜32の「※1」に対応する注記本文はこのページに印字されていないため footnotes は空。",
+      "「項目名」列の下段に縦結合された「訪問通所サービス」「短期入所サービス」は列ではなくグループ見出しとして name_path に入れた。",
+      "column_map の content は『編入先の広域連合が設定する内容』とし、『編入する市町村が設定する内容』は cells に入れた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 79,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4979,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003499,
+    "cost_usd_batch": 0.001749,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 79,
+    "printed_page": "１９２－９",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード１（合計）",
+        "record": {
+          "exchange_id": "",
+          "name": "トレーラレコード１（合計）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1531”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“T1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "通常分",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "項単位で合計したサービス件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "通常分",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "項単位で合計したサービス単位数出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "通常分",
+              "金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "項単位で合計したサービス金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "再審査・過誤",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "項単位で合計した再審査・過誤となる件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "再審査・過誤",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "項単位で合計した再審査・過誤となる単位数出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "再審査・過誤",
+              "調整額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "項単位で合計した再審査・過誤調整額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "項単位で合計した介護予防・日常生活支援総合事業費（再審査・過誤分を考慮したもの）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "項単位で合計した自己負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "公費負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "項単位で合計した公費負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード２（累計）",
+        "record": {
+          "exchange_id": "",
+          "name": "トレーラレコード２（累計）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "４",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“1531”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "２",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“T2”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "通常分",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "４月から審査年月までの累計サービス件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "通常分",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "４月から審査年月までの累計サービス単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "通常分",
+              "金額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "４月から審査年月までの累計サービス金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "再審査・過誤",
+              "件数"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "４月から審査年月までの累計での再審査・過誤となる件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "再審査・過誤",
+              "単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "４月から審査年月までの累計での再審査・過誤となる単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "再審査・過誤",
+              "調整額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "４月から審査年月までの累計での再審査・過誤調整額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "４月から審査年月までの介護予防・日常生活支援総合事業費（再審査・過誤分を考慮したもの）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "項単位で合計した自己負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "公費負担額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "１３",
+            "content": "項単位で合計した公費負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "トレーラレコード２の項番4・7の「単位数」のバイト数は、原文ではそれぞれ12・13と読み取った（項番4は12、項番7は13）。",
+      "トレーラレコード２の項番10の内容は原文どおり「項単位で合計した自己負担額を出力する」と読み取った。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 628,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3785,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002903,
+    "cost_usd_batch": 0.001452,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 628,
+    "printed_page": "２９２－２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "⑦ 補装具費支給レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "補装具費支給レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": ":「インタフェース仕様書 市町村編 IV.給付実績交換業務 1.2 インタフェース一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":「インタフェース仕様書 市町村編 IV.給付実績交換業務 1.3.1(1)入力識別番号一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "07を設定する（補装具費支給レコード）",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "給付実績情報作成区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績情報の作成区分を出力",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:新規\n2:修正\n3:取消",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "算定年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補装具を支給決定した年月(西暦年月YYYYMM)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y\n※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※3",
+                "text": ":借受けの場合、初回は開始年月を設定する。2月目以降は、当該請求に対する借受けを行った年月を設定する。最終月は終了年月を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "証記載市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の都道府県等番号、または受給者証記載の市町村番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※4",
+                "text": ":障害者の場合は、本人の受給者証番号を設定する。なお、障害者の場合で、障害者総合支援法に基づく障害福祉サービス費及び地域相談支援給付費を併給しており、それぞれの受給者証番号が異なる場合は、障害福祉サービス費の受給者証番号を設定する。障害児の場合は、保護者の受給者証番号を設定する。なお、障害児の場合で、障害者総合支援法に基づく障害福祉サービス費及び児童福祉法に基づく障害児給付費を併給する場合は、いずれかの受給者証番号を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "受給者証番号種別"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "受給者証番号の種別を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:障害者総合支援法に基づく受給者証番号\n2:児童福祉法に基づく受給者証番号\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": ":障害者で障害者総合支援法に基づく障害福祉サービス費を受給している場合は、「1」を設定する。障害児で児童福祉法に基づく障害児給付費を受給している場合は、「2」を設定する。障害児で障害者総合支援法に基づく障害福祉サービス費を受給している場合は、「1」を設定する。なお、障害児の場合で、障害者総合支援法に基づく障害福祉サービス費及び児童福祉法に基づく障害児給付費を併給する場合は、「1」、「2」のいずれかを設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "補装具情報",
+              "氏名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "氏名（漢字）を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "補装具情報",
+              "郵便番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "郵便番号を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "補装具情報",
+              "住所（カナ）"
+            ],
+            "type": "英数",
+            "length": 75,
+            "length_raw": "75",
+            "content": "住所（カナ）を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "補装具情報",
+              "住所（漢字）"
+            ],
+            "type": "漢字",
+            "length": 128,
+            "length_raw": "128",
+            "content": "住所（漢字）を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "補装具情報",
+              "電話番号"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "電話番号を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "利用者負担上限月額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補装具の利用者負担上限月額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補装具の利用者が負担した金額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": ":利用者が補装具の総費用額を全て自己負担し、償還払いとなるケースの場合、総費用額を設定するのではなく、本来利用者が負担すべき費用を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページには※B・※2・※Y・※3・※C・※4・※5・※6・※1・※Zの注記本文が含まれていないため、footnotes は空にした。",
+      "record の exchange_id と parent はページ内に読み取れる記載がないため空文字にした。",
+      "項番・バイト数の数字が全角か半角か画像から確定できないため、no_raw・length_raw は半角で書き起こした。",
+      "補装具情報の縦書き見出しは項番9〜13にまたがるグループ見出しとして name_path にのみ入れた。"
+    ]
+  },
+  "raw_text": null
+}

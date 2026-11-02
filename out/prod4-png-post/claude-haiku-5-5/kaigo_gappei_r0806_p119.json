@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 119,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3457,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002738,
+    "cost_usd_batch": 0.001369,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 119,
+    "printed_page": "４１－６",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・地域密着型サービスコード異動連絡票情報",
+        "record": {
+          "exchange_id": "5F11",
+          "name": "地域密着型サービスコード異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "新設された市町村が設定する内容",
+          "広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "新設された市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5F11”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村の効力が発生する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“1:新規”を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村の保険者番号を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス項目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "有効開始日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された保険者としての効力が発生する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "有効終了日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "介護給付費単位数表に設定された単位数(厚生労働大臣が定めた単位数)と同じであれば地域密着型サービスコード異動連絡票情報は不要。"
+      }
+    ],
+    "uncertain": [
+      "「広域連合が設定する内容」の「インタフェースの提供は不要」は、表では1つのセルが項番1〜10にまたがって結合されているように見えるため、各行に同じ値を入れた。",
+      "表見出しの「・地域密着型サービスコード異動連絡票情報」は、表の直前にある見出しをそのまま採用した。",
+      "表は項番・項目名・内容の列のみで、属性・バイト数の列がないため table_kind を other とした。"
+    ]
+  },
+  "raw_text": null
+}

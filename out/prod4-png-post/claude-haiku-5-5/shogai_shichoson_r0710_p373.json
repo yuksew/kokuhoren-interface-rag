@@ -1,0 +1,540 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 373,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 5793,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003907,
+    "cost_usd_batch": 0.001954,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 373,
+    "printed_page": "162-18",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "④ 集計情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "集計情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > K122",
+          "出力対象項目（※1） > K221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "04 を設定する(集計情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "コード値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月 YYYYMM を設定する）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（チェックデジット1桁含む）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コード 2 桁を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "請求額集計欄",
+              "集計欄分類番号"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一のサービス種類コードで複数の集計情報を作成する為の集計欄分類番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "請求額集計欄",
+              "サービス利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス利用日数を設定\n本体報酬を算定しない日において、各種加算のみを算定した場合も１日とカウントする\n上限額管理加算、欠席時対応加算等も１日とカウントする",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "請求額集計欄",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービス種類コードごと集計欄分類番号ごとの単位数を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "請求額集計欄",
+              "単位数単価"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "整数部2桁小数部3桁の半角数字 8.5 円の場合、08500(または8500)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "請求額集計欄",
+              "給付率"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "0を設定する（サービス提供年月が平成24年3月以前:給付率を設定）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "請求額集計欄",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "請求額集計欄",
+              "1割相当額（サービス提供年月が平成24年3月以前:給付率に基づく請求額）"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "総費用額の1割に相当する額を設定する（サービス提供年月が平成24年3月以前:総費用額×給付率／100）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は次のページの表とあるが、添付された1ページ（PDF上のページ373、印字ページ162-18）の表を書き起こした。",
+      "項番10〜16の左端に縦結合された「請求額集計欄」は name_path の外側に入れたが、原本の見出し文字が縦書きで読みにくい箇所があるため表記に誤りがないか確認が必要。",
+      "項番11の内容は折り返しの位置から改行を推定した（『設定』の後、『カウントする』の後で区切った）。",
+      "項番3の内容は括弧の全角・半角の判別が画像からは確実でなく、『(集計情報レコード)』と書き起こした。",
+      "項番16の項目名は折り返しで途中に空白が入っていたため空白を詰めて書き起こした。",
+      "『1日』の『１』が全角か半角か画像から確実に判断できないため全角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

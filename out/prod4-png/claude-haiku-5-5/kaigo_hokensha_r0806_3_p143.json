@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 143,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2781,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.0024,
+    "cost_usd_batch": 0.0012,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 143,
+    "printed_page": "395-6",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "振込者一覧表情報の交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“3971”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“D1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "被保険者氏名（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "被保険者氏名（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "金融機関コード"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "受給者の口座の金融機関コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "30",
+            "content": "受給者の口座の金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "金融機関支店コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "受給者の口座の金融機関支店コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "金融機関支店名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者の口座の金融機関支店名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "口座種目"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "受給者の口座の口座種目を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "口座種目名"
+            ],
+            "type": "漢字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者の口座の口座種目名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "口座番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "受給者の口座の口座番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者の口座の口座名義人（カナ）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "振込金額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "受給者の口座への振込金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "備考"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "償還または高額の区別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "ページ番号の全角・半角表記が画像から確定できず、半角で書き起こした。",
+      "項番10〜14の数字は全角表記の可能性があるが、no_raw は半角で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

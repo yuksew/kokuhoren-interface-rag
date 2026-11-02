@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 462,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3337,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002679,
+    "cost_usd_batch": 0.00134,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 462,
+    "printed_page": "187-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（６）高額障害児給付費都道府県等異動連絡票情報（C141）",
+        "record": {
+          "exchange_id": "C141",
+          "name": "高額障害児給付費都道府県等異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": ":「インタフェース仕様書 市町村編 III.市町村事務共同処理 1.2 インタフェース一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "都道府県等情報の変更等が生じた年月（西暦年月（YYYYMM））と連番（異動順）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:新規\n2:変更",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "都道府県等情報の異動事由を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "01(固定値)",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "市町村番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "口座情報",
+              "金融機関コード"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "市町村の口座の金融機関コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2\n※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":高額障害児給付費支給処理を委託した場合、必須。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "口座情報",
+              "金融機関支店コード"
+            ],
+            "type": "コード値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "市町村の口座の金融機関支店コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2\n※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":高額障害児給付費支給処理を委託した場合、必須。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "口座情報",
+              "口座種目"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "市町村の口座の口座種目を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2\n※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":高額障害児給付費支給処理を委託した場合、必須。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "口座情報",
+              "口座番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "市町村の口座の口座番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2\n※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":高額障害児給付費支給処理を委託した場合、必須。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "口座情報",
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "市町村の口座の口座名義人（カナ）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": ":高額障害児給付費支給処理を委託した場合、必須。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "振込依頼人コード"
+            ],
+            "type": "コード値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "銀行が採番した振込依頼人識別のためのコードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": ":各種支払支援処理を委託して、市町村単位に振込データ作成を行う場合、必須。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表としていますが、添付は PDF ページ462 の1ページのみで、書き起こしたのはこのページの表（項番1〜11）です。",
+      "「口座情報」の縦結合の範囲は項番6〜10と読み取りました。項番11は結合の外側と判断しました。",
+      "項番6〜10の必須記号「○」は縦に結合されたセルの1つの記号と見て、各行に同じ値を入れました。",
+      "表の内容欄にある「当情報の内容」は原文どおり「当情報」と書きました（誤字の可能性あり）。",
+      "備考欄の※B・※C・※Y・※2・※3 の注記本文は、このページには見当たりませんでした。"
+    ]
+  },
+  "raw_text": null
+}

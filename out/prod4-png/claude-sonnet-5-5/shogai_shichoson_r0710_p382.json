@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 382,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2082,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.041034,
+    "cost_usd_batch": 0.020517,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 382,
+    "printed_page": "162-27",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "⑦ 一次審査済障害児相談支援給付費請求書／一次審査済特例障害児相談支援給付費請求書情報 サービス情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "サービス情報レコード",
+          "parent": "一次審査済障害児相談支援給付費請求書／一次審査済特例障害児相談支援給付費請求書情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "出力対象項目（※1） > K311、K321",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "出力対象項目（※1） > K311、K321",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "03を設定する（サービス情報レコード）",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（ﾁｪｯｸﾃﾞｼﾞｯﾄ1桁含む）",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコード6桁",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコードごとの単位数",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "回数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "サービスコードごとの回数",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービスコードごとの算定額",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "摘要"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "100",
+            "content": "サービスコードごとの摘要",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月（西暦年月 YYYYMM）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:正常\n2:警告\n3:返戻\n4:過誤\n5:過誤の取下\n6:警告（重度）",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目 ◎:出力対象項目、○:請求内容により出力対象となる項目 △:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 市町村編 Ⅱ.障害児支援2.3.1(4)入力識別番号一覧」参照。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 事業所編 1.2.2 インタフェース一覧」を参照のこと。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "項番3の内容「03を設定する」の全角/半角の表記は画像から確定できない",
+      "見出し「出力対象項目（※1）」の下段「K311、K321」を ' > ' で連結した"
+    ]
+  },
+  "raw_text": null
+}

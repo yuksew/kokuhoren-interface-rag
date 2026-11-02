@@ -1,0 +1,304 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_gappei_r0806",
+ "page": 161,
+ "edition": "令和8年6月版",
+ "volume": "市町村合併編",
+ "printed_page": "67",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "共同処理用受給者異動連絡票情報（基本情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "共同処理用受給者異動連絡票情報（基本情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "編入する市町村が設定する内容",
+    "編入先の広域連合が設定する内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "編入先の広域連合が設定する内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“5C11”（固定値）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "認定有効期間（開始年月日）（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“1:新規”を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "“1 新規”を設定する",
+       "to": "“1:新規”を設定する",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“01 :受給資格取得”を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者証記載の証記載保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "編入先広域連合で新たに付番した被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "被保険者氏名（漢字）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者氏名（漢字）を定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "被保険者氏名（漢字）を設定する（省略可）",
+       "to": "被保険者氏名（漢字）を定する（省略可）",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "郵便番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者の郵便番号を設定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "住所（カナ）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者の住所（カナ）を設定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "住所（漢字）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者の住所（漢字）を設定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "電話番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者の電話番号を設定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "帳票出力順序コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "市町村コード等の任意のコードを設定する\n帳票出力のソートで使用する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページ」の表を求めているが、添付は1ページ（印字ページ67、PDF上のページ161）のみで、このページの表を書き起こした。次のページは添付されていないため含めていない。",
+  "「編入する市町村が設定する内容」列は項番1〜12にまたがる縦結合セルのため、各行に同じ値「インタフェースの提供は不要」を入れた。",
+  "レコード名は表見出しから「共同処理用受給者異動連絡票情報（基本情報）」とし、交換情報識別番号・上位の情報名はページ内に記載がないため空文字とした。",
+  "項番12の内容は改行位置に基づき2文に分けて改行で区切った。"
+ ]
+}

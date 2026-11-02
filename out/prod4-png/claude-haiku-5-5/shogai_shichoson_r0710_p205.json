@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 205,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4444,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003233,
+    "cost_usd_batch": 0.001616,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 205,
+    "printed_page": "129-6",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "⑨ 一次審査済サービス提供実績記録票情報 明細情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細情報レコード（複数レコード）",
+          "parent": "一次審査済サービス提供実績記録票情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "02を設定する（明細情報レコード）",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月 YYYYMM を設定する）",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号（チェックデジット1桁含む）",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "様式番号2桁、枝番2桁を設定\n様式3－1の場合、0301を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "提供通番"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "居宅介護、重度訪問介護、同行援護、行動援護、共同生活援助（受託居宅介護サービス費）において、複数の明細情報レコード（サービス提供時間）が一連のサービス提供であることを識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "日付"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日を設定（短期入所の場合、サービス提供を行った全ての日を設定する）",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "サービス提供回数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日付の中でサービスを提供した順を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※4",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "サービス内容"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "居宅介護、同行援護、および重度包括のサービス種別を判定する為に、決定コード6桁を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "ヘルパー資格"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "資格要件対象のサービスのみ設定\n居宅介護（11:初任者等 12:基礎等 13:重訪）\n同行援護（11:初任者等 12:基礎等 15:初任者等（通訳）） 16:基礎等（通訳） 17:通訳）\n行動援護（21:初任者等 22:減算）",
+            "required": null,
+            "required_by": [],
+            "note": "※7\n※10\n※19\n※20",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "運転フラグ"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "運転を表す場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "開始時間"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "開始時間を数字4桁で設定\n例)10:00→1000",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "終了時間"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "終了時間を数字4桁で設定\n例)11:00→1100",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "算定時間数"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "居宅介護、重度訪問介護、行動援護、重度包括、同行援護、共同生活援助（受託居宅介護サービス費）、生活介護において、算定時間数（時間）を設定（整数部2桁＋小数部2桁を設定、例:10.5時間→1050）",
+            "required": null,
+            "required_by": [],
+            "note": "※30",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "乗降（回数）"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "乗降介助の回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "移動"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "重度訪問介護の移動に係る算定時間数（時間）を整数部1桁＋小数部1桁で設定（例:3時間→30）。",
+            "required": null,
+            "required_by": [],
+            "note": "※11",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "派遣人数"
+            ],
+            "type": "数値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "通常は'1'を設定\n同一時間に 2 人ヘルパーでサービス提供を行った場合'2'を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "前月からの継続サービス"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "居宅介護、同行援護において、前月から継続したサービス提供を行った場合、1を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "送迎加算 往"
+            ],
+            "type": "数値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎（往路）を行った回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "送迎加算 復"
+            ],
+            "type": "数値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎（復路）を行った回数を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出しに「⑨」とあり、レコードの交換情報識別番号は本ページから読み取れないため exchange_id を空文字にした。",
+      "項目13の内容欄は「同行援護」の行の括弧の対応が原文上あいまいなため、原文どおり「（通訳））」「（通訳）」を書き写した。",
+      "項目13の備考欄の※7 ※10 ※19 ※20は、原文で縦に並んでいるため改行区切りで記録した。",
+      "本ページには ※1 ※2 などの注記本文が含まれていないため footnotes は空にした。",
+      "表の最終行（項番23）の下で表が終わっており、次ページへ続くかは本ページからは判断できないため continues_to_next_page は false とした。"
+    ]
+  },
+  "raw_text": null
+}

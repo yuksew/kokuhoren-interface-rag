@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 577,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4822,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003422,
+    "cost_usd_batch": 0.001711,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 577,
+    "printed_page": "245",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（１）高額障害児給付費給付判定結果情報",
+        "record": {
+          "exchange_id": "",
+          "name": "高額障害児給付費給付判定結果情報",
+          "parent": "高額障害児給付費情報（入力情報）"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "証記載都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス提供年月（西暦年月（YYYYMM））を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "受付年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "都道府県等が受給者からの申請を受け付けた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "決定年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "都道府県等が支給または不支給を決定した年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "本人支払額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者が支払った金額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "支給区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支給区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:支給\n2:不支給",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "支給金額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者に支給する金額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "不支給理由"
+            ],
+            "type": "漢字",
+            "length": 160,
+            "length_raw": "160",
+            "content": "不支給の場合の理由を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "口座払",
+              "金融機関コード"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "口座払の金融機関コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※4\n※C",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "口座払",
+              "金融機関支店コード"
+            ],
+            "type": "コード値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "口座払の金融機関支店コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※4\n※C",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "口座払",
+              "口座種目"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "口座払の口座種目を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※4\n※C",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "口座払",
+              "口座番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "口座払の口座番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※4\n※C",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "口座払",
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "口座払の口座名義人(カナ)を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "半角カタカナ",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文では「次のページ」の表とあるが、添付は1ページだけで、この表はそのページ（印字ページ245）に載っている表。このページの表を書き起こした。",
+      "項番2の項目名が「証記載都道府県等番号」と印字されている（「受給者証記載」の誤記か切れかの判別がつかない）。原文どおり書いた。",
+      "項番9・10・11〜15の備考にある※2・※3・※4・※Y・※Z・※B・※C の凡例はこのページに無く、footnotesには入れていない。",
+      "項番11〜15の必須入力「○」は縦に結合されたセルのため、5行すべてに同じ値を入れた。",
+      "項番1〜8の備考「※B」「※C」「※Y」など、および項目名欄の口座払（縦書きグループ見出し）の扱いは原文から判断した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 154,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3717,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002868,
+    "cost_usd_batch": 0.001434,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 154,
+    "printed_page": "60",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "•共同処理用受給者異動連絡票情報（償還払給付額管理処理情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "共同処理用受給者異動連絡票情報（償還払給付額管理処理情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "合併前の各市町村および新設された市町村が設定する内容",
+          "広域連合の保険者が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "広域連合の保険者が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5D11”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "各市町村が合併し市町村が新設された日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“1 新規”を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01 :受給資格取得”を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の証記載保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者証記載の被保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "保険給付支払の一時差止の開始年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険給付支払の一時差止を開始した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "保険給付支払の一時差止の終了年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険給付支払の一時差止を終了した年月日(西暦年月日(YYYYMMDD))を設定する(省略可)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "保険給付支払の一時差止区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険給付支払の一時差止の区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "保険給付支払の一時差止金額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険給付支払の一時差止金額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は PDF 上のページ154（印字ページ60）の1ページだけなので、添付ページに載っている表を書き起こした。",
+      "表の種別は項番・項目名・設定内容の列のみで属性やバイト数の列がないため、table_kind を other とした。",
+      "「合併前の各市町村および新設された市町村が設定する内容」列は全行にまたがる結合セルで「インタフェースの提供は不要」と印字されているため、各行の cells に同じ値を入れた。",
+      "「5D11」の引用符・括弧の記号（“ ” や（ ））は画像の印字に沿って書き写したが、細部の字形に確信はない。"
+    ]
+  },
+  "raw_text": null
+}

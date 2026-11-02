@@ -1,0 +1,2301 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 77,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 18739,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.207576,
+    "cost_usd_batch": 0.103788,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 77,
+    "printed_page": "29-9",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "保険者独自サービス(A2、A6) > 新規",
+          "保険者独自サービス(A2、A6) > 変更",
+          "保険者独自サービス(A2、A6) > 終了",
+          "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+          "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+          "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+          "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+          "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+          "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+          "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+          "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+          "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+          "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+          "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+          "保険者独自(定額)サービス(AA、AC、AE) > 終了"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "サービス名称"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "算定単位"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "制限日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "算定回数制限期間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "支給限度額対象区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "給付率"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "事業対象者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "要支援1受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "要支援2受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "運動器機能向上体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "栄養マネジメント(改善)体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "口腔機能向上体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "事業所評価加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "要介護1受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "要介護2受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "要介護3受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "要介護4受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "要介護5受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(A2、A6) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(A2、A6) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A3、A7(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定額)サービス(A4、A8(※1)) > 終了",
+                "value": null
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定率)サービス(A9、AB、AD) > 終了",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自(定額)サービス(AA、AC、AE) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "項番21～24は、サービス種類コードが「A7」、「A8」の場合にのみ入力可能とする。"
+      }
+    ],
+    "uncertain": [
+      "表内の記号は○と×のみ。原文の○は小さい丸のため○で表記した。",
+      "項目名の改行折り返しは詰めて記載(例:要支援1受給者実施区分)。数字は原文で全角の可能性があるが半角で記載した。",
+      "見出しの『保険者独自(定率)サービス』等は原文で複数行に分かれており、列名は連結して表記した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 366,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1602,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036234,
+    "cost_usd_batch": 0.018117,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 366,
+    "printed_page": "162-11",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "・各交換情報識別番号とレコード構成、入力識別番号の対応は、以下の通りである。",
+        "record": {
+          "exchange_id": "B731",
+          "name": "",
+          "parent": "障害児支援"
+        },
+        "columns": [
+          "項番",
+          "レコード名称",
+          "交換情報識別番号 > 障害児支援 > B731"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "レコード名称",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "交換情報識別番号 > 障害児支援 > B731",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K122、K221",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "日数情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K122、K221",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K122、K221",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "集計情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K122、K221",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "契約情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K122、K221",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "一次審査済障害児相談支援給付費請求書情報 明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K311",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "一次審査済障害児相談支援給付費請求書情報 サービス情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K311",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "一次審査済特例障害児相談支援給付費請求書情報 明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K321",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "一次審査済特例障害児相談支援給付費請求書情報 サービス情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K321",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "一次審査済サービス提供実績記録票情報 基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K611",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "一次審査済サービス提供実績記録票情報 明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "◎:K611",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "一次審査済利用者負担上限額管理結果票情報 基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K411、○K421",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "一次審査済利用者負担上限額管理結果票情報 明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": "○:K411、○K421",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "・",
+        "text": "凡例：◎…必須レコード、○…実績内容により必要となるレコード、空白…不要なレコード\nまた、入力識別番号の内容は以下の通りである。"
+      }
+    ],
+    "uncertain": [
+      "交換情報識別番号の多段見出し（交換情報識別番号／障害児支援／B731）の連結表記は推定",
+      "必須列の記号は◎と○を目視で判別"
+    ]
+  },
+  "raw_text": null
+}

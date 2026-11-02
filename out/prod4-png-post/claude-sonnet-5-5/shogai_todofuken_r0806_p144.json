@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 144,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1759,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037806,
+    "cost_usd_batch": 0.018903,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 144,
+    "printed_page": "23-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※１）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※１）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 116,
+            "no_raw": "116",
+            "name_path": [
+              "職業指導員体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "職業指導員体制の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 117,
+            "no_raw": "117",
+            "name_path": [
+              "重度知的障害児収容棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度知的障害児収容棟設置の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※18\n※76",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※76",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 118,
+            "no_raw": "118",
+            "name_path": [
+              "肢体不自由児施設重度病棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "肢体不自由児施設重度病棟設置の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※18\n※77",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※77",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "心理担当職員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "心理担当職員配置加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2: Ⅰ\n3: Ⅱ\n※5\n※55",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※55",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "小規模グループケア加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模グループケア加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:サテライト\n※5、※18\n※75",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※75",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 121,
+            "no_raw": "121",
+            "name_path": [
+              "児童発達支援管理責任者専任加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "児童発達支援管理責任者専任加算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 122,
+            "no_raw": "122",
+            "name_path": [
+              "障害児施設区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "障害児施設の区分をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※C\n※5\n※18\n※28",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※28",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 123,
+            "no_raw": "123",
+            "name_path": [
+              "送迎加算(重度)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算(重度)の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5\n※18",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "、※38",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 124,
+            "no_raw": "124",
+            "name_path": [
+              "指定有効開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "指定有効開始年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※18\n※29\n※30\n※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※30",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※Y",
+                "text": "主たる事業所サービス種類コード2英数主たる事業所で実施しているサービスの種類を設定△",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 125,
+            "no_raw": "125",
+            "name_path": [
+              "指定有効終了年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "指定有効終了年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※18\n※29\n※30\n※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※30",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※Y",
+                "text": "主たる事業所サービス種類コード2英数主たる事業所で実施しているサービスの種類を設定△",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 126,
+            "no_raw": "126",
+            "name_path": [
+              "指定更新申請中区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "指定更新申請中区分をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※18\n※29\n※30",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※29",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※30",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 127,
+            "no_raw": "127",
+            "name_path": [
+              "効力停止開始年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "効力停止開始年月日(西暦年月日(YYYYMMDD))を設定",
+            "required": "△",
+            "required_by": [],
+            "note": "※18\n※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※18",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※Y",
+                "text": "主たる事業所サービス種類コード2英数主たる事業所で実施しているサービスの種類を設定△",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページから続き、次ページへ続く可能性が高い",
+      "備考の「2: Ⅰ」「3: Ⅱ」のローマ数字は原文表記に近い形で記載"
+    ]
+  },
+  "raw_text": null
+}

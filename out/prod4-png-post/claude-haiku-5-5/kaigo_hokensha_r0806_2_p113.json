@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 113,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1848,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001933,
+    "cost_usd_batch": 0.000967,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 113,
+    "printed_page": "208",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・トレーラレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "トレーラレコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "交換情報識別番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“6411”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別文字を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "“T1”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "公費対象単位数"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "審査年月、公費負担者単位の公費対象分の合計単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "公費負担金額"
+            ],
+            "type": "数字",
+            "length": 13,
+            "length_raw": "13",
+            "content": "審査年月、公費負担者単位の公費負担分の合計金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "公費分本人負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "審査年月、公費負担者単位の被保険者負担分の合計金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は PDF上のページ113（印字ページ208）1枚のみで、この1枚に載っている「トレーラレコード」の表を書き起こした。",
+      "「バイト数」の見出しは原文で「バ イト / 数」と2段に割れて印字されていたため、「バイト数」と連結して記録した。",
+      "「備考」欄の引用符は原文の “6411” “T1” の表記に合わせて記録した。"
+    ]
+  },
+  "raw_text": null
+}

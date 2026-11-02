@@ -1,0 +1,243 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 127,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "385",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・ヘッダレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "ヘッダレコード",
+    "parent": "振込データ情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "データ区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1･･… ヘッダーレコード",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "種別コード"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "21･･… 総合振込",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "コード区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "0･･… JIS",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "振込依頼人コード"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "銀行が採番した振込依頼人識別のためのコード",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "振込依頼人名"
+     ],
+     "type": "英数",
+     "length": 40,
+     "length_raw": "40",
+     "content": "カナ文字および英数字",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "取組日"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "取組日（MMDD）\n銀行営業日",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "仕向銀行番号"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "4",
+     "content": "取引銀行番号（統一金融機関番号）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "仕向銀行名"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "取引銀行名（カナ文字および英数字）",
+     "required": null,
+     "required_by": [],
+     "note": "任意\n省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "仕向支店番号"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "3",
+     "content": "取引支店番号（統一店番号）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "仕向支店名"
+     ],
+     "type": "英数",
+     "length": 15,
+     "length_raw": "15",
+     "content": "取引支店名（カナ文字および英数字）",
+     "required": null,
+     "required_by": [],
+     "note": "任意\n省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "預金種目（依頼人）"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "1･･… 普通預金\n2･･… 当座預金\n9･･… その他",
+     "required": null,
+     "required_by": [],
+     "note": "任意\n省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "口座番号（依頼人）"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "振込依頼人の口座番号",
+     "required": null,
+     "required_by": [],
+     "note": "任意\n省略時はスペース",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "ダミー"
+     ],
+     "type": "英数",
+     "length": 17,
+     "length_raw": "17",
+     "content": "スペース",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼者の依頼で次のページとされたが、添付は PDF 上のページ127（印字ページ385）の1ページのみのため、添付ページの表を書き起こした。",
+  "項番2の内容「２１･･…」、項番3の内容「０･･…」、項番11の内容の「･･…」の記号は原文の字形（全角・半角、中黒の数）が判然としないため、見えたとおりに書いた。"
+ ]
+}

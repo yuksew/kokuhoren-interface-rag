@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 601,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4034,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003028,
+    "cost_usd_batch": 0.001514,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 601,
+    "printed_page": "270",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "② 明細レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細レコード（複数レコード）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "「インタフェース仕様書 市町村編 Ⅲ．市町村事務共同処理 5．2 インタフェース一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "レコード種別コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "2(固定値)",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "事業所番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "事業所名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "事業所名（漢字）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。",
+                "source": "page"
+              },
+              {
+                "mark": "※2",
+                "text": "受給者証番号が設定できない場合（支給決定されていない）は任意の番号（一次判定ソフトで使用している「申請番号」等）を設定すること。受給者証番号と重複しないように留意すること。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "調査依頼年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "訪問調査の依頼年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "調査実施年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "訪問調査の実施年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "調査票受領年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "訪問調査票の受領年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "請求額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "請求額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "消費税額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "請求額の消費税額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "支払額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "支払額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "消費税額"
+            ],
+            "type": "数値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "支払額の消費税額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "備考"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "請求額修正理由等を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "受付エラー内容"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "国保連合会の受付点検エラーとなった場合、本項目にエラー内容を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "国保連合会の受付点検で「エラー」となった場合、本項目にエラー内容を設定し、市町村に提供する。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力 ◎:必須、○:請求内容により必須、△:任意設定、空白:不要"
+      },
+      {
+        "mark": "※2",
+        "text": "受給者証番号が設定できない場合（支給決定されていない）は任意の番号（一次判定ソフトで使用している「申請番号」等）を設定すること。受給者証番号と重複しないように留意すること。"
+      },
+      {
+        "mark": "※3",
+        "text": "国保連合会の受付点検で「エラー」となった場合、本項目にエラー内容を設定し、市町村に提供する。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 市町村編 Ⅲ．市町村事務共同処理 5．2 インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1．3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼では『次のページ』の表を求められていましたが、添付は印字ページ270の1ページのみで、このページの表（明細レコード）を書き起こしました。",
+      "ページ下部の『5．3．2 訪問調査委託料支払情報取込エラーリスト（FLA1）（ＰＤＦ）』は『PDF出力情報であるため、項目を記載していません』と書かれた1枠の囲みのみで、列も項目もないため表として書き起こしていません。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,289 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 185,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "426",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（4）共同処理用受給者情報（基本情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "共同処理用受給者情報（基本情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "共同処理用受給者情報の識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“5C41”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "受給者の変更等が生じた年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "訂正年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "訂正年月日を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "異動区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "1: 新規\n2: 変更",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "共同処理用受給者情報の異動事由を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "被保険者証記載の保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "被保険者氏名（漢字）"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "被保険者氏名（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "郵便番号"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "被保険者の郵便番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "住所（カナ）"
+     ],
+     "type": "英数",
+     "length": 75,
+     "length_raw": "75",
+     "content": "被保険者の住所（カナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "住所（漢字）"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "被保険者の住所（漢字）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "電話番号"
+     ],
+     "type": "英数",
+     "length": 12,
+     "length_raw": "12",
+     "content": "被保険者の電話番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "帳票出力順序コード"
+     ],
+     "type": "英数",
+     "length": 3,
+     "length_raw": "3",
+     "content": "市町村コード等の任意のコードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※ 1",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)"
+  },
+  {
+   "mark": "※ 2",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページ」の表の書き起こしだが、添付は印字ページ426（PDF上のページ185とされるもの）の1ページだけで、この表のみを書き起こした。",
+  "レコードの交換情報識別番号（record.exchange_id）は本文に明示されていないため空文字とした。項番1の備考“5C41”固定は項目1の値であり、レコードの識別番号とは断定できない。",
+  "record.name と parent は表題「（4）共同処理用受給者情報（基本情報）」から判断したため、確信は中程度。",
+  "項番10・11・12・13 の原文は全角数字で印字されていたが、no_raw・length_raw は半角で記載した。"
+ ]
+}

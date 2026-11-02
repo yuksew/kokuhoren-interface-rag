@@ -1,0 +1,635 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_4",
+ "page": 125,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "614",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 25,
+     "no_raw": "２５",
+     "name_path": [
+      "居宅サービス計画",
+      "居宅サービス計画作成区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "居宅サービス計画作成者の区分を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 26,
+     "no_raw": "２６",
+     "name_path": [
+      "居宅サービス計画",
+      "事業所番号（居宅介護支援事業所等）"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "居宅介護支援事業所番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "項番２５が「居宅介護支援事業所」のとき必須",
+     "cells": []
+    },
+    {
+     "no": 27,
+     "no_raw": "２７",
+     "name_path": [
+      "開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "サービス開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "no_raw": "２８",
+     "name_path": [
+      "中止年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "サービス中止年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 29,
+     "no_raw": "２９",
+     "name_path": [
+      "中止理由・入所（院）前の状況コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "中止理由又は入所(院)前の状況を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 30,
+     "no_raw": "３０",
+     "name_path": [
+      "入所（院）年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "施設への入所(院)年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3\n※ 7",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※7",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 31,
+     "no_raw": "３１",
+     "name_path": [
+      "退所（院）年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "施設の退所(院)年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3\n※ 8",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※8",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 32,
+     "no_raw": "３２",
+     "name_path": [
+      "入所（院）実日数"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "入所(院)期間中の実入所(院)日数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 33,
+     "no_raw": "３３",
+     "name_path": [
+      "外泊日数"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "入所(院)期間中の外泊として精算可能な日数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "no_raw": "３４",
+     "name_path": [
+      "退所（院）後の状態コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "退所（院）後の状況を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 35,
+     "no_raw": "３５",
+     "name_path": [
+      "保険給付率"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "３",
+     "content": "保険分給付率を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 36,
+     "no_raw": "３６",
+     "name_path": [
+      "公費１給付率"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "３",
+     "content": "公費１分給付率を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 37,
+     "no_raw": "３７",
+     "name_path": [
+      "公費２給付率"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "３",
+     "content": "公費２分給付率を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 38,
+     "no_raw": "３８",
+     "name_path": [
+      "公費３給付率"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "３",
+     "content": "公費３分給付率を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 39,
+     "no_raw": "３９",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "サービス単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "サービス単位数の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 40,
+     "no_raw": "４０",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "請求額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "９",
+     "content": "保険請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 41,
+     "no_raw": "４１",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "利用者負担額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "利用者負担額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 42,
+     "no_raw": "４２",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "緊急時施設療養費請求額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "９",
+     "content": "緊急時施設療養費保険請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 43,
+     "no_raw": "４３",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "特定診療費請求額"
+     ],
+     "type": "数字",
+     "length": 9,
+     "length_raw": "９",
+     "content": "特定診療費保険請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 44,
+     "no_raw": "４４",
+     "name_path": [
+      "合計情報（決定前）",
+      "保険",
+      "特定入所者介護サービス費等請求額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "特定入所者介護サービス費等請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 9\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※9",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 45,
+     "no_raw": "４５",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "サービス単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "公費１対象のサービス単位数の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 46,
+     "no_raw": "４６",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "請求額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "公費１請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "no_raw": "４７",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "本人負担額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "公費１本人負担額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 48,
+     "no_raw": "４８",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "緊急時施設療養費請求額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "緊急時施設療養費公費１請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 49,
+     "no_raw": "４９",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "特定診療費請求額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "特定診療費公費１請求額の合計を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 50,
+     "no_raw": "５０",
+     "name_path": [
+      "合計情報（決定前）",
+      "公費1",
+      "特定入所者介護サービス費等請求額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "特定入所者介護サービス費等請求額の公費１請求分を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 9\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※9",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "加除第和号",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": true,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」とあるが、添付は1ページのみで、示されているのはこのページ（印字ページ614）の表である。このページの表を書き起こした。",
+  "項番25〜50は見出し行がなく、前ページからの続きと判断して continued_from_prev_page を true にした。表の末尾（項番50）は次ページへ続く可能性があるため continues_to_next_page を true にした。",
+  "備考欄の「※ 2」「※ 3」「※ 7」「※ 8」「※ 9」「※ S」の注記本文はこのページに無いため footnotes は空にした。",
+  "レコード名・上位の情報名・交換情報識別番号はこのページから読み取れないため空文字にした。",
+  "「項目名」の見出しは下段の項目名と縦結合のグループ見出し（居宅サービス計画、合計情報（決定前）、保険、公費1）から name_path に入れた。",
+  "数字の表記（全角・半角）は画像の印字から判断して書き写したため、字形に自信がない箇所がある。"
+ ]
+}

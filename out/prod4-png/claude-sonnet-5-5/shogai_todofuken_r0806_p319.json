@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 319,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1932,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039536,
+    "cost_usd_batch": 0.019768,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 319,
+    "printed_page": "78",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分認定有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分認定有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "利用者負担上限額情報",
+              "所得区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定された所得区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "利用者負担上限額情報",
+              "個別減免有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "個別減免の有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "利用者負担上限額情報",
+              "生保移行防止有無(定率負担)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生保移行防止有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担上限月額を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "利用者負担上限月額の有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付の有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "補足給付情報",
+              "生保移行防止有無(補足給付)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生保移行防止有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "補足給付情報",
+              "補足給付額(日額)"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "補足給付額(日額)を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "補足給付額(日額)有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "補足給付額(日額)有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きの表のためレコード名・交換情報識別番号は不明",
+      "項番15〜17の内容「設定しない」は必須入力欄が空欄",
+      "縦結合グループ見出しは縦書きのため文字を読み取った（障害支援区分情報、利用者負担上限額情報、補足給付情報）"
+    ]
+  },
+  "raw_text": null
+}

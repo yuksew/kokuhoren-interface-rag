@@ -1,0 +1,234 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 18,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "１６５－２",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（３） 介護予防・日常生活支援総合事業費過誤申立書情報",
+   "record": {
+    "exchange_id": "",
+    "name": "介護予防・日常生活支援総合事業費過誤申立書情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "介護予防・日常生活支援総合事業費過誤申立書の識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“1791”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "申立年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "過誤申立の申立年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "申立者区分コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "申立者の区分コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“2”固定",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "サービス提供事業所番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者証に記載された保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "過誤申立の対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "申立事由コード"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "過誤申立事由コード（介護予防・日常生活支援総合事業）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２\n※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "申立事由コードは、4桁の英数属性のコードとし、申立情報作成の都度入力を行う。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※１",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※２",
+   "text": "「インタフェース仕様書　共通編 1.4 コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※３",
+   "text": "「インタフェース仕様書　共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※４",
+   "text": "申立事由コードは、4桁の英数属性のコードとし、申立情報作成の都度入力を行う。"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページ」の表を求めているが、添付は PDF上のページ18 の1ページのみのため、添付ページの表を書き起こした。",
+  "表の見出し「（３） 介護予防・日常生活支援総合事業費過誤申立書情報」を title に入れ、record.name に同じ情報名を入れた。record.exchange_id は本文から読み取れる識別子がないため空文字とした。",
+  "項目8の項目名「申立事由コード」「過誤申立事由コード（介護予防・日常生活支援総合事業）」の表記、項目2・7の括弧の全角半角は画像から判読したため、原文と細部が異なる可能性がある。"
+ ]
+}

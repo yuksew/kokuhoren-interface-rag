@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 471,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 5518,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00377,
+    "cost_usd_batch": 0.001885,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 471,
+    "printed_page": "167-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > 種別 > サ",
+          "出力対象項目（※1） > 種別 > 請",
+          "出力対象項目（※1） > 種別 > 明",
+          "出力対象項目（※1） > 種別 > 利",
+          "出力対象項目（※1） > 種別 > 計",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "明細",
+              "備考",
+              "関連No."
+            ],
+            "type": "漢字",
+            "length": 16,
+            "length_raw": "16",
+            "content": "『審査対象明細表』に出力がある場合、関連No.を「児－999999」の形式で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "出力対象項目（※1） > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 利",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 計",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "明細",
+              "備考",
+              "支給量オーバー"
+            ],
+            "type": "英数",
+            "length": 5,
+            "length_raw": "5",
+            "content": "『支給量オーバーチェックリスト』に出力がある場合、「オーバー」を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "出力対象項目（※1） > 種別 > サ",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 利",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > 種別 > 計",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "返戻（予定）一覧表情報 ファイル構成図",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "レコードの編綴（ファイル内の格納順序）"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "レコードの編綴（ファイル内の格納順序）",
+                "value": "[図] 返戻（予定）一覧表情報ファイル 返戻（予定）一覧表情報レコード 都道府県等単位で1ファイル"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目 ◎：出力対象項目、○：請求内容により出力対象となる項目、△：事業所の設定状況により出力対象となる項目、空白：出力対象外項目。なお、種別により出力対象項目が異なる。凡例は以下の通り。「サ」・・・サービス提供実績記録票、「請」・・・請求書、「明」・・・明細書「利」・・・利用者負担上限額管理結果票、「計」・・・障害児相談支援給付費請求書等"
+      },
+      {
+        "mark": "※2",
+        "text": "種別が「サ：サービス提供実績記録票」の場合、「様式番号（様式種別番号上2桁）」を設定する。様式番号については「インタフェース仕様書　サービス事業所編　２．１．３．６　サービス提供実績記録票情報（４）様式と様式種別番号の対応」を参照。"
+      },
+      {
+        "mark": "※3",
+        "text": "上限額管理事業所番号に関するエラーが発生した場合、エラーとなった請求情報等の上限額管理事業所番号を設定する。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　２．２　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　１．５　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　１．３　表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "表1の項目名列の上にある縦書きの『明細』と『備考』が、入れ子のグループ見出しか並列の見出しか判断できなかったため、name_path は両方を外側から順に入れた（['明細','備考',項目名]）。",
+      "表1は項番22から始まり表見出しがないため、前ページからの続きと判断して continued_from_prev_page を true にした（参考扱い）。",
+      "表2（ファイル構成図）は罫線の図で、列や項目を持つ表ではないため、図の印字文字を [図] と併せて1セルに書き写した。table_kind は other としたが、表として扱うかは判断が分かれる。",
+      "表1の出力対象項目の○は、原本の図形として見えた白丸の○をそのまま書き写した。"
+    ]
+  },
+  "raw_text": null
+}

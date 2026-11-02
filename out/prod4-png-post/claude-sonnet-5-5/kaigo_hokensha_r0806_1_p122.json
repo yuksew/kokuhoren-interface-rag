@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 122,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2270,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042886,
+    "cost_usd_batch": 0.021443,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 122,
+    "printed_page": "37",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "1．3．11　市町村固有情報更新結果情報",
+        "record": {
+          "exchange_id": "5531",
+          "name": "市町村固有情報更新結果情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "市町村固有情報更新結果情報の識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "“5531”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険者の支給限度額等に変更が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "訂正年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "市町村固有情報に訂正が生じた日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訂正区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "市町村固有情報の異動事由を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険者コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "有効開始日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効開始日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "有効終了日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "有効終了日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護1"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "1月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護2"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護3"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護4"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護5"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護1"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "6月間の限度額を日数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護2"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護3"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護4"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護5"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": "※3\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項目名列は「居宅介護サービス費区分支給限度基準額」の縦結合グループ見出しと小項目の2段だが、見出し行は「項目名」1列として扱った",
+      "備考「※S」の「S」は半角/全角が不明瞭（全角Sとして転記）"
+    ]
+  },
+  "raw_text": null
+}

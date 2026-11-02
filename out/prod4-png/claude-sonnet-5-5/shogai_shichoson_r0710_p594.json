@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 594,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1437,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.034584,
+    "cost_usd_batch": 0.017292,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 594,
+    "printed_page": "265-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "① ヘッダレコード",
+        "record": {
+          "exchange_id": "CD11",
+          "name": "ヘッダレコード",
+          "parent": "振込データ情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "データ区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1･････ヘッダレコード",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "21･････総合振込",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "コード区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "0･････JIS",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "振込依頼人コード"
+            ],
+            "type": "コード値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "銀行が採番した振込依頼人識別のためのコード",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "振込依頼人名"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "40",
+            "content": "カナ文字および英数字",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "取組日"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "取組日(MMDD)\n銀行営業日",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "仕向銀行番号"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "取引銀行番号(統一金融機関番号)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "仕向銀行名"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "取引銀行名(カナ文字および英数字)",
+            "required": null,
+            "required_by": [],
+            "note": "任意\n省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "仕向支店番号"
+            ],
+            "type": "コード値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "取引支店番号(統一店番号)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "仕向支店名"
+            ],
+            "type": "英数",
+            "length": 15,
+            "length_raw": "15",
+            "content": "取引支店名(カナ文字および英数字)",
+            "required": null,
+            "required_by": [],
+            "note": "任意\n省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "預金種目(依頼人)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1･････普通預金\n2･････当座預金\n9･････その他",
+            "required": null,
+            "required_by": [],
+            "note": "任意\n省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "口座番号(依頼人)"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "振込依頼人の口座番号",
+            "required": null,
+            "required_by": [],
+            "note": "任意\n省略時はスペース",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "ダミー"
+            ],
+            "type": "英数",
+            "length": 17,
+            "length_raw": "17",
+            "content": "スペース",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

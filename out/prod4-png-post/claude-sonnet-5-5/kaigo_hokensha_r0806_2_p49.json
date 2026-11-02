@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 49,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1169,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.031876,
+    "cost_usd_batch": 0.015938,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 49,
+    "printed_page": "180-4",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "※５ 以下のとおり出力する。",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "出力内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "出力内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "対象年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービスの給付対象年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "給付管理票種別区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "３：居宅サービス・介護予防サービス・総合事業区分給付管理票を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "居宅・介護予防・総合事業支給限度額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅サービス区分支給限度基準額（単位数）を設定する（バウチャ等利用があり、居宅サービス区分支給限度基準額の事前切り分けがある場合は、バウチャ分を差し引いた額（単位数）を設定する）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "給付計画単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "給付計画単位数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "限度額管理期間における前月までの給付計画日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "指定サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "基準該当サービス分小計"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "給付計画合計単位数／日数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "当月サービス単位数合計を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※６",
+        "text": "要介護状態区分や設定された値に関わらず、受給者台帳に設定されている支給限度基準額が出力される。"
+      },
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Ｓが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "表の見出し「※５ 以下のとおり出力する。」は表直前の見出しとして title に入れた"
+    ]
+  },
+  "raw_text": null
+}

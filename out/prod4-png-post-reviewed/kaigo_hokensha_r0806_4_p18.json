@@ -1,0 +1,232 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_4",
+ "page": 18,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "534",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "４．２．１　被保険者証作成情報（入力情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "識別",
+    "情報名",
+    "内容",
+    "ルート",
+    "周期",
+    "媒体"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "情報名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "(1)",
+     "name_path": [
+      "被保険者証作成情報（共通部）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者証の作成情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "4111"
+      },
+      {
+       "column": "ルート",
+       "value": "保険者→国保連合会"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n磁気"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "(2)",
+     "name_path": [
+      "被保険者証作成情報（明細部）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者証の作成情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "識別",
+       "value": "4122"
+      },
+      {
+       "column": "ルート",
+       "value": "保険者→国保連合会"
+      },
+      {
+       "column": "周期",
+       "value": "月次"
+      },
+      {
+       "column": "媒体",
+       "value": "伝送\n磁気"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "required_matrix",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "種別",
+    "帳票名",
+    "受付媒体種別 > 伝送",
+    "受付媒体種別 > 磁気",
+    "受付媒体種別 > 帳票"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "帳票名",
+    "type": "",
+    "length": "",
+    "content": "",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "被保険者証",
+      "被保険者証作成情報（共通部）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [
+      {
+       "column": "種別",
+       "value": "被保険者証"
+      },
+      {
+       "column": "帳票名",
+       "value": "被保険者証作成情報（共通部）"
+      },
+      {
+       "column": "受付媒体種別 > 伝送",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 磁気",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 帳票",
+       "value": "×"
+      }
+     ],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "被保険者証",
+      "被保険者証作成情報（明細部）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [
+      {
+       "column": "種別",
+       "value": "被保険者証"
+      },
+      {
+       "column": "帳票名",
+       "value": "被保険者証作成情報（明細部）"
+      },
+      {
+       "column": "受付媒体種別 > 伝送",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 磁気",
+       "value": "○"
+      },
+      {
+       "column": "受付媒体種別 > 帳票",
+       "value": "×"
+      }
+     ],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "○",
+   "text": "必須"
+  },
+  {
+   "mark": "×",
+   "text": "不要"
+  }
+ ],
+ "uncertain": [
+  "依頼文は『次のページの表』となっているが、添付は1ページ（印字ページ534、PDF上のページ18）のみで、このページの表を書き起こした。",
+  "1つ目の表の「ルート」列の「保険者 → 国保連合会」は、矢印を含めて折り返し表示のため1行に詰めた。",
+  "1つ目の表の「媒体」列の「伝送」「磁気」は2値として並ぶため改行で区切って残した。",
+  "2つ目の表の「種別」「被保険者証」は縦結合セルのため、両行に同じ値を入れ、name_path にも外側の見出しとして入れた。",
+  "2つ目の表の見出し上段「受付媒体種別」は、列名を「受付媒体種別 > 伝送」などの形で連結した。",
+  "2つ目の表の「○ … 必須、× … 不要」の凡例は footnotes に分けて入れた。"
+ ]
+}

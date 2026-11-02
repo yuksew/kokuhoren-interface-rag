@@ -1,0 +1,487 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 2,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 6458,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004238,
+    "cost_usd_batch": 0.002119,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 2,
+    "printed_page": "１５６－１",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費過誤決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者へ過誤調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6611"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業費再審査決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "公費負担者へ再審査で調整を行った結果を通知するための情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "6621"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→公費負担者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費審査支払手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費審査支払手数料払込請求書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費等請求額通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費等請求額通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費公費受給者別一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費公費受給者別一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費過誤決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護給付費再審査決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費過誤決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "介護予防・日常生活支援総合事業費再審査決定通知書情報（公費負担者分）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "介護給付費公費負担者情報"
+              },
+              {
+                "column": "出力媒体種別",
+                "value": "伝送返却\n磁気返却\n帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "公費負担者からの申し出により、合併の場合など公費負担者毎の帳票と合算した帳票を出力する。"
+      }
+    ],
+    "uncertain": [
+      "2つ目の表（媒体種別表）は出力媒体種別の下に伝送返却・磁気返却・帳票返却の小見出しが印字されていないため、3列に分かれる行の値は原文の順序のまま改行で連結した。",
+      "2つ目の表の「種別」列は縦結合された「介護給付費公費負担者情報」を各行のcellsに同じ値で入れ、帳票名は name_path に入れた。",
+      "1つ目の表の出力形式「帳票形式」の見出し文字が図上で重なって読みにくいが、「帳票形式」と読んだ。",
+      "1つ目の表のルート列の矢印「→」は原文どおり国保連合会→公費負担者として連結した。"
+    ]
+  },
+  "raw_text": null
+}

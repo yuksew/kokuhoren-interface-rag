@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 596,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3313,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002667,
+    "cost_usd_batch": 0.001334,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 596,
+    "printed_page": "２６５－３",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "③ トレーラレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "トレーラレコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "データ区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "１",
+            "content": "8·····トレーラレコード",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "合計件数"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "６",
+            "content": "データレコードの合計件数",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "合計金額"
+            ],
+            "type": "数値",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "データレコードの合計金額",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "ダミー"
+            ],
+            "type": "英数",
+            "length": 101,
+            "length_raw": "１０１",
+            "content": "スペース",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "④ エンドレコード",
+        "record": {
+          "exchange_id": "",
+          "name": "エンドレコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "データ区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "１",
+            "content": "9·····エンドレコード",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "ダミー"
+            ],
+            "type": "英数",
+            "length": 119,
+            "length_raw": "１１９",
+            "content": "スペース",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "（２） 障害児給付費等払込請求書（CDA1）（帳票）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "（３） 振込者一覧表（CDB1）（ＰＤＦ）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "（４） 振込不能者一覧表（CDC1）（ＰＤＦ）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+      },
+      {
+        "mark": null,
+        "text": "帳票出力情報であるため、項目を記載していません"
+      },
+      {
+        "mark": null,
+        "text": "ＰＤＦ出力情報であるため、項目を記載していません"
+      },
+      {
+        "mark": null,
+        "text": "PDF出力情報であるため、項目を記載していません"
+      }
+    ],
+    "uncertain": [
+      "依頼文は『次のページの表』の書き起こしを求めているが、添付は本ページ（PDF596ページ相当）のみで次ページは含まれていないため、本ページの表のみを書き起こした。",
+      "『（２）～（４）』の枠は表の形だが項目行を持たないため、table_kind を other とし、枠内の文を footnotes に入れた。",
+      "属性・バイト数の見出しは『属性（※Z）』『バイト数』として読み取った（画像上は改行で折り返している）。"
+    ]
+  },
+  "raw_text": null
+}

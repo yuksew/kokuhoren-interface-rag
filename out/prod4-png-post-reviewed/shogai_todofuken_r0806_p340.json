@@ -1,0 +1,149 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 340,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "89-8",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 130,
+     "no_raw": "130",
+     "name_path": [
+      "福祉・介護職員等処遇改善加算の有無"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "福祉・介護職員等処遇改善加算の有無をコードで設定",
+     "required": "◎",
+     "required_by": [],
+     "note": "01:無し\n02:Ⅰ・イ\n03:Ⅱ・イ\n04:Ⅲ\n05:Ⅳ\n07:Ⅰ・ロ\n08:Ⅱ・ロ\n※3、※47\n※48、※50",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "サービス種類等により体制の無い加算については“0”または“NULL”を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。",
+       "source": "page"
+      },
+      {
+       "mark": "※47",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※48",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※50",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 131,
+     "no_raw": "131",
+     "name_path": [
+      "福祉・介護職員等処遇改善加算（Ⅴ）区分"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "福祉・介護職員等処遇改善加算（Ⅴ）区分をコードで設定",
+     "required": "○",
+     "required_by": [],
+     "note": "01:Ⅴ（1）\n02:Ⅴ（2）\n03:Ⅴ（3）\n04:Ⅴ（4）\n05:Ⅴ（5）\n06:Ⅴ（6）\n07:Ⅴ（7）\n08:Ⅴ（8）\n09:Ⅴ（9）\n10:Ⅴ（10）\n11:Ⅴ（11）\n12:Ⅴ（12）\n13:Ⅴ（13）\n14:Ⅴ（14）\n※3、※47\n※49、※50",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "サービス種類等により体制の無い加算については“0”または“NULL”を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。",
+       "source": "page"
+      },
+      {
+       "mark": "※47",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※49",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※50",
+       "text": null,
+       "source": null
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "必須入力　◎：必須、○：パターン毎に必須、△：任意設定、空白：不要"
+  },
+  {
+   "mark": "※2",
+   "text": "指定年月日を設定する。"
+  },
+  {
+   "mark": "※3",
+   "text": "サービス種類等により体制の無い加算については“0”または“NULL”を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+  },
+  {
+   "mark": "※4",
+   "text": "異動年月日の年月が平成21年3月以前の場合、“0”または“NULL”を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+  },
+  {
+   "mark": "※5",
+   "text": "異動年月日の年月が平成21年9月以前の場合、“0”または“NULL”を設定する。 それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+  },
+  {
+   "mark": "※6",
+   "text": "対応する項目が「2:有り」、または「2:該当」の場合にのみ設定する。"
+  }
+ ],
+ "uncertain": [
+  "表の見出し行が先頭に印字されているが、項番が130から始まり前ページからの続きと判断した。continued_from_prev_page は推定値（後処理で再判定される想定）。",
+  "ページ下部の表記は「- 89-8 -」で、指定のPDF上ページ340とは一致しない。printed_page は印字された表記をそのまま入れた。",
+  "備考欄の「Ⅰ・イ」「Ⅴ（1）」などのローマ数字は、画像の字形から Ⅰ・Ⅱ・Ⅲ・Ⅳ・Ⅴ と判断して書き写した。"
+ ]
+}

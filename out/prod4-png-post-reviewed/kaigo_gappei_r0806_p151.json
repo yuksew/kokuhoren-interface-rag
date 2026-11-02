@@ -1,0 +1,300 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_gappei_r0806",
+ "page": 151,
+ "edition": "令和8年6月版",
+ "volume": "市町村合併編",
+ "printed_page": "57",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "・共同処理用受給者異動連絡票情報（高額介護サービス費支給処理情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "共同処理用受給者異動連絡票情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "編入する市町村が設定する内容",
+    "編入先の市町村が設定する内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "編入先の市町村が設定する内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“5E11”（固定値）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "認定有効期間（開始年月日）（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“1:新規”を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "“1 新規”を設定する",
+       "to": "“1:新規”を設定する",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“01 :受給資格取得”を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "編入先市町村の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "編入先市町村で新たに付番した被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "世帯主被保険者番号（世帯集約番号）"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "世帯主被保険者番号を設定する\n世帯合算で使用する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "世帯所得区分コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "世帯の所得区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "所得区分コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "個人の所得区分コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "老齢福祉年金受給の有無"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "老齢福祉年金受給の有無を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "利用者負担第2段階※1"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "利用者負担第2段階に該当するか否かを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "支給申請書出力の有無※1"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "支給申請書出力の有無を設定する（省略可）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入する市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "処理年月が平成17年11月以降の場合、設定する。なお、処理年月が平成17年10月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。また、異動年月日が平成17年9月30日以前の情報は、未設定であってもエラーとしない。設定している場合は、通常のチェックを行う。なお、項番11.利用者負担第2段階について、未設定である場合は「1：該当無し」として取り扱う。"
+  }
+ ],
+ "uncertain": [
+  "項番10・11・12の番号は原文で全角・半角が混在して見えるため、no_rawは全角表記で書いた。",
+  "項番11・12の項目名の※1は脚注記号として印字されているが、name_pathにはそのまま残した。",
+  "「編入する市町村が設定する内容」列は3行目以降も含め全行で縦結合されていたため、同じ値（インタフェースの提供は不要）を各行のcellsに入れた。"
+ ]
+}

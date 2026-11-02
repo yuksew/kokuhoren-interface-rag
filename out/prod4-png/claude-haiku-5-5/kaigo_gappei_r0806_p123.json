@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 123,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3558,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002788,
+    "cost_usd_batch": 0.001394,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 123,
+    "printed_page": "４１－１０",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・原案作成委託料異動連絡票（基本）情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "新設された市町村が設定する内容",
+          "広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "新設された市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5K11”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "“5K11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村の効力が発生する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "脱退により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“1:新規”を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "“3:終了”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "“01”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村に所在する介護予防支援事業所（地域包括支援センター）の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "脱退した広域連合の市町村に所在する介護予防支援事業所（地域包括支援センター）の事業所番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "サービス種類コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村の証記載保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "委託料設定単位"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "委託料設定単位を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "原案作成委託料請求先"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "原案作成委託料請求先を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "委託料種類"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "委託料種類を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "委託料計算端数処理方法"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "委託料計算端数処理方法を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は1ページのみで、依頼の「次のページ」は含まれていないため、添付ページ（印字ページ番号 ４１－１０）の表を書き起こした。",
+      "項番2・5の新設/広域連合の文中の「脱退」「証記載」は画像の印字どおりに書いた。",
+      "項番2の「（西暦年月日(YYYYMMDD)）」の字間は均等割り付けによるもので、空白を詰めて書いた。"
+    ]
+  },
+  "raw_text": null
+}

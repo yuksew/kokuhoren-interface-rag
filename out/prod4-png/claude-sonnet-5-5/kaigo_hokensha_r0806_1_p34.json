@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 34,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3577,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.055956,
+    "cost_usd_batch": 0.027978,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 34,
+    "printed_page": "13",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.4 国保連台帳情報(出力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "受給者台帳情報(単票)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の受給者台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5341"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "受給者台帳情報(一覧表)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の受給者台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5342"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "受給者台帳索引簿情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者台帳を帳票出力時に添付する索引帳表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5343"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "保険者台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の保険者台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5441"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "市町村固有情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の市町村固有情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5541"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "広域連合情報(行政区情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の広域連合情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5641"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "地域密着型サービスコード情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の地域密着型サービスコード情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5F41"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業(経過措置)サービスコード情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の介護予防・日常生活支援総合事業(経過措置)サービスコード情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5G41"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業サービスコード情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の介護予防・日常生活支援総合事業サービスコード情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5H41"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "個人番号情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の個人番号情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5J41"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "原案作成委託料台帳(基本)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の原案作成委託料台帳(基本)情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K41"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "原案作成委託料台帳(保険者単位・証記載保険者単位)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の原案作成委託料台帳(保険者単位・証記載保険者単位)情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K42"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "(13)",
+            "name_path": [
+              "原案作成委託料台帳(事業所単位)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の原案作成委託料台帳(事業所単位)情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K43"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番(1)と(2)は内容・ルート・周期・媒体・出力形式のセルが結合されており、(2)にも同じ値を入れた",
+      "項番(1)(2)の出力形式CSV「○」の位置は結合セルのため共通として扱った"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,535 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 87,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2772,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.047906,
+    "cost_usd_batch": 0.023953,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 87,
+    "printed_page": "29-19",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "１．３．４－６　原案作成委託料異動連絡票（保険者単位・証記載保険者単位）情報",
+        "record": {
+          "exchange_id": "5K12",
+          "name": "原案作成委託料異動連絡票（保険者単位・証記載保険者単位）情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力 > 新規",
+          "必須入力 > 変更",
+          "必須入力 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "原案作成委託料異動連絡票情報の識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "“5K12”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "原案作成委託料異動連絡票情報の変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "原案作成委託料異動連絡票情報の異動事由を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "01:固定値",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料の支払を委託する介護予防支援事業所（地域包括支援センター）が所在する市町村の証記載保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※2　※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※6",
+                "text": "以下のとおり、設定する。原案作成委託料(基本)情報の「委託料設定単位」項番5項番6未設定保険者番号行政区・構成市区町村の保険者番号広域連合(政令市)の保険者番号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料の支払を委託する介護予防支援事業所（地域包括支援センター）が所在する市町村の保険者番号を設定する\n保険者が広域連合（政令市）の場合は、広域連合（政令市）の保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2　※6",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※6",
+                "text": "以下のとおり、設定する。原案作成委託料(基本)情報の「委託料設定単位」項番5項番6未設定保険者番号行政区・構成市区町村の保険者番号広域連合(政令市)の保険者番号",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "原案作成委託料の支払対象とする介護予防支援または介護予防ケアマネジメントのサービス種類コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2　※7",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※7",
+                "text": "サービス種類コードが「46」の場合において、異動年月日が平成21 年3 月31 日以前の情報は、エラーとし登録を行わない。サービス種類コードが「AF」の場合において、異動年月日が平成27 年3 月31 日以前の情報は、エラーとし登録を行わない。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "原案作成委託料の支払対象とする介護予防支援または介護予防ケアマネジメントのサービス項目コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※2、※8",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※8",
+                "text": "サービス種類コードが「46」の場合において、異動年月日が2024 年4 月1 日以降に地域包括支援センターで実施されるサービス項目コードのみ設定する事とし、居宅介護支援事業所で実施されるサービス項目コードが設定された場合はエラーとして台帳への登録は行わない。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料の支払対象とするサービス提供年月の開始年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料の支払対象とするサービス提供年月の終了年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "委託割合"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "5",
+            "content": "原案作成委託料を割合で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※4　※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「委託割合」欄」参照。(P.42-1)",
+                "source": "page"
+              },
+              {
+                "mark": "※5",
+                "text": "いずれか一方を設定する。原案作成委託料(基本)情報の委託料種類が「1:割合」の場合は委託割合を設定し、「2:金額」の場合は委託金額を設定する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "委託金額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "原案作成委託料を金額で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 終了",
+                "value": null
+              }
+            ],
+            "note": "※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "いずれか一方を設定する。原案作成委託料(基本)情報の委託料種類が「1:割合」の場合は委託割合を設定し、「2:金額」の場合は委託金額を設定する。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項 「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「委託割合」欄」参照。(P.42-1)"
+      },
+      {
+        "mark": "※5",
+        "text": "いずれか一方を設定する。原案作成委託料(基本)情報の委託料種類が「1:割合」の場合は委託割合を設定し、「2:金額」の場合は委託金額を設定する。"
+      }
+    ],
+    "uncertain": [
+      "項番8の備考「※2、※8」の読点が赤字で印字されている",
+      "項番5の必須入力欄は3列とも空欄と読み取った"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 75,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3784,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002901,
+    "cost_usd_batch": 0.001451,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 75,
+    "printed_page": "367-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "最高費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の全国における最高費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "平均費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の全国における平均費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "都道府県",
+              "請求件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の都道府県内の請求件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "都道府県",
+              "最低費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の都道府県内の最低費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "都道府県",
+              "最頻費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の都道府県内の最頻費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "都道府県",
+              "最高費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の都道府県内の最高費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "都道府県",
+              "平均費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の都道府県内の平均費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "保険者",
+              "請求件数"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の保険者内の請求件数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "保険者",
+              "最低費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の保険者内最低費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "保険者",
+              "最頻費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の保険者内の最頻費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "保険者",
+              "最高費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の保険者内の最高費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "保険者",
+              "平均費用額"
+            ],
+            "type": "数字",
+            "length": 9,
+            "length_raw": "9",
+            "content": "当該ＴＡＩＳコード（ＴＡＩＳコードがない場合は届出コード）の保険者内の平均費用額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "単位数範囲1"
+            ],
+            "type": "英数",
+            "length": 13,
+            "length_raw": "13",
+            "content": "ヒストグラムの横軸に該当する単位数範囲1を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "単位数範囲2"
+            ],
+            "type": "英数",
+            "length": 13,
+            "length_raw": "13",
+            "content": "ヒストグラムの横軸に該当する単位数範囲2を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番20・21・32・33の縦グループ列（左端の無見出し列）は空欄のため name_path に外側の見出しを入れていない。",
+      "表頭に見出し行があるため前ページからの続きは見出し行の繰り返しと判断して continued_from_prev_page を true にしたが、次ページへ続くかはページ内の情報からは確定できない（continues_to_next_page も推定）。",
+      "項番28の内容は原文どおり「保険者内最低費用額を出力する」（「の」が無い表記）。"
+    ]
+  },
+  "raw_text": null
+}

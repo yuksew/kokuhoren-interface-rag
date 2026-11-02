@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 483,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4894,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003458,
+    "cost_usd_batch": 0.001729,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 483,
+    "printed_page": "167-14",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（１５）　時効却下リスト情報",
+        "record": {
+          "exchange_id": "",
+          "name": "時効却下リスト情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "出力対象項目（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "作成年月日（西暦年月日YYYYMMDD）を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月 YYYYMM)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "証記載都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載都道府県等名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者証に記載された都道府県等名を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載された受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "給付決定保護者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "給付決定保護者氏名カナを設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "データ種別区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "データ種別区分を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "2:障害児給付費",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "データ種別名"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "データ種別名を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "明細",
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "事業所番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "明細",
+              "事業所名(漢字)"
+            ],
+            "type": "漢字",
+            "length": 80,
+            "length_raw": "80",
+            "content": "事業所名(漢字)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "明細",
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "明細",
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "明細",
+              "サービス種類名"
+            ],
+            "type": "漢字",
+            "length": 28,
+            "length_raw": "28",
+            "content": "サービス種類コードに対応するサービス種類名を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "明細",
+              "サービスコード"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスコードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "明細",
+              "サービス内容"
+            ],
+            "type": "漢字",
+            "length": 60,
+            "length_raw": "60",
+            "content": "サービスコードに対応するサービス内容を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "明細",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービスコードごとの単位数を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "明細",
+              "備考"
+            ],
+            "type": "英数",
+            "length": 30,
+            "length_raw": "30",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目　◎:出力対象項目、○:請求内容により出力対象となる項目、△:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　都道府県編　Ⅱ．障害児支援　2.2　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　1.5　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　1.3　表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "項番4・5の項目名が「証記載都道府県等番号」「証記載都道府県等名」と印字されており、「受給者証に」等の語が欠けて見える。原文のまま書き起こした。",
+      "項番2・3・12の内容欄は均等割り付けの空白が多いため、空白を除去して書き起こした（文字は原文どおり）。"
+    ]
+  },
+  "raw_text": null
+}

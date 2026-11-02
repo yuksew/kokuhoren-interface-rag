@@ -1,0 +1,333 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 332,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "154-65",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 43,
+     "no_raw": "43",
+     "name_path": [
+      "独自助成対象者区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "独自助成対象者の場合に設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:対象外\n2:対象",
+     "cells": []
+    },
+    {
+     "no": 44,
+     "no_raw": "44",
+     "name_path": [
+      "介護保険給付対象者有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 45,
+     "no_raw": "45",
+     "name_path": [
+      "重度包括支援対象者有無"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 46,
+     "no_raw": "46",
+     "name_path": [
+      "食事提供加算情報",
+      "食事提供加算対象者区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "食事提供加算対象者有無を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:対象外\n2:加算(Ⅰ)対象\n3:加算(Ⅱ)対象\n※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": ":異動年月日の年月が令和6 年4 月以降の場合、「加算(I)対象」及び「加算(II)対象」は「対象」と読み替えて使用する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "no_raw": "47",
+     "name_path": [
+      "食事提供加算情報",
+      "食事提供加算適用有効期間（開始年月日）"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "食事提供加算適用有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 48,
+     "no_raw": "48",
+     "name_path": [
+      "食事提供加算情報",
+      "食事提供加算適用有効期間（終了年月日）"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "食事提供加算適用有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 49,
+     "no_raw": "49",
+     "name_path": [
+      "無償化対象区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "就学前障害児の発達支援無償化対象の場合に設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:対象外\n2:対象",
+     "cells": []
+    },
+    {
+     "no": 50,
+     "no_raw": "50",
+     "name_path": [
+      "児童性別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "児童の性別を設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "1:男\n2:女",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "other",
+   "title": "・「突合開始年月」:2012/04、「突合終了年月」:2012/09 とした場合の例",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "受給者情報",
+    "突合開始年月 > 突合終了年月",
+    "作成対象"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "受給者情報",
+    "type": "",
+    "length": "",
+    "content": "",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "受給者A"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "突合開始年月 > 突合終了年月",
+       "value": "[図] 異動年月日 ▲(5/1)"
+      },
+      {
+       "column": "作成対象",
+       "value": "○"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "受給者B",
+      "新規"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "突合開始年月 > 突合終了年月",
+       "value": "[図] 異動年月日 ▲(6/1)"
+      },
+      {
+       "column": "作成対象",
+       "value": "×"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "受給者B",
+      "変更"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "突合開始年月 > 突合終了年月",
+       "value": "[図] 異動年月日 ▲(8/1)"
+      },
+      {
+       "column": "作成対象",
+       "value": "○"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": null,
+     "name_path": [
+      "受給者C"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "突合開始年月 > 突合終了年月",
+       "value": "[図] 異動年月日 ▲(11/1)"
+      },
+      {
+       "column": "作成対象",
+       "value": "×"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "必須入力 ◎:必須、○:決定内容により必須、△:任意設定、空白:不要"
+  },
+  {
+   "mark": "※2",
+   "text": "突合の対象となる情報は突合条件によりそれぞれ以下のように作成する。"
+  }
+ ],
+ "uncertain": [
+  "表1の「備考」欄の「※3」「※Y」に対応する注記（※3・※Yの本文）がこのページに見当たらず、本文は未記載のまま書き起こした。",
+  "表1の項番46の内容に「設定する」改行の位置は画像上の折り返しと判断し、1行にまとめた。",
+  "表1の前ページからの続きと判断した（項番43から開始）。項番の連続性から判断。",
+  "表2（突合の例）は異動年月日を示す図であり、図の中の文字のみを[図]付きで書き写した。見出しの列名「突合開始年月 > 突合終了年月」は、図の上部見出しを連結したもので原文の列名ではない。",
+  "表2は値の例を示す帯のため table_kind を other とした。受給者B の 新規/変更 は縦に結合された行見出しとして name_path に入れた。"
+ ]
+}

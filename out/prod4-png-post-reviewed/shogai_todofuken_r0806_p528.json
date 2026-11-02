@@ -1,0 +1,504 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 528,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "196",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（４） 地域生活支援事業事業所異動連絡票情報（サービス情報）",
+   "record": {
+    "exchange_id": "",
+    "name": "地域生活支援事業事業所異動連絡票情報（サービス情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力※1 > 新規",
+    "必須入力※1 > 変更",
+    "必須入力※1 > 終了",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "共同処理用事業所異動連絡票情報(サービス情報)の識別番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": ":「インタフェース仕様書 都道府県編 III.市町村事務共同処理 1.2 インタフェース一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "事業所の指定等に関して取得または変更等が生じた年月（西暦年月(YYYYMM)）と連番(異動順)を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "異動区分コードを設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "1:新規\n2:変更\n3:終了",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "事業所情報の異動事由を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "01(固定値)",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "事業所番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "管理者",
+      "氏名（カナ）"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "25",
+     "content": "管理者氏名をカナ文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "△"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "管理者",
+      "氏名（漢字）"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "管理者氏名を全角文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "管理者",
+      "郵便番号"
+     ],
+     "type": "コード値",
+     "length": 7,
+     "length_raw": "7",
+     "content": "郵便番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "管理者",
+      "住所（カナ）"
+     ],
+     "type": "英数",
+     "length": 75,
+     "length_raw": "75",
+     "content": "管理者の住所をカナ文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "△"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "管理者",
+      "住所（漢字）"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "管理者の住所を全角文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "事業所",
+      "名称（カナ）"
+     ],
+     "type": "英数",
+     "length": 80,
+     "length_raw": "80",
+     "content": "事業所名称をカナ文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "△"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "事業所",
+      "名称（漢字）"
+     ],
+     "type": "漢字",
+     "length": 80,
+     "length_raw": "80",
+     "content": "事業所名称を全角文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "事業所",
+      "郵便番号"
+     ],
+     "type": "コード値",
+     "length": 7,
+     "length_raw": "7",
+     "content": "郵便番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "事業所",
+      "住所（カナ）"
+     ],
+     "type": "英数",
+     "length": 75,
+     "length_raw": "75",
+     "content": "事業所の住所をカナ文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "△"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "△"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "事業所",
+      "住所（漢字）"
+     ],
+     "type": "漢字",
+     "length": 128,
+     "length_raw": "128",
+     "content": "事業所の住所を全角文字で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": "◎"
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": "◎"
+      }
+     ],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼では『次のページ』の表とあるが、添付画像は印字ページ196（依頼のPDF上のページ528とは番号が一致しない）の1ページのみで、このページの表を書き起こした。",
+  "項目列の見出し『項目』は左右2段（管理者・事業所の縦結合グループと項目名）に分かれており、右側の項目名の列には見出し文字がないため、columnsには『項目』の1列として入れた。",
+  "備考の※B・※Y・※Cの脚注本文はこのページに印字がないため footnotes に入れていない。必須入力※1の脚注本文も見当たらない。",
+  "項目名の括弧は画像上『(カナ)』のように見えたが、全角の『（カナ）』として書き写した。"
+ ]
+}

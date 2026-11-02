@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 31,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5383,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003701,
+    "cost_usd_batch": 0.00185,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 31,
+    "printed_page": "547",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 95,
+            "no_raw": "95",
+            "name_path": [
+              "延滞金算出",
+              "基礎5",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 96,
+            "no_raw": "96",
+            "name_path": [
+              "延滞金算出",
+              "基礎5",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 97,
+            "no_raw": "97",
+            "name_path": [
+              "延滞金算出",
+              "基礎5",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 98,
+            "no_raw": "98",
+            "name_path": [
+              "延滞金算出",
+              "基礎5",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 99,
+            "no_raw": "99",
+            "name_path": [
+              "延滞金算出",
+              "基礎6",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 100,
+            "no_raw": "100",
+            "name_path": [
+              "延滞金算出",
+              "基礎6",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 101,
+            "no_raw": "101",
+            "name_path": [
+              "延滞金算出",
+              "基礎6",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 102,
+            "no_raw": "102",
+            "name_path": [
+              "延滞金算出",
+              "基礎6",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 103,
+            "no_raw": "103",
+            "name_path": [
+              "延滞金算出",
+              "基礎7",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 104,
+            "no_raw": "104",
+            "name_path": [
+              "延滞金算出",
+              "基礎7",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 105,
+            "no_raw": "105",
+            "name_path": [
+              "延滞金算出",
+              "基礎7",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 106,
+            "no_raw": "106",
+            "name_path": [
+              "延滞金算出",
+              "基礎7",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 107,
+            "no_raw": "107",
+            "name_path": [
+              "延滞金算出",
+              "基礎8",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "延滞金算出",
+              "基礎8",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "延滞金算出",
+              "基礎8",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "延滞金算出",
+              "基礎8",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "延滞金算出",
+              "基礎9",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "延滞金算出",
+              "基礎9",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "延滞金算出",
+              "基礎9",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 114,
+            "no_raw": "114",
+            "name_path": [
+              "延滞金算出",
+              "基礎9",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 115,
+            "no_raw": "115",
+            "name_path": [
+              "延滞金算出",
+              "基礎10",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 116,
+            "no_raw": "116",
+            "name_path": [
+              "延滞金算出",
+              "基礎10",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 117,
+            "no_raw": "117",
+            "name_path": [
+              "延滞金算出",
+              "基礎10",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 118,
+            "no_raw": "118",
+            "name_path": [
+              "延滞金算出",
+              "基礎10",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "延滞金算出",
+              "基礎11",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "延滞金算出",
+              "基礎11",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間 (西暦年月日 (YYYYMMDD)) を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 121,
+            "no_raw": "121",
+            "name_path": [
+              "延滞金算出",
+              "基礎11",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 122,
+            "no_raw": "122",
+            "name_path": [
+              "延滞金算出",
+              "基礎11",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 200,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2998,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.050166,
+    "cost_usd_batch": 0.025083,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 200,
+    "printed_page": "65",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "要介護状態区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "要介護状態区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "認定有効期間（開始年月日）"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "認定有効期間（終了年月日）"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "居宅サービス計画作成区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "居宅サービス計画作成区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "居宅介護支援事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "居宅介護支援事業所の番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "居宅サービス計画適用開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "居宅サービス計画の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "居宅サービス計画適用終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "居宅サービス計画の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "訪問通所サービス",
+              "支給限度基準額"
+            ],
+            "type": "英数",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の訪問通所サービス支給限度基準額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字(YYYYMMDD))を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "訪問通所サービス",
+              "上限管理適用期間開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "訪問通所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "訪問通所サービス",
+              "上限管理適用期間終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "訪問通所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "短期入所サービス",
+              "支給限度基準額"
+            ],
+            "type": "英数",
+            "length": 3,
+            "length_raw": "3",
+            "content": "被保険者証記載の短期入所サービス支給限度基準額を日数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字(YYYYMMDD))を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "短期入所サービス",
+              "上限管理適用期間開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "短期入所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "短期入所サービス",
+              "上限管理適用期間終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "短期入所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "公費負担上限額減額の有無"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "公費負担上限額減額の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "償還払化開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "償還払化開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "償還払化終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "償還払化終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "給付率引下げ開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付率引下げ開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "給付率引下げ終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付率引下げ終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "４０",
+            "name_path": [
+              "減免申請中区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "減免申請中区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "旧措置入所者利用者負担減免・",
+              "利用者負担区分コード"
+            ],
+            "type": "英数",
+            "length": 1,
+            "length_raw": "1",
+            "content": "利用者負担区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "旧措置入所者利用者負担減免・",
+              "給付率"
+            ],
+            "type": "英数",
+            "length": 3,
+            "length_raw": "3",
+            "content": "利用者負担減免等により給付率が変更された場合に１００分の〇〇〇で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "旧措置入所者利用者負担減免・",
+              "適用開始年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付率の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "旧措置入所者利用者負担減免・",
+              "適用終了年月日"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "8",
+            "content": "給付率の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表全体は前ページからの続き。",
+      "項番41〜44の縦書きグループ見出しは「旧措置入所者利用者負担減免・」と判読（縦書きで配置が混在、文字順が不確か）。",
+      "属性列の見出しは「属性」、バイト数は「ﾊﾞｲﾄ数」と判読。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,326 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 21,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "168",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード（複数レコード）",
+   "record": {
+    "exchange_id": "",
+    "name": "明細レコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“7411”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"7411\"固定",
+       "to": "“7411”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"D1\"固定",
+       "to": "“D1”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "保険者（事業所）番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "事業所番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "保険者（事業所）名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "事業所名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。（P.31）",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "被保険者カナ氏名"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "２５",
+     "content": "被保険者カナ氏名（半角カタカナ）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "半角カタカナ",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "種別"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "種別を出力する\nサ:サービス計画費請求明細書\n請：請求明細書\n給：給付管理票",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "サービス提供年月（西暦年月(YYYYMM)）を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。（P.42）",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "サービス種類コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。（P.31）",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "単位数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "事由"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "返戻事由記号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "事由は、1桁の英数属性のコードとし、申立情報作成の都度入力を行う。なお、内容については以下の通りとする。\nA:一次チェックでエラーのあるもの\nB:受給者・事業所の資格チェックでエラーのあるもの\nC:請求明細書に対する給付管理票と突合不一致のもの、又は、査定でエラーのあるもの\nD:サービス計画費に対する給付管理票が未提出のもの\nE:審査委員会の判定により却下、又は、時効により却下、又は、その他理由により却下",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "内容"
+     ],
+     "type": "漢字",
+     "length": 210,
+     "length_raw": "２１０",
+     "content": "返戻事由記号の内容等を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "備考"
+     ],
+     "type": "漢字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "保留区分が「保留」のとき、「保留」を出力する\nエラーの場合はエラーコードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "サービス項目コード等"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "サービス項目コードもしくは識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。（P.31）"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。（P.42）"
+  },
+  {
+   "mark": "※3",
+   "text": "事由は、1桁の英数属性のコードとし、申立情報作成の都度入力を行う。なお、内容については以下の通りとする。\nA:一次チェックでエラーのあるもの\nB:受給者・事業所の資格チェックでエラーのあるもの\nC:請求明細書に対する給付管理票と突合不一致のもの、又は、査定でエラーのあるもの\nD:サービス計画費に対する給付管理票が未提出のもの\nE:審査委員会の判定により却下、又は、時効により却下、又は、その他理由により却下"
+  },
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページ」の書き起こしを求めているが、添付されたのは印字ページ168の1ページのみ（PDF上のページ21）である。添付ページの表を書き起こした。",
+  "種別（項番7）の「サ:」の コロンが全角か半角か判別しづらいため、画像のまま「サ:」と記載した。"
+ ]
+}

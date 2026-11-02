@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 62,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 3214,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002616,
+    "cost_usd_batch": 0.001308,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 62,
+    "printed_page": "185-7",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "予備８"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "予備９"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "予備１０"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "予備１１"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "３０",
+            "name_path": [
+              "単位数単価"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "被保険者が事業所から受けた介護予防・日常生活支援総合事業サービスの単位数単価を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "３１",
+            "name_path": [
+              "保険給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "保険給付率（100分の〇〇〇）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "３２",
+            "name_path": [
+              "公費１給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費１給付率（100分の〇〇〇）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "３３",
+            "name_path": [
+              "公費２給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費２給付率（100分の〇〇〇）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "３４",
+            "name_path": [
+              "公費３給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "公費３給付率（100分の〇〇〇）を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "３５",
+            "name_path": [
+              "サービス日数・回数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "２",
+            "content": "被保険者が事業所から受けた介護予防・日常生活支援総合事業サービスの日数・回数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "３６",
+            "name_path": [
+              "サービス単位数"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護予防・日常生活支援総合事業サービスの単位数を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "３７",
+            "name_path": [
+              "予備１２"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "被保険者が事業所から受けた介護予防・日常生活支援総合事業サービスの利用者負担額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※S",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "予備１３"
+            ],
+            "type": "数字",
+            "length": 12,
+            "length_raw": "１２",
+            "content": "未使用",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※4",
+        "text": "種別は一文字で出力される。\n(給:給付管理票)\n(請:請求明細書)\n(ケ:介護予防ケアマネジメント費請求明細書)"
+      },
+      {
+        "mark": "※S",
+        "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+      },
+      {
+        "mark": null,
+        "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+      }
+    ],
+    "uncertain": [
+      "項番26から始まり表題がないため前ページからの続きと推定したが、ページ境界の判断は後処理のテキストレイヤ判定に委ねる。",
+      "表の前後の注記のうち「※1」「※2」「※3」「※4」は表の直下に記載されているが、どの項番を参照しているかは本ページからは特定できない。"
+    ]
+  },
+  "raw_text": null
+}

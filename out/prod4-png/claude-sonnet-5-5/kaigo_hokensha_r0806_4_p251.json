@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 251,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 408,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.024266,
+    "cost_usd_batch": 0.012133,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 251,
+    "printed_page": "683-1",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "特定入所者介護サービス費用情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "特定入所者介護サービス費用情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "様式第二の二",
+          "様式第三の三",
+          "様式第四の二",
+          "様式第四の三・四の四",
+          "様式第五の二",
+          "様式第六の二～六の七",
+          "様式第七の二・七",
+          "様式第八",
+          "様式第九",
+          "様式第九の二",
+          "様式第十",
+          "様式第十の二・十三の二",
+          "様式第十四の二",
+          "様式第十四の四～十五の四",
+          "様式第十五"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "見出し列の様式名が縦書きで断片的に分割されており、列名を正確に判読できない。",
+      "列数は17列と読み取ったが、列名は不確か。",
+      "項目行（項番1～32）の記号を書き起こしていない。items が空であり、不完全。"
+    ]
+  },
+  "raw_text": null
+}

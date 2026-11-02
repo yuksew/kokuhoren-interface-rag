@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 290,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 7616,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004817,
+    "cost_usd_batch": 0.002409,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 290,
+    "printed_page": "292",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "３．２．１１　共同処理用市町村特別給付情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "共同処理用市町村特別給付異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村特別給付のサービスコード、単位数等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5711"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "共同処理用市町村特別給付訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの市町村特別給付情報に対する訂正情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5721"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付情報",
+              "共同処理用市町村特別給付情報異動連絡票"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "共同処理用市町村特別給付情報"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付情報",
+              "共同処理用市町村特別給付情報訂正連絡票"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "共同処理用市町村特別給付情報"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "３．２．１２　共同処理用市町村特別給付情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "共同処理用市町村特別給付更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村特別給付異動（訂正）情報の更新結果",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5731"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "共同処理用市町村特別給付情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の市町村特別給付情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5741"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙 A4ヨコ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 帳票受付分"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付情報",
+              "共同処理用市町村特別給付情報更新結果"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "共同処理用市町村特別給付情報"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付情報",
+              "共同処理用市町村特別給付情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "共同処理用市町村特別給付情報"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "○　…　必須、×　…　不要、◎　…　必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "依頼では『次のページ』とありましたが、添付は1ページだけで、ページ番号は「- 292 -」と印字されています（PDF上のページ290との対応は未確認）。添付されたこのページの表を書き起こしました。",
+      "3．２．１２の出力形式の「帳票形式」見出しに取り消し線のような重なりがあり、「帳票形式」として書き起こしました。",
+      "受付媒体種別表の凡例（○、×、◎）は記号の意味を説明する行なので footnotes に入れ、mark は null にしました。"
+    ]
+  },
+  "raw_text": null
+}

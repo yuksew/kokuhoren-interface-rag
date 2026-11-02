@@ -1,0 +1,457 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 266,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4712,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003367,
+    "cost_usd_batch": 0.001683,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 266,
+    "printed_page": "１５３－２",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．５　受給者情報突合情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児支援受給者情報突合情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の障害児支援受給者台帳情報との突合用障害児支援受給者情報(基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B511"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児支援受給者情報突合情報(支給決定情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の障害児支援受給者台帳情報との突合用障害児支援受給者情報(支給決定情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B521"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児支援受給者情報突合情報(モニタリング情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の障害児支援受給者台帳情報との突合用障害児支援受給者情報(モニタリング情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B531"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．６　受給者情報突合結果情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児支援受給者情報突合結果情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者情報の突合結果情報(基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B611"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児支援受給者情報突合結果情報(支給決定情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者情報の突合結果情報(支給決定情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B621"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児支援受給者情報突合結果情報(モニタリング情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者情報の突合結果情報(モニタリング情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B631"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．７　取込エラーリスト（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児支援受給者台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者異動・訂正連絡票情報(基本情報・支給決定情報・モニタリング情報)取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BCA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "都道府県等台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等異動・訂正連絡票情報(基本情報・独自助成情報・行政区情報)取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BCB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児支援受給者情報突合情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者情報突合情報(基本情報・支給決定情報・モニタリング情報)取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BCD1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害児支援個人番号台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援個人番号異動・訂正連絡票情報取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "BCH1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

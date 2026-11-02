@@ -1,0 +1,308 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 297,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "154-30",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "１．３．１４　障害児支援個人番号訂正連絡票情報（B2F1）",
+   "record": {
+    "exchange_id": "B2F1",
+    "name": "障害児支援個人番号訂正連絡票情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": "「インタフェース仕様書 市町村編 Ⅱ．障害児支援 1.2 インタフェース一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "訂正年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "個人番号台帳情報に訂正が生じた年月（西暦年月(YYYYMM)）と連番（異動順）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "訂正区分コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "訂正区分コードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "2:修正\n3:削除",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "個人番号異動連絡票情報に変更等が生じた年月（西暦年月(YYYYMM)）と連番（異動順）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y\n※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "page"
+      },
+      {
+       "mark": "※2",
+       "text": "異動年月には、平成29年6月(201706)以降の値を設定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "異動区分コードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:新規\n2:変更\n3:終了",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "個人番号異動連絡票情報の異動事由を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "受給者証番号種別"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "受給者証番号の種別を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "2:障害児支援",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "証記載都道府県等番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "受給者証記載の市町村番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "政令市市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "政令市が受給者を行政区で分けて管理する場合のみ政令市の市町村番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "受給者証番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "受給者証番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "受給者個人番号"
+     ],
+     "type": "コード値",
+     "length": 12,
+     "length_raw": "12",
+     "content": "受給者の個人番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "児童個人番号"
+     ],
+     "type": "コード値",
+     "length": 12,
+     "length_raw": "12",
+     "content": "児童の個人番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "必須入力　◎:必須、○:決定内容により必須、△:任意設定、空白:不要"
+  },
+  {
+   "mark": "※2",
+   "text": "異動年月には、平成29年6月(201706)以降の値を設定する。"
+  },
+  {
+   "mark": "※B",
+   "text": "「インタフェース仕様書 市町村編 Ⅱ．障害児支援 1.2 インタフェース一覧」参照。"
+  },
+  {
+   "mark": "※C",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+  },
+  {
+   "mark": "※Y",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+  },
+  {
+   "mark": "※Z",
+   "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+  }
+ ],
+ "uncertain": [
+  "添付ページは印字ページ番号「154-30」の1.3.14 障害児支援個人番号訂正連絡票情報（B2F1）で、依頼の「PDF上のページ297」と一致するか確認できない。依頼の「次のページ」ではなく添付された1ページを書き起こした。",
+  "前ページからの続きとは判断できなかったため、continued_from_prev_page は false、continues_to_next_page は false とした。"
+ ]
+}

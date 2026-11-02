@@ -1,0 +1,331 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_1",
+ "page": 66,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "27",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "１．３．４　広域連合異動連絡票情報（行政区異動連絡票情報）",
+   "record": {
+    "exchange_id": "5611",
+    "name": "広域連合異動連絡票情報（行政区異動連絡票情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力※１ > 新規",
+    "必須入力※１ > 変更",
+    "必須入力※１ > 終了",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "広域連合異動連絡票情報（行政区異動連絡票情報）の識別番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "“5611”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "広域連合の市町村（政令市の行政区）が追加または変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "異動区分コードを設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "1:新規\n2:変更\n3:終了",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "広域連合情報の異動事由を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "01（固定値）",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "政令市又は広域連合の保険者番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "※３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "市町村（行政区）情報",
+      "市町村番号（行政区番号）"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "自治省にて定める市町村の番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "市町村（行政区）情報",
+      "有効開始日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "有効開始日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "有効開始日は、広域連合もしくは政令市の構成市町村または行政区となり、その効力が発生した日付であり、情報の登録(変更)日ではない。仮に市町村または行政区の所在地や連絡先等に変更が生じた場合であっても有効開始日に変更はない。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "市町村（行政区）情報",
+      "有効終了日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "有効終了日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※１ > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※１ > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※１ > 終了",
+       "value": "○"
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※１",
+   "text": "異動区分コードにより入力必須項目が異なる。（○:必須）"
+  },
+  {
+   "mark": "※２",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※３",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※４",
+   "text": "有効開始日は、広域連合もしくは政令市の構成市町村または行政区となり、その効力が発生した日付であり、情報の登録(変更)日ではない。仮に市町村または行政区の所在地や連絡先等に変更が生じた場合であっても有効開始日に変更はない。"
+  }
+ ],
+ "uncertain": [
+  "添付は1.3.4の表が載ったページ（印字ページ27）で、依頼の『次のページ（PDF66ページ）』とは内容が異なる可能性がある。ここでは添付ページを書き起こした。",
+  "レコードの exchange_id は備考欄の“5611”固定から推定して入れた。表見出しに明示されていない。",
+  "縦書きの結合見出しの文字（「市町村（行政区）情報」と読める部分）は判読が不確かで、name_path の外側の名称として『市町村（行政区）情報』と置いた。",
+  "必須入力の見出し『必須入力※１』の※１は見出し上の脚注記号として扱い、列名から除いた。",
+  "項番・バイト数の全角/半角表記は画像から判断し、全角で書き起こした。"
+ ]
+}

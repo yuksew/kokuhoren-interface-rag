@@ -1,0 +1,568 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 8,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "３２８",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・特定診療費情報レコード（複数レコード）　サービス提供年月が平成１５年３月以前の場合、以下の項目を設定する。",
+   "record": {
+    "exchange_id": "",
+    "name": "特定診療費情報レコード（複数レコード）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "設定する内容は様式による。様式と交換情報識別番号の対応はP.283 を参照のこと。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "レコード種別コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": "“04”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "サービスを行ったサービス事業所等の事業所番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者の被保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "整理番号"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者の申請単位に付与する整理番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "特定診療費情報レコード順次番号"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "本レコードが複数になる場合、０１～９８の順次番号を設定する\nレコードが１件のみの場合、及び複数レコードの最後レコードには９９を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "傷病名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "傷病名を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "保険",
+      "指導管理料等"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "保険分の指導管理料等単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "特定診療費情報レコード順次番号が99 のときのみ設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "保険",
+      "単純エックス線"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "保険分の単純エックス線単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "特定診療費情報レコード順次番号が99 のときのみ設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "保険",
+      "リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "保険分のリハビリテーション単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "特定診療費情報レコード順次番号が99 のときのみ設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "保険",
+      "精神科専門療法"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "保険分の精神科専門療法単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "特定診療費情報レコード順次番号が99 のときのみ設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "保険",
+      "予備１"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "保険",
+      "予備２"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "保険",
+      "合計単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "保険分の合計単位数を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 4\n※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "特定診療費情報レコード順次番号が99 のときのみ設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "公費1",
+      "指導管理料等"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "公費１分の指導管理料等単位数",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "公費1",
+      "単純エックス線"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "公費１分の単純エックス線単位数",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "公費1",
+      "リハビリテーション"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "公費１分のリハビリテーション単位数",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "公費1",
+      "精神科専門療法"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "公費１分の精神科専門療法単位数",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "公費1",
+      "予備１"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "公費1",
+      "予備２"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "公費1",
+      "合計単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "公費１分の合計単位数",
+     "required": null,
+     "required_by": [],
+     "note": "設定不要　※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」だが、添付は1ページのみ（PDF上のページ8＝印字ページ328）のため、添付ページの表を書き起こした。次ページは対象外。",
+  "表の見出し「・特定診療費情報レコード（複数レコード）」と説明文「サービス提供年月が平成１５年３月以前の場合、以下の項目を設定する。」を title にまとめた。",
+  "※1〜※4、※S の注記本文はこのページに存在しないため footnotes は空。",
+  "公費1・保険の縦結合グループ見出しは name_path にのみ入れ、columns には入れていない。",
+  "項目8の「０１～９８」「９９」、項目1の「※ 1」など、画像の全角・半角表記は読み取りに基づく。"
+ ]
+}

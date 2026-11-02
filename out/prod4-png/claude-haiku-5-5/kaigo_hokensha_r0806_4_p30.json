@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 30,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5336,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003677,
+    "cost_usd_batch": 0.001839,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 30,
+    "printed_page": "546",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "66",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "67",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "月数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "月数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "68",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "所得段階区分"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "所得段階区分を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 69,
+            "no_raw": "69",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "保険料率"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険料率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 70,
+            "no_raw": "70",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "保険料算出額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険料算出額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 71,
+            "no_raw": "71",
+            "name_path": [
+              "保険料算定",
+              "基礎2",
+              "保険料額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険料額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 72,
+            "no_raw": "72",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 73,
+            "no_raw": "73",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 74,
+            "no_raw": "74",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "月数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "月数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 75,
+            "no_raw": "75",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "所得段階区分"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "所得段階区分を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 76,
+            "no_raw": "76",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "保険料率"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険料率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 77,
+            "no_raw": "77",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "保険料算出額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険料算出額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 78,
+            "no_raw": "78",
+            "name_path": [
+              "保険料算定",
+              "基礎3",
+              "保険料額"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "保険料額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 79,
+            "no_raw": "79",
+            "name_path": [
+              "延滞金算出",
+              "基礎1",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 80,
+            "no_raw": "80",
+            "name_path": [
+              "延滞金算出",
+              "基礎1",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 81,
+            "no_raw": "81",
+            "name_path": [
+              "延滞金算出",
+              "基礎1",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 82,
+            "no_raw": "82",
+            "name_path": [
+              "延滞金算出",
+              "基礎1",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 83,
+            "no_raw": "83",
+            "name_path": [
+              "延滞金算出",
+              "基礎2",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 84,
+            "no_raw": "84",
+            "name_path": [
+              "延滞金算出",
+              "基礎2",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 85,
+            "no_raw": "85",
+            "name_path": [
+              "延滞金算出",
+              "基礎2",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 86,
+            "no_raw": "86",
+            "name_path": [
+              "延滞金算出",
+              "基礎2",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 87,
+            "no_raw": "87",
+            "name_path": [
+              "延滞金算出",
+              "基礎3",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 88,
+            "no_raw": "88",
+            "name_path": [
+              "延滞金算出",
+              "基礎3",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 89,
+            "no_raw": "89",
+            "name_path": [
+              "延滞金算出",
+              "基礎3",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 90,
+            "no_raw": "90",
+            "name_path": [
+              "延滞金算出",
+              "基礎3",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 91,
+            "no_raw": "91",
+            "name_path": [
+              "延滞金算出",
+              "基礎4",
+              "開始期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "開始期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 92,
+            "no_raw": "92",
+            "name_path": [
+              "延滞金算出",
+              "基礎4",
+              "終了期間・年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "終了期間(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ 1",
+            "cells": []
+          },
+          {
+            "no": 93,
+            "no_raw": "93",
+            "name_path": [
+              "延滞金算出",
+              "基礎4",
+              "日数"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "日数を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          },
+          {
+            "no": 94,
+            "no_raw": "94",
+            "name_path": [
+              "延滞金算出",
+              "基礎4",
+              "延滞金"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "延滞金を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※ S",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "「必須入力」列はページ内のすべての行で空欄に見えるため、required は null とした。",
+      "内容列の「(西暦年月日(YYYYMMDD))」の括弧の全角・半角と空白は画像から判別しづらく、半角括弧で統一して書き起こした。",
+      "備考列の「※ 1」「※ S」の注記本文はこのページに見当たらないため footnotes は空とした。",
+      "項目名の縦結合グループ「保険料算定」「延滞金算出」および「基礎1〜4」は name_path にのみ入れた。"
+    ]
+  },
+  "raw_text": null
+}

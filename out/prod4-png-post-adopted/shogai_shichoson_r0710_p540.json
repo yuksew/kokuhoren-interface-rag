@@ -1,0 +1,399 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 540,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "239",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（１）高額障害福祉サービス費給付判定結果情報（FC11）",
+   "record": {
+    "exchange_id": "FC11",
+    "name": "高額障害福祉サービス費給付判定結果情報",
+    "parent": "高額障害福祉サービス等給付費支給処理情報（入力情報）"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": ":「インタフェース仕様書 市町村編 III.市町村事務共同処理 3.2 インタフェース一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "証記載市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "受給者証に記載された市町村番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "受給者証番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "受給者証番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービス提供年月（西暦年月（YYYYMM））を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "受付年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "市町村が受給者からの申請を受け付けた年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "決定年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "市町村が支給または不支給を決定した年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "本人支払額"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "受給者が支払った金額を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "支給区分コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "支給区分コードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:支給\n2:不支給",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "支給金額"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "8",
+     "content": "受給者に支給する金額を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": ":支給区分コードが“1”の場合、必須。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "不支給理由"
+     ],
+     "type": "漢字",
+     "length": 160,
+     "length_raw": "160",
+     "content": "不支給の場合の理由を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": ":支給区分コードが“2”の場合、必須。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "口座払",
+      "金融機関コード"
+     ],
+     "type": "コード値",
+     "length": 4,
+     "length_raw": "4",
+     "content": "口座払の金融機関コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※4\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": ":支給区分コードが“1”の場合に設定する。ただし、国保連合会に高額自動償還機能を「使用する」と申し出ている場合(詳細は「インタフェース仕様書 市町村編 III.市町村事務共同処理3.4(5)支給申請書出力の有無等の設定について」参照)で、既に高額障害福祉サービス費給付判定結果情報にて口座情報を提出していれば、省略可能。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "口座払",
+      "金融機関支店コード"
+     ],
+     "type": "コード値",
+     "length": 3,
+     "length_raw": "3",
+     "content": "口座払の金融機関支店コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※4\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": ":支給区分コードが“1”の場合に設定する。ただし、国保連合会に高額自動償還機能を「使用する」と申し出ている場合(詳細は「インタフェース仕様書 市町村編 III.市町村事務共同処理3.4(5)支給申請書出力の有無等の設定について」参照)で、既に高額障害福祉サービス費給付判定結果情報にて口座情報を提出していれば、省略可能。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "口座払",
+      "口座種目"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "口座払の口座種目を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※4\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": ":支給区分コードが“1”の場合に設定する。ただし、国保連合会に高額自動償還機能を「使用する」と申し出ている場合(詳細は「インタフェース仕様書 市町村編 III.市町村事務共同処理3.4(5)支給申請書出力の有無等の設定について」参照)で、既に高額障害福祉サービス費給付判定結果情報にて口座情報を提出していれば、省略可能。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "口座払",
+      "口座番号"
+     ],
+     "type": "コード値",
+     "length": 7,
+     "length_raw": "7",
+     "content": "口座払の口座番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※4\n※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": ":支給区分コードが“1”の場合に設定する。ただし、国保連合会に高額自動償還機能を「使用する」と申し出ている場合(詳細は「インタフェース仕様書 市町村編 III.市町村事務共同処理3.4(5)支給申請書出力の有無等の設定について」参照)で、既に高額障害福祉サービス費給付判定結果情報にて口座情報を提出していれば、省略可能。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "口座払",
+      "口座名義人（カナ）"
+     ],
+     "type": "英数",
+     "length": 40,
+     "length_raw": "40",
+     "content": "口座払の口座名義人（カナ）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "半角カタカナ",
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "再計算依頼区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "1",
+     "content": "国保連合会に再計算を依頼するかどうかの区分コードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:依頼なし\n2:再計算依頼",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "項番16の次に行が続くかは本ページからは判断できないため、continues_to_next_page は false とした。",
+  "record の exchange_id（FC11）と parent は、見出し文字列から読み取って記入した。",
+  "「※B」「※C」「※Y」「※1」〜「※4」の注記本文は本ページに記載がないため footnotes は空とした。"
+ ]
+}

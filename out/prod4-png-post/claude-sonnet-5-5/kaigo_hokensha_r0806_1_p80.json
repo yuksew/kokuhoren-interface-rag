@@ -1,0 +1,895 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 80,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4954,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.069726,
+    "cost_usd_batch": 0.034863,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 80,
+    "printed_page": "29-12",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "保険者独自サービス(AF)において異動年月日が2021年4月1日以降の入力内容を以下に示す。",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "保険者独自サービス(AF) > 新規",
+          "保険者独自サービス(AF) > 変更",
+          "保険者独自サービス(AF) > 終了"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "サービス名称"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "算定単位"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "制限日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "算定回数制限期間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "支給限度額対象区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "給付率"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "事業対象者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "要支援１受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "要支援２受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "○"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "運動器機能向上体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "栄養マネジメント(改善)体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "口腔機能向上体制"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "事業所評価加算"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": "×"
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "要介護１受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "要介護２受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "要介護３受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "２８",
+            "name_path": [
+              "要介護４受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "２９",
+            "name_path": [
+              "要介護５受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "保険者独自サービス(AF) > 新規",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 変更",
+                "value": null
+              },
+              {
+                "column": "保険者独自サービス(AF) > 終了",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "(〇:入力必須、×:入力不可、空欄:入力任意)"
+      }
+    ],
+    "uncertain": [
+      "項番は原文が全角数字のため no_raw は全角で記載。記号は原文の〇を○に統一して記載。"
+    ]
+  },
+  "raw_text": null
+}

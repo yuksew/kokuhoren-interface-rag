@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 209,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 4411,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003216,
+    "cost_usd_batch": 0.001608,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 209,
+    "printed_page": "１３１－２",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 75,
+            "no_raw": "75",
+            "name_path": [
+              "医療連携体制加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度包括（サービス内容が短期入所の場合）、短期入所において、以下の内容を設定。\n医療連携体制加算（Ⅰ）を算定する場合、1を設定\n医療連携体制加算（Ⅱ）を算定する場合、2を設定\n医療連携体制加算（Ⅲ）を算定する場合、3を設定\n医療連携体制加算（Ⅳ）を算定する場合、4を設定\n医療連携体制加算（Ⅴ）を算定する場合、5を設定\n医療連携体制加算（Ⅵ）を算定する場合、6を設定\n医療連携体制加算（Ⅷ）を算定する場合、8を設定\n\n重度包括（サービス内容が共同生活援助の場合）、共同生活援助、宿泊型自立訓練、自立訓練（生活訓練）、就労移行支援、就労継続支援、就労選択支援において、以下の内容を設定。\n医療連携体制加算（Ⅰ）を算定する場合、1を設定\n医療連携体制加算（Ⅱ）を算定する場合、2を設定\n医療連携体制加算（Ⅲ）を算定する場合、3を設定\n医療連携体制加算（Ⅳ）を算定する場合、4を設定\n医療連携体制加算（Ⅵ）を算定する場合、6を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※25",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※25",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 76,
+            "no_raw": "76",
+            "name_path": [
+              "緊急短期入所受入加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急短期入所受入加算を算定する場合、1 を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 77,
+            "no_raw": "77",
+            "name_path": [
+              "単独型加算(一定の条件を満たす場合)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "日中活動を利用した日（入所日及び退所日を除く）であって、短期入所事業所（単独型）による支援が18時間を超える場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 78,
+            "no_raw": "78",
+            "name_path": [
+              "重度障害者支援加算(一定の条件を満たす場合)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "強度行動障害を有する者に対し、強度行動障害支援者養成研修（基礎研修）修了者が支援を行った場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 79,
+            "no_raw": "79",
+            "name_path": [
+              "家族支援加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 80,
+            "no_raw": "80",
+            "name_path": [
+              "利用人数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "共同生活援助における受託居宅介護サービスの利用人数",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 81,
+            "no_raw": "81",
+            "name_path": [
+              "同行支援"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度訪問介護において、熟練ヘルパーが新任ヘルパーに同行してサービス提供を行った場合（障害支援区分6の利用者に支援した場合）、1を設定\n熟練ヘルパーが同行してサービス提供を行った場合（重度障害者等包括支援の対象者に支援した場合）、2を設定\n自立生活援助において、同行支援加算の対象となる支援を実施した場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※26",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※26",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 82,
+            "no_raw": "82",
+            "name_path": [
+              "特別地域加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特別地域加算の対象となる支援を実施した場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 83,
+            "no_raw": "83",
+            "name_path": [
+              "低所得者利用加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "低所得者利用加算を算定する場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 84,
+            "no_raw": "84",
+            "name_path": [
+              "体験利用支援加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "障害福祉サービスの体験利用支援加算（Ⅰ）を算定する場合、1を設定\n障害福祉サービスの体験利用支援加算（Ⅱ）を算定する場合、2を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 85,
+            "no_raw": "85",
+            "name_path": [
+              "定員超過特例加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "該当受給者の緊急受入により利用定員を超過し、定員超過特例加算を算定する場合、1を設定\n同一日、同一事業所内の他の利用者の緊急受入により、定員超過特例加算を算定する場合、2を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 86,
+            "no_raw": "86",
+            "name_path": [
+              "通勤訓練加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "通勤訓練加算を算定する場合、1を設定",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 87,
+            "no_raw": "87",
+            "name_path": [
+              "地域移行促進加算"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "地域移行促進加算（Ⅰ）を算定する場合、1を設定\n地域移行促進加算（Ⅱ）を算定する場合、2を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※27\n※31",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※27",
+                "text": "",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※31",
+                "text": null,
+                "source": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "このページの表は前ページからの続きで、項番75から始まる。表見出しは前ページにあるため title は null とし、record も読み取れないため空文字とした。",
+      "項番75の内容のローマ数字の並びは、1つ目のブロックで（Ⅶ）が印字されておらず（Ⅵ）の次が（Ⅷ）になっている。原文どおりに書き写した。",
+      "項番75の2つ目のブロックで、（Ⅵ）の行の直後に（Ⅷ）相当の行が無いことを原文どおり書き写した。"
+    ]
+  },
+  "raw_text": null
+}

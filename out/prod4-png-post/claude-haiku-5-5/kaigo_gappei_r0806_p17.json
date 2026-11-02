@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 17,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 5427,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003723,
+    "cost_usd_batch": 0.001861,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 17,
+    "printed_page": "７－７",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・介護予防・日常生活支援総合事業(経過措置)サービスコード異動連絡票情報",
+        "record": {
+          "exchange_id": "5G11",
+          "name": "介護予防・日常生活支援総合事業(経過措置)サービスコード異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "合併前の各市町村が設定する内容",
+          "新設された市町村が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "合併前の各市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5G11”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“5G11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村の効力が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“3:終了”を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“1:新規”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“01”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併前の市町村の保険者番号を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村の保険者番号を設定"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "サービス種類コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "サービス項目コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス項目コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "サービス項目コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "適用開始年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された保険者としての効力が発生する年月（西暦年月(YYYYMM)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "適用終了年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "合併により保険者としての効力が消滅する年月（西暦年月(YYYYMM)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "設定不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "サービス名称"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "サービス名称を設定する"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "単位数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "単位数を設定する"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "算定単位"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "算定単位を設定する"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "制限日数・回数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "制限日数・回数を設定する"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "算定回数制限期間"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "算定回数制限期間を設定する"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "支給限度額対象区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "支給限度額対象区分を設定する"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "利用者負担定率／定額区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "利用者負担定率／定額区分を設定する"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "給付率"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "給付率を設定する"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "利用者負担額"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "利用者負担額を設定する"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "二次予防事業対象者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "二次予防事業対象者実施区分を設定する"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "要支援１受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "要支援１受給者実施区分を設定する"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "要支援２受給者実施区分"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "要支援２受給者実施区分を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出しは「項番・項目名・合併前の各市町村が設定する内容・新設された市町村が設定する内容」の4列で、内容列が2つあるため column_map の content には左の「合併前の各市町村が設定する内容」を入れ、「新設された市町村が設定する内容」は cells に入れた。",
+      "表の直前の見出しは「・介護予防・日常生活支援総合事業(経過措置)サービスコード異動連絡票情報」（2行目「情報」は折り返し）として扱った。",
+      "record.exchange_id の 5G11 は項番1の固定値から読み取った。record.name は見出しから推定した。",
+      "表は21行目の下罫線で終わっているように見えるため continues_to_next_page を false としたが、後続の有無は前後ページを見ていないため確認できない。",
+      "項番20・21の項目名は改行位置（受給者／実施区分）を折り返しとみなして詰めた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,332 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 19,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "166",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（４） 介護給付費再審査申立書情報（保険者分）",
+   "record": {
+    "exchange_id": "",
+    "name": "介護給付費再審査申立書情報（保険者分）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "介護給付費再審査申立書の識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※５",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "交換情報識別番号の対応はP153を参照のこと。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "申立年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "再審査の申立年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "申立者区分コード"
+     ],
+     "type": "英数",
+     "length": 1,
+     "length_raw": "１",
+     "content": "申立者の区分コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "サービス実施事業所番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者証に記載された保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "再審査申立の対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "申立対象となるサービスのサービス種類コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "サービス項目コード"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "申立対象となるサービスのサービス項目コードを設定する\n特定診療費・特別療養費・特別診療費の場合は、識別番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※２\n※６",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      },
+      {
+       "mark": "※6",
+       "text": "識別番号を設定する場合は、上2桁に“00”を付与して設定する。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "申立単位数"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "申立単位数を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "申立事由コード"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "再審査申立の事由コードを設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※２\n※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)",
+       "source": "page"
+      },
+      {
+       "mark": "※4",
+       "text": "申立事由コードは、4桁の英数属性のコードとし、申立情報作成の都度入力を行う。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※１",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項：「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※２",
+   "text": "「インタフェース仕様書　共通編　1.4　コード一覧」参照。(P.31)"
+  },
+  {
+   "mark": "※３",
+   "text": "「インタフェース仕様書　共通編　1.5　留意事項:「年月」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※４",
+   "text": "申立事由コードは、4桁の英数属性のコードとし、申立情報作成の都度入力を行う。"
+  },
+  {
+   "mark": "※５",
+   "text": "交換情報識別番号の対応はP153を参照のこと。"
+  },
+  {
+   "mark": "※６",
+   "text": "識別番号を設定する場合は、上2桁に“00”を付与して設定する。"
+  },
+  {
+   "mark": "※Ｓ",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。\nなお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "依頼は「次のページ」の表でしたが、添付はPDF上のページ19（印字ページ166）で、添付された1ページの表だけを書き起こしました。",
+  "項番1〜11の数字は原文どおり全角（「１」など）で no_raw に入れ、no は整数に変換しました。",
+  "項番9の必須入力セルは空欄のため required を null にしました。",
+  "項目名・内容の一部は画像の折り返しに基づき1行に詰めています（例：「申立年月日」の内容）。"
+ ]
+}

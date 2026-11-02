@@ -1,0 +1,488 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_4",
+ "page": 27,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "543",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（１）第１号被保険者保険料徴収情報（共通部）",
+   "record": {
+    "exchange_id": "",
+    "name": "第１号被保険者保険料徴収情報（共通部）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "第1号被保険者保険料徴収情報（共通部）の交換情報識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“4411”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "被保険者証記載の保険者番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "保険者名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "被保険者証記載の保険者番号に対応する保険者名を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "広域連合の場合、広域連合の保険者番号を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "広域連合名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "広域連合の場合、広域連合名を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "保険者代表者名称"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "40",
+     "content": "保険者代表者名称を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "普通徴収の場合の納入場所"
+     ],
+     "type": "漢字",
+     "length": 120,
+     "length_raw": "120",
+     "content": "普通徴収の場合の納入場所を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "お問い合わせ先"
+     ],
+     "type": "漢字",
+     "length": 120,
+     "length_raw": "120",
+     "content": "お問い合わせ先を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "不服の申立・都道府県名"
+     ],
+     "type": "漢字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "不服の申立・都道府県名を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "不服の申立・住所電話番号"
+     ],
+     "type": "漢字",
+     "length": 100,
+     "length_raw": "100",
+     "content": "不服の申立・住所電話番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "納期限",
+      "第1期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第1期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "納期限",
+      "第2期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第2期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "納期限",
+      "第3期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第3期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "納期限",
+      "第4期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第4期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "納期限",
+      "第5期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第5期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "納期限",
+      "第6期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第6期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "納期限",
+      "第7期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第7期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "納期限",
+      "第8期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第8期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "納期限",
+      "第9期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第9期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "納期限",
+      "第10期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第10期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "納期限",
+      "第11期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第11期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "納期限",
+      "第12期・年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "第12期分の納期限（西暦年月日（YYYYMMDD））を設定する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)"
+  },
+  {
+   "mark": "※2",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+  }
+ ],
+ "uncertain": []
+}

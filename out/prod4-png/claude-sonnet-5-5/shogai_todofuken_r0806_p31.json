@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 31,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3077,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.050986,
+    "cost_usd_batch": 0.025493,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 31,
+    "printed_page": "13-5",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 131,
+            "no_raw": "131",
+            "name_path": [
+              "共同生活介護夜間支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活介護夜間支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※33",
+            "cells": []
+          },
+          {
+            "no": 132,
+            "no_raw": "132",
+            "name_path": [
+              "共同生活援助夜間防災・緊急時支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活援助夜間防災・緊急時支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※33",
+            "cells": []
+          },
+          {
+            "no": 133,
+            "no_raw": "133",
+            "name_path": [
+              "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "宿泊型自立訓練夜間防災・緊急時支援体制加算(Ⅱ)の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※33",
+            "cells": []
+          },
+          {
+            "no": 134,
+            "no_raw": "134",
+            "name_path": [
+              "夜間支援等体制加算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "夜間支援等体制加算区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※5、※44\n※45",
+            "cells": []
+          },
+          {
+            "no": 135,
+            "no_raw": "135",
+            "name_path": [
+              "夜間支援等体制加算対象利用者数"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "夜間支援等体制加算対象利用者数をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※C\n※5、※9\n※44、※46",
+            "cells": []
+          },
+          {
+            "no": 136,
+            "no_raw": "136",
+            "name_path": [
+              "主たる事業所施設区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "主たる事業所施設区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "△"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "△"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "△"
+              }
+            ],
+            "note": "※C\n※5、※35\n※36\n※37",
+            "cells": []
+          },
+          {
+            "no": 137,
+            "no_raw": "137",
+            "name_path": [
+              "配置医減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "配置医減算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※35\n※38",
+            "cells": []
+          },
+          {
+            "no": 138,
+            "no_raw": "138",
+            "name_path": [
+              "医療連携体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "医療連携体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※35\n※78",
+            "cells": []
+          },
+          {
+            "no": 139,
+            "no_raw": "139",
+            "name_path": [
+              "開所時間減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "開所時間減算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※38\n※47",
+            "cells": []
+          },
+          {
+            "no": 140,
+            "no_raw": "140",
+            "name_path": [
+              "開所時間減算区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "開所時間減算区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "※C\n※5、※9\n※47",
+            "cells": []
+          },
+          {
+            "no": 141,
+            "no_raw": "141",
+            "name_path": [
+              "重度障害者(児)支援加算(強度行動障害)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者(児)支援加算(強度行動障害)の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※47\n※48",
+            "cells": []
+          },
+          {
+            "no": 142,
+            "no_raw": "142",
+            "name_path": [
+              "就労定着支援体制加算区分(6月以上12月未満)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労定着支援体制加算区分(6月以上12月未満)をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※5、※10\n※47",
+            "cells": []
+          },
+          {
+            "no": 143,
+            "no_raw": "143",
+            "name_path": [
+              "就労定着支援体制加算区分(12月以上24月未満)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労定着支援体制加算区分(12月以上24月未満)をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※5、※10\n※47",
+            "cells": []
+          },
+          {
+            "no": 144,
+            "no_raw": "144",
+            "name_path": [
+              "就労定着支援体制加算区分(24月以上36月未満)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労定着支援体制加算区分(24月以上36月未満)をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "※5、※10\n※47",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続き（見出し行は繰り返し）。",
+      "項目名・内容の折り返し位置は推測で詰めている。"
+    ]
+  },
+  "raw_text": null
+}

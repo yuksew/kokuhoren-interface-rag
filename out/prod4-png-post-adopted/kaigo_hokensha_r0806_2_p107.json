@@ -1,0 +1,131 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 107,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "２０４－５",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・トレーラレコード３（審査支払手数料）",
+   "record": {
+    "exchange_id": "",
+    "name": "トレーラレコード３（審査支払手数料）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“6321”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別文字を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“T3”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "請求額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "審査支払手数料・請求額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "累計請求額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "５月から審査年月までの累計での審査支払手数料を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "依頼は「次のページ」の表でしたが、添付は PDF 上のページ107（印字ページ204-5）の1ページだけなので、添付ページに含まれるトレーラレコード３の表を書き起こした。",
+  "record の name は表見出しの「トレーラレコード３（審査支払手数料）」から取り、exchange_id と parent は本文に読み取れないため空文字とした。"
+ ]
+}

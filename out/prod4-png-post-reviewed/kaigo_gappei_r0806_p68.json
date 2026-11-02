@@ -1,0 +1,167 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_gappei_r0806",
+ "page": 68,
+ "edition": "令和8年6月版",
+ "volume": "市町村合併編",
+ "printed_page": "23",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "・介護予防・日常生活支援総合事業サービスコード異動連絡票情報",
+   "record": {
+    "exchange_id": "",
+    "name": "介護予防・日常生活支援総合事業サービスコード異動連絡票情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "編入する市町村が設定する内容",
+    "編入先の市町村が設定する内容"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "編入する市町村が設定する内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“5H11”（固定値）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "編入により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“3:終了”を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "“01”（固定値）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "編入前の市町村の証記載保険者番号を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "サービス種類コードを設定する",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "編入先の市町村が設定する内容",
+       "value": "インタフェースの提供は不要"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "右端列「編入先の市町村が設定する内容」は、6行にまたがる縦結合セルの「インタフェースの提供は不要」を各行に同じ値として入れた。",
+  "表の前に「(4) ケース4」の本文と「必要なインタフェースの種類」の箇条書きがあるが、表ではないため含めていない。",
+  "依頼には PDF 上のページ 68 とあるが、添付画像の印字ページ番号は 23 であり、printed_page には 23 を入れた。"
+ ]
+}

@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 28,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2518,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.045366,
+    "cost_usd_batch": 0.022683,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 28,
+    "printed_page": "10",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1.2.1 異動情報(入力情報)",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "受給者異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者の新規登録及び資格等の変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5311"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "保険者異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者の新規登録・廃止、所在地・連絡先等の変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5411"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "市町村固有異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者における要介護状態区分別及びサービス種類別支給限度基準額情報の登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5511"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "広域連合異動連絡票情報(行政区異動連絡票情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "広域連合を組織する市町村及び政令市における行政区の登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5611"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "地域密着型サービスコード異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域密着型サービスコードの単位数登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5F11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業(経過措置)サービスコード異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業(経過措置)サービスコードの単位数登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5G11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "介護予防・日常生活支援総合事業サービスコード異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "介護予防・日常生活支援総合事業サービスコードの単位数登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5H11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "個人番号異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "個人番号の新規登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5J11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "原案作成委託料異動連絡票(基本)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "原案作成委託料(基本)情報の新規登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "原案作成委託料異動連絡票(保険者単位・証記載保険者単位)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "原案作成委託料(保険者単位・証記載保険者単位)情報の新規登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K12"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "原案作成委託料異動連絡票(事業所単位)情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "原案作成委託料(事業所単位)情報の新規登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5K13"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "識別の一部(5H11, 5J11)は印字上の字間が不自然で、読み取りに若干の不確かさあり"
+    ]
+  },
+  "raw_text": null
+}

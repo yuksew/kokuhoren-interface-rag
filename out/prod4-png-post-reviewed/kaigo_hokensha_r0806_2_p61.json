@@ -1,0 +1,516 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 61,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "１８５－６",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・明細レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "明細レコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“1231”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別文字を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“D1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "介護予防・日常生活支援総合事業費資格照合（兼過誤申立）の対象となる被保険者の被保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "被保険者氏名"
+     ],
+     "type": "英数",
+     "length": 25,
+     "length_raw": "２５",
+     "content": "被保険者の被保険者氏名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "半角カナ出力",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "サービス種類コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "サービス事業所等が行ったサービス種類コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "サービス種類名"
+     ],
+     "type": "漢字",
+     "length": 34,
+     "length_raw": "３４",
+     "content": "サービス事業所等が行ったサービス種類名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "事業所のサービス提供年月(西暦年月(YYYYMM))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "種別"
+     ],
+     "type": "漢字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "警告が発生した入力情報の名称を略称で出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※４",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※4",
+       "text": "種別は一文字で出力される。(給:給付管理票)(請:請求明細書)(ケ:介護予防ケアマネジメント費請求明細書)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者が介護サービスを受けた事業所の事業所番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "事業所名"
+     ],
+     "type": "漢字",
+     "length": 40,
+     "length_raw": "４０",
+     "content": "事業所の事業所名を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "予備1"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "予備2"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "要介護区分コード"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "被保険者の要介護区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "予備3"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "認定有効期間 開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者の認定有効期間・開始年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "１６",
+     "name_path": [
+      "認定有効期間 終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者の認定有効期間・終了年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "１７",
+     "name_path": [
+      "限度額適用期間 開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者の限度額適用期間・開始年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "no_raw": "１８",
+     "name_path": [
+      "限度額適用期間 終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "被保険者の限度額適用期間・終了年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "１９",
+     "name_path": [
+      "支給限度額"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者の支給限度額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "２０",
+     "name_path": [
+      "居宅サービス計画作成区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "被保険者の居宅サービス計画の作成区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "２１",
+     "name_path": [
+      "支援事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "被保険者の支援事業所番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※１",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "２２",
+     "name_path": [
+      "予備4"
+     ],
+     "type": "数字",
+     "length": 5,
+     "length_raw": "５",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 23,
+     "no_raw": "２３",
+     "name_path": [
+      "予備5"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 24,
+     "no_raw": "２４",
+     "name_path": [
+      "予備6"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 25,
+     "no_raw": "２５",
+     "name_path": [
+      "予備7"
+     ],
+     "type": "数字",
+     "length": 4,
+     "length_raw": "４",
+     "content": "未使用",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページ」の表の書き起こしだが、添付は PDF ページ 61（印字ページ185－6）の1ページのみで、添付されたページ内の表（明細レコード）を書き起こした。",
+  "備考欄の「※S」は「※S」と読めたが、「※5」の可能性もあり不確か（項番19）。",
+  "備考欄の※１〜※４ に対応する注記本文はこのページに見当たらないため footnotes は空とした。",
+  "表見出しは「・明細レコード」で、交換情報識別番号・親レコードは読み取れないため空文字とした。"
+ ]
+}

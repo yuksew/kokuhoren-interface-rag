@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 293,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5065,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003542,
+    "cost_usd_batch": 0.001771,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 293,
+    "printed_page": "295",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "3．2．15 共同処理用保険者情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "共同処理用保険者情報（入力情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "共同処理用保険者異動連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者の口座・問い合わせ先情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5A11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "共同処理用保険者異動連絡票情報（償還払給付額管理処理情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還払給付額管理処理用の保険者情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5B11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "共同処理用保険者訂正連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの共同処理用保険者情報に対する訂正情報（基本情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5A21"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "共同処理用保険者訂正連絡票情報（償還払給付額管理処理情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの共同処理用保険者情報に対する訂正情報（償還払給付額管理処理情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5B21"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用保険者情報",
+              "共同処理用保険者情報異動連絡票（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用保険者情報",
+              "共同処理用保険者情報異動連絡票（償還払給付額管理処理情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用保険者情報",
+              "共同処理用保険者情報訂正連絡票（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用保険者情報",
+              "共同処理用保険者情報訂正連絡票（償還払給付額管理処理情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "○",
+        "text": "必須"
+      },
+      {
+        "mark": "×",
+        "text": "不要"
+      },
+      {
+        "mark": "◎",
+        "text": "必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "依頼文では PDF 上のページ 293 とあるが、添付画像の下部ページ番号は「- 295 -」である。添付画像の内容を書き起こした。",
+      "依頼文は「次のページ」の表を求めているが、添付は1ページのみで、そのページの表を書き起こした。",
+      "受付媒体種別表の「種別」列は縦に結合された見出しのため columns に入れず、name_path に入れた。",
+      "インタフェース一覧の「ルート」「媒体」は改行で表示されていたため、1行に詰めた（ルートは「保険者→国保連合会」、媒体は「伝送 磁気 帳票」）。",
+      "情報名の括弧が全角か半角かは画像から判別しきれず、全角（）で書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

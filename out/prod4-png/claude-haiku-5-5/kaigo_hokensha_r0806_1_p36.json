@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 36,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5606,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003812,
+    "cost_usd_batch": 0.001906,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 36,
+    "printed_page": "14",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "1．2．5　受給者情報突合情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "受給者情報突合情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の受給者台帳情報との突合用受給者情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5361"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送磁気"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "required_matrix",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "種別",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "受給者情報突合情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "種別",
+                "value": "受給者情報突合情報"
+              },
+              {
+                "column": "帳票名",
+                "value": "受給者情報突合情報"
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "○"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "×"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "1．2．6　受給者情報突合結果（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "受給者情報突合結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "受給者情報の突合結果",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5371"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送磁気"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付分",
+          "出力媒体種別 > 磁気受付分",
+          "出力媒体種別 > 帳票受付分"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "種別",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "受給者情報突合結果"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "帳票名",
+                "value": "受給者情報突合結果情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "媒体返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "×"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "○",
+        "text": "必須"
+      },
+      {
+        "mark": "×",
+        "text": "不要"
+      },
+      {
+        "mark": "◎",
+        "text": "必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "1．2．5の受付媒体種別の表は、属性・バイト数を持たない記号の行列のため required_matrix としたが、種別・帳票名の文字列列を含むため other の可能性もある。",
+      "1．2．6の出力形式の『帳票形式』見出しは図形と重なって読みにくく、文字は帳票形式と読めたが確信は低い。",
+      "1．2．5・1．2．6の『ルート』の矢印は図形ではなく文字の一部として『→』で書き写した。",
+      "依頼文は次のページの表を求めているが、添付は印字ページ14の1ページのみのため、このページの表を書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,729 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_1",
+ "page": 38,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "16",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力※1 > 新規",
+    "必須入力※1 > 変更",
+    "必須入力※1 > 終了",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 20,
+     "no_raw": "２０",
+     "name_path": [
+      "要介護状態区分コード"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "２",
+     "content": "要介護状態区分コードを設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※５\n※２２\n※３６",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※22",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※36",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "２１",
+     "name_path": [
+      "認定有効期間（開始年月日）"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "認定有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※３０\n※３２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※30",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※32",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "２２",
+     "name_path": [
+      "認定有効期間（終了年月日）"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "認定有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※３８",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※38",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "no_raw": "２３",
+     "name_path": [
+      "居宅サービス計画作成区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "居宅サービス計画作成区分コードを設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※５\n※６\n※１３\n※２３",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※6",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※13",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※23",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "no_raw": "２４",
+     "name_path": [
+      "居宅介護支援事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "居宅介護支援事業所の番号を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※５\n※６\n※２３\n※３７",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※6",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※23",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※37",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 25,
+     "no_raw": "２５",
+     "name_path": [
+      "居宅サービス計画適用開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "居宅サービス計画の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 26,
+     "no_raw": "２６",
+     "name_path": [
+      "居宅サービス計画適用終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "居宅サービス計画の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 27,
+     "no_raw": "２７",
+     "name_path": [
+      "訪問通所サービス",
+      "支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "６",
+     "content": "被保険者証記載の訪問通所サービス支給限度基準額を単位数で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※７\n※３０\n※３９\n※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※7",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※30",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※39",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※S",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "no_raw": "２８",
+     "name_path": [
+      "訪問通所サービス",
+      "上限管理適用期間開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "訪問通所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※３０",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※30",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 29,
+     "no_raw": "２９",
+     "name_path": [
+      "訪問通所サービス",
+      "上限管理適用期間終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "訪問通所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※３０\n※３８",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※30",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※38",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 30,
+     "no_raw": "３０",
+     "name_path": [
+      "短期入所サービス",
+      "支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 3,
+     "length_raw": "３",
+     "content": "被保険者証記載の短期入所サービス支給限度基準額を日数で設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※８\n※１６\n※Ｓ",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※8",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※16",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※S",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 31,
+     "no_raw": "３１",
+     "name_path": [
+      "短期入所サービス",
+      "上限管理適用期間開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "短期入所支給限度基準額管理期間の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※１６",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※16",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 32,
+     "no_raw": "３２",
+     "name_path": [
+      "短期入所サービス",
+      "上限管理適用期間終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "短期入所支給限度基準額管理期間の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２\n※１６",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※16",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 33,
+     "no_raw": "３３",
+     "name_path": [
+      "公費負担上限額減額の有無"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "１",
+     "content": "公費負担上限額減額の有無を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": "○"
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※５\n※３０",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": "",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※30",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "no_raw": "３４",
+     "name_path": [
+      "償還払化開始年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "償還払化開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 35,
+     "no_raw": "３５",
+     "name_path": [
+      "償還払化終了年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "８",
+     "content": "償還払化終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": null,
+     "required_by": [
+      {
+       "column": "必須入力※1 > 新規",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 変更",
+       "value": null
+      },
+      {
+       "column": "必須入力※1 > 終了",
+       "value": null
+      }
+     ],
+     "note": "※２",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表の見出し行が再掲されており項番20から始まるため前ページからの続きと判断したが、表題は見えていない。",
+  "表が次ページへ続くかは本ページ内では判断できない（最終行35の下に表の区切り線がある）。",
+  "内容列の全角文字間の空白は両端揃えによる字間と判断し除去した。「(YYYYMMDD)」の括弧は原文の半角表記のまま。",
+  "必須入力※1の見出し内の注記記号は「※1」として書き起こした。"
+ ]
+}

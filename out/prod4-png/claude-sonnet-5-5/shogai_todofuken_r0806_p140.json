@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 140,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2345,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.043666,
+    "cost_usd_batch": 0.021833,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 140,
+    "printed_page": "22",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 61,
+            "no_raw": "61",
+            "name_path": [
+              "共同生活介護夜間支援体制加算(Ⅰ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "共同生活介護夜間支援体制加算(Ⅰ)の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 62,
+            "no_raw": "62",
+            "name_path": [
+              "共同生活介護夜間支援対象利用者数"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "報酬算定上の共同生活介護夜間支援対象利用者数をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※C\n※5\n※9",
+            "cells": []
+          },
+          {
+            "no": 63,
+            "no_raw": "63",
+            "name_path": [
+              "夜間支援体制加算(小規模事業所)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "夜間支援体制加算(小規模事業所)の有無をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5、※6",
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "64",
+            "name_path": [
+              "夜間支援対象利用者数(小規模事業所)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "報酬算定上の夜間支援対象利用者数をコードで設定",
+            "required": "○",
+            "required_by": [],
+            "note": "※C\n※5、※6",
+            "cells": []
+          },
+          {
+            "no": 65,
+            "no_raw": "65",
+            "name_path": [
+              "大規模住居等減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "大規模住居等減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C\n※5、※24",
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "66",
+            "name_path": [
+              "利用定員超過による減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "利用定員超過による減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "67",
+            "name_path": [
+              "職員欠如による減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "職員欠如による減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "68",
+            "name_path": [
+              "標準利用期間超過減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "標準利用期間超過減算の有無をコードで設定",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 69,
+            "no_raw": "69",
+            "name_path": [
+              "利用日数特例届出有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特例利用日数届出の有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 70,
+            "no_raw": "70",
+            "name_path": [
+              "利用日数特例対象期間1(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の開始年月(西暦年月日(YYYYMM))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y\n※5\n※9",
+            "cells": []
+          },
+          {
+            "no": 71,
+            "no_raw": "71",
+            "name_path": [
+              "利用日数特例対象期間1(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の終了年月(西暦年月日(YYYYMM))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y\n※5\n※9",
+            "cells": []
+          },
+          {
+            "no": 72,
+            "no_raw": "72",
+            "name_path": [
+              "利用日数特例対象期間2(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の開始年月(西暦年月日(YYYYMM))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y\n※5",
+            "cells": []
+          },
+          {
+            "no": 73,
+            "no_raw": "73",
+            "name_path": [
+              "利用日数特例対象期間2(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の終了年月(西暦年月日(YYYYMM))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y\n※5",
+            "cells": []
+          },
+          {
+            "no": 74,
+            "no_raw": "74",
+            "name_path": [
+              "利用日数特例対象期間3(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の開始年月(西暦年月日(YYYYMM))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y\n※5",
+            "cells": []
+          },
+          {
+            "no": 75,
+            "no_raw": "75",
+            "name_path": [
+              "利用日数特例対象期間3(終了)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の終了年月(西暦年月日(YYYYMM))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y\n※5",
+            "cells": []
+          },
+          {
+            "no": 76,
+            "no_raw": "76",
+            "name_path": [
+              "利用日数特例対象期間4(開始)"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用日数に係る特例の適用を受ける対象期間の開始年月(西暦年月日(YYYYMM))を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "※Y\n※5",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きの表（項番61から）。レコード名は読み取れず空。",
+      "項目名の括弧はローマ数字「Ⅰ」を全角括弧で書き起こしたが、原文の括弧の全角・半角は画像から判別困難。"
+    ]
+  },
+  "raw_text": null
+}

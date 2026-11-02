@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 176,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 5333,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003677,
+    "cost_usd_batch": 0.001839,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 176,
+    "printed_page": "113",
+    "tables": [
+      {
+        "table_kind": "required_matrix",
+        "title": "・各交換情報識別番号とレコード構成、入力識別番号の対応は、以下の通りである。",
+        "record": {
+          "exchange_id": "E751",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "レコード名称",
+          "交換情報識別番号 > E751 > 障害福祉サービス",
+          "交換情報識別番号 > E751 > 地域生活支援事業"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "レコード名称",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J121、J131、J141、J221"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": "◎:L121"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "日数情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J121、J131、J141、J221"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J121、J131、J141、J221"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": "◎:L121"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "集計情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J121、J131、J141、J221"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": "◎:L121"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "契約情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J121、J221"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "一次審査済サービス利用計画作成費請求書情報\n明細情報レコード\nサービス提供年月が平成24年3月まで使用"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J311"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "一次審査済計画相談支援給付費請求書情報\n明細情報レコード\nサービス提供年月が平成24年4月以降使用"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J312"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "一次審査済計画相談支援給付費請求書情報\nサービス情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J312"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "一次審査済特例計画相談支援給付費請求書情報\n明細情報レコード\nサービス提供年月が平成24年4月以降使用"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J321"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "一次審査済特例計画相談支援給付費請求書情報\nサービス情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J321"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "一次審査済サービス提供実績記録票情報\n基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J611"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "一次審査済サービス提供実績記録票情報\n明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "◎:J611"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "一次審査済利用者負担上限額管理結果票情報\n基本情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J411、〇:J421"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "一次審査済利用者負担上限額管理結果票情報\n明細情報レコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [
+              {
+                "column": "交換情報識別番号 > E751 > 障害福祉サービス",
+                "value": "〇:J411、〇:J421"
+              },
+              {
+                "column": "交換情報識別番号 > E751 > 地域生活支援事業",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "凡例",
+        "text": "◎…必須レコード、〇…実績内容により必要となるレコード、空白…不要なレコード"
+      },
+      {
+        "mark": null,
+        "text": "また、入力識別番号の内容は以下の通りである。"
+      }
+    ],
+    "uncertain": [
+      "依頼文では「次のページ」の表を求められているが、添付は PDF 上のページ 176（印字ページ 113）の1ページのみのため、このページの表を書き起こした。",
+      "「交換情報識別番号 > E751 > 障害福祉サービス」「交換情報識別番号 > E751 > 地域生活支援事業」の列名は、E751 の見出し行を上段として連結した。",
+      "表の種類は、属性・バイト数の列がなく記号と識別番号の対応だけが並ぶため required_matrix とした。"
+    ]
+  },
+  "raw_text": null
+}

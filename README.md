@@ -42,9 +42,10 @@ uv run python src/adopt.py --run prod1-png-post                # 採用版 out/p
 uv run python src/review_app.py
 uv run python src/apply_review.py                              # 判定を反映した確定版 out/prod1-png-post-reviewed/ と reports/review_status.*.csv
 
-# 本番2（介護 居宅介護支援事業所編）も同じ手順: config/prod2.yaml で plan → submit → collect、
-#   postprocess.py --run prod2-png → validate.py / report.py / adopt.py / review_app.py / apply_review.py を --run prod2-png-post で
-# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1・本番2の両方を読む
+# 本番2〜4 も同じ手順: config/prodN.yaml で plan → submit → collect、
+#   postprocess.py --run prodN-png → validate.py / report.py / adopt.py / review_app.py / apply_review.py を --run prodN-png-post で
+#   （本番2: 介護 居宅介護支援事業所編、本番3: 介護 都道府県編・生保単独編、本番4: 介護 保険者編・市町村合併編、障害 市町村編・都道府県編）
+# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1〜4 をすべて読む
 uv run python src/build_db.py
 uv run python src/query_db.py 受給者証番号 --domain shogai        # 全文検索（3文字以上）
 uv run python src/query_db.py --required 0101                     # 列（様式種別番号など）で ◎ の項目

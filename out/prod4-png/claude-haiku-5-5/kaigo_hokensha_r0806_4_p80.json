@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_4",
+    "page": 80,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊4）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5553,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003786,
+    "cost_usd_batch": 0.001893,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 80,
+    "printed_page": "595-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "5.2.2 給付実績交換情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "給付実績交換情報（出力情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "保険者保有給付実績更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "保険者保有給付実績の更新結果情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1149\n※2、※4\n※6、※8\n※10、※12\n※14\n※16"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "国保連合会保有給付実績情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会保有の給付実績情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "1119\n※2、※4\n※6、※8\n※10、※12\n※14\n※16"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会→保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送\n磁気\n帳票\n※"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○\n汎用紙\nA4タテ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "出力媒体種別",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "出力媒体種別 > 伝送受付分",
+          "出力媒体種別 > 磁気受付分",
+          "出力媒体種別 > 帳票受付分"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "給付実績交換情報",
+              "保険者保有給付実績更新結果"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "給付実績交換情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "給付実績交換情報",
+              "国保連合会保有給付実績"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": "給付実績交換情報"
+              },
+              {
+                "column": "出力媒体種別 > 伝送受付分",
+                "value": "伝送返却"
+              },
+              {
+                "column": "出力媒体種別 > 磁気受付分",
+                "value": "磁気返却"
+              },
+              {
+                "column": "出力媒体種別 > 帳票受付分",
+                "value": "帳票返却"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※2",
+        "text": "サービス提供年月が平成15年3月以前の交換情報識別番号は、(1)の場合“1141”、(2)の場合“1111”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※4",
+        "text": "サービス提供年月が平成15年4月以降、平成17年9月以前の交換情報識別番号は、(1)の場合“1142”、(2)の場合“1112”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※6",
+        "text": "サービス提供年月が平成17年10月以降、平成18年3月以前の交換情報識別番号は、(1)の場合“1143”、(2)の場合“1113”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※8",
+        "text": "サービス提供年月が平成18年4月以降、平成20年3月以前の交換情報識別番号は、(1)の場合“1144”、(2)の場合“1114”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※10",
+        "text": "サービス提供年月が平成20年4月以降、平成21年3月以前の交換情報識別番号は、(1)の場合“1145”、(2)の場合“1115”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※12",
+        "text": "サービス提供年月が平成21年4月以降、平成24年3月以前の交換情報識別番号は、(1)の場合“1146”、(2)の場合“1116”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※14",
+        "text": "サービス提供年月が平成24年4月以降、平成27年3月以前の交換情報識別番号は、(1)の場合“1147”、(2)の場合“1117”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※16",
+        "text": "サービス提供年月が平成27年4月以降、平成30年3月以前の交換情報識別番号は、(1)の場合“1148”、(2)の場合“1118”をそれぞれ設定する。"
+      },
+      {
+        "mark": "※",
+        "text": "帳票の様式については、インタフェース項目に揃えた様式で提供する。ただし、大量な枚数になる場合等は、帳票での提供ができない場合がある。"
+      }
+    ],
+    "uncertain": [
+      "1ページ目の表の出力形式見出し「帳票形式」は文字が重なって印字されているが、「帳票形式」と読み取った。",
+      "識別・媒体・ルートのセル内の改行は、区切りとして改行を残した箇所と、表示上の折り返しとして詰めた箇所がある。"
+    ]
+  },
+  "raw_text": null
+}

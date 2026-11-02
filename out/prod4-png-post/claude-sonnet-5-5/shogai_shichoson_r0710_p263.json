@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 263,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1658,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036794,
+    "cost_usd_batch": 0.018397,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 263,
+    "printed_page": "152-1",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．２　訂正情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児支援受給者訂正連絡票情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの障害児支援受給者情報に対する訂正情報(利用者負担上限額、各種減免等の基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B211"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児支援受給者訂正連絡票情報\n(支給決定情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの障害児支援受給者情報に対する訂正情報(受給者の決定サービスや支給期間等の支給決定内容の情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B221"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児支援受給者訂正連絡票情報\n(モニタリング情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの障害児支援受給者情報に対する訂正情報(受給者のモニタリング予定月の情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B231"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "都道府県等訂正連絡票情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの市町村情報(基本情報)に対する訂正情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B261"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "都道府県等訂正連絡票情報(独自助成情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの市町村情報(独自助成情報)に対する訂正情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B271"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "都道府県等訂正連絡票情報(行政区情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの政令市情報(行政区情報)に対する訂正情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B281"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "障害児支援個人番号訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの障害児支援個人番号情報に対する訂正情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B2F1"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

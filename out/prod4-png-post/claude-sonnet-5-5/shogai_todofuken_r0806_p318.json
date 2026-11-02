@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 318,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1788,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.038096,
+    "cost_usd_batch": 0.019048,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 318,
+    "printed_page": "77",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（１）　障害児支援受給者訂正連絡票情報（基本情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "障害児支援受給者訂正連絡票情報（基本情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "訂正年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者台帳情報に訂正が生じた年月(西暦年月(YYYYMM))と連番(異動順)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "訂正区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訂正区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "2:修正\n3:削除",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者異動連絡票情報(基本情報)に変更等が生じた年月(西暦年月(YYYYMM))と連番(異動順)を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:新規\n2:変更\n3:終了",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "受給者異動連絡票情報(基本情報)の異動事由を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "個別減免有無コード値個別減免の有無を設定する◎生保移行防止有無(定率負担)コード値生保移行防止有無を設定する◎利用者負担上限月額数値利用者負担上限月額を設定する◎利用者負担上限月額有効期間(開始年月日)コード値利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "証記載都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の都道府県等番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "個別減免有無コード値個別減免の有無を設定する◎生保移行防止有無(定率負担)コード値生保移行防止有無を設定する◎利用者負担上限月額数値利用者負担上限月額を設定する◎利用者負担上限月額有効期間(開始年月日)コード値利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "政令市市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "政令市が受給者を行政区で分けて管理する場合のみ政令市の市町村番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "個別減免有無コード値個別減免の有無を設定する◎生保移行防止有無(定率負担)コード値生保移行防止有無を設定する◎利用者負担上限月額数値利用者負担上限月額を設定する◎利用者負担上限月額有効期間(開始年月日)コード値利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "個別減免有無コード値個別減免の有無を設定する◎生保移行防止有無(定率負担)コード値生保移行防止有無を設定する◎利用者負担上限月額数値利用者負担上限月額を設定する◎利用者負担上限月額有効期間(開始年月日)コード値利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "障害区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "障害区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "個別減免有無コード値個別減免の有無を設定する◎生保移行防止有無(定率負担)コード値生保移行防止有無を設定する◎利用者負担上限月額数値利用者負担上限月額を設定する◎利用者負担上限月額有効期間(開始年月日)コード値利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する◎",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "受給者情報",
+              "受給者氏名(カナ)"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "受給者氏名カナを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "受給者情報",
+              "生年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "生年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "児童情報",
+              "児童氏名(カナ)"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "児童氏名カナを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "児童情報",
+              "生年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "生年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "見出し「1.3.2 訂正情報（入力情報）」は表タイトルに含めず、（１）の見出しのみを title とした。record.exchange_id は読み取れず空。"
+    ]
+  },
+  "raw_text": null
+}

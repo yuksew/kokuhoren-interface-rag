@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 291,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4958,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003488,
+    "cost_usd_batch": 0.001744,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 291,
+    "printed_page": "293",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "３．２．１３　共同処理用市町村特別給付事業所情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "共同処理用市町村特別給付事業所異動連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "事業所の名称・所在地等の情報（基本情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5811"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "共同処理用市町村特別給付事業所異動連絡票情報（サービス情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "事業所の名称・所在地等の情報（サービス情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5911"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "共同処理用市町村特別給付事業所訂正連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの市町村特別給付事業所情報に対する訂正情報（基本情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5821"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "共同処理用市町村特別給付事業所訂正連絡票情報（サービス情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "国保連合会へ登録済みの市町村特別給付事業所情報に対する訂正情報（サービス情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "5921"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者→国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "種別",
+          "帳票名",
+          "受付媒体種別 > 伝送",
+          "受付媒体種別 > 磁気",
+          "受付媒体種別 > 帳票"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "帳票名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付事業所情報",
+              "共同処理用市町村特別給付事業所情報異動連絡票（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": null
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付事業所情報",
+              "共同処理用市町村特別給付事業所情報異動連絡票（サービス情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": null
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付事業所情報",
+              "共同処理用市町村特別給付事業所情報訂正連絡票（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": null
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "共同処理用市町村特別給付事業所情報",
+              "共同処理用市町村特別給付事業所情報訂正連絡票（サービス情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種別",
+                "value": null
+              },
+              {
+                "column": "受付媒体種別 > 伝送",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 磁気",
+                "value": "×"
+              },
+              {
+                "column": "受付媒体種別 > 帳票",
+                "value": "◎"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "○ … 必須、× … 不要、◎ … 必須かつ紙媒体受付の際の入力対象"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は1ページのみで、そのページ（下部に「- 293 -」）に載っている表を書き起こした。依頼のPDF上のページ291と印字ページ293が一致しない。",
+      "2つ目の表の「種別」列（「共同処理用市町村特別給付事業所情報」の縦結合セル）は name_path に入れ、種別の cells の値は null とした。",
+      "2つ目の表の帳票名の見出し「共同処理用市町村特別給付事業所情報異動連絡票（基本情報）」等は、原本で行内に折り返されている文字を連結して書いた。"
+    ]
+  },
+  "raw_text": null
+}

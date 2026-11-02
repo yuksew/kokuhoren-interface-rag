@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 449,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 4181,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003101,
+    "cost_usd_batch": 0.001551,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 449,
+    "printed_page": "154",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "⑤ 一次審査済サービス提供実績記録票情報 基本情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "基本情報レコード",
+          "parent": "一次審査済サービス提供実績記録票情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※1",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を設定する（基本情報レコード）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "様式種別番号"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "様式番号2桁、枝番2桁を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付適用の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し　2:有り",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "補足給付関係情報",
+              "補足給付額（円／日）"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "補足給付適用の有無が有りの場合に、一日単位の補足給付額を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価　朝食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、朝食の単価を設定\n（契約が毎食毎の場合）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価　昼食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、昼食の単価を設定\n（契約が毎食毎の場合）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価　夕食（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、夕食の単価を設定\n（契約が毎食毎の場合）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "補足給付関係情報",
+              "食費の単価　一日（円／日）"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "補足給付適用の有無が有りの場合に、一日単位の単価を設定\n（契約が一日単位の場合）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価　一日（円／日）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補足給付適用の有無が有りの場合に、日単位の光熱水費単価を設定(契約が一日単位の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "補足給付関係情報",
+              "光熱水費の単価　一月（円／日）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "補足給付適用の有無が有りの場合に、一月単位の光熱水費単価を設定(契約が一月単位の場合)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文では『次のページ』の表とあるが、添付は PDF 449 ページ（印字ページ154）の1枚のみのため、添付ページの表を書き起こした。",
+      "※B・※1・※2 の注記本文はこのページに印字されていないため footnotes は空。",
+      "表が次ページに続くかは添付からは確定できない（表の下端に続きの行の兆候はなく、continues_to_next_page は推定 true）。",
+      "record.exchange_id は本ページに交換情報識別番号の値がないため空文字とした。",
+      "項目名列の縦結合見出し「補足給付関係情報」は name_path にのみ入れた。"
+    ]
+  },
+  "raw_text": null
+}

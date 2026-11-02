@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 262,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3472,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002747,
+    "cost_usd_batch": 0.001373,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 262,
+    "printed_page": "１５２",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．１　異動情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児支援受給者異動連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者の新規登録及び変更時に作成する情報（利用者負担上限額、各種減免等の基本情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B111"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児支援受給者異動連絡票情報（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者の新規登録及び変更時に作成する情報（受給者の決定サービスや支給期間等の支給決定内容の情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B121"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児支援受給者異動連絡票情報（モニタリング情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者の新規登録及び変更時に作成する情報（受給者のモニタリング予定月の情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B131"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "都道府県等異動連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の新規登録・廃止、所在地・連絡先等の変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B161"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "都道府県等異動連絡票情報（独自助成情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の独自助成の新規登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B171"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "都道府県等異動連絡票情報（行政区情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "政令市における行政区の登録及び変更時に作成する情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B181"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "障害児支援個人番号異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児支援受給者の新規登録及び変更時に作成する個人番号に係る情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B1F1"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページの表」の書き起こしですが、添付されているのは1ページのみで、そのページ（印字ページ１５２、PDF上のページ262）に含まれる表「１．２．１　異動情報（入力情報）」を書き起こしました。",
+      "情報名・内容の折り返し位置は表示上の改行として連結しました。情報名の「（」の前の改行は意味のある区切りかもしれませんが、判断できないため連結しています。"
+    ]
+  },
+  "raw_text": null
+}

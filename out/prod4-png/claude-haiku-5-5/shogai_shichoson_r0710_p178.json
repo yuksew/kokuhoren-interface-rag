@@ -1,0 +1,733 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 178,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 5898,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00396,
+    "cost_usd_batch": 0.00198,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 178,
+    "printed_page": "114",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "① 基本情報レコード",
+        "record": {
+          "exchange_id": "",
+          "name": "基本情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > J121",
+          "出力対象項目（※1） > J131",
+          "出力対象項目（※1） > J141",
+          "出力対象項目（※1） > J221",
+          "出力対象項目（※1） > L121",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性(※Z)",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "01を設定する(基本情報)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "給付実績情報作成区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績情報の作成区分を出力",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": "1:新規\n2:修正\n3:取消",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "給付実績区分コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "給付実績の区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": "1:現物\n2:償還",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "コード値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月YYYYMMを設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(チェックデジット1桁含む)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "助成自治体番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "助成自治体がある場合、市町村番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "支給決定者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定者カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "△"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "支給決定児童氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "支給決定児童カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": "△"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "地域区分コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "地域区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "就労継続支援A型事業者負担減免措置実施"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し  2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "利用者負担上限月額①"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "所得区分に応じた利用者負担上限月額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "就労継続支援A型減免対象者"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "1:無し  2:有り",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "月の末日における障害支援区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > J121",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J131",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > J141",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > J221",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > L121",
+                "value": null
+              }
+            ],
+            "note": "※C\n※6",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの表は介護系（給付実績・J121等の出力対象項目）に見えるが、依頼文の分野は障害福祉・PDF上のページは178とされている。内容の出所を確認してほしい。",
+      "表の下部は18項番の後で途切れており、19項番以降が次ページに続く可能性があるため continues_to_next_page を true にしたが、ページ境界は推定。",
+      "備考欄の ※B ※2 ※Y ※C ※6 に対応する注記本文はこのページに無いため footnotes は空。",
+      "表の見出し直下の「属性(※Z)」「バイト数」は原文の表記を整えて書いた（括弧の全角・半角の違いは未確認）。",
+      "record の exchange_id と parent は本文から読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

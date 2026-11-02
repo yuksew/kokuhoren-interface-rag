@@ -1,0 +1,382 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_shichoson_r0710",
+ "page": 272,
+ "edition": "令和7年10月施行分",
+ "volume": "市町村編",
+ "printed_page": "１５４－５",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "１．３．２　障害児支援受給者異動連絡票情報（支給決定情報）（B121）",
+   "record": {
+    "exchange_id": "B121",
+    "name": "障害児支援受給者異動連絡票情報（支給決定情報）",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "必須入力（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": ":「インタフェース仕様書 市町村編 II.障害児支援 1.2 インタフェース一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "８",
+     "content": "受給者異動連絡票情報(支給決定情報)に変更等が生じた年月(西暦年月(YYYYMM))と連番(異動順)を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "１",
+     "content": "異動区分コードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "1:新規\n2:変更\n3:終了",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "２",
+     "content": "受給者異動連絡票情報(支給決定情報)の異動事由を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "証記載都道府県等番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "６",
+     "content": "受給者証記載の市町村番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "政令市市町村番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "６",
+     "content": "政令市が受給者を行政区で分けて管理する場合のみ政令市の市町村番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "受給者証番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "１０",
+     "content": "受給者証番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "決定サービスコード"
+     ],
+     "type": "英数",
+     "length": 6,
+     "length_raw": "６",
+     "content": "決定したサービスのコードを設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "旧障害程度区分等コード"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "決定支給量"
+     ],
+     "type": "数値",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定した支給量（上 6 桁整数部、下 2 桁小数部）を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※2\n※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": ":次のサービスにおける「決定支給量」の設定は、以下のとおりとする。(1)通所施設等:児童発達支援、医療型児童発達支援、放課後等デイサービス、保育所等訪問支援、居宅訪問型児童発達支援なお、国保連合会に同じサービス提供年月に対する複数の支給決定情報(複数の決定支給量)が存在する場合は、最新の異動年月日の支給決定情報に設定されている決定支給量を使用して実績とのチェックを行う。また、月途中での開始や終了となる支給決定情報についても、最新の異動年月日の支給決定情報に設定されている決定支給量を使用して実績とのチェックを行う。(2)障害児相談支援",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※3",
+       "text": ":異動年月日の年月が平成24 年4 月以降の場合、使用する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "１回当たりの最大提供量"
+     ],
+     "type": "数値",
+     "length": 5,
+     "length_raw": "５",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "支給量単位区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "１",
+     "content": "決定した支給量の単位区分を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "※C\n※3",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※3",
+       "text": ":異動年月日の年月が平成24 年4 月以降の場合、使用する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "１３",
+     "name_path": [
+      "決定支給期間（開始年月日）"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定サービスの有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y\n※4\n※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※4",
+       "text": ":障害児相談支援において異動年月日の年月が平成24 年4 月以降の場合は、障害児相談支援対象者が利用する障害児支援の支給決定の有効期間のうち最長の有効期間と同一の期間を設定する。なお、開始年月日の(日)は1 日を設定し、終了年月日の(日)は、当該終了年月の末日を設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※5",
+       "text": ":国保連合会に同じサービス提供年月に対して有効となる複数の支給決定情報が存在する場合(月途中で変更が発生した場合)は、最新の異動年月日の支給決定情報に設定されている決定支給期間のみではなく、当該サービス提供年月に関する支給決定情報に設定されている決定支給期間を使用して実績とのチェックを行う。例)支給決定情報に月途中で変更が発生した場合(児童発達支援)受給者台帳(支給決定情報)※一次審査で使用する情報は背景色ありチェックで有効とする情報設定パターン異動年月日決定支給期間決定支給量サービス提供年月が2019 年10 月の場合開始年月日終了年月日提供できる日提供できない日提供可能量期間に空きが無い場合なし期間に空きがある場合",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "１４",
+     "name_path": [
+      "決定支給期間（終了年月日）"
+     ],
+     "type": "コード値",
+     "length": 8,
+     "length_raw": "８",
+     "content": "決定サービスの有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y\n※4\n※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※4",
+       "text": ":障害児相談支援において異動年月日の年月が平成24 年4 月以降の場合は、障害児相談支援対象者が利用する障害児支援の支給決定の有効期間のうち最長の有効期間と同一の期間を設定する。なお、開始年月日の(日)は1 日を設定し、終了年月日の(日)は、当該終了年月の末日を設定する。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※5",
+       "text": ":国保連合会に同じサービス提供年月に対して有効となる複数の支給決定情報が存在する場合(月途中で変更が発生した場合)は、最新の異動年月日の支給決定情報に設定されている決定支給期間のみではなく、当該サービス提供年月に関する支給決定情報に設定されている決定支給期間を使用して実績とのチェックを行う。例)支給決定情報に月途中で変更が発生した場合(児童発達支援)受給者台帳(支給決定情報)※一次審査で使用する情報は背景色ありチェックで有効とする情報設定パターン異動年月日決定支給期間決定支給量サービス提供年月が2019 年10 月の場合開始年月日終了年月日提供できる日提供できない日提供可能量期間に空きが無い場合なし期間に空きがある場合",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "no_raw": "１５",
+     "name_path": [
+      "相互利用対象者区分"
+     ],
+     "type": "コード値",
+     "length": 1,
+     "length_raw": "１",
+     "content": "設定しない",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "このページには表が1つのみで、※B・※C・※Y・※1などの注記本文は掲載されていないため footnotes は空にした。",
+  "項番・バイト数の数字は画像上の字形から全角として書き起こした。",
+  "依頼文は『次のページの表』とあるが、添付は1ページのみで、そのページの表（1.3.2 B121）を書き起こした。"
+ ]
+}

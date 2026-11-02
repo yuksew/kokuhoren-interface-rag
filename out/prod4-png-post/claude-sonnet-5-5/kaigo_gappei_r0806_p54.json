@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 54,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 1365,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.033832,
+    "cost_usd_batch": 0.016916,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 54,
+    "printed_page": "18-4",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・個人番号異動連絡票情報",
+        "record": {
+          "exchange_id": "5J11",
+          "name": "個人番号異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入する市町村が設定する内容",
+          "編入先の市町村が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“5J11”（固定値）"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“5J11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先市町村での被保険者の資格が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“3:終了”を設定"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“1:新規”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "“01:受給者の異動(新規、区間異動等)”を設定"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“01:受給者の異動(新規、区間異動等)”を設定"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入前の市町村の保険者番号を設定する"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先の市町村の保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "編入前の市町村で付番されていた被保険者番号を設定する"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先の市町村で新たに付番した被保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "個人番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入する市町村が設定する内容",
+                "value": "個人番号を設定する"
+              },
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "個人番号を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "交換情報識別番号はタイトルからは読み取れないため、record.exchange_idは表中の固定値5J11を使用した"
+    ]
+  },
+  "raw_text": null
+}

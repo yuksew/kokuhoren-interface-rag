@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 472,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 9834,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.005928,
+    "cost_usd_batch": 0.002964,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 472,
+    "printed_page": "167-3",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（１２） 警告一覧表情報",
+        "record": {
+          "exchange_id": "",
+          "name": "警告一覧表情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "バイト数",
+          "内容",
+          "出力対象項目(※1) > 種別 > サ",
+          "出力対象項目(※1) > 種別 > 請",
+          "出力対象項目(※1) > 種別 > 明",
+          "出力対象項目(※1) > 種別 > 利",
+          "出力対象項目(※1) > 種別 > 計",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性(※Z)",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "作成年月日(西暦年月日YYYYMMDD)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月YYYYMM)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "証記載都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載都道府県等名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者証に記載された都道府県等名を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "データ種別区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "データ種別区分を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "2:障害児給付費",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "データ種別名"
+            ],
+            "type": "漢字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "データ種別名を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "明細",
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載された受給者証番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "明細",
+              "給付決定保護者氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "給付決定保護者氏名カナを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "△"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "△"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "明細",
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "事業所番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "明細",
+              "事業所名（漢字）"
+            ],
+            "type": "漢字",
+            "length": 80,
+            "length_raw": "80",
+            "content": "事業所名（漢字）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "明細",
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "明細",
+              "種別"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "警告になった情報の種別を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "明細",
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "※2\n※C",
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "明細",
+              "単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "単位数を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "明細",
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "2:警告\n6: 警 告（重度）",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "明細",
+              "一次審査結果内容"
+            ],
+            "type": "漢字",
+            "length": 12,
+            "length_raw": "12",
+            "content": "一次審査結果内容を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "明細",
+              "警告コード"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "警告コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "明細",
+              "警告事由内容"
+            ],
+            "type": "漢字",
+            "length": 134,
+            "length_raw": "134",
+            "content": "警告コードに対応する警告事由内容を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "◎"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "明細",
+              "備考",
+              "台帳過誤"
+            ],
+            "type": "漢字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "台帳過誤に関する明細の場合、「台帳過誤」を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "明細",
+              "備考",
+              "関連No."
+            ],
+            "type": "漢字",
+            "length": 16,
+            "length_raw": "16",
+            "content": "『審査対象明細表』に出力がある場合、関連No.を「児－999999」の形式で設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目(※1) > 種別 > サ",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 請",
+                "value": null
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 明",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 利",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目(※1) > 種別 > 計",
+                "value": "○"
+              }
+            ],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしを求めているが、添付は PDF ページ 472（印字ページ 167-3）の1ページのみで、このページに見える表（警告一覧表情報）を書き起こした。",
+      "項番4・5の項目名「証記載都道府県等番号」「証記載都道府県等名」は原文どおり「受給者証」の文字が欠けて見えるため、そのまま書き写した。",
+      "項番16の備考は「2:警告」「6: 警 告（重度）」の区切りを改行で残したが、折り返し位置が判然としない。",
+      "項番12の内容の「(西暦年月 YYYYMM)」の空白は原文の見え方のまま書き写した。",
+      "明細（項番8〜21）と備考（項番20・21）の縦結合の範囲は画像から判断した。",
+      "表の下に注記（※1, ※2, ※B, ※C, ※Y など）の本文は見当たらなかったため footnotes は空とした。"
+    ]
+  },
+  "raw_text": null
+}

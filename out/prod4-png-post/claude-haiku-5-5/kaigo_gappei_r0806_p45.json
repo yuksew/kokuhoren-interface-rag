@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 45,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 3356,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002687,
+    "cost_usd_batch": 0.001344,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 45,
+    "printed_page": "15-5",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "・原案作成委託料異動連絡票（基本）情報",
+        "record": {
+          "exchange_id": "",
+          "name": "原案作成委託料異動連絡票（基本）情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "編入する市町村が設定する内容",
+          "編入先の市町村が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "編入する市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5K11”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“5K11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "編入により市町村の効力が消滅する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先の市町村での効力が発生する日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“3:終了”を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“1:新規”を設定"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "“01”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "編入前の市町村に所在する介護予防支援事業所（地域包括支援センター）の事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先の市町村に所在が変更となる介護予防支援事業所（地域包括支援センター）の事業所番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "サービス種類コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "施設所在保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "編入先の市町村の証記載保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "委託料設定単位"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "委託料設定単位を設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "原案作成委託料請求先"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "原案作成委託料請求先を設定する"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "委託料種類"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "委託料種類を設定する"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "委託料計算端数処理方法"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "編入先の市町村が設定する内容",
+                "value": "委託料計算端数処理方法を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表の書き起こしだが、添付は PDF 45 ページ（印字ページ 15-5）の1ページのみのため、添付ページの表を書き起こした。",
+      "記入欄が「編入する市町村が設定する内容」「編入先の市町村が設定する内容」の2列で、content は前者を割り当て、後者は cells に入れた。",
+      "レコード名は表題「原案作成委託料異動連絡票（基本）情報」から取ったが、本文に明示された正式なレコード名かは確認できない。exchange_id と parent は読み取れないため空文字とした。"
+    ]
+  },
+  "raw_text": null
+}

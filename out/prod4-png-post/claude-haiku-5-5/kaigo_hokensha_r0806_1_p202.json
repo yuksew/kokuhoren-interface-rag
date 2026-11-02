@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 202,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5976,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003997,
+    "cost_usd_batch": 0.001999,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 202,
+    "printed_page": "66-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 66,
+            "no_raw": "６６",
+            "name_path": [
+              "保険資格",
+              "国民健康",
+              "保険者番号（国保）"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "保険者番号（国保）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "６７",
+            "name_path": [
+              "保険資格",
+              "国民健康",
+              "被保険者証番号（国保）"
+            ],
+            "type": "英数",
+            "length": 20,
+            "length_raw": "２０",
+            "content": "被保険者証番号（国保）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 68,
+            "no_raw": "６８",
+            "name_path": [
+              "保険資格",
+              "国民健康",
+              "宛名番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "宛名番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 69,
+            "no_raw": "６９",
+            "name_path": [
+              "二次予防事業区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "二次予防事業区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "処理年月が平成24年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 70,
+            "no_raw": "７０",
+            "name_path": [
+              "二次予防事業有効期間開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "二次予防事業有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "処理年月が平成24年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 71,
+            "no_raw": "７１",
+            "name_path": [
+              "二次予防事業有効期間終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "二次予防事業有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※６",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※6",
+                "text": "処理年月が平成24年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 72,
+            "no_raw": "７２",
+            "name_path": [
+              "住所地特例",
+              "住所地特例対象者区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "住所地特例対象者区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 73,
+            "no_raw": "７３",
+            "name_path": [
+              "住所地特例",
+              "施設所在保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "６",
+            "content": "住所地特例対象者が入所（居）する施設の所在する市町村の証記載保険者番号を設定する\n広域連合（政令市）の場合は市町村コード（行政区番号）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 74,
+            "no_raw": "７４",
+            "name_path": [
+              "住所地特例",
+              "住所地特例適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "住所地特例の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 75,
+            "no_raw": "７５",
+            "name_path": [
+              "住所地特例",
+              "住所地特例適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "住所地特例の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 76,
+            "no_raw": "７６",
+            "name_path": [
+              "特定入所者介護サービス",
+              "食費負担限度額（短期入所サービス）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "食費負担限度額（短期入所サービス）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※９",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※9",
+                "text": "処理年月が2021 年5 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 77,
+            "no_raw": "７７",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（多床室Ⅱ（老健・医療院））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（多床室Ⅱ（老健・医療院））負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１０\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※10",
+                "text": "処理年月が2026 年7 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 78,
+            "no_raw": "７８",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（多床室Ⅲ（老健・医療院等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（多床室Ⅲ（老健・医療院等））負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※１０\n※S",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※10",
+                "text": "処理年月が2026 年7 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 79,
+            "no_raw": "７９",
+            "name_path": [
+              "二割負担",
+              "適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "二割負担の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 80,
+            "no_raw": "８０",
+            "name_path": [
+              "二割負担",
+              "適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "二割負担の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※７",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※7",
+                "text": "処理年月が平成27年5月以降の場合、設定される。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 81,
+            "no_raw": "８１",
+            "name_path": [
+              "三割負担",
+              "適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "三割負担の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※8",
+                "text": "処理年月が平成30 年5 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 82,
+            "no_raw": "８２",
+            "name_path": [
+              "三割負担",
+              "適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "三割負担の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※8",
+                "text": "処理年月が平成30 年5 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 83,
+            "no_raw": "８３",
+            "name_path": [
+              "住所地郵便番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "７",
+            "content": "被保険者の住所の郵便番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※８",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※8",
+                "text": "処理年月が平成30 年5 月以降の場合、設定される。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "認定有効期間開始年月日が平成14年1月1日以降の場合、本項目には\"0\"若しくはNULLが設定される。なお、認定有効期間開始年月日が平成13年12月31日以前の場合、従来通り支給限度基準額、上限管理適用期間開始年月日、上限管理適用期間終了年月日が設定される。"
+      },
+      {
+        "mark": "※２",
+        "text": "異動年月日が平成17年10月1日以降の場合、本項目には\"0\"若しくはNULLが設定される。なお、異動年月日が平成17年9月30日以前の場合、従来通り標準負担区分コード、負担額、負担額適用期間開始年月日、負担額適用期間終了年月日が設定される。"
+      },
+      {
+        "mark": "※３",
+        "text": "処理年月が平成17年11月以降の場合、設定される。"
+      },
+      {
+        "mark": "※４",
+        "text": "「インタフェース仕様書　共通編 1.5 留意事項:「軽減率」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※５",
+        "text": "処理年月が平成18年12月以降の場合、設定される。"
+      },
+      {
+        "mark": "※６",
+        "text": "処理年月が平成24年5月以降の場合、設定される。"
+      },
+      {
+        "mark": "※７",
+        "text": "処理年月が平成27年5月以降の場合、設定される。"
+      }
+    ],
+    "uncertain": [
+      "66〜68の縦結合見出し「保険資格」「国民健康（保険）」の階層関係が画像上で判然としないため、name_path の外側の見出し構成は推定ではなく印字の並びどおりに入れた。",
+      "73の内容中の「証記載保険者番号」は原文表記のまま書き写した。",
+      "77・78の黄色の強調表示は内容に影響しないため無視した。"
+    ]
+  },
+  "raw_text": null
+}

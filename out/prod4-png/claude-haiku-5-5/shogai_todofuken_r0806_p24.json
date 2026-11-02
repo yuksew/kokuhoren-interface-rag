@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 24,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 5836,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003929,
+    "cost_usd_batch": 0.001964,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 24,
+    "printed_page": "11",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "視覚・聴覚言語障害者支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "視覚・聴覚言語障害者支援体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:Ⅱ\n3:Ⅰ\n※5、※40\n※86",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "自活訓練加算（Ⅰ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅰ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "自活訓練加算（Ⅱ）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算（Ⅱ）の有無をコードで設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "重度障害者支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※41",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "重度障害者支援（体制）加算Ⅰ（基本）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援（体制）加算Ⅰ（基本）の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※74",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "重度障害者支援（体制）加算Ⅰ（重度）の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援（体制）加算Ⅰ（重度）の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "重度障害者支援加算Ⅱ・Ⅲの有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援加算Ⅱ・Ⅲの有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※52\n※88",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "重度重複障害者加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度重複障害者加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "就労移行支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労移行支援体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5、※38\n※53",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "小規模事業加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模事業加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "1:無し\n2:定員4人\n3:定員5人\n※5、※6",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "常勤医師加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "常勤医師加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "52",
+            "name_path": [
+              "食事提供体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "53",
+            "name_path": [
+              "訪問訓練の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "訪問訓練の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "54",
+            "name_path": [
+              "自立生活支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自立生活支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "55",
+            "name_path": [
+              "神経内科医加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "神経内科医加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "1:無し\n2:有り\n※5",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番41から始まり、表見出しがないため前ページからの続きと判断した。最終行（55）の後に続きがあるかどうかは本ページからは確認できない。",
+      "項目名の一部（例: 項番47「重度障害者支援加算Ⅱ・Ⅲの有無」）は原文で字間が均等に広げられていたため、字間の空白は除いて書き写した。",
+      "ヘッダーの「必須入力※1」は「必須入力※1 > 新規」などの形で列名に連結した。脚注「※1」の本文はこのページには見当たらない。"
+    ]
+  },
+  "raw_text": null
+}

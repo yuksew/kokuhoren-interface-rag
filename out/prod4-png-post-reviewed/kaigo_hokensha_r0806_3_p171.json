@@ -1,0 +1,307 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 171,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "412",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（2）共同処理用保険者情報更新結果情報（償還払給付額管理処理情報）",
+   "record": {
+    "exchange_id": "5B31",
+    "name": "共同処理用保険者情報更新結果情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "共同処理用保険者情報更新結果情報の識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“5B31”固定",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "note",
+       "from": "\"5B31\"固定",
+       "to": "“5B31”固定",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "異動年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "保険者の変更等が生じた年月日(西暦年月日(YYYYMMDD))を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "異動区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "異動区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "1: 新規\n2: 変更",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "訂正年月日"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "訂正年月日を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 1",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※1",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "訂正区分コード"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "訂正区分コードを出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "異動事由"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "共同処理用保険者情報の異動事由を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "保険者番号"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "保険者番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ 2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※2",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "居宅介護福祉用具販売費支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "居宅介護福祉用具販売費支給限度基準額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "居宅介護住宅改修費支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "居宅介護住宅改修費支給限度基準額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "居宅支援福祉用具販売費支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 7,
+     "length_raw": "7",
+     "content": "居宅支援福祉用具販売費支給限度基準額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "居宅支援住宅改修費支給限度基準額"
+     ],
+     "type": "数字",
+     "length": 8,
+     "length_raw": "8",
+     "content": "居宅支援住宅改修費支給限度基準額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※ 1",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)"
+  },
+  {
+   "mark": "※ 2",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)"
+  },
+  {
+   "mark": "※ 1",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」を参照。(P.42)"
+  },
+  {
+   "mark": "※ 2",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」を参照。(P.31)"
+  },
+  {
+   "mark": "※ S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "依頼文は「次のページ」の表の書き起こしとなっていたが、添付は PDF 1ページ（印字ページ412）のみのため、添付ページの表を書き起こした。",
+  "レコード名は表見出しの「共同処理用保険者情報更新結果情報」から取り、上位の情報名は読み取れないため parent は空文字とした。",
+  "交換情報識別番号の値 \"5B31\" は項番1の備考欄の固定値を exchange_id に入れた。",
+  "ページ先頭の注記（※1, ※2）は表の上にあるため footnotes に含め、表の下の注記と重複して記載している。"
+ ]
+}

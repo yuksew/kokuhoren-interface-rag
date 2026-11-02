@@ -1,0 +1,210 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_3",
+ "page": 140,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "395-3",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・トレーラレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "データ区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "8･･… トレーラレコード",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "8･･･ トレーラレコード",
+       "to": "8･･… トレーラレコード",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "合計件数"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "データレコードの合計件数",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "合計金額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "12",
+     "content": "データレコードの合計金額",
+     "required": null,
+     "required_by": [],
+     "note": "※ S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "ダミー"
+     ],
+     "type": "英数",
+     "length": 101,
+     "length_raw": "101",
+     "content": "スペース",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "・エンドレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "データ区分"
+     ],
+     "type": "数字",
+     "length": 1,
+     "length_raw": "1",
+     "content": "9･･… エンドレコード",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [],
+     "_fixes": [
+      {
+       "field": "content",
+       "from": "9･･･ エンドレコード",
+       "to": "9･･… エンドレコード",
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "ダミー"
+     ],
+     "type": "英数",
+     "length": 119,
+     "length_raw": "119",
+     "content": "スペース",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※ Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "トレーラレコード・エンドレコードの表見出しにレコード名以外の上位情報（交換情報識別番号など）が見えないため、record は空文字とした。",
+  "「8･･･」「9･･･」の省略記号の点数は画像から正確に判別できないため、原文の近似表記とした。"
+ ]
+}

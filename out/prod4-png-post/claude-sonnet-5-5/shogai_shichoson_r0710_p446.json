@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 446,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 509,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.025304,
+    "cost_usd_batch": 0.012652,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 446,
+    "printed_page": "177",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．７　確認依頼リスト（出力情報）",
+        "record": {
+          "exchange_id": "FIA1",
+          "name": "高額障害福祉サービス費世帯等台帳確認依頼リスト",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "高額障害福祉サービス費世帯等台帳確認依頼リスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額計算に必要な介護保険の給付実績の情報を提供してもらうため、「保険者番号」と「被保険者番号」を介護保険システムに送付するが、介護保険システム側で「保険者番号」と「被保険者番号」が存在しない場合エラーとなる。そのエラー情報を確認するためのリスト。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FIA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

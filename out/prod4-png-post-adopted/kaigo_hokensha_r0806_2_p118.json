@@ -1,0 +1,152 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_2",
+ "page": 118,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "２０９－４",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・トレーラレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "トレーラレコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "４",
+     "content": "交換情報識別番号を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“6421”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "２",
+     "content": "帳票レコード種別文字を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "“T1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "公費対象単位数"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "１３",
+     "content": "審査年月、公費負担者単位の公費対象分の合計単位数を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "公費負担金額"
+     ],
+     "type": "数字",
+     "length": 13,
+     "length_raw": "１３",
+     "content": "審査年月、公費負担者単位の公費負担分の合計金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "公費分本人負担額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "審査年月、公費負担者単位の被保険者負担分の合計金額を出力する",
+     "required": null,
+     "required_by": [],
+     "note": "※S",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※S",
+       "text": "固定長形式で表現する場合の「符号付き形式項目」。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※S",
+   "text": "固定長形式で表現する場合の「符号付き形式項目」。"
+  },
+  {
+   "mark": null,
+   "text": "なお、※Sが付加されていない数字属性項目は、「符号なし形式項目」である。"
+  }
+ ],
+ "uncertain": [
+  "レコードの交換情報識別番号と上位の情報名はこのページから読み取れないため空文字とした。レコード名は表見出しの「トレーラレコード」から取った。"
+ ]
+}

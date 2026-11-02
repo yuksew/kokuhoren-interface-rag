@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 444,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3093,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.051144,
+    "cost_usd_batch": 0.025572,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 444,
+    "printed_page": "175",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．３　更新結果情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "地域生活支援事業受給者情報更新結果情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業情報処理用の受給者更新情報(基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F311"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "地域生活支援事業受給者情報更新結果情報(支給決定情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業情報処理用の受給者更新情報(支給決定情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F321"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "高額障害福祉サービス費世帯等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害福祉サービス等給付費用の受給者の漢字氏名・住所・世帯集約番号等の世帯の更新情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F331"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "高額障害児給付費世帯等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害児給付費用の受給者の漢字氏名・住所・世帯集約番号等の世帯の更新情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "C331"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "高額障害福祉サービス費市町村情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の口座・問い合わせ先の更新情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F341"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "高額障害児給付費都道府県等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の口座・問い合わせ先の更新情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "C341"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "地域生活支援事業単位数情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業の単位数の更新情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F351"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．４　国保連合会台帳情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "地域生活支援事業受給者台帳連絡票情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業情報処理用の受給者台帳情報(基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F411"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "地域生活支援事業受給者台帳連絡票情報(支給決定情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業情報処理用の受給者台帳情報(支給決定情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F421"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "高額障害福祉サービス費世帯等台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害福祉サービス等給付費用の受給者の漢字氏名・住所・世帯集約番号等の世帯の台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F431"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "高額障害児給付費世帯等台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害児給付費用の受給者の漢字氏名・住所・世帯集約番号等の世帯の台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "C431"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "高額障害福祉サービス費市町村台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の口座・問い合わせ先の台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F441"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "高額障害児給付費都道府県等台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村の口座・問い合わせ先の台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "C441"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "地域生活支援事業単位数台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業の単位数の台帳情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "F451"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

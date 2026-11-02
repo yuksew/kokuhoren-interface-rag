@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 199,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1996,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040176,
+    "cost_usd_batch": 0.020088,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 199,
+    "printed_page": "41-2",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 108,
+            "no_raw": "108",
+            "name_path": [
+              "保障単位数（移行時運営安定化）"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "移行時運営安定化事業における保障単位数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 109,
+            "no_raw": "109",
+            "name_path": [
+              "指定市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "当該事業所を所管する市町村番号を設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 110,
+            "no_raw": "110",
+            "name_path": [
+              "みなし指定の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "みなし指定の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 111,
+            "no_raw": "111",
+            "name_path": [
+              "福祉･介護職員処遇改善特別加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "福祉･介護職員処遇改善特別加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 112,
+            "no_raw": "112",
+            "name_path": [
+              "緊急短期入所体制確保加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "緊急短期入所体制確保加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 113,
+            "no_raw": "113",
+            "name_path": [
+              "栄養士配置減算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養士配置減算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:非常勤栄養士減算\n3:栄養士未配置減算",
+            "cells": []
+          },
+          {
+            "no": 114,
+            "no_raw": "114",
+            "name_path": [
+              "就労移行･定着実績区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "就労移行･定着実績区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 115,
+            "no_raw": "115",
+            "name_path": [
+              "宿泊型自立訓練夜間防災･緊急時支援体制加算(Ⅰ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "宿泊型自立訓練夜間防災･緊急時支援体制加算(Ⅰ)の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 116,
+            "no_raw": "116",
+            "name_path": [
+              "職業指導員体制の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "職業指導員体制の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 117,
+            "no_raw": "117",
+            "name_path": [
+              "重度知的障害児収容棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度知的障害児収容棟設置の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 118,
+            "no_raw": "118",
+            "name_path": [
+              "肢体不自由児施設重度病棟設置の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "肢体不自由児施設重度病棟設置の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 119,
+            "no_raw": "119",
+            "name_path": [
+              "心理担当職員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "心理担当職員配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:Ⅰ\n3:Ⅱ",
+            "cells": []
+          },
+          {
+            "no": 120,
+            "no_raw": "120",
+            "name_path": [
+              "小規模グループケア加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "小規模グループケア加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:サテライト",
+            "cells": []
+          },
+          {
+            "no": 121,
+            "no_raw": "121",
+            "name_path": [
+              "児童発達支援管理責任者専任加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "児童発達支援管理責任者専任加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 122,
+            "no_raw": "122",
+            "name_path": [
+              "障害児施設区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "障害児施設区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続き（項番108から開始）",
+      "119の備考「2:Ⅰ」「3:Ⅱ」のローマ数字の表記は画像から判断"
+    ]
+  },
+  "raw_text": null
+}

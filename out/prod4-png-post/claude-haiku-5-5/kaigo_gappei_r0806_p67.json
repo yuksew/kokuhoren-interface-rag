@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 67,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 2968,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002493,
+    "cost_usd_batch": 0.001247,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 67,
+    "printed_page": "２２－４",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・個人番号異動連絡票情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "合併前の各市町村および新設された市町村が設定する内容",
+          "広域連合の保険者が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "“5J11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "市町村が合併し市町村が新設された日（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "“2:変更”を設定する"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "“01:受給者の異動(新規、区間異動等)”を設定"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "被保険者証記載の証記載保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "被保険者証記載の被保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "個人番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村および新設された市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "広域連合の保険者が設定する内容",
+                "value": "個人番号を設定する"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は PDF 上のページ 67（印字ページ ２２－４）の1ページのみで、依頼文の「次のページ」ではなく添付ページの表を書き起こした。",
+      "表は属性・バイト数・内容の列がないため table_kind を other とした。",
+      "「合併前の各市町村および新設された市町村が設定する内容」列は、1〜7の行にまたがる縦結合セルで『インタフェースの提供は不要』と書かれているため、各行に同じ文字列を入れた。",
+      "表見出しに「・」が付いているため、原文どおり「・個人番号異動連絡票情報」として書いた。"
+    ]
+  },
+  "raw_text": null
+}

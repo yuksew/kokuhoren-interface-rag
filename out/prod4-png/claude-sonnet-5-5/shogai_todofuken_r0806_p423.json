@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 423,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 2587,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.046086,
+    "cost_usd_batch": 0.023043,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 423,
+    "printed_page": "136",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 14,
+            "no_raw": "(14)",
+            "name_path": [
+              "時効却下リスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "時効却下のリスト情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B7L1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "(15)",
+            "name_path": [
+              "審査対象明細表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査対象となった請求情報に関する一次審査結果の詳細内容の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B7M1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "(16)",
+            "name_path": [
+              "審査対象明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "二次審査対象となった請求情報に関する一次審査結果の詳細内容の一覧表情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B7N1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．２　二次審査結果情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "二次審査結果票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "一次審査結果票情報に二次審査結果を付加した結果情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B811"
+              },
+              {
+                "column": "ルート",
+                "value": "都道府県等\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "二次審査結果一覧情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "明細書単位の二次審査結果の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B821"
+              },
+              {
+                "column": "ルート",
+                "value": "都道府県等\n→\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "２．２．３　都道府県等請求情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "障害児給付費等払込請求書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等が国保連合会へ納入するための払込請求書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9A1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "障害児給付費等払込請求書内訳表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "障害児給付費等払込請求書の内訳表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9B1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "障害児給付費等審査支払手数料払込請求書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等が審査支払手数料を国保連合会へ納入するための払込請求書",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9C1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "障害児給付費等請求額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等へサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9D1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "障害児給付費等決定請求明細表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "都道府県等へ障害児施設及びサービス種類毎の請求決定額を通知するための帳票情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9E1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "返戻等一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻対象者、返戻要因の一覧表",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "B9F1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "1つ目の表は前ページからの続き（見出し行が繰り返されている）",
+      "「障害児給付費等 払込請求書」等の情報名は原文で折り返し位置にスペースがあるが詰めて記載"
+    ]
+  },
+  "raw_text": null
+}

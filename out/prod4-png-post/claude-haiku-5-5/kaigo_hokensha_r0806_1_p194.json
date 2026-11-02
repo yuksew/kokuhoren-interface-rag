@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 194,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5485,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003752,
+    "cost_usd_batch": 0.001876,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 194,
+    "printed_page": "62",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 38,
+            "no_raw": "３８",
+            "name_path": [
+              "償還払化開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "償還払化開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "３９",
+            "name_path": [
+              "償還払化終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "償還払化終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 40,
+            "no_raw": "４０",
+            "name_path": [
+              "給付率引下げ開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付率引下げ開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 41,
+            "no_raw": "４１",
+            "name_path": [
+              "給付率引下げ終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付率引下げ終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "４２",
+            "name_path": [
+              "減免申請中区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "減免申請中区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "４３",
+            "name_path": [
+              "利用者負担減免・旧措置入所者",
+              "利用者負担区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "利用者負担区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "４４",
+            "name_path": [
+              "利用者負担減免・旧措置入所者",
+              "給付率"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "３",
+            "content": "利用者負担減免等により給付率が変更された場合に１００分の〇〇〇で設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "４５",
+            "name_path": [
+              "利用者負担減免・旧措置入所者",
+              "適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付率の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "４６",
+            "name_path": [
+              "利用者負担減免・旧措置入所者",
+              "適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "給付率の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "４７",
+            "name_path": [
+              "標準負担・特定標準負担",
+              "標準負担区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "標準負担区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※４",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "標準負担・特定標準負担",
+              "負担額"
+            ],
+            "type": "数字",
+            "length": 5,
+            "length_raw": "５",
+            "content": "負担額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※４\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              },
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字負担限度額適用開始年月日(西暦年月日(YYYYMMDD))を設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "標準負担・特定標準負担",
+              "負担額適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "負担額適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※４",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "標準負担・特定標準負担",
+              "負担額適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "負担額適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※４",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "特定入所者介護サービス",
+              "特定入所者認定申請中区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "特定入所者認定申請中区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "特定入所者介護サービス",
+              "特定入所者介護サービス区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "特定入所者介護サービス区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "特定入所者介護サービス",
+              "課税層の特例減額措置対象"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "利用者負担第４段階の者で当該措置該当の有無をコードで設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "特定入所者介護サービス",
+              "食費負担限度額（施設サービス）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "食費負担限度額（施設サービス）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字負担限度額適用開始年月日(西暦年月日(YYYYMMDD))を設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（ユニット型個室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（ユニット型個室）負担限度額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字負担限度額適用開始年月日(西暦年月日(YYYYMMDD))を設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（ユニット型個室的多床室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（ユニット型個室的多床室）負担限度額を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※５\n※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無数字小規模多機能型居宅介護、及び、複合型サービス(看護小規模多機能型居宅介護)の利用開始月における居宅サービス等の利用の有無コードを設定する○",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※S",
+                "text": "負担限度額適用開始年月日数字負担限度額適用開始年月日(西暦年月日(YYYYMMDD))を設定する○",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は前ページからの続きと判断した（見出し行が印字されているが表題はない）。ページ末尾で表が閉じているが次ページへ続く可能性がある。",
+      "備考欄の※４・※５・※Ｓは本ページに注記本文がないため、footnotesには入れていない。",
+      "項目名の縦書きグループ見出し（利用者負担減免・旧措置入所者、標準負担・特定標準負担、特定入所者介護サービス）は name_path にのみ入れた。",
+      "内容欄の「償還払化」は原文のまま書き写した（「償還払」の誤記の可能性あり）。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,540 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 110,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 7512,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004765,
+    "cost_usd_batch": 0.002383,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 110,
+    "printed_page": "38",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・市町村固有異動連絡票情報",
+        "record": {
+          "exchange_id": "",
+          "name": "市町村固有異動連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "新設された市町村が設定する内容",
+          "広域連合が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "新設された市町村が設定する内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "１",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“5511”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "２",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された市町村の効力が発生する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "３",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“1:新規”を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "４",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "“01”（固定値）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "５",
+            "name_path": [
+              "保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された保険者の保険者番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "６",
+            "name_path": [
+              "有効開始日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "新設された保険者としての効力が発生する日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "７",
+            "name_path": [
+              "有効終了日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "設定不要",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "８",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "９",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護2"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "１０",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護3"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "１１",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護4"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "１２",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "訪問通所要介護5"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護1※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "６月間の限度額を日数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護2※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護3※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護4※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "居宅介護サービス費区分支給限度基準額",
+              "短期入所要介護5※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "居宅介護サービス費種類 支給限度基準額",
+              "訪問介護",
+              "要介護1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "１月間の限度額を単位数で設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "居宅介護サービス費種類 支給限度基準額",
+              "訪問介護",
+              "要介護2"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "居宅介護サービス費種類 支給限度基準額",
+              "訪問介護",
+              "要介護3"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "居宅介護サービス費種類 支給限度基準額",
+              "訪問介護",
+              "要介護4"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "居宅介護サービス費種類 支給限度基準額",
+              "訪問介護",
+              "要介護5"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同上",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "広域連合が設定する内容",
+                "value": "インタフェースの提供は不要"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番18〜22の縦書き見出し（外側グループ）は「居宅介護サービス費種類」と「支給限度基準額」が2列に分かれて印字されており、読み順と連結の仕方を「居宅介護サービス費種類 支給限度基準額」と判断したが不確か。",
+      "項目名の「※1」は本ページに対応する注記本文がないため footnotes に入れていない。",
+      "表の対象は見出しどおり「市町村固有異動連絡票情報」だが、交換情報識別番号・レコード名の読み取りは本文に明記がないため record は名称のみ入れ、exchange_id と parent は空文字とした。",
+      "「広域連合が設定する内容」列は項番1〜22にまたがる縦結合セルのため、全行に同じ文字列を入れた。"
+    ]
+  },
+  "raw_text": null
+}

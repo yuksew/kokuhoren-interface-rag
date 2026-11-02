@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 76,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1992,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.040134,
+    "cost_usd_batch": 0.020067,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 76,
+    "printed_page": "40",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "認定した障害支援区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "計画相談支援有効期間(開始年月日)コード値計画相談支援有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分認定有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "障害支援区分認定有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "障害支援区分情報",
+              "障害支援区分認定有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "障害支援区分認定有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "利用者負担上限額情報",
+              "所得区分コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "決定された所得区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "計画相談支援有効期間(開始年月日)コード値計画相談支援有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "利用者負担上限額情報",
+              "個別減免有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "個別減免の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "利用者負担上限額情報",
+              "生保移行防止有無(定率負担)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生保移行防止有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担上限月額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "利用者負担上限月額の有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "利用者負担上限額情報",
+              "利用者負担上限月額有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "利用者負担上限月額の有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "補足給付の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "補足給付情報",
+              "生保移行防止有無(補足給付)"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "生保移行防止有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "補足給付情報",
+              "補足給付額(日額)"
+            ],
+            "type": "数値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "補足給付額(日額)を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有効期間(開始年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "補足給付額(日額)有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "補足給付情報",
+              "補足給付有効期間(終了年月日)"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "補足給付額(日額)有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "特定旧法受給者区分(経過措置対象者)コード値特定旧法受給者(経過措置対象者)の場合に設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項番15の「障害支援区分情報」、18〜23の「利用者負担上限額情報」、24〜28の「補足給付情報」は縦結合のグループ見出し。18〜23は縦書き見出しの範囲から判断した。",
+      "前ページからの続きの表のため、record は読み取れず空文字にした。"
+    ]
+  },
+  "raw_text": null
+}

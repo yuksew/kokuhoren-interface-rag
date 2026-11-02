@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 622,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 3679,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.057004,
+    "cost_usd_batch": 0.028502,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:01+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 622,
+    "printed_page": "289",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "④　集計情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "集計情報レコード",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1） > J121",
+          "必須入力（※1） > J131",
+          "必須入力（※1） > J221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "04 を設定する(集計情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "コード値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "整理番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM を設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "審査結果コード値審査結果を設定する○○○取下(重度)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された市町村番号(チェックデジット 1 桁含む)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "サービス種類コード"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス種類コード 2 桁を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "請求額集計欄",
+              "集計欄分類番号"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "同一のサービス種類コードで複数の集計情報を作成する為の集計欄分類番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "請求額集計欄",
+              "サービス利用日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "サービス利用日数を設定\n本体報酬を算定しない日において、各種加算のみを算定した場合も 1 日とカウントする\n上限額管理加算、欠席時対応加算等も 1 日とカウントする",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "請求額集計欄",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "サービス種類コードごと集計欄分類番号ごとの単位数を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "請求額集計欄",
+              "単位数単価"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "整数部 2 桁小数部 3 桁の半角数字(小数部が 3 桁を超える場合、小数第 4 位を四捨五入)8.5 円の場合、08500(または 8500)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "審査結果コード値審査結果を設定する○○○取下(重度)",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "請求額集計欄",
+              "給付率"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "0 を設定する(サービス提供年月が平成 24 年 3 月以前:給付率を設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "請求額集計欄",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "請求額集計欄",
+              "1割相当額(サービス提供年月が平成24年3月以前:給付率に基づく請求額)"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "総費用額の 1 割に相当する額を設定する(サービス提供年月が平成 24 年 3 月以前:総費用額×給付率／100)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "請求額集計欄",
+              "利用者負担額②(サービス提供年月が平成24年3月以前:給付率に基づく利用者負担額②)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "1割相当額を設定する\n(サービス提供年月が平成 24 年 3 月以前:総費用額－給付率に基づく請求額)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": "※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "請求額集計欄",
+              "上限月額調整(①②の内少ない数)"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担上限月額と利用者負担額②のうち少ないほうを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力（※1） > J121",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J131",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力（※1） > J221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "「請求額集計欄」は項番10〜18にまたがる縦結合グループ見出しとして name_path に入れた",
+      "項番16,17,18の項目名は原文の折り返しを詰めて記載"
+    ]
+  },
+  "raw_text": null
+}

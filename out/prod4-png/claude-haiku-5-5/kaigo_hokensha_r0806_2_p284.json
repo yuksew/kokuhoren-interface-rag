@@ -1,0 +1,480 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 284,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5542,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00378,
+    "cost_usd_batch": 0.00189,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 284,
+    "printed_page": "287",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "３．２．６　高額介護サービス費支給処理情報（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体",
+          "出力形式 > CSV",
+          "出力形式 > 帳票形式"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "高額介護サービス費給付対象者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費給付対象となる受給者の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3311"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "高額介護サービス費給付のお知らせ情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費の給付対象となる受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3322"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "高額介護（居宅支援）サービス費支給申請書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費の給付対象となる受給者が提出するための申請情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3331"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "外字空白印字リスト（高額介護サービ ス費給付対象者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費給付対象者一覧表等で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3341"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "高額介護サービス費給付対象者一覧表情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費給付対象となる受給者の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3351"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "外字空白印字リスト（高額介護サービ ス費給付対象者）情報（総合事業）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費給付対象者一覧表(総合事業)等で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3381"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "高額介護サービス費支給（不支給）決定者一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費に対する、支給または不支給の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3511"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "高額介護サービス費支給（不支給）決定通知書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費支給に対する、支給または不支給の受給者への通知情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3522"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "外字空白印字リスト（高額介護サービ ス費支給（不支給）決定者）情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額介護サービス費支給（不支給）決定者一覧表及び高額介護サービス費支給（不支給）決定通知書で、受給者の漢字氏名・住所の外字部分を空白で印字した箇所の一覧情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3531"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": null
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4ヨコ"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "振込依頼書（高額）情報（各種支払支援処理を委託しない場合に発生する）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "金融機関に振り込みを行ってもらうための口座・金額等の情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "3611"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 保険者"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              },
+              {
+                "column": "出力形式 > CSV",
+                "value": "○"
+              },
+              {
+                "column": "出力形式 > 帳票形式",
+                "value": "○ 汎用紙 A4タテ"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は印字ページ番号「287」の1ページで、依頼文のPDF上のページ番号「284」とは一致していない。printed_page には印字番号の287を入れた。",
+      "(6)と(9)の情報名の「外字空白印字リスト（高額介護サービス費給付対象者）情報」などは、原文の全角スペース位置の折り返しを詰めて書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

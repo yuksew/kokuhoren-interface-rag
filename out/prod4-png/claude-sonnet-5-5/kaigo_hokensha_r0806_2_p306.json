@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 306,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 1549,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.035676,
+    "cost_usd_batch": 0.017838,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 306,
+    "printed_page": "303",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（1） 償還連絡票情報",
+        "record": {
+          "exchange_id": "2111",
+          "name": "償還連絡票情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "償還連絡票情報の交換情報識別番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "“2111”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "レコード種別コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "“01”固定",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求対象となるサービス提供年月（西暦年月(YYYYMM)）を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "請求の対象となる被保険者の被保険者番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "整理番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者の申請単位に付与する整理番号を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "申請年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者が申請した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "被保険者情報",
+              "生年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "被保険者の生年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "被保険者情報",
+              "性別コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "被保険者の性別を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "被保険者情報",
+              "要介護状態区分コード"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "要介護状態区分を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "被保険者情報",
+              "認定有効期間　開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "被保険者情報",
+              "認定有効期間　終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "認定有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※3",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "必須入力の記号は原文で○（丸）に見えるため○とした",
+      "項番8〜12の「被保険者情報」は縦結合のグループ見出しとして name_path に入れた",
+      "表は次ページへ続く可能性がある"
+    ]
+  },
+  "raw_text": null
+}

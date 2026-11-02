@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_3",
+    "page": 178,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊3）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5104,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003561,
+    "cost_usd_batch": 0.001781,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:54+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 178,
+    "printed_page": "419",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（３）共同処理用受給者異動連絡票情報（高額介護サービス費支給処理情報）",
+        "record": {
+          "exchange_id": "5E11",
+          "name": "共同処理用受給者異動連絡票情報",
+          "parent": "高額介護サービス費支給処理情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "必須入力 > 新規",
+          "必須入力 > 変更",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "共同処理用受給者異動連絡票情報の識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "“5E11”固定",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者の変更等が生じた年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "異動区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "1: 新規\n2: 変更",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "共同処理用受給者情報の異動事由を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": "数字",
+            "length": 6,
+            "length_raw": "6",
+            "content": "被保険者証記載の保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "被保険者番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": "○"
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "世帯主被保険者番号（世帯集約番号）"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "世帯主被保険者番号を設定する\n世帯合算で使用する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※5",
+                "text": "ゼロ10桁 (0000000000)が設定された場合、エラーとする。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "世帯所得区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "世帯の所得区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "所得区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "個人の所得区分コードを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "老齢福祉年金受給の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "老齢福祉年金受給の有無を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "利用者負担第2段階"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "利用者負担第2段階に該当するか否かを設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 3\n※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※4",
+                "text": "処理年月が平成17年11月以降の場合、設定する。なお、処理年月が平成17年10月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。また、異動年月日が平成17年9月30日以前の情報は、未設定であってもエラーとしない。設定している場合は、通常のチェックを行う。なお、項番11.利用者負担第2段階について、未設定である場合は「1.該当無し」として取り扱う。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "支給申請書出力の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支給申請書出力の有無を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力 > 新規",
+                "value": null
+              },
+              {
+                "column": "必須入力 > 変更",
+                "value": null
+              }
+            ],
+            "note": "※ 3\n※ 4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              },
+              {
+                "mark": "※4",
+                "text": "処理年月が平成17年11月以降の場合、設定する。なお、処理年月が平成17年10月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。また、異動年月日が平成17年9月30日以前の情報は、未設定であってもエラーとしない。設定している場合は、通常のチェックを行う。なお、項番11.利用者負担第2段階について、未設定である場合は「1.該当無し」として取り扱う。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "異動区分コードにより入力必須項目が異なる。（○ 必須）"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項：「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※3",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※4",
+        "text": "処理年月が平成17年11月以降の場合、設定する。なお、処理年月が平成17年10月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。また、異動年月日が平成17年9月30日以前の情報は、未設定であってもエラーとしない。設定している場合は、通常のチェックを行う。なお、項番11.利用者負担第2段階について、未設定である場合は「1.該当無し」として取り扱う。"
+      },
+      {
+        "mark": "※5",
+        "text": "ゼロ10桁 (0000000000)が設定された場合、エラーとする。"
+      }
+    ],
+    "uncertain": [
+      "record.exchange_id の「5E11」は項番1の備考欄の固定値から読み取った。表題や見出しには記載がない。",
+      "record.parent の「高額介護サービス費支給処理情報」は表題の括弧内から読み取った。上位情報名として妥当かは原本で確認が必要。",
+      "項番4の備考欄は「※ 3」のみで、原文に「※ 3」以外の注記は見当たらない。"
+    ]
+  },
+  "raw_text": null
+}

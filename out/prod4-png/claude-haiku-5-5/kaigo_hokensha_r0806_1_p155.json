@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_1",
+    "page": 155,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊1）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 5895,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003957,
+    "cost_usd_batch": 0.001978,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 155,
+    "printed_page": "４７",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 48,
+            "no_raw": "４８",
+            "name_path": [
+              "特定入所者介護サービス",
+              "特定入所者認定申請中区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "特定入所者認定申請中区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※5",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "４９",
+            "name_path": [
+              "特定入所者介護サービス",
+              "特定入所者介護サービス区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "特定入所者介護サービス区分コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※5",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "５０",
+            "name_path": [
+              "特定入所者介護サービス",
+              "課税層の特例減額措置対象"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "利用者負担第４段階の者で当該措置該当の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※5",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "５１",
+            "name_path": [
+              "特定入所者介護サービス",
+              "食費負担限度額（施設サービス）"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "食費負担限度額（施設サービス）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 52,
+            "no_raw": "５２",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（ユニット型個室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（ユニット型個室）負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 53,
+            "no_raw": "５３",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（ユニット型個室的多床室）負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（ユニット型個室的多床室）負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 54,
+            "no_raw": "５４",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（従来型個室（特養等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（従来型個室（特養等））負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 55,
+            "no_raw": "５５",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（従来型個室（老健、医療院等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（従来型個室（老健、医療院等））負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 56,
+            "no_raw": "５６",
+            "name_path": [
+              "特定入所者介護サービス",
+              "居住費（多床室I（特養等））負担限度額"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "居住費（多床室I（特養等））負担限度額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※S",
+            "cells": []
+          },
+          {
+            "no": 57,
+            "no_raw": "５７",
+            "name_path": [
+              "特定入所者介護サービス",
+              "負担限度額適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "負担限度額適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※5",
+            "cells": []
+          },
+          {
+            "no": 58,
+            "no_raw": "５８",
+            "name_path": [
+              "特定入所者介護サービス",
+              "負担限度額適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "負担限度額適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※5",
+            "cells": []
+          },
+          {
+            "no": 59,
+            "no_raw": "５９",
+            "name_path": [
+              "社会福祉法人軽減情報",
+              "軽減率"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "４",
+            "content": "社会福祉法人軽減の軽減率を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※5\n※6",
+            "cells": []
+          },
+          {
+            "no": 60,
+            "no_raw": "６０",
+            "name_path": [
+              "社会福祉法人軽減情報",
+              "軽減率適用開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "軽減率の適用開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※5",
+            "cells": []
+          },
+          {
+            "no": 61,
+            "no_raw": "６１",
+            "name_path": [
+              "社会福祉法人軽減情報",
+              "軽減率適用終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "軽減率の適用終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※1\n※5",
+            "cells": []
+          },
+          {
+            "no": 62,
+            "no_raw": "６２",
+            "name_path": [
+              "小規模多機能型居宅介護の利用開始月における居宅サービス等の利用の有無"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "１",
+            "content": "小規模多機能型居宅介護、及び、複合型サービス（看護小規模多機能型居宅介護）の利用開始月における居宅サービス等の利用の有無コードを設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※2\n※7",
+            "cells": []
+          },
+          {
+            "no": 63,
+            "no_raw": "６３",
+            "name_path": [
+              "後期高齢者医療資格",
+              "保険者番号(後期)"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "８",
+            "content": "保険者番号（後期）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 64,
+            "no_raw": "６４",
+            "name_path": [
+              "後期高齢者医療資格",
+              "被保険者番号（後期）"
+            ],
+            "type": "英数",
+            "length": 8,
+            "length_raw": "８",
+            "content": "被保険者番号（後期）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 65,
+            "no_raw": "６５",
+            "name_path": [
+              "国民健康保険資格",
+              "保険者番号(国保)"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "８",
+            "content": "保険者番号（国保）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 66,
+            "no_raw": "６６",
+            "name_path": [
+              "国民健康保険資格",
+              "被保険者証番号（国保）"
+            ],
+            "type": "英数",
+            "length": 20,
+            "length_raw": "２０",
+            "content": "被保険者証番号（国保）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 67,
+            "no_raw": "６７",
+            "name_path": [
+              "国民健康保険資格",
+              "宛名番号"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "１０",
+            "content": "宛名番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表の見出し行（項番・項目名・属性・バイト数・内容・備考）が本ページ上部に印字されており、前ページからの続きと判断したが、項番48から始まるため前ページの有無は画像からは断定できない。",
+      "表の末尾（項番67の下）で次ページへ続くかどうかは、画像だけでは確定できない。",
+      "項番56の項目名は「居住費（多床室I（特養等））負担限度額」と読んだが、「I」がローマ数字の I か、丸括弧の閉じ位置は画像から確定できない。",
+      "項番48〜62の備考欄にある※2、※5、※S、※6、※7、※1の注記本文は本ページに見当たらず、footnotesは空とした。",
+      "項番62の項目名は「項目名」列の横方向に結合されたセルで、特定入所者介護サービス等の縦グループには属さないと判断した。"
+    ]
+  },
+  "raw_text": null
+}

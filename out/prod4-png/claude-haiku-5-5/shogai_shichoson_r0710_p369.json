@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 369,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 7361,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.004691,
+    "cost_usd_batch": 0.002346,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 369,
+    "printed_page": "１６２－１４",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "出力対象項目（※1） > K122",
+          "出力対象項目（※1） > K221",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 19,
+            "no_raw": "19",
+            "name_path": [
+              "上限額管理事業所",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理事業所の事業所番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※C\n※4",
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "20",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理結果票の管理結果を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※3\n※4",
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "21",
+            "name_path": [
+              "上限額管理事業所",
+              "管理結果額"
+            ],
+            "type": "数値",
+            "length": 5,
+            "length_raw": "5",
+            "content": "上限額管理結果票の管理結果額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※4",
+            "cells": []
+          },
+          {
+            "no": 22,
+            "no_raw": "22",
+            "name_path": [
+              "日中支援加算欄",
+              "指定事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 23,
+            "no_raw": "23",
+            "name_path": [
+              "日中支援加算欄",
+              "当該事業所への通所日数"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 24,
+            "no_raw": "24",
+            "name_path": [
+              "請求額集計欄　合計",
+              "給付単位数"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "単位数の合計を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 25,
+            "no_raw": "25",
+            "name_path": [
+              "請求額集計欄　合計",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "26",
+            "name_path": [
+              "請求額集計欄　合計",
+              "上限月額調整（①②の内少ない数）"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "上限月額調整（①②の内少ない数）の合計を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 27,
+            "no_raw": "27",
+            "name_path": [
+              "請求額集計欄　合計",
+              "A型減免",
+              "事業者減免額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 28,
+            "no_raw": "28",
+            "name_path": [
+              "請求額集計欄　合計",
+              "A型減免",
+              "減免後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "設定しない",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": null
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "請求額集計欄　合計",
+              "調整後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "調整後利用者負担額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "請求額集計欄　合計",
+              "上限額管理後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "上限額管理後利用者負担額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※4",
+            "cells": []
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "請求額集計欄　合計",
+              "決定利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "算定した結果の利用者負担額を設定する（自治体助成分請求額を控除する前の利用者負担額である）",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "請求額集計欄　合計",
+              "請求額",
+              "給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "給付費の請求額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "請求額集計欄　合計",
+              "請求額",
+              "高額障害児通所給付費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "高額障害児通所給付費を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "請求額集計欄　合計",
+              "請求額",
+              "特別対策費"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービス提供年月が平成24年4月以降は、新体系定着支援に係る請求額を設定\nサービス提供年月が平成21年10月以降は、事業運営安定化に係る請求額を設定\nサービス提供年月が平成21年9月以前は、特別対策費である激変緩和加算に係る請求額を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": "※5\n※6",
+            "cells": []
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "請求額集計欄　合計",
+              "自治体助成分請求額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担額のうち自治体が助成する額を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※1） > K122",
+                "value": "○"
+              },
+              {
+                "column": "出力対象項目（※1） > K221",
+                "value": "○"
+              }
+            ],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表は項番19から始まり見出し行が付いているため前ページからの続きと判断したが、ページ末尾の次ページ継続は画像からは確定できない（continues_to_next_pageは推定）。",
+      "項目名の見出しは「項目名」の1つで2列にまたがっているため、グループ見出し（上限額管理事業所・日中支援加算欄・請求額集計欄　合計・A型減免・請求額）は name_path にのみ入れた。",
+      "項番34の内容は3項目に分かれた文を改行で区切り、各項目内の折り返しは詰めた。"
+    ]
+  },
+  "raw_text": null
+}

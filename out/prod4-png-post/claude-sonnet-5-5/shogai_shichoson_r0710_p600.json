@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 600,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1807,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.038284,
+    "cost_usd_batch": 0.019142,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 600,
+    "printed_page": "269",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "５．２．１　訪問調査委託料支払情報（入力情報）",
+        "record": {
+          "exchange_id": "FK11",
+          "name": "訪問調査委託料支払情報",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "訪問調査委託料支払情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "市町村が決定した訪問調査委託料の支払情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FK11"
+              },
+              {
+                "column": "ルート",
+                "value": "市町村\n⇔\n国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": "５．２．２　取込エラーリスト（出力情報）",
+        "record": {
+          "exchange_id": "FLA1",
+          "name": "訪問調査委託料支払情報取込エラーリスト",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "訪問調査委託料支払情報 取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "訪問調査委託料支払情報取込時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "FLA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会\n→\n市町村"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "① 基本情報レコード",
+        "record": {
+          "exchange_id": "FK11",
+          "name": "基本情報レコード",
+          "parent": "訪問調査委託料支払情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": "◎",
+            "required_by": [],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": "インタフェース仕様書 市町村編 Ⅲ. 市町村事務共同処理 ３.２ インタフェース一覧｣参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "レコード種別コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1(固定値)",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "証記載市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の市町村番号を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "｢インタフェース仕様書 共通編 １.４ コード一覧｣参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "市町村名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者証記載の市町村番号に対応する市町村名を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "作成年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "情報を作成した年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "｢インタフェース仕様書 共通編 １.５ 留意事項｣参照。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力 ◎:必須､〇:請求内容により必須､△:任意設定､空白:不要"
+      },
+      {
+        "mark": "※B",
+        "text": "インタフェース仕様書 市町村編 Ⅲ. 市町村事務共同処理 ３.２ インタフェース一覧｣参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "｢インタフェース仕様書 共通編 １.４ コード一覧｣参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "｢インタフェース仕様書 共通編 １.５ 留意事項｣参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "｢インタフェース仕様書 共通編 １.３ 表記法｣参照。"
+      }
+    ],
+    "uncertain": [
+      "基本情報レコードの必須入力列の記号は◎と読み取ったが、原文が◎か◉かは画像上区別が難しい",
+      "最初の2表の record は識別・情報名から推定して記入した",
+      "※1の「〇」は原文では大きな丸（○）に見えるが、判別が不確か"
+    ]
+  },
+  "raw_text": null
+}

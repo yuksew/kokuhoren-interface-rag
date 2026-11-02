@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 173,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1898,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.039196,
+    "cost_usd_batch": 0.019598,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 173,
+    "printed_page": "29",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "施設等の区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "施設等の区分をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "目標工賃達成加算の有無コード値目標工賃達成加算の有無をコードで設定共同生活介護夜間支援体制加算(I)の有無コード値共同生活介護夜間支援体制加算(I)の有無をコードで設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "人員配置区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "配置基準をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "目標工賃達成加算の有無コード値目標工賃達成加算の有無をコードで設定共同生活介護夜間支援体制加算(I)の有無コード値共同生活介護夜間支援体制加算(I)の有無をコードで設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "定員区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "報酬算定上の入所定員数をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "目標工賃達成加算の有無コード値目標工賃達成加算の有無をコードで設定共同生活介護夜間支援体制加算(I)の有無コード値共同生活介護夜間支援体制加算(I)の有無をコードで設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "送迎加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "送迎加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅰ\n4:Ⅱ",
+            "cells": []
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "利用定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "利用定員数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "旧法施設定員数"
+            ],
+            "type": "数値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "H18.3の利用者数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "新事業移行施設区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "旧法施設から移行した施設か否かをコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:非該当\n2:該当",
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "栄養士配置加算の基準"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "栄養士配置加算の基準をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": "目標工賃達成加算の有無コード値目標工賃達成加算の有無をコードで設定共同生活介護夜間支援体制加算(I)の有無コード値共同生活介護夜間支援体制加算(I)の有無をコードで設定",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "看護職員配置加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "看護職員配置加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り\n3:Ⅱ\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※4",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "強度行動障害者特別支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "強度行動障害者特別支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "経過的居宅介護利用型区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "経過的居宅利用型に該当するか否かをコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:非該当\n2:該当",
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "視覚・聴覚言語障害者支援体制加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "視覚・聴覚言語障害者支援体制加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:Ⅱ\n3:Ⅰ",
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "自活訓練加算(Ⅰ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算(Ⅰ)の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "自活訓練加算(Ⅱ)の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "自活訓練加算(Ⅱ)の有無をコードで設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "重度障害者支援加算の有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度障害者支援加算の有無をコードで設定",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページから続く表（項番32から開始）",
+      "属性列見出しは「属性（※Z）」と2行で印字",
+      "バイト数見出しは「ﾊﾞｲﾄ数」と読み取り"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 578,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1858,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.00194,
+    "cost_usd_batch": 0.00097,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 578,
+    "printed_page": "246",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "再計算依頼区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "国保連合会に再計算を依頼するかどうかの区分コードを設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:依頼なし\n2:再計算依頼",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力 ◎:必須、○:請求内容により必須、△:任意設定、空白:不要"
+      },
+      {
+        "mark": "※2",
+        "text": "支給区分コードが\"1\"の場合、必須。"
+      },
+      {
+        "mark": "※3",
+        "text": "支給区分コードが\"2\"の場合、必須。"
+      },
+      {
+        "mark": "※4",
+        "text": "支給区分コードが\"1\"の場合に設定する。ただし、国保連合会に高額自動償還機能を「使用する」と申し出ている場合（詳細は「インタフェース仕様書 都道府県編 Ⅲ. 市町村共同処理 1．3．1（1）※5支給申請書出力の有無等の設定について」参照。）で、既に高額障害児給付費給付判定結果情報にて口座情報を提出していれば、省略可能。"
+      },
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書 都道府県編 Ⅲ. 市町村事務共同処理 2．2 インタフェースー覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書 共通編 1．4 コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書 共通編 1．5 留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書 共通編 1．3 表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "ページ先頭の表は表見出しがなく、見出し行のみ繰り返されて項番16から始まっているため、前ページからの続きと判断した（continued_from_prev_page: true）。",
+      "見出しの「バイト数」は原文で「バイト」と「数」が折り返されており、折り返しを詰めて「バイト数」と書いた。"
+    ]
+  },
+  "raw_text": null
+}

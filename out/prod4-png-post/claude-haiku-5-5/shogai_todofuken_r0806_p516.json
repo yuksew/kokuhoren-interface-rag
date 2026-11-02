@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 516,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 1067,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.001544,
+    "cost_usd_batch": 0.000772,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 516,
+    "printed_page": "184",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "１．２．６ 受付点検エラーリスト（出力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": "(1)",
+            "name_path": [
+              "高額障害児給付費世帯等台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害児給付費世帯等台帳受付点検時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CFA1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(2)",
+            "name_path": [
+              "高額障害児給付費都道府県等台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "高額障害児給付費都道府県等台帳受付点検時のエラーリスト",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CFB1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 都道府県等"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(3)",
+            "name_path": [
+              "地域生活支援事業事業所台帳受付点検エラーリスト(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業事業所台帳受付点検時のエラーリスト(基本情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CFC1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": "(4)",
+            "name_path": [
+              "地域生活支援事業事業所台帳受付点検エラーリスト(サービス情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "地域生活支援事業事業所台帳受付点検時のエラーリスト(サービス情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "CFD1"
+              },
+              {
+                "column": "ルート",
+                "value": "国保連合会 → 都道府県"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "PDF"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの下部のページ番号は「184」であり、指示されたPDF上のページ516とは一致しない。printed_page には印字された 184 を入れた。"
+    ]
+  },
+  "raw_text": null
+}

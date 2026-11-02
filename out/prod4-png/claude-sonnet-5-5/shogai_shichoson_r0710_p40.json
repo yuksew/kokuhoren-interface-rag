@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 40,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 1742,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037634,
+    "cost_usd_batch": 0.018817,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01WgFG9bcjYWbGtwbLCfVGM7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:00+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 40,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力（※1）",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力（※1）",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "介護保険給付対象者有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "介護保険給付対象者有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※9",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "重度包括支援対象者有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "重度包括支援対象者有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り\n※9",
+            "cells": []
+          },
+          {
+            "no": 43,
+            "no_raw": "43",
+            "name_path": [
+              "食事提供体制加算情報",
+              "食事提供体制加算対象者有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "食事提供体制加算対象者有無を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 44,
+            "no_raw": "44",
+            "name_path": [
+              "食事提供体制加算情報",
+              "食事提供体制加算適用有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "食事提供体制加算適用有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 45,
+            "no_raw": "45",
+            "name_path": [
+              "食事提供体制加算情報",
+              "食事提供体制加算適用有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "食事提供体制加算適用有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 46,
+            "no_raw": "46",
+            "name_path": [
+              "国庫負担基準単位集計区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "国庫負担基準単位集計区分を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "※17\n※18",
+            "cells": []
+          },
+          {
+            "no": 47,
+            "no_raw": "47",
+            "name_path": [
+              "高額障害福祉サービス等給付費情報",
+              "高額障害福祉サービス等給付費対象者区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費の対象者の区分を設定する",
+            "required": "◎",
+            "required_by": [],
+            "note": "1:対象外\n2:対象\n※17",
+            "cells": []
+          },
+          {
+            "no": 48,
+            "no_raw": "48",
+            "name_path": [
+              "高額障害福祉サービス等給付費情報",
+              "高額障害福祉サービス等給付費対象有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費対象有効期間の開始年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 49,
+            "no_raw": "49",
+            "name_path": [
+              "高額障害福祉サービス等給付費情報",
+              "高額障害福祉サービス等給付費対象有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費対象有効期間の終了年月日(西暦年月日(YYYYMMDD))を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 50,
+            "no_raw": "50",
+            "name_path": [
+              "受給者性別"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "受給者の性別を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "1:男\n2:女\n※19",
+            "cells": []
+          },
+          {
+            "no": 51,
+            "no_raw": "51",
+            "name_path": [
+              "児童性別"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "児童の性別を設定する",
+            "required": "△",
+            "required_by": [],
+            "note": "1:男\n2:女\n※20",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きの表（見出し行は繰り返されている）",
+      "「ﾊﾞｲﾄ数」の見出しは「ﾊﾞｲﾄ数」と判断"
+    ]
+  },
+  "raw_text": null
+}

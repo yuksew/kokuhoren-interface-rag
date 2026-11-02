@@ -1,0 +1,322 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 429,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "141",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "① 請求書基本情報レコード",
+   "record": {
+    "exchange_id": "",
+    "name": "請求書基本情報レコード",
+    "parent": "一次審査済障害児通所給付費・入所給付費等請求書情報"
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "出力対象項目（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "出力対象項目（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "１",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "２",
+     "name_path": [
+      "レコード種別コード"
+     ],
+     "type": "コード値",
+     "length": 2,
+     "length_raw": "2",
+     "content": "01を設定する（基本情報レコード）",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "３",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "サービスを提供した年月（西暦年月YYYYMMを設定する）",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": "一次審査結果コード値一次審査結果を設定する◎(重度)",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "４",
+     "name_path": [
+      "都道府県等番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "受給者証に記載された都道府県等番号（チェックデジット1桁含む）",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C\n※2",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": null,
+       "source": null
+      },
+      {
+       "mark": "※2",
+       "text": ":給付費の請求先が政令市等の場合に、処遇改善助成金(※6)の請求書情報を作成する際には、処遇改善助成金(※6)の請求先都道府県番号を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "５",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービスを提供した事業所番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": null,
+       "source": null
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "６",
+     "name_path": [
+      "請求金額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "請求金額を設定する\n請求金額＝合計　給付費請求額＋合計特別対策費請求額＋合計　自治体助成額",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "７",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "件数"
+     ],
+     "type": "数値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "小計　件数",
+     "required": "◎",
+     "required_by": [],
+     "note": "※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": ":処遇改善助成金(※6)の請求書情報を作成する際には、0 を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "８",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "単位数"
+     ],
+     "type": "数値",
+     "length": 9,
+     "length_raw": "9",
+     "content": "小計　単位数",
+     "required": "◎",
+     "required_by": [],
+     "note": "※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": ":処遇改善助成金(※6)の請求書情報を作成する際には、0 を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "９",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "費用合計"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "小計　費用合計",
+     "required": "◎",
+     "required_by": [],
+     "note": "※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": ":処遇改善助成金(※6)の請求書情報を作成する際には、0 を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "１０",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "給付費請求額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "小計　給付費請求額",
+     "required": "◎",
+     "required_by": [],
+     "note": "※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": ":処遇改善助成金(※6)の請求書情報を作成する際には、0 を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "１１",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "特別対策費請求額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "小計　特別対策費請求額",
+     "required": "○",
+     "required_by": [],
+     "note": "※3\n※7\n※8",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※3",
+       "text": ":処遇改善助成金(※6)のみの請求書情報を作成する際には、設定しない。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※7",
+       "text": ":サービス提供年月が平成25 年4 月以降は、設定しない。",
+       "source": "next_page_textlayer"
+      },
+      {
+       "mark": "※8",
+       "text": ":受付年月が平成25 年12 月以降は、設定しない。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "１２",
+     "name_path": [
+      "小計 障害児給付費・特例障害児通所給付費",
+      "利用者負担額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "小計　利用者負担額",
+     "required": "◎",
+     "required_by": [],
+     "note": "※5",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※5",
+       "text": ":処遇改善助成金(※6)の請求書情報を作成する際には、0 を設定する。",
+       "source": "next_page_textlayer"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": true,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」だが、添付はこの1ページ（印字ページ141）のみのため、このページの表を書き起こした。",
+  "小計の縦書き見出しは「小計」と「障害児給付費・特例障害児通所給付費」の間の空白位置を画像から確定できないため、全角空白で区切って記載した。",
+  "項番・バイト数の全角半角は画像表示からの判断で、原文表記と異なる可能性がある。",
+  "レコード情報の交換情報識別番号（exchange_id）は本ページから読み取れないため空文字とした。"
+ ]
+}

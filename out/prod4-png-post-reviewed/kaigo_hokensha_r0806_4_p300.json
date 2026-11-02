@@ -1,0 +1,94 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_hokensha_r0806_4",
+ "page": 300,
+ "edition": "令和8年6月版",
+ "volume": "保険者編",
+ "printed_page": "714",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "・トレーラレコード",
+   "record": {
+    "exchange_id": "",
+    "name": "トレーラレコード",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性",
+    "バイト数",
+    "内容",
+    "必須入力",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "必須入力",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "交換情報識別番号を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“1811”固定",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "帳票レコード種別"
+     ],
+     "type": "英数",
+     "length": 2,
+     "length_raw": "2",
+     "content": "帳票レコード種別文字を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": "“T1”固定",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "合計金額"
+     ],
+     "type": "数字",
+     "length": 12,
+     "length_raw": "１２",
+     "content": "請求するすべての被保険者の金額の合計を設定する",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は「次のページの表」となっていますが、添付は PDF 上のページ 300 ではなく、ページ番号 714 の1ページのみです。添付されたこのページのトレーラレコード表を書き起こしました。",
+  "レコード名は表見出し「・トレーラレコード」から読み取って name に入れました。交換情報識別番号（exchange_id）と parent は本ページからは読み取れないため空文字にしています。"
+ ]
+}

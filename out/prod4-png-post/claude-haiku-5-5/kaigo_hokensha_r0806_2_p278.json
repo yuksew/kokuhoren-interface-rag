@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 278,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 4971,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003495,
+    "cost_usd_batch": 0.001747,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01AgLuaQMLg6x7XWGTxWAZcm",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:53+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 278,
+    "printed_page": "283",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "３．２．２ 償還払給付額管理処理情報（入力情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "識別",
+          "情報名",
+          "内容",
+          "ルート",
+          "周期",
+          "媒体"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "(1)",
+            "name_path": [
+              "償還連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "償還請求を行う際に提出する被保険者に関する基本情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2111"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "(2)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・訪問通所区分介護サービス\n・居宅療養管理指導",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2131"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "(3)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・短期入所生活介護",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2143\n※ 1\n※ 3"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "(4)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・老人保健施設における短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2155\n※ 1\n※ 3\n※ 6"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "(5)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・介護医療院における短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2157\n※ 11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "(6)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・病院・診療所における短期入所療養介護",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2164\n※ 1\n※ 2\n※ 3"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "(7)",
+            "name_path": [
+              "居宅介護（支援）給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・認知症対応型共同生活介護\n・特定施設入所者生活介護（平成１８年３月サービス以前）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2171"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "(8)",
+            "name_path": [
+              "施設介護給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・介護老人福祉施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2183\n※ 2\n※ 3"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "(9)",
+            "name_path": [
+              "施設介護給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・介護老人保健施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2195\n※ 2\n※ 3\n※ 6\n※ 9"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "(10)",
+            "name_path": [
+              "施設介護給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・介護医療院",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "2196\n※ 11"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "(11)",
+            "name_path": [
+              "施設介護給付費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "下記のサービスに対する償還請求を行う際に提出する明細情報\n・介護療養型医療施設",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "21A3\n※ 2\n※ 3\n※ 12"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "(12)",
+            "name_path": [
+              "居宅介護（支援）サービス計画費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "居宅介護（支援）サービス計画費に対する償還請求を行う際に提出する明細情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "21B4\n※ 4\n※ 8"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "(13)",
+            "name_path": [
+              "福祉用具販売費償還明細書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "福祉用具販売費に対する償還請求を行う際に提出する明細情報",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "識別",
+                "value": "21C1"
+              },
+              {
+                "column": "ルート",
+                "value": "保険者 → 国保連合会"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体",
+                "value": "伝送 磁気 帳票"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

@@ -1,0 +1,225 @@
+{
+ "domain": "shogai",
+ "doc_id": "shogai_todofuken_r0806",
+ "page": 497,
+ "edition": "令和8年6月施行分",
+ "volume": "都道府県編",
+ "printed_page": "172-3",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "（２）処遇改善助成金事業所別過誤差額調整残高一覧情報",
+   "record": {
+    "exchange_id": "",
+    "name": "処遇改善助成金事業所別過誤差額調整残高一覧情報",
+    "parent": ""
+   },
+   "columns": [
+    "項番",
+    "項目名",
+    "属性（※Z）",
+    "バイト数",
+    "内容",
+    "出力対象項目（※1）",
+    "備考"
+   ],
+   "column_map": {
+    "no": "項番",
+    "name": "項目名",
+    "type": "属性（※Z）",
+    "length": "バイト数",
+    "content": "内容",
+    "required": "出力対象項目（※1）",
+    "note": "備考"
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": "英数",
+     "length": 4,
+     "length_raw": "4",
+     "content": "当情報の内容を識別するための番号",
+     "required": "◎",
+     "required_by": [],
+     "note": "※B",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※B",
+       "text": "「インタフェース仕様書 都道府県編 Ⅱ．障害児支援 2.2 インタフェース一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "請求先都道府県番号"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "請求先都道府県番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "受付年月"
+     ],
+     "type": "コード値",
+     "length": 6,
+     "length_raw": "6",
+     "content": "請求受付年月（西暦年月 YYYYMM）を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※Y",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※Y",
+       "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "サービスを提供した事業所番号を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "当月助成金請求額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "事業所毎の助成金請求額を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "当月助成金調整額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "事業所毎の過誤調整額を設定する",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "当月差引額"
+     ],
+     "type": "数値",
+     "length": 10,
+     "length_raw": "10",
+     "content": "当月助成金請求額 － 当月助成金調整額",
+     "required": "◎",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "支払先事業所番号"
+     ],
+     "type": "英数",
+     "length": 10,
+     "length_raw": "10",
+     "content": "支払先事業所番号の設定がある場合に設定する",
+     "required": "△",
+     "required_by": [],
+     "note": "※C",
+     "cells": [],
+     "note_refs": [
+      {
+       "mark": "※C",
+       "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+       "source": "page"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "出力対象項目 ◎：出力対象項目、○：請求内容により出力対象となる項目 △：事業所の設定状況により出力対象となる項目、空白：出力対象外項目"
+  },
+  {
+   "mark": "※B",
+   "text": "「インタフェース仕様書 都道府県編 Ⅱ．障害児支援 2.2 インタフェース一覧」参照。"
+  },
+  {
+   "mark": "※C",
+   "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。"
+  },
+  {
+   "mark": "※Y",
+   "text": "「インタフェース仕様書 共通編 1.5 留意事項」参照。"
+  },
+  {
+   "mark": "※Z",
+   "text": "「インタフェース仕様書 共通編 1.3 表記法」参照。"
+  }
+ ],
+ "uncertain": [
+  "依頼では「次のページ」の表の書き起こしとされていたが、添付は1ページ（印字ページ番号 172-3、PDF上 497 と指示された）のみで、この添付ページに含まれる表を書き起こした。依頼の対象ページと添付ページが一致しているか確認が必要。",
+  "表の見出し（（２）処遇改善助成金事業所別過誤差額調整残高一覧情報）から record の名称を入れたが、交換情報識別番号などのレコード識別子は本ページから読み取れないため exchange_id と parent は空文字とした。"
+ ]
+}

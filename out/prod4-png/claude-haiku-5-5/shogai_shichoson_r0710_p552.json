@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 552,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2610,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002316,
+    "cost_usd_batch": 0.001158,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 552,
+    "printed_page": "248",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "（３）高額障害福祉サービス費振込依頼書情報（FC41） ①ヘッダレコード",
+        "record": {
+          "exchange_id": "FC41",
+          "name": "ヘッダレコード",
+          "parent": "高額障害福祉サービス費振込依頼書情報（FC41）"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "‘H1’（固定値）",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "宛先",
+              "金融機関コード"
+            ],
+            "type": "コード値",
+            "length": 4,
+            "length_raw": "4",
+            "content": "市町村が契約している金融機関のコードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "宛先",
+              "金融機関名"
+            ],
+            "type": "漢字",
+            "length": 30,
+            "length_raw": "30",
+            "content": "市町村が契約している金融機関名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "宛先",
+              "金融機関支店コード"
+            ],
+            "type": "コード値",
+            "length": 3,
+            "length_raw": "3",
+            "content": "市町村が契約している金融機関の支店コードを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "宛先",
+              "金融機関支店名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "市町村が契約している金融機関の支店名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "市町村名"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "市町村名を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※B",
+        "text": "「インタフェース仕様書　市町村編　Ⅲ．市町村事務共同処理　３．２　インタフェース一覧」参照。"
+      },
+      {
+        "mark": "※C",
+        "text": "「インタフェース仕様書　共通編　１．４　コード一覧」参照。"
+      },
+      {
+        "mark": "※Y",
+        "text": "「インタフェース仕様書　共通編　１．５　留意事項」参照。"
+      },
+      {
+        "mark": "※Z",
+        "text": "「インタフェース仕様書　共通編　１．３　表記法」参照。"
+      }
+    ],
+    "uncertain": [
+      "依頼文は「次のページの表」の書き起こしですが、添付は PDF 上のページ 552（印字ページ248）の1ページのみです。そのため添付ページ内の表を書き起こしました。次ページの書き起こしには、そのページを添付していただく必要があります。",
+      "record.exchange_id の「FC41」は見出しの「（FC41）」から取りました。表の中に交換情報識別番号の値は印字されていないため、原文の値として確定できません。",
+      "※Y は本ページの表では参照されていません。欄外の注記としてそのまま footnotes に入れました。",
+      "「宛先」は縦に結合された見出しのため、name_path にのみ入れ、columns には入れていません。"
+    ]
+  },
+  "raw_text": null
+}

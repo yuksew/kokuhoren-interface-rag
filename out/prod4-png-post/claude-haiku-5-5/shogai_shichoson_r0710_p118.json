@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 118,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 5280,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003651,
+    "cost_usd_batch": 0.001825,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 118,
+    "printed_page": "70",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 29,
+            "no_raw": "29",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "上限額管理の有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 30,
+            "no_raw": "30",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理を行う事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 31,
+            "no_raw": "31",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 32,
+            "no_raw": "32",
+            "name_path": [
+              "利用者負担上限額管理情報",
+              "上限額管理有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "上限額管理有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y（終了時のみ設定する）",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 33,
+            "no_raw": "33",
+            "name_path": [
+              "計画相談支援情報",
+              "計画相談支援有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "計画相談支援有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 34,
+            "no_raw": "34",
+            "name_path": [
+              "計画相談支援情報",
+              "計画相談支援事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "計画相談支援を行う事業所番号を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": null,
+                "source": null
+              }
+            ]
+          },
+          {
+            "no": 35,
+            "no_raw": "35",
+            "name_path": [
+              "計画相談支援情報",
+              "計画相談支援有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "計画相談支援有効期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 36,
+            "no_raw": "36",
+            "name_path": [
+              "計画相談支援情報",
+              "計画相談支援有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "計画相談支援有効期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 37,
+            "no_raw": "37",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "市町村が定める額の適用有無"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "法第三十一条（災害その他の厚生労働省令で定める特別の事情）に基づく市町村が定める額の適用有無を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:無し\n2:有り",
+            "cells": []
+          },
+          {
+            "no": 38,
+            "no_raw": "38",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "市町村が定める額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "法第三十一条（災害その他の厚生労働省令で定める特別の事情）に基づく市町村が定める額を設定する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 39,
+            "no_raw": "39",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "市町村が定める額の有効期間（開始年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第三十一条に基づく市町村が定める額の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 40,
+            "no_raw": "40",
+            "name_path": [
+              "給付費等の額の特例情報",
+              "市町村が定める額の有効期間（終了年月日）"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "法第三十一条に基づく市町村が定める額の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": "受給者性別コード値受給者の性別を設定する児童性別コード値児童の性別を設定する",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 41,
+            "no_raw": "41",
+            "name_path": [
+              "特定旧法受給者区分（経過措置対象者）"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "特定旧法受給者（経過措置対象者）の場合に設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:対象外\n2:対象(通所)\n3:対象(入所)",
+            "cells": []
+          },
+          {
+            "no": 42,
+            "no_raw": "42",
+            "name_path": [
+              "独自助成対象者区分"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "独自助成対象者の場合に設定する",
+            "required": null,
+            "required_by": [],
+            "note": "1:対象外\n2:対象",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": true,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "この表は項番29から始まり見出し行が付いているため前ページからの続きの可能性がある。ただし表の下端罫線があり次ページへ続くかは画像からは判断できないため、continues_to_next_page は false とした。",
+      "項目名の縦結合グループ見出し（利用者負担上限額管理情報、計画相談支援情報、給付費等の額の特例情報）は name_path にのみ入れた。",
+      "備考欄の「※Y」と「（終了時のみ設定する）」は折り返しと判断し、項番32の備考を1行にまとめた。",
+      "表の上に表題や所属レコード名は見当たらないため、record と title は空にした。"
+    ]
+  },
+  "raw_text": null
+}

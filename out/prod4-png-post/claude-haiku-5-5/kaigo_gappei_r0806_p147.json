@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "doc_id": "kaigo_gappei_r0806",
+    "page": 147,
+    "domain": "kaigo",
+    "volume": "市町村合併編",
+    "edition": "令和8年6月版",
+    "title": "市町村合併等に係る保険者インタフェース",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10091,
+      "output_tokens": 4518,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003268,
+    "cost_usd_batch": 0.001634,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01APVjWzeYyUGFgc2QP4PAGW",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:55+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "市町村合併編",
+    "page": 147,
+    "printed_page": "53",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "・共同処理用受給者異動連絡票情報（高額介護サービス費支給処理情報）",
+        "record": {
+          "exchange_id": "",
+          "name": "共同処理用受給者異動連絡票情報（高額介護サービス費支給処理情報）",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "合併前の各市町村が設定する内容",
+          "新設された市町村が設定する内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“5E11”（固定値）"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "異動年月日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "認定有効期間（開始年月日）（西暦年月日(YYYYMMDD)）を設定する"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "異動区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“1 新規”を設定する"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "異動事由"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "“01 :受給資格取得”を設定する"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村の保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "新設された市町村で新たに付番した被保険者番号を設定する"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "世帯主被保険者番号（世帯集約番号）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "世帯主被保険者番号を設定する\n世帯合算で使用する"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "世帯所得区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "世帯の所得区分コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "所得区分コード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "個人の所得区分コードを設定する"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "老齢福祉年金受給の有無"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "老齢福祉年金受給の有無を設定する"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "利用者負担第2段階※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "利用者負担第2段階に該当するか否かを設定する"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "支給申請書出力の有無※1"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "合併前の各市町村が設定する内容",
+                "value": "インタフェースの提供は不要"
+              },
+              {
+                "column": "新設された市町村が設定する内容",
+                "value": "支給申請書出力の有無を設定する（省略可）"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "処理年月が平成17年11月以降の場合、設定する。なお、処理年月が平成17年10月以前の場合、本項目の設定は不要とし、旧インタフェースとする。設定された場合はエラーとして台帳への登録は行わない。また、異動年月日が平成17年9月30日以前の情報は、未設定であってもエラーとしない。設定している場合は、通常のチェックを行う。なお、項番11.利用者負担第2段階について、未設定である場合は「1：該当無し」として取り扱う。"
+      }
+    ],
+    "uncertain": [
+      "依頼は「次のページ」「PDF上のページ147」ですが、添付は印字ページ53の1ページのみです。添付されたこのページの表を書き起こしました。依頼された対象ページとの一致は確認できません。",
+      "項番1〜9の項番表記が全角か半角かは画像からは判別しにくいため、半角で書き起こしました。",
+      "「合併前の各市町村が設定する内容」列は縦に結合された「インタフェースの提供は不要」を全行に入れています。"
+    ]
+  },
+  "raw_text": null
+}

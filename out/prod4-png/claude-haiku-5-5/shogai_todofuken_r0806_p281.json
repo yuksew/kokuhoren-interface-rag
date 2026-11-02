@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 281,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3635,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002828,
+    "cost_usd_batch": 0.001414,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_011W43UTbQwKFa4pd5NmaijL",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:57+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 281,
+    "printed_page": "74－8",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目",
+          "属性（※Z）",
+          "バイト数",
+          "内容",
+          "必須入力※1 > 新規",
+          "必須入力※1 > 変更",
+          "必須入力※1 > 終了",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目",
+          "type": "属性（※Z）",
+          "length": "バイト数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 128,
+            "no_raw": "128",
+            "name_path": [
+              "福祉・介護職員等処遇改善加算の有無"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "福祉・介護職員等処遇改善加算の有無をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "◎"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "◎"
+              }
+            ],
+            "note": "01:無し\n02:Ⅰ・イ\n03:Ⅱ・イ\n04:Ⅲ\n05:Ⅳ\n07:Ⅰ・ロ\n08:Ⅱ・ロ\n※3、※47\n※48、※50",
+            "cells": []
+          },
+          {
+            "no": 129,
+            "no_raw": "129",
+            "name_path": [
+              "福祉・介護職員等処遇改善加算（Ｖ）区分"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "福祉・介護職員等処遇改善加算（Ｖ）区分をコードで設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "必須入力※1 > 新規",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 変更",
+                "value": "○"
+              },
+              {
+                "column": "必須入力※1 > 終了",
+                "value": "○"
+              }
+            ],
+            "note": "01:Ⅴ（1）\n02:Ⅴ（2）\n03:Ⅴ（3）\n04:Ⅴ（4）\n05:Ⅴ（5）\n06:Ⅴ（6）\n07:Ⅴ（7）\n08:Ⅴ（8）\n09:Ⅴ（9）\n10:Ⅴ（10）\n11:Ⅴ（11）\n12:Ⅴ（12）\n13:Ⅴ（13）\n14:Ⅴ（14）\n※3、※47\n※49、※50",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "必須入力　◎：必須、○：パターン毎に必須、△：任意設定、空白：不要"
+      },
+      {
+        "mark": "※2",
+        "text": "指定年月日を設定する。"
+      },
+      {
+        "mark": "※3",
+        "text": "サービス種類等により体制の無い加算については“0”または“NULL”を設定する。それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+      },
+      {
+        "mark": "※4",
+        "text": "異動年月日の年が平成21年3月以前の場合、“0”または“NULL”を設定する。それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+      },
+      {
+        "mark": "※5",
+        "text": "異動年月日の年月が平成21年9月以前の場合、“0”または“NULL”を設定する。それ以外の値が設定された場合はエラーとし台帳への登録は行わない。"
+      },
+      {
+        "mark": "※6",
+        "text": "対応する項目が「2:有り」、または「2:該当」の場合にのみ設定する。"
+      }
+    ],
+    "uncertain": [
+      "表は前ページからの続きと見られる（見出し行が繰り返し表示されている）。項番128・129より前の行は本ページに含まれないため書き起こしていない。",
+      "ローマ数字（Ⅰ・Ⅱ・Ⅲ・Ⅳ・Ⅴ）および（Ｖ）の字形は画像から判読したもので、原文の文字種と異なる可能性がある。",
+      "「必須入力※1」見出しの下の列名（新規・変更・終了）は、見出しの連結表記として『必須入力※1 > 新規』等で表した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "doc_id": "kaigo_hokensha_r0806_2",
+    "page": 307,
+    "domain": "kaigo",
+    "volume": "保険者編",
+    "edition": "令和8年6月版",
+    "title": "インタフェース仕様書 保険者編（分冊2）",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10093,
+      "output_tokens": 2460,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.044786,
+    "cost_usd_batch": 0.022393,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01YapiEJ7gDY6JG71hRQ7tU7",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:38:58+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和8年6月版",
+    "volume": "保険者編",
+    "page": 307,
+    "printed_page": "304",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "必須入力",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "必須入力",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 13,
+            "no_raw": "１３",
+            "name_path": [
+              "支払方法区分コード"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "支払方法区分コードを設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "１４",
+            "name_path": [
+              "窓口払",
+              "支払場所"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "窓口払の支払場所を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "１５",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "窓口払の支払期間の開始年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": "※３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "１６",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了年月日"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "窓口払の支払期間の終了年月日（西暦年月日(YYYYMMDD)）を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": "※３",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 17,
+            "no_raw": "１７",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始曜日"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "窓口払の支払期間の開始曜日を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "１８",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了曜日"
+            ],
+            "type": "漢字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "窓口払の支払期間の終了曜日を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 19,
+            "no_raw": "１９",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "開始時間"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "窓口払の支払期間の開始時間を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 20,
+            "no_raw": "２０",
+            "name_path": [
+              "窓口払",
+              "支払期間",
+              "終了時間"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "窓口払の支払期間の終了時間を設定する",
+            "required": "支払方法区分コードが“1”で、償還払支給(不支給)決定通知書に出力する必要がある場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 21,
+            "no_raw": "２１",
+            "name_path": [
+              "口座払",
+              "金融機関コード"
+            ],
+            "type": "数字",
+            "length": 4,
+            "length_raw": "4",
+            "content": "口座払の金融機関コードを設定する",
+            "required": "支払方法区分コードが“2”の場合、必須",
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 22,
+            "no_raw": "２２",
+            "name_path": [
+              "口座払",
+              "金融機関支店コード"
+            ],
+            "type": "数字",
+            "length": 3,
+            "length_raw": "3",
+            "content": "口座払の金融機関支店コードを設定する",
+            "required": "支払方法区分コードが“2”の場合、必須",
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 23,
+            "no_raw": "２３",
+            "name_path": [
+              "口座払",
+              "口座種目"
+            ],
+            "type": "数字",
+            "length": 1,
+            "length_raw": "1",
+            "content": "口座払の口座種目を設定する",
+            "required": "支払方法区分コードが“2”の場合、必須",
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 24,
+            "no_raw": "２４",
+            "name_path": [
+              "口座払",
+              "口座番号"
+            ],
+            "type": "数字",
+            "length": 7,
+            "length_raw": "7",
+            "content": "口座払の口座番号を設定する",
+            "required": "支払方法区分コードが“2”の場合、必須",
+            "required_by": [],
+            "note": "※２",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 25,
+            "no_raw": "２５",
+            "name_path": [
+              "口座払",
+              "口座名義人（カナ）"
+            ],
+            "type": "英数",
+            "length": 40,
+            "length_raw": "４０",
+            "content": "口座払の口座名義人（カナ）を設定する",
+            "required": "支払方法区分コードが“2”の場合、必須",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 26,
+            "no_raw": "２６",
+            "name_path": [
+              "保険請求額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "保険請求額の合計を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付きアンパック(ゾーン)10進数形式項目〔以下:符号付き形式項目〕」 なお、※Ｓが付加されていない数字属性項目は、「符号なしアンパック(ゾーン)10進数形式項目〔以下:符号なし形式項目〕」である。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 27,
+            "no_raw": "２７",
+            "name_path": [
+              "自己負担額"
+            ],
+            "type": "数字",
+            "length": 8,
+            "length_raw": "8",
+            "content": "自己負担額の合計を設定する",
+            "required": "○",
+            "required_by": [],
+            "note": "※Ｓ",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※S",
+                "text": "固定長形式で表現する場合の「符号付きアンパック(ゾーン)10進数形式項目〔以下:符号付き形式項目〕」 なお、※Ｓが付加されていない数字属性項目は、「符号なしアンパック(ゾーン)10進数形式項目〔以下:符号なし形式項目〕」である。",
+                "source": "page"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※１",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※２",
+        "text": "「インタフェース仕様書 共通編 1.4 コード一覧」参照。(P.31)"
+      },
+      {
+        "mark": "※３",
+        "text": "「インタフェース仕様書 共通編 1.5 留意事項:「年月日」欄」参照。(P.42)"
+      },
+      {
+        "mark": "※Ｓ",
+        "text": "固定長形式で表現する場合の「符号付きアンパック(ゾーン)10進数形式項目〔以下:符号付き形式項目〕」 なお、※Ｓが付加されていない数字属性項目は、「符号なしアンパック(ゾーン)10進数形式項目〔以下:符号なし形式項目〕」である。"
+      }
+    ],
+    "uncertain": [
+      "必須入力列の縦結合セル（項番14〜20、21〜25）は関係する全行に同じ文言を入れた",
+      "項番13〜25の窓口払・支払期間・口座払は縦結合グループ見出しとして name_path に入れた"
+    ]
+  },
+  "raw_text": null
+}

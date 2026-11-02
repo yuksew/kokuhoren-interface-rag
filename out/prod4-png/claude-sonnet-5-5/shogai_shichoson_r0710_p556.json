@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "doc_id": "shogai_shichoson_r0710",
+    "page": 556,
+    "domain": "shogai",
+    "volume": "市町村編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 市町村編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10107,
+      "output_tokens": 2249,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042704,
+    "cost_usd_batch": 0.021352,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "市町村編",
+    "page": 556,
+    "printed_page": "251-1",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "①明細レコード(複数レコード)",
+        "record": {
+          "exchange_id": "FC61",
+          "name": "明細レコード",
+          "parent": "高額障害福祉サービス等給付費給付のお知らせ情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性(※Z)",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性(※Z)",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [],
+            "note": "※B",
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "帳票レコード種別"
+            ],
+            "type": "英数",
+            "length": 2,
+            "length_raw": "2",
+            "content": "帳票レコード種別を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "'D1'(固定値)",
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービス提供年月(西暦年月(YYYYMM))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "証記載市町村番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証記載の市町村番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※C",
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "帳票題目"
+            ],
+            "type": "漢字",
+            "length": 100,
+            "length_raw": "100",
+            "content": "帳票題目を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "説明文1"
+            ],
+            "type": "漢字",
+            "length": 200,
+            "length_raw": "200",
+            "content": "都道府県ごとに国保連合会において設定した内容を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "受給者氏名(カナ)"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "受給者氏名(カナ)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "受給者氏名(漢字)"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "受給者氏名(漢字)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "生年月日"
+            ],
+            "type": "コード値",
+            "length": 8,
+            "length_raw": "8",
+            "content": "受給者の生年月日(西暦年月日(YYYYMMDD))を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※Y",
+            "cells": []
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "介護保険給付費自己負担額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護保険給付費自己負担額を出力する\n生活保護受給者等の場合、生活保護制度における介護扶助等の金額(公費本人額を含む)を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "障害福祉相当介護保険サービス自己負担額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "介護保険給付費自己負担額の内、障害福祉相当介護保険サービスの自己負担額を出力する\n生活保護受給者等の場合、生活保護制度における介護扶助等の公費請求額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "公費本人支払額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "生活保護受給者等の場合、障害福祉相当介護保険サービスの公費本人支払額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "項目名称1"
+            ],
+            "type": "漢字",
+            "length": 40,
+            "length_raw": "40",
+            "content": "都道府県ごとに国保連合会において設定した内容を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "高額障害福祉サービス等給付費支給金額"
+            ],
+            "type": "数値",
+            "length": 9,
+            "length_raw": "9",
+            "content": "施行令第四十三条の五第六項に基づく高額障害福祉サービス等給付費支給金額を出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※1",
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "利用サービス"
+            ],
+            "type": "漢字",
+            "length": 600,
+            "length_raw": "600",
+            "content": "利用した障害福祉相当介護保険サービスを出力する",
+            "required": null,
+            "required_by": [],
+            "note": "※2",
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "説明文2"
+            ],
+            "type": "漢字",
+            "length": 200,
+            "length_raw": "200",
+            "content": "都道府県ごとに国保連合会において設定した内容を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 18,
+            "no_raw": "18",
+            "name_path": [
+              "提出･問い合わせ先郵便番号"
+            ],
+            "type": "コード値",
+            "length": 7,
+            "length_raw": "7",
+            "content": "提出･問い合わせ先の郵便番号を出力する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": true
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表見出しの「(12)高額障害福祉サービス等給付費給付のお知らせ情報(施行令第四十三条の五第六項)(FC61)」からレコードの exchange_id を FC61 と判断した",
+      "項番12・15の項目名は折り返し位置から連結した"
+    ]
+  },
+  "raw_text": null
+}

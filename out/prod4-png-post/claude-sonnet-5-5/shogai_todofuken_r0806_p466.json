@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "doc_id": "shogai_todofuken_r0806",
+    "page": 466,
+    "domain": "shogai",
+    "volume": "都道府県編",
+    "edition": "令和8年6月施行分",
+    "title": "インタフェース仕様書 都道府県編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10108,
+      "output_tokens": 3073,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.050946,
+    "cost_usd_batch": 0.025473,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01QwNsFpBsgB9DYd7W99JPUT",
+    "parsed_ok": true,
+    "created_at": "2026-11-01T23:39:02+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和8年6月施行分",
+    "volume": "都道府県編",
+    "page": 466,
+    "printed_page": "165",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "⑧　一次審査済利用者負担上限額管理結果票情報　明細情報レコード（複数レコード）",
+        "record": {
+          "exchange_id": "",
+          "name": "明細情報レコード",
+          "parent": "一次審査済利用者負担上限額管理結果票情報"
+        },
+        "columns": [
+          "項番",
+          "項目名",
+          "属性（※Z）",
+          "ﾊﾞｲﾄ数",
+          "内容",
+          "出力対象項目（※１） > K411",
+          "出力対象項目（※１） > K421",
+          "備考"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "項目名",
+          "type": "属性（※Z）",
+          "length": "ﾊﾞｲﾄ数",
+          "content": "内容",
+          "required": "",
+          "note": "備考"
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "当情報の内容を識別するための番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※B",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※B",
+                "text": ":「インタフェース仕様書 都道府県編 II.障害児支援 2.2 インタフェース一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "入力識別番号"
+            ],
+            "type": "英数",
+            "length": 4,
+            "length_raw": "4",
+            "content": "入力元の交換情報識別番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※2",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※2",
+                "text": "「インタフェース仕様書　都道府県編　Ⅱ. 障害児支援　2.3.1(3)入力識別番号一覧」参照。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "レコード種別コード"
+            ],
+            "type": "コード値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "02 を設定する(明細情報レコード)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "サービスを提供した年月(西暦年月 YYYYMM を設定する)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "都道府県等番号"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "受給者証に記載された都道府県等番号(ﾁｪｯｸﾃﾞｼﾞｯﾄ 1桁含む)",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "上限額管理事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "上限額管理を行った事業所の事業所番号を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "受給者証に記載されている受給者証番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※C\n※5",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              },
+              {
+                "mark": "※5",
+                "text": ":K421 利用者負担上限額管理結果票情報(複数児童)の場合、同一世帯の複数児童において、主となる児童の受給者証に記載されている受給者証番号を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "項番"
+            ],
+            "type": "数値",
+            "length": 2,
+            "length_raw": "2",
+            "content": "1 から通番を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスを提供した事業所番号",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "利用者負担額集計・調整欄",
+              "総費用額"
+            ],
+            "type": "数値",
+            "length": 10,
+            "length_raw": "10",
+            "content": "サービスの総費用額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※3\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※4",
+                "text": ":サービス提供年月が平成21年10月以降の上限額管理結果票において、利用者負担上限額管理結果が“1”となった場合、関係事業所における総費用額および利用者負担額の設定は省略可能とし、省略する場合には“0”を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "利用者負担額集計・調整欄",
+              "利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "利用者負担額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※3\n※4",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。",
+                "source": "page"
+              },
+              {
+                "mark": "※4",
+                "text": ":サービス提供年月が平成21年10月以降の上限額管理結果票において、利用者負担上限額管理結果が“1”となった場合、関係事業所における総費用額および利用者負担額の設定は省略可能とし、省略する場合には“0”を設定する。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "利用者負担額集計・調整欄",
+              "管理結果後利用者負担額"
+            ],
+            "type": "数値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "管理結果後利用者負担額",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※3",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※3",
+                "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。",
+                "source": "page"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "利用者負担額集計・調整欄",
+              "上限額管理対象受給者証番号"
+            ],
+            "type": "英数",
+            "length": 10,
+            "length_raw": "10",
+            "content": "同一世帯の複数児童において、上限額管理対象となる児童の受給者証に記載されている受給者証番号を設定",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※C",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※C",
+                "text": ":「インタフェース仕様書 共通編 1.4 コード一覧」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "利用者負担額集計・調整欄",
+              "氏名カナ"
+            ],
+            "type": "英数",
+            "length": 25,
+            "length_raw": "25",
+            "content": "同一世帯の複数児童において、上限額管理対象となる児童カナ氏名",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": null
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "△"
+              }
+            ],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "受付年月"
+            ],
+            "type": "コード値",
+            "length": 6,
+            "length_raw": "6",
+            "content": "請求受付年月(西暦年月YYYYMM)を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "※Y",
+            "cells": [],
+            "note_refs": [
+              {
+                "mark": "※Y",
+                "text": ":「インタフェース仕様書 共通編 1.5 留意事項」参照。",
+                "source": "next_page_textlayer"
+              }
+            ]
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "一次審査結果"
+            ],
+            "type": "コード値",
+            "length": 1,
+            "length_raw": "1",
+            "content": "一次審査結果を設定する",
+            "required": null,
+            "required_by": [
+              {
+                "column": "出力対象項目（※１） > K411",
+                "value": "◎"
+              },
+              {
+                "column": "出力対象項目（※１） > K421",
+                "value": "◎"
+              }
+            ],
+            "note": "1:正常\n2:警告\n3:返戻\n6:警告(重度)",
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "出力対象項目　◎:出力対象項目、○:請求内容により出力対象となる項目　△:事業所の設定状況により出力対象となる項目、空白:出力対象外項目"
+      },
+      {
+        "mark": "※2",
+        "text": "「インタフェース仕様書　都道府県編　Ⅱ. 障害児支援　2.3.1(3)入力識別番号一覧」参照。"
+      },
+      {
+        "mark": "※3",
+        "text": "事務処理上は管理結果により設定する必要が無い場合もあるが、インタフェース上は必須とし、計算結果を常に設定する。"
+      }
+    ],
+    "uncertain": [
+      "項番10〜14の縦結合グループ見出しは縦書きで「利用者負担額集計・調整欄」と読み取った（印字は「集計・調整欄」「利用者負担額」が混在）",
+      "備考列の項番16は折り返しを改行区切りで記載"
+    ]
+  },
+  "raw_text": null
+}
