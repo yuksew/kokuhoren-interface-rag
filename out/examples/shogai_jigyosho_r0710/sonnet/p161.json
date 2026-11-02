@@ -1,0 +1,110 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 161,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.024914,
+ "request_id": null,
+ "result": {
+  "printed_page": "65",
+  "heading": "②居宅介護",
+  "examples": [
+   {
+    "no": "1",
+    "title": "【通常】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "身体\n10:00～11:30",
+    "provisions": [
+     {
+      "label": "身体",
+      "start": "10:00",
+      "end": "11:30",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "提供通番にはサービス1回毎の通番を採番し設定する(複数回のサービスを1回のサービスとして扱う場合は複数のレコードに対して提供通番に同一番号が設定されることがある)。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス内容",
+       "資格",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        null,
+        "111000",
+        "11",
+        "10:00～11:30",
+        "1.5",
+        "1"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "2",
+    "title": "【ヘルパー要件有】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "身体(重訪)\n10:00～12:00",
+    "provisions": [
+     {
+      "label": "身体(重訪)",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "身体(重訪)の場合ヘルパー資格に'13'を設定",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス内容",
+       "資格",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        null,
+        "111000",
+        "13",
+        "10:00～12:00",
+        "2.0",
+        "1"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

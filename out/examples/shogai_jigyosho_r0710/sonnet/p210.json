@@ -1,0 +1,149 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 210,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.028414,
+ "request_id": null,
+ "result": {
+  "printed_page": "94－4",
+  "heading": null,
+  "examples": [
+   {
+    "no": "5",
+    "title": "【空き時間複数あり（2 時間未満）】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～12:00\n13:30～14:00\n14:15～14:30",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "13:30",
+      "end": "14:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "14:15",
+      "end": "14:30",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "空き時間が 2 時間未満の場合、連続した 1 回のサービス提供として取り扱う。\n10:00～14:30までが連続した1回のサービス提供であるため、提供通番には同一番号を設定する。また、算定時間は最終行にまとめて設定する。最終行とは、同一提供通番の中で、開始時間昇順に並べた場合の最終行とする。\n空き時間は設定しない。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～12:00",
+        null,
+        "1"
+       ],
+       [
+        "1",
+        "1",
+        "13:30～14:00",
+        null,
+        "1"
+       ],
+       [
+        "1",
+        "1",
+        "14:15～14:30",
+        "2.75",
+        "1"
+       ],
+       [
+        null,
+        null,
+        "合計",
+        "2.75",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "6",
+    "title": "【空き時間あり（2 時間以上）】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～12:00\n14:00～14:30",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "14:00",
+      "end": "14:30",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "空き時間が 2 時間以上の場合、別のサービス提供として取り扱う。\n10:00～12:00、14:00～14:30 でそれぞれ分けて設定する（提供通番は別番号となる）。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～12:00",
+        "2",
+        "1"
+       ],
+       [
+        "2",
+        "1",
+        "14:00～14:30",
+        "0.5",
+        "1"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "No5の表の「合計」行は、合計セルが提供時間列、2.75が算定時間列にあると読んだ（列位置は目視）"
+  ]
+ }
+}

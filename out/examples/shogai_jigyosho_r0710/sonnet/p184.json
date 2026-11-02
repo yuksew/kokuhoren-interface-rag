@@ -1,0 +1,86 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 184,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.026354,
+ "request_id": null,
+ "result": {
+  "printed_page": "84－4",
+  "heading": null,
+  "examples": [
+   {
+    "no": "14",
+    "title": "【二人派遣（熟練ヘルパーが同一時間帯に新任ヘルパーに同行した場合）】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "重度訪問\n（1 人目：熟練）\n8:00～12:00\n重度訪問\n（2 人目：新任）\n8:00～12:00",
+    "provisions": [
+     {
+      "label": "重度訪問（1 人目：熟練）",
+      "start": "8:00",
+      "end": "12:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "重度訪問（2 人目：新任）",
+      "start": "8:00",
+      "end": "12:00",
+      "staff": "2人目",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2 人派遣（熟練ヘルパーが新任ヘルパーに同行した場合（障害支援区分6の利用者に支援した場合））でヘルパー時間が同一の場合、1 行に設定し、派遣人数を 2、同行支援を 1 と設定する。\n2 人派遣（熟練ヘルパーが同行した場合（重度障害者等包括支援の対象者に支援した場合））でヘルパー時間が同一の場合、1 行に設定し、派遣人数を 2、同行支援を 2 と設定する。\n算定時間数、移動時間数は 1 人分を設定する。算定時間数の合計は 2 人分の 8 時間を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定（様式３－１）",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス提供の状況",
+       "提供時間",
+       "算定時間",
+       "移動",
+       "派遣人数",
+       "同行支援"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        null,
+        null,
+        "8:00～12:00",
+        "4",
+        null,
+        "2",
+        "1"
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        "8",
+        null,
+        null,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "provision_text の「（1 人目：熟練）」の括弧内コロンは原文では半角寄りの表記で、全角/半角の区別が不確か",
+   "合計行は「合計」セルが複数列にまたがっているため、列位置は推定"
+  ]
+ }
+}

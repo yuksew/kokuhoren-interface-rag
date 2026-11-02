@@ -1,0 +1,164 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 163,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.028234,
+ "request_id": null,
+ "result": {
+  "printed_page": "67",
+  "heading": null,
+  "examples": [
+   {
+    "no": "5",
+    "title": "【2 人派遣派遣時間ずれ】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "身体\n10:00～12:00\n(1 人目)\n\n身体\n11:00～13:00\n(2 人目)",
+    "provisions": [
+     {
+      "label": "身体",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "身体",
+      "start": "11:00",
+      "end": "13:00",
+      "staff": "2人目",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2 人派遣で時間がずれた場合、2 行に分けて設定する(提供通番は別番号となる)。1 行目は全体の通算時間を設定する。2 行目はヘルパーが重複している時間帯を設定する。この時、ヘルパー毎にサービス提供回数を設定する(ヘルパー1 人目に 1、2 人目に 2 を設定する)。派遣人数は行ごとに 1 と設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス内容",
+       "資格",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "1",
+        "111000",
+        "11",
+        "10:00～13:00",
+        "3",
+        "1"
+       ],
+       [
+        "2",
+        "1",
+        "2",
+        "111000",
+        "11",
+        "11:00～12:00",
+        "1",
+        "1"
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "合計",
+        "4",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "6",
+    "title": "【2 人派遣　ヘルパー要件違い】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "身体\n10:00～12:00\n(1 人目)\n\n身体(基礎等)\n11:00～13:00\n(2 人目)",
+    "provisions": [
+     {
+      "label": "身体",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "身体(基礎等)",
+      "start": "11:00",
+      "end": "13:00",
+      "staff": "2人目",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2 人派遣で 1 人目と 2 人目の従業者要件が異なる場合は、それぞれ行を分けて設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス内容",
+       "資格",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "1",
+        "111000",
+        "11",
+        "10:00～12:00",
+        "2",
+        "1"
+       ],
+       [
+        "2",
+        "1",
+        "2",
+        "111000",
+        "12",
+        "11:00～13:00",
+        "2",
+        "1"
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "合計",
+        "4",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

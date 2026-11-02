@@ -1,0 +1,176 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 206,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002751,
+ "request_id": null,
+ "result": {
+  "printed_page": "94",
+  "heading": "実績記録票　紙様式記載",
+  "examples": [
+   {
+    "no": "2",
+    "title": null,
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "退所後に退所時特別支援加算、地域移行加算、自立生活支援加算（Ⅱ）（※）を算定する場合で、退所月と退所後における加算の算定月が異なる場合\n\n※サービス提供年月が令和6年3月以前の場合、「自立生活支援加算（Ⅱ）」は「自立生活支援加算」と読み替えて使用する。\n\n退所月と算定月が異なる\n\n明細情報レコードは設定しない。\n\n基本情報レコードの必須項目（項番1～項番7）と、退所時特別支援加算の「退所日」、「退所後算定日」もしくは、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票　紙様式記載（様式9）",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "障害者名",
+        "value": "受給太郎",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "9910000001",
+        "unit": null
+       },
+       {
+        "label": "事業所名",
+        "value": "○○事業所",
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "○○加算",
+       "○○加算",
+       "朝食",
+       "昼食",
+       "夕食",
+       "光熱水費"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "各小計",
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "実費合計額",
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [
+       {
+        "label": "受給者証番号",
+        "value": "1111111111",
+        "unit": null
+       },
+       {
+        "label": "事業所番号",
+        "value": "99100000001",
+        "unit": null
+       }
+      ],
+      "columns": [
+       "項目名",
+       "値"
+      ],
+      "rows": [
+       [
+        "地域移行加算",
+        null
+       ],
+       [
+        "退所日",
+        "H30 年 4 月 28 日"
+       ],
+       [
+        "退所後算定日",
+        "H30 年 5 月 20 日"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "紙様式記載の表の結合セル（合計、各小計、実費合計額）の範囲と値の位置が不明瞭なため、列の対応を推定した。",
+   "入力側の表の最下段（地域移行加算・退所日・退所後算定日）は表題がなく、表形式の扱いを判断しかねた。",
+   "インタフェース設定の地域移行加算の値欄は空欄と判断したが、原本で値の有無を確認しにくい。",
+   "枠外の本文が無いため other_text は null とし、枠の下部の説明文を explanation に入れた。",
+   "左の欄の文章は図の提供時間ではないため provision_text は null、provisions は空にした。"
+  ]
+ }
+}

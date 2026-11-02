@@ -1,0 +1,137 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 209,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002369,
+ "request_id": null,
+ "result": {
+  "printed_page": "94－3",
+  "heading": null,
+  "examples": [
+   {
+    "no": "3",
+    "title": "【2人派遣派遣時間ずれ】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～12:00\n(1人目)\n\n受託居宅介護\n11:00～14:00\n(2人目)",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "11:00",
+      "end": "14:00",
+      "staff": "2人目",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "派遣人数にかかわらず、利用者がサービス提供を受けた全体の通算時間を1行で設定する。\nなお、開始時間は最小である開始時間を設定し、終了時間は最大の終了時間を設定する。\n算定時間も同様に、利用者がサービス提供を受けた全体の通算時間数(4時間)を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～14:00",
+        "4",
+        "1"
+       ],
+       [
+        null,
+        null,
+        "合計",
+        "4",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "4",
+    "title": "【空き時間あり(2時間未満)】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～12:00\n13:30～14:00",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "13:30",
+      "end": "14:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "空き時間が2時間未満の場合、連続した1回のサービス提供として取り扱う。\n10:00～14:00までが連続した1回のサービス提供であるため、提供通番には同一番号を設定する。また、算定時間は最終行にまとめて設定する。最終行とは、同一提供通番の中で、開始時間昇順に並べた場合の最終行とする。\n空き時間は設定しない。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～12:00",
+        null,
+        "1"
+       ],
+       [
+        "1",
+        "1",
+        "13:30～14:00",
+        "2.5",
+        "1"
+       ],
+       [
+        null,
+        null,
+        "合計",
+        "2.5",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "No3・No4の『合計』セルは、提供時間列の右寄りに置かれ結合範囲が不明確なため、提供時間列に置いた（結合の左端は未確定）。",
+   "No3の事例名『派遣派遣』は原文のまま書き写した。",
+   "No4の事例名の『(2時間未満)』の前後の空白は原文の字間から推定し、『(2時間未満)』と表記した。"
+  ]
+ }
+}

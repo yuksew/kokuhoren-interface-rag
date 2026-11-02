@@ -47,7 +47,7 @@ secret() {
 
 build() {
   for f in db/interface_spec.sqlite db/vectors.ruri-v3-310m.npy; do
-    [ -f "$f" ] || { echo "$f がありません（build_db.py → build_rules.py → build_index.py を先に）" >&2; exit 1; }
+    [ -f "$f" ] || { echo "$f がありません（build_db.py → build_rules.py → build_examples.py → build_index.py を先に）" >&2; exit 1; }
   done
   gcloud builds submit --project "$PROJECT" --region "$REGION" --tag "$IMAGE" --timeout 40m --machine-type e2-highcpu-8 .
 }

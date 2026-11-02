@@ -1,0 +1,132 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 188,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002185,
+ "request_id": null,
+ "result": {
+  "printed_page": "86",
+  "heading": null,
+  "examples": [
+   {
+    "no": "3",
+    "title": "【二人派遣 同一時間】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "行動\n10:00～11:00\n(1 人目)\n\n行動\n10:00～11:00\n(2 人目)",
+    "provisions": [
+     {
+      "label": "行動",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "(1 人目)",
+      "day": null
+     },
+     {
+      "label": "行動",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "(2 人目)",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2 人派遣でヘルパーの派遣時間が同一の場合、算定時間数は 1 時間とし、派遣人数を 2 と設定する。算定時間の合計欄は 2 時間となる。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        null,
+        "10:00～11:00",
+        "1",
+        "2"
+       ],
+       [
+        null,
+        null,
+        null,
+        "合計",
+        "2",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "4",
+    "title": "【二人派遣 時間ずれ】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "行動\n10:00～12:00\n(1 人目)\n\n行動\n11:00～13:00\n(2 人目)",
+    "provisions": [
+     {
+      "label": "行動",
+      "start": "10:00",
+      "end": "12:00",
+      "staff": "(1 人目)",
+      "day": null
+     },
+     {
+      "label": "行動",
+      "start": "11:00",
+      "end": "13:00",
+      "staff": "(2 人目)",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2 人派遣で時間がずれた場合、2 行に分けて設定する(提供通番が別番号となる)。1 行目は全体の通算時間を設定する。2 行目はヘルパーが重複している時間帯を設定する。派遣人数は行ごとに 1 と設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "提供時間",
+       "算定時間",
+       "派遣人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "1",
+        "10:00～13:00",
+        "3",
+        "1"
+       ],
+       [
+        "2",
+        "1",
+        "2",
+        "11:00～12:00",
+        "1",
+        "1"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

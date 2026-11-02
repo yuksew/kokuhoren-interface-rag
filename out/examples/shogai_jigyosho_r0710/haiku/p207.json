@@ -1,0 +1,307 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 207,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002531,
+ "request_id": null,
+ "result": {
+  "printed_page": "94－1",
+  "heading": null,
+  "examples": [
+   {
+    "no": "3",
+    "title": null,
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "5 日に退居し、10 日と 15 日に退居後（外部サービス利用型）共同生活援助サービスを提供した場合、入居期間（1 日～5 日）及び退居後（外部サービス利用型）共同生活援助サービスを提供した日数分データを設定する。\n※退居後にサービス提供していない日数分（6 日～9 日、11 日～14 日、16 日以降）のデータは作成しない。\n■退居後支援\n介護サービス包括型、または外部サービス利用型の事業所において、退居後（外部サービス利用型）共同生活援助サービスを提供した場合、1を設定する。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票　紙様式記載",
+      "fields": [
+       {
+        "label": "退居日",
+        "value": "R6 年 4 月 5 日",
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "住居外利用",
+       "退居後支援",
+       "○○加算",
+       "…",
+       "○○加算"
+      ],
+      "rows": [
+       [
+        "1",
+        "入院",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "2",
+        "入院",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "3",
+        "入院",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "4",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "5",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "6",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "7",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "8",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "9",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "10",
+        null,
+        null,
+        "1",
+        null,
+        null,
+        null
+       ],
+       [
+        "11",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "12",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "13",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "14",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "15",
+        null,
+        null,
+        "1",
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        "2",
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [
+       {
+        "label": "地域移行加算",
+        "value": null,
+        "unit": null
+       },
+       {
+        "label": "入所中算定日",
+        "value": null,
+        "unit": null
+       },
+       {
+        "label": "退所日",
+        "value": "R6 年 4 月 5 日",
+        "unit": null
+       },
+       {
+        "label": "退所後算定日",
+        "value": null,
+        "unit": null
+       }
+      ],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "○○加算",
+       "…",
+       "○○加算",
+       "住居外利用",
+       "退居後支援"
+      ],
+      "rows": [
+       [
+        "1",
+        "2",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "2",
+        "2",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "3",
+        "2",
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "4",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "5",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "10",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "1"
+       ],
+       [
+        "15",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "1"
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "2"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "No 3 の枠内の表の下にある「退居日 R6 年 4 月 5 日」の枠は表の上ではなく下にあるが、fields に入れた。",
+   "インタフェース設定の表の下にある「地域移行加算」「入所中算定日」「退所後算定日」の枠は、値の欄が空白のため value を null にした。",
+   "紙様式記載の表の列見出し「○○加算」「…」は単段の見出しとして読んだ。"
+  ]
+ }
+}

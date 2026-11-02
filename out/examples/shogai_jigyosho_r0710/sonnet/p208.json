@@ -1,0 +1,112 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 208,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.026464,
+ "request_id": null,
+ "result": {
+  "printed_page": "94－2",
+  "heading": "⑩共同生活援助(受託居宅介護)",
+  "examples": [
+   {
+    "no": "1",
+    "title": "【通常】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～11:00",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "提供通番にはサービス 1 回毎の通番を採番し設定する(複数回のサービスを 1 回のサービスとして扱う場合は複数のレコードに対して提供通番に同一番号が設定されることがある)。\n利用人数は、サービス 1 回毎の利用者の人数を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～11:00",
+        "1",
+        "1"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "2",
+    "title": "【同一時間 2 人派遣】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～11:00\n(1 人目)\n\n受託居宅介護\n10:00～11:00\n(2 人目)",
+    "provisions": [
+     {
+      "label": "受託居宅介護(1 人目)",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "受託居宅介護(2 人目)",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "2人目",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "派遣人数にかかわらず、利用者がサービス提供を受けた時間を 1 行で設定する。\n算定時間も同様に、利用者がサービス提供を受けた時間数(1 時間)を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～11:00",
+        "1",
+        "1"
+       ],
+       [
+        null,
+        null,
+        "合計",
+        "1",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

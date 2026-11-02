@@ -1,0 +1,115 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 208,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002198,
+ "request_id": null,
+ "result": {
+  "printed_page": "94－2",
+  "heading": "⑩共同生活援助（受託居宅介護）",
+  "examples": [
+   {
+    "no": "1",
+    "title": "【通常】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～11:00",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "提供通番にはサービス１回毎の通番を採番し設定する（複数回のサービスを１回のサービスとして扱う場合は複数のレコードに対して提供通番に同一番号が設定されることがある）。\n利用人数は、サービス１回毎の利用者の人数を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～11:00",
+        "1",
+        "1"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "no": "2",
+    "title": "【同一時間２人派遣】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "受託居宅介護\n10:00～11:00\n（1人目）\n\n受託居宅介護\n10:00～11:00\n（2人目）",
+    "provisions": [
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "（1人目）",
+      "day": null
+     },
+     {
+      "label": "受託居宅介護",
+      "start": "10:00",
+      "end": "11:00",
+      "staff": "（2人目）",
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "派遣人数にかかわらず、利用者がサービス提供を受けた時間を１行で設定する。\n算定時間も同様に、利用者がサービス提供を受けた時間数（1時間）を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "提供時間",
+       "算定時間",
+       "利用人数"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "10:00～11:00",
+        "1",
+        "1"
+       ],
+       [
+        null,
+        null,
+        "合計",
+        "1",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "例2の左の欄は2人分が並んで印字されているため、provisions を2件（1人目・2人目）として書き起こした。図の帯は1本にまとまって見えるため、この分け方が原本の意図と一致するか要確認。",
+   "例2の「合計」セルは、提供通番・日の列にまたがるか提供時間の列の右寄りにあるかが判別しにくいが、提供時間の列に置き、算定時間の列の値1と同じ行に配置した。"
+  ]
+ }
+}

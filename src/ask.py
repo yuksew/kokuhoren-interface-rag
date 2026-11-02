@@ -48,6 +48,12 @@ def source_label(r: Retriever, hit: dict) -> str:
         s = r.con.execute("SELECT sheet, min(row) a, max(row) b FROM service_codes WHERE sc_id BETWEEN ? AND ?",
                           (x["sc_from"], x["sc_to"])).fetchone()
         return f"{dom} {x['title']}（{x['edition']}） シート「{s['sheet']}」 {s['a']}〜{s['b']}行"
+    if hit["kind"] == "example":
+        x = r.con.execute("SELECT e.*, d.domain, d.volume, d.edition FROM chunks c JOIN examples e USING (example_id) "
+                          "JOIN documents d ON d.doc_id = e.doc_id WHERE c.chunk_id = ?", (hit["chunk_id"],)).fetchone()
+        pp = f"（印刷 {x['printed_page']}）" if x["printed_page"] else ""
+        pages = f"p{x['page_from']}" + (f"〜{x['page_to']}" if x["page_to"] != x["page_from"] else "")
+        return f"{DOMAIN[x['domain']]} {x['volume']} {x['edition']} PDF {pages}{pp} 設定例 {x['section'] or ''} No.{x['no'] or '-'} {x['title'] or ''}"
     if hit["kind"] == "prose":
         x = r.con.execute("SELECT c.page, c.printed_page, d.domain, d.volume, d.edition FROM chunks c JOIN documents d USING (doc_id) "
                           "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
@@ -70,7 +76,7 @@ def source_link(r: Retriever, hit: dict) -> dict | None:
     if hit["kind"] in ("rule", "svc"):
         x = r.con.execute("SELECT c.page, d.url, d.source_page FROM chunks c JOIN rule_docs d USING (doc_id) WHERE chunk_id = ?",
                           (hit["chunk_id"],)).fetchone()
-    elif hit["kind"] == "prose":
+    elif hit["kind"] in ("prose", "example"):
         x = r.con.execute("SELECT c.page, d.url, d.source_page FROM chunks c JOIN documents d USING (doc_id) WHERE chunk_id = ?",
                           (hit["chunk_id"],)).fetchone()
     else:
@@ -153,7 +159,8 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
             return f"[{i}] (交換情報の構成)\n{h['text']}"
         if h["kind"] == "limits":
             return f"[{i}] (数値項目の最大値)\n{h['text']}"
-        label = {"table": "表", "item": "行", "prose": "本文", "rule": "算定ルール", "svc": "サービスコード表"}[h["kind"]]
+        label = {"table": "表", "item": "行", "prose": "本文", "rule": "算定ルール", "svc": "サービスコード表",
+                 "example": "仕様書の設定例"}[h["kind"]]
         return f"[{i}] ({label})\n{r.describe(h['chunk_id'])}"
     ctx = "\n\n".join(text(i, h) for i, h in enumerate(hits, 1))
     cond = "、".join(x for x in [f"対象: {DOMAIN[domain]}" if domain else "", f"交換情報識別番号: {exchange}" if exchange else ""] if x)

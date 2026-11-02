@@ -1,0 +1,233 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "printed_page",
+    "heading",
+    "examples",
+    "other_text",
+    "uncertain"
+  ],
+  "properties": {
+    "printed_page": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ページ下部に印字されたページ番号（原文の表記のまま）。"
+    },
+    "heading": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ページ内の事例の枠より上にある見出し（例: '②居宅介護'）。無ければ null。"
+    },
+    "examples": {
+      "type": "array",
+      "description": "「No ／ 実際のサービス提供時間 ／ …インタフェース設定 ／ 説明」の枠1つを1件として、上から順に。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "no",
+          "title",
+          "continued_from_prev_page",
+          "continues_to_next_page",
+          "provision_text",
+          "provisions",
+          "timeline_note",
+          "tables",
+          "explanation"
+        ],
+        "properties": {
+          "no": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "No 欄の番号（原文のまま）。"
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "【】で囲まれた事例名（No 欄・左の欄のどこにあっても。例: '【13時間以上の提供で、かつ0時またがり】'）。【】も含めて原文のまま、折り返しは詰める。無ければ null。"
+          },
+          "continued_from_prev_page": {
+            "type": "boolean",
+            "description": "枠の上端が切れていて、前のページから続いている。"
+          },
+          "continues_to_next_page": {
+            "type": "boolean",
+            "description": "枠の下端が切れていて、次のページへ続いている。"
+          },
+          "provision_text": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "「実際のサービス提供時間」の左の欄に印字された文字（事例名の【】は除く）。改行は \n で残す。図が無ければ null。"
+          },
+          "provisions": {
+            "type": "array",
+            "description": "実際の提供を1つずつ（左の欄の記載と図の帯から）。帯が0時をまたぐ場合も1件にする。",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "start",
+                "end",
+                "staff",
+                "day"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "description": "サービスの名前（図の帯や左の欄の表記のまま。例: '身体（重訪）', '移動介護'）。"
+                },
+                "start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "開始時刻 'H:MM'。読み取れなければ null。"
+                },
+                "end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "終了時刻 'H:MM'。読み取れなければ null。"
+                },
+                "staff": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "'1人目' '2人目' など、従業者の区別が書かれていればそのまま。"
+                },
+                "day": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "日付・日の区別が書かれていればそのまま（例: '1日', '2日目'）。"
+                }
+              }
+            }
+          },
+          "timeline_note": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "図の中にだけ印字された文字で、provisions に入らないもの（例: 帯の中の '乗降 10:00～10:30'）。原文のまま。無ければ null。"
+          },
+          "explanation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "枠の中で、表と図の外にある説明文をすべて（表と表の間の説明も含めて、上から順に）。段落の区切りと ①②・※ の箇条は \n で残し、行の折り返しは詰める。"
+          },
+          "tables": {
+            "type": "array",
+            "description": "枠の中の表を上から順に（入力側の表も、インタフェース設定の表も）。",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "caption",
+                "fields",
+                "columns",
+                "rows"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "input",
+                    "interface"
+                  ],
+                  "description": "input: 入力側の表（'実績記録票 紙様式記載' など、インタフェース設定ではない表）。interface: '…インタフェース設定' の表。"
+                },
+                "caption": {
+                  "type": "string",
+                  "description": "表の上の帯の文字（例: '実績記録票インタフェース設定（様式３－１）'）。原文のまま。"
+                },
+                "fields": {
+                  "type": "array",
+                  "description": "表の上に並ぶ「見出し｜値｜単位」の枠（例: 実績単位数｜10,921｜単位）。無ければ空。",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "label",
+                      "value",
+                      "unit"
+                    ],
+                    "properties": {
+                      "label": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "unit": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "columns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "見出し行の列名を左から順に。セル内の折り返しは詰める（'提供\\n通番' → '提供通番'）。"
+                },
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "description": "各行のセルを columns と同じ数・同じ順で。空欄は null。値は原文のまま（'111000', '1.5', '深夜'）。"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "事例の枠の外にある本文（見出しを除く）。無ければ null。"
+    },
+    "uncertain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "読めない・迷った箇所を「どの事例の、どの表の、どの行・列か、なぜか」で。"
+    }
+  }
+}

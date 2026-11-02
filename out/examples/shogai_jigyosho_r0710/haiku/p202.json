@@ -1,0 +1,310 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 202,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002816,
+ "request_id": null,
+ "result": {
+  "printed_page": "91",
+  "heading": "⑧日中活動系",
+  "examples": [
+   {
+    "no": "1",
+    "title": "【家庭連携加算、訪問支援特別加算、医療連携体制加算】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "2日～6日\n15日～16日\n25日～26日",
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "家庭連携加算、訪問支援特別加算は、実提供時間に加え、算定する時間数も設定する。\n1時間未満の場合、算定時間に1を設定し、1時間以上の場合は算定時間に2を設定する。\n同様に合計回数にも実提供回数に加え、算定する回数を設定する。\n医療連携体制加算(Ⅰ)の算定要件を満たす場合1、(Ⅱ)の算定要件を満たす場合2、(Ⅲ)の算定要件を満たす場合3、(Ⅳ)の算定要件を満たす場合4、(Ⅵ)の算定要件を満たす場合6を設定する。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票 紙様式記載",
+      "fields": [],
+      "columns": [
+       "日",
+       "提供時間",
+       "送迎 > 往",
+       "送迎 > 復",
+       "家庭連携加算 > 提供時間",
+       "家庭連携加算 > 算定時間",
+       "訪問支援特別加算 > 提供時間",
+       "訪問支援特別加算 > 算定時間",
+       "医療連携体制加算"
+      ],
+      "rows": [
+       [
+        "2",
+        "09:00～11:00",
+        "1",
+        "1",
+        null,
+        null,
+        null,
+        null,
+        "1"
+       ],
+       [
+        "3",
+        "13:00～14:00",
+        null,
+        null,
+        "1",
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "4",
+        "13:00～16:00",
+        null,
+        null,
+        "3",
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "5",
+        "13:00～14:00",
+        null,
+        null,
+        "1",
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "6",
+        "09:00～11:00",
+        "1",
+        "1",
+        null,
+        null,
+        null,
+        null,
+        "2"
+       ],
+       [
+        "15",
+        "13:00～15:00",
+        null,
+        null,
+        null,
+        null,
+        "2",
+        null,
+        null
+       ],
+       [
+        "16",
+        "13:00～14:00",
+        null,
+        null,
+        null,
+        null,
+        "1",
+        null,
+        null
+       ],
+       [
+        "25",
+        "13:00～16:00",
+        null,
+        null,
+        null,
+        null,
+        "3",
+        null,
+        null
+       ],
+       [
+        "26",
+        "13:00～14:00",
+        null,
+        null,
+        null,
+        null,
+        "1",
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        "合計",
+        null,
+        null,
+        "3",
+        null,
+        "4",
+        null,
+        "2"
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "日",
+       "提供時間",
+       "送迎 > 往",
+       "送迎 > 復",
+       "家庭連携加算 > 提供時間",
+       "家庭連携加算 > 算定時間",
+       "訪問支援特別加算 > 提供時間",
+       "訪問支援特別加算 > 算定時間",
+       "医療連携体制加算"
+      ],
+      "rows": [
+       [
+        "2",
+        "09:00～11:00",
+        "1",
+        "1",
+        null,
+        null,
+        null,
+        null,
+        "1"
+       ],
+       [
+        "3",
+        "13:00～14:00",
+        null,
+        null,
+        "1",
+        "2",
+        null,
+        null,
+        null
+       ],
+       [
+        "4",
+        "13:00～16:00",
+        null,
+        null,
+        "3",
+        "2",
+        null,
+        null,
+        null
+       ],
+       [
+        "5",
+        "13:00～14:00",
+        null,
+        null,
+        "1",
+        "2",
+        null,
+        null,
+        null
+       ],
+       [
+        "6",
+        "09:00～11:00",
+        "1",
+        "1",
+        null,
+        null,
+        null,
+        null,
+        "2"
+       ],
+       [
+        "15",
+        "13:00～15:00",
+        null,
+        null,
+        null,
+        null,
+        "2",
+        "2",
+        null
+       ],
+       [
+        "16",
+        "13:00～14:00",
+        null,
+        null,
+        null,
+        null,
+        "1",
+        null,
+        null
+       ],
+       [
+        "25",
+        "13:00～16:00",
+        null,
+        null,
+        null,
+        null,
+        "3",
+        "2",
+        null
+       ],
+       [
+        "26",
+        "13:00～14:00",
+        null,
+        null,
+        null,
+        null,
+        "1",
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        "4",
+        null,
+        "3",
+        "3",
+        "4",
+        "2",
+        "2"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "No1の入力表の最下段『合計』行は、結合された『合計』セルが日と提供時間の列をまたぐように見えるため、『合計』を提供時間列に置いた（日列の可能性もある）。",
+   "インタフェース設定表の最下段『合計』行も同様に、『合計』を日列に置いた（提供時間列との境界が判別しにくい）。",
+   "入力表の見出し上の帯『実績記録票 紙様式記載』は枠の見出しと表の帯の双方に当たるため、captionとして採用した。"
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 181,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.002075,
+ "request_id": null,
+ "result": {
+  "printed_page": "84－1",
+  "heading": null,
+  "examples": [
+   {
+    "no": "11",
+    "title": "【二人派遣(移動介護)でサービス時間がずれた場合】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "重度訪問(1人目)\n6:00～10:00\n移動介護\n6:00～10:00\n\n重度訪問(2人目)\n8:00～12:00\n移動介護\n8:00～12:00",
+    "provisions": [
+     {
+      "label": "重度訪問(1人目)",
+      "start": "6:00",
+      "end": "10:00",
+      "staff": "1人目",
+      "day": null
+     },
+     {
+      "label": "移動介護",
+      "start": "6:00",
+      "end": "10:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "重度訪問(2人目)",
+      "start": "8:00",
+      "end": "12:00",
+      "staff": "2人目",
+      "day": null
+     },
+     {
+      "label": "移動介護",
+      "start": "8:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "2人派遣(移動介護)でヘルパー時間がずれた場合、2行に分けてデータを作成する(提供通番は別番号となる)。\n1行目は通算時間を設定する。移動介護に関しても同様に通算して6時間となるが、所要時間3時間以上となるため、移動介護の算定時間は4時間となる。\n2行目はヘルパーが重複している時間を設定する。移動介護に関しても重複している2時間を設定する。派遣人数は行ごとに1を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定（様式３－１）",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス提供の状況",
+       "提供時間",
+       "算定時間",
+       "移動",
+       "派遣人数",
+       "同行支援"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        "1",
+        null,
+        "6:00～12:00",
+        "6",
+        "4",
+        "1",
+        null
+       ],
+       [
+        "2",
+        "1",
+        "2",
+        null,
+        "8:00～10:00",
+        "2",
+        "2",
+        "1",
+        null
+       ],
+       [
+        "移動介護分",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "6",
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        "8",
+        null,
+        null,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

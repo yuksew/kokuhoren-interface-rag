@@ -1,0 +1,83 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 183,
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.001677,
+ "request_id": null,
+ "result": {
+  "printed_page": "84－3",
+  "heading": null,
+  "examples": [
+   {
+    "no": "13",
+    "title": "【入院中にサービス提供を行った場合】",
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": "重度訪問\n6:00～12:00\n（入院90日以内の場合）\n\n重度訪問\n6:00～12:00\n（入院90日を超える場合）",
+    "provisions": [
+     {
+      "label": "重度訪問（入院90日以内の場合）",
+      "start": "6:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     },
+     {
+      "label": "重度訪問（入院90日を超える場合）",
+      "start": "6:00",
+      "end": "12:00",
+      "staff": null,
+      "day": null
+     }
+    ],
+    "timeline_note": null,
+    "explanation": "病院等に入院、または入所中にサービス提供を行った場合、サービス提供の状況には'1'を設定する。\n連続して90日を超える入院、または入院中にサービス提供を行った場合、サービス提供の状況には'2'を設定する。",
+    "tables": [
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定(様式３－１)",
+      "fields": [],
+      "columns": [
+       "提供通番",
+       "日",
+       "サービス提供回数",
+       "サービス提供の状況",
+       "提供時間",
+       "算定時間",
+       "移動",
+       "派遣人数",
+       "同行支援"
+      ],
+      "rows": [
+       [
+        "1",
+        "1",
+        null,
+        "1",
+        "6:00～12:00",
+        "6",
+        null,
+        "1",
+        null
+       ],
+       [
+        "2",
+        "2",
+        null,
+        "2",
+        "6:00～12:00",
+        "6",
+        null,
+        "1",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": []
+ }
+}

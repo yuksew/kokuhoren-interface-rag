@@ -1,0 +1,144 @@
+{
+ "doc_id": "shogai_jigyosho_r0710",
+ "page": 206,
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "cost_usd": 0.025664,
+ "request_id": null,
+ "result": {
+  "printed_page": "94",
+  "heading": null,
+  "examples": [
+   {
+    "no": "2",
+    "title": null,
+    "continued_from_prev_page": false,
+    "continues_to_next_page": false,
+    "provision_text": null,
+    "provisions": [],
+    "timeline_note": null,
+    "explanation": "基本情報レコードの必須項目（項番１～項番７）と、退所時特別支援加算の「退所日」、「退所後算定日」もしくは、地域移行加算の「退所日」、「退所後算定日」のみ設定が必要。\n明細情報レコードは設定しない。",
+    "tables": [
+     {
+      "role": "input",
+      "caption": "実績記録票　紙様式記載",
+      "fields": [],
+      "columns": [
+       "日",
+       "サービス提供の状況",
+       "〇〇加算",
+       "〇〇加算",
+       "朝食",
+       "昼食",
+       "夕食",
+       "光熱水費"
+      ],
+      "rows": [
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        "合計",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "各小計",
+        null,
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null,
+        null,
+        "実費合計額",
+        null,
+        null,
+        null
+       ]
+      ]
+     },
+     {
+      "role": "interface",
+      "caption": "実績記録票インタフェース設定",
+      "fields": [],
+      "columns": [
+       "項目",
+       "値"
+      ],
+      "rows": [
+       [
+        "受給者証番号",
+        "1111111111"
+       ],
+       [
+        "事業所番号",
+        "99100000001"
+       ],
+       [
+        "地域移行加算 退所日",
+        "H30年4月28日"
+       ],
+       [
+        "地域移行加算 退所後算定日",
+        "H30年5月20日"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "other_text": null,
+  "uncertain": [
+   "入力側の表は項目ラベルと値が混在した複雑なレイアウトのため、表の行構成は簡略化した。事業所番号は紙様式側が9910000001、インタフェース側が99100000001と表記されている（原文どおり）。左欄の事例名（退所後に退所時特別支援加算…）は【】無しのため title は null とし、provision_text にも入れていない。インタフェース設定の表は構造化が曖昧。"
+  ]
+ }
+}
