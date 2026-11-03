@@ -88,7 +88,10 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
     for tid, t in tables.items():
         cols = json.loads(t["columns"] or "[]")
         lines = header(t) + [f"表の種類: {t['table_kind']}", f"PDF {t['page_from']}〜{t['page_to']}ページ"]
-        if cols:
+        if t["table_kind"] == "service_item_matrix":
+            # 列（項目）が 100 以上あり、並べると途中で切れて「これで全部」と読まれる。行（サービス種類）ごとのチャンクに案内する
+            lines.append(f"列: {cols[0]}、区分の列、設定項目 {len(cols)} 列（サービス種類ごとの行に、○の付いた項目をすべて載せている）")
+        elif cols:
             lines.append("列: " + " | ".join(cols))
         lines.append("項目: " + "、".join(n for n in names[tid] if n)[:1500])
         chunks.append({"kind": "table", "item_id": None, "table_id": tid, "doc_id": t["doc_id"], "page": t["page_from"],
@@ -101,6 +104,9 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
     # 設定方法の表（build_daysettings.py）を構造化して入れた頁も同じ（表のセルの対応がテキストレイヤでは崩れる）
     if con.execute("SELECT 1 FROM sqlite_master WHERE name = 'day_setting_pages'").fetchone():
         ex_pages |= {(r["doc_id"], r["page"]) for r in con.execute("SELECT doc_id, page FROM day_setting_pages")}
+    # サービス種類ごとの設定項目の表（matrix_tables.py）の頁も（縦書きの見出しが1字ずつ並ぶだけで、本文として読めない）
+    ex_pages |= {(r["doc_id"], p) for r in con.execute("SELECT doc_id, pages FROM spec_tables WHERE table_kind = 'service_item_matrix'")
+                 for p in json.loads(r["pages"])}
     for d in con.execute("SELECT * FROM documents ORDER BY doc_id").fetchall():
         pdf = ROOT / "sources" / "raw" / d["domain"] / f"{d['doc_id']}.pdf"
         for pc in doc_prose(pdf):

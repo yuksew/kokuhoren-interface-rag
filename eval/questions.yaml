@@ -191,3 +191,19 @@
   kind: paraphrase
   gold: [{doc: shogai_todofuken, name: 基準該当>登録市町村番号, page: 22}]
   expect: ["6"]
+# --- 表の判定から漏れていた表（2026-11-04 追加。matrix_tables.py が PDF のテキストレイヤから組み立てた表）
+- q: 共同生活援助の事業所について、都道府県が送る事業所異動連絡票情報（サービス情報）ではどの項目を設定する？
+  domain: shogai
+  kind: table
+  gold: [{doc: shogai_todofuken, name: 共同生活援助, table_kind: service_item_matrix}]
+  expect: ["夜間支援等体制加算"]
+- q: 放課後等デイサービスの障害児施設異動連絡票情報で設定できる加算の項目は？
+  domain: shogai
+  kind: table
+  gold: [{doc: shogai_todofuken, name: 放課後等デイサービス, table_kind: service_item_matrix}]
+  expect: ["個別サポート加算"]
+- q: 保険者が送る台帳の異動情報で、二割負担適用終了年月日を直前の履歴から引き継がないのはどんなとき？
+  domain: kaigo
+  kind: paraphrase
+  gold: [{doc: kaigo_hokensha, name: 二割負担適用終了年月日, page: 212}]
+  expect: ["引き継がない"]

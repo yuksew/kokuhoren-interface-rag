@@ -9,7 +9,7 @@
 ## 注意
 - 厚生労働省・国保中央会などの公式のものではない。書き起こし・回答には誤りがありうるので、請求の実務では必ず原本（下の「出典」）を確かめること。
 - 入れているのは公開されている一次資料だけ。自治体ごとの運用や、問い合わせで得た個別の指示は入れていない。
-- 書き起こす頁は、PDF のテキストレイヤから「表のある頁」を判定して選んだ（`pagemeta.py`。「項番」などの見出しが手がかり）。この判定から漏れた形の表は、本文（テキストレイヤ）としてだけ入っている。2026-11-03 に罫線の表を全編で洗い出し、障害の設定例・日数の設定方法・契約情報の作成対象サービス・共通編のインタフェース一覧は取り込んだ。介護 インターネット編（伝送の API。約 60 頁）などの表はまだ本文だけ。
+- 書き起こす頁は、PDF のテキストレイヤから「表のある頁」を判定して選んだ（`pagemeta.py`。「項番」などの見出しが手がかり）。この判定から漏れた形の表は、本文（テキストレイヤ）としてだけ入っている。2026-11-03 に罫線の表を全編で洗い出し、障害の設定例・日数の設定方法・契約情報の作成対象サービス・共通編のインタフェース一覧・都道府県編のサービス種類ごとの設定項目（今の期間のみ）・保険者編の充当しない項目と条件は取り込んだ。介護 インターネット編（伝送の API。約 60 頁）と、都道府県編の設定項目の表の古い期間（約 100 頁）はまだ本文だけ。
 
 ## 出典
 取り込んだ資料はすべて、次の公開元が公開しているもの（調査・取得は 2026-11-01〜02）。件数は DB に入れたもの。1件ずつの一覧（資料名・原本の URL・掲載ページ・版。参考に登録しただけの新旧対照表なども含む）は **[`sources/SOURCES.md`](sources/SOURCES.md)**。
@@ -47,7 +47,7 @@ sources/   manifest.yaml・rules_manifest.yaml（取得対象と版情報）, SO
 config/    pages.yaml（フェーズ1の検証対象ページ）
 prompts/   transcribe_system.md, transcribe_user.md, transcribe.schema.json
 deploy/   deploy.sh（Cloud Run に載せる）, requirements-web.txt。Dockerfile と .gcloudignore は直下
-src/       web_app.py + web_ui.html（質問画面）, list_sources.py（出典一覧を作る）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, transcribe_examples.py + build_examples.py（設定例を事例に）, build_daysettings.py（日数情報レコードの設定方法の表）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
+src/       web_app.py + web_ui.html（質問画面）, list_sources.py（出典一覧を作る）, fetch.py, transcribe.py, batch.py, pagemeta.py, postprocess.py, validate.py, report.py, adopt.py, review_app.py（確認画面）, review_core.py, apply_review.py, build_db.py（SQLite 化）, exchange_ids.py（交換情報識別番号の補完）, build_rules.py（算定ルール資料の取り込み）, transcribe_examples.py + build_examples.py（設定例を事例に）, build_daysettings.py（日数情報レコードの設定方法の表）, textlayer_tables.py + matrix_tables.py（テキストレイヤから表を組み立てる）, ocr_rules.py（画像だけのページの書き起こし）, query_db.py, build_index.py, retrieve.py, eval_retrieval.py（フェーズ2 検索）, ask.py, eval_answers.py（フェーズ2 回答）, compare_runs.py, pricing.py, llm/（LLMClient 抽象 + Anthropic 実装 + モック）
 out/       {run}/{model}/{doc_id}_p{page}.json（書き起こし結果）, {run}/calls.jsonl, {run}/validation.json
 reports/   phase1_report.md, pilot_report.md, prod1_report.md（各段階の報告）, review_queue.*.csv（確認キュー）, compare.html（目視比較用）, cost.md, img/
 ```
@@ -87,7 +87,11 @@ uv run python src/apply_review.py                              # 判定を反映
 #   本番5: 表の判定から漏れていた表（頁を指定。障害 事業所編の契約情報の作成対象サービス・決定コードの対応、障害 共通編のインタフェース一覧）。
 #     インタフェース一覧（1頁 70〜90 行の細かい表）は、画像からの書き起こしをやめて PDF のテキストレイヤと罫線から組み立てる（apply_review.py の後に毎回）
 uv run python src/textlayer_tables.py --run prod5-png-post
-# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1〜5 をすべて読む
+# 画像を使わず PDF のテキストレイヤと罫線から組み立てる表（API なし。out/matrix-textlayer-reviewed/。build_db.py が既定で読む）
+#   障害 都道府県編の「サービス種類ごとの設定項目」（行: サービス種類、列: 項目、○。横に数頁続く表をサービス種類でつなぐ。
+#   異動年月日の期間ごとにあり、今の期間 令和8年6月以降 の 障害 p54〜59・障害児 p288〜290 だけ）、介護 保険者編 p210〜212「データの充当を行なわない項目とその条件」
+uv run python src/matrix_tables.py
+# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1〜5 と matrix-textlayer をすべて読む
 uv run python src/build_db.py
 uv run python src/query_db.py 受給者証番号 --domain shogai        # 全文検索（3文字以上）
 uv run python src/query_db.py --required 0101                     # 列（様式種別番号など）で ◎ の項目
