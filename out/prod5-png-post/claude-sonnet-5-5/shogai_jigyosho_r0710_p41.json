@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "doc_id": "shogai_jigyosho_r0710",
+    "page": 41,
+    "domain": "shogai",
+    "volume": "サービス事業所編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 サービス事業所編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10110,
+      "output_tokens": 2218,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.0424,
+    "cost_usd_batch": 0.0212,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_015zoz46bEjET3A7hR6xPexd",
+    "parsed_ok": true,
+    "created_at": "2026-11-03T15:08:32+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "サービス事業所編",
+    "page": 41,
+    "printed_page": "31",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "契約支給量の例",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "",
+          "4月",
+          "5月",
+          "6月",
+          "契約支給量の設定方法"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "契約支給量の設定方法",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "決定支給量"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "決定支給量"
+              },
+              {
+                "column": "4月",
+                "value": "100"
+              },
+              {
+                "column": "5月",
+                "value": "100"
+              },
+              {
+                "column": "6月",
+                "value": "100"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "A事業所の契約"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "A 事業所は毎月 30 時間の契約情報を送信する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "A事業所の契約"
+              },
+              {
+                "column": "4月",
+                "value": "30"
+              },
+              {
+                "column": "5月",
+                "value": "30"
+              },
+              {
+                "column": "6月",
+                "value": "30"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "B事業所の契約"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "B 事業所は 4 月は 70 時間、5 月は 50 時間の契約情報を送信する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "B事業所の契約"
+              },
+              {
+                "column": "4月",
+                "value": "70"
+              },
+              {
+                "column": "5月",
+                "value": "50 ※5/20 で終了"
+              },
+              {
+                "column": "6月",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "C事業所の契約"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "C 事業所は 5 月は 20 時間、6 月は 70 時間の契約情報を送信する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "C事業所の契約"
+              },
+              {
+                "column": "4月",
+                "value": null
+              },
+              {
+                "column": "5月",
+                "value": "20"
+              },
+              {
+                "column": "6月",
+                "value": "70"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "契約開始日／終了日の例",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "",
+          "",
+          "4月",
+          "5月",
+          "6月",
+          "契約開始日／終了日の設定方法"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "契約開始日／終了日の設定方法",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "A事業所",
+              "契約開始日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "毎月4月1日契約開始を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "A事業所"
+              },
+              {
+                "column": "4月",
+                "value": "4月1日"
+              },
+              {
+                "column": "5月",
+                "value": "4月1日"
+              },
+              {
+                "column": "6月",
+                "value": "4月1日"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "A事業所",
+              "契約終了日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "毎月4月1日契約開始を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "A事業所"
+              },
+              {
+                "column": "4月",
+                "value": "設定無し"
+              },
+              {
+                "column": "5月",
+                "value": "設定無し"
+              },
+              {
+                "column": "6月",
+                "value": "設定無し"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "B事業所",
+              "契約開始日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "5月は契約開始4月1日、契約終了5月20日を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "B事業所"
+              },
+              {
+                "column": "4月",
+                "value": "4月1日"
+              },
+              {
+                "column": "5月",
+                "value": "4月1日"
+              },
+              {
+                "column": "6月",
+                "value": "※5/20で終了"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "B事業所",
+              "契約終了日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "5月は契約開始4月1日、契約終了5月20日を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "B事業所"
+              },
+              {
+                "column": "4月",
+                "value": "設定無し"
+              },
+              {
+                "column": "5月",
+                "value": "5月20日"
+              },
+              {
+                "column": "6月",
+                "value": "※5/20で終了"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "C事業所",
+              "契約開始日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "5月は、契約開始5月21日、契約終了5月31日を設定。\n契約変更の為、6月は、契約開始6月1日を設定。(※1)(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "C事業所"
+              },
+              {
+                "column": "4月",
+                "value": null
+              },
+              {
+                "column": "5月",
+                "value": "5月21日"
+              },
+              {
+                "column": "6月",
+                "value": "6月1日"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "C事業所",
+              "契約終了日"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "5月は、契約開始5月21日、契約終了5月31日を設定。\n契約変更の為、6月は、契約開始6月1日を設定。(※1)(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "",
+                "value": "C事業所"
+              },
+              {
+                "column": "4月",
+                "value": null
+              },
+              {
+                "column": "5月",
+                "value": "5月31日"
+              },
+              {
+                "column": "6月",
+                "value": "設定無し"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "契約を変更した場合は、契約変更後の契約開始日、契約終了日を設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "一月内に複数の契約変更がある場合は、直近の契約開始日、契約終了日を設定する。"
+      }
+    ],
+    "uncertain": [
+      "両表とも見出しのない左端列(事業所名・決定支給量)をcellsの空名列に入れ、結合セルの扱いは推定",
+      "B事業所の「※5/20で終了」は5月・6月にまたがる結合セルで、5月欄(および6月欄)に重複して記載"
+    ]
+  },
+  "raw_text": null
+}

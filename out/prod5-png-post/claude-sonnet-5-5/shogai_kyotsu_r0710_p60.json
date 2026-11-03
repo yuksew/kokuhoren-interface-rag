@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 60,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 948,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.029692,
+    "cost_usd_batch": 0.014846,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_015zoz46bEjET3A7hR6xPexd",
+    "parsed_ok": true,
+    "created_at": "2026-11-03T15:08:32+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 60,
+    "printed_page": "54",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "インタフェース仕様書",
+          "業務種別",
+          "業務内容",
+          "情報区分",
+          "データ種別",
+          "交換情報識別番号",
+          "No",
+          "情報名",
+          "ルート",
+          "周期",
+          "媒体区分",
+          "対応業務 > 障害福祉サービス",
+          "対応業務 > 障害福祉サービス(基準該当)",
+          "対応業務 > 障害児支援",
+          "対応業務 > 障害児支援(基準該当)",
+          "対応業務 > 地域生活支援事業",
+          "対応業務 > 高額障害福祉サービス等給付費",
+          "対応業務 > 高額障害児給付費"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 244,
+            "no_raw": "244",
+            "name_path": [
+              "障害児支援受給者異動連絡票情報(基本情報)"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "障害児支援"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "B11"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "B111"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス(基準該当)",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 障害児支援(基準該当)",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": true
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": null,
+        "text": "※網掛け箇所は、併用を表している。"
+      }
+    ],
+    "uncertain": [
+      "表は81行ほどあるが、items には先頭行(No.244)のみを書き起こし、No.245〜324の行は未書き起こし",
+      "対応業務の列見出しは画像の読み取りで、上位見出し「対応業務」配下の列名は推定を含む",
+      "インタフェース仕様書・業務種別・業務内容・情報区分の縦結合セルは先頭行のみに記載"
+    ]
+  },
+  "raw_text": null
+}

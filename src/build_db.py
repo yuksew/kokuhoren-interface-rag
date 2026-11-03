@@ -114,7 +114,7 @@ def blank(v) -> str | None:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post", "prod3-png-post", "prod4-png-post"])
+    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post", "prod3-png-post", "prod4-png-post", "prod5-png-post"])
     ap.add_argument("--src", default="reviewed", choices=["reviewed", "adopted"])
     ap.add_argument("--out", default="db/interface_spec.sqlite")
     args = ap.parse_args()
@@ -140,8 +140,10 @@ def main() -> int:
         con.execute("INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     (d, e["domain"], e.get("title"), e.get("volume"), e.get("edition"), e.get("revision"),
                      str(e.get("published_at") or ""), e.get("url"), e.get("source_page"), e.get("sha256"), e.get("note")))
+    page_notes: dict[tuple[str, int], list[dict]] = {}
     for f in sorted(f for s_ in srcs for f in s_.glob("*_p*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))
+        page_notes[(p["doc_id"], p["page"])] = p.get("footnotes") or []
         con.execute("INSERT INTO pages VALUES (?,?,?,?,?)", (p["doc_id"], p["page"], blank(p.get("printed_page")),
                                                             js(p.get("footnotes") or []), js(p.get("uncertain") or [])))
 
@@ -160,6 +162,10 @@ def main() -> int:
              nr[0], nr[1], js(lt.get("no_gaps"))))
         tid = cur.lastrowid
         stats["tables"] += 1
+        # 列の凡例: 表の下の注記のうち、印が列名と同じもの（例: 「必須※ ◎: 常に設定必要 ○: …」）は、表の行すべてに付ける
+        ckeys = {re.sub(r"\s", "", nk(c)): c for c in lt.get("columns") or [] if c}
+        legends = [n for pg in lt["pages"] for n in page_notes.get((lt["doc_id"], pg), [])
+                   if re.sub(r"\s", "", nk(n.get("mark"))) in ckeys]
         for i, it in enumerate(lt["items"]):
             path = [x for x in it.get("name_path") or [] if x]
             fixes = it.get("_fixes") or []
@@ -186,6 +192,9 @@ def main() -> int:
             for n in it.get("note_refs") or []:
                 con.execute("INSERT INTO item_notes VALUES (?,?,?,?)", (iid, n.get("mark"), n.get("text"), n.get("source")))
                 stats["notes"] += 1
+            for n in legends:
+                con.execute("INSERT INTO item_notes VALUES (?,?,?,?)", (iid, n.get("mark"), n.get("text"), "column_legend"))
+                stats["legends"] += 1
             con.execute("INSERT INTO items_fts (rowid, name_full, content, note, values_text, table_title) VALUES (?,?,?,?,?,?)",
                         (iid, " > ".join(path), it.get("content") or "", it.get("note") or "", "\n".join(vals), lt.get("title") or ""))
 

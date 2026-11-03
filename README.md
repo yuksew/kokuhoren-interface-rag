@@ -9,6 +9,7 @@
 ## 注意
 - 厚生労働省・国保中央会などの公式のものではない。書き起こし・回答には誤りがありうるので、請求の実務では必ず原本（下の「出典」）を確かめること。
 - 入れているのは公開されている一次資料だけ。自治体ごとの運用や、問い合わせで得た個別の指示は入れていない。
+- 書き起こす頁は、PDF のテキストレイヤから「表のある頁」を判定して選んだ（`pagemeta.py`。「項番」などの見出しが手がかり）。この判定から漏れた形の表は、本文（テキストレイヤ）としてだけ入っている。2026-11-03 に罫線の表を全編で洗い出し、障害の設定例・日数の設定方法・契約情報の作成対象サービス・共通編のインタフェース一覧は取り込んだ。介護 インターネット編（伝送の API。約 60 頁）などの表はまだ本文だけ。
 
 ## 出典
 取り込んだ資料はすべて、次の公開元が公開しているもの（調査・取得は 2026-11-01〜02）。件数は DB に入れたもの。1件ずつの一覧（資料名・原本の URL・掲載ページ・版。参考に登録しただけの新旧対照表なども含む）は **[`sources/SOURCES.md`](sources/SOURCES.md)**。
@@ -83,7 +84,10 @@ uv run python src/apply_review.py                              # 判定を反映
 # 本番2〜4 も同じ手順: config/prodN.yaml で plan → submit → collect、
 #   postprocess.py --run prodN-png → validate.py / report.py / adopt.py / review_app.py / apply_review.py を --run prodN-png-post で
 #   （本番2: 介護 居宅介護支援事業所編、本番3: 介護 都道府県編・生保単独編、本番4: 介護 保険者編・市町村合併編、障害 市町村編・都道府県編）
-# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1〜4 をすべて読む
+#   本番5: 表の判定から漏れていた表（頁を指定。障害 事業所編の契約情報の作成対象サービス・決定コードの対応、障害 共通編のインタフェース一覧）。
+#     インタフェース一覧（1頁 70〜90 行の細かい表）は、画像からの書き起こしをやめて PDF のテキストレイヤと罫線から組み立てる（apply_review.py の後に毎回）
+uv run python src/textlayer_tables.py --run prod5-png-post
+# 確定版を SQLite に入れる（db/interface_spec.sqlite。表の一覧・行・列ごとの値・注記・全文検索）。既定で本番1〜5 をすべて読む
 uv run python src/build_db.py
 uv run python src/query_db.py 受給者証番号 --domain shogai        # 全文検索（3文字以上）
 uv run python src/query_db.py --required 0101                     # 列（様式種別番号など）で ◎ の項目

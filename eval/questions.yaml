@@ -72,7 +72,9 @@
 - q: 自立訓練（機能訓練）の基本決定の決定サービスコードは？
   domain: shogai
   kind: exact
-  gold: [{doc: shogai_kyotsu, name: 決定サービスコード}]
+  # 本番5（2026-11-04）で、事業所編の契約情報の作成対象サービス（p39）とサービス種別と決定コードの対応（p200）の表も入った。どちらも 411000 を答えられる
+  gold: [{doc: shogai_kyotsu, name: 決定サービスコード}, {doc: shogai_jigyosho, name: 自立訓練(機能), page: 39},
+         {doc: shogai_jigyosho, name: 自立訓練(機能訓練), page: 200}]
   expect: ["411000"]
 - q: 様式種別番号はどういう形式で設定する？
   domain: shogai

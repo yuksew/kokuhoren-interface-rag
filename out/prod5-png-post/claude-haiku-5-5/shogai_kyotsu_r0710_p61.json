@@ -1,0 +1,5859 @@
+{
+  "meta": {
+    "doc_id": "shogai_kyotsu_r0710",
+    "page": 61,
+    "domain": "shogai",
+    "volume": "共通編",
+    "edition": "令和7年10月施行分",
+    "title": "インタフェース仕様書 共通編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10106,
+      "output_tokens": 48494,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.025258,
+    "cost_usd_batch": 0.012629,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_015zoz46bEjET3A7hR6xPexd",
+    "parsed_ok": true,
+    "created_at": "2026-11-03T15:08:31+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "shogai",
+    "edition": "令和7年10月施行分",
+    "volume": "共通編",
+    "page": 61,
+    "printed_page": "55",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": "インタフェース一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "インタフェース仕様書",
+          "業務種別",
+          "業務内容",
+          "情報区分",
+          "データ種別",
+          "交換情報識別番号",
+          "No",
+          "情報名",
+          "ルート",
+          "周期",
+          "媒体区分",
+          "対応業務 > 障害福祉サービス",
+          "対応業務 > 障害福祉サービス（基準該当）",
+          "対応業務 > 障害児支援",
+          "対応業務 > 障害児支援（基準該当）",
+          "対応業務 > 地域生活支援事業",
+          "対応業務 > 高額障害福祉サービス等給付費",
+          "対応業務 > 高額障害児給付費"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "情報名",
+          "type": "",
+          "length": "",
+          "content": "",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 325,
+            "no_raw": "325",
+            "name_path": [
+              "地域生活支援事業受給者異動連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F11"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F111"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 326,
+            "no_raw": "326",
+            "name_path": [
+              "地域生活支援事業受給者異動連絡票情報（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F11"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F121"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 327,
+            "no_raw": "327",
+            "name_path": [
+              "高額障害福祉サービス費世帯等異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F13"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F131"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 328,
+            "no_raw": "328",
+            "name_path": [
+              "高額障害児給付費世帯等異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C13"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C131"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 329,
+            "no_raw": "329",
+            "name_path": [
+              "高額障害福祉サービス費市町村異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F14"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F141"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 330,
+            "no_raw": "330",
+            "name_path": [
+              "高額障害児給付費都道府県等異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C14"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C141"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 331,
+            "no_raw": "331",
+            "name_path": [
+              "地域生活支援事業単位数異動連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "異動情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F15"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F151"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 332,
+            "no_raw": "332",
+            "name_path": [
+              "地域生活支援事業受給者訂正連絡票情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F21"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F211"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 333,
+            "no_raw": "333",
+            "name_path": [
+              "地域生活支援事業受給者訂正連絡票情報（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F21"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F221"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 334,
+            "no_raw": "334",
+            "name_path": [
+              "高額障害福祉サービス費世帯等訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F23"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F231"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 335,
+            "no_raw": "335",
+            "name_path": [
+              "高額障害児給付費世帯等訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C23"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C231"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 336,
+            "no_raw": "336",
+            "name_path": [
+              "高額障害福祉サービス費市町村訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F24"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F241"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 337,
+            "no_raw": "337",
+            "name_path": [
+              "高額障害児給付費都道府県等訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C24"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C241"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 338,
+            "no_raw": "338",
+            "name_path": [
+              "地域生活支援事業単位数訂正連絡票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "訂正情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F25"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F251"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "訂正時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 339,
+            "no_raw": "339",
+            "name_path": [
+              "地域生活支援事業受給者情報更新結果情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F31"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F311"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 340,
+            "no_raw": "340",
+            "name_path": [
+              "地域生活支援事業受給者情報更新結果情報（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F31"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F321"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 341,
+            "no_raw": "341",
+            "name_path": [
+              "高額障害福祉サービス費世帯等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F33"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F331"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 342,
+            "no_raw": "342",
+            "name_path": [
+              "高額障害児給付費世帯等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C33"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C331"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 343,
+            "no_raw": "343",
+            "name_path": [
+              "高額障害福祉サービス費市町村情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F34"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F341"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 344,
+            "no_raw": "344",
+            "name_path": [
+              "高額障害児給付費都道府県等情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C34"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C341"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 345,
+            "no_raw": "345",
+            "name_path": [
+              "地域生活支援事業単位数情報更新結果情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "更新結果情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F35"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F351"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 346,
+            "no_raw": "346",
+            "name_path": [
+              "地域生活支援事業受給者台帳情報（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F41"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F411"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 347,
+            "no_raw": "347",
+            "name_path": [
+              "地域生活支援事業受給者台帳情報（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F41"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F421"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 348,
+            "no_raw": "348",
+            "name_path": [
+              "高額障害福祉サービス費世帯等台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F43"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F431"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 349,
+            "no_raw": "349",
+            "name_path": [
+              "高額障害児給付費世帯台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C43"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C431"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 350,
+            "no_raw": "350",
+            "name_path": [
+              "高額障害福祉サービス費市町村台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F44"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F441"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 351,
+            "no_raw": "351",
+            "name_path": [
+              "高額障害児給付費都道府県等台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "C44"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "C441"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 352,
+            "no_raw": "352",
+            "name_path": [
+              "地域生活支援事業単位数台帳情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "国保連合会台帳情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "F45"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "F451"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "依頼時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 353,
+            "no_raw": "353",
+            "name_path": [
+              "地域生活支援事業受給者台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FGA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FGA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 354,
+            "no_raw": "354",
+            "name_path": [
+              "高額障害福祉サービス費世帯等台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FGB"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FGB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 355,
+            "no_raw": "355",
+            "name_path": [
+              "高額障害児給付費世帯等台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "CEA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "CEA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 356,
+            "no_raw": "356",
+            "name_path": [
+              "高額障害福祉サービス費市町村台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FGC"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FGC1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 357,
+            "no_raw": "357",
+            "name_path": [
+              "高額障害児給付費都道府県等台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "CEB"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "CEB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 358,
+            "no_raw": "358",
+            "name_path": [
+              "地域生活支援事業単位数台帳取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FGD"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FGD1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 359,
+            "no_raw": "359",
+            "name_path": [
+              "地域生活支援事業受給者台帳受付点検エラーリスト（基本情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FHA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FHA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 360,
+            "no_raw": "360",
+            "name_path": [
+              "地域生活支援事業受給者台帳受付点検エラーリスト（支給決定情報）"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FHA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FHB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 361,
+            "no_raw": "361",
+            "name_path": [
+              "高額障害福祉サービス費世帯等台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FHC"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FHC1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 362,
+            "no_raw": "362",
+            "name_path": [
+              "高額障害児給付費世帯台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "CFA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "CFA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 363,
+            "no_raw": "363",
+            "name_path": [
+              "高額障害福祉サービス費市町村台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FHD"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FHD1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 364,
+            "no_raw": "364",
+            "name_path": [
+              "高額障害児給付費都道府県等台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "CFB"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "CFB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": "○"
+              }
+            ]
+          },
+          {
+            "no": 365,
+            "no_raw": "365",
+            "name_path": [
+              "地域生活支援事業単位数台帳受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FHE"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FHE1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "変更時"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 366,
+            "no_raw": "366",
+            "name_path": [
+              "高額障害福祉サービス費等台帳確認依頼リスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "台帳管理業務"
+              },
+              {
+                "column": "情報区分",
+                "value": "確認依頼リスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "FIA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "FIA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 367,
+            "no_raw": "367",
+            "name_path": [
+              "一次審査結果票情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7I"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7I1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 368,
+            "no_raw": "368",
+            "name_path": [
+              "一次審査済介護給付費・訓練等給付費等請求書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E72"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E72I1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 369,
+            "no_raw": "369",
+            "name_path": [
+              "一次審査済明細書等情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E75"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E75I1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 370,
+            "no_raw": "370",
+            "name_path": [
+              "一次審査結果票"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7A"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7A1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 371,
+            "no_raw": "371",
+            "name_path": [
+              "返戻（予定）一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7B"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7B1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 372,
+            "no_raw": "372",
+            "name_path": [
+              "警告一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7C"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7C1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 373,
+            "no_raw": "373",
+            "name_path": [
+              "支給量オーバーチェックリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7D"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7D1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 374,
+            "no_raw": "374",
+            "name_path": [
+              "請求時効該当確認リスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7E"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7E1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 375,
+            "no_raw": "375",
+            "name_path": [
+              "時効却下リスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7F"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7F1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 376,
+            "no_raw": "376",
+            "name_path": [
+              "返戻（予定）一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7G"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7G1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 377,
+            "no_raw": "377",
+            "name_path": [
+              "警告一覧表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7H"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7H1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 378,
+            "no_raw": "378",
+            "name_path": [
+              "支給量オーバーチェックリスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7J"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7J1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 379,
+            "no_raw": "379",
+            "name_path": [
+              "請求時効該当確認リスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7K"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7K1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 380,
+            "no_raw": "380",
+            "name_path": [
+              "時効却下リスト情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7L"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7L1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 381,
+            "no_raw": "381",
+            "name_path": [
+              "審査対象明細表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7M"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7M1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 382,
+            "no_raw": "382",
+            "name_path": [
+              "審査対象明細表情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "一次審査結果資料情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E7N"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E7N1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 383,
+            "no_raw": "383",
+            "name_path": [
+              "障害福祉サービス費等払込請求書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9A"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9A1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "帳票"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 384,
+            "no_raw": "384",
+            "name_path": [
+              "障害福祉サービス費等払込請求書内訳表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9B"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9B1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "帳票"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 385,
+            "no_raw": "385",
+            "name_path": [
+              "障害福祉サービス費等審査支払手数料払込請求書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9C"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9C1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "帳票"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 386,
+            "no_raw": "386",
+            "name_path": [
+              "障害福祉サービス費等請求総額通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9D"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9D1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 387,
+            "no_raw": "387",
+            "name_path": [
+              "障害福祉サービス費等決定請求明細表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9E"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9E1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 388,
+            "no_raw": "388",
+            "name_path": [
+              "返戻一覧表"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "市町村請求情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "E9F"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "E9F1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 389,
+            "no_raw": "389",
+            "name_path": [
+              "過誤申立書情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "過誤申立書情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "EA1"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EA11"
+              },
+              {
+                "column": "ルート",
+                "value": "市⇒連"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "伝送"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 390,
+            "no_raw": "390",
+            "name_path": [
+              "過誤決定通知書"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "過誤決定通知書情報"
+              },
+              {
+                "column": "データ種別",
+                "value": "EBA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EBA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 391,
+            "no_raw": "391",
+            "name_path": [
+              "二次審査結果票情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EEA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EEA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 392,
+            "no_raw": "392",
+            "name_path": [
+              "二次審査結果一覧情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EEB"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EEB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 393,
+            "no_raw": "393",
+            "name_path": [
+              "過誤申立書情報取込エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "取込エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EEC"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EEC1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 394,
+            "no_raw": "394",
+            "name_path": [
+              "二次審査結果票情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EFA"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EFA1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 395,
+            "no_raw": "395",
+            "name_path": [
+              "二次審査結果一覧情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EFB"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EFB1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          },
+          {
+            "no": 396,
+            "no_raw": "396",
+            "name_path": [
+              "過誤申立書情報受付点検エラーリスト"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "インタフェース仕様書",
+                "value": "市町村編"
+              },
+              {
+                "column": "業務種別",
+                "value": "市町村事務共同処理"
+              },
+              {
+                "column": "業務内容",
+                "value": "支払業務 (地域生活支援事業)"
+              },
+              {
+                "column": "情報区分",
+                "value": "受付点検エラーリスト"
+              },
+              {
+                "column": "データ種別",
+                "value": "EFC"
+              },
+              {
+                "column": "交換情報識別番号",
+                "value": "EFC1"
+              },
+              {
+                "column": "ルート",
+                "value": "連⇒市"
+              },
+              {
+                "column": "周期",
+                "value": "月次"
+              },
+              {
+                "column": "媒体区分",
+                "value": "PDF"
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害福祉サービス（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 障害児支援（基準該当）",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 地域生活支援事業",
+                "value": "○"
+              },
+              {
+                "column": "対応業務 > 高額障害福祉サービス等給付費",
+                "value": null
+              },
+              {
+                "column": "対応業務 > 高額障害児給付費",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※",
+        "text": "網掛け箇所は、併用を表している。"
+      }
+    ],
+    "uncertain": [
+      "ルート・周期・媒体区分の一部は縮小画像のため判読に自信がない箇所がある（例: 386 の情報名「障害福祉サービス費等請求総額通知書」、387 の情報名「障害福祉サービス費等決定請求明細表」、367 のデータ種別 E7I と識別番号 E7I1）。",
+      "データ種別・情報区分の縦結合セル（例: 325-326 の F11、340 の F31、347 の F41、360 の FHA）は同じ値を各行に補った。",
+      "紫色の網掛け（併用の表示）は文字として書き起こしていない。",
+      "対応業務の○の位置は画像上の列位置から判定した。"
+    ]
+  },
+  "raw_text": null
+}

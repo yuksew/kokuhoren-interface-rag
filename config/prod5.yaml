@@ -1,0 +1,24 @@
+# 本番5: テキストレイヤの判定（pagemeta の has_table）で「表なし」とされ、書き起こしていなかった表（2026-11-03 の洗い出し）。
+#   障害 サービス事業所編: 契約情報レコードの作成対象サービス（決定コード・必須）と補足・データ設定方法、サービス種別と決定コードの対応
+#   障害 共通編: インタフェース一覧
+# 採用ルール: 本番1〜4 と同じ（src/adopt.py）。確認キューは原本の画像と照らして判定する
+run: prod5-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+pages:
+  - shogai_jigyosho_r0710:39
+  - shogai_jigyosho_r0710:40
+  - shogai_jigyosho_r0710:41
+  - shogai_jigyosho_r0710:200
+  - shogai_jigyosho_r0710:251
+  - shogai_jigyosho_r0710:252
+  - shogai_kyotsu_r0710:57
+  - shogai_kyotsu_r0710:58
+  - shogai_kyotsu_r0710:59
+  - shogai_kyotsu_r0710:60
+  - shogai_kyotsu_r0710:61
+  - shogai_kyotsu_r0710:62
+  - shogai_kyotsu_r0710:63
