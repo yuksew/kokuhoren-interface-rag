@@ -1,0 +1,81 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 64,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "61",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（内部プログラム連携に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM5C26E",
+     "name_path": [
+      "S1MNM5C26E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "指定されたファイル名に該当するファイルが存在しません。ファイル名を確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "クライアント側で指定したファイル名に該当するファイルが、サーバ側の所定の場所に存在しなかった場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "メッセージIDの文字「S1MM5C26E」は画像の文字が詰まって見えるため、読み取りに不確かさがある。",
+  "内容列の番号（1〜4）は見出しのない列のため、項番として扱った。見出しの列名は原本に無いため内容列の下位区分の名前は付けていない。",
+  "ページ番号は「- 61 -」と印字されており、依頼のページ番号64とは異なる。printed_pageは印字どおり61とした。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（1 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

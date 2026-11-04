@@ -1,0 +1,129 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 57,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "54",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（到達エラーに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM4C34E",
+     "name_path": [
+      "S1MNM4C34E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "証明書が失効しているため、受付けられませんでした。有効な証明書を使って請求を行ってください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "証明書が既に失効状態となっている場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C36E",
+     "name_path": [
+      "S1MNM4C36E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー:請求書に記入されている請求年月とサービス提供年月の相関エラーです。請求年月>サービス提供年月を設定してください。エラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "請求年月とサービス提供年月にて整合性が取れない場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C63E",
+     "name_path": [
+      "S1MNM4C63E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "付与された証明書を検証した結果、証明書エラーになりました。パソコンにインストールされた証明書の有効期限が切れています。証明書の更新及びインストールを行い、再度請求情報を送信してください。※新しい証明書の発行申請がお済みである場合、発行された新しい証明書をパソコンにインストールしていない可能性があります。新しい証明書がパソコンにインストールされているかご確認ください。詳しい手順については、電子請求受付システムのログイン後のFAQ『請求情報を送信した際に、「付与された証明書を検証した結果、証明書エラーになりました。」というエラーが発生する』を参照してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "証明書の有効期限が切れている場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付画像では「内容」列の下位に項番を示す見出しが印字されておらず、1〜4の数字列の列名が不明のため、no は整数化した項番として扱い、columns には見出しに印字された3列のみを入れた。",
+  "依頼の『PDF上のページ: 57』に対し、画像の下部ページ番号は『- 54 -』のため printed_page は54とした。",
+  "メッセージID欄（S1MNM4C34E等）は縦結合のため name_path に入れた。画像の文字は判読上の誤りの可能性が残る。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（3 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

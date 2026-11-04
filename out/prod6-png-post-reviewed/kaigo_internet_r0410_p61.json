@@ -1,0 +1,198 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 61,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "58",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（内部プログラム連携に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1DSM3008E",
+     "name_path": [
+      "S1DSM3008E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}に設定された「{1}」は、JIS2004専用文字のため使用できません。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "Shift_JISで表現できない文字が設定されている。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:不正な文字(「、」で連結して全て表示)"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3009E",
+     "name_path": [
+      "S1DSM3009E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}は存在しない日付です。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "存在しない日付が設定されている。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3011E",
+     "name_path": [
+      "S1DSM3011E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}が存在しません。・{1}",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "指定したファイルまたはディレクトリが存在しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:ファイルまたはディレクトリパス"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3012E",
+     "name_path": [
+      "S1DSM3012E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}が空ではありません。・{1}",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "引数の空ディレクトリ配下に、ファイルまたはディレクトリが存在する。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:ディレクトリパス"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3013E",
+     "name_path": [
+      "S1DSM3013E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}を読み込む権限がありません。「{1}」配下に読み込み権限を与えてください。または、権限があるユーザでログインし直し、再度実行してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ファイルの読み込み権限がない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:ファイルが存在するディレクトリパス"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "メッセージIDの「S1DSMB」の文字が「B」か「8」か判別しにくいため、原文どおりS1DSMB008E等と書いた（画像では S1DSM8008E 等にも見える）。",
+  "項番に当たる1〜4の列には見出しがなく、「内容」見出しの下に含まれているため、no として扱った。項番の列名は付けていない。",
+  "種類列「エラー」は各メッセージIDで縦に結合されているため、各行の cells に同じ値を入れた。",
+  "ページ番号は画像上 58 と印字されているが、依頼では PDF 上のページが 61 とされているため、printed_page は印字された 58 を入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（5 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

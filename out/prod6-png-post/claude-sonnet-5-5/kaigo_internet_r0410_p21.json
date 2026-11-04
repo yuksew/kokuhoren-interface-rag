@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 21,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1209,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.032268,
+    "cost_usd_batch": 0.016134,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 21,
+    "printed_page": "18",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "検査種別",
+          "検査内容",
+          "メッセージID(※5)"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "検査内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "データレコード形式"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "交換情報識別番号が、請求情報定義ファイル(※4)に定義された値であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "検査種別",
+                "value": "交換情報識別番号検査"
+              },
+              {
+                "column": "メッセージID(※5)",
+                "value": "S1DSM4003E\nS1DSM4005E\nS1DSM4011E"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "データレコード形式"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "レコード種別コードが、請求情報定義ファイル(※4)に定義された値であること。\nレコード項目数が、請求情報定義ファイル(※4)に定義された数であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "検査種別",
+                "value": "レコード項目数検査"
+              },
+              {
+                "column": "メッセージID(※5)",
+                "value": "S1DSM4003E\nS1DSM4004E\nS1DSM4005E\nS1DSM4012E"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "データレコード項目"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "必須項目として定義されている場合、値が空または全角・半角スペースのみではないこと。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "検査種別",
+                "value": "必須項目検査"
+              },
+              {
+                "column": "メッセージID(※5)",
+                "value": "S1DSM4005E"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "データレコード項目"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "形式通りの値であること。\nまたは検査対象の値が空の場合は無視する。\n・形式一覧\n[図]\n※形式検査は、請求に必要となるサービス提供年月項目のみ実施する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "検査種別",
+                "value": "形式検査"
+              },
+              {
+                "column": "メッセージID(※5)",
+                "value": "S1DSM4006E"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "・形式一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "設定値",
+          "詳細"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "設定値",
+          "type": "",
+          "length": "",
+          "content": "詳細",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "YYYYMM"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "YYYYMM形式の、存在する年月であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "1つ目の表は前ページからの続き(項番4から開始)。",
+      "形式一覧の入れ子表は別tableとしても書き起こし、1つ目の表の該当セルには[図]を記載した。"
+    ]
+  },
+  "raw_text": null
+}

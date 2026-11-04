@@ -1,0 +1,161 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 63,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "60",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（内部プログラム連携に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM5C11E",
+     "name_path": [
+      "S1MNM5C11E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報を請求したユーザとログインしたユーザが異なります。請求したユーザでログインしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ログインユーザ(代理人)と請求情報との関連が無かった場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C12E",
+     "name_path": [
+      "S1MNM5C12E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "ログインしたユーザの請求先が、処理対象の請求先と異なります。正しい請求先のユーザでログインしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ログインユーザ(代理人)の請求先都道府県番号と、連携された請求先都道府県番号が異なる場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C13E",
+     "name_path": [
+      "S1MNM5C13E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "処理対象のデータ件数が、処理可能な最大件数を超えました。最大件数:{0}",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "リクエストデータが、サーバ側で設定した最大桁数(分割前)の2倍を超えた場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:最大件数"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C14E",
+     "name_path": [
+      "S1MNM5C14E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "処理対象のデータ件数が、処理可能な最大件数を超えました。データ件数:{0}最大件数:{1}",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "リクエストデータが、サーバ側で設定した最大件数を超えた場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:連携した件数{1}:最大件数"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "「内容」見出しが番号欄と本文欄の2列にまたがっているが、その下の列名が印字されていないため、columns では「内容」を2回並べ、番号欄を column_map の no、本文欄を content に対応させた。",
+  "「S1MM5C11E」等のメッセージIDは縦に結合されているため、各行の name_path に同じIDを入れた。",
+  "添付ページには「- 60 -」と印字されており、依頼の PDF 上のページ 63 とは番号が異なるが、printed_page には印字された 60 を入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（4 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

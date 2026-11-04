@@ -1,0 +1,195 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 62,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "59",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（内部プログラム連携に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1DSM3014E",
+     "name_path": [
+      "S1DSM3014E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}の形式が正しくありません。正しい形式({1})で設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "指定された正規表現に一致しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:正しい形式"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3016E",
+     "name_path": [
+      "S1DSM3016E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}の拡張子は[{1}]形式で設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "指定された拡張子に一致しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:正しい拡張子"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C06E",
+     "name_path": [
+      "S1MNM5C06E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "取消依頼を行える回数が上限に達したため、取消依頼を行うことができません。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "取消依頼が10回以上に行われた場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C09E",
+     "name_path": [
+      "S1MNM5C09E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "対象の{0}が更新されています。最新の情報を確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "クライアント側で指定した処理対象データが、サーバ側で更新されていた場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:処理対象データ名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C10E",
+     "name_path": [
+      "S1MNM5C10E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "対象の{0}が削除されています。最新の情報を確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "クライアント側で指定した処理対象データが、サーバ側に存在しなかった場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:処理対象データ名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "ページ番号は画像下部に「- 59 -」と印字されており、依頼の PDF 上のページ 62 とは異なる。画像の表示に従い printed_page を 59 とした。",
+  "画像の見出しは「内容」の1つだけで、項番（1〜4）の列に見出しがない。そのため columns は「メッセージID」「種類」「内容」の3つとし、項番は items の no に入れた。column_map の no は空文字とした。",
+  "メッセージIDの一部（S1DSMB014E、S1MNM5C06E など）の英数字が画像上で判別しにくい（B と 8、M と S など）。原文どおりの表記で書いたが誤認の可能性がある。",
+  "「正しい形式 ( {1} )」の括弧の空白と全角半角は画像から確定できないため、「正しい形式({1})」と書いた。",
+  "内容欄の折り返し（「行う ことができません」「更新されていた場合」など）は1行に詰めた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（5 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

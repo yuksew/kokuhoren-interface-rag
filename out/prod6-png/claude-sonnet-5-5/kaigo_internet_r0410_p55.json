@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 55,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1649,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036668,
+    "cost_usd_batch": 0.018334,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 55,
+    "printed_page": "52",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "種類",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM4C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：ログインしているユーザIDでは、請求情報に入力している事業所の請求は行えません。\nユーザIDと請求情報に入力している事業所番号を確認の上、正しいID、もしくは、正しい事業所番号で請求してください。\nエラー内容を訂正し、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM4C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "代理人が委任されていない事業所の電子請求を行った場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM4C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM4C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM4C07E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：請求情報に入力されている事業所と請求年月で、既に別のユーザIDから請求を受付ています。\n事業所と請求年月を確認の上、請求先の国保連合会に確認を行ってください。\nエラー内容を訂正し、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM4C07E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "同一事業所、同一請求年月に対して、別ユーザIDにより既に電子請求されている場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM4C07E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM4C07E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM4C08E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：サービス提供年月の時点で無効な事業所番号が請求情報に入力されています。{0}\n事業所番号を見直し、正しい事業所番号で再度請求を行ってください。\nエラー内容を訂正し、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM4C08E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "請求書に入力されているサービス提供年月が、事業所の有効期間外の場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM4C08E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}:事業所番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM4C08E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表のメッセージIDはフォント圧縮で「S1MNM4C06E」等と読み取ったが、不確か",
+      "内容列の項番(1〜4)は独立した列として印字されているが、見出しは「内容」の1列のみのため no は項番として入れた",
+      "前ページからの続きかは不明"
+    ]
+  },
+  "raw_text": null
+}

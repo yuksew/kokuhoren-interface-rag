@@ -213,3 +213,19 @@
   # 古い期間の表（p105〜109、平成30年4月〜令和1年9月）。今の期間の表（p54）ではなく、この期間の表を引けるか
   gold: [{doc: shogai_todofuken, name: 共同生活援助, table_kind: service_item_matrix, page: 105}]
   expect: ["平成30年4月"]
+# --- 介護 インターネット編（2026-11-04 追加。伝送請求 API ライブラリ。請求ソフトを作る業者向け）
+- q: 伝送請求の署名送信で返ってくる到達番号は何桁？
+  domain: kaigo
+  kind: exact
+  gold: [{doc: kaigo_internet, name: 到達番号, page: 19}]
+  expect: ["19"]
+- q: 伝送のエラーコード G10704 は何のエラー？
+  domain: kaigo
+  kind: code
+  gold: [{doc: kaigo_internet, name: G10704}]
+  expect: ["保険者番号"]
+- q: 伝送請求 API のメッセージID S1DSM4001E はどんなときに出る？
+  domain: kaigo
+  kind: code
+  gold: [{doc: kaigo_internet, name: S1DSM4001E}]
+  expect: ["レコード数"]

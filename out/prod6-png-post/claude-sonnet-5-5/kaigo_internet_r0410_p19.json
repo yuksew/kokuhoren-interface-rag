@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 19,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1587,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036048,
+    "cost_usd_batch": 0.018024,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 19,
+    "printed_page": "16",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "<戻り値>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "型",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "返却情報"
+            ],
+            "type": "Class",
+            "length": null,
+            "length_raw": null,
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "返却情報",
+              "処理結果"
+            ],
+            "type": "Enum",
+            "length": null,
+            "length_raw": null,
+            "content": "1:正常、2:エラー、3:キャンセル、4:到達エラー。(※3)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "返却情報",
+              "メッセージID"
+            ],
+            "type": "String",
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果がエラー、または到達エラーの場合、メッセージID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "返却情報",
+              "メッセージ"
+            ],
+            "type": "String",
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果がエラー、または到達エラーの場合、メッセージ。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "512"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "返却情報",
+              "到達番号"
+            ],
+            "type": "String",
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果が正常、または到達エラーの場合、到達番号。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "19"
+              },
+              {
+                "column": "最大桁数",
+                "value": "19"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "返却情報",
+              "到達日時"
+            ],
+            "type": "DateTime",
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果が正常、または到達エラーの場合、到達日時。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "返却情報",
+              "請求チェックエラー情報"
+            ],
+            "type": "Class",
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果が請求情報チェックによるエラーの場合に設定。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "返却情報",
+              "請求チェックエラー情報",
+              "ファイルパス"
+            ],
+            "type": "String",
+            "length": null,
+            "length_raw": null,
+            "content": "エラーが発生した送信ファイルパス。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "256"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "返却情報",
+              "請求チェックエラー情報",
+              "行番号"
+            ],
+            "type": "Integer",
+            "length": null,
+            "length_raw": null,
+            "content": "エラーが発生したレコードの行番号。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "返却情報",
+              "請求チェックエラー情報",
+              "列番号"
+            ],
+            "type": "Integer",
+            "length": null,
+            "length_raw": null,
+            "content": "エラーが発生した項目の列番号。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "項目名の階層(name_path)は罫線の結合状態から推定した。",
+      "最小桁数・最大桁数はlength列に対応させず cells に入れた。"
+    ]
+  },
+  "raw_text": null
+}

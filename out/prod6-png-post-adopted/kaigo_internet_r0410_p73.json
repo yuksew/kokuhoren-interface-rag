@@ -1,0 +1,286 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 73,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "70",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "ファイル名 ：CsvErr.txt",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "No",
+    "項目名",
+    "内容"
+   ],
+   "column_map": {
+    "no": "No",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "データファイル名"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラーのデータファイル名を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "エラー行番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラー行番号は、送信されたファイル自体の先頭よりのレコード番号である。\nコントロールレコードがファイルの第一レコードにあるが、このレコードが先頭レコード（行番号＝1）になる。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "エラー項目番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラー項目番号はデータレコードのデータ項目の番号である。\n※ データレコードはインタフェース仕様書共通編参照",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "エラーコード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "英数字4桁で審査エラーコードを設定。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "エラー内容"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "日本語で審査エラー内容を設定。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "other",
+   "title": "ファイル名 ：Transmitinfo.txt（※1）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "No",
+    "項目名",
+    "内容"
+   ],
+   "column_map": {
+    "no": "No",
+    "name": "項目名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "エラーデータファイル名"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラーのデータファイル名を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "交換情報識別番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "交換情報識別番号を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所番号を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "証記載保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "証記載保険者番号を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "被保険者番号"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "被保険者番号を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "サービス提供年月"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "サービス提供年月を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "サービス種類"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "サービス種類を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "項目名"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラー項目名を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "項目値"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "エラー項目値を設定",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付ページの下部の印字は「- 70 -」で、依頼の PDF 上のページ 73 とは一致しない。添付画像の内容（付録 d 拡張ファイル）をそのまま書き起こした。",
+  "Transmitinfo.txt の見出しにある「（※1）」に対応する注記本文は、この添付ページには印字されていないため footnotes に入れていない。",
+  "表の列名「No」は画像上の見出し記号（№ に近い字形）を「No」として書き写した。"
+ ]
+}

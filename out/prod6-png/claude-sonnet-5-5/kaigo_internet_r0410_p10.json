@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 10,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1702,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037198,
+    "cost_usd_batch": 0.018599,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 10,
+    "printed_page": "7",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "(1)引数チェック",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項目名",
+          "詳細項目名",
+          "内容",
+          "メッセージID（※2）"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "必須チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "Nothing 及び空文字ではないこと。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "必須項目チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB001E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "必須チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "条件付き必須の場合、条件を満たした場合に Nothing 及び空文字ではないこと。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "必須項目チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB002E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "必須チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "対象引数に格納されたデータが1件以上存在すること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "件数チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB003E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "最大桁数のみ指定されている場合、最大桁数以下であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "桁数チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB004E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "最小桁数と最大桁数に同一桁数が指定されている場合、指定された桁数であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "桁数チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB005E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "数字: すべての文字が半角数字であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "属性チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB006E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "英数字: すべての文字が半角数字または半角英字であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "属性チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB007E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "混在: すべての文字がShift_JISで表現できる文字であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "属性チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB008E"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "形式チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "日付: 存在する日付であること。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "詳細項目名",
+                "value": "属性チェック詳細"
+              },
+              {
+                "column": "メッセージID（※2）",
+                "value": "S1DSMB009E"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "引数については、「3.4 インタフェース詳細」の各引数を参照。"
+      },
+      {
+        "mark": "※2",
+        "text": "メッセージID/メッセージについては、「付録.a エラーメッセージ一覧」を参照。"
+      }
+    ],
+    "uncertain": [
+      "内容列の「数字」「英数字」「混在」「日付」は内容内の小列（種別）で、列見出しがないため content に「種別: 説明」の形で入れた",
+      "形式チェックの3行目以降は項目名セルが縦結合のため同じ名前を入れた"
+    ]
+  },
+  "raw_text": null
+}

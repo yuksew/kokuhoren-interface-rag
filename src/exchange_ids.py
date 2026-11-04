@@ -24,6 +24,8 @@ import pymupdf
 
 ROOT = Path(__file__).resolve().parent.parent
 HEAD = re.compile(r"^(\d+(?:\.\d+){2,})\.?\s*(\S.*)$")  # 1.2.3.2. 介護給付費等 明細書情報 / 2.3.1 ○○
+APPENDIX = re.compile(r"^(付録\s*[.．]\s*[a-zA-Z0-9]+)\s*(\S.*)$")   # 付録．ａ エラーメッセージ一覧（インターネット編）
+LEADER = re.compile(r"[.．…・]{4,}")   # 目次の行（「3.4.5.1 復号 ........ 42」）は見出しにしない
 QUOTED = re.compile(r"[“\"”]\s*([0-9A-Z]{4})\s*[“\"”]")
 COL_ID = re.compile(r"(?<![0-9A-Za-z])([A-Z][0-9][0-9A-Z][0-9])(?![0-9A-Za-z])")
 
@@ -44,8 +46,9 @@ def page_headings(pdf: Path) -> dict[int, list[tuple[int, str, str]]]:
         for i, pg in enumerate(d):
             hs = []
             for j, ln in enumerate(pg.get_text().splitlines()):
-                m = HEAD.match(nk(ln).strip())
-                if m and len(m.group(2)) <= 60 and not re.match(r"^[\d.]+$", m.group(2)):
+                t = nk(ln).strip()
+                m = HEAD.match(t) or APPENDIX.match(t)
+                if m and len(m.group(2)) <= 60 and not re.match(r"^[\d.]+$", m.group(2)) and not LEADER.search(t):
                     hs.append((j, m.group(1), m.group(2).strip()))
             out[i + 1] = hs
     return out

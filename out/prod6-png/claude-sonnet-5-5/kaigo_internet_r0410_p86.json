@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 86,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1580,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.035978,
+    "cost_usd_batch": 0.017989,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 86,
+    "printed_page": "83",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "<戻り値>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "型",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "到達確認情報"
+            ],
+            "type": "Stream",
+            "length": null,
+            "length_raw": null,
+            "content": "署名送信時(サイレントモード未使用時)に表示される到達結果画面を、HTML情報(※1)として返却。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              },
+              {
+                "column": "最大桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "到達確認画面",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "メッセージID"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果が到達エラーの場合、メッセージID。\n※「3.4.1.1 署名送信」の戻り値と同様の内容。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "メッセージ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果が到達エラーの場合、メッセージ。\n※「3.4.1.1 署名送信」の戻り値と同様の内容。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "到達番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "到達番号。\n※「3.4.1.1 署名送信」の戻り値と同様の内容。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "請求先国保連合会名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求先の国保連合会名称。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "到達日時"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "到達日時。\n※「3.4.1.1 署名送信」の戻り値と同様の内容。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報に設定されていた事業所番号。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "請求年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報に設定されていた処理対象年月。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "請求書類名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報の名称。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "件数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報の件数。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "お知らせ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求ユーザに対し通知が必要なお知らせ。(※2)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "HTML情報の内容(到達結果画面の項目)は、以下の通り。"
+      },
+      {
+        "mark": "※2",
+        "text": "メッセージIDにS1MNM5C73Eが設定されている場合、統合インストーラバージョンアップ手順書を取得するためのURLが記載される。"
+      }
+    ],
+    "uncertain": [
+      "メッセージIDの値 S1MNM5C73E は文字が潰れており不確か"
+    ]
+  },
+  "raw_text": null
+}

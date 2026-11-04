@@ -1,0 +1,206 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 17,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "14",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "３．４．１　送信関連",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "処理",
+    "ルート",
+    "処理内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "処理",
+    "type": "",
+    "length": "",
+    "content": "処理内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "署名送信"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報を送信依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "署名送信"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報チェックを行い、エラーとなった場合、エラーメッセージを返却、エラーとならなかった場合、電子請求受付システムの到達結果を返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "署名送信取消"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "署名送信した情報の取消依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "署名送信取消"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "取消依頼の結果を返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "署名送信ステータス取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報等のステータスの取得依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "署名送信ステータス取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報等のステータスを返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "署名送信点検結果取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報等の点検結果の取得依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "署名送信点検結果取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "審査支払等システムから電子請求受付システムに連携されている場合に点検結果を返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付は1ページのみで、依頼の『次のページ』ではなく添付ページ（印字ページ14）の表を書き起こした。",
+  "ルート列の『請求ソフトウェア』『→』『伝送請求 API ライブラリ』は原文で改行されていたため、1行に『→』で連結して記載した。"
+ ]
+}

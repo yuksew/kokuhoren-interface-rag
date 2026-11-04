@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 24,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3835,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002926,
+    "cost_usd_batch": 0.001463,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 24,
+    "printed_page": "21",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "<引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "到達番号"
+            ],
+            "type": "数字",
+            "length": 19,
+            "length_raw": "19",
+            "content": "署名送信した情報を取り消す到達番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "19"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "ユーザID"
+            ],
+            "type": "英数字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "電子請求受付システムにログインするユーザID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "ユーザ ID 編集不可フラグ"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": "ログインダイアログのユーザ ID 欄を編集不可とする場合は True。（初期値は False）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Boolean"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "<戻り値>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "返却情報"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Class"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "返却情報",
+              "処理結果"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": "-",
+            "content": "1：正常、2：エラー、3：キャンセル。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Enum"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "返却情報",
+              "メッセージID"
+            ],
+            "type": null,
+            "length": 10,
+            "length_raw": "10",
+            "content": "処理結果がエラーの場合、メッセージID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "返却情報",
+              "メッセージ"
+            ],
+            "type": null,
+            "length": 512,
+            "length_raw": "512",
+            "content": "処理結果がエラーの場合、メッセージ。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "返却情報",
+              "取消到達番号"
+            ],
+            "type": null,
+            "length": 19,
+            "length_raw": "19",
+            "content": "処理結果が正常の場合、取消到達番号。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "19"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "PDFの表示ページは24ですが、ページ下部の印字は「- 21 -」だったため printed_page は21としました。",
+      "引数表の「ユーザ ID 編集不可フラグ」の空白や「（初期値は False）」の括弧の形は、画像の折り返しで判別しづらい箇所があります。"
+    ]
+  },
+  "raw_text": null
+}

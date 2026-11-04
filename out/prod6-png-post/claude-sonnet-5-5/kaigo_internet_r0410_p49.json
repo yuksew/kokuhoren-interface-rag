@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 49,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1716,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.037338,
+    "cost_usd_batch": 0.018669,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 49,
+    "printed_page": "46",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "<エラーメッセージ一覧の記載内容>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "項番",
+          "内容"
+        ],
+        "column_map": {
+          "no": "項番",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "メッセージの内容\n※ { }内の 0 から始まる連番は、「3.備考」に記載された置換文字列で置換して表示する",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "メッセージ出力条件",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "備考",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "エラーメッセージの返却方法",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "<ログインに関するエラーメッセージ>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM0030E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ログインできませんでした。\nユーザID、またはパスワードを確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM0030E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "入力したユーザIDがシステムに存在していなかった場合。または、パスワードが誤っていた場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM0030E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM0030E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM4C72E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザIDのパスワード有効期限が切れているか、ユーザID登録後初めてのログインです。\nパスワードを変更する必要があります。\n電子請求受付システム総合窓口の【代理人情報/代理人証明書の申請はこちら】からログインしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM4C72E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ログインユーザ(代理人)で電子請求受付システムにログインし、ユーザIDのパスワードが、パスワード有効期限を越えている場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM4C72E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM4C72E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値(返却情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "メッセージIDの文字(S1MNM0030E, S1MNM4C72E)は文字が詰まって印字されており、読み取りに自信がない",
+      "1つ目の表は見出し行がなく、列名「項番」「内容」は補ったもの"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,195 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 25,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "22",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "<引数>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "属性",
+    "最小桁数",
+    "最大桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "署名送信のステータスの取得対象となる事業所番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "10"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "請求先都道府県番号"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "事業所の請求先都道府県番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "2"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "到達番号リスト"
+     ],
+     "type": "数字",
+     "length": 19,
+     "length_raw": "19",
+     "content": "署名送信のステータスを取得する到達番号のリスト。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "List (String)"
+      },
+      {
+       "column": "最小桁数",
+       "value": "19"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "処理対象年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "処理対象となる年月。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "6"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "ユーザID"
+     ],
+     "type": "英数字",
+     "length": 14,
+     "length_raw": "14",
+     "content": "電子請求受付システムにログインするユーザID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "ユーザID編集不可フラグ"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "ログインダイアログのユーザID欄を編集不可とする場合はTrue。(初期値はFalse)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "Boolean"
+      },
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼では PDF 上のページが 25 とあるが、添付画像のページ下部の印字は「- 22 -」だった。printed_page は印字どおり 22 とした。",
+  "表の見出しは「<引数>」のみ。ページ上部の「3.4.1.3 署名送信ステータス取得」は節見出しのため title には入れていない。レコード名・交換情報識別番号は読み取れないため空文字とした。",
+  "項目6の属性・最大桁数・最小桁数の「-」は原文どおり記載した（属性は type に、最大桁数は length_raw に「-」、length は null）。"
+ ]
+}

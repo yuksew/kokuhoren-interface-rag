@@ -114,7 +114,7 @@ def blank(v) -> str | None:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post", "prod3-png-post", "prod4-png-post", "prod5-png-post",
+    ap.add_argument("--run", nargs="+", default=["prod1-png-post", "prod2-png-post", "prod3-png-post", "prod4-png-post", "prod5-png-post", "prod6-png-post",
                                                          "matrix-textlayer"])
     ap.add_argument("--src", default="reviewed", choices=["reviewed", "adopted"])
     ap.add_argument("--out", default="db/interface_spec.sqlite")

@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 13,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3432,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002725,
+    "cost_usd_batch": 0.001362,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 13,
+    "printed_page": "10",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "チェック",
+          "チェック内容",
+          "メッセージＩＤ (※１)"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "チェック",
+          "type": "",
+          "length": "",
+          "content": "チェック内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "セッション確認"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "伝送請求 API ライブラリで管理しているセッション情報を確認する。\n有効なセッション情報が存在している場合（前回ログイン時から 30 分以内）は、電子請求受付システムにアクセスする際に、セッション情報に保管されているパスワードを引き渡す。\n有効なセッション情報が存在しない場合（前回ログイン時から 30 分超過）は、ログインダイアログを表示する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージＩＤ (※１)",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "ログインチェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムにアクセスし、伝送請求 API ライブラリから引き渡されたユーザ ID/パスワードを使用してログイン処理を行う。\nユーザ ID やパスワードに不備がある等でログイン処理に失敗した場合は、エラーダイアログを表示後、ログインダイアログを表示する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージＩＤ (※１)",
+                "value": "S1MNM0030E"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "ID ロックチェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムにアクセスし、伝送請求 API ライブラリから引き渡されたユーザ ID がロックされていないことを確認する。\nユーザ ID がロックされている場合は、エラーダイアログを表示する。\n※ 電子請求受付システムのログインを連続して 3 回以上失敗した場合にユーザ ID がロックされる。ロック後 30 分経過するとロックは自動的に解除される。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージＩＤ (※１)",
+                "value": "S1MNM5C27E"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "二重ログインチェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムにアクセスし、伝送請求 API ライブラリから引き渡されたユーザ ID で既にログインされていないことを確認する。\n既にログイン中の場合は、警告ダイアログを表示する。\n※ 表示された警告ダイアログにおいて「はい」ボタンを押下して処理を継続した場合、既にログイン中であったログインユーザはログアウトされる。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージＩＤ (※１)",
+                "value": "S1MNM5C30W"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "メッセージＩＤのコード文字（例: S1MNM0030E、S1MNM5C27E、S1MNM5C30W の M と N、0 と O、5 と S の区別）は画質により確信が持てないため、原文どおりの読みで書き起こした。",
+      "添付は1ページのみで、依頼文の「次のページ」が本ページを指すのかは判断できないため、添付されたページの表を書き起こした。"
+    ]
+  },
+  "raw_text": null
+}

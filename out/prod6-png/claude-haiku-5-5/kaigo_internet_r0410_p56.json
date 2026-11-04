@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 56,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4375,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003196,
+    "cost_usd_batch": 0.001598,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 56,
+    "printed_page": "53",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MM4C10E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：電子証明書の情報と受付けた請求情報の内容が一致しません。請求情報に入力している事業所番号、請求を行う国保連合会及びログインで入力したユーザＩＤを見直してください。また、署名を行った証明書が正しいものであるかを確認してください。エラー内容を訂正し、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MM4C10E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "本人性確認の結果、エラーとなった場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MM4C10E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MM4C10E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MM4C16E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：ログインしたユーザＩＤでは、指定した請求先の国保連合会に請求できません。請求先の国保連合会に請求できるユーザＩＤで、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MM4C16E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求先国保連合会とユーザＩＤが不整合の場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MM4C16E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MM4C16E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MM4C17E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "到達エラー：この請求情報は、以下の到達番号で既に請求されています。\n　到達番号　：　{0}\n請求情報の内容を確認して、再度送信をしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MM4C17E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "同一の請求情報が送信された場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MM4C17E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列{0}：到達番号",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MM4C17E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MM4C28E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求可能なユーザＩＤ、事業所番号ではない、もしくは事業所番号が電子請求受付システムに登録されていません。請求可能なユーザＩＤ、事業所番号であることを確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MM4C28E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムに登録されていないユーザＩＤ、事業所番号を送信された場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MM4C28E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MM4C28E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "メッセージIDの英字部分（S1MM4C10E等）は印字が不鮮明で、MとNの判別に自信がないため S1MM4C と読んだ。",
+      "内容欄の左側にある1〜4の番号列には見出しが印字されていないため、columns に含めず項番（no）として扱った。",
+      "S1MM4C17E の「置換文字列{0}」の {0} は原文の波括弧表記に従って書いた。"
+    ]
+  },
+  "raw_text": null
+}

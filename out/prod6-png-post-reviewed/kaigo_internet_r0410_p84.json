@@ -1,0 +1,81 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 84,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "81",
+ "tables": [
+  {
+   "table_kind": "api_params",
+   "title": "II. 処理概要 <引数>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "属性",
+    "最小桁数",
+    "最大桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "パスワード"
+     ],
+     "type": "英数字",
+     "length": 16,
+     "length_raw": "16",
+     "content": "電子請求受付システムにログインするユーザ IDのパスワード。※1",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "8"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "「※1」が内容欄に付いているが、このページには※1の注記本文が見当たらない。",
+  "ページ上部の図（処理概要図）は表ではないため書き起こしていない。",
+  "ユーザー指定のPDF上のページ84と、ページ下部の印字ページ番号81が異なる。印字ページ番号の81を printed_page に入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

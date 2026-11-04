@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 67,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4332,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003175,
+    "cost_usd_batch": 0.001587,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 67,
+    "printed_page": "64",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM003E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "{0}を書き込む権限がありません。\n「{1}」配下に書き込み権限を与えてください。\nまたは、権限があるユーザでログインし直し、再度実行してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM003E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ファイルの書き込み権限がない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM003E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：ファイル名\n{1}：ファイルが存在するディレクトリパス",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM003E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値(返却情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM004E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "{0}を削除する権限がありません。\n「{1}」配下に削除権限を与えてください。\nまたは、権限があるユーザでログインし直し、再度実行してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM004E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ファイルの削除権限がない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM004E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：ファイル名\n{1}：ファイルが存在するディレクトリパス",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM004E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値(返却情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM010E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "{0}が存在しません。\n・{1}",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM010E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "指定したファイルまたはディレクトリが存在しない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM010E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：ファイル名\n{1}：ファイルまたはディレクトリパス",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM010E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値(返却情報)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼では PDF 上のページ 67 とあったが、添付画像の下部のページ番号は 64 と読めたため printed_page に 64 を入れた。",
+      "「内容」見出しは項番の列と内容の列の2列にまたがっており、項番の列には見出し文字がないため columns に空文字を入れ、column_map の no は空文字とした。項番 1〜4 は no と no_raw に入れた。",
+      "各メッセージIDの「種類」と、メッセージID の縦結合セルは各行に同じ値を入れた。"
+    ]
+  },
+  "raw_text": null
+}

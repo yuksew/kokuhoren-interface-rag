@@ -1,0 +1,132 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 43,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "40",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "3.4.4 マニュアル関連",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "処理",
+    "ルート",
+    "処理内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "処理",
+    "type": "",
+    "length": "",
+    "content": "処理内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "マニュアル一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "マニュアル一覧情報を取得",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "マニュアル一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "マニュアル一覧情報を送信",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "マニュアルファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "マニュアルファイルを取得",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア → 伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "マニュアルファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "取得対象のマニュアル情報を送信",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ → 請求ソフトウェア"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "ルート列のセル内の「→」が折り返し位置で別行に表示されているため、1行に詰めて書き起こした。",
+  "処理列の「マニュアルファイル／ダウンロード」は表示上2行に折り返されているため、1つの処理名として連結した。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

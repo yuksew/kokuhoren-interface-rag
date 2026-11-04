@@ -1,0 +1,227 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 54,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "51",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "<到達エラーに関するエラーメッセージ>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "内容"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1MNM4C03E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー：請求年月　{0}　は、現在請求の受付を行っていません。\n正しい請求年月で再度請求を行ってください。\nエラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1MNM4C03E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "請求されている請求年月が、請求を受け付けしていない場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1MNM4C03E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "置換文字列 {0}:請求年月",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1MNM4C03E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "戻り値（返却情報）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1MNM4C04E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー：請求情報に入力している事業所は、現在代理人に委任しているため、代理人しか電子請求できません。\n委任している代理人に確認の上、代理人が請求してください。\nエラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1MNM4C04E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "代理人に委任しているにも関わらず、事業所自らが、電子請求を行った場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1MNM4C04E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "-",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1MNM4C04E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "戻り値（返却情報）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1MNM4C05E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー：ログインしているユーザIDと請求情報に入力されている事業所番号が一致しません。\nユーザIDと請求情報に入力している事業所番号を確認の上、正しいID、もしくは、正しい事業所番号で請求してください。\nエラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1MNM4C05E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "請求書に入力している事業所と、ユーザIDとの関連が不正な場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1MNM4C05E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "-",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1MNM4C05E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "戻り値（返却情報）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表の内容欄の左に、見出しのない項番列（1〜4）がある。columns には見出しどおり「メッセージID」「種類」「内容」の3列のみ入れ、項番は no に入れた。",
+  "「戻り値（返却情報）」の括弧が全角か半角か画像から判断できず、全角として書き起こした。",
+  "「到達エラー：」「置換文字列 {0}:」の区切りのコロンが全角か半角か判断できず、原文に近い表記で書き起こした。",
+  "S1MNM4C03E〜05E のメッセージIDは、縦に結合された行見出しとして各項番の name_path に入れた。"
+ ]
+}

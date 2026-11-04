@@ -1,0 +1,396 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 35,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "32",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "属性",
+    "最小桁数",
+    "最大桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "通知文書番号"
+     ],
+     "type": "数字",
+     "length": 20,
+     "length_raw": "20",
+     "content": "特定の通知文書番号以降の一覧を取得する場合の、取得対象通知文書番号。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "20"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "処理対象年月"
+     ],
+     "type": "数字",
+     "length": 6,
+     "length_raw": "6",
+     "content": "処理対象となる年月。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "6"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "ユーザID"
+     ],
+     "type": "英数字",
+     "length": 14,
+     "length_raw": "14",
+     "content": "電子請求受付システムにログインするユーザID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "ユーザID編集不可フラグ"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "ログインダイアログのユーザID欄を編集不可とする場合はTrue。(初期値はFalse)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "Boolean"
+      },
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "<戻り値>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "返却情報"
+     ],
+     "type": "Class",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "返却情報",
+      "処理結果"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "1：正常、2：エラー、3：キャンセル。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "返却情報",
+      "メッセージID"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "処理結果がエラーの場合、メッセージID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "返却情報",
+      "メッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "処理結果がエラーの場合、メッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト"
+     ],
+     "type": "List(Class)",
+     "length": null,
+     "length_raw": "-",
+     "content": "処理結果が正常の場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト",
+      "通知文書番号"
+     ],
+     "type": "String",
+     "length": 20,
+     "length_raw": "20",
+     "content": "通知文書番号を返却する。\n（通知文書ファイルを取得する際に指定する番号(昇順)）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "20"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト",
+      "通知文書名"
+     ],
+     "type": "String",
+     "length": 128,
+     "length_raw": "128",
+     "content": "通知文書名。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト",
+      "処理対象年月"
+     ],
+     "type": "String",
+     "length": 6,
+     "length_raw": "6",
+     "content": "通知文書の処理対象年月。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "6"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト",
+      "データタイプ"
+     ],
+     "type": "String",
+     "length": 3,
+     "length_raw": "3",
+     "content": "\"ZIP\"",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "3"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "返却情報",
+      "通知文書情報リスト",
+      "受領確認状態コード"
+     ],
+     "type": "String",
+     "length": 1,
+     "length_raw": "1",
+     "content": "ユーザが通知文書を取得済みか表す状態コード。(※1)\n0：未受領、1：受領済み",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "1"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表1は項番1・2が見えず、見出し行から始まっているため前ページからの続きと判断した（continued_from_prev_page を true にした）。",
+  "表2の内容欄にある「(※1)」の注記本文はこのページに見当たらないため footnotes に入れていない。",
+  "表2の項番6の内容は「通知文書番号を返却する。」と「（通知文書ファイルを取得する際に指定する番号(昇順)）」の間を改行として扱った。段落の区切りかどうか確信がない。",
+  "表1の「ユーザID」「Fal se」など、文字間の空白は表示上の字間と判断して詰めた。「False」と読んだ。",
+  "依頼文はPDF上のページ35とあるが、画像の下部に印字されたページ番号は「- 32 -」のため printed_page は 32 とした。"
+ ]
+}

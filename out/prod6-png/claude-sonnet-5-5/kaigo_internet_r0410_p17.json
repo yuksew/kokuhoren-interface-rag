@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 17,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1263,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.032808,
+    "cost_usd_batch": 0.016404,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 17,
+    "printed_page": "14",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "処理",
+          "ルート",
+          "処理内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "処理",
+          "type": "",
+          "length": "",
+          "content": "処理内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "署名送信"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報を送信依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "署名送信"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報チェックを行い、エラーとなった場合、エラーメッセージを返却、エラーとならなかった場合、電子請求受付システムの到達結果を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "署名送信取消"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "署名送信した情報の取消依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "署名送信取消"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼の結果を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "署名送信ステータス取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報等のステータスの取得依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "署名送信ステータス取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報等のステータスを返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "署名送信点検結果取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "請求情報等の点検結果の取得依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "署名送信点検結果取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "審査支払等システムから電子請求受付システムに連携されている場合に点検結果を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

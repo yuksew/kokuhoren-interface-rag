@@ -1,0 +1,129 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 58,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "55",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（到達エラーに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM4C64E",
+     "name_path": [
+      "S1MNM4C64E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "付与された証明書を検証した結果、検証エラーになりました。事業所からの請求等が集中し、一時的に電子請求受付システムが混み合っている可能性があります。時間をおいて、再度請求情報を送信してください。上記の対応を行ってもエラーが解消されない場合、電子請求ヘルプデスクにご連絡ください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "証明書の検証を正常に行うことができなかった場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C65E",
+     "name_path": [
+      "S1MNM4C65E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "付与された証明書を検証した結果、データエラーになりました。インターネット回線上の問題により、正しく送信できませんでした。再度請求情報を送信してください。上記の対応を行ってもエラーが解消されない場合、電子請求ヘルプデスクにご連絡ください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "証明書の検証を正常に行うことができなかった場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C67E",
+     "name_path": [
+      "S1MNM4C67E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "付与された証明書を検証した結果、環境定義エラーになりました。電子請求受付システムにおける一時的なエラーの可能性があります。再度請求情報を送信してください。上記の対応を行ってもエラーが解消されない場合、電子請求ヘルプデスクにご連絡ください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "証明書の検証を正常に行うことができなかった場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表の番号列（1〜4）には印字された見出しがないため、列名を「番号(見出しなし)」と仮に付けた。",
+  "メッセージIDと種類は縦に結合されたセルのため、各行に同じ値を補った（メッセージIDは name_path に入れ、種類は cells に入れた）。",
+  "内容の折り返しは詰めて1行にした。ID 'S1MNM4C64E' 等の英数字・記号は画像から判読しており、「N」の有無などに読み違いの可能性がある。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（3 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

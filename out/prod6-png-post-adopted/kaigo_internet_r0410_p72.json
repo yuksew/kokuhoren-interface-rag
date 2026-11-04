@@ -1,0 +1,207 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 72,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "69",
+ "tables": [
+  {
+   "table_kind": "code_list",
+   "title": "付録．c IF種別コード一覧",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "IF種別名",
+    "IF種別コード",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "IF種別名",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "署名送信点検結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報N系（伝送）エラー",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "22"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "署名送信点検結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報G系（外部）エラー",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "23"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "署名送信点検結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報様式エラー",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "24"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "署名送信点検結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報正常",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "25"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "署名送信取消結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報取消 NG",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "32"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "署名送信取消結果"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "事業所から送信された請求情報に対する受付結果情報取消正常",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "33"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "通知文書ファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "国保連合会から送信された返戻通知情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "51"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "通知文書ファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "国保連合会から送信された支払通知情報",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "IF種別コード",
+       "value": "53"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付画像の下部ページ番号は「- 69 -」で、依頼の PDF 上のページ72 と一致しない。添付画像に印字されている内容をそのまま書き起こした。",
+  "「IF種別名」列の「署名送信点検結果」「署名送信取消結果」「通知文書ファイルダウンロード」は縦結合セルと判断し、各行の name_path に入れた。",
+  "「取消 NG」「N系（伝送）」「G系（外部）」の全角・半角、括弧の字形は画像の表示から判断したもので、原文と異なる可能性がある。"
+ ]
+}

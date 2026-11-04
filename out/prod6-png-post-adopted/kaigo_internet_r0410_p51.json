@@ -1,0 +1,383 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 51,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "48",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "内容"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "",
+    "length": "",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1MNM5C29W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "現在のパスワードの有効期限が{0}までとなっています。\nパスワードを変更せずにログインする場合、【はい】ボタンを押してください。\nパスワードを変更する場合、【いいえ】ボタンを押してください。\nその後、電子請求受付システムのログイン画面からログインし、パスワードを変更してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C29W"
+       ],
+       "to": [
+        "S1MNM5C29W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1MNM5C29W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "ログインユーザ（事業所）で電子請求受付システムにログインし、システム日付からパスワード有効期限までの日数が、30日を切っている場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C29W"
+       ],
+       "to": [
+        "S1MNM5C29W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1MNM5C29W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "置換文字列 {0}：パスワード有効期限（YYYY年MM月DD日）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C29W"
+       ],
+       "to": [
+        "S1MNM5C29W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1MNM5C29W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "ダイアログ表示",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C29W"
+       ],
+       "to": [
+        "S1MNM5C29W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1MNM5C30W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "同じユーザでログイン中です。\n別のブラウザ等でログインしているか、前回ログインした後にログアウトしていない可能性があります。\n強制的にログインする場合、【はい】ボタンを押してください。\nログインしない場合、【いいえ】ボタンを押してください。\nご不明な点は、介護電子請求ヘルプデスクにお問い合わせください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C30W"
+       ],
+       "to": [
+        "S1MNM5C30W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1MNM5C30W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "既にログインしているユーザ ID でログインしようとした場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C30W"
+       ],
+       "to": [
+        "S1MNM5C30W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1MNM5C30W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "-",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C30W"
+       ],
+       "to": [
+        "S1MNM5C30W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1MNM5C30W"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "ダイアログ表示",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "警告"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "S1MM5C30W"
+       ],
+       "to": [
+        "S1MNM5C30W"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "S1CMM5C01E"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "後から強制ログインされたか、不正なアクセスの可能性があるため、処理を中断します。\n再度ログインしてください。\nご不明な点は、介護電子請求ヘルプデスクにお問い合わせください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "エラー"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "S1CMM5C01E"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "ログイン中に、別ブラウザ等から強制ログインされた場合。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "エラー"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "S1CMM5C01E"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "-",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "エラー"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "S1CMM5C01E"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "戻り値（返却情報）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "種類",
+       "value": "エラー"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼では PDF 上のページは 51 とあるが、ページ下部の印字は「- 48 -」のため printed_page は 48 とした。",
+  "メッセージID の綴り（S1MM5C29W / S1MM5C30W / S1CMM5C01E）は画像の文字が不鮮明で、特に先頭部分の文字を確実に読めていない。",
+  "左端の番号列（1〜4）には見出しがないため、columns に名前を付けず、項番として no に入れた。",
+  "メッセージIDは行見出しとして縦結合されているため name_path に入れ、種類（警告・エラー）は cells に入れた。"
+ ]
+}

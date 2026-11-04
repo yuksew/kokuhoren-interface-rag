@@ -1,0 +1,107 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 49,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "46",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（ログインに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM0030E",
+     "name_path": [
+      "S1MNM0030E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "ログインできませんでした。ユーザID、またはパスワードを確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "入力したユーザIDがシステムに存在していなかった場合。または、パスワードが誤っていた場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C72E",
+     "name_path": [
+      "S1MNM4C72E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "ユーザ ID のパスワード有効期限が切れているか、ユーザ ID登録後初めてのログインです。パスワードを変更する必要があります。電子請求受付システム総合窓口の【代理人情報/代理人証明書の申請はこちら】からログインしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ログインユーザ(代理人)で電子請求受付システムにログインし、ユーザIDのパスワードが、パスワード有効期限を越えている場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表紙のページ番号は「- 46 -」で、依頼のPDF上のページ49とは一致しない。printed_page には印字された 46 を入れた。",
+  "<エラーメッセージ一覧の記載内容>の表は見出し行がないため columns を空配列とし、各行の文言は name_path に入れた。",
+  "<ログインに関するエラーメッセージ>の表で、項番の列（1〜4）には見出しがないため「内容(番号)」と仮の列名を付けた。",
+  "メッセージIDの「M」と「W」の字形が判別しにくい（S1MNM0030E / S1MNM4C72E と読んだ）。原本の表記と異なる可能性がある。",
+  "メッセージIDは縦結合の行見出しとして扱い、name_path に入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（2 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 81,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 2747,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002382,
+    "cost_usd_batch": 0.001191,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 81,
+    "printed_page": "78",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "拡張情報ファイルの返却項目と内容 > 受付情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "タグ名",
+          "項目内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "タグ名",
+          "type": "",
+          "length": "",
+          "content": "項目内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "受付データファイル名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データファイル名を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "受付交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ種別を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "全レコード件数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "レコード件数を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "明細件数"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "明細件数を設定\n請求書、給付管理票、再審査申立書以外の場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "エラー情報",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "タグ名",
+          "項目内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "タグ名",
+          "type": "",
+          "length": "",
+          "content": "項目内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "エラーデータファイル名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データファイル名を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "交換情報識別番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "交換情報識別番号を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "事業所番号を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "証記載保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "証記載保険者番号を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "被保険者番号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "被保険者番号を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "サービス提供年月"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス提供年月を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "サービス種類"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サービス種類を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項目名"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "エラー項目名を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "項目値"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "エラー項目値を設定、項目値が識別できない場合は’-‘を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "エラーコード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "審査エラーコードを設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "エラー内容"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "日本語で審査エラー内容を設定",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "“’-‘”は原文の引用符付きの「-」と判断して書き写した。",
+      "表見出しの「受付情報」「エラー情報」は表内の行見出しのため、title に結合して記載した。"
+    ]
+  },
+  "raw_text": null
+}

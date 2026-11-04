@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 85,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 847,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.028648,
+    "cost_usd_batch": 0.014324,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 85,
+    "printed_page": "82",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "警告発生時継続フラグ"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": "警告発生時に処理を継続する場合はTrue。※2\n(初期値はFalse)",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Boolean"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "Proxy認証用ユーザID"
+            ],
+            "type": "混在",
+            "length": 16,
+            "length_raw": "16",
+            "content": "Proxy認証用のユーザID。",
+            "required": "※3",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "Proxy認証用パスワード"
+            ],
+            "type": "混在",
+            "length": 32,
+            "length_raw": "32",
+            "content": "Proxy認証用のパスワード。",
+            "required": "※3",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「(2)メイン処理」で設定する引数のユーザIDに一致するパスワードを設定する。"
+      },
+      {
+        "mark": "※2",
+        "text": "「(2)メイン処理」において警告が発生した際に、処理を中断してエラー情報を返却する場合はFalse、そのまま処理を継続する場合はTrue。"
+      },
+      {
+        "mark": "※3",
+        "text": "Proxy認証が必要な事業所PCで、Proxy認証ダイアログの表示を抑止したい場合は、Proxy認証用ユーザIDとProxy認証用パスワードを設定する。"
+      }
+    ],
+    "uncertain": [
+      "属性列は項番2で「-」、最小桁数・最大桁数も「-」。最大桁数の length は整数化できず null",
+      "前ページから続く表（項番1は見えない）"
+    ]
+  },
+  "raw_text": null
+}

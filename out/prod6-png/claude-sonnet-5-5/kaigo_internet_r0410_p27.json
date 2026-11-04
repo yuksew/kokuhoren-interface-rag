@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 27,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 2191,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.042088,
+    "cost_usd_batch": 0.021044,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 27,
+    "printed_page": "24",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": "<ステータス一覧>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "ステータス（コード：名称） > 基本ステータス",
+          "ステータス（コード：名称） > サブステータス",
+          "ステータス説明"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "ステータス（コード：名称） > 基本ステータス",
+          "type": "",
+          "length": "",
+          "content": "ステータス説明",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "5C01：到達完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムに送信した請求情報等が、国保連合会に送信される前の状態。\nまたは、取消依頼処理が失敗した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0： -"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "5C01：到達完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「到達完了」状態中に、事業所からの取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "1：取消依頼"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "5C01：到達完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼処理が成功した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "9：取消完了"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "5C02：連合会到達"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「到達完了」後、アダプタサーバに請求情報等が格納された状態。\nまたは、取消依頼処理が失敗した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0： -"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "5C02：連合会到達"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「連合会到達」状態中に、事業所からの取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "1：取消依頼"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "5C02：連合会到達"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼処理が成功した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "9：取消完了"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "5C03：受付中"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「連合会到達」後、NW制御サーバに請求情報等が格納された状態。\nまたは、取消依頼処理が失敗した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0： -"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "5C03：受付中"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付中」状態中に、事業所からの取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "1：取消依頼"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "5C03：受付中"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "NW制御サーバに取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "2：取消中"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "5C03：受付中"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼処理が成功した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "9：取消完了"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "5C04:様式エラー有"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付中」後、NW制御サーバにおいて、受信/外部/事前チェックが終了し、事前チェックで様式エラーがあった状態。\nまたは、取消依頼処理が失敗した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0： -"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "5C04:様式エラー有"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「様式エラー有」状態中に、事業所からの取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "1：取消依頼"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "5C04:様式エラー有"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "NW制御サーバに取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "2：取消中"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "5C04:様式エラー有"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼処理が成功した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "9：取消完了"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": []
+  },
+  "raw_text": null
+}

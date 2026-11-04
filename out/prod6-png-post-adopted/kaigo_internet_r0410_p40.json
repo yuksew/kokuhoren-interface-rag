@@ -1,0 +1,266 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 40,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "37",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "新着情報フラグ"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "0：通常、1：新規、2：更新。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "作業依頼フラグ"
+     ],
+     "type": "Boolean",
+     "length": null,
+     "length_raw": "-",
+     "content": "作業依頼を表すお知らせの場合はTrue、それ以外はFalse。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "既読フラグ"
+     ],
+     "type": "Boolean",
+     "length": null,
+     "length_raw": "-",
+     "content": "既読のお知らせの場合はTrue、それ以外はFalse。(※3)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "no_raw": "18",
+     "name_path": [
+      "提示開始日"
+     ],
+     "type": "DateTime",
+     "length": null,
+     "length_raw": "-",
+     "content": "お知らせの提示開始日。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "no_raw": "19",
+     "name_path": [
+      "提示終了日"
+     ],
+     "type": "DateTime",
+     "length": null,
+     "length_raw": "-",
+     "content": "お知らせの提示終了日。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "no_raw": "20",
+     "name_path": [
+      "送信先事業所番号"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "お知らせの送信先事業所番号。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "10"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "no_raw": "21",
+     "name_path": [
+      "添付ファイル情報リスト"
+     ],
+     "type": "List(Class)",
+     "length": null,
+     "length_raw": "-",
+     "content": "添付ファイルが1件以上存在する場合に設定する。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "no_raw": "22",
+     "name_path": [
+      "添付ファイル情報リスト",
+      "ファイル番号"
+     ],
+     "type": "Integer",
+     "length": 1,
+     "length_raw": "1",
+     "content": "お知らせの添付ファイル番号。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "1"
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "no_raw": "23",
+     "name_path": [
+      "添付ファイル情報リスト",
+      "ファイル名"
+     ],
+     "type": "String",
+     "length": 128,
+     "length_raw": "128",
+     "content": "お知らせの添付ファイル名。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "no_raw": "24",
+     "name_path": [
+      "添付ファイル情報リスト",
+      "ファイルサイズ"
+     ],
+     "type": "Integer",
+     "length": 10,
+     "length_raw": "10",
+     "content": "お知らせの添付ファイルサイズ(byte)。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "事業所番号が設定された場合は必須。"
+  },
+  {
+   "mark": "※2",
+   "text": "「表示用更新日時」は、ユーザが画面上等で確認可能な更新日時として使用する。「更新日時」は、実際にお知らせ情報が更新された日時で、各種内部処理で使用する。"
+  },
+  {
+   "mark": "※3",
+   "text": "「既読フラグ」は、「3．4．3．2 お知らせ既読情報更新」において更新される。"
+  }
+ ],
+ "uncertain": [
+  "依頼では『PDF上のページ40』とあるが、添付画像の下部のページ番号は『37』である。添付の1ページ（印字ページ37）の表を書き起こした。",
+  "表は見出し行がなく項番15から始まるため前ページからの続きと判断したが、前ページの内容は添付されていないため確認できない。",
+  "項目名列の左側にある空の結合セル（階層を示す縦線）に対応する見出し文字は無いため、階層は name_path でのみ表した。",
+  "※1・※2・※3 の参照位置（どの行に付くか）は画像上で明示されていないため、各行の note には入れていない。"
+ ]
+}

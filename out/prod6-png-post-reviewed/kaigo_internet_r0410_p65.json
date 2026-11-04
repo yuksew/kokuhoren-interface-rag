@@ -1,0 +1,191 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 65,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "62",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（通信に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1DSM2001E",
+     "name_path": [
+      "S1DSM2001E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}できません。インターネットに接続してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "オフライン状態。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列1:処理名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM2002E",
+     "name_path": [
+      "S1DSM2002E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "コード:{0}ご迷惑をお掛けしています。現在大変混み合っているか、メンテナンス中です。しばらく経ってから、アクセスしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "サーバが混雑しているか、メンテナンス中。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列1:HTML中に以下のいずれかが存在する場合は、該当する文字列\"ISF-IAP(SHINSEI)\"、\"ISF-IWS\"、\"ISF-IWH\"いずれも存在しない場合は、\"ISF\""
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1CLM0015E",
+     "name_path": [
+      "S1CLM0015E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "電子請求受付システムに接続できませんでした。インターネットに接続されているか確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ネットワークに接続されていない。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1CLM0016E",
+     "name_path": [
+      "S1CLM0016E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "通信時にエラーが発生しました。再度、{0}してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "サーバから想定外の値が返却された。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:処理名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1CLM0022E",
+     "name_path": [
+      "S1CLM0022E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "プロキシ設定を取得できませんでした。プロキシが正しく設定されているか確認してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "プロキシ設定が取得できない。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "内容列の見出しは1つだけで、番号列と文言列の二列に分かれている。番号列には見出しがないため、番号は no に入れ、columns には見出しの文字だけを使った。",
+  "S1DSM2002E の置換文字列 1 の「ISF-IWB」「ISF-IWH」は、フォントの都合で B と H の判読に自信がない。",
+  "S1CLM0016E の 2 行目「返却された」は、字が鮮明でなく「返却」と読んだ。",
+  "メッセージIDは縦に結合されているため、各行の name_path に入れた。",
+  "ページ番号は印字の「- 62 -」を読み取った。PDF上のページ番号は65である。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（5 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 36,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4638,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003328,
+    "cost_usd_batch": 0.001664,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 36,
+    "printed_page": "33",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "型",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "受領確認状態名"
+            ],
+            "type": "String",
+            "length": 3,
+            "length_raw": "3",
+            "content": "ユーザが通知文書を取得済みか表す状態名。\n0：「未受領」を設定\n0 以外：設定なし",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "職員発行日時"
+            ],
+            "type": "DateTime",
+            "length": null,
+            "length_raw": "-",
+            "content": "職員が通知文書を発行した日時。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 13,
+            "no_raw": "13",
+            "name_path": [
+              "受領確認日時"
+            ],
+            "type": "DateTime",
+            "length": null,
+            "length_raw": "-",
+            "content": "事業所 / 代理人が通知文書を取得した日時。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "<引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "通知文書の取得対象となる事業所番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "請求先都道府県番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "事業所の請求先都道府県番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "通知文書番号リスト"
+            ],
+            "type": "数字",
+            "length": 20,
+            "length_raw": "20",
+            "content": "通知文書番号のリスト。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "List(String)"
+              },
+              {
+                "column": "最小桁数",
+                "value": "20"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "ユーザID"
+            ],
+            "type": "英数字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "電子請求受付システムにログインするユーザID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "ユーザID編集不可フラグ"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": "ログインダイアログのユーザID 欄を編集不可とする場合はTrue。（初期値はFalse）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Boolean"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "「3．4．2．2 通知文書ファイルダウンロード」において、通知文書ファイルを取得した際に、「1：受領済み」となる。"
+      }
+    ],
+    "uncertain": [
+      "依頼はPDF上のページ36だが、添付画像の印字ページ番号は33であり、同一ページか確認できない。添付画像の内容を書き起こした。",
+      "表1の見出し「No」の記号表記（№に近い字形）を「No」として書き起こした。",
+      "表1の項番11の内容にある引用符（「未受領」）の字形が判然とせず、「」で書き起こした。",
+      "表1は項目名の左側2列に縦結合の見出しが無く空欄のため、name_pathは項目名のみとした。前ページからの続きかは見出しの有無から推定した。",
+      "表1の『最小桁数』『最大桁数』は1つのlengthに入らないため、最大桁数をlengthに、最小桁数をcellsに入れた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 33,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3524,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002771,
+    "cost_usd_batch": 0.001385,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 33,
+    "printed_page": "30",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "型",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "署名送信取消結果"
+            ],
+            "type": "Stream",
+            "length": null,
+            "length_raw": "-",
+            "content": "取消到達番号に対する取消結果を ZIP圧縮(※2)したデータ。\nNW制御サーバまで請求情報等が連携された後に、取消が依頼された場合のみ設定される。\n・interface.xml(※3)(※4)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "署名送信取消結果ファイル名"
+            ],
+            "type": "String",
+            "length": 128,
+            "length_raw": "128",
+            "content": "取消到達番号に対する取消結果ファイル名。\nNW制御サーバまで請求情報等が連携された後に、取消が依頼された場合のみ設定される。(※3)",
+            "required": null,
+            "required_by": [],
+            "note": "",
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "取消結果が確定している場合のサブステータスは、以下の通り。\n・9：取消完了、または0：取消を行っていない状態"
+      },
+      {
+        "mark": "※2",
+        "text": "ZIPファイルの命名規則は、以下の通りである。\n到達番号 + _ + 取消到達番号.zip"
+      },
+      {
+        "mark": "※3",
+        "text": "NW制御サーバまで請求情報等が連携された後の基本ステータスは、以下の通り。\n・5C03：受付中\n・5C04：様式エラー有\n・5C05：受付完了"
+      },
+      {
+        "mark": "※4",
+        "text": "署名送信取消結果のinterface.xmlファイルの詳細は、「付録．b ファイル仕様」を参照。"
+      }
+    ],
+    "uncertain": [
+      "項目名の見出しは3列にまたがっており、その下の内容が空の狭い2列（階層を示す位置と思われる）には見出しがないため、列名を付けず cells にも入れなかった。",
+      "項目名の見出しが3列にまたがる構造を、columns では単一の「項目名」として扱った。",
+      "表の先頭に見出し行があるため前ページからの続きかどうかは判断しきれず、continued_from_prev_page を true にした（後処理で再判定される想定）。",
+      "ユーザーは PDF 上のページ33とあるが、ページ下部の印字は「- 30 -」だったため printed_page は 30 とした。",
+      "最小桁数・最大桁数の列は1列しか length に割り当てられないため、最大桁数を length に、最小桁数を cells に入れた。",
+      "「interface.xml」「NW」「ZIP」などの英字や括弧の全角・半角は画像から確定できず、原文の表記に合わせて書いた。"
+    ]
+  },
+  "raw_text": null
+}

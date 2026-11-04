@@ -1,0 +1,79 @@
+# 本番6: 介護 伝送システム仕様書 インターネット編（伝送請求 API ライブラリ。請求ソフトを作る業者向け）。
+#   pagemeta の判定では表なしで、本文だけ入っていた。表のある頁（pymupdf の find_tables で表が見つかる頁）を書き起こす:
+#   機能一覧・引数チェック・セッション管理・インタフェースごとの引数と戻り値・ステータス一覧、
+#   付録のエラーメッセージ一覧・ファイル仕様・IF 種別コード・拡張ファイル・エラーコード一覧・サイレントモード
+# 採用ルール: 本番1〜5 と同じ（src/adopt.py）。確認キューは原本の画像と照らして判定する
+run: prod6-png
+models: [claude-haiku-5-5, claude-sonnet-5-5]
+input: png
+dpi: 150
+effort: medium
+max_tokens: 64000
+pages:
+  - kaigo_internet_r0410:6
+  - kaigo_internet_r0410:10
+  - kaigo_internet_r0410:13
+  - kaigo_internet_r0410:14
+  - kaigo_internet_r0410:15
+  - kaigo_internet_r0410:16
+  - kaigo_internet_r0410:17
+  - kaigo_internet_r0410:18
+  - kaigo_internet_r0410:19
+  - kaigo_internet_r0410:20
+  - kaigo_internet_r0410:21
+  - kaigo_internet_r0410:24
+  - kaigo_internet_r0410:25
+  - kaigo_internet_r0410:26
+  - kaigo_internet_r0410:27
+  - kaigo_internet_r0410:28
+  - kaigo_internet_r0410:30
+  - kaigo_internet_r0410:32
+  - kaigo_internet_r0410:33
+  - kaigo_internet_r0410:34
+  - kaigo_internet_r0410:35
+  - kaigo_internet_r0410:36
+  - kaigo_internet_r0410:37
+  - kaigo_internet_r0410:38
+  - kaigo_internet_r0410:39
+  - kaigo_internet_r0410:40
+  - kaigo_internet_r0410:41
+  - kaigo_internet_r0410:42
+  - kaigo_internet_r0410:43
+  - kaigo_internet_r0410:44
+  - kaigo_internet_r0410:45
+  - kaigo_internet_r0410:46
+  - kaigo_internet_r0410:49
+  - kaigo_internet_r0410:50
+  - kaigo_internet_r0410:51
+  - kaigo_internet_r0410:52
+  - kaigo_internet_r0410:53
+  - kaigo_internet_r0410:54
+  - kaigo_internet_r0410:55
+  - kaigo_internet_r0410:56
+  - kaigo_internet_r0410:57
+  - kaigo_internet_r0410:58
+  - kaigo_internet_r0410:59
+  - kaigo_internet_r0410:60
+  - kaigo_internet_r0410:61
+  - kaigo_internet_r0410:62
+  - kaigo_internet_r0410:63
+  - kaigo_internet_r0410:64
+  - kaigo_internet_r0410:65
+  - kaigo_internet_r0410:66
+  - kaigo_internet_r0410:67
+  - kaigo_internet_r0410:68
+  - kaigo_internet_r0410:69
+  - kaigo_internet_r0410:70
+  - kaigo_internet_r0410:71
+  - kaigo_internet_r0410:72
+  - kaigo_internet_r0410:73
+  - kaigo_internet_r0410:74
+  - kaigo_internet_r0410:76
+  - kaigo_internet_r0410:77
+  - kaigo_internet_r0410:78
+  - kaigo_internet_r0410:79
+  - kaigo_internet_r0410:81
+  - kaigo_internet_r0410:83
+  - kaigo_internet_r0410:84
+  - kaigo_internet_r0410:85
+  - kaigo_internet_r0410:86

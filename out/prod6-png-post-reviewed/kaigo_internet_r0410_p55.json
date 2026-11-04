@@ -1,0 +1,133 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 55,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "52",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（到達エラーに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM4C06E",
+     "name_path": [
+      "S1MNM4C06E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー:ログインしているユーザIDでは、請求情報に入力している事業所の請求は行えません。ユーザIDと請求情報に入力している事業所番号を確認の上、正しいID、もしくは、正しい事業所番号で請求してください。エラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "代理人が委任されていない事業所の電子請求を行った場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C07E",
+     "name_path": [
+      "S1MNM4C07E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー:請求情報に入力されている事業所と請求年月で、既に別のユーザIDから請求を受付ています。事業所と請求年月を確認の上、請求先の国保連合会に確認を行ってください。エラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "同一事業所、同一請求年月に対して、別ユーザIDにより既に電子請求されている場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM4C08E",
+     "name_path": [
+      "S1MNM4C08E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー:サービス提供年月の時点で無効な事業所番号が請求情報に入力されています。 {0}事業所番号を見直し、正しい事業所番号で再度請求を行ってください。エラー内容を訂正し、再度送信をしてください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "請求書に入力されているサービス提供年月が、事業所の有効期間外の場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:事業所番号"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼文は『次のページ』の表の書き起こしを求めているが、添付は指定された PDF 上のページ55ではなく、印字ページ番号『52』の1ページのみ。添付のページ（メッセージID一覧）をそのまま書き起こした。",
+  "『内容』列の下に項番（1〜4）の列と説明文の列があるが、両列とも見出しが印字されていないため、columns は『メッセージID』『種類』『内容』の3列のみとし、項番は no_raw に入れた。",
+  "メッセージID・種類は各項番の行で縦結合されているため、各行の name_path と type に繰り返し入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（3 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

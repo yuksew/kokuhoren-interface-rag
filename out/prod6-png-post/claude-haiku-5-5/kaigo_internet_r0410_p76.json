@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 76,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 2714,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002366,
+    "cost_usd_batch": 0.001183,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 76,
+    "printed_page": "73",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "付録．f　伝送システムのエラーコード一覧",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "エラーコード（6桁）",
+          "エラー内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "エラーコード（6桁）",
+          "type": "",
+          "length": "",
+          "content": "エラー内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "N10212"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ取り消し電文で到達番号の事業者と取消対象到達番号の事業者は同じでなければなりません。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0103"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ送信電文の拡張子を除く添付ファイル名の桁数が規定桁（半角8桁）を超えています。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0105"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ送信電文の添付ファイルサイズが0バイトです。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0201"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ取り消し電文に添付ファイルが設定されています。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0107"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ送信電文の時、既に同じ添付ファイル名が存在します。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0108"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "添付ファイル名に使用できない文字が存在します。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "N40101"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "送付元事業所が台帳データベースに登録されていません。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB1106"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "Interface.xml ファイルの<添付ファイル名>タグ数と添付ファイル数が違っています。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "N40103"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ取り消し電文の取消対象到達番号に該当するデータ送信情報がデータベースに登録されていません。（削除する該当のデータ送信電文がない）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "NB0109"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "データ送信電文の添付ファイルの拡張子が”CSV”ではありません。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "PDF上のページ番号は76と指定されているが、画像下部の印字ページ番号は「73」であるため printed_page は 73 とした。",
+      "エラーコードの英数字（N10212 の「1」、NB0103 等の「B」「0」「8」など）は画像の字形が判然とせず、読み違いの可能性がある。",
+      "Interface.xml の表記は画像上 xml の字形が不鮮明なため、そのまま書き写した。",
+      "表の見出しは『エラーコード（6桁）』が2行に分かれて印字されているが、1つの列名として連結した。"
+    ]
+  },
+  "raw_text": null
+}

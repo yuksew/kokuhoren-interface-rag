@@ -1,0 +1,245 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 69,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "66",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "署名送信点検結果",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "属性",
+    "桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "<インタフェース情報>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "<処理日時></処理日時>"
+     ],
+     "type": "数字",
+     "length": 14,
+     "length_raw": "14",
+     "content": "形式：yyyyMMddHHmmss",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "<IF種別コード></IF種別コード>"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "22: 受付点検結果(N系エラー)、\n23: 受付点検結果(G系エラー)、\n24: 受付点検結果(様式エラー)、\n25: 受付点検結果(正常) (※1)",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "<電文種別></電文種別>"
+     ],
+     "type": "固定文字列",
+     "length": 15,
+     "length_raw": "15",
+     "content": "\"Transmit Regist\"",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "<事業所番号></事業所番号>"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "受付点検が行われた事業所番号",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "<到達番号></到達番号>"
+     ],
+     "type": "数字",
+     "length": 19,
+     "length_raw": "19",
+     "content": "受付点検が行われた到達番号",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "<受付点検>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "<点検結果></点検結果>"
+     ],
+     "type": "文字列",
+     "length": null,
+     "length_raw": "可変",
+     "content": "到達番号，点検結果(データファイル，データファイル名，受付結果)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "<エラーコード></エラーコード>"
+     ],
+     "type": "文字列",
+     "length": 6,
+     "length_raw": "6",
+     "content": "エラーコード(※2)\n(主に伝送システムでのチェックエラー情報)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "<外部エラーコード></外部エラーコード>"
+     ],
+     "type": "文字列",
+     "length": null,
+     "length_raw": "可変",
+     "content": "データファイル名，エラーコード\n(主に外部接続システムでのチェックエラー情報)(※3)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "<様式エラー></様式エラー>"
+     ],
+     "type": "文字列",
+     "length": null,
+     "length_raw": "可変",
+     "content": "データファイル名\n(主に審査支払等システムの様式チェックエラー情報)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "</受付点検>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "<添付ファイル>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": true,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "表の末尾が<添付ファイル>で閉じておらず、次のページへ続く可能性がある（continues_to_next_pageはその判断によるもの）。",
+  "本ページ内に※1・※2・※3の注記本文は見当たらないため、footnotesは空にした。",
+  "№列の見出し記号が「№」か「No」か画像から確定できず、「№」と書き写した。",
+  "ページ番号は画像上「- 66 -」だが、依頼上のPDFページは69のため、printed_pageは画像の表記に従った。"
+ ]
+}

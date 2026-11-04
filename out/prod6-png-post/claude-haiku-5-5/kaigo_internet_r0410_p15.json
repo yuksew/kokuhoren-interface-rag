@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 15,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4299,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003158,
+    "cost_usd_batch": 0.001579,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 15,
+    "printed_page": "12",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "<請求ソフトウェアから渡される引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "名称",
+          "内容説明"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "名称",
+          "type": "",
+          "length": "",
+          "content": "内容説明",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "ユーザID"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ログインを行うユーザIDを設定する。(※1)",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "ユーザID編集不可フラグ"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザIDを編集不可とする場合 True を設定する。\nユーザIDに値が設定されていない場合は、フラグを無視して常に編集可能とする。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "<引数とセッション情報の有無によるログインダイアログの制御>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "ユーザID",
+          "セッション情報",
+          "ユーザID編集不可フラグ",
+          "ログインダイアログ動作（※2）"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "",
+          "type": "",
+          "length": "",
+          "content": "ログインダイアログ動作（※2）",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 空白 / 編集可\nパスワード: 空白 / 編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ユーザID",
+                "value": "無し"
+              },
+              {
+                "column": "セッション情報",
+                "value": "（確認不可能）"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "（無視）"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/ 編集不可\nパスワード: 空白 / 編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ユーザID",
+                "value": "有り"
+              },
+              {
+                "column": "セッション情報",
+                "value": "無し"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "True"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/ 編集可\nパスワード: 空白 / 編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ユーザID",
+                "value": "有り"
+              },
+              {
+                "column": "セッション情報",
+                "value": "無し"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "False"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ログインダイアログは表示せずに、引数のユーザ ID とセッション情報に保存されたパスワードで自動ログインする。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ユーザID",
+                "value": "有り"
+              },
+              {
+                "column": "セッション情報",
+                "value": "有り"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "True"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ログインダイアログは表示せずに、引数のユーザ ID とセッション情報に保存されたパスワードで自動ログインする。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ユーザID",
+                "value": "有り"
+              },
+              {
+                "column": "セッション情報",
+                "value": "有り"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "False"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "ログインIDの規則\n事業所ユーザ\n\"KJ\" + 請求先都道府県コード(2桁) + 事業所番号(10桁)\n代理人ユーザ\n\"HD\" + 請求先都道府県コード(2桁) + 連番(8桁)"
+      },
+      {
+        "mark": "※2",
+        "text": "セッション情報が保存されていない場合、パスワードはセキュリティ上の制限として事業所に都度入力していただくこととなる。"
+      }
+    ],
+    "uncertain": [
+      "依頼では PDF 上のページ 15 とあるが、添付画像の下部ページ番号は「- 12 -」であり、printed_page は画像の表記に従った。",
+      "「KJ」「HD」の引用符内の文字は字形が不鮮明で、原文どおりか確信がない。",
+      "引数とセッション情報の表で、「ユーザID」「セッション情報」の有り・無しの縦結合セルは、各行に同じ値を入れて展開した。",
+      "前後ページは添付されていないため、ページをまたぐ表の有無は判断できず、continued フラグはいずれも false とした。"
+    ]
+  },
+  "raw_text": null
+}

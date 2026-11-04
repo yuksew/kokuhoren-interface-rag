@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 34,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4350,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003184,
+    "cost_usd_batch": 0.001592,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 34,
+    "printed_page": "31",
+    "tables": [
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "処理",
+          "ルート",
+          "処理内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "処理",
+          "type": "",
+          "length": "",
+          "content": "処理内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "通知文書一覧取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通知文書一覧の取得依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "通知文書一覧取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通知文書の一覧情報を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "通知文書ファイルダウンロード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通知文書(増減単位数返戻通知/支払通知等)ファイルの取得依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "通知文書ファイルダウンロード"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通知文書ファイルを返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "<引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "通知文書一覧の取得対象となる事業所番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "請求先都道府県番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "事業所の請求先都道府県番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "2"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付は印字ページ31の画像であり、依頼文のPDF上のページ34とは一致しないため、添付画像に見える表のみを書き起こした。ページ34の表は含まれていない。",
+      "インタフェース一覧の「ルート」の矢印（→）は図ではなく文字として読めたため、印字された文字をそのまま書き写した。",
+      "引数表の「最小桁数」「最大桁数」は length 列が1つしか置けないため、length を「最大桁数」とし、「最小桁数」は cells に入れた。「型」は属性ではないため cells に入れ、「属性」を type とした。",
+      "インタフェース一覧の表見出し（title）は本文の段落の直前にあり、表専用の見出しがないため null とした。"
+    ]
+  },
+  "raw_text": null
+}

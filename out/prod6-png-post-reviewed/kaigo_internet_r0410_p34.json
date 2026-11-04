@@ -1,0 +1,217 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 34,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "31",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "3.4.2 通知文書関連",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "処理",
+    "ルート",
+    "処理内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "処理",
+    "type": "",
+    "length": "",
+    "content": "処理内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "通知文書一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "通知文書一覧の取得依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "通知文書一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "通知文書の一覧情報を返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "通知文書ファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "通知文書(増減単位数返戻通知/支払通知等)ファイルの取得依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "通知文書ファイルダウンロード"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "通知文書ファイルを返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "api_params",
+   "title": "3.4.2.1 通知文書一覧取得 <引数>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "属性",
+    "最小桁数",
+    "最大桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "事業所番号"
+     ],
+     "type": "英数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "通知文書一覧の取得対象となる事業所番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "10"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "請求先都道府県番号"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "事業所の請求先都道府県番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "型",
+       "value": "String"
+      },
+      {
+       "column": "最小桁数",
+       "value": "2"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付は印字ページ31の画像であり、依頼文のPDF上のページ34とは一致しないため、添付画像に見える表のみを書き起こした。ページ34の表は含まれていない。",
+  "インタフェース一覧の「ルート」の矢印（→）は図ではなく文字として読めたため、印字された文字をそのまま書き写した。",
+  "引数表の「最小桁数」「最大桁数」は length 列が1つしか置けないため、length を「最大桁数」とし、「最小桁数」は cells に入れた。「型」は属性ではないため cells に入れ、「属性」を type とした。",
+  "インタフェース一覧の表見出し（title）は本文の段落の直前にあり、表専用の見出しがないため null とした。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

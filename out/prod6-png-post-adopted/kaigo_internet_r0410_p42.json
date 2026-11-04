@@ -1,0 +1,290 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 42,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "39",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "<引数>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "属性",
+    "最初桁数",
+    "最大桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "お知らせ番号"
+     ],
+     "type": "String",
+     "length": 16,
+     "length_raw": "16",
+     "content": "取得する添付ファイルのお知らせ番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "属性",
+       "value": "英数字"
+      },
+      {
+       "column": "最初桁数",
+       "value": "16"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "添付ファイル番号"
+     ],
+     "type": "Integer",
+     "length": 1,
+     "length_raw": "1",
+     "content": "取得する添付ファイルの番号。",
+     "required": "○",
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "属性",
+       "value": "-"
+      },
+      {
+       "column": "最初桁数",
+       "value": "1"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "ユーザID"
+     ],
+     "type": "String",
+     "length": 14,
+     "length_raw": "14",
+     "content": "電子請求受付システムにログインするユーザID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "属性",
+       "value": "英数字"
+      },
+      {
+       "column": "最初桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "ユーザID編集不可フラグ"
+     ],
+     "type": "Boolean",
+     "length": null,
+     "length_raw": "-",
+     "content": "ログインダイアログのユーザID欄を編集不可とする場合はTrue。（初期値はFalse）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "属性",
+       "value": "-"
+      },
+      {
+       "column": "最初桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "<戻り値>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "返却情報"
+     ],
+     "type": "Class",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "返却情報",
+      "処理結果"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "1：正常、2：エラー、3：キャンセル。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "返却情報",
+      "メッセージID"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "処理結果がエラーの場合、メッセージID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "返却情報",
+      "メッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "処理結果がエラーの場合、メッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "返却情報",
+      "添付ファイル"
+     ],
+     "type": "Stream",
+     "length": null,
+     "length_raw": "-",
+     "content": "処理結果が正常の場合、お知らせ添付ファイルのデータ。(※1)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "拡張子が「.kcps」の添付ファイルデータは暗号化されているため、「3．4．5．1　復号」において復号を行う。"
+  }
+ ],
+ "uncertain": [
+  "依頼文のPDF上のページは42ですが、添付ページの下部には「- 39 -」と印字されているため、printed_pageは39としました。",
+  "引数表・戻り値表の「型」列（String、Integerなど）をtype、「属性」列（英数字など）をcellsに入れました。型と属性の対応の解釈が原本と異なる可能性があります。",
+  "「№」は原文の記号をそのまま書き写しています。",
+  "戻り値表の「返却情報」は項番1の行にあり、項番2〜5はその下に字下げされているため、name_pathで親子関係を表しました。"
+ ]
+}

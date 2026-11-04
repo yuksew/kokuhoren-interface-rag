@@ -1,0 +1,328 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 26,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "23",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "<戻り値>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "返却情報"
+     ],
+     "type": "Class",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "返却情報",
+      "処理結果"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "1：正常、2：エラー、3：キャンセル。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "返却情報",
+      "メッセージＩＤ"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "処理結果がエラーの場合、メッセージＩＤ。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "返却情報",
+      "メッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "処理結果がエラーの場合、メッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト"
+     ],
+     "type": "List (Class)",
+     "length": null,
+     "length_raw": "-",
+     "content": "処理結果が正常の場合に設定する。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "到達番号"
+     ],
+     "type": "String",
+     "length": 19,
+     "length_raw": "19",
+     "content": "ステータスを取得した到達番号。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "19"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "処理対象年月"
+     ],
+     "type": "String",
+     "length": 6,
+     "length_raw": "6",
+     "content": "到達番号に対する処理対象年月。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "6"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "基本ステータスコード"
+     ],
+     "type": "String",
+     "length": 4,
+     "length_raw": "4",
+     "content": "到達番号に対する基本ステータスコード。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "4"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "基本ステータス名"
+     ],
+     "type": "String",
+     "length": 8,
+     "length_raw": "8",
+     "content": "到達番号に対する基本ステータス名。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "サブステータスコード"
+     ],
+     "type": "String",
+     "length": 1,
+     "length_raw": "1",
+     "content": "到達番号に対するサブステータスコード。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "1"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "サブステータス名"
+     ],
+     "type": "String",
+     "length": 6,
+     "length_raw": "6",
+     "content": "到達番号に対するサブステータス名。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "到達エラーメッセージＩＤ"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "基本ステータスコードが「5C10：到達エラー」の場合、到達エラーの原因となったメッセージＩＤ。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "返却情報",
+      "請求情報リスト",
+      "到達エラーメッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "基本ステータスコードが「5C10：到達エラー」の場合、到達エラーの原因となったメッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "最小桁数と最大桁数の両方が数値を持つ行が多いため、length（最大桁数）以外の最小桁数の値は cells に入れた。",
+  "No列の見出し「№」は原本の字形のまま書き写した。"
+ ]
+}

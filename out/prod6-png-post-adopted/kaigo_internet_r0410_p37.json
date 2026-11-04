@@ -1,0 +1,262 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 37,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "34",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "<戻り値>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "返却情報"
+     ],
+     "type": "Class",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "返却情報",
+      "処理結果"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "1：正常、2：エラー、3：キャンセル。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "返却情報",
+      "メッセージID"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "処理結果がエラーの場合、メッセージID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "返却情報",
+      "メッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "処理結果がエラーの場合、メッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "返却情報",
+      "通知文書ファイル"
+     ],
+     "type": "Stream",
+     "length": null,
+     "length_raw": "-",
+     "content": "処理結果が正常の場合、通知文書をZIP圧縮（※1）し、暗号化したデータ。\n・interface.xml\n・交換情報\n（※2）（※3）（※4）",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "返却情報",
+      "通知文書ファイル名"
+     ],
+     "type": "String",
+     "length": 128,
+     "length_raw": "128",
+     "content": "処理結果が正常の場合、通知文書を暗号化したファイル名。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "other",
+   "title": null,
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "処理",
+    "ルート",
+    "処理内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "処理",
+    "type": "",
+    "length": "",
+    "content": "処理内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "お知らせ一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "お知らせ情報（連絡電文含む）の一覧\n情報の取得依頼",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "請求ソフトウェア\n→\n伝送請求 API ライブラリ"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "お知らせ一覧取得"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "お知らせ一覧情報を返却",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "ルート",
+       "value": "伝送請求 API ライブラリ\n→\n請求ソフトウェア"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [
+  {
+   "mark": "※1",
+   "text": "ZIPファイルの命名規則は、以下の通りである。\n通知文書番号.zip"
+  },
+  {
+   "mark": "※2",
+   "text": "通知文書ファイルのinterface.xmlファイルの詳細は、「付録．b ファイル仕様」を参照。"
+  },
+  {
+   "mark": "※3",
+   "text": "交換情報の詳細は、「付録．e ファイル階層図」を参照。"
+  },
+  {
+   "mark": "※4",
+   "text": "暗号化されているデータは、「3．4．5．1 復号」において復号を行う。"
+  }
+ ],
+ "uncertain": [
+  "戻り値の表は最小桁数と最大桁数の2列があるため、column_map の length には最大桁数を割り当て、最小桁数は cells に入れた。",
+  "お知らせ関連の表の「処理」列は2行（ルートの異なる2項目）にまたがって結合されているため、name_path に入れて各項目に同じ値を付けた。",
+  "お知らせ関連の表には表題がないため title は null とした。"
+ ]
+}

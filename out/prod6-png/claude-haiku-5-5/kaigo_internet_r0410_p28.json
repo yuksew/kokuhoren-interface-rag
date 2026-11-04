@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 28,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4200,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003109,
+    "cost_usd_batch": 0.001554,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 28,
+    "printed_page": "25",
+    "tables": [
+      {
+        "table_kind": "code_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "ステータス（コード：名称） > 基本ステータス",
+          "ステータス（コード：名称） > サブステータス",
+          "ステータス説明"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "ステータス（コード：名称） > 基本ステータス",
+          "type": "",
+          "length": "",
+          "content": "ステータス説明",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "5C05：受付完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付中」後、NW制御サーバにおいて、受信/外部/事前チェックが正常に終了した状態。または、取消依頼処理が失敗した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "5C05：受付完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付完了」状態中に、事業所からの取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "1：取消依頼"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "5C05：受付完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "NW制御サーバに取消依頼を行った状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "2：取消中"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "5C05：受付完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼処理が成功した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "9：取消完了"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "5C06：送信完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「様式エラー有」または「受付完了」後、審査支払等システムに請求情報等が格納された状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "5C07:返戻通知処理完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "審査支払等システムにおいて、返戻通知処理が完了となった状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "5C08:支払通知処理完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "審査支払等システムにおいて、支払通知処理が完了となった状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "5C09：完了"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "返戻・支払通知等をすべて受信し、処理が完了した状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "no_raw": "10",
+            "name_path": [
+              "5C10：到達エラー"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムに送信した請求情報等に不備があり、正常に受け付けられなかった状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 11,
+            "no_raw": "11",
+            "name_path": [
+              "5C11：伝送エラー"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付中」後、NW制御サーバにおいて、受信チェックが終了し、受信チェックでエラーがあった状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          },
+          {
+            "no": 12,
+            "no_raw": "12",
+            "name_path": [
+              "5C12：外部エラー"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "「受付中」後、NW制御サーバにおいて、受信/外部チェックが終了し、外部チェックでエラーがあった状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ステータス（コード：名称） > サブステータス",
+                "value": "0：-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": true,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "前ページからの続きと判断した（先頭の項番は5で、表見出しがない）。",
+      "項番7・8の「5C07:」「5C08:」のコロンが半角に見えるため、原文どおり半角で書き写した。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,110 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 59,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "56",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（到達エラーに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM5C38E",
+     "name_path": [
+      "S1MNM5C38E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "介護電子請求受付システムで利用できる証明書ではありません。有効な証明書を使って請求を行ってください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "介護・障害共通証明書または介護保険証明書以外の証明書を使用した請求が行われた場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C73E",
+     "name_path": [
+      "S1MNM5C73E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "到達エラー:お使いの統合インストーラが最新のバージョンではないため請求ができません。以下のお知らせ欄を参照し、統合インストーラのバージョンアップを行い、再度請求情報を送信してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "Ver1.0.1以下の統合インストーラと、2016年7月19日以降に発行された証明書を使用した請求が行われた場合。"
+      },
+      {
+       "column": "備考",
+       "value": "到達確認画面のお知らせ欄より統合インストーラバージョンアップ手順書が取得可能。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "前ページからの続きではなく、ページ上部から新たに始まる表と判断した。",
+  "「内容」列の下に項番（1〜4）と本文の2段があるが、項番の列には見出しが印字されていないため column_map の no には割り当てず、項番は no と no_raw にのみ入れた。",
+  "「Ver1.0.1」「2016年7月19日」の数字・記号間の空白は画像上の字間が判別しにくく、詰めて書き起こした。",
+  "「S1MM5C38E」「S1MM5C73E」の英数字は画像の解像度から読み取った。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（2 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

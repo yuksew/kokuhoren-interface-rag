@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 70,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-sonnet-5-5",
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 1655,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.036728,
+    "cost_usd_batch": 0.018364,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 70,
+    "printed_page": "67",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "属性",
+          "桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "属性",
+          "length": "桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 14,
+            "no_raw": "14",
+            "name_path": [
+              "<ファイル名></ファイル名>"
+            ],
+            "type": "文字列",
+            "length": 10,
+            "length_raw": "10",
+            "content": "エラー情報ファイル名：CsvErr.txt（※4）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 15,
+            "no_raw": "15",
+            "name_path": [
+              "<ファイル名></ファイル名>"
+            ],
+            "type": "文字列",
+            "length": 16,
+            "length_raw": "16",
+            "content": "拡張情報ファイル名：Transmitinfo.txt（※4)(※5)（※6）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 16,
+            "no_raw": "16",
+            "name_path": [
+              "</添付ファイル>"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 17,
+            "no_raw": "17",
+            "name_path": [
+              "</インタフェース情報>"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": true,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "署名送信取消結果",
+        "record": {
+          "exchange_id": "",
+          "name": "署名送信取消結果",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "属性",
+          "桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "属性",
+          "length": "桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "<インタフェース情報>"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "<処理日時></処理日時>"
+            ],
+            "type": "数字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "形式：yyyyMMddHHmmss",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "<IF種別コード></IF種別コード>"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "32:取消結果(ｴﾗｰ)、\n33:取消結果(正常)（※1）",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "<電文種別></電文種別>"
+            ],
+            "type": "固定文字列",
+            "length": 15,
+            "length_raw": "15",
+            "content": "\"TransmitDeleteRegist\"",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "<事業所番号></事業所番号>"
+            ],
+            "type": "数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "取消結果対象の事業所番号",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "<到達番号></到達番号>"
+            ],
+            "type": "数字",
+            "length": 19,
+            "length_raw": "19",
+            "content": "取消結果対象の到達番号",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "<取消対象到達番号></取消対象到達番号>"
+            ],
+            "type": "数字",
+            "length": 19,
+            "length_raw": "19",
+            "content": "取消対象の到達番号",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "<エラーコード></エラーコード>"
+            ],
+            "type": "文字列",
+            "length": 6,
+            "length_raw": "6",
+            "content": "エラーコード（※2）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 9,
+            "no_raw": "9",
+            "name_path": [
+              "</インタフェース情報>"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "表1の先頭は前ページからの続き",
+      "項目名のインデント（先頭の空白）は省略した",
+      "項番4の内容の引用符内はフォント崩れのため推定（TransmitDeleteRegist）",
+      "項番2の内容 yyyyMMddHHmmss はフォント崩れで重なって見える"
+    ]
+  },
+  "raw_text": null
+}

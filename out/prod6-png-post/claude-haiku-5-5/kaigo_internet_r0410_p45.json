@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 45,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4760,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003389,
+    "cost_usd_batch": 0.001694,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 45,
+    "printed_page": "42",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "<戻り値>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "型",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "返却情報"
+            ],
+            "type": "Class",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "返却情報",
+              "処理結果"
+            ],
+            "type": "Enum",
+            "length": null,
+            "length_raw": "-",
+            "content": "1：正常、2：エラー。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "返却情報",
+              "メッセージID"
+            ],
+            "type": "String",
+            "length": 10,
+            "length_raw": "10",
+            "content": "処理結果がエラーの場合、メッセージID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "返却情報",
+              "メッセージ"
+            ],
+            "type": "String",
+            "length": 512,
+            "length_raw": "512",
+            "content": "処理結果がエラーの場合、メッセージ。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "返却情報",
+              "マニュアル情報"
+            ],
+            "type": "Class",
+            "length": null,
+            "length_raw": "-",
+            "content": "処理結果が正常の場合に設定する。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "返却情報",
+              "マニュアル情報",
+              "ファイル名"
+            ],
+            "type": "String",
+            "length": 100,
+            "length_raw": "100",
+            "content": "マニュアルファイルのファイル名。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "no_raw": "7",
+            "name_path": [
+              "返却情報",
+              "マニュアル情報",
+              "ファイル"
+            ],
+            "type": "Stream",
+            "length": null,
+            "length_raw": "-",
+            "content": "マニュアルファイルのデータ。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "no_raw": "8",
+            "name_path": [
+              "返却情報",
+              "マニュアル情報",
+              "更新日時"
+            ],
+            "type": "DateTime",
+            "length": null,
+            "length_raw": "-",
+            "content": "マニュアルファイルの更新日時。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "interface_list",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "処理",
+          "ルート",
+          "処理内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "処理",
+          "type": "",
+          "length": "",
+          "content": "処理内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "復号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "暗号化ファイルを指定のディレクトリへ復号依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n[図]\n伝送請求 API ライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "復号"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "処理結果を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求 API ライブラリ\n[図]\n請求ソフトウェア"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ下部の印字は「- 42 -」だが、依頼はPDF上のページ45とされている。printed_page は印字どおり42とした。",
+      "インタフェース一覧の「№」「処理」は2行にまたがる縦結合のため、同じ項番1を2行（ルートと処理内容の組ごと）に分けて書き起こした。",
+      "「ルート」欄の矢印は図として扱い [図] と書いた。矢印の向きは画像から確実に読み取れないため、2行目のルートは「伝送請求 API ライブラリ → 請求ソフトウェア」の順と解釈したが、矢印の向きに不確かさがある。",
+      "戻り値表の「№」は画像上の記号をそのまま「№」と書いた。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,477 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 65,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4864,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003441,
+    "cost_usd_batch": 0.00172,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 65,
+    "printed_page": "62",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "<通信に関するエラーメッセージ>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM2001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "{0}できません。\nインターネットに接続してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM2001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "オフライン状態。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM2001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列1：処理名",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM2001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM2002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "コード：{0}\nご迷惑をお掛けしています。\n現在大変混み合っているか、メンテナンス中です。\nしばらく経ってから、アクセスしてください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM2002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サーバが混雑しているか、メンテナンス中。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM2002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列1：\nHTML 中に以下のいずれかが存在する場合は、該当する文字列\n\"ISF-IAP(SHINSEI)\"、\"ISF-IWB\"、\"ISF-IWH\"\nいずれも存在しない場合は、\"ISF\"",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM2002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1CLM0015E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムに接続できませんでした。\nインターネットに接続されているか確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1CLM0015E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ネットワークに接続されていない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1CLM0015E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1CLM0015E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1CLM0016E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通信時にエラーが発生しました。\n再度、{0}してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1CLM0016E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "サーバから想定外の値が返却された。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1CLM0016E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：処理名",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1CLM0016E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1CLM0022E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "プロキシ設定を取得できませんでした。\nプロキシが正しく設定されているか確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1CLM0022E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "プロキシ設定が取得できない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1CLM0022E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1CLM0022E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "内容列の見出しは1つだけで、番号列と文言列の二列に分かれている。番号列には見出しがないため、番号は no に入れ、columns には見出しの文字だけを使った。",
+      "S1DSM2002E の置換文字列 1 の「ISF-IWB」「ISF-IWH」は、フォントの都合で B と H の判読に自信がない。",
+      "S1CLM0016E の 2 行目「返却された」は、字が鮮明でなく「返却」と読んだ。",
+      "メッセージIDは縦に結合されているため、各行の name_path に入れた。",
+      "ページ番号は印字の「- 62 -」を読み取った。PDF上のページ番号は65である。"
+    ]
+  },
+  "raw_text": null
+}

@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 18,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3305,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002661,
+    "cost_usd_batch": 0.001331,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 18,
+    "printed_page": "15",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "処理",
+          "ルート",
+          "処理内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "処理",
+          "type": "",
+          "length": "",
+          "content": "処理内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "署名送信取消結果取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼の処理結果の取得依頼",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "請求ソフトウェア\n→\n伝送請求APIライブラリ"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "署名送信取消結果取得"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "確定している取消結果を返却",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "ルート",
+                "value": "伝送請求APIライブラリ\n→\n請求ソフトウェア"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "<引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "事業所番号"
+            ],
+            "type": "英数字",
+            "length": 10,
+            "length_raw": "10",
+            "content": "署名送信を行う事業所番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "請求先都道府県番号"
+            ],
+            "type": "数字",
+            "length": 2,
+            "length_raw": "2",
+            "content": "事業所の請求先都道府県番号。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "送信ファイルパス"
+            ],
+            "type": "混在",
+            "length": 256,
+            "length_raw": "256",
+            "content": "署名送信を行うファイルのフルパス。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "ユーザID"
+            ],
+            "type": "英数字",
+            "length": 14,
+            "length_raw": "14",
+            "content": "電子請求受付システムにログインするユーザID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "ユーザID編集不可フラグ"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": "ログインダイアログのユーザID欄を編集不可とする場合はTrue。（初期値はFalse）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Boolean"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "先頭の表の見出し「No」は原文の記号（№）の可能性がある。",
+      "2つ目の表の「請求先都道府県番号」「ユーザID編集不可フラグ」は、画像上で文字間が広く空いているため空白を詰めて書き写した。"
+    ]
+  },
+  "raw_text": null
+}

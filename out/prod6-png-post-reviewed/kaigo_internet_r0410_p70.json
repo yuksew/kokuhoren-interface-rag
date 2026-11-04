@@ -1,0 +1,285 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 70,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "67",
+ "tables": [
+  {
+   "table_kind": "record_layout",
+   "title": "署名送信点検結果",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "属性",
+    "桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "<ファイル名></ファイル名>"
+     ],
+     "type": "文字列",
+     "length": 10,
+     "length_raw": "10",
+     "content": "エラー情報ファイル名：CsvErr.txt（※4）",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 15,
+     "no_raw": "15",
+     "name_path": [
+      "<ファイル名></ファイル名>"
+     ],
+     "type": "文字列",
+     "length": 16,
+     "length_raw": "16",
+     "content": "拡張情報ファイル名：Transmiti nfo.txt（※4）（※5）（※6）",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 16,
+     "no_raw": "16",
+     "name_path": [
+      "</添付ファイル>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 17,
+     "no_raw": "17",
+     "name_path": [
+      "</インタフェース情報>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": true,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  },
+  {
+   "table_kind": "record_layout",
+   "title": "署名送信取消結果",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "属性",
+    "桁数",
+    "必須",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "属性",
+    "length": "桁数",
+    "content": "内容",
+    "required": "必須",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "<インタフェース情報>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "<処理日時></処理日時>"
+     ],
+     "type": "数字",
+     "length": 14,
+     "length_raw": "14",
+     "content": "形式：yyyyMMddHHmmss",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "<IF種別コード></IF種別コード>"
+     ],
+     "type": "数字",
+     "length": 2,
+     "length_raw": "2",
+     "content": "32: 取消結果(エラー)、\n33: 取消結果(正常)（※1）",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "<電文種別></電文種別>"
+     ],
+     "type": "固定文字列",
+     "length": 15,
+     "length_raw": "15",
+     "content": "\"Transmit DeleteRegist\"",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "<事業所番号></事業所番号>"
+     ],
+     "type": "数字",
+     "length": 10,
+     "length_raw": "10",
+     "content": "取消結果対象の事業所番号",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "<到達番号></到達番号>"
+     ],
+     "type": "数字",
+     "length": 19,
+     "length_raw": "19",
+     "content": "取消結果対象の到達番号",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "<取消対象到達番号></取消対象到達番号>"
+     ],
+     "type": "数字",
+     "length": 19,
+     "length_raw": "19",
+     "content": "取消対象の到達番号",
+     "required": "○",
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "<エラーコード></エラーコード>"
+     ],
+     "type": "文字列",
+     "length": 6,
+     "length_raw": "6",
+     "content": "エラーコード（※2）",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "</インタフェース情報>"
+     ],
+     "type": "-",
+     "length": null,
+     "length_raw": "-",
+     "content": "",
+     "required": null,
+     "required_by": [],
+     "note": "",
+     "cells": []
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "ページ下部の印字は「- 67 -」で、PDF上のページ70とは一致しない。printed_page は印字どおり67とした。",
+  "1表目の「Transmiti nfo.txt」「(※4)」などの字間は図の表示上の空きと思われるため、原文どおりに書き写したが正確な綴りは確認できない。",
+  "2表目の「固定文字列」は「固 定 文 字列」と字間が空いて見えるため詰めて書いた。",
+  "注記記号（※1, ※2, ※4, ※5, ※6）の本文はこのページに見当たらないため footnotes は空とした。",
+  "1表目は前ページからの続きと判断したが、表見出しは見えていない。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

@@ -36,6 +36,8 @@ VOL_Q = [(re.compile(r"都道府県"), "都道府県編"), (re.compile(r"(?<!被
          (re.compile(r"生保|生活保護"), "生保単独編"), (re.compile(r"合併"), "市町村合併編"), (re.compile(r"市町村(?!合併)"), "市町村編")]
 RULE_Q = re.compile(r"算定|加算|減算|単位|請求|時間|回数|何回|できる|可能|留意|告示|Q&A|サービスコード|要件|基準|間隔|上限|最大|日割")
 VALUE = re.compile(r"^([0-9A-Z]{1,6})\s*[:：]")
+# メッセージID・エラーコードのような、英字と数字の混じった 6〜12 文字の識別子（S1DSM4001E、G10704）
+LONG_ID = re.compile(r"(?<![0-9A-Za-z])(?=[0-9A-Z]*[A-Z])(?=[0-9A-Z]*[0-9])[0-9A-Z]{6,12}(?![0-9A-Za-z])")
 SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z][0-9A-Z]*)(?![0-9A-Za-z])")
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 # サービスコード（種類2桁＋項目4桁。「11 4845」「114845」）
@@ -135,6 +137,13 @@ class Retriever:
                     lst = self.value_items.setdefault(m.group(1), [])
                     if self.item_chunk[r["item_id"]] not in lst:
                         lst.append(self.item_chunk[r["item_id"]])
+        # 識別子そのものが項目名の行（エラーメッセージ一覧・エラーコード一覧）。全文検索は、質問のほかの語が多くの行に当たり、
+        # 識別子の行が上位に来ないので、ここで直接引く
+        self.id_items: dict[str, list[int]] = {}
+        for r in self.con.execute("SELECT item_id, name FROM items WHERE length(name) BETWEEN 6 AND 12"):
+            name = nk(r["name"] or "")
+            if LONG_ID.fullmatch(name) and r["item_id"] in self.item_chunk:
+                self.id_items.setdefault(name, []).append(self.item_chunk[r["item_id"]])
 
         # サービスコード → そのコードの行を含むチャンク
         self.svc_ranges = [(m["chunk_id"], r["sc_from"], r["sc_to"]) for m, r in zip(self.meta, self.con.execute(
@@ -178,6 +187,9 @@ class Retriever:
 
     def fts(self, q: str, n: int = 50) -> list[int]:
         terms = fts_terms(q)
+        # 「返ってくる到達番号」のように助詞で切れず、どの行にも無い語は、ひらがなの並びで切った漢字・カタカナの語にする
+        terms = list(dict.fromkeys(w for t in terms for w in (
+            [t] if self.df(t) else (re.findall(r"[^ぁ-ゟ]{3,}", t) or [t]))))
         # 「設定する」のようにほとんどの行にある語は手がかりにならないので外す（行の 3% 超）。全部外れたら一番まれな語だけ使う。
         # 行の数は、事業所向けでない編を除いて数える（これらの編を足すたびに、外す語の基準が緩まないように）
         limit = len(self.meta) * 0.03
@@ -206,6 +218,7 @@ class Retriever:
         q = nk(q)
         out = [c for code in CODE.findall(q) for c in self.code_items.get(code, [])]
         out += [c for code in SHORT.findall(q) for c in self.value_items.get(code, [])[:10]]
+        out += [c for code in LONG_ID.findall(q) for c in self.id_items.get(code, [])[:10]]
         out += self.svc_chunks(q)
         return list(dict.fromkeys(out))
 

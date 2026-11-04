@@ -1,0 +1,352 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 39,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "36",
+ "tables": [
+  {
+   "table_kind": "interface_list",
+   "title": "<戻り値>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "№",
+    "項目名",
+    "型",
+    "最小桁数",
+    "最大桁数",
+    "内容"
+   ],
+   "column_map": {
+    "no": "№",
+    "name": "項目名",
+    "type": "型",
+    "length": "最大桁数",
+    "content": "内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "返却情報"
+     ],
+     "type": "Class",
+     "length": null,
+     "length_raw": "-",
+     "content": null,
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "返却情報",
+      "処理結果"
+     ],
+     "type": "Enum",
+     "length": null,
+     "length_raw": "-",
+     "content": "1:正常、2:エラー、3:キャンセル。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "返却情報",
+      "メッセージID"
+     ],
+     "type": "String",
+     "length": 10,
+     "length_raw": "10",
+     "content": "処理結果がエラーの場合、メッセージID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "no_raw": "4",
+     "name_path": [
+      "返却情報",
+      "メッセージ"
+     ],
+     "type": "String",
+     "length": 512,
+     "length_raw": "512",
+     "content": "処理結果がエラーの場合、メッセージ。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "no_raw": "5",
+     "name_path": [
+      "返却情報",
+      "送信先ユーザID"
+     ],
+     "type": "String",
+     "length": 14,
+     "length_raw": "14",
+     "content": "お知らせの送信先ユーザID。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "no_raw": "6",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト"
+     ],
+     "type": "List\n(Class)",
+     "length": null,
+     "length_raw": "-",
+     "content": "処理結果が正常で、お知らせが1件以上存在する場合に設定する。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "no_raw": "7",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "お知らせ番号"
+     ],
+     "type": "String",
+     "length": 16,
+     "length_raw": "16",
+     "content": "お知らせ番号。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "16"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "no_raw": "8",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "タイトル"
+     ],
+     "type": "String",
+     "length": 85,
+     "length_raw": "85",
+     "content": "お知らせのタイトル。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "no_raw": "9",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "お知らせ内容"
+     ],
+     "type": "String",
+     "length": 2048,
+     "length_raw": "2048",
+     "content": "お知らせの内容。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "no_raw": "10",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "表示用更新日時"
+     ],
+     "type": "DateTime",
+     "length": null,
+     "length_raw": "-",
+     "content": "ユーザへ表示するための更新日時。(※2)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "no_raw": "11",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "更新日時"
+     ],
+     "type": "DateTime",
+     "length": null,
+     "length_raw": "-",
+     "content": "お知らせ情報の実際の更新日時。(※2)",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "no_raw": "12",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "お知らせカテゴリコード"
+     ],
+     "type": "String",
+     "length": 2,
+     "length_raw": "2",
+     "content": "お知らせのカテゴリコード。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "2"
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "no_raw": "13",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "お知らせカテゴリ名"
+     ],
+     "type": "String",
+     "length": 20,
+     "length_raw": "20",
+     "content": "お知らせのカテゴリ名。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "no_raw": "14",
+     "name_path": [
+      "返却情報",
+      "お知らせ情報リスト",
+      "お知らせサブカテゴリ名"
+     ],
+     "type": "String",
+     "length": 30,
+     "length_raw": "30",
+     "content": "お知らせのサブカテゴリ名。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "最小桁数",
+       "value": "-"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "ページ番号は下部に「- 36 -」と印字されており、依頼の PDF 上ページ 39 とは一致しない。printed_page は印字の 36 を採用した。",
+  "依頼文は「次のページ」の表としているが、添付は 1 ページのみで、その中の表（戻り値）を書き起こした。",
+  "「※2」の注記本文はこのページに見当たらないため footnotes は空とした。",
+  "「最小桁数」「最大桁数」は見出しで2行に折り返されていたため、それぞれ「最小桁数」「最大桁数」として書き起こした。",
+  "item 6 の型は「List」と「(Class)」が改行で分かれていたため、改行を残して記載した。"
+ ]
+}

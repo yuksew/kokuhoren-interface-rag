@@ -1,0 +1,254 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 60,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "57",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（内部プログラム連携に関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1DSM3001E",
+     "name_path": [
+      "S1DSM3001E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}に値を設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "必須項目に値が存在しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3002E",
+     "name_path": [
+      "S1DSM3002E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}、{1}に値を設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "条件付き必須項目に値が存在しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:エラーとなる前提条件{1}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3003E",
+     "name_path": [
+      "S1DSM3003E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}は1件以上必須です。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "必須リスト等のデータが0件。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3004E",
+     "name_path": [
+      "S1DSM3004E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}は{1}桁以下で設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "最大桁数を超過している。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:最大桁数"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3005E",
+     "name_path": [
+      "S1DSM3005E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}は{1}桁で設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "指定桁数と一致しない。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名{1}:指定桁数"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3006E",
+     "name_path": [
+      "S1DSM3006E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}には半角数字を設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "半角数字以外が設定されている。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1DSM3007E",
+     "name_path": [
+      "S1DSM3007E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "{0}には半角英数字を設定してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "半角英数字以外が設定されている。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:引数名"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "メッセージIDの「S1DSM8001E」等の3文字目以降の数字の字形（8か0か）が判然としないため、原文どおり「S1DSM8001E」と書き起こした。",
+  "「内容」見出しの下に、項番（1〜4）の列と内容の列があるが、項番列の見出しは印字されていないため、columns には「内容」のみを入れ、項番は items.no に格納した。",
+  "S1DSM8002E・8004E・8005E の項番3の内容は2行に分かれているため、改行（\\n）で区切って1つのcontentに入れた。",
+  "このページは表が1つで、ページ末尾で終わるため続きはないと判断した。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（7 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

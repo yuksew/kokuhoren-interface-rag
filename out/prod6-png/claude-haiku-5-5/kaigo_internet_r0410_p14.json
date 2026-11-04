@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 14,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 2361,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002189,
+    "cost_usd_batch": 0.001095,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 14,
+    "printed_page": "11",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "No",
+          "チェック",
+          "チェック内容",
+          "メッセージID（※1）"
+        ],
+        "column_map": {
+          "no": "No",
+          "name": "チェック",
+          "type": "",
+          "length": "",
+          "content": "チェック内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 5,
+            "no_raw": "5",
+            "name_path": [
+              "パスワード期限切れチェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムにアクセスし、ログイン時に使用したパスワードの有効期限が切れていないことを確認する。\n有効期限が切れている場合は、エラーダイアログを表示する。\n※ パスワードの変更は、電子請求受付システムから行う必要がある。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージID（※1）",
+                "value": "S1MNM5C28E\nS1MNM4C72E"
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "no_raw": "6",
+            "name_path": [
+              "パスワード期限までの日数チェック"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "電子請求受付システムにアクセスし、ログイン時に使用したパスワードの有効期限までの日数を確認する。\n有効期限まで30日を切った場合は、警告ダイアログを表示する。\n※ パスワードの変更は、電子請求受付システムから行う必要がある。\n※ 表示された警告ダイアログにおいて「はい」ボタンを押下して処理を継続した場合、セッション情報の有効時間内は、警告ダイアログの再表示は行わない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "メッセージID（※1）",
+                "value": "S1MNM5C29W\nS1MNM4C74W"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "メッセージID/メッセージについては、「付録．a エラーメッセージ一覧」を参照。"
+      }
+    ],
+    "uncertain": [
+      "添付ページの印字ページ番号は「11」で、依頼文の PDF 上のページ 14 と一致していない。添付された1ページのみを書き起こした。",
+      "メッセージIDの一部（S1MNM5C28E などの「M」「5」付近）は画像上で文字が重なって読みにくく、判読を誤っている可能性がある。",
+      "「次のページ」の指定だったが、添付は1ページのみで、その内容を書き起こした。",
+      "チェック欄の「パスワード期限切れチェック」「パスワード期限までの日数チェック」は、原文で字間が空けて印字されているため、字間を詰めて記載した。"
+    ]
+  },
+  "raw_text": null
+}

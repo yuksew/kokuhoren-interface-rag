@@ -1,0 +1,134 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 51,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "48",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（ログインに関するエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1MNM5C29W",
+     "name_path": [
+      "S1MNM5C29W"
+     ],
+     "type": "警告",
+     "length": null,
+     "length_raw": null,
+     "content": "現在のパスワードの有効期限が{0}までとなっています。パスワードを変更せずにログインする場合、【はい】ボタンを押してください。パスワードを変更する場合、【いいえ】ボタンを押してください。その後、電子請求受付システムのログイン画面からログインし、パスワードを変更してください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ログインユーザ(事業所)で電子請求受付システムにログインし、システム日付からパスワード有効期限までの日数が、30日を切っている場合。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:パスワード有効期限(YYYY年MM月DD日)"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1MNM5C30W",
+     "name_path": [
+      "S1MNM5C30W"
+     ],
+     "type": "警告",
+     "length": null,
+     "length_raw": null,
+     "content": "同じユーザでログイン中です。別のブラウザ等でログインしているか、前回ログインした後にログアウトしていない可能性があります。強制的にログインする場合、【はい】ボタンを押してください。ログインしない場合、【いいえ】ボタンを押してください。ご不明な点は、介護電子請求ヘルプデスクにお問い合わせください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "既にログインしているユーザ ID でログインしようとした場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1CMM5C01E",
+     "name_path": [
+      "S1CMM5C01E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "後から強制ログインされたか、不正なアクセスの可能性があるため、処理を中断します。再度ログインしてください。ご不明な点は、介護電子請求ヘルプデスクにお問い合わせください。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "ログイン中に、別ブラウザ等から強制ログインされた場合。"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": true,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "依頼では PDF 上のページは 51 とあるが、ページ下部の印字は「- 48 -」のため printed_page は 48 とした。",
+  "メッセージID の綴り（S1MM5C29W / S1MM5C30W / S1CMM5C01E）は画像の文字が不鮮明で、特に先頭部分の文字を確実に読めていない。",
+  "左端の番号列（1〜4）には見出しがないため、columns に名前を付けず、項番として no に入れた。",
+  "メッセージIDは行見出しとして縦結合されているため name_path に入れ、種類（警告・エラー）は cells に入れた。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（3 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

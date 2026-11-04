@@ -12,7 +12,7 @@ from pathlib import Path
 
 import pymupdf
 
-from exchange_ids import HEAD
+from exchange_ids import APPENDIX, HEAD, LEADER
 from pagemeta import doc_profile
 
 CJK = re.compile(r"[　-ヿ㐀-鿿＀-￯]")
@@ -78,8 +78,9 @@ def doc_prose(pdf: Path) -> list[dict]:
         for i, pg in enumerate(d):
             p = prof[i]
             for ln in pg.get_text().splitlines():
-                m = HEAD.match(nk(ln).strip())
-                if m and len(m.group(2)) <= 60:
+                t = nk(ln).strip()
+                m = HEAD.match(t) or APPENDIX.match(t)
+                if m and len(m.group(2)) <= 60 and not LEADER.search(t):
                     section = f"{m.group(1)} {m.group(2).strip()}"
             if p["blank"]:
                 continue

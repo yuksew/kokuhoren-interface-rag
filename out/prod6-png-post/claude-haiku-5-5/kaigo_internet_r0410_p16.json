@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 16,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3499,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002758,
+    "cost_usd_batch": 0.001379,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 16,
+    "printed_page": "13",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": "<ログイン処理に失敗した場合に再度表示されるログインダイアログの制御>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "ユーザID",
+          "セッション情報",
+          "ユーザID編集不可フラグ",
+          "ログインダイアログ動作"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "ユーザID",
+          "type": "",
+          "length": "",
+          "content": "ログインダイアログ動作",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "無し"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 前回入力したユーザID/編集可\nパスワード：前回入力したパスワード/編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "セッション情報",
+                "value": "（確認不可能）"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "（無視）"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "有り"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/編集不可\nパスワード：前回入力したパスワード/編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "セッション情報",
+                "value": "無し"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "True"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "有り"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/編集可\nパスワード：前回入力したパスワード/編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "セッション情報",
+                "value": "無し"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "False"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "有り"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/編集不可\nパスワード：セッションに保存されたパスワード/編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "セッション情報",
+                "value": "有り"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "True"
+              }
+            ]
+          },
+          {
+            "no": null,
+            "no_raw": null,
+            "name_path": [
+              "有り"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ユーザID: 引数のユーザID/編集可\nパスワード：セッションに保存されたパスワード/編集可",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "セッション情報",
+                "value": "有り"
+              },
+              {
+                "column": "ユーザID編集不可フラグ",
+                "value": "False"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "依頼文は「次のページ」の表を求めているが、添付は1ページ（printed_page 13）のみのため、添付ページの表を書き起こした。",
+      "「ユーザID」見出しは原文で「ユーザ ID」と字間が空いているが、列名は「ユーザID」と表記した。",
+      "ユーザID列・セッション情報列・ユーザID編集不可フラグ列の縦結合は、各行に値を展開して入れた。name_path はユーザID列の値を用いた。"
+    ]
+  },
+  "raw_text": null
+}

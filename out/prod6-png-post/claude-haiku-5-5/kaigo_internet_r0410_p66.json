@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 66,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3856,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002937,
+    "cost_usd_batch": 0.001468,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 66,
+    "printed_page": "63",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1ACM0001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "通信時にエラーが発生しました。\n現在、電子請求受付システムが混み合っている可能性があります。\nしばらく時間をおいて、{0}してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1ACM0001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "リクエストがタイムアウトした。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1ACM0001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：処理名",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1ACM0001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "other",
+        "title": "<ファイルI/Oに関するエラーメッセージ>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ディスクの空き容量が不足しています。\n不要なファイルを削除または移動し、ディスクの空き容量を拡大してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ディスクの空き容量が 100MB 以下になっていた場合に、ファイルを書き込もうとした。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM001E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSM002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "{0}を読み込む権限がありません。\n「{1}」配下に読み込み権限を与えてください。\nまたは、権限があるユーザでログインし直し、再度実行してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSM002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ファイルの読み込み権限がない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSM002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：ファイル名\n　　　{1}：ファイルが存在するディレクトリパス",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSM002E"
+            ],
+            "type": null,
+            "length": null,
+            "length_raw": null,
+            "content": "ダイアログ表示、戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "種類",
+                "value": "エラー"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "添付ページの下部は「- 63 -」で、指定の PDF 上のページ 66 と印字ページが一致していない。添付された1ページの表をそのまま書き起こした。",
+      "両表の「内容」列の左側に、項番 1〜4 が入る見出しのない列がある。見出しがないため column_map の no には対応させず、項番は items の no と no_raw に入れた。",
+      "1つ目の表の内容セルは、各文の区切りを段落の区切りとみなして改行で分けた。",
+      "2つ目の表の S1DSM002E・項番3の内容は、{1} の行が字下げされていたため、先頭の全角空白をそのまま残した。"
+    ]
+  },
+  "raw_text": null
+}

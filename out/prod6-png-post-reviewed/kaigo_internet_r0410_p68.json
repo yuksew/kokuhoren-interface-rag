@@ -1,0 +1,106 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 68,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "65",
+ "tables": [
+  {
+   "table_kind": "message_list",
+   "title": "エラーメッセージ一覧（システムエラーメッセージ）",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "メッセージID",
+    "種類",
+    "メッセージの内容",
+    "メッセージ出力条件",
+    "備考",
+    "エラーメッセージの返却方法"
+   ],
+   "column_map": {
+    "no": "",
+    "name": "メッセージID",
+    "type": "種類",
+    "length": "",
+    "content": "メッセージの内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": null,
+     "no_raw": "S1DSM0001E",
+     "name_path": [
+      "S1DSM0001E"
+     ],
+     "type": "エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "(システムエラー){0}{1}現象が解消されない場合は、請求ソフトのヘルプデスクにご連絡ください。{2}",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージ出力条件",
+       "value": "プログラム構造または動作環境に問題があり、システムエラーが発生。"
+      },
+      {
+       "column": "備考",
+       "value": "置換文字列 {0}:エラー概要{1}:エラーが解消する可能性のある操作(通常は、\"システムを再起動しても\"){2}:エラー内容"
+      },
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    },
+    {
+     "no": null,
+     "no_raw": "S1CMM0016S",
+     "name_path": [
+      "S1CMM0016S"
+     ],
+     "type": "重度エラー",
+     "length": null,
+     "length_raw": null,
+     "content": "システム異常が発生しました。介護電子請求ヘルプデスクにご連絡ください。障害管理番号:XXXXXXXXXXXX-XXXX",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "エラーメッセージの返却方法",
+       "value": "ダイアログ表示、戻り値(返却情報)"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "source_model": "textlayer"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "「内容」見出しの下に項番の列が見出しなしで存在するため、column_map の no に対応する列名を指定できず空文字にした。項番は no / no_raw に入れた。",
+  "項番の列は見出しがないため、columns に列名を付けていない。",
+  "種類欄の「重度 エラー」は折り返しのため、「重度エラー」として1行にまとめた。",
+  "ページ番号は「- 65 -」を65と読んだ。PDF上のページ68とは一致しないが、印字された番号をそのまま記録した。"
+ ],
+ "_fixes": [
+  {
+   "by": "textlayer",
+   "note": "message_list を PDF のテキストレイヤから組み立てて差し替え（2 行）"
+  },
+  {
+   "by": "textlayer-title",
+   "note": "表題に見出し（インタフェース名）を付け、頁の続きの表をつないだ"
+  }
+ ]
+}

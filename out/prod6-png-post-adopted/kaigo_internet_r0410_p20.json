@@ -1,0 +1,208 @@
+{
+ "domain": "kaigo",
+ "doc_id": "kaigo_internet_r0410",
+ "page": 20,
+ "edition": "令和4年10月版",
+ "volume": "インターネット編",
+ "printed_page": "17",
+ "tables": [
+  {
+   "table_kind": "other",
+   "title": "<請求情報チェック>",
+   "record": {
+    "exchange_id": "",
+    "name": "",
+    "parent": ""
+   },
+   "columns": [
+    "No",
+    "項目名",
+    "検査種別",
+    "検査内容",
+    "メッセージID（※5）"
+   ],
+   "column_map": {
+    "no": "No",
+    "name": "検査種別",
+    "type": "",
+    "length": "",
+    "content": "検査内容",
+    "required": "",
+    "note": ""
+   },
+   "items": [
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "ファイル形式",
+      "レコード数検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "請求情報のレコード数が 3 レコード以上存在すること。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4001E"
+      }
+     ]
+    },
+    {
+     "no": 1,
+     "no_raw": "1",
+     "name_path": [
+      "ファイル形式",
+      "レコード種別検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "先頭レコードの1列目が「1:コントロールレコード」であること。\n中間レコード（先頭及び最終レコード以外）の1列目が、全て「2:データレコード」であること。\n最終レコードの1列目が「3:エンドレコード」であること。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4002E"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "no_raw": "2",
+     "name_path": [
+      "コントロールレコード形式",
+      "レコード項目数検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "レコード項目数が 12 項目であること。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4004E"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "コントロールレコード項目"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "以下の値が空もしくは全角・半角スペースのみではないこと。\n・レコード種別、データ種別、事業所番号、処理対象年月",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4005E"
+      }
+     ],
+     "_fixes": [
+      {
+       "field": "name_path",
+       "from": [
+        "コントロールレコード項目",
+        "必須項目検査"
+       ],
+       "to": [
+        "コントロールレコード項目"
+       ],
+       "by": "textlayer"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "コントロールレコード項目",
+      "形式検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "以下の項目が、「YYYYMM」形式の存在する年月であること。\n・処理対象年月",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4006E"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "コントロールレコード項目",
+      "データ種別検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "データ種別が、請求情報定義ファイル（※4）に定義された値であること。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4010E"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "no_raw": "3",
+     "name_path": [
+      "コントロールレコード項目",
+      "事業所番号検査"
+     ],
+     "type": null,
+     "length": null,
+     "length_raw": null,
+     "content": "引数の事業所番号と、コントロールレコードに設定された事業所番号が一致すること。",
+     "required": null,
+     "required_by": [],
+     "note": null,
+     "cells": [
+      {
+       "column": "メッセージID（※5）",
+       "value": "S1DSM4007E"
+      }
+     ]
+    }
+   ],
+   "continued_from_prev_page": false,
+   "continues_to_next_page": false,
+   "model_continued_from_prev_page": false,
+   "model_continues_to_next_page": false,
+   "source_model": "claude-haiku-5-5"
+  }
+ ],
+ "footnotes": [],
+ "uncertain": [
+  "添付は印字ページ17（PDF上のページ20と指定）の1ページで、依頼文の「次のページ」の内容ではなく、添付されたページの表を書き起こした。",
+  "項目名列は縦結合の見出しのため name_path にのみ入れ、column_map.name は検査種別とした。項目名列の値は cells に入れていない。",
+  "本文中の※4・※5の注記本体はこのページに見当たらないため footnotes は空。",
+  "「YYYYMM」の表記に下付きの添字らしき文字があったが、判読できないため「YYYYMM」と書いた。"
+ ]
+}

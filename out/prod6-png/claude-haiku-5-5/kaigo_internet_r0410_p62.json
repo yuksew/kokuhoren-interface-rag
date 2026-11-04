@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 62,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 4390,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.003204,
+    "cost_usd_batch": 0.001602,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 62,
+    "printed_page": "59",
+    "tables": [
+      {
+        "table_kind": "other",
+        "title": null,
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "メッセージID",
+          "種類",
+          "内容"
+        ],
+        "column_map": {
+          "no": "",
+          "name": "メッセージID",
+          "type": "種類",
+          "length": "",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSMB014E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "{0}の形式が正しくありません。\n正しい形式({1})で設定してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSMB014E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "指定された正規表現に一致しない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSMB014E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：引数名\n{1}：正しい形式",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSMB014E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1DSMB016E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "{0}の拡張子は[{1}]形式で設定してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1DSMB016E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "指定された拡張子に一致しない。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1DSMB016E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：引数名\n{1}：正しい拡張子",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1DSMB016E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM5C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼を行える回数が上限に達したため、取消依頼を行うことができません。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM5C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "取消依頼が10回以上に行われた場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM5C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "-",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM5C06E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM5C09E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "対象の{0}が更新されています。\n最新の情報を確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM5C09E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "クライアント側で指定した処理対象データが、サーバ側で更新されていた場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM5C09E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：処理対象データ名",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM5C09E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "S1MNM5C10E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "対象の{0}が削除されています。\n最新の情報を確認してください。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "S1MNM5C10E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "クライアント側で指定した処理対象データが、サーバ側に存在しなかった場合。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "S1MNM5C10E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "置換文字列 {0}：処理対象データ名",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "S1MNM5C10E"
+            ],
+            "type": "エラー",
+            "length": null,
+            "length_raw": null,
+            "content": "戻り値（返却情報）",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": []
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false
+      }
+    ],
+    "footnotes": [],
+    "uncertain": [
+      "ページ番号は画像下部に「- 59 -」と印字されており、依頼の PDF 上のページ 62 とは異なる。画像の表示に従い printed_page を 59 とした。",
+      "画像の見出しは「内容」の1つだけで、項番（1〜4）の列に見出しがない。そのため columns は「メッセージID」「種類」「内容」の3つとし、項番は items の no に入れた。column_map の no は空文字とした。",
+      "メッセージIDの一部（S1DSMB014E、S1MNM5C06E など）の英数字が画像上で判別しにくい（B と 8、M と S など）。原文どおりの表記で書いたが誤認の可能性がある。",
+      "「正しい形式 ( {1} )」の括弧の空白と全角半角は画像から確定できないため、「正しい形式({1})」と書いた。",
+      "内容欄の折り返し（「行う ことができません」「更新されていた場合」など）は1行に詰めた。"
+    ]
+  },
+  "raw_text": null
+}

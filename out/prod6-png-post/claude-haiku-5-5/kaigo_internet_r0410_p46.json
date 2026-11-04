@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "doc_id": "kaigo_internet_r0410",
+    "page": 46,
+    "domain": "kaigo",
+    "volume": "インターネット編",
+    "edition": "令和4年10月版",
+    "title": "伝送システム仕様書 インターネット編",
+    "category": [],
+    "requested_model": "claude-haiku-5-5",
+    "model": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "input": "png",
+    "effort": "medium",
+    "stop_reason": "end_turn",
+    "request_id": null,
+    "latency_s": 0.0,
+    "usage": {
+      "input_tokens": 10089,
+      "output_tokens": 3474,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "cost_usd": 0.002746,
+    "cost_usd_batch": 0.001373,
+    "billed_as": "batch",
+    "batch_id": "msgbatch_01L8kK4LzLezzWPxsjzdsF8A",
+    "parsed_ok": true,
+    "created_at": "2026-11-04T04:26:14+00:00",
+    "stop_details": null,
+    "postprocessed": true
+  },
+  "result": {
+    "domain": "kaigo",
+    "edition": "令和4年10月版",
+    "volume": "インターネット編",
+    "page": 46,
+    "printed_page": "43",
+    "tables": [
+      {
+        "table_kind": "record_layout",
+        "title": "<引数>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "属性",
+          "最小桁数",
+          "最大桁数",
+          "必須",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "属性",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "必須",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "復号対象ファイル"
+            ],
+            "type": "-",
+            "length": null,
+            "length_raw": "-",
+            "content": "暗号化されたファイルのデータ。",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "Stream"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "復号先一時ディレクトリパス"
+            ],
+            "type": "混在",
+            "length": 256,
+            "length_raw": "256",
+            "content": "復号先の空ディレクトリのフルパス。(※ 1)",
+            "required": "○",
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "型",
+                "value": "String"
+              },
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      },
+      {
+        "table_kind": "record_layout",
+        "title": "<戻り値>",
+        "record": {
+          "exchange_id": "",
+          "name": "",
+          "parent": ""
+        },
+        "columns": [
+          "№",
+          "項目名",
+          "型",
+          "最小桁数",
+          "最大桁数",
+          "内容"
+        ],
+        "column_map": {
+          "no": "№",
+          "name": "項目名",
+          "type": "型",
+          "length": "最大桁数",
+          "content": "内容",
+          "required": "",
+          "note": ""
+        },
+        "items": [
+          {
+            "no": 1,
+            "no_raw": "1",
+            "name_path": [
+              "返却情報"
+            ],
+            "type": "Class",
+            "length": null,
+            "length_raw": "-",
+            "content": null,
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "no_raw": "2",
+            "name_path": [
+              "返却情報",
+              "処理結果"
+            ],
+            "type": "Enum",
+            "length": null,
+            "length_raw": "-",
+            "content": "1：正常、2：エラー。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "no_raw": "3",
+            "name_path": [
+              "返却情報",
+              "メッセージID"
+            ],
+            "type": "String",
+            "length": 10,
+            "length_raw": "10",
+            "content": "処理結果がエラーの場合、メッセージID。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "no_raw": "4",
+            "name_path": [
+              "返却情報",
+              "メッセージ"
+            ],
+            "type": "String",
+            "length": 512,
+            "length_raw": "512",
+            "content": "処理結果がエラーの場合、メッセージ。",
+            "required": null,
+            "required_by": [],
+            "note": null,
+            "cells": [
+              {
+                "column": "最小桁数",
+                "value": "-"
+              }
+            ]
+          }
+        ],
+        "continued_from_prev_page": false,
+        "continues_to_next_page": false,
+        "model_continued_from_prev_page": false,
+        "model_continues_to_next_page": false
+      }
+    ],
+    "footnotes": [
+      {
+        "mark": "※1",
+        "text": "指定先のディレクトリ内にファイルが存在する場合、エラーとなる。"
+      }
+    ],
+    "uncertain": [
+      "引数表の見出し「型」（Stream/String）と「属性」（-/混在）のどちらを column_map の type に当てるか判断が分かれるため、属性を type、型を cells に入れた。",
+      "引数表の最大桁数は必須ではないが length は最大桁数の列を採用し、最小桁数は cells に入れた。",
+      "戻り値表の「メッセージID」の表記は原文の字間が不確かなため、項目名と同じ『メッセージID』として書き写した。",
+      "戻り値表の「返却情報」は3行にまたがる縦結合見出しのため、1行目の項目名として name_path に入れた。",
+      "引数表の「(※ 1)」の表記は原文の字間どおりに書いた。"
+    ]
+  },
+  "raw_text": null
+}
