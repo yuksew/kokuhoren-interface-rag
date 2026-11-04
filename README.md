@@ -129,7 +129,9 @@ uv run --group rag python src/eval_retrieval.py                  # 検索の評�
 
 # フェーズ2: 回答生成（Claude API。既定は Sonnet 5.5、1問 約 $0.01）
 uv run --group rag python src/ask.py "要介護度はどのコードで何桁？" --domain kaigo   # 検索の前に Haiku で質問を言い換える（prompts/rewrite_system.md）
-uv run --group rag python src/eval_answers.py                    # 回答の評価（両モデル、約 $0.25）
+uv run --group rag python src/eval_answers.py --models claude-sonnet-5-5 --out reports/answer_eval.sonnet_51q.md   # 回答の評価（51 問、Sonnet で約 $0.90）
+#   eval/questions.yaml の kind: rule（算定ルール資料。gold なし、expect だけ）と kind: out_of_scope（資料に無いこと。
+#   「答えられない」とすれば正解）は、検索の評価では数えない
 
 # 実際の質問での評価: eval/real_questions.txt に質問を書く → 回答 → reports/real_eval.csv の「判定」列に ○△× → 集計
 uv run --group rag python src/eval_real.py run

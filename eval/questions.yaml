@@ -229,3 +229,32 @@
   kind: code
   gold: [{doc: kaigo_internet, name: S1DSM4001E}]
   expect: ["レコード数"]
+# --- 算定ルール資料（2026-11-04 追加。告示・サービスコード表。gold は付けず、回答の評価だけ）
+- q: 訪問介護の初回加算は何単位？
+  domain: kaigo
+  kind: rule
+  # 平成12年厚生省告示第19号「初回加算 200単位」
+  expect: ["200"]
+- q: 居宅介護の初回加算のサービスコードは？
+  domain: shogai
+  kind: rule
+  # 介護給付費等単位数サービスコード（令和8年6月施行分）その1「116020 居介初回加算 200」
+  expect: ["116020"]
+- q: 訪問介護の身体介護01のサービスコードと単位数は？
+  domain: kaigo
+  kind: rule
+  # 介護給付費単位数等サービスコード表 介護サービス（R8.6.1）「114845 身体介護01 163」
+  expect: ["114845", "163"]
+# --- 範囲外の質問（2026-11-04 追加。資料に無いことは推測で答えず「答えられない」とするか。gold も expect も無い）
+- q: 請求の CSV を Excel で開いたら被保険者番号の先頭の 0 が消えた。Excel の設定はどう直せばいい？
+  domain: kaigo
+  kind: out_of_scope
+- q: 障害福祉サービスの請求を代行してくれる業者でおすすめはどこ？
+  domain: shogai
+  kind: out_of_scope
+- q: 令和10年度の介護報酬改定で、明細書のレコードの項目はどう変わる？
+  domain: kaigo
+  kind: out_of_scope
+- q: 東京都の国保連では、紙の請求書をいつまで受け付けている？
+  domain: kaigo
+  kind: out_of_scope

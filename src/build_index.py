@@ -164,9 +164,12 @@ def rule_chunks(con: sqlite3.Connection, rows_per_chunk: int = 20) -> list[dict]
         # 特定入所者介護サービス費（食費・居住費）の表は、単位数ではなく費用額（円）
         yen = cur[0]["sheet"].startswith("特定入所者")
         lines = [rule_head(d), f"表: {cur[0]['service']}（シート {cur[0]['sheet']}）", f"サービス種類コード: {kinds}",
-                 f"行（種類 項目 サービス内容略称 {'費用額' if yen else '単位数'} 算定単位 ［算定項目］）:"]
+                 f"行（サービスコード（種類 項目） サービス内容略称 {'費用額' if yen else '単位数'} 算定単位 ［算定項目］）:"]
         for r in cur:
-            lines.append(" ".join(x for x in [r["kind_code"], r["item_code"], r["name"] or "",
+            # 請求の CSV に入れるのは 6 桁のサービスコード（種類 2 桁 + 項目 4 桁）。種類と項目だけを並べると、項目の 4 桁を
+            # サービスコードとして答えてしまう
+            code = r["code"] or f"{r['kind_code'] or ''}{r['item_code'] or ''}"
+            lines.append(" ".join(x for x in [f"{code}（{r['kind_code']} {r['item_code']}）", r["name"] or "",
                                               (f"{r['units']}円" if yen else f"{r['units']}単位") if r["units"] else "", r["unit"] or "",
                                               f"［{r['conditions']}］" if r["conditions"] else ""] if x))
         out.append({"kind": "svc", "item_id": None, "table_id": None, "doc_id": cur[0]["doc_id"], "page": None,

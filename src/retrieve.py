@@ -42,6 +42,7 @@ SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 # サービスコード（種類2桁＋項目4桁。「11 4845」「114845」）
 LIMIT = re.compile(r"整数部\s*上?\s*(\d+)\s*桁\s*[、,+＋]?\s*小数部\s*下?\s*(\d+)\s*桁")
+SVC_NAME_Q = re.compile(r"(?<!決定)サービスコード|単位数|何単位")   # サービスコード表の行を名前で引く質問（決定サービスコードは別の表）
 SVC = re.compile(r"(?<![0-9A-Za-z])([0-9]{2})\s?([0-9A-Z]{4})(?![0-9A-Za-z])")
 
 
@@ -161,6 +162,35 @@ class Retriever:
                 out += [c for c, a, b in self.svc_ranges if a <= sc_id <= b]
         return list(dict.fromkeys(out))
 
+    def svc_name_chunks(self, q: str, n: int = 6) -> list[int]:
+        """「居宅介護の初回加算のサービスコードは？」: サービスコード表の行を、質問の語で引く。
+        略称（「居介初回加算」）はベクトル検索で引きにくく、サービスコード表は全文検索の対象でもないので。
+        語の 1 つは略称に含まれ、表の名前・シート・略称・算定項目に含まれる語が最も多い行のチャンク"""
+        if not self.svc_ranges or not SVC_NAME_Q.search(q):
+            return []
+        terms = [t for t in fts_terms(q) if not SVC_NAME_Q.fullmatch(t) and t not in ("サービスコード", "単位数")]
+        if not terms:
+            return []
+        hay = "(service || ' ' || sheet || ' ' || ifnull(name,'') || ' ' || ifnull(conditions,''))"
+        score: dict[int, int] = {}
+        named: set[int] = set()
+        for t in terms:
+            for (sc_id,) in self.con.execute(f"SELECT sc_id FROM service_codes WHERE {hay} LIKE ?", (f"%{t}%",)):
+                score[sc_id] = score.get(sc_id, 0) + 1
+            named |= {x for (x,) in self.con.execute("SELECT sc_id FROM service_codes WHERE name LIKE ?", (f"%{t}%",))}
+        cand = [x for x in score if x in named]
+        if not cand:
+            return []
+        best = max(score[x] for x in cand)
+        if best < min(2, len(terms)):
+            return []
+        out = []
+        for sc_id in sorted(x for x in cand if score[x] == best):
+            out += [c for c, a, b in self.svc_ranges if a <= sc_id <= b and c not in out]
+            if len(out) >= n:
+                break
+        return out
+
     @property
     def emb(self):
         if self._emb is None:
@@ -220,6 +250,7 @@ class Retriever:
         out += [c for code in SHORT.findall(q) for c in self.value_items.get(code, [])[:10]]
         out += [c for code in LONG_ID.findall(q) for c in self.id_items.get(code, [])[:10]]
         out += self.svc_chunks(q)
+        out += self.svc_name_chunks(q)
         return list(dict.fromkeys(out))
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",

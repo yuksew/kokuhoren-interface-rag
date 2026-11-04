@@ -59,6 +59,8 @@ def main() -> int:
     res = defaultdict(list)  # mode -> [rank or None]
     detail = []
     for q in qs:
+        if not q.get("gold"):
+            continue   # 正解の行が無い問（範囲外の質問・算定ルール資料の質問）は回答の評価だけ
         gi, gt = gold_hits(r, q["gold"])
         assert gi or gt, f"正解が DB に見つからない: {q['q']}"
         row = {"q": q["q"], "kind": q["kind"]}
