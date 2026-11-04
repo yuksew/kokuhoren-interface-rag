@@ -108,6 +108,17 @@ class Retriever:
             "ON rd.doc_id = c.doc_id ORDER BY c.chunk_id").fetchall()
         self.meta = [dict(r) for r in rows]
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
+        # 同じ定義が複数の編にある行（介護の事業所編と居宅介護支援事業所編の請求書情報 7111、障害の市町村編と都道府県編など）。
+        # チャンク → (領域, 表題, 項目名, 桁数, 属性)。検索の結果では、同じ定義の行は点数の高い 1 件だけ残す
+        groups: dict[tuple, list[int]] = {}
+        for r in self.con.execute("SELECT i.item_id, i.doc_id, d.domain, t.title, i.name_full, i.length_raw, i.type FROM items i "
+                                  "JOIN spec_tables t USING (table_id) JOIN documents d ON d.doc_id = i.doc_id "
+                                  "WHERE t.table_kind = 'record_layout'"):
+            if r["item_id"] in self.item_chunk:
+                title = re.sub(r"\s", "", re.sub(r"^[\s・]*(\(\s*[0-9]+\s*\)|[0-9]+[.)])?\s*", "", nk(r["title"] or "")))
+                key = (r["domain"], title, nk(r["name_full"] or ""), r["length_raw"], r["type"])
+                groups.setdefault(key, []).append((r["doc_id"], self.item_chunk[r["item_id"]]))
+        self.same_def = {c: key for key, lst in groups.items() if len({d for d, _ in lst}) > 1 for _, c in lst}
         # 構成図の頁の本文（「レコード構成図」「ファイル構成図」）。項目名が並ぶだけで定義が無いのに、項目名で強く当たる
         self.figure_chunks = {r["chunk_id"] for r in self.con.execute("SELECT chunk_id, text FROM chunks WHERE kind = 'prose'")
                               if FIGURE.search(r["text"].split("本文: ", 1)[-1][:60])}
@@ -337,7 +348,7 @@ class Retriever:
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
         # 必須対応表の行は、同じ文書の同じ項目名（版ごとの表に同じ行がある）を 1 件にまとめる。対応表そのものを聞く質問ではまとめない
-        ranked, seen_mx, per_table = [], set(), {}
+        ranked, seen_mx, per_table, seen_def = [], set(), {}, set()
         for c in sorted(score, key=lambda c: -score[c]):
             key = self.matrix_key.get(c)
             if key is not None and mx < 1.0:
@@ -345,6 +356,11 @@ class Retriever:
                 if key in seen_mx or len(seen_mx) >= MATRIX_CAP:
                     continue
                 seen_mx.add(key)
+            sd = self.same_def.get(c)
+            if sd is not None:
+                if sd in seen_def:
+                    continue
+                seen_def.add(sd)
             tid = self.meta[c]["table_id"] if self.meta[c]["kind"] == "item" else None
             if tid is not None:
                 if per_table.get(tid, 0) >= TABLE_CAP:
@@ -371,13 +387,18 @@ class Retriever:
                 via.setdefault(c, []).append(f"q{qi}#{rank + 1}")
         # 必須対応表の同じ行（版ごとの表）は、検索文ごとに別の版が残るので、融合した後にもまとめる（対応表を聞く質問ではまとめない）
         dedup = not MATRIX_Q.search(nk(queries[0]))
-        ranked, seen_mx, per_table = [], set(), {}
+        ranked, seen_mx, per_table, seen_def = [], set(), {}, set()
         for c in sorted(score, key=lambda c: -score[c]):
             key = self.matrix_key.get(c) if dedup else None
             if key is not None:
                 if key in seen_mx or len(seen_mx) >= MATRIX_CAP:
                     continue
                 seen_mx.add(key)
+            sd = self.same_def.get(c)
+            if sd is not None:
+                if sd in seen_def:
+                    continue
+                seen_def.add(sd)
             tid = self.meta[c]["table_id"] if self.meta[c]["kind"] == "item" else None
             if tid is not None:
                 if per_table.get(tid, 0) >= TABLE_CAP:
