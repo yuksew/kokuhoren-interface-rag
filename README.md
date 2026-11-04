@@ -18,7 +18,7 @@
 |---|---|---|
 | 介護保険のインタフェース仕様書（全編。令和8年6月版。サービス事業所編・居宅介護支援事業所編は令和6年4月版、伝送のインターネット編は令和4年10月版） | [WAM NET 行政情報 > 国保連インタフェース](https://www.wam.go.jp/gyoseiShiryou/detail-list?bun=020050010)（厚生労働省老健局の事務連絡「介護保険事務処理システム変更に係る参考資料」の添付。R8.5.25 確定版 [gno=22560](https://www.wam.go.jp/gyoseiShiryou/detail?gno=22560&ct=020050010)） | 8 編（11 ファイル。保険者編は4分冊） |
 | 障害福祉のインタフェース仕様書（共通編・事業所編・市町村編・都道府県編） | 厚生労働省の障害福祉の電子請求（インタフェース仕様書）の施行分ごとのページ（[令和7年10月施行分](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174643_00020.html)・[令和8年6月施行分](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174643_00025.html)） | 4 編 |
-| 介護の算定ルール資料（報酬告示・留意事項通知・記載要領・Q&A・サービスコード表・総合事業） | 厚生労働省（[令和6年度介護報酬改定のページ](https://www.mhlw.go.jp/stf/newpage_38790.html)、[法令等データベース](https://www.mhlw.go.jp/hourei/) ほか）、WAM NET | 59 件 |
+| 介護の算定ルール資料（報酬告示・留意事項通知・記載要領・Q&A・サービスコード表・総合事業） | 厚生労働省（[令和6年度介護報酬改定のページ](https://www.mhlw.go.jp/stf/newpage_38790.html)、[法令等データベース](https://www.mhlw.go.jp/hourei/)、[平成27年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080101.html)・[平成30年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/housyu/kaitei30.html)の改定のページ ほか）、WAM NET | 71 件 |
 | 障害の算定ルール資料（改正告示・留意事項通知・Q&A・サービスコード表） | 厚生労働省（[令和8年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html)・[令和6年度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00009.html)の報酬改定のページ、[サービスコード表](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html) ほか）、[こども家庭庁](https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei)（障害児） | 35 件 |
 
 - 「最新」と判断した根拠は `sources/README.md`（仕様書）と `sources/rules_survey.md`（算定ルール資料）。取得日時と sha256 は `sources/fetch_log*.json`。
@@ -104,6 +104,8 @@ uv run python src/query_db.py --exchange J611                     # 交換情報
 
 # 算定ルール資料（告示・留意事項・記載要領・Q&A・サービスコード表）を同じ DB に入れる（API なし。build_db.py の後に毎回）
 #   新旧対照表は「改正後」の欄だけ。サービスコード表は Excel から（service_codes テーブル）。判断は sources/rules_survey.md
+#   介護の留意事項通知は改正後の全文が公開されていないので、平成27年4月時点の全文（平成27年度改定の新旧対照表の改正後の欄）を土台に、
+#   平成30年・令和3年・令和6年・令和8年の新旧対照表を日付つきで積む（manifest の pages: 1 つの PDF の別紙の頁、new_side: right: 改正後が右の欄）
 # 画像だけのページ（介護 Q&A Vol.11・Vol.13）は、先に Claude で書き起こしておく（API、5ページ $0.08。結果は out/ocr_rules/）
 uv run python src/ocr_rules.py --only kaigo_qa_r6_v11 kaigo_qa_r6_v13
 uv run python src/build_rules.py

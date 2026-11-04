@@ -20,6 +20,7 @@ import datetime as dt
 import hashlib
 import json
 import re
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -150,13 +151,20 @@ def main() -> int:
         if dest.exists() and expected and sha256_of(dest) == expected:
             print(f"skip  {e['id']}")
             continue
-        print(f"get   {e['id']}  <- {e['url']}")
         tmp_dest = dest.with_name(dest.name + ".new")
+        # 同じ URL の資料（1 つの PDF の別紙ごとに分けて登録したもの）を取得済みなら、それを写す
+        same = next((ROOT / log[x["id"]]["file"] for x in entries if x is not e and x.get("url") == e["url"] and x["id"] in log
+                     and (ROOT / log[x["id"]]["file"]).exists() and expected in (None, log[x["id"]]["sha256"])), None)
         try:
-            if e.get("format") == "html_pages":
-                download_html_pages(e["url"], tmp_dest)
+            if same is not None:
+                print(f"copy  {e['id']}  <- {same.relative_to(ROOT).as_posix()}")
+                shutil.copyfile(same, tmp_dest)
             else:
-                download(e["url"], tmp_dest)
+                print(f"get   {e['id']}  <- {e['url']}")
+                if e.get("format") == "html_pages":
+                    download_html_pages(e["url"], tmp_dest)
+                else:
+                    download(e["url"], tmp_dest)
         except Exception as ex:  # noqa: BLE001
             errors.append(f"{e['id']}: ダウンロード失敗 {ex}")
             continue

@@ -62,9 +62,9 @@
 - [インタフェース仕様書 サービス事業所編](https://www.mhlw.go.jp/content/12200000/001565561.pdf)（令和7年10月施行分 確定版（R7.9.19事務連絡））
 - [インタフェース仕様書 サービス事業所編 修正履歴](https://www.mhlw.go.jp/content/12200000/001565581.pdf)（令和7年10月施行分 9月修正履歴（内容現在 令和7年9月19日）） — 取り込み: なし
 
-## 算定ルール資料（95 件）
+## 算定ルール資料（107 件）
 
-### 介護保険（60 件）
+### 介護保険（72 件）
 
 **掲載ページ: <https://www.mhlw.go.jp/hourei/>（厚生労働省）**
 
@@ -85,6 +85,28 @@
 - [留意事項通知（老企第36号ほか）等の一部改正 新旧対照表 及び 当該通知の発出に伴うQ&A（介護保険最新情報 Vol.1502）](https://www.mhlw.go.jp/content/001698614.pdf)（R8.5.8 改正）
 - [介護予防・日常生活支援総合事業の留意事項 新旧対照表](https://www.mhlw.go.jp/content/001673837.pdf)（R8.3.13 改正）
 - [令和8年度介護職員等処遇改善加算に関するQ&A（第1版）](https://www.mhlw.go.jp/content/12404000/001675711.pdf)（R8）
+
+**掲載ページ: <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080101.html>（厚生労働省）**
+
+- [老企第36号（訪問通所サービス・居宅療養管理指導・福祉用具貸与・居宅介護支援の留意事項） 平成27年4月時点の全文（平成27年度改定の新旧対照表の改正後の欄。以後の改正は新しい新旧対照表を見る）](https://www.mhlw.go.jp/file/06-Seisakujouhou-12300000-Roukenkyoku/0000080856.pdf)（H27.3.27 改正）
+- [老企第40号（短期入所・特定施設・施設サービスの留意事項） 平成27年4月時点の全文（平成27年度改定の新旧対照表の改正後の欄。以後の改正は新しい新旧対照表を見る）](https://www.mhlw.go.jp/file/06-Seisakujouhou-12300000-Roukenkyoku/0000080857.pdf)（H27.3.27 改正）
+- [老計発第0317001号等（介護予防サービスの留意事項） 平成27年4月時点の全文（平成27年度改定の新旧対照表の改正後の欄。以後の改正は新しい新旧対照表を見る）](https://www.mhlw.go.jp/file/06-Seisakujouhou-12300000-Roukenkyoku/0000080858.pdf)（H27.3.27 改正）
+- [老計発第0331005号等（地域密着型サービスの留意事項） 平成27年4月時点の全文（平成27年度改定の新旧対照表の改正後の欄。以後の改正は新しい新旧対照表を見る）](https://www.mhlw.go.jp/file/06-Seisakujouhou-12300000-Roukenkyoku/0000080859.pdf)（H27.3.27 改正）
+
+**掲載ページ: <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/housyu/kaitei30.html>（厚生労働省）**
+
+- [老企第36号（訪問通所サービス・居宅療養管理指導・福祉用具貸与・居宅介護支援の留意事項） 新旧対照表（抄）](https://www.mhlw.go.jp/content/12404000/1.pdf)（H30.3.22 改正）
+- [老企第40号（短期入所・特定施設・施設サービスの留意事項） 新旧対照表（抄）](https://www.mhlw.go.jp/content/12404000/001623021.pdf)（H30.3.22 改正）
+- [老計発第0317001号等（介護予防サービスの留意事項） 新旧対照表（抄）](https://www.mhlw.go.jp/content/12404000/3.pdf)（H30.3.22 改正）
+- [老計発第0331005号等（地域密着型サービスの留意事項） 新旧対照表（抄）](https://www.mhlw.go.jp/content/12404000/001623022.pdf)（H30.3.22 改正）
+
+**掲載ページ: <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html>（厚生労働省）**
+
+- [老企第36号（訪問通所サービス・居宅療養管理指導・福祉用具貸与・居宅介護支援の留意事項） 新旧対照表（抄）](https://www.wam.go.jp/gyoseiShiryou-files/documents/2021/0317103515238/ksvol.934.pdf)（R3.3.16 改正）
+- [老企第40号（短期入所・特定施設・施設サービスの留意事項） 新旧対照表（抄）](https://www.wam.go.jp/gyoseiShiryou-files/documents/2021/0317103515238/ksvol.934.pdf)（R3.3.16 改正）
+- [老計発第0317001号等（介護予防サービスの留意事項） 新旧対照表（抄）](https://www.wam.go.jp/gyoseiShiryou-files/documents/2021/0317103515238/ksvol.934.pdf)（R3.3.16 改正）
+- [老計発第0331005号等（地域密着型サービスの留意事項） 新旧対照表（抄）](https://www.wam.go.jp/gyoseiShiryou-files/documents/2021/0317103515238/ksvol.934.pdf)（R3.3.16 改正）
+- [「「指定居宅サービスに要する費用の額の算定に関する基準…の留意事項について」等の一部改正について」の発出等に伴うQ&A（Vol.2）（介護保険最新情報 Vol.1523）](https://www.mhlw.go.jp/content/001722713.pdf)（R8.7.13）
 
 **掲載ページ: <https://www.mhlw.go.jp/stf/newpage_38790.html>（厚生労働省）**
 
@@ -133,10 +155,6 @@
 - [令和6年4月以降の介護予防・日常生活支援総合事業におけるサービス種類の考え方](https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0522171821794/20260522_017.pdf)（R8.6 施行分 確定版）
 - [介護予防・日常生活支援総合事業における請求明細書と給付管理票の提出パターン](https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0522171834175/20260522_018.pdf)（R8.6 施行分 確定版）
 - [介護予防・日常生活支援総合事業費請求書・明細書及び給付管理票記載例](https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/0520082144743/20260522_008.pdf)（R8.6 施行分 確定版）
-
-**掲載ページ: <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html>（厚生労働省）**
-
-- [「「指定居宅サービスに要する費用の額の算定に関する基準…の留意事項について」等の一部改正について」の発出等に伴うQ&A（Vol.2）（介護保険最新情報 Vol.1523）](https://www.mhlw.go.jp/content/001722713.pdf)（R8.7.13）
 
 **掲載ページ: <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000184585.html>（厚生労働省）**
 

@@ -90,11 +90,15 @@ def head_level(line: str) -> int | None:
 
 
 # ---------------------------------------------------------------- 本文
-def pdf_pages(path: Path, two_col: bool) -> list[tuple[int, str, list[str]]]:
-    """[(page, side, lines)]。side は full | new（新旧対照表の左の欄）"""
+def pdf_pages(path: Path, two_col: bool, page_range: list[int] | None = None,
+              new_side: str = "left") -> list[tuple[int, str, list[str]]]:
+    """[(page, side, lines)]。side は full | new（新旧対照表の改正後の欄。ふつうは左、平成27年の版は右）。
+    page_range: [最初, 最後]（1 つの PDF に別紙がいくつも入っているとき、その資料の頁だけ）"""
     out = []
     with pymupdf.open(path) as d:
         for i, pg in enumerate(d):
+            if page_range and not page_range[0] <= i + 1 <= page_range[1]:
+                continue
             r = pg.rect
             side = "full"
             clip = None
@@ -103,7 +107,8 @@ def pdf_pages(path: Path, two_col: bool) -> list[tuple[int, str, list[str]]]:
                 left = len(pg.get_text(clip=pymupdf.Rect(r.x0, r.y0, mid, r.y1)).strip())
                 right = len(pg.get_text(clip=pymupdf.Rect(mid, r.y0, r.x1, r.y1)).strip())
                 if left > 0 and right > 0 and min(left, right) / max(left, right) > 0.15:
-                    clip, side = pymupdf.Rect(r.x0, r.y0, mid, r.y1), "new"
+                    clip = pymupdf.Rect(r.x0, r.y0, mid, r.y1) if new_side == "left" else pymupdf.Rect(mid, r.y0, r.x1, r.y1)
+                    side = "new"
             lines = [ln for ln in pg.get_text(clip=clip).splitlines() if ln.strip() and not PAGE_NO.match(nk(ln).strip())]
             if not lines:
                 # 画像だけのページは、ocr_rules.py の書き起こしがあればそれを使う
@@ -277,7 +282,9 @@ def main() -> int:
                     (e["id"], e["domain"], e["category"], e["title"], e.get("edition"), str(e["effective"]) if e.get("effective") else None,
                      e["url"], e.get("source_page"), log[e["id"]]["sha256"], log[e["id"]]["file"], e.get("note")))
         if e.get("ingest") == "prose":
-            pages = html_pages(f) if f.suffix == ".html" else pdf_pages(f, e["category"] in ("ryui", "kokuji_kaisei") or (e["category"] not in ("kozo", "servicecode") and is_shinkyu(f)))
+            pages = html_pages(f) if f.suffix == ".html" else pdf_pages(
+                f, e["category"] in ("ryui", "kokuji_kaisei") or (e["category"] not in ("kozo", "servicecode") and is_shinkyu(f)),
+                e.get("pages"), e.get("new_side", "left"))
             us = units(pages)
             con.executemany("INSERT INTO rule_units (doc_id, page, side, heading, text) VALUES (?,?,?,?,?)",
                             [(e["id"], u["page"], u["side"], u["heading"], u["text"]) for u in us])
