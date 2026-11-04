@@ -120,11 +120,14 @@ def table_listing(r: Retriever, table_id: int, max_rows: int = 200) -> str:
     head = [ln for ln in r.describe_table(table_id).splitlines() if not ln.startswith("項目: ")]
     rows = r.con.execute("SELECT no_raw, no, name_full, type, length_raw, length, required, content FROM items "
                          "WHERE table_id = ? ORDER BY seq LIMIT ?", (table_id, max_rows)).fetchall()
+    # サービス種類ごとの設定項目の表は、内容（○の付いた項目すべて）が答えそのものなので切らない
+    kind = r.con.execute("SELECT table_kind FROM spec_tables WHERE table_id = ?", (table_id,)).fetchone()["table_kind"]
     lines = []
     for x in rows:
         spec = "".join(f" / {lab} {v}" for lab, v in (("属性", x["type"]), ("桁数", x["length_raw"] or x["length"]),
                                                        ("必須", x["required"])) if v)
-        first = (x["content"] or "").splitlines()[0][:60] if x["content"] else ""
+        first = ((x["content"] if kind == "service_item_matrix" else (x["content"] or "").splitlines()[0][:60])
+                 if x["content"] else "")
         lines.append(f"項番 {x['no_raw'] or x['no'] or '-'} {x['name_full'] or '（項目名なし）'}{spec}" + (f" / 内容 {first}" if first else ""))
     return "\n".join(head + ["行一覧:"] + lines)
 

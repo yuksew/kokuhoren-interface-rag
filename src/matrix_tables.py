@@ -6,7 +6,7 @@ usage: uv run python src/matrix_tables.py [--check]
 対象:
   BLOCKS: 障害 都道府県編の、事業所異動連絡票情報（サービス情報）・障害児施設異動連絡票情報（サービス情報）の記載要領の後にある
     「サービス種類ごとの設定項目」の表（行: サービス種類、列: 項目、セル: ○）。異動年月日の期間ごとに同じ形の表があり、
-    今の期間（令和8年6月以降）だけを入れる（障害 p54〜59、障害児 p288〜290。古い期間は p60〜132・p291〜314）。
+    期間ごとに別の表にする（障害 p54〜132 の 19 期間、障害児 p288〜314 の 14 期間。最初が令和8年6月以降）。
     1つの表が横に数頁続く（どの頁も行は同じサービス種類で、左の列も同じ。右の項目の列が頁ごとに違う）ので、
     サービス種類で頁をつないで 1 つの表にする。
   PAIR_BLOCKS: 介護 保険者編 p210〜212「データの充当を行なわない項目とその条件」（項目｜引き継がない条件 の 2 列。右の列は行をまたいで結合）
@@ -36,10 +36,10 @@ from transcribe import load_manifest, pdf_path  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 RUN = "matrix-textlayer"
 
-BLOCKS = [
-    {"doc": "shogai_todofuken_r0806", "pages": list(range(54, 60)),
+BLOCKS = [   # 期間ごとの表が続く範囲。頁の【期間】で表に分ける
+    {"doc": "shogai_todofuken_r0806", "pages": list(range(54, 133)),
      "record": "事業所異動連絡票情報（サービス情報）"},
-    {"doc": "shogai_todofuken_r0806", "pages": list(range(288, 291)),
+    {"doc": "shogai_todofuken_r0806", "pages": list(range(288, 315)),
      "record": "障害児施設異動連絡票情報（サービス情報）"},
 ]
 LEFT_NAMES = {"サービス種類", "施設等の区分", "人員配置区分", "障害児施設区分"}   # どの頁にもある左の列（障害児は人員配置区分が無い）
@@ -110,8 +110,9 @@ def extract_page(page: pymupdf.Page) -> dict:
         cover[k] = cover.get(k, 0) + (b - a)
     xs = merge([x for x, n in cover.items() if n > height * 0.6])
     left_x0, left_x1 = xs[0], xs[1]
-    xc = (left_x0 + left_x1) / 2
-    ys = merge([y for y, a, b in H if a <= xc <= b])   # 左端の列の中央を横切る罫線
+    # 左の端の近く（番号の欄）を横切る罫線。古い期間の頁は、左の列の中に字の行ごとの塗りの四角があり、
+    # その縁は番号の欄までは届かない。行の境の罫線は、番号の欄だけ別の短い線のこともある
+    ys = merge([y for y, a, b in H if a <= left_x0 + 3 <= b])
     # 見出しの下端: 最初のサービス（「11:」のような行）の上の罫線
     first = min(y for x, y, t in lines if left_x0 <= x < left_x1 and re.match(r"\s*\d+\s*[:：]", nk(t)))
     hb = max(y for y in ys if y < first)
@@ -143,6 +144,20 @@ def service_key(s: str) -> str:
     return service(s)[0]
 
 
+def period_blocks(pdf, blk: dict) -> list[dict]:
+    """範囲の頁を、【期間】の続く頁ごとに分ける"""
+    out: list[dict] = []
+    for p in blk["pages"]:
+        period = extract_page(pdf[p - 1])["period"]
+        if not period:
+            raise SystemExit(f"p{p}: 期間が読めない")
+        if out and out[-1]["_period"] == period:
+            out[-1]["pages"].append(p)
+        else:
+            out.append({**blk, "pages": [p], "_period": period})
+    return out
+
+
 def build_block(pdf, blk: dict) -> dict:
     pages = [extract_page(pdf[p - 1]) for p in blk["pages"]]
     LEFT = next(i for i, c in enumerate(pages[0]["columns"]) if c not in LEFT_NAMES)
@@ -158,7 +173,8 @@ def build_block(pdf, blk: dict) -> dict:
     for i, k in enumerate(keys):
         r0 = pages[0]["rows"][i]
         name = service(r0[0])[1]
-        marked, other = [], []
+        marked = [c for c, v in zip(left[1:], r0[1:LEFT]) if v == "○"]   # 古い障害児の表は施設等の区分も ○ の列
+        other = []
         for pg in pages:
             for c, v in zip(pg["columns"][LEFT:], pg["rows"][i][LEFT:]):
                 if v == "○":
@@ -169,7 +185,7 @@ def build_block(pdf, blk: dict) -> dict:
             "no": None, "no_raw": k, "name_path": [name], "type": None, "length": None, "length_raw": None,
             "content": "○の付いた項目: " + ("、".join(marked) if marked else "なし"),
             "required": None, "required_by": [], "note": None,
-            "cells": [{"column": c, "value": v} for c, v in zip(left[1:], r0[1:LEFT]) if v] + other,
+            "cells": [{"column": c, "value": v} for c, v in zip(left[1:], r0[1:LEFT]) if v and v != "○"] + other,
             "page": blk["pages"][0], "_marked": len(marked)})
     return {"period": pages[0]["period"], "left": left, "item_cols": item_cols, "items": items,
             "shape": [(p, len(pg["columns"]), len(pg["rows"])) for p, pg in zip(blk["pages"], pages)],
@@ -241,7 +257,7 @@ def main() -> int:
     out_dir = ROOT / "out" / f"{RUN}-reviewed"
     logical = []
     page_json: dict[tuple[str, int], dict] = {}
-    for blk in BLOCKS:
+    for blk in [b for B in BLOCKS for b in period_blocks(pymupdf.open(pdf_path(man[B["doc"]])), B)]:
         doc = blk["doc"]
         e = man[doc]
         pdf = pymupdf.open(pdf_path(e))

@@ -207,3 +207,9 @@
   kind: paraphrase
   gold: [{doc: kaigo_hokensha, name: 二割負担適用終了年月日, page: 212}]
   expect: ["引き継がない"]
+- q: 平成30年4月の異動で、共同生活援助の事業所異動連絡票情報（サービス情報）に設定する項目は？
+  domain: shogai
+  kind: table
+  # 古い期間の表（p105〜109、平成30年4月〜令和1年9月）。今の期間の表（p54）ではなく、この期間の表を引けるか
+  gold: [{doc: shogai_todofuken, name: 共同生活援助, table_kind: service_item_matrix, page: 105}]
+  expect: ["平成30年4月"]

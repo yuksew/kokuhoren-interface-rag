@@ -47,6 +47,37 @@ def nk(s) -> str:
     return unicodedata.normalize("NFKC", str(s or ""))
 
 
+ERA = {"平成": 1988, "令和": 2018, "H": 1988, "R": 2018}
+YM = re.compile(r"(平成|令和|H|R)\s*(元|\d{1,2})\s*年\s*(\d{1,2})\s*月|(20\d\d)\s*年\s*(\d{1,2})\s*月")
+
+
+def ym_values(s: str) -> list[int]:
+    """文字列の年月（和暦・西暦）を YYYYMM の数にする。「平成21年4月~9月」の後ろの月だけの年月は前の年を使う"""
+    out = []
+    for m in re.finditer(YM.pattern + r"|(?<=[~〜～])\s*(\d{1,2})\s*月", s):
+        if m.group(1):
+            y = ERA[m.group(1)] + (1 if m.group(2) == "元" else int(m.group(2)))
+            out.append(y * 100 + int(m.group(3)))
+        elif m.group(4):
+            out.append(int(m.group(4)) * 100 + int(m.group(5)))
+        elif out:
+            out.append(out[-1] // 100 * 100 + int(m.group(6)))
+    return out
+
+
+def period_range(title: str) -> tuple[int, int] | None:
+    """表題の「異動年月日の年月が〜の場合」を (から, まで) の YYYYMM にする"""
+    m = re.search(r"年月が(.+?)の場合", nk(title))
+    if not m:
+        return None
+    v = ym_values(m.group(1))
+    if m.group(1).endswith("以降") and v:
+        return v[0], 999999
+    if m.group(1).endswith("以前") and v:
+        return 0, v[0]
+    return (v[0], v[1]) if len(v) == 2 else None
+
+
 def fts_terms(q: str) -> list[str]:
     q = nk(q)
     terms = [t for t in SPLIT.split(q) if len(t) >= 3]
@@ -76,7 +107,14 @@ class Retriever:
         # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
         self.doc_volume = {r["doc_id"]: r["volume"] or "" for r in self.con.execute("SELECT doc_id, volume FROM documents")}
         self.other_docs = {d for d, v in self.doc_volume.items() if OTHER_VOL.search(v)}
-        self.old_tables = {r["table_id"] for r in self.con.execute("SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'")}
+        # サービス種類ごとの設定項目の表も、今の期間（「〜以降の場合」）より前の期間の表は古い表として扱う
+        self.old_tables = {r["table_id"] for r in self.con.execute(
+            "SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'"
+            " OR (table_kind = 'service_item_matrix' AND title NOT LIKE '%以降の場合%')")}
+        # 期間ごとの表（サービス種類ごとの設定項目）の期間。質問に年月があれば、その年月を含む期間の表を引く
+        self.table_period = {r["table_id"]: pr for r in self.con.execute(
+            "SELECT table_id, title FROM spec_tables WHERE table_kind = 'service_item_matrix'")
+            if (pr := period_range(r["title"]))}
         self.ex_tables: dict[str, set[int]] = {}
         for r in self.con.execute("SELECT exchange_id, table_id FROM table_exchange_ids"):
             self.ex_tables.setdefault(r["exchange_id"], set()).add(r["table_id"])
@@ -181,6 +219,14 @@ class Retriever:
         # 仕様書の形式だけを聞いている質問では、算定ルール資料（数が多い）が仕様書の行を押し出すので重みを下げる
         rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
         ow = 1.0 if OLD_Q.search(nk(q)) else old_weight
+        # 質問の年月。期間ごとの表は、その年月を含む期間の表だけを今の表として扱い、ほかの期間の表を古い表と同じに下げる
+        qym = ym_values(nk(q))
+        if qym:
+            old_set = {t for t, (a, b) in self.table_period.items() if not a <= qym[0] <= b}
+            old_set |= self.old_tables - set(self.table_period)
+            ow_p = old_weight
+        else:
+            old_set, ow_p = self.old_tables, ow
         vw = 1.0 if OTHER_Q.search(nk(q)) else other_weight
         named = {v for pat, v in VOL_Q if pat.search(nk(q))}
         # 編ごとの重み（事業所向けでない編だけ）。質問が編を指していれば、指した編は 1、ほかは下げたまま
@@ -211,16 +257,21 @@ class Retriever:
         via: dict[int, list[str]] = {}
         for name, lst, w in lists:
             seen = 0  # 重みを下げた編を除いた順位（下げた編が前に並んでも、ほかの候補の順位は下げない）
+            n_old = 0  # 重みを下げた期間ごとの表の候補の数（同じ形の表が期間の数だけ並び、今の表の順位を押し下げるので、順位に数えない）
             for pos, c in enumerate(lst):
                 vd = dw.get(self.meta[c]["doc_id"], 1.0)
-                rank = pos if vd < 1.0 else seen
-                if vd >= 1.0:
+                tid = self.meta[c]["table_id"]
+                w_old = (ow_p if tid in self.table_period else ow) if tid in old_set else 1.0
+                old = w_old < 1.0 and tid in self.table_period
+                rank = pos if old else (pos - n_old if vd < 1.0 else seen)
+                if old:
+                    n_old += 1
+                elif vd >= 1.0:
                     seen += 1
                 wm = mx if self.meta[c]["table_kind"] == "required_matrix" and self.meta[c]["kind"] == "item" else 1.0
                 if self.meta[c]["kind"] in ("rule", "svc"):
                     wm = rw
-                if self.meta[c]["table_id"] in self.old_tables:
-                    wm *= ow
+                wm *= w_old
                 wm *= vd
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
