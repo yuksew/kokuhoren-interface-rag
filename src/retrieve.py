@@ -42,6 +42,9 @@ SHORT = re.compile(r"(?<![0-9A-Za-z])((?=[0-9A-Z]{2,3}(?![0-9A-Za-z]))[0-9]*[A-Z
 CODE = re.compile(r"(?<![0-9A-Za-z])[0-9A-Z]{4}(?![0-9A-Za-z])")
 # サービスコード（種類2桁＋項目4桁。「11 4845」「114845」）
 LIMIT = re.compile(r"整数部\s*上?\s*(\d+)\s*桁\s*[、,+＋]?\s*小数部\s*下?\s*(\d+)\s*桁")
+MATRIX_CAP = 2   # 必須対応表の行を、対応表を聞く質問でないときに残す数
+TABLE_CAP = 4    # 1 つの表から残す行の数（同じ表の行が上位を埋めて、ほかの表の正解を押し出さないように）
+FIGURE = re.compile(r"レコード構成図|ファイル構成図")
 SVC_NAME_Q = re.compile(r"(?<!決定)サービスコード|単位数|何単位")   # サービスコード表の行を名前で引く質問（決定サービスコードは別の表）
 SVC = re.compile(r"(?<![0-9A-Za-z])([0-9]{2})\s?([0-9A-Z]{4})(?![0-9A-Za-z])")
 
@@ -105,6 +108,14 @@ class Retriever:
             "ON rd.doc_id = c.doc_id ORDER BY c.chunk_id").fetchall()
         self.meta = [dict(r) for r in rows]
         self.item_chunk = {m["item_id"]: m["chunk_id"] for m in self.meta if m["item_id"] is not None}
+        # 構成図の頁の本文（「レコード構成図」「ファイル構成図」）。項目名が並ぶだけで定義が無いのに、項目名で強く当たる
+        self.figure_chunks = {r["chunk_id"] for r in self.con.execute("SELECT chunk_id, text FROM chunks WHERE kind = 'prose'")
+                              if FIGURE.search(r["text"].split("本文: ", 1)[-1][:60])}
+        # 必須対応表の行のチャンク → (文書, 項目名)。同じ行が版ごとの表に繰り返し出るのをまとめるため
+        self.matrix_key = {self.item_chunk[r["item_id"]]: (r["doc_id"], nk(r["name_full"] or ""))
+                           for r in self.con.execute("SELECT i.item_id, i.doc_id, i.name_full FROM items i JOIN spec_tables t "
+                                                     "USING (table_id) WHERE t.table_kind = 'required_matrix'")
+                           if r["item_id"] in self.item_chunk}
         self.vecs = np.load(self.db_path.parent / f"vectors.{embedder}.npy")
         assert len(self.vecs) == len(self.meta), "chunks と vectors の件数が合わない（build_index.py をやり直す）"
         # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
@@ -255,24 +266,28 @@ class Retriever:
 
     def search(self, q: str, k: int = 10, domain: str | None = None, exchange: str | None = None, mode: str = "hybrid",
                fts_weight: float = 1.0, use_codes: bool = True, matrix_weight: float = 0.5, rule_weight: float = 0.5,
-               old_weight: float = 0.3, other_weight: float = 0.3) -> list[dict]:
+               old_weight: float = 0.3, other_weight: float = 0.3, context: str | None = None) -> list[dict]:
+        """context: 言い換えの検索文で引くときの元の質問。質問の向き（年月・古い様式・必須対応表・編など）は、
+        元の質問と検索文の両方から見る（言い換えは「平成30年4月」のような手がかりを落とすことがある）"""
         ok = self._allowed(domain, exchange)
+        qi = nk(q) if not context else nk(context) + "\n" + nk(q)   # 質問の向きを見る文
         # 必須対応表の行は同じ項目名が版（サービス提供年月）ごとに何十回も出てきて、項目の定義を押し出すので重みを下げる。
         # 質問が必須・様式について聞いているときは下げない。
-        mx = 1.0 if MATRIX_Q.search(nk(q)) else matrix_weight
+        mx = 1.0 if MATRIX_Q.search(qi) else matrix_weight
         # 仕様書の形式だけを聞いている質問では、算定ルール資料（数が多い）が仕様書の行を押し出すので重みを下げる
-        rw = rule_weight if SPEC_Q.search(nk(q)) and not RULE_Q.search(nk(q)) else 1.0
-        ow = 1.0 if OLD_Q.search(nk(q)) else old_weight
+        spec_q = bool(SPEC_Q.search(qi))
+        rw = rule_weight if spec_q and not RULE_Q.search(qi) else 1.0
+        ow = 1.0 if OLD_Q.search(qi) else old_weight
         # 質問の年月。期間ごとの表は、その年月を含む期間の表だけを今の表として扱い、ほかの期間の表を古い表と同じに下げる
-        qym = ym_values(nk(q))
+        qym = ym_values(nk(context)) if context and ym_values(nk(context)) else ym_values(nk(q))
         if qym:
             old_set = {t for t, (a, b) in self.table_period.items() if not a <= qym[0] <= b}
             old_set |= self.old_tables - set(self.table_period)
             ow_p = old_weight
         else:
             old_set, ow_p = self.old_tables, ow
-        vw = 1.0 if OTHER_Q.search(nk(q)) else other_weight
-        named = {v for pat, v in VOL_Q if pat.search(nk(q))}
+        vw = 1.0 if OTHER_Q.search(qi) else other_weight
+        named = {v for pat, v in VOL_Q if pat.search(qi)}
         # 編ごとの重み（事業所向けでない編だけ）。質問が編を指していれば、指した編は 1、ほかは下げたまま
         dw = {d: (1.0 if vw >= 1.0 and (not named or self.doc_volume[d] in named) else other_weight) for d in self.other_docs}
 
@@ -316,10 +331,27 @@ class Retriever:
                 if self.meta[c]["kind"] in ("rule", "svc"):
                     wm = rw
                 wm *= w_old
+                if spec_q and c in self.figure_chunks:
+                    wm *= 0.5
                 wm *= vd
                 score[c] = score.get(c, 0.0) + w * wm / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"{name}#{rank + 1}")
-        top = sorted(score, key=lambda c: -score[c])[:k]
+        # 必須対応表の行は、同じ文書の同じ項目名（版ごとの表に同じ行がある）を 1 件にまとめる。対応表そのものを聞く質問ではまとめない
+        ranked, seen_mx, per_table = [], set(), {}
+        for c in sorted(score, key=lambda c: -score[c]):
+            key = self.matrix_key.get(c)
+            if key is not None and mx < 1.0:
+                # 同じ行は 1 件に、対応表の行は全部で 2 件まで（対応表の行は「必須」を聞く質問でないと答えにならない）
+                if key in seen_mx or len(seen_mx) >= MATRIX_CAP:
+                    continue
+                seen_mx.add(key)
+            tid = self.meta[c]["table_id"] if self.meta[c]["kind"] == "item" else None
+            if tid is not None:
+                if per_table.get(tid, 0) >= TABLE_CAP:
+                    continue
+                per_table[tid] = per_table.get(tid, 0) + 1
+            ranked.append(c)
+        top = ranked[:k]
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
 
     def search_multi(self, queries: list[str], k: int = 10, keep: int | None = None, **kw) -> list[dict]:
@@ -333,12 +365,27 @@ class Retriever:
         via: dict[int, list[str]] = {}
         for qi, q in enumerate(queries):
             w = 1.2 if qi == 0 else 1.0
-            for rank, h in enumerate(first if qi == 0 else self.search(q, k=50, **kw)):
+            for rank, h in enumerate(first if qi == 0 else self.search(q, k=50, context=queries[0], **kw)):
                 c = h["chunk_id"]
                 score[c] = score.get(c, 0.0) + w / (RRF_K + rank + 1)
                 via.setdefault(c, []).append(f"q{qi}#{rank + 1}")
+        # 必須対応表の同じ行（版ごとの表）は、検索文ごとに別の版が残るので、融合した後にもまとめる（対応表を聞く質問ではまとめない）
+        dedup = not MATRIX_Q.search(nk(queries[0]))
+        ranked, seen_mx, per_table = [], set(), {}
+        for c in sorted(score, key=lambda c: -score[c]):
+            key = self.matrix_key.get(c) if dedup else None
+            if key is not None:
+                if key in seen_mx or len(seen_mx) >= MATRIX_CAP:
+                    continue
+                seen_mx.add(key)
+            tid = self.meta[c]["table_id"] if self.meta[c]["kind"] == "item" else None
+            if tid is not None:
+                if per_table.get(tid, 0) >= TABLE_CAP:
+                    continue
+                per_table[tid] = per_table.get(tid, 0) + 1
+            ranked.append(c)
         top = [h["chunk_id"] for h in first[:keep]]
-        top += [c for c in sorted(score, key=lambda c: -score[c]) if c not in top][: k - len(top)]
+        top += [c for c in ranked if c not in top][: k - len(top)]
         top.sort(key=lambda c: -score[c])
         return [{**self.meta[c], "score": score[c], "via": via[c]} for c in top]
 
