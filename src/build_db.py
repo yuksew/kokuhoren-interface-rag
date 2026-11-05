@@ -173,7 +173,10 @@ def main() -> int:
     con.executescript(SCHEMA)
 
     # 表の無い編（本文だけ）。書き起こしは要らず、build_index.py が PDF のテキストレイヤから文章を取る
-    docs = sorted({lt["doc_id"] for lt in logical} | set(PROSE_ONLY))
+    # 確定版に置き換わった案（status: superseded）は入れない（manifest には記録として残す）
+    superseded = {d for d, e in manifest.items() if e.get("status") == "superseded"}
+    logical = [lt for lt in logical if lt["doc_id"] not in superseded]
+    docs = sorted(({lt["doc_id"] for lt in logical} | set(PROSE_ONLY)) - superseded)
     valid = validity(manifest, docs)
     for d in docs:
         e = manifest[d]
@@ -184,6 +187,8 @@ def main() -> int:
     page_notes: dict[tuple[str, int], list[dict]] = {}
     for f in sorted(f for s_ in srcs for f in s_.glob("*_p*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))
+        if p["doc_id"] in superseded:
+            continue
         page_notes[(p["doc_id"], p["page"])] = p.get("footnotes") or []
         con.execute("INSERT INTO pages VALUES (?,?,?,?,?)", (p["doc_id"], p["page"], blank(p.get("printed_page")),
                                                             js(p.get("footnotes") or []), js(p.get("uncertain") or [])))

@@ -98,7 +98,7 @@ class Retriever:
     def __init__(self, db: str = "db/interface_spec.sqlite", embedder: str = "ruri-v3-310m", embedder_obj=None,
                  as_of: str | None = None):
         """as_of: 基準日（YYYY-MM-DD）。どの版を今の版とするかを決める。既定は今日（評価では固定する）"""
-        self.as_of = as_of or dt.date.today().isoformat()
+        self._as_of = as_of
         self.db_path = ROOT / db
         # 読むだけなので、画面（web_app.py）の複数のスレッドから同じ接続を使えるようにする（sqlite はシリアライズドモード）
         self.con = sqlite3.connect(self.db_path, check_same_thread=False)
@@ -234,6 +234,15 @@ class Retriever:
             if len(out) >= n:
                 break
         return out
+
+    @property
+    def as_of(self) -> str:
+        """基準日。指定が無ければ、使うたびに今日（Web 画面のように起動したままでも、施行日を過ぎれば切り替わる）"""
+        return self._as_of or dt.date.today().isoformat()
+
+    @as_of.setter
+    def as_of(self, v: str | None) -> None:
+        self._as_of = v
 
     def edition_state(self, doc_id: str, date: str | None = None) -> str:
         """基準日での版の状態: current（今の版）| next（施行前の次の版・案）| old（次の版に替わった旧版）"""

@@ -112,10 +112,15 @@ uv run --group rag python src/eval_answers.py --models claude-sonnet-5-5 --out r
 
 1. 施行日が告示・事務連絡で決まったら、次の版の `effective` に入れる。
 2. 確定版を取り込んだら、同じ内容の案を外す。
-   - manifest の案の項目は `status: superseded` にし、`build_db.py` の `PROSE_ONLY` から外す（manifest には記録として残す）。
+   - manifest の案の項目は `status: superseded` にする。`build_db.py` は superseded の資料（本文も表も）を DB に入れない（manifest には記録として残る）。`PROSE_ONLY` に書いてあれば、そこからも外しておく。
    - 案の変更点資料と確定版の変更点資料は、別の資料として登録する。
-3. 施行日の当日は作業不要。検索は基準日（今日）で今の版を選び直す。
+3. 施行日の当日は作業不要。検索は基準日（指定が無ければ使うたびの今日）で今の版を選び直す。起動したままの Web 画面も、再起動せずに切り替わる。
 4. 施行日の後に、`--as-of` を施行後の日付にして評価を回す。README・`sources/README.md`・`sources/SOURCES.md` の「最新」の記述を更新する。
+
+## 気をつけること
+
+- 「2027」を含む質問は、次の版を聞いているとみなして次の版の重みを下げない（「2027年3月サービス提供分の請求で〜」のような今の版の質問でも）。その場合も次の版の抜粋には【施行前の次の版】が付き、回答の指示（今の版として答えない）で分けている。
+- `sources/watch_state.json` は確認のたびに `checked_at` が変わる。新着が無ければコミットしなくてよい。
 
 ## 7. 記録
 
