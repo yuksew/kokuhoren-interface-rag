@@ -15,7 +15,7 @@
 - 同じ編の今の版と次の版の両方を入れ、施行日で切り替える。施行日は `sources/manifest.yaml` の `effective`（無ければ版の名前から）、案は `status: draft`。
 - 検索は基準日（既定は今日。`ask.py --as-of`）と質問の年月で今の版を選び、施行前の次の版・旧版は重みを下げる（「令和9年」「改定後」などと聞けば次の版も引く）。回答では次の版・旧版の抜粋に【施行前の次の版（案）】【旧版】などと付く。
 - 令和9年度改定は、介護の「参考資料（その１）」と「インタフェースの変更点（2027年5月以降出力分）」を案として入れてある（2026-11-05）。施行日は未確定。
-- 新着の確認は `uv run python src/watch.py`（掲載ページは `sources/watch.yaml`）。取り込みの手順は **[`docs/revision_runbook.md`](docs/revision_runbook.md)**。
+- 新着の確認は `uv run python src/watch.py`（掲載ページは `sources/watch.yaml`）。取り込みの手順は **[`docs/revision_runbook.md`](docs/revision_runbook.md)**。Claude Code では `/revision-update`（`.claude/skills/revision-update/SKILL.md`）で、この手順に沿って確認と取り込みを進める。
 
 ## 出典
 取り込んだ資料はすべて、次の公開元が公開しているもの（調査・取得は 2026-11-01〜02）。件数は DB に入れたもの。1件ずつの一覧（資料名・原本の URL・掲載ページ・版。参考に登録しただけの新旧対照表なども含む）は **[`sources/SOURCES.md`](sources/SOURCES.md)**。
