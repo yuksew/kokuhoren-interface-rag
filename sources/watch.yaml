@@ -1,0 +1,61 @@
+# 新着の確認（src/watch.py）で見る掲載ページ。前回から増えたリンクを一覧にする（API は使わない）。
+# include: リンクの文字がこの正規表現に合うものだけ見る（無ければ全部）。exclude: 合うものは見ない
+# 何を見つけたら何をするかは docs/revision_runbook.md
+
+# --- インタフェース仕様書
+- id: kaigo_if
+  label: 介護 国保連インタフェース（WAM NET 行政情報 > 情報化・システム関連 > 国保連インタフェース）
+  url: https://www.wam.go.jp/gyoseiShiryou/detail-list?bun=020050010
+  include: 介護保険事務処理システム|インタフェース
+- id: kaigo_if_r9_sono1
+  label: 介護 参考資料（その１）（令和8年10月6日）の添付資料。資料が足されたら気づくため
+  url: https://www.wam.go.jp/gyoseiShiryou/detail?gno=22911&ct=020050010
+  include: \.pdf|\.xlsx?|\.zip|資料
+- id: shogai_if
+  label: 障害 インタフェース仕様書の一覧（施行分ごとのページ）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000045136.html
+  include: 施行分
+- id: shogai_if_r0806
+  label: 障害 令和8年6月施行分のページ（修正・確定版の事務連絡が足されたら気づくため）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174643_00025.html
+  include: \.pdf|\.xlsx?|\.zip
+
+# --- 算定ルール（告示・留意事項・Q&A・サービスコード表）
+- id: kaigo_housyu
+  label: 介護報酬のページ（改定ごとのページへのリンク。令和9年度のページができたらここに出る）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/housyu/index.html
+  include: 報酬改定|サービスコード|Q&A|Ｑ＆Ａ
+- id: kaigo_housyu_r08
+  label: 令和8年度介護報酬改定のページ（Q&A・正誤などが足されたら気づくため）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188411_00073.html
+  include: \.pdf|\.xlsx?|\.zip
+- id: kaigo_saishin
+  label: 介護保険最新情報（報酬・留意事項・Q&A・告示・サービスコード・システム関係だけ）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html
+  include: 報酬|留意事項|Ｑ＆Ａ|Q&A|告示|サービスコード|算定|記載要領|請求|インタフェース|事務処理システム|総合事業
+- id: shogai_housyu_r08
+  label: 令和8年度障害福祉サービス等報酬改定のページ（Q&A・正誤などが足されたら気づくため）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html
+  include: \.pdf|\.xlsx?|\.zip|報酬改定
+- id: shogai_top
+  label: 障害者福祉のページ（令和9年度の報酬改定のページができたらここに出る）
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/index.html
+  include: 報酬改定|報酬|サービスコード
+- id: cfa_r08
+  label: こども家庭庁 令和8年度障害福祉サービス等報酬改定（障害児）
+  url: https://www.cfa.go.jp/policies/shougaijishien/shisaku/r8hoshukaitei
+  include: \.pdf|報酬改定|Q&A|Ｑ＆Ａ
+- id: shogai_sc
+  label: 障害 サービスコード表のページ
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000174644_00022.html
+  include: \.pdf|\.xlsx?|\.zip|サービスコード
+
+# --- 審議の状況（取り込みはしない。改定案・答申の時期を知るため）
+- id: kaigo_bunkakai
+  label: 社会保障審議会 介護給付費分科会（開催ごとの資料ページ）
+  url: https://www.mhlw.go.jp/stf/shingi/shingi-hosho_126698_00022.html
+  include: 資料$
+- id: shogai_kentou
+  label: 障害福祉サービス等報酬改定検討チーム（開催ごとの資料ページ）
+  url: https://www.mhlw.go.jp/stf/shingi/other-syougai_446935_00001.html
+  include: 資料$
