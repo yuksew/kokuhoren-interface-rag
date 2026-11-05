@@ -10,6 +10,7 @@ usage: uv run --group rag python src/retrieve.py "受給者証番号の桁数" [
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import re
 import sqlite3
 import sys
@@ -30,6 +31,8 @@ OLD_Q = re.compile(r"平成|以前|旧様式|昔|過去|H[0-9]{1,2}")
 # 事業所向けでない編（自治体・生活保護・合併）と、それを聞いている質問。
 # これらの編には、事業所向けの編と同じ定義の項目（明細書・給付管理票の生保版など）が丸ごと載っていて、事業所の質問で上位を埋める
 OTHER_VOL = re.compile(r"都道府県編|保険者編|生保単独編|市町村合併編|市町村編")
+# 施行前の次の版（改定の案・確定版）を聞いている質問
+NEXT_Q = re.compile(r"令和\s*9|令和九|R\s*9|2027|改定後|次期|次の改定|次回の改定|次の版|新しい版|来年度")
 OTHER_Q = re.compile(r"都道府県|(?<!被)保険者|市町村|自治体|生保|生活保護|合併|異動連絡|台帳")
 # 質問の言葉 → その言葉が指す編（質問がどれかを指していれば、その編だけ重みを戻す。どれも指さなければ全部戻す）
 VOL_Q = [(re.compile(r"都道府県"), "都道府県編"), (re.compile(r"(?<!被)保険者"), "保険者編"),
@@ -92,7 +95,10 @@ def fts_terms(q: str) -> list[str]:
 
 
 class Retriever:
-    def __init__(self, db: str = "db/interface_spec.sqlite", embedder: str = "ruri-v3-310m", embedder_obj=None):
+    def __init__(self, db: str = "db/interface_spec.sqlite", embedder: str = "ruri-v3-310m", embedder_obj=None,
+                 as_of: str | None = None):
+        """as_of: 基準日（YYYY-MM-DD）。どの版を今の版とするかを決める。既定は今日（評価では固定する）"""
+        self.as_of = as_of or dt.date.today().isoformat()
         self.db_path = ROOT / db
         # 読むだけなので、画面（web_app.py）の複数のスレッドから同じ接続を使えるようにする（sqlite はシリアライズドモード）
         self.con = sqlite3.connect(self.db_path, check_same_thread=False)
@@ -132,6 +138,22 @@ class Retriever:
         # 古い様式の表（表題に「〜以前」）。同じ項目が様式の世代ごとに出てきて現行の表を押し出すので、重みを下げる
         self.doc_volume = {r["doc_id"]: r["volume"] or "" for r in self.con.execute("SELECT doc_id, volume FROM documents")}
         self.other_docs = {d for d, v in self.doc_volume.items() if OTHER_VOL.search(v)}
+        # 版の期間（build_db.py）: 仕様書は (状態, 使われ始める日, 次の版に替わる日)、算定ルール資料は (final, 施行日, None)
+        cols = {r[1] for r in self.con.execute("PRAGMA table_info(documents)")}
+        self.doc_valid = ({r["doc_id"]: (r["status"] or "final", r["valid_from"], r["valid_to"])
+                           for r in self.con.execute("SELECT doc_id, status, valid_from, valid_to FROM documents")}
+                          if "status" in cols else {})
+        if self._has("rule_docs"):
+            self.doc_valid.update({r["doc_id"]: ("final", r["effective"], None)
+                                   for r in self.con.execute("SELECT doc_id, effective FROM rule_docs")})
+        # 同じ編に、もっと前に始まる確定版があるか（質問の年月がこの版より前のとき、その版に譲るため）
+        self.has_prev = set()
+        if "status" in cols:
+            eds = self.con.execute("SELECT doc_id, domain, volume, status, valid_from FROM documents WHERE volume IS NOT NULL").fetchall()
+            for a in eds:
+                if any(b["domain"] == a["domain"] and b["volume"] == a["volume"] and b["status"] == "final" and b["valid_from"]
+                       and a["valid_from"] and b["valid_from"] < a["valid_from"] for b in eds):
+                    self.has_prev.add(a["doc_id"])
         # サービス種類ごとの設定項目の表も、今の期間（「〜以降の場合」）より前の期間の表は古い表として扱う
         self.old_tables = {r["table_id"] for r in self.con.execute(
             "SELECT table_id FROM spec_tables WHERE title LIKE '%以前%'"
@@ -212,6 +234,18 @@ class Retriever:
             if len(out) >= n:
                 break
         return out
+
+    def edition_state(self, doc_id: str, date: str | None = None) -> str:
+        """基準日での版の状態: current（今の版）| next（施行前の次の版・案）| old（次の版に替わった旧版）"""
+        status, start, end = self.doc_valid.get(doc_id, ("final", None, None))
+        date = date or self.as_of
+        if status == "draft" or (start and self.as_of < start):
+            return "next"   # 案か、基準日でまだ施行されていない版
+        if end and date >= end:
+            return "old"    # 次の版に替わった後の日付
+        if start and date < start and doc_id in self.has_prev:
+            return "old"    # 質問の年月はこの版より前で、前の版が入っている（前の版に譲る）
+        return "current"
 
     @property
     def emb(self):
@@ -301,6 +335,15 @@ class Retriever:
         named = {v for pat, v in VOL_Q if pat.search(qi)}
         # 編ごとの重み（事業所向けでない編だけ）。質問が編を指していれば、指した編は 1、ほかは下げたまま
         dw = {d: (1.0 if vw >= 1.0 and (not named or self.doc_volume[d] in named) else other_weight) for d in self.other_docs}
+        # 版の重み: 質問の年月（無ければ基準日）で今の版でないもの。次の版は「令和9年」「改定後」などと聞かれたときだけ下げない。
+        # 旧版は、年月を言わずに「以前」「旧様式」などと聞かれたときだけ下げない
+        qdate = f"{qym[0] // 100:04d}-{qym[0] % 100:02d}-01" if qym else self.as_of
+        next_q = bool(NEXT_Q.search(qi))
+        for d in self.doc_valid:
+            st = self.edition_state(d, qdate)
+            w = 1.0 if (st == "current" or (st == "next" and next_q) or (st == "old" and ow >= 1.0 and not qym)) else old_weight
+            if w < 1.0:
+                dw[d] = dw.get(d, 1.0) * w
 
         def cut(cs: list[int], n: int = 50) -> list[int]:
             # 重みを下げる編（事業所向けでない編）の候補は、上位 n 件の枠に数えない。

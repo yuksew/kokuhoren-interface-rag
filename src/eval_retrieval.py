@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from retrieve import Retriever  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+AS_OF = "2026-11-05"   # 評価の基準日の既定（施行日をまたいで比べるときは --as-of で変える）
 # (表示名, mode, fts_weight, use_codes, matrix_weight)
 MODES = [("fts", "fts", 1.0, False, 1.0), ("vector", "vector", 1.0, False, 1.0), ("hybrid", "hybrid", 1.0, False, 1.0),
          ("hybrid+code", "hybrid", 1.0, True, 1.0), ("hybrid+code+matrix0.5", "hybrid", 1.0, True, 0.5)]
@@ -28,10 +29,28 @@ def norm(s) -> str:
     return re.sub(r"\s+", "", unicodedata.normalize("NFKC", str(s or "")))
 
 
-def gold_hits(r: Retriever, gold: list[dict]) -> tuple[set[int], set[int]]:
-    """正解に当たる (item_id の集合, table_id の集合)。表単位の正解は、その表の行チャンクも表チャンクも正解とする。"""
-    items, tables = set(), set()
+class Gold:
+    """正解に当たるもの: 行（item_id）・表（table_id）・本文の文書（doc_id。{doc, kind: prose} の正解）"""
+
+    def __init__(self, items: set[int], tables: set[int], prose_docs: set[str]):
+        self.items, self.tables, self.prose_docs = items, tables, prose_docs
+
+    def __bool__(self) -> bool:
+        return bool(self.items or self.tables or self.prose_docs)
+
+    def match(self, h: dict) -> bool:
+        return (h.get("item_id") in self.items or h.get("table_id") in self.tables
+                or (h.get("kind") == "prose" and h.get("doc_id") in self.prose_docs))
+
+
+def gold_hits(r: Retriever, gold: list[dict]) -> Gold:
+    """正解に当たるもの。表単位の正解は、その表の行チャンクも表チャンクも正解とする。
+    {doc, kind: prose} は、その文書（doc_id の前方一致）の本文のチャンクを正解とする（改定の予告資料など、表の無い資料）"""
+    items, tables, prose_docs = set(), set(), set()
     for g in gold:
+        if g.get("kind") == "prose":
+            prose_docs |= {x[0] for x in r.con.execute("SELECT doc_id FROM documents WHERE doc_id LIKE ?", (g["doc"] + "%",))}
+            continue
         if "table" in g:
             sql = "SELECT table_id FROM spec_tables WHERE doc_id LIKE ? AND replace(ifnull(title,''),' ','') LIKE ?"
             ps = [g["doc"] + "%", "%" + norm(g["table"]) + "%"]
@@ -46,28 +65,28 @@ def gold_hits(r: Retriever, gold: list[dict]) -> tuple[set[int], set[int]]:
             if (norm(g["name"]).replace(">", "") in nf and (g.get("page") is None or x["page"] == g["page"])
                     and (g.get("table_kind") is None or x["table_kind"] == g["table_kind"])):
                 items.add(x["item_id"])
-    return items, tables
+    return Gold(items, tables, prose_docs)
 
 
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
+    ap.add_argument("--as-of", default=AS_OF, help="基準日（どの版を今の版とするか）。評価の結果が日付で変わらないよう固定する")
     ap.add_argument("--out", default="reports/retrieval_eval.md")
     args = ap.parse_args()
     qs = yaml.safe_load((ROOT / "eval" / "questions.yaml").read_text(encoding="utf-8"))
-    r = Retriever()
+    r = Retriever(as_of=args.as_of)
     res = defaultdict(list)  # mode -> [rank or None]
     detail = []
     for q in qs:
         if not q.get("gold"):
             continue   # 正解の行が無い問（範囲外の質問・算定ルール資料の質問）は回答の評価だけ
-        gi, gt = gold_hits(r, q["gold"])
-        assert gi or gt, f"正解が DB に見つからない: {q['q']}"
+        gold = gold_hits(r, q["gold"])
+        assert gold, f"正解が DB に見つからない: {q['q']}"
         row = {"q": q["q"], "kind": q["kind"]}
         for m, mode, w, uc, mw in MODES:
             hits = r.search(q["q"], k=10, domain=q.get("domain"), mode=mode, fts_weight=w, use_codes=uc, matrix_weight=mw)
-            rank = next((i + 1 for i, h in enumerate(hits)
-                         if (h["item_id"] in gi) or (h["table_id"] in gt)), None)
+            rank = next((i + 1 for i, h in enumerate(hits) if gold.match(h)), None)
             res[m].append((q["kind"], rank))
             row[m] = rank
         detail.append(row)
@@ -78,7 +97,7 @@ def main() -> int:
         mrr = sum(1 / x for x in ranks if x) / n
         return f"{f(1):.2f} | {f(5):.2f} | {f(10):.2f} | {mrr:.2f}"
 
-    lines = [f"# 検索の評価（{len(qs)} 問、API 不使用）", "",
+    lines = [f"# 検索の評価（{len(qs)} 問、API 不使用、基準日 {args.as_of}）", "",
              f"埋め込み: {r.embedder_name} ／ 全文検索: FTS5 trigram ／ 融合: RRF (k={60})", "",
              "| 方式 | hit@1 | hit@5 | hit@10 | MRR |", "|---|--:|--:|--:|--:|"]
     for m, *_ in MODES:

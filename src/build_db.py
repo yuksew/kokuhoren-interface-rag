@@ -42,7 +42,10 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = """
 CREATE TABLE documents (
   doc_id TEXT PRIMARY KEY, domain TEXT NOT NULL, title TEXT, volume TEXT, edition TEXT, revision TEXT,
-  published_at TEXT, url TEXT, source_page TEXT, sha256 TEXT, note TEXT
+  published_at TEXT, url TEXT, source_page TEXT, sha256 TEXT, note TEXT,
+  effective TEXT,             -- 施行日（YYYY-MM-DD）。manifest の effective、無ければ版の名前（令和8年6月版 など）から
+  status TEXT,                -- final | draft（案。施行日が決まっていても「次の版」として扱う）
+  valid_from TEXT, valid_to TEXT  -- この版が使われる期間 [from, to)。同じ編の次の確定版の施行日まで
 );
 CREATE TABLE pages (
   doc_id TEXT NOT NULL REFERENCES documents(doc_id), page INTEGER NOT NULL, printed_page TEXT,
@@ -104,7 +107,42 @@ def js(v) -> str | None:
     return None if v is None else json.dumps(v, ensure_ascii=False)
 
 
-PROSE_ONLY = ["kaigo_internet_r0410"]
+PROSE_ONLY = ["kaigo_internet_r0410",
+              # 令和9年度改定の予告（案。status: draft）。本文として入れ、次の版として扱う
+              "kaigo_notice_20261006", "kaigo_if_changes_20261002"]
+ERA = {"平成": 1988, "令和": 2018}
+
+
+def effective_of(e: dict) -> str | None:
+    """施行日。manifest に effective があればそれ（null も「未確定」としてそのまま）、無ければ版の名前の最初の年月の 1 日"""
+    if "effective" in e:
+        return str(e["effective"]) if e["effective"] else None
+    m = re.search(r"(平成|令和)\s*(元|[0-9]+)\s*年\s*([0-9]+)\s*月", unicodedata.normalize("NFKC", e.get("edition") or ""))
+    if not m:
+        return None
+    y = ERA[m.group(1)] + (1 if m.group(2) == "元" else int(m.group(2)))
+    return f"{y:04d}-{int(m.group(3)):02d}-01"
+
+
+def validity(manifest: dict, docs: list[str]) -> dict[str, tuple]:
+    """doc_id → (effective, status, valid_from, valid_to)。仕様書（kind: spec）は (領域, 編) ごとに施行日の順に並べ、
+    次の確定版の施行日を終わりにする（保険者編の分割ファイルのように同じ版のファイルは同じ施行日なので、終わりは次の別の施行日）。
+    案（draft）は前の版の期間を切らない"""
+    out = {}
+    for d in docs:
+        e = manifest[d]
+        out[d] = [effective_of(e), e.get("status", "final"), effective_of(e), None]
+    groups: dict[tuple, list[str]] = {}
+    for d in docs:
+        e = manifest[d]
+        if e.get("kind") == "spec" and e.get("volume"):
+            groups.setdefault((e["domain"], e["volume"]), []).append(d)
+    for ds in groups.values():
+        starts = sorted({out[d][0] for d in ds if out[d][0] and out[d][1] == "final"})
+        for d in ds:
+            later = [x for x in starts if out[d][0] and x > out[d][0]]
+            out[d][3] = later[0] if later else None
+    return {d: tuple(v) for d, v in out.items()}
 
 
 def blank(v) -> str | None:
@@ -136,11 +174,13 @@ def main() -> int:
 
     # 表の無い編（本文だけ）。書き起こしは要らず、build_index.py が PDF のテキストレイヤから文章を取る
     docs = sorted({lt["doc_id"] for lt in logical} | set(PROSE_ONLY))
+    valid = validity(manifest, docs)
     for d in docs:
         e = manifest[d]
-        con.execute("INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        con.execute("INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (d, e["domain"], e.get("title"), e.get("volume"), e.get("edition"), e.get("revision"),
-                     str(e.get("published_at") or ""), e.get("url"), e.get("source_page"), e.get("sha256"), e.get("note")))
+                     str(e.get("published_at") or ""), e.get("url"), e.get("source_page"), e.get("sha256"), e.get("note"),
+                     *valid[d]))
     page_notes: dict[tuple[str, int], list[dict]] = {}
     for f in sorted(f for s_ in srcs for f in s_.glob("*_p*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))

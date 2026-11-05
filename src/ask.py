@@ -33,8 +33,27 @@ def load_prompts() -> tuple[str, dict]:
             json.loads((ROOT / "prompts" / "answer.schema.json").read_text(encoding="utf-8")))
 
 
+STATE_TAG = {"next": "【施行前の次の版】", "old": "【旧版】", "current": ""}
+
+
+def edition_tag(r: Retriever, hit: dict) -> str:
+    """基準日で今の版でない抜粋の目印（次の版・旧版）。施行日で変わるので、索引ではなく回答のときに付ける"""
+    d = hit.get("doc_id")
+    if not d or d not in r.doc_valid:
+        return ""
+    st = r.edition_state(d)
+    if st == "next" and r.doc_valid[d][0] == "draft":
+        return "【施行前の次の版（案）】"
+    return STATE_TAG[st]
+
+
 def source_label(r: Retriever, hit: dict) -> str:
-    """抜粋の出典（DB から作る）。"""
+    """抜粋の出典（DB から作る）。今の版でないものは頭に目印を付ける"""
+    tag = edition_tag(r, hit) if hit.get("chunk_id") is not None else ""
+    return tag + _source_label(r, hit)
+
+
+def _source_label(r: Retriever, hit: dict) -> str:
     if hit["kind"] == "overview":
         return "インタフェース一覧とレコード表の表題から作成した、交換情報ごとのレコード構成"
     if hit["kind"] == "limits":
@@ -60,7 +79,8 @@ def source_label(r: Retriever, hit: dict) -> str:
         pp = f"（印刷 {x['printed_page']}）" if x["printed_page"] else ""
         return f"{DOMAIN[x['domain']]} {x['volume']} {x['edition']} PDF p{x['page']}{pp} 設定方法 {x['part'] or ''} {x['section'] or ''}"
     if hit["kind"] == "prose":
-        x = r.con.execute("SELECT c.page, c.printed_page, d.domain, d.volume, d.edition FROM chunks c JOIN documents d USING (doc_id) "
+        x = r.con.execute("SELECT c.page, c.printed_page, d.domain, ifnull(d.volume, d.title) AS volume, d.edition FROM chunks c "
+                          "JOIN documents d USING (doc_id) "
                           "WHERE chunk_id = ?", (hit["chunk_id"],)).fetchone()
         pp = f"（印刷 {x['printed_page']}）" if x["printed_page"] else ""
         return f"{DOMAIN[x['domain']]} {x['volume']} {x['edition']} PDF p{x['page']}{pp}（本文）"
@@ -169,9 +189,10 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
             return f"[{i}] (数値項目の最大値)\n{h['text']}"
         label = {"table": "表", "item": "行", "prose": "本文", "rule": "算定ルール", "svc": "サービスコード表",
                  "example": "仕様書の設定例", "daysetting": "仕様書の設定方法の表"}[h["kind"]]
-        return f"[{i}] ({label})\n{r.describe(h['chunk_id'])}"
+        return f"[{i}] ({label}){edition_tag(r, h)}\n{r.describe(h['chunk_id'])}"
     ctx = "\n\n".join(text(i, h) for i, h in enumerate(hits, 1))
     cond = "、".join(x for x in [f"対象: {DOMAIN[domain]}" if domain else "", f"交換情報識別番号: {exchange}" if exchange else ""] if x)
+    cond = "、".join(x for x in [cond, f"基準日: {r.as_of}"] if x)
     user = f"# 抜粋\n{ctx}\n\n# 質問\n{question}" + (f"\n（{cond}）" if cond else "")
     res = client.generate_json(model=model, system=system, user_text=user, attachments=[], schema=schema,
                                max_tokens=max_tokens, effort="low")
@@ -184,9 +205,11 @@ def answer(question: str, *, r: Retriever, client, model: str, domain: str | Non
         "question": question, "domain": domain, "exchange": exchange, "model": model,
         "answer": p.get("answer"), "insufficient": p.get("insufficient"), "cited": [n for n in cited if n not in bad],
         "invalid_citations": bad,
-        "sources": {n: {"label": source_label(r, hits[n - 1]), "link": source_link(r, hits[n - 1]), "item_id": hits[n - 1]["item_id"], "table_id": hits[n - 1]["table_id"]}
+        "sources": {n: {"label": source_label(r, hits[n - 1]), "link": source_link(r, hits[n - 1]), "item_id": hits[n - 1]["item_id"], "table_id": hits[n - 1]["table_id"],
+                        "doc_id": hits[n - 1].get("doc_id"), "kind": hits[n - 1]["kind"]}
                     for n in cited if n not in bad},
-        "retrieved": [{"item_id": h["item_id"], "table_id": h["table_id"], "via": h["via"]} for h in hits],
+        "retrieved": [{"item_id": h["item_id"], "table_id": h["table_id"], "doc_id": h.get("doc_id"), "kind": h["kind"],
+                       "via": h["via"]} for h in hits],
         "queries": queries, "rewrite_usage": rw_usage,
         "usage": u.__dict__, "cost_usd": round(cost, 6), "latency_s": round(res.latency_s, 2),
         "stop_reason": res.stop_reason, "request_id": res.request_id,
@@ -223,8 +246,9 @@ def main() -> int:
     ap.add_argument("--exchange")
     ap.add_argument("--model", default="claude-sonnet-5-5", help="既定は Sonnet（Haiku は1/20の費用だが、属性や項目の取り違えがある。reports/phase2_report.md）")
     ap.add_argument("-k", type=int, default=12)
+    ap.add_argument("--as-of", help="基準日 YYYY-MM-DD（どの版を今の版とするか。既定は今日）")
     args = ap.parse_args()
-    a = answer(args.question, r=Retriever(), client=get_client("anthropic"), model=args.model,
+    a = answer(args.question, r=Retriever(as_of=args.as_of), client=get_client("anthropic"), model=args.model,
                domain=args.domain, exchange=args.exchange, k=args.k)
     print(render(a))
     return 0

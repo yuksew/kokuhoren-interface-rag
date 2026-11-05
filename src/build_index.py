@@ -112,7 +112,9 @@ def build_chunks(con: sqlite3.Connection) -> list[dict]:
         for pc in doc_prose(pdf):
             if (d["doc_id"], pc["page"]) in ex_pages:
                 continue
-            head = [f"{DOMAIN.get(d['domain'], d['domain'])} インタフェース仕様書 {d['volume']} {d['edition']}"]
+            # 編の無い資料（改定の予告の事務連絡・変更点資料など）は、編の代わりに資料名
+            what = f"インタフェース仕様書 {d['volume']}" if d["volume"] else d["title"]
+            head = [f"{DOMAIN.get(d['domain'], d['domain'])} {what} {d['edition']}" + ("（案）" if d["status"] == "draft" else "")]
             if pc["section"]:
                 head.append(f"節: {pc['section']}")
             chunks.append({"kind": "prose", "item_id": None, "table_id": None, "doc_id": d["doc_id"], "page": pc["page"],

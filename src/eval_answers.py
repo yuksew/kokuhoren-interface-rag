@@ -30,6 +30,7 @@ from retrieve import Retriever  # noqa: E402
 from transcribe import load_dotenv  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+AS_OF = "2026-11-05"   # 評価の基準日の既定（施行日をまたいで比べるときは --as-of で変える）
 
 
 def norm(s) -> str:
@@ -41,20 +42,21 @@ def main() -> int:
     load_dotenv()
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", nargs="+", default=["claude-haiku-5-5", "claude-sonnet-5-5"])
+    ap.add_argument("--as-of", default=AS_OF, help="基準日（どの版を今の版とするか）。評価の結果が日付で変わらないよう固定する")
     ap.add_argument("--out", default="reports/answer_eval.md")
     args = ap.parse_args()
     qs = yaml.safe_load((ROOT / "eval" / "questions.yaml").read_text(encoding="utf-8"))
-    r, client = Retriever(), get_client("anthropic")
+    r, client = Retriever(as_of=args.as_of), get_client("anthropic")
     results = {m: [] for m in args.models}
     for i, q in enumerate(qs, 1):
-        gi, gt = gold_hits(r, q.get("gold") or [])
+        gold = gold_hits(r, q.get("gold") or [])
         for m in args.models:
             a = answer(q["q"], r=r, client=client, model=m, domain=q.get("domain"), log_extra={"eval": True})
             text = norm(a["answer"])
             a["facts_ok"] = all(any(norm(alt) in text for alt in e.split("|")) for e in q.get("expect") or []) if q.get("expect") else None
-            has_gold = bool(gi or gt)
-            a["gold_cited"] = any(s["item_id"] in gi or s["table_id"] in gt for s in a["sources"].values()) if has_gold else None
-            a["gold_retrieved"] = any(h["item_id"] in gi or h["table_id"] in gt for h in a["retrieved"]) if has_gold else None
+            has_gold = bool(gold)
+            a["gold_cited"] = any(gold.match(s) for s in a["sources"].values()) if has_gold else None
+            a["gold_retrieved"] = any(gold.match(h) for h in a["retrieved"]) if has_gold else None
             a["honest"] = bool(a["insufficient"]) if q["kind"] == "out_of_scope" else None
             a["kind"] = q["kind"]
             results[m].append(a)
@@ -62,7 +64,7 @@ def main() -> int:
     (ROOT / "out" / "answers").mkdir(parents=True, exist_ok=True)
     (ROOT / "out" / "answers" / "eval_results.json").write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    L = [f"# 回答生成の評価（{len(qs)} 問）", "",
+    L = [f"# 回答生成の評価（{len(qs)} 問、基準日 {args.as_of}）", "",
          "抜粋は検索（ハイブリッド＋番号の直接引き、上位12件）。effort=low。facts は expect の語がすべて回答にあるか（expect のある問だけ数える）。", "",
          "| モデル | facts | 正解の行を引用 | 範囲外に「答えられない」 | 範囲内で「答えられない」 | 存在しない番号の引用 | 入力トークン（平均） | 出力トークン（平均） | 費用（合計） | 1問あたり | 応答秒（平均） |",
          "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
